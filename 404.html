@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina no trobada - Club Escacs Pardinyes</title>
+    <style>
+        body {
+            background: url('img/404.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFD700;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 100px;
+            text-shadow: 2px 2px 5px #000000; /* Sombra para que el texto destaque */
+        }
+
+        p {
+            font-size: 22px;
+            text-shadow: 1px 1px 3px #000000; /* Sombra para mejorar la legibilidad */
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #FFD700;
+            display: inline-block;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        }
+
+        a:hover {
+            background-color: #FFD700;
+            color: #000000;
+        }
+
+        .fun-message {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .chess-pieces {
+            font-size: 120px;
+        }
+
+        .white-rook {
+            color: #ffffff; /* Torre blanca */
+        }
+
+        .flipped-knight {
+            transform: scaleX(-1); /* Voltea el caballo horizontalmente */
+        }
+
+        .chess-piece-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre las piezas */
+        }
+    </style>
+</head>
+<body>
+    <div class="chess-piece-container">
+        <h1 class="chess-pieces white-rook">♖</h1> <!-- Torre blanca -->
+        <h1 class="chess-pieces flipped-knight">♞</h1> <!-- Caballo volteado -->
+    </div>
+    <p>Uh-oh! Sembla que has fet un moviment incorrecte...</p>
+    <p>Ho sentim, però la pàgina que estàs buscant no existeix.</p>
+    <div class="fun-message">No et preocupis, fins i tot els millors jugadors d'escacs es perden de tant en tant! 😉</div>
+    <a href="index.html">Torna a la pàgina principal</a>
+</body>
+</html>
