@@ -26,6 +26,33 @@
 
         gtag('config', 'G-JD61BZSM7X');
     </script>
+    <style>
+        /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
+        .img-uniform {
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+        }
+          /* Estilos para la alineación y tamaño de las imágenes */
+          .section-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .text-column {
+            flex: 1;
+            padding: 20px;
+        }
+        .image-column {
+            flex: 1;
+            text-align: center;
+        }
+        .img-large {
+            width: 80%; /* Ajusta el tamaño al 80% del contenedor */
+            max-width: 300px; /* Limita el tamaño máximo */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
 </head>
 
 <body class="bg-white">
@@ -85,35 +112,32 @@
             </div>
         </div>
     
-        <!-- Logros i Trofeus -->
-        <div class="row py-5 bg-light">
-            <div class="col-lg-12">
-                <h3 class="font-weight-bold text-center mb-4">Logros i Trofeus</h3>
-                <p class="text-center">Durant la nostra història, hem aconseguit nombrosos èxits en tornejos regionals i nacionals. Els nostres jugadors han destacat a la Lliga Catalana, en diverses competicions juvenils i en torneigs locals.</p>
-            </div>
-        </div>
+        
     
-        <!-- Formació i Classes -->
-        <div class="row py-5">
-            <div class="col-lg-6">
-                <h4 class="font-weight-bold mb-3">Formació i Creixement</h4>
+        <!-- Formació i Creixement -->
+    <div class="container py-5">
+        <div class="section-row">
+            <div class="text-column">
+                <h3 class="font-weight-bold mb-3">Formació i Creixement</h3>
                 <p>El club ofereix formació contínua per a tots els nivells, des de principiants fins a jugadors avançats. Els nostres entrenadors qualificats treballen amb grups reduïts per oferir una atenció personalitzada, ajudant als jugadors a perfeccionar les seves habilitats i créixer en l'esport.</p>
             </div>
-            <div class="col-lg-6">
-                <img class="img-fluid img-uniform" src="img/Classes-1.png" alt="Formació d'escacs">
+            <div class="image-column">
+                <img src="img/Classes-1.png" alt="Formació d'escacs" class="img-large">
             </div>
         </div>
     
         <!-- Comunitat i Voluntariat -->
-        <div class="row py-5 bg-light">
-            <div class="col-lg-6">
-                <img class="img-fluid img-uniform" src="img/community.jpg" alt="Comunitat i Voluntariat">
+        <div class="section-row">
+            <div class="image-column">
+                <img src="img/community.jpg" alt="Comunitat i Voluntariat" class="img-large">
             </div>
-            <div class="col-lg-6">
-                <h4 class="font-weight-bold mb-3">Comunitat i Voluntariat</h4>
+            <div class="text-column">
+                <h3 class="font-weight-bold mb-3">Comunitat i Voluntariat</h3>
                 <p>Som més que un club d’escacs. Estem compromesos amb la nostra comunitat, participant en activitats locals i promovent l’educació en escacs a les escoles. Els nostres voluntaris col·laboren en projectes amb joves i adults per fomentar el pensament crític i l’esport mental.</p>
             </div>
         </div>
+    </div>
+
     
         <!-- Valors del Club -->
         <div class="row py-5">
@@ -133,6 +157,7 @@
     
        
     <!-- Fi de Sobre el Club Escacs Pardinyes -->
+
 <!-- Col·laboracions Start -->
 <div class="container py-5">
     <div class="row align-items-center">
@@ -144,32 +169,32 @@
     <div class="row text-center py-4">
         <!-- Orvepard -->
         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="img/orvepard.jpg" alt="Orvepard" style="width: 100px;">
-            <h5 class="mt-3">
-                <a href="https://www.instagram.com/orvepard/" target="_blank" style="text-decoration: none; color: inherit;">Organització de Veïns de Pardinyes </br>Orvepard</a>
-            </h5>
+            <a href="https://www.instagram.com/orvepard/" target="_blank">
+                <img src="img/orvepard.jpg" alt="Orvepard" class="img-uniform">
+            </a>
+            <h5 class="mt-3">Organització de Veïns de Pardinyes <br>Orvepard</h5>
         </div>
         <!-- Chess.com -->
         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="img/chesscom.png" alt="Chess.com" style="width: 100px;">
-            <h5 class="mt-3">
-                <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" style="text-decoration: none; color: inherit;">Chess.com</a>
-            </h5>        </div>
+            <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank">
+                <img src="img/chesscom.png" alt="Chess.com" class="img-uniform">
+            </a>
+            <h5 class="mt-3">Chess.com</h5>
+        </div>
         <!-- Chessnut -->
         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="img/feature-4.jpg" alt="Chessnut" style="width: 100px;">
-            <h5 class="mt-3">
-                <a href="https://www.chessnutech.com/" target="_blank" style="text-decoration: none; color: inherit;">ChessNut</a>
-            </h5>
+            <a href="https://www.chessnutech.com/blogs/promoting-chess-in-society-and-schools/chessnut-sponsors-lleida-s-escacs-pardinyes-club-tournament-supporting-chess-as-a-social-and-educational-activity/" target="_blank">
+                <img src="img/feature-4.jpg" alt="Chessnut" class="img-uniform">
+            </a>
+            <h5 class="mt-3">ChessNut</h5>
         </div>
         <!-- Ajuntament de Lleida -->
         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="img/logopaeria-color.png" alt="Ajuntament de Lleida" style="width: 100px;">
-            <h5 class="mt-3">
-                <a href="https://www.paeria.cat" target="_blank" style="text-decoration: none; color: inherit;">Ajuntament de Lleida</a>
-            </h5>
+            <a href="https://www.paeria.cat" target="_blank">
+                <img src="img/logopaeria-color.png" alt="Ajuntament de Lleida" class="img-uniform">
+            </a>
+            <h5 class="mt-3">Ajuntament de Lleida</h5>
         </div>
-
     </div>
 </div>
 <!-- Col·laboracions End -->
