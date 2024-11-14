@@ -28,7 +28,30 @@
     
             gtag('config', 'G-JD61BZSM7X');
         </script>
-    
+    <!-- Bàner de Cookies -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html" style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
+
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+
 </head>
 
 <body class="bg-white">
