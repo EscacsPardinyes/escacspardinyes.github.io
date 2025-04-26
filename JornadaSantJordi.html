@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 
@@ -5,6 +6,17 @@
     <meta charset="utf-8">
     <title>Club Escacs Pardinyes - Què Oferim</title>
     <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -49,9 +61,28 @@
         }
         .img-large {
             width: 80%; /* Ajusta el tamaño al 80% del contenedor */
-            max-width: 300px; /* Limita el tamaño máximo */
+            max-width: 3000px; /* Limita el tamaño máximo */
             height: auto; /* Mantiene la proporción de la imagen */
         }
+       
+        .dropdown-menu {
+            min-width: 260px; /* Ample just per text llarg */
+            background-color: #222; /* Fons igual que navbar */
+            border: none;
+        }
+
+        .dropdown-item {
+            color: white;
+            padding: 10px 20px;
+            white-space: nowrap; /* Evita trencaments de línia */
+        }
+
+        .dropdown-item:hover {
+            background-color: #444;
+            color: #ffc107;
+        }
+
+
     </style>
     <!-- Bàner de Cookies -->
 <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
@@ -138,16 +169,39 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link">Inici</a>
-                    <a href="about.html" class="nav-item nav-link " >Sobre Nosaltres</a>
-                    <a href="feature.html" class="nav-item nav-link ">Què Oferim</a>
-                    <a href="school.html" class="nav-item nav-link">Escola d’Escacs</a>
-                    <a href="federat.html" class="nav-item nav-link active">Federat</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacte</a>
-
-                </div>
+                <ul class="navbar-nav ml-auto p-4 bg-secondary">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Sobre Nosaltres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="feature.html" class="nav-link">Què Oferim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="school.html" class="nav-link">Escola d’Escacs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="federat.html" class="nav-link">Federat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contacte</a>
+                    </li>
+                    
+                    <!-- Menú Galeria amb subapartats -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Galeria
+                        </a>
+                        <div class="dropdown-menu bg-secondary text-capitalize" aria-labelledby="navbarDropdown">
+                            <a href="JornadaSantJordi.html" class="dropdown-item text-white">Sant@ Jordi/na 2025</a>
+                        </div>
+                    </li>
+                    <!-- Fi menú Galeria -->
+                </ul>
             </div>
+            
         </nav>
     </div>
     <!-- Navbar End -->
@@ -155,168 +209,79 @@
     <!-- Page Header End --> <!-- Capçalera -->
     <div class="container-fluid page-header mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Com Federar-se</h4>
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Galeria d'Imatges</h4>
             <div class="d-inline-flex">
                 <p class="m-0 text-white"><a class="text-white" href="index.html">Inici</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Federat</p>
+                <p class="m-0 text-white">Jornada Sant@ Jordi/na 2025</p>
             </div>
         </div>
     </div>
+    <!-- Page Header End -->
+<!-- Inici Secció Jornada Sant@ Jordi/na -->
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <h2 class="font-weight-bold text-primary">Galeria d'Imatges: Jornada Sant@ Jordi/na</h2>
+        <p>Viu amb nosaltres una tarda màgica d'escacs a Lleida, durant la jornada cultural de Sant@ Jordi/na! 🌟</p>
+        <p>El 25 d'abril, la jove prodigi Lola Fernández, amb només 9 anys, va brillar en una espectacular <strong>simultània d’escacs</strong> celebrada al cor de Lleida, dins les activitats culturals de la ciutat.</p>
+        <p>Amb un gran talent i esperit competitiu, Lola va aconseguir <strong>5 victòries</strong>, <strong>1 taules</strong> i només <strong>2 derrotes</strong> davant 8 jugadors alhora! 👏</p>♟️ Un exemple increïble de passió pels escacs!</p>
+        <p>A més, vam habilitar 8 taulers addicionals per a <strong>partides lliures d'escacs</strong>, creant un ambient vibrant i participatiu que va atraure molts aficionats de totes les edats. 🙌🎉</p>
+        <p>Gràcies a tots per formar part d’aquesta jornada tan especial i fer brillar el futur dels escacs a Lleida! ✨</p>
+    </div>
+</div>
 
-    <!-- Contingut -->
-     <!-- Com federar-me -->
-<div class="container text-center my-5">
-    <h2 class="font-weight-bold text-primary mb-4">Com federar-me?</h2>
+
     <div class="row">
-        <div class="col-md-4">
-            <i class="flaticon-form display-4 text-primary mb-3"></i>
-            <h5>1. Contacta amb el club</h5>
-            <p>Omple el formulari o envia'ns un correu.</p>
+        <!-- Foto 1 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi1.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 1">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi1.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 1">
+            </a>
         </div>
-        <div class="col-md-4">
-            <i class="flaticon-payment display-4 text-primary mb-3"></i>
-            <h5>2. Paga la quota</h5>
-            <p>Segons l’edat i la condició, et facilitarem el mètode de pagament.</p>
+        <!-- Foto 2 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi2.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 2">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi2.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 2">
+            </a>
         </div>
-        <div class="col-md-4">
-            <i class="flaticon-success display-4 text-primary mb-3"></i>
-            <h5>3. Ja estàs federat!</h5>
-            <p>Ja pots començar a competir i entrenar.</p>
+        <!-- Foto 3 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi3.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 3">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi3.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 3">
+            </a>
         </div>
+        <!-- Foto 4 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi4.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 4">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi4.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 4">
+            </a>
+        </div>
+        <!-- Foto 5 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi5.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 5">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi5.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 5">
+            </a>
+        </div>
+        <!-- Foto 6 -->
+        <div class="col-md-4 mb-4">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi6.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 6">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi6.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 6">
+            </a>
+        </div>
+        <!-- Foto 7 centrada -->
+        <div class="col-md-12 mb-4 d-flex justify-content-center">
+            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi7.jpeg" data-lightbox="galeria" data-title="Simultània Sant@ Jordi/na 7">
+                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi7.jpeg" class="img-fluid rounded" alt="Simultània Sant@ Jordi/na 7" style="max-width: 400px;">
+            </a>
+        </div>
+
     </div>
-</div>
-
-    <div class="container my-5">
-        <div class="text-center mb-4">
-            <h2 class="font-weight-bold text-primary">Per què federar-se?</h2>
-            <p>Federar-se o fer-se soci et permet accedir a les classes, estar cobert per una assegurança esportiva i participar en tornejos oficials d’escacs.</p>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h4 class="text-primary">✅ Beneficis</h4>
-                <ul>
-                    <li>Accés a les <strong>classes i entrenaments</strong> del club</li>
-                    <li>Participació en <strong>tornejos oficials federats</strong></li>
-                    <li>Assegurança esportiva</li>
-                    <li>Activitats i esdeveniments exclusius del club</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h4 class="text-primary">💰 Quotes de Federació</h4>
-                <p>El cost de federar-se depèn de l’edat i la situació. Aquí tens una orientació anual segons la Federació Catalana:</p>
-
-                <ul>
-                    <li>Majors de 16 anys: <strong>75 €</strong></li>
-                    <li>Majors de 65 anys: <strong>60 €</strong></li>
-                    <li>Discapacitat: <strong>55 €</strong></li>
-                    <li>Discapacitat major de 65 anys: <strong>47,50 €</strong></li>
-                    <li>Menors de 16 anys: <strong>20 €</strong></li>
-                    <li>Menors de 14 anys: <strong>15 €</strong></li>
-                    <li>Menors de 10 anys: <strong>10 €</strong></li>
-                </ul>
-                
-            </div>
-        </div>
-        <p>També es pot optar per fer-se soci del club (35 €/any) si no vols estàs federat.</p>
-
-        <div class="mt-5 text-center">
-            <h4 class="text-primary">📋 Requisit per fer classes</h4>
-            <p>Per assistir a les classes cal estar federat o fer-se soci del club (35 € anuals). Si ja ets federat, no cal pagar la quota de soci.</p>
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="contact.html" class="btn btn-primary btn-lg px-5">Vull federar-me</a>
-        </div>
-    </div>
-<!-- FAQ Start -->
-<div class="container mt-5">
-    <h4 class="font-weight-bold text-primary mb-4 text-center">Preguntes freqüents</h4>
-    <div class="accordion" id="faqAccordion">
-        <div class="card">
-            <div class="card-header" id="q1">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a1">
-                        Cal federar-se cada any?
-                    </button>
-                </h5>
-            </div>
-            <div id="a1" class="collapse" data-parent="#faqAccordion">
-                <div class="card-body">
-                    Sí, la llicència federativa és anual i es renova cada any natural.
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" id="q2">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a2">
-                        Si ja estic federat en un altre club, puc fer classes?
-                    </button>
-                </h5>
-            </div>
-            <div id="a2" class="collapse" data-parent="#faqAccordion">
-                <div class="card-body">
-                    No. Per participar a les classes cal estar federat al Club Escacs Pardinyes o ser-ne soci.
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" id="q3">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a3">
-                        Puc federar-me només per fer tornejos?
-                    </button>
-                </h5>
-            </div>
-            <div id="a3" class="collapse" data-parent="#faqAccordion">
-                <div class="card-body">
-                    Sí, pots federar-te encara que no assisteixis a les classes. Això et dona accés a tornejos oficials i assegurança.
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" id="q4">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a4">
-                        Hi ha ajudes per a famílies amb dificultats econòmiques?
-                    </button>
-                </h5>
-            </div>
-            <div id="a4" class="collapse" data-parent="#faqAccordion">
-                <div class="card-body">
-                    El club ofereix quotes reduïdes o beques en casos justificats. Contacta amb nosaltres per valorar-ho.
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" id="q5">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a5">
-                        A quina edat es poden federar els infants?
-                    </button>
-                </h5>
-            </div>
-            <div id="a5" class="collapse" data-parent="#faqAccordion">
-                <div class="card-body">
-                    Es poden federar des dels 5 anys. De fet, hi ha categories per a menors de 8, 10, 14 i 16 anys.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- FAQ End -->
+<!-- Fi Secció Jornada Sant@ Jordi/na -->
 
 
 
-   
    <!-- Contacte -->
-<div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+   <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
     <div class="row pt-5">
         <div class="col-lg-3 col-md-6 mb-5">
             <h4 class="text-primary mb-4">Contacta'ns</h4>
@@ -362,6 +327,7 @@
 <!-- Fi de Contacte -->
 
 
+
     <!-- Peu de pàgina -->
     <div class="container border-top border-dark pt-5">
         <p class="m-0 text-center text-black">
@@ -382,5 +348,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
