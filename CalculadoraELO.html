@@ -1,148 +1,165 @@
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="ca">
 
-  gtag('config', 'G-JD61BZSM7X');
-</script>
-<style>
-  .dropdown-item.lang-btn {
-    color: #fff !important;
-  }
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora d'ELO - Club Escacs Pardinyes</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-  .dropdown-item.lang-btn:hover {
-    color: #ffc107 !important;
-    background-color: #333;
-  }
-</style>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f8f9fa;
-    margin: 0;
-    padding: 20px;
-  }
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-  .main-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .input-section,
-  .info-section {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .input-section {
-    width: 400px;
-  }
-
-  .info-section {
-    width: 400px;
-  }
-
-  h1 {
-    color: #007bff;
-    text-align: center;
-  }
-
-  input,
-  select,
-  button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .inline-inputs {
-    display: flex;
-    gap: 10px;
-  }
-
-  .inline-inputs input,
-  .inline-inputs select {
-    flex: 1;
-  }
-
-  table {
-    width: 100%;
-    margin-top: 10px;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-
-  th {
-    background-color: #007bff;
-    color: white;
-  }
-
-  .delete-btn {
-    color: red;
-    cursor: pointer;
-  }
-
-  .success {
-    color: #28a745;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .error {
-    color: #dc3545;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .info-section ul {
-    padding-left: 20px;
-  }
-
-  .info-section li {
-    margin-bottom: 10px;
-  }
-</style>
-
-<!-- Bàner de Cookies -->
-<div id="cookie-banner"
-  style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-  Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-    style="color: #ffc107;">Política de Cookies</a>.
-  <button onclick="acceptCookies()"
-    style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-</div>
-
-<script>
-  // Funció per mostrar el bàner de cookies
-  function checkCookieConsent() {
-    if (!localStorage.getItem('cookieAccepted')) {
-      document.getElementById('cookie-banner').style.display = 'block';
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style>
+    .dropdown-item.lang-btn {
+      color: #fff !important;
     }
-  }
 
-  // Funció per acceptar cookies
-  function acceptCookies() {
-    localStorage.setItem('cookieAccepted', 'true');
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+    .dropdown-item.lang-btn:hover {
+      color: #ffc107 !important;
+      background-color: #333;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  // Comprovar consentiment de cookies quan es carrega la pàgina
-  window.onload = checkCookieConsent;
-</script>
-<script type="application/ld+json">
+    gtag('config', 'G-JD61BZSM7X');
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .main-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .input-section,
+    .info-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-section {
+      width: 400px;
+    }
+
+    .info-section {
+      width: 400px;
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .inline-inputs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .inline-inputs input,
+    .inline-inputs select {
+      flex: 1;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+    }
+
+    .success {
+      color: #28a745;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .error {
+      color: #dc3545;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .info-section li {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- Bàner de Cookies -->
+  <div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none; z-index: 1000;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+      style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+      style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+  </div>
+
+  <script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+      if (!localStorage.getItem('cookieAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    }
+
+    // Funció per acceptar cookies
+    function acceptCookies() {
+      localStorage.setItem('cookieAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+  </script>
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SportsClub",
@@ -171,9 +188,7 @@
         "https://www.chess.com/club/club-escacs-pardinyes"
       ]
     }
-</script>
-
-
+    </script>
 </head>
 
 <body class="bg-white">
@@ -368,65 +383,70 @@
 
       newElo = playerElo + totalVariation;
 
-        <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
-        <div class="d-flex justify-content-start mt-4">
-          <!-- X (Twitter) -->
-          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
-            href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
-            target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i>
-          </a>
-
-          <!-- Facebook -->
-          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
-            href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
-            href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <!-- YouTube -->
-          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
-            href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-youtube"></i>
-          </a>
-
-          <!-- Kick 
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://kick.com/club-escacs-pardinyes/about" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-kickstarter"></i> 
-</a> -->
-
-          <!-- TikTok 
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@Club_Escacs_Pardinyes" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-tiktok"></i>
-</a> -->
-
-
+      const newEloElement = document.getElementById('newElo');
+      newEloElement.innerHTML = `
+        <div class="alert alert-info mt-3">
+            <h4 class="alert-heading">Resultat:</h4>
+            <p class="mb-0">Nou ELO: <strong>${Math.round(newElo)}</strong></p>
+            <p class="mb-0">Variació total: <strong>${totalVariation > 0 ? '+' : ''}${totalVariation.toFixed(1)}</strong></p>
         </div>
-      </div >
-    </div >
-  </div >
-  < !--Fi de Contacte-- >
+      `;
+    }
+  </script>
 
+  <!-- Contact Info -->
+  <div class="container-fluid py-5 px-0">
+    <div class="row mx-0 justify-content-center">
+      <div class="col-lg-6 col-md-12">
+        <h1 class="display-4 mb-4 text-center" data-i18n="contact.title">Contacta'ns</h1>
+        <p class="mb-4 text-center" data-i18n="contact.desc">Tens dubtes o vols apuntar-te? Contacta amb
+          nosaltres!</p>
+        <div class="d-flex flex-column align-items-center">
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
+          <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+          <div class="d-flex justify-content-start mt-4">
+            <!-- X (Twitter) -->
+            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+              href="https://x.com/EscacsPardinyes" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Facebook -->
+            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+              href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+              href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- YouTube -->
+            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+              href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fi de Contacte -->
 
-  < !--Peu de pàgina-- >
+  <!-- Peu de pàgina -->
   <div class="container border-top border-dark pt-5">
     <p class="m-0 text-center text-black">
       &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
       reservats. Fundat l'any 1992.
     </p>
   </div>
-  <!--Fi del Peu de pàgina-- >
+  <!-- Fi del Peu de pàgina -->
 
-  < !--Back to Top-- >
+  <!-- Back to Top -->
   <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-  <!--JavaScript Libraries-- >
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
