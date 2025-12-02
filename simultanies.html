@@ -1,62 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <title>Club Escacs Pardinyes - Simultáneas con WIM Ivette García</title>
-    <meta content="Simultáneas y Taller de ChessKid con WIM Ivette García al Club Escacs Pardinyes" name="description">
+<link href="css/style.min.css" rel="stylesheet">
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
 
-    <link href="img/favicon.ico" rel="icon">
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Este sitio web utiliza cookies para mejorar tu experiencia. Consulta nuestra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Aceptar</button>
+</div>
 
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-
-    <link href="css/style.min.css" rel="stylesheet">
-    <style>
-        .dropdown-item.lang-btn {
-            color: #fff !important;
+<script>
+    // Function to show the cookie banner
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
         }
+    }
 
-        .dropdown-item.lang-btn:hover {
-            color: #ffc107 !important;
-            background-color: #333;
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    // Function to accept cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
 
-        gtag('config', 'G-JD61BZSM7X');
-    </script>
-    <div id="cookie-banner"
-        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Este sitio web utiliza cookies para mejorar tu experiencia. Consulta nuestra <a href="cookies.html"
-            style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()"
-            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Aceptar</button>
-    </div>
-
-    <script>
-        // Function to show the cookie banner
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
-        }
-
-        // Function to accept cookies
-        function acceptCookies() {
-            localStorage.setItem('cookieAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-
-        // Check cookie consent when page loads
-        window.onload = checkCookieConsent;
-    </script>
-    <script type="application/ld+json">
+    // Check cookie consent when page loads
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -77,7 +66,7 @@
       "addressCountry": "ES"
     }
   },
-  "image": "https://escacspardinyes.com/img/cartell-simultanies-ivette.jpg", <-- Ensure this image path is correct
+  "image": "https://escacspardinyes.com/img/cartell-simultanies-ivette.webp", <-- Ensure this image path is correct
   "description": "Una jornada única de ajedrez con la WIM Ivette García, Directora de Español de ChessKid. Incluye simultáneas donde los participantes recibirán 2 meses gratis de ChessKid, y un taller especializado para profesores de ajedrez, con membresía de 6 meses en ChessKid para los asistentes.",
   "performer": {
     "@type": "Person",
@@ -173,7 +162,7 @@
             ChessKid!</h2>
         <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                <img src="img/cartell-simultanies-ivette.png" alt="Cartell simultànies WIM Ivette García"
+                <img src="img/cartell-simultanies-ivette.webp" alt="Cartell simultànies WIM Ivette García"
                     class="img-fluid rounded shadow">
                 <div class="mt-4 text-left">
                     <p data-i18n="simultanies.intro">Ens complau confirmar que la WIM Ivette García, responsable de
@@ -220,7 +209,7 @@
             Col·laboradors</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <img src="img/cartell-colaboradors.png" alt="Cartell de Col·laboradors del Club Escacs Pardinyes"
+                <img src="img/cartell-colaboradors.webp" alt="Cartell de Col·laboradors del Club Escacs Pardinyes"
                     class="img-fluid rounded shadow">
                 <div class="mt-4">
                     <p class="lead" data-i18n="simultanies.collaborators_text1">Volem expressar el nostre més sincer

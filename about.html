@@ -1,100 +1,86 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <title>Club Escacs Pardinyes - Què Oferim</title>
-    <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.min.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<style>
+    /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
+    .img-uniform {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Ajusta la imagen sin distorsionarla */
+    }
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    /* Estilos para la alineación y tamaño de las imágenes */
+    .section-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    .text-column {
+        flex: 1;
+        padding: 20px;
+    }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    .image-column {
+        flex: 1;
+        text-align: center;
+    }
 
-        gtag('config', 'G-JD61BZSM7X');
-    </script>
-    <style>
-        /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
-        .img-uniform {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            /* Ajusta la imagen sin distorsionarla */
+    .img-large {
+        width: 80%;
+        /* Ajusta el tamaño al 80% del contenedor */
+        max-width: 300px;
+        /* Limita el tamaño máximo */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
+    }
+</style>
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
         }
+    }
 
-        /* Estilos para la alineación y tamaño de las imágenes */
-        .section-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
 
-        .text-column {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .image-column {
-            flex: 1;
-            text-align: center;
-        }
-
-        .img-large {
-            width: 80%;
-            /* Ajusta el tamaño al 80% del contenedor */
-            max-width: 300px;
-            /* Limita el tamaño máximo */
-            height: auto;
-            /* Mantiene la proporción de la imagen */
-        }
-    </style>
-    <!-- Bàner de Cookies -->
-    <div id="cookie-banner"
-        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-            style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()"
-            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-    </div>
-
-    <script>
-        // Funció per mostrar el bàner de cookies
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
-        }
-
-        // Funció per acceptar cookies
-        function acceptCookies() {
-            localStorage.setItem('cookieAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-
-        // Comprovar consentiment de cookies quan es carrega la pàgina
-        window.onload = checkCookieConsent;
-    </script>
-    <script type="application/ld+json">
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SportsClub",
       "name": "Club Escacs Pardinyes",
       "url": "https://escacspardinyes.com",
-      "logo": "https://escacspardinyes.com/img/logo.PNG",
-      "image": "https://escacspardinyes.com/img/about.jpeg",
+      "logo": "https://escacspardinyes.com/img/logo.webp",
+      "image": "https://escacspardinyes.com/img/about.webp",
       "description": "Club d’escacs a Lleida fundat el 1992. Oferim formació per a nens i adults, tornejos federats, activitats gratuïtes i col·laboracions socials amb escoles i entitats locals.",
       "foundingDate": "1992",
       "priceRange": "€10 al mes per a nens i adults. Sessions gratuïtes dilluns i divendres.",
@@ -119,16 +105,16 @@
 </script>
 
 
-    <style>
-        .dropdown-item.lang-btn {
-            color: #fff !important;
-        }
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
 
-        .dropdown-item.lang-btn:hover {
-            color: #ffc107 !important;
-            background-color: #333;
-        }
-    </style>
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
 </head>
 
 <body class="bg-white">
@@ -183,7 +169,7 @@
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpeg" alt="Imatge del club">
+                <img class="img-fluid mb-4 mb-lg-0" src="img/about.webp" alt="Imatge del club">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-4 font-weight-bold mb-4" data-i18n="about.founded_title">♜ Fundat l'any 1992 ♞</h2>
@@ -225,14 +211,14 @@
                     d’anàlisi.</p>
             </div>
             <div class="image-column">
-                <img src="img/Classes-1.png" alt="Formació d'escacs" class="img-large">
+                <img src="img/Classes-1.webp" alt="Formació d'escacs" class="img-large">
             </div>
         </div>
 
         <!-- Comunitat i Voluntariat -->
         <div class="section-row">
             <div class="image-column">
-                <img src="img/community.jpg" alt="Comunitat i Voluntariat" class="img-large">
+                <img src="img/community.webp" alt="Comunitat i Voluntariat" class="img-large">
             </div>
             <div class="text-column">
                 <h3 class="font-weight-bold mb-3" data-i18n="about.community_title">Comunitat i Voluntariat</h3>
@@ -285,7 +271,7 @@
             <!-- Ajuntament de Lleida -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.paeria.cat" target="_blank">
-                    <img src="img/logopaeria-color.png" alt="Ajuntament de Lleida" class="img-uniform"
+                    <img src="img/logopaeria-color.webp" alt="Ajuntament de Lleida" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3" data-i18n="about.collab_paeria">Ajuntament de Lleida</h5>
@@ -293,7 +279,7 @@
             <!-- Diputació de Lleida -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.diputaciolleida.cat" target="_blank">
-                    <img src="img/diputaciolleida.png" alt="Diputació de Lleida" class="img-uniform"
+                    <img src="img/diputaciolleida.webp" alt="Diputació de Lleida" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3" data-i18n="about.collab_diputacio">Diputació de Lleida</h5>
@@ -301,7 +287,7 @@
             <!-- Orvepard -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.instagram.com/orvepard/" target="_blank">
-                    <img src="img/orvepard.jpg" alt="Orvepard" class="img-uniform"
+                    <img src="img/orvepard.webp" alt="Orvepard" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3" data-i18n="about.collab_orvepard">Organització de Veïns de Pardinyes <br>Orvepard</h5>
@@ -313,7 +299,7 @@
             <!-- Chess.com -->
             <div class="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank">
-                    <img src="img/chesscom.png" alt="Chess.com" class="img-uniform"
+                    <img src="img/chesscom.webp" alt="Chess.com" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3">Chess.com</h5>
@@ -322,7 +308,7 @@
             <div class="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.chessnutech.com/blogs/promoting-chess-in-society-and-schools/chessnut-sponsors-lleida-s-escacs-pardinyes-club-tournament-supporting-chess-as-a-social-and-educational-activity/"
                     target="_blank">
-                    <img src="img/feature-4.jpg" alt="ChessNut" class="img-uniform"
+                    <img src="img/feature-4.webp" alt="ChessNut" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3">ChessNut</h5>
@@ -330,7 +316,7 @@
             <!-- ChessKid -->
             <div class="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                 <a href="https://www.chesskid.com/" target="_blank">
-                    <img src="img/chesskid.png" alt="ChessKid" class="img-uniform"
+                    <img src="img/chesskid.webp" alt="ChessKid" class="img-uniform"
                         style="max-width: 160px; height: auto;">
                 </a>
                 <h5 class="mt-3">ChessKid</h5>

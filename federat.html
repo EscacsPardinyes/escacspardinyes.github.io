@@ -1,93 +1,79 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <title>Club Escacs Pardinyes - Què Oferim</title>
-    <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.min.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<style>
+    /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
+    .img-uniform {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Ajusta la imagen sin distorsionarla */
+    }
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    /* Estilos para la alineación y tamaño de las imágenes */
+    .section-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    .text-column {
+        flex: 1;
+        padding: 20px;
+    }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    .image-column {
+        flex: 1;
+        text-align: center;
+    }
 
-        gtag('config', 'G-JD61BZSM7X');
-    </script>
-    <style>
-        /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
-        .img-uniform {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            /* Ajusta la imagen sin distorsionarla */
+    .img-large {
+        width: 80%;
+        /* Ajusta el tamaño al 80% del contenedor */
+        max-width: 300px;
+        /* Limita el tamaño máximo */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
+    }
+</style>
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
         }
+    }
 
-        /* Estilos para la alineación y tamaño de las imágenes */
-        .section-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
 
-        .text-column {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .image-column {
-            flex: 1;
-            text-align: center;
-        }
-
-        .img-large {
-            width: 80%;
-            /* Ajusta el tamaño al 80% del contenedor */
-            max-width: 300px;
-            /* Limita el tamaño máximo */
-            height: auto;
-            /* Mantiene la proporción de la imagen */
-        }
-    </style>
-    <!-- Bàner de Cookies -->
-    <div id="cookie-banner"
-        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-            style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()"
-            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-    </div>
-
-    <script>
-        // Funció per mostrar el bàner de cookies
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
-        }
-
-        // Funció per acceptar cookies
-        function acceptCookies() {
-            localStorage.setItem('cookieAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-
-        // Comprovar consentiment de cookies quan es carrega la pàgina
-        window.onload = checkCookieConsent;
-    </script>
-    <script type="application/ld+json">
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -136,16 +122,16 @@
     }
     </script>
 
-    <style>
-        .dropdown-item.lang-btn {
-            color: #fff !important;
-        }
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
 
-        .dropdown-item.lang-btn:hover {
-            color: #ffc107 !important;
-            background-color: #333;
-        }
-    </style>
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
 </head>
 
 <body class="bg-white">

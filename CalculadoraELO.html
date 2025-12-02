@@ -1,176 +1,155 @@
-<!DOCTYPE html>
-<html lang="ca">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-<head>
-  <meta charset="utf-8">
-  <title>Calculadora d'ELO - Club Escacs Pardinyes</title>
-  <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
+  gtag('config', 'G-JD61BZSM7X');
+</script>
+<style>
+  .dropdown-item.lang-btn {
+    color: #fff !important;
+  }
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
+  .dropdown-item.lang-btn:hover {
+    color: #ffc107 !important;
+    background-color: #333;
+  }
+</style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+  }
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  .main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-  <!-- Flaticon Font -->
-  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+  .input-section,
+  .info-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/style.min.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  .input-section {
+    width: 400px;
+  }
 
-    gtag('config', 'G-JD61BZSM7X');
-  </script>
-  <style>
-    .dropdown-item.lang-btn {
-      color: #fff !important;
+  .info-section {
+    width: 400px;
+  }
+
+  h1 {
+    color: #007bff;
+    text-align: center;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .inline-inputs {
+    display: flex;
+    gap: 10px;
+  }
+
+  .inline-inputs input,
+  .inline-inputs select {
+    flex: 1;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .delete-btn {
+    color: red;
+    cursor: pointer;
+  }
+
+  .success {
+    color: #28a745;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .error {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .info-section ul {
+    padding-left: 20px;
+  }
+
+  .info-section li {
+    margin-bottom: 10px;
+  }
+</style>
+
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+  style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+  Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+    style="color: #ffc107;">Política de Cookies</a>.
+  <button onclick="acceptCookies()"
+    style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+  // Funció per mostrar el bàner de cookies
+  function checkCookieConsent() {
+    if (!localStorage.getItem('cookieAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
     }
+  }
 
-    .dropdown-item.lang-btn:hover {
-      color: #ffc107 !important;
-      background-color: #333;
-    }
-  </style>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-    }
+  // Funció per acceptar cookies
+  function acceptCookies() {
+    localStorage.setItem('cookieAccepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
 
-    .main-container {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .input-section,
-    .info-section {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .input-section {
-      width: 400px;
-    }
-
-    .info-section {
-      width: 400px;
-    }
-
-    h1 {
-      color: #007bff;
-      text-align: center;
-    }
-
-    input,
-    select,
-    button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    .inline-inputs {
-      display: flex;
-      gap: 10px;
-    }
-
-    .inline-inputs input,
-    .inline-inputs select {
-      flex: 1;
-    }
-
-    table {
-      width: 100%;
-      margin-top: 10px;
-      border-collapse: collapse;
-    }
-
-    th,
-    td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .delete-btn {
-      color: red;
-      cursor: pointer;
-    }
-
-    .success {
-      color: #28a745;
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .error {
-      color: #dc3545;
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .info-section ul {
-      padding-left: 20px;
-    }
-
-    .info-section li {
-      margin-bottom: 10px;
-    }
-  </style>
-
-  <!-- Bàner de Cookies -->
-  <div id="cookie-banner"
-    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-      style="color: #ffc107;">Política de Cookies</a>.
-    <button onclick="acceptCookies()"
-      style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-  </div>
-
-  <script>
-    // Funció per mostrar el bàner de cookies
-    function checkCookieConsent() {
-      if (!localStorage.getItem('cookieAccepted')) {
-        document.getElementById('cookie-banner').style.display = 'block';
-      }
-    }
-
-    // Funció per acceptar cookies
-    function acceptCookies() {
-      localStorage.setItem('cookieAccepted', 'true');
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Comprovar consentiment de cookies quan es carrega la pàgina
-    window.onload = checkCookieConsent;
-  </script>
-  <script type="application/ld+json">
+  // Comprovar consentiment de cookies quan es carrega la pàgina
+  window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SportsClub",
       "name": "Club Escacs Pardinyes",
       "url": "https://escacspardinyes.com",
-      "logo": "https://escacspardinyes.com/img/logo.PNG",
-      "image": "https://escacspardinyes.com/img/about.jpeg",
+      "logo": "https://escacspardinyes.com/img/logo.webp",
+      "image": "https://escacspardinyes.com/img/about.webp",
       "description": "Club d’escacs a Lleida fundat el 1992. Oferim formació per a nens i adults, tornejos federats, activitats gratuïtes i col·laboracions socials amb escoles i entitats locals.",
       "foundingDate": "1992",
       "priceRange": "€10 al mes per a nens i adults. Sessions gratuïtes dilluns i divendres.",

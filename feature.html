@@ -1,64 +1,50 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <title>Club Escacs Pardinyes - Què Oferim</title>
-    <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.min.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JD61BZSM7X');
-    </script>
-    <!-- Bàner de Cookies -->
-    <div id="cookie-banner"
-        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-            style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()"
-            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-    </div>
-
-    <script>
-        // Funció per mostrar el bàner de cookies
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
         }
+    }
 
-        // Funció per acceptar cookies
-        function acceptCookies() {
-            localStorage.setItem('cookieAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
 
-        // Comprovar consentiment de cookies quan es carrega la pàgina
-        window.onload = checkCookieConsent;
-    </script>
-    <script type="application/ld+json">
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SportsClub",
       "name": "Club Escacs Pardinyes",
       "url": "https://escacspardinyes.com",
-      "logo": "https://escacspardinyes.com/img/logo.PNG",
+      "logo": "https://escacspardinyes.com/img/logo.webp",
       "description": "Club d’escacs a Lleida fundat el 1992. Oferim formació, tornejos federats, activitats gratuïtes i comunitat online.",
       "address": {
         "@type": "PostalAddress",
@@ -69,7 +55,7 @@
       },
       "telephone": "+34 973 23 02 06",
       "priceRange": "€10 al mes per a nens i adults. Sessions gratuïtes dilluns i divendres.",
-      "image": "https://escacspardinyes.com/img/about.jpeg",
+      "image": "https://escacspardinyes.com/img/about.webp",
       "openingHours": "Mo,Fr 18:30-20:30",
       "sameAs": [
         "https://www.instagram.com/clubescacspardinyes/",
@@ -115,16 +101,16 @@
     }
     </script>
 
-    <style>
-        .dropdown-item.lang-btn {
-            color: #fff !important;
-        }
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
 
-        .dropdown-item.lang-btn:hover {
-            color: #ffc107 !important;
-            background-color: #333;
-        }
-    </style>
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
 </head>
 
 <body class="bg-white">
@@ -189,7 +175,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/Classes-1.png" alt="Imatge de classes d'escacs">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/Classes-1.webp" alt="Imatge de classes d'escacs">
                         <i class="flaticon-chess"></i>
                     </div>
                     <div class="col-sm-7">
@@ -203,7 +189,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-2.png" alt="Imatge de tornejos d'escacs">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-2.webp" alt="Imatge de tornejos d'escacs">
                         <i class="flaticon-strategy"></i>
                     </div>
                     <div class="col-sm-7">
@@ -217,7 +203,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/carousel-3.jpeg"
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/carousel-3.webp"
                             alt="Imatge de la comunitat d'escacs">
                         <i class="flaticon-community"></i>
                     </div>
@@ -232,7 +218,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-4.jpg" alt="Imatge de motivació i suport">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-4.webp" alt="Imatge de motivació i suport">
                         <i class="flaticon-medal"></i>
                     </div>
                     <div class="col-sm-7">

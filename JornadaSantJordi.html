@@ -1,134 +1,109 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Bootstrap Bundle JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<head>
-    <meta charset="utf-8">
-    <title>Club Escacs Pardinyes - Què Oferim</title>
-    <meta content="Què Oferim del Club Escacs Pardinyes" name="description">
-    <!-- Lightbox2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <!-- Lightbox2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<style>
+    /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
+    .img-uniform {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Ajusta la imagen sin distorsionarla */
+    }
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    /* Estilos para la alineación y tamaño de las imágenes */
+    .section-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    .text-column {
+        flex: 1;
+        padding: 20px;
+    }
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    .image-column {
+        flex: 1;
+        text-align: center;
+    }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    .img-large {
+        width: 80%;
+        /* Ajusta el tamaño al 80% del contenedor */
+        max-width: 3000px;
+        /* Limita el tamaño máximo */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
+    }
 
-        gtag('config', 'G-JD61BZSM7X');
-    </script>
-    <style>
-        /* Estilo para asegurar que las imágenes tengan el mismo tamaño */
-        .img-uniform {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            /* Ajusta la imagen sin distorsionarla */
+    .dropdown-menu {
+        min-width: 260px;
+        /* Ample just per text llarg */
+        background-color: #222;
+        /* Fons igual que navbar */
+        border: none;
+    }
+
+    .dropdown-item {
+        color: white;
+        padding: 10px 20px;
+        white-space: nowrap;
+        /* Evita trencaments de línia */
+    }
+
+    .dropdown-item:hover {
+        background-color: #444;
+        color: #ffc107;
+    }
+</style>
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
+
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
         }
+    }
 
-        /* Estilos para la alineación y tamaño de las imágenes */
-        .section-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
 
-        .text-column {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .image-column {
-            flex: 1;
-            text-align: center;
-        }
-
-        .img-large {
-            width: 80%;
-            /* Ajusta el tamaño al 80% del contenedor */
-            max-width: 3000px;
-            /* Limita el tamaño máximo */
-            height: auto;
-            /* Mantiene la proporción de la imagen */
-        }
-
-        .dropdown-menu {
-            min-width: 260px;
-            /* Ample just per text llarg */
-            background-color: #222;
-            /* Fons igual que navbar */
-            border: none;
-        }
-
-        .dropdown-item {
-            color: white;
-            padding: 10px 20px;
-            white-space: nowrap;
-            /* Evita trencaments de línia */
-        }
-
-        .dropdown-item:hover {
-            background-color: #444;
-            color: #ffc107;
-        }
-    </style>
-    <style>
-        .dropdown-item.lang-btn {
-            color: #fff !important;
-        }
-
-        .dropdown-item.lang-btn:hover {
-            color: #ffc107 !important;
-            background-color: #333;
-        }
-    </style>
-    <!-- Bàner de Cookies -->
-    <div id="cookie-banner"
-        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
-            style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()"
-            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-    </div>
-
-    <script>
-        // Funció per mostrar el bàner de cookies
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
-        }
-
-        // Funció per acceptar cookies
-        function acceptCookies() {
-            localStorage.setItem('cookieAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-
-        // Comprovar consentiment de cookies quan es carrega la pàgina
-        window.onload = checkCookieConsent;
-    </script>
-    <script type="application/ld+json">
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -271,68 +246,6 @@
                 futur dels escacs a Lleida! ✨</p>
         </div>
     </div>
-
-
-    <div class="row">
-        <!-- Foto 1 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi1.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 1">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi1.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 1">
-            </a>
-        </div>
-        <!-- Foto 2 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi2.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 2">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi2.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 2">
-            </a>
-        </div>
-        <!-- Foto 3 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi3.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 3">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi3.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 3">
-            </a>
-        </div>
-        <!-- Foto 4 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi4.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 4">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi4.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 4">
-            </a>
-        </div>
-        <!-- Foto 5 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi5.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 5">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi5.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 5">
-            </a>
-        </div>
-        <!-- Foto 6 -->
-        <div class="col-md-4 mb-4">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi6.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 6">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi6.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 6">
-            </a>
-        </div>
-        <!-- Foto 7 centrada -->
-        <div class="col-md-12 mb-4 d-flex justify-content-center">
-            <a href="img/galeria/JornadaSantJordi/JornadaSantJordi7.jpeg" data-lightbox="galeria"
-                data-title="Simultània Sant@ Jordi/na 7">
-                <img src="img/galeria/JornadaSantJordi/JornadaSantJordi7.jpeg" class="img-fluid rounded"
-                    alt="Simultània Sant@ Jordi/na 7" style="max-width: 400px;">
-            </a>
-        </div>
-
-    </div>
-    <!-- Fi Secció Jornada Sant@ Jordi/na -->
 
 
 

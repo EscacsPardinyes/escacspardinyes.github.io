@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina no trobada - Club Escacs Pardinyes</title>
     <style>
         body {
-            background: url('img/404.jpg') no-repeat center center fixed;
+            background: url('img/404.webp') no-repeat center center fixed;
             background-size: cover;
             color: #FFD700;
             font-family: Arial, sans-serif;
@@ -16,12 +17,14 @@
 
         h1 {
             font-size: 100px;
-            text-shadow: 2px 2px 5px #000000; /* Sombra para que el texto destaque */
+            text-shadow: 2px 2px 5px #000000;
+            /* Sombra para que el texto destaque */
         }
 
         p {
             font-size: 22px;
-            text-shadow: 1px 1px 3px #000000; /* Sombra para mejorar la legibilidad */
+            text-shadow: 1px 1px 3px #000000;
+            /* Sombra para mejorar la legibilidad */
         }
 
         a {
@@ -32,7 +35,8 @@
             border: 2px solid #FFD700;
             display: inline-block;
             margin-top: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo semitransparente */
         }
 
         a:hover {
@@ -51,53 +55,60 @@
         }
 
         .white-rook {
-            color: #ffffff; /* Torre blanca */
+            color: #ffffff;
+            /* Torre blanca */
         }
 
         .flipped-knight {
-            transform: scaleX(-1); /* Voltea el caballo horizontalmente */
+            transform: scaleX(-1);
+            /* Voltea el caballo horizontalmente */
         }
 
         .chess-piece-container {
             display: inline-flex;
             align-items: center;
-            gap: 10px; /* Espacio entre las piezas */
+            gap: 10px;
+            /* Espacio entre las piezas */
         }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-JD61BZSM7X');
     </script>
     <!-- Bàner de Cookies -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html" style="color: #ffc107;">Política de Cookies</a>.
-    <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-</div>
+    <div id="cookie-banner"
+        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+            style="color: #ffc107;">Política de Cookies</a>.
+        <button onclick="acceptCookies()"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+    </div>
 
-<script>
-    // Funció per mostrar el bàner de cookies
-    function checkCookieConsent() {
-        if (!localStorage.getItem('cookieAccepted')) {
-            document.getElementById('cookie-banner').style.display = 'block';
+    <script>
+        // Funció per mostrar el bàner de cookies
+        function checkCookieConsent() {
+            if (!localStorage.getItem('cookieAccepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
         }
-    }
 
-    // Funció per acceptar cookies
-    function acceptCookies() {
-        localStorage.setItem('cookieAccepted', 'true');
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
+        // Funció per acceptar cookies
+        function acceptCookies() {
+            localStorage.setItem('cookieAccepted', 'true');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
 
-    // Comprovar consentiment de cookies quan es carrega la pàgina
-    window.onload = checkCookieConsent;
-</script>
+        // Comprovar consentiment de cookies quan es carrega la pàgina
+        window.onload = checkCookieConsent;
+    </script>
 
 </head>
+
 <body>
     <div class="chess-piece-container">
         <h1 class="chess-pieces white-rook">♖</h1> <!-- Torre blanca -->
@@ -105,7 +116,9 @@
     </div>
     <p>Uh-oh! Sembla que has fet un moviment incorrecte...</p>
     <p>Ho sentim, però la pàgina que estàs buscant no existeix.</p>
-    <div class="fun-message">No et preocupis, fins i tot els millors jugadors d'escacs es perden de tant en tant! 😉</div>
+    <div class="fun-message">No et preocupis, fins i tot els millors jugadors d'escacs es perden de tant en tant! 😉
+    </div>
     <a href="index.html">Torna a la pàgina principal</a>
 </body>
+
 </html>
