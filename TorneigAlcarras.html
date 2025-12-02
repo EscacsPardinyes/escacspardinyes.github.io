@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>1r Torneig d’Escacs Vila d’Alcarràs - La Marató - Bases i Inscripcions</title>
-    <meta content="Inscriu-te al 1r Torneig d'Escacs Vila d'Alcarràs a benefici de La Marató. Tota la informació de bases, horaris i format de joc (5'+3"), trofeus i sorteigs." name="description">
+    <meta
+        content="Inscriu-te al 1r Torneig d'Escacs Vila d'Alcarràs a benefici de La Marató. Tota la informació de bases, horaris i format de joc (5'+3"
+        ), trofeus i sorteigs." name="description">
 
     <link href="img/favicon.ico" rel="icon">
 
@@ -13,17 +15,30 @@
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <link href="css/style.min.css" rel="stylesheet">
+    <style>
+        .dropdown-item.lang-btn {
+            color: #fff !important;
+        }
+
+        .dropdown-item.lang-btn:hover {
+            color: #ffc107 !important;
+            background-color: #333;
+        }
+    </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-    
+
         gtag('config', 'G-JD61BZSM7X');
     </script>
-    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html" style="color: #ffc107;">Política de Cookies</a>.
-        <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+    <div id="cookie-banner"
+        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+            style="color: #ffc107;">Política de Cookies</a>.
+        <button onclick="acceptCookies()"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
     </div>
 
     <script>
@@ -101,102 +116,159 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link">Inici</a>
-                    <a href="about.html" class="nav-item nav-link">Sobre Nosaltres</a>
-                    <a href="feature.html" class="nav-item nav-link">Què Oferim</a>
-                    <a href="school.html" class="nav-item nav-link">Escola d’Escacs</a>
-                    <a href="contact.html" class="nav-item nav-link ">Contacte</a>
+                    <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inici</a>
+                    <a href="about.html" class="nav-item nav-link" data-i18n="nav.about">Sobre Nosaltres</a>
+                    <a href="feature.html" class="nav-item nav-link" data-i18n="nav.feature">Què Oferim</a>
+                    <a href="school.html" class="nav-item nav-link" data-i18n="nav.school">Escola d’Escacs</a>
+                    <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacte</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">🌐 <i
+                                class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0">
+                            <a href="#" class="dropdown-item lang-btn" data-lang="ca">Català</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="es">Español</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="en">English</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
     <!-- Capçalera de la Pàgina -->
     <div class="container-fluid page-header mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">1r Torneig d’Escacs Vila d’Alcarràs - La Marató</h4>
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
+            style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold"
+                data-i18n="alcarras.header">1r Torneig d’Escacs Vila d’Alcarràs - La Marató</h4>
             <div class="d-inline-flex">
-                <p class="m-0 text-white"><a class="text-white" href="index.html">Inici</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="index.html" data-i18n="nav.home">Inici</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Torneig Benèfic</p>
+                <p class="m-0 text-white" data-i18n="alcarras.breadcrumb">Torneig Benèfic</p>
             </div>
         </div>
     </div>
     <!-- Contingut Principal del Torneig -->
     <div class="container pb-5">
-        <h2 class="text-center font-weight-bold mb-5">Inscripcions i Bases per al 1r Torneig d’Escacs Vila d’Alcarràs a favor de La Marató</h2>
+        <h2 class="text-center font-weight-bold mb-5" data-i18n="alcarras.title">Inscripcions i Bases per al 1r Torneig
+            d’Escacs Vila d’Alcarràs a favor de La Marató</h2>
         <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0 text-center">
                 <!-- Imatge del cartell: CORREGIDA la ruta a cartell-alcarras.jpg (segons la vostra estructura) -->
-                <img src="img/cartell-alcarras.jpg" alt="Cartell oficial del 1r Torneig d'Escacs Vila d'Alcarràs La Marató" class="img-fluid rounded shadow" onerror="this.onerror=null; this.src='https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS'">
-                
+                <img src="img/cartell-alcarras.jpg"
+                    alt="Cartell oficial del 1r Torneig d'Escacs Vila d'Alcarràs La Marató"
+                    class="img-fluid rounded shadow"
+                    onerror="this.onerror=null; this.src='https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS'">
+
                 <div class="mt-4 text-left">
-                    <h3 class="mt-4 mb-3">Detalls de l'Esdeveniment:</h3>
-                    
+                    <h3 class="mt-4 mb-3" data-i18n="alcarras.details_title">Detalls de l'Esdeveniment:</h3>
+
                     <!-- Text actualitzat per clarificar que l'Ajuntament col·labora -->
-                    <p>El Club Escacs Pardinyes organitza el <strong class="text-dark">1r Torneig d’Escacs Vila d’Alcarràs</strong> benèfic per recaptar fons per a <strong class="text-dark">La Marató</strong>, amb la col·laboració de l'Ajuntament d'Alcarràs i diversos patrocinadors.</p>
-                    
-                    <h4 class="mt-4 mb-2"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Data, Hora i Lloc</h4>
+                    <p data-i18n="alcarras.intro_text">El Club Escacs Pardinyes organitza el <strong
+                            class="text-dark">1r Torneig d’Escacs Vila d’Alcarràs</strong> benèfic per recaptar fons per
+                        a <strong class="text-dark">La Marató</strong>, amb la col·laboració de l'Ajuntament d'Alcarràs
+                        i diversos patrocinadors.</p>
+
+                    <h4 class="mt-4 mb-2" data-i18n="alcarras.info_title"><i
+                            class="fa fa-map-marker-alt text-primary mr-2"></i>Data, Hora i Lloc</h4>
                     <ul class="list-unstyled ml-4">
                         <!-- Data ACTUALITZADA a "Dilluns 8 de Desembre de 2025" segons el cartell -->
-                        <li><i class="fa fa-calendar-alt text-primary mr-2"></i><strong class="text-dark">Data:</strong> Dilluns 8 de Desembre de 2025</li>
-                        <li><i class="fa fa-clock text-primary mr-2"></i><strong class="text-dark">Hora:</strong> 10:00h (Inici de la 1a Ronda)</li>
-                        <li><i class="fa fa-map-pin text-primary mr-2"></i><strong class="text-dark">Lloc:</strong> Centre Cultural 'Lo Casino', Alcarràs</li>
+                        <li data-i18n="alcarras.date"><i class="fa fa-calendar-alt text-primary mr-2"></i><strong
+                                class="text-dark">Data:</strong> Dilluns 8 de Desembre de 2025</li>
+                        <li data-i18n="alcarras.time"><i class="fa fa-clock text-primary mr-2"></i><strong
+                                class="text-dark">Hora:</strong> 10:00h (Inici de la 1a Ronda)</li>
+                        <li data-i18n="alcarras.location"><i class="fa fa-map-pin text-primary mr-2"></i><strong
+                                class="text-dark">Lloc:</strong> Centre Cultural 'Lo Casino', Alcarràs</li>
                     </ul>
-                    
-                    <h4 class="mt-4 mb-2"><i class="fa fa-book-open text-primary mr-2"></i>Bases i Format de Joc</h4>
+
+                    <h4 class="mt-4 mb-2" data-i18n="alcarras.rules_title"><i
+                            class="fa fa-book-open text-primary mr-2"></i>Bases i Format de Joc</h4>
                     <ul class="list-unstyled ml-4">
-                        <li><strong class="text-dark">Format:</strong> Suís a 7 rondes.</li>
-                        <li><strong class="text-dark">Ritme de Joc:</strong> 5 minuts per jugador amb un increment de 3 segons per jugada (5'+3").</li>
-                        <li><strong class="text-dark">Inscripció:</strong> 3 € efectiu (Tots els diners destinats a La Marató).</li>
-                        <li><strong class="text-dark">Confirmació d'inscripcions:</strong> 9:30h.</li>
+                        <li data-i18n="alcarras.format"><strong class="text-dark">Format:</strong> Suís a 7 rondes.</li>
+                        <li data-i18n="alcarras.rhythm"><strong class="text-dark">Ritme de Joc:</strong> 5 minuts per
+                            jugador amb un increment de 3 segons per jugada (5'+3").</li>
+                        <li data-i18n="alcarras.fee"><strong class="text-dark">Inscripció:</strong> 3 € efectiu (Tots
+                            els diners destinats a La Marató).</li>
+                        <li data-i18n="alcarras.confirmation"><strong class="text-dark">Confirmació
+                                d'inscripcions:</strong> 9:30h.</li>
                     </ul>
 
                     <!-- NOU: Secció de Trofeus i Premis -->
-                    <h4 class="mt-4 mb-2"><i class="fa fa-trophy text-warning mr-2"></i>Trofeus</h4>
+                    <h4 class="mt-4 mb-2" data-i18n="alcarras.trophies_title"><i
+                            class="fa fa-trophy text-warning mr-2"></i>Trofeus</h4>
                     <ul class="list-unstyled ml-4">
-                        <li><strong class="text-dark">General:</strong> 1r, 2n i 3r classificat.</li>
-                        <li><strong class="text-dark">Veterà:</strong> 1r classificat Major de 60 anys (+60).</li>
-                        <li><strong class="text-dark">No Federat:</strong> 1r classificat No Federat.</li>
-                        <li><strong class="text-dark">Local:</strong> 1r Millor Jugador Local.</li>
-                        <li><strong class="text-dark">Categories per edats:</strong> 1r Sub 14, 1r Sub 12, 1r Sub 10 i 1r Sub 8.</li>
+                        <li data-i18n="alcarras.trophy_general"><strong class="text-dark">General:</strong> 1r, 2n i 3r
+                            classificat.</li>
+                        <li data-i18n="alcarras.trophy_veteran"><strong class="text-dark">Veterà:</strong> 1r
+                            classificat Major de 60 anys (+60).</li>
+                        <li data-i18n="alcarras.trophy_non_federated"><strong class="text-dark">No Federat:</strong> 1r
+                            classificat No Federat.</li>
+                        <li data-i18n="alcarras.trophy_local"><strong class="text-dark">Local:</strong> 1r Millor
+                            Jugador Local.</li>
+                        <li data-i18n="alcarras.trophy_age"><strong class="text-dark">Categories per edats:</strong> 1r
+                            Sub 14, 1r Sub 12, 1r Sub 10 i 1r Sub 8.</li>
                     </ul>
 
                     <!-- NOU: Secció de Sorteig - Text modificat sobre les samarretes -->
-                    <h4 class="mt-4 mb-2"><i class="fa fa-gift text-success mr-2"></i>Sorteig de Regals</h4>
-                    <p class="ml-4">Entre tots els participants se sortejaran els següents premis: 
-                        <li><strong class="text-dark">1 Samarreta Personalitzada Exclusiva</strong> del 1r Torneig d’Escacs Vila d’Alcarràs Talla infantil cortesia de Caypri Laser i Confecciones Priego.</li>
-                        <li><strong class="text-dark">1 Samarreta Personalitzada Exclusiva</strong> del 1r Torneig d’Escacs Vila d’Alcarràs Talla adult cortesia de Caypri Laser i Confecciones Priego.</li>
-                        <li><strong class="text-dark">1 Massatge</strong> cortesia de Rakys.</li>
-                    </ul>
-                    
-                    <h4 class="mt-4 mb-2"><i class="fa fa-heart text-danger mr-2"></i>Objectiu Benèfic</h4>
-                    <p class="ml-4"><strong class="text-dark"> Tots els diners recaptats seran donats íntegrament a La Marató 2025, dedicada a la recerca del Càncer. </strong> La vostra participació és la millor contribució a aquesta causa solidària.
-                    <p class="mt-4 font-weight-bold text-danger">La inscripció es considerarà vàlida un cop s'hagi enviat el formulari i s'hagi realitzat el pagament de 3€ el dia del torneig.</p>
+                    <h4 class="mt-4 mb-2" data-i18n="alcarras.raffle_title"><i
+                            class="fa fa-gift text-success mr-2"></i>Sorteig de Regals</h4>
+                    <p class="ml-4" data-i18n="alcarras.raffle_text">Entre tots els participants se sortejaran els
+                        següents premis:
+                        <li data-i18n="alcarras.raffle_shirt_child"><strong class="text-dark">1 Samarreta Personalitzada
+                                Exclusiva</strong> del 1r Torneig d’Escacs Vila d’Alcarràs Talla infantil cortesia de
+                            Caypri Laser i Confecciones Priego.</li>
+                        <li data-i18n="alcarras.raffle_shirt_adult"><strong class="text-dark">1 Samarreta Personalitzada
+                                Exclusiva</strong> del 1r Torneig d’Escacs Vila d’Alcarràs Talla adult cortesia de
+                            Caypri Laser i Confecciones Priego.</li>
+                        <li data-i18n="alcarras.raffle_massage"><strong class="text-dark">1 Massatge</strong> cortesia
+                            de Rakys.</li>
+                        </ul>
+
+                    <h4 class="mt-4 mb-2" data-i18n="alcarras.charity_title"><i
+                            class="fa fa-heart text-danger mr-2"></i>Objectiu Benèfic</h4>
+                    <p class="ml-4" data-i18n="alcarras.charity_text"><strong class="text-dark"> Tots els diners
+                            recaptats seran donats íntegrament a La Marató 2025, dedicada a la recerca del Càncer.
+                        </strong> La vostra participació és la millor contribució a aquesta causa solidària.
+                    <p class="mt-4 font-weight-bold text-danger" data-i18n="alcarras.charity_warning">La inscripció es
+                        considerarà vàlida un cop s'hagi enviat el formulari i s'hagi realitzat el pagament de 3€ el dia
+                        del torneig.</p>
                 </div>
             </div>
-            
+
             <div class="col-lg-6">
-                <h3 class="text-center font-weight-bold mb-3">Formulari d'Inscripció</h3>
+                <h3 class="text-center font-weight-bold mb-3" data-i18n="alcarras.form_title">Formulari d'Inscripció
+                </h3>
                 <!-- Formulari actualitzat amb la URL correcta -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTAPy9iZpo-l7Emk4iBSKVjxhTq9IBk3Yl443lbAr4kka6Zw/viewform?embedded=true" width="100%" height="1624" frameborder="0" marginheight="0" marginwidth="0">S'està carregant…</iframe>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeTAPy9iZpo-l7Emk4iBSKVjxhTq9IBk3Yl443lbAr4kka6Zw/viewform?embedded=true"
+                    width="100%" height="1624" frameborder="0" marginheight="0" marginwidth="0">S'està
+                    carregant…</iframe>
             </div>
         </div>
     </div>
     <!-- Fi del Contingut Principal del Torneig -->
-    
+
     <!-- INICI FOOTER (Contacte i Xarxes Socials) - Afegida classe bg-dark per visibilitat -->
     <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white bg-dark">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Contacta'ns</h4>
+                <h4 class="text-primary mb-4" data-i18n="footer.contact">Contacta'ns</h4>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
                 <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;"
+                        href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -206,19 +278,22 @@
     <!-- INICI COPYRIGHT -->
     <div class="container border-top border-dark pt-5">
         <p class="m-0 text-center text-black">
-            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets reservats. Fundat l'any 1992.
+            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
+            reservats. Fundat l'any 1992.
         </p>
     </div>
     <!-- FI COPYRIGHT -->
-    
+
     <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/main.js"></script>
 </body>
 

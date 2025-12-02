@@ -17,11 +17,21 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
+    <style>
+        .dropdown-item.lang-btn {
+            color: #fff !important;
+        }
+
+        .dropdown-item.lang-btn:hover {
+            color: #ffc107 !important;
+            background-color: #333;
+        }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-JD61BZSM7X');
@@ -64,7 +74,8 @@
         }
 
         /* Estil per al text i enllaços */
-        .cookie-container p, .cookie-container li {
+        .cookie-container p,
+        .cookie-container li {
             font-size: 1.1em;
             color: #555;
             margin-bottom: 10px;
@@ -90,28 +101,31 @@
         }
     </style>
     <!-- Bàner de Cookies -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
-    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html" style="color: #ffc107;">Política de Cookies</a>.
-    <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
-</div>
+    <div id="cookie-banner"
+        style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+        Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+            style="color: #ffc107;">Política de Cookies</a>.
+        <button onclick="acceptCookies()"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+    </div>
 
-<script>
-    // Funció per mostrar el bàner de cookies
-    function checkCookieConsent() {
-        if (!localStorage.getItem('cookieAccepted')) {
-            document.getElementById('cookie-banner').style.display = 'block';
+    <script>
+        // Funció per mostrar el bàner de cookies
+        function checkCookieConsent() {
+            if (!localStorage.getItem('cookieAccepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
         }
-    }
 
-    // Funció per acceptar cookies
-    function acceptCookies() {
-        localStorage.setItem('cookieAccepted', 'true');
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
+        // Funció per acceptar cookies
+        function acceptCookies() {
+            localStorage.setItem('cookieAccepted', 'true');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
 
-    // Comprovar consentiment de cookies quan es carrega la pàgina
-    window.onload = checkCookieConsent;
-</script>
+        // Comprovar consentiment de cookies quan es carrega la pàgina
+        window.onload = checkCookieConsent;
+    </script>
 
 </head>
 
@@ -127,12 +141,21 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link">Inici</a>
-                    <a href="about.html" class="nav-item nav-link" >Sobre Nosaltres</a>
-                    <a href="feature.html" class="nav-item nav-link ">Què Oferim</a>
-                    <a href="school.html" class="nav-item nav-link">Escola d’Escacs</a>
-                    <a href="federat.html" class="nav-item nav-link ">Federat</a>                    
-                    <a href="contact.html" class="nav-item nav-link">Contacte</a>
+                    <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inici</a>
+                    <a href="about.html" class="nav-item nav-link" data-i18n="nav.about">Sobre Nosaltres</a>
+                    <a href="feature.html" class="nav-item nav-link" data-i18n="nav.feature">Què Oferim</a>
+                    <a href="school.html" class="nav-item nav-link" data-i18n="nav.school">Escola d’Escacs</a>
+                    <a href="federat.html" class="nav-item nav-link" data-i18n="nav.federated">Federat</a>
+                    <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacte</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">🌐 <i
+                                class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0">
+                            <a href="#" class="dropdown-item lang-btn" data-lang="ca">Català</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="es">Español</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="en">English</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -141,97 +164,125 @@
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Política de Cookies - Club Escacs Pardinyes</h4>
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
+            style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold"
+                data-i18n="cookies.header">Política de Cookies - Club Escacs Pardinyes</h4>
         </div>
     </div>
     <!-- Page Header End -->
 
-    
+
     <!-- Contingut de la Política de Cookies -->
     <div class="cookie-container">
-        <h1>Política de Cookies</h1>
+        <h1 data-i18n="cookies.title">Política de Cookies</h1>
 
-        <p>Aquesta pàgina web utilitza cookies per millorar la teva experiència i garantir el correcte funcionament del lloc. A continuació, et proporcionem informació detallada sobre què són les cookies, els tipus de cookies que utilitzem i com pots gestionar-les.</p>
+        <p data-i18n="cookies.intro">Aquesta pàgina web utilitza cookies per millorar la teva experiència i garantir el
+            correcte funcionament del lloc. A continuació, et proporcionem informació detallada sobre què són les
+            cookies, els tipus de cookies que utilitzem i com pots gestionar-les.</p>
 
-        <h2>Què són les Cookies?</h2>
-        <p>Les cookies són petits arxius de text que s’emmagatzemen al teu dispositiu (ordinador, tauleta o mòbil) quan visites determinades pàgines web. Les cookies ajuden a recordar informació sobre la teva visita, com el teu idioma preferit o configuracions, facilitant la navegació i millorant l’experiència d’usuari.</p>
+        <h2 data-i18n="cookies.what_are_title">Què són les Cookies?</h2>
+        <p data-i18n="cookies.what_are_text">Les cookies són petits arxius de text que s’emmagatzemen al teu dispositiu
+            (ordinador, tauleta o mòbil) quan visites determinades pàgines web. Les cookies ajuden a recordar informació
+            sobre la teva visita, com el teu idioma preferit o configuracions, facilitant la navegació i millorant
+            l’experiència d’usuari.</p>
 
-        <h2>Tipus de Cookies que Utilitzem</h2>
+        <h2 data-i18n="cookies.types_title">Tipus de Cookies que Utilitzem</h2>
         <ul>
-            <li><strong>Cookies Necessàries</strong>: Aquestes cookies són essencials per al correcte funcionament del lloc web i no poden ser desactivades als nostres sistemes.</li>
-            <li><strong>Cookies de Preferències</strong>: Aquestes cookies permeten al lloc recordar informació que canvia l’aspecte o el comportament del lloc, com el teu idioma preferit.</li>
-            <li><strong>Cookies d’Estadístiques</strong>: Aquestes cookies ens ajuden a entendre com els visitants interactuen amb el lloc web recopilant i proporcionant informació de manera anònima.</li>
-            <li><strong>Cookies de Màrqueting</strong>: Utilitzades per rastrejar els visitants a través de les pàgines per mostrar anuncis rellevants per a cada usuari.</li>
+            <li data-i18n="cookies.type_necessary"><strong>Cookies Necessàries</strong>: Aquestes cookies són essencials
+                per al correcte funcionament del lloc web i no poden ser desactivades als nostres sistemes.</li>
+            <li data-i18n="cookies.type_preferences"><strong>Cookies de Preferències</strong>: Aquestes cookies permeten
+                al lloc recordar informació que canvia l’aspecte o el comportament del lloc, com el teu idioma preferit.
+            </li>
+            <li data-i18n="cookies.type_statistics"><strong>Cookies d’Estadístiques</strong>: Aquestes cookies ens
+                ajuden a entendre com els visitants interactuen amb el lloc web recopilant i proporcionant informació de
+                manera anònima.</li>
+            <li data-i18n="cookies.type_marketing"><strong>Cookies de Màrqueting</strong>: Utilitzades per rastrejar els
+                visitants a través de les pàgines per mostrar anuncis rellevants per a cada usuari.</li>
         </ul>
 
-        <h2>Com Gestionar les Cookies</h2>
-        <p>Pots configurar el teu navegador per acceptar o rebutjar les cookies, així com per eliminar-les quan finalitzis la navegació. Tingues en compte que, si desactives les cookies, algunes funcionalitats del lloc poden no estar disponibles.</p>
+        <h2 data-i18n="cookies.manage_title">Com Gestionar les Cookies</h2>
+        <p data-i18n="cookies.manage_text">Pots configurar el teu navegador per acceptar o rebutjar les cookies, així
+            com per eliminar-les quan finalitzis la navegació. Tingues en compte que, si desactives les cookies, algunes
+            funcionalitats del lloc poden no estar disponibles.</p>
 
-        <h2>Gestió de Cookies en Navegadors</h2>
+        <h2 data-i18n="cookies.browser_title">Gestió de Cookies en Navegadors</h2>
         <ul>
             <li><a href="https://support.google.com/chrome/answer/95647?hl=ca" target="_blank">Google Chrome</a></li>
-            <li><a href="https://support.mozilla.org/ca/kb/activar-desactivar-cookies-preferencies" target="_blank">Mozilla Firefox</a></li>
-            <li><a href="https://support.microsoft.com/ca-es/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+            <li><a href="https://support.mozilla.org/ca/kb/activar-desactivar-cookies-preferencies"
+                    target="_blank">Mozilla Firefox</a></li>
+            <li><a href="https://support.microsoft.com/ca-es/help/17442/windows-internet-explorer-delete-manage-cookies"
+                    target="_blank">Internet Explorer</a></li>
             <li><a href="https://support.apple.com/ca-es/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
             <li><a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank">Opera</a></li>
         </ul>
 
-        <h2>Més informació</h2>
-        <p>Per a més informació sobre la nostra política de privacitat i protecció de dades, visita la nostra <a href="privacy.html">Política de Privacitat</a>.</p>
+        <h2 data-i18n="cookies.more_info_title">Més informació</h2>
+        <p data-i18n="cookies.more_info_text">Per a més informació sobre la nostra política de privacitat i protecció de
+            dades, visita la nostra <a href="privacy.html">Política de Privacitat</a>.</p>
     </div>
 
-   <!-- Contacte -->
-<div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
-    <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="text-primary mb-4">Contacta'ns</h4>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
-            <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
-            <div class="d-flex justify-content-start mt-4">
-                <!-- X (Twitter) -->
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-twitter"></i>
-</a>
+    <!-- Contacte -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4" data-i18n="footer.contact">Contacta'ns</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
+                <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <!-- X (Twitter) -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;"
+                        href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
 
-<!-- Facebook -->
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-facebook-f"></i>
-</a>
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
 
-<!-- Instagram -->
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-instagram"></i>
-</a>
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
-<!-- YouTube -->
-<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-youtube"></i>
-</a>
+                    <!-- YouTube -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
 
-<!-- Kick 
+                    <!-- Kick 
 <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://kick.com/club-escacs-pardinyes/about" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-kickstarter"></i> 
 </a> -->
 
-<!-- TikTok 
+                    <!-- TikTok 
 <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@Club_Escacs_Pardinyes" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-tiktok"></i>
 </a> -->
 
 
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Fi de Contacte -->
+    <!-- Fi de Contacte -->
 
 
     <!-- Peu de pàgina -->
     <div class="container border-top border-dark pt-5">
         <p class="m-0 text-center text-black">
-            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets reservats. Fundat l'any 1992.
+            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
+            reservats. Fundat l'any 1992.
         </p>
     </div>
     <!-- Fi del Peu de pàgina -->
@@ -246,8 +297,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
 
     <!-- Template Javascript -->
+    <!-- Template Javascript -->
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
