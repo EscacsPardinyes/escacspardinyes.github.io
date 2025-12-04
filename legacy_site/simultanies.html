@@ -1,0 +1,293 @@
+<style>
+    .dropdown-item.lang-btn {
+        color: #fff !important;
+    }
+
+    .dropdown-item.lang-btn:hover {
+        color: #ffc107 !important;
+        background-color: #333;
+    }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Este sitio web utiliza cookies para mejorar tu experiencia. Consulta nuestra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Aceptar</button>
+</div>
+
+<script>
+    // Function to show the cookie banner
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
+
+    // Function to accept cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Check cookie consent when page loads
+    window.onload = checkCookieConsent;
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Simultáneas y Taller ChessKid con WIM Ivette García",
+  "url": "https://escacspardinyes.com/simultanies.html",
+  "startDate": "2024-MM-DD",  <-- IMPORTANT: Replace with the actual date of the event
+  "endDate": "2024-MM-DD",    <-- IMPORTANT: Replace with the actual date of the event
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Club Escacs Pardinyes",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer Sant Pere Claver, 1, segona planta",
+      "addressLocality": "Lleida",
+      "postalCode": "25005",
+      "addressCountry": "ES"
+    }
+  },
+  "image": "https://escacspardinyes.com/img/cartell-simultanies-ivette.webp", <-- Ensure this image path is correct
+  "description": "Una jornada única de ajedrez con la WIM Ivette García, Directora de Español de ChessKid. Incluye simultáneas donde los participantes recibirán 2 meses gratis de ChessKid, y un taller especializado para profesores de ajedrez, con membresía de 6 meses en ChessKid para los asistentes.",
+  "performer": {
+    "@type": "Person",
+    "name": "WIM Ivette García",
+    "description": "Maestra Internacional, FIDE Instructor y comentarista de ajedrez. Directora de Español y voz de las lecciones de ChessKid. Ha representado a México en cuatro Olimpiadas Mundiales de Ajedrez."
+  },
+  "organizer": {
+    "@type": "SportsClub",
+    "name": "Club Escacs Pardinyes",
+    "url": "https://escacspardinyes.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer Sant Pere Claver, 1, segona planta",
+      "addressLocality": "Lleida",
+      "postalCode": "25005",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34 973 23 02 06",
+    "email": "escacspardinyes@gmail.com"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Participación en Simultáneas + 2 meses ChessKid",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfJWeXoLiCW5M8ElEFf_kxYGN7io4Nj6q12FF5Qy71XR20VsD/viewform?embedded=true", <-- Update with your actual form URL
+      "description": "Inscripción gratuita para participar en las simultáneas. Todos los asistentes reciben 2 meses de ChessKid."
+    },
+    {
+      "@type": "Offer",
+      "name": "Taller ChessKid para Profesores + 6 meses membresía",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfJWeXoLiCW5M8ElEFf_kxYGN7io4Nj6q12FF5Qy71XR20VsD/viewform?embedded=true", <-- Update with your actual form URL
+      "description": "Inscripción gratuita al taller. Profesores asistentes reciben 6 meses de membresía de ChessKid."
+    }
+  ]
+}
+</script>
+</head>
+
+
+
+
+<body class="bg-white">
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Club Escacs Pardinyes</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4 bg-secondary">
+                    <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inici</a>
+                    <a href="about.html" class="nav-item nav-link" data-i18n="nav.about">Sobre Nosaltres</a>
+                    <a href="feature.html" class="nav-item nav-link" data-i18n="nav.feature">Què Oferim</a>
+                    <a href="school.html" class="nav-item nav-link" data-i18n="nav.school">Escola d’Escacs</a>
+                    <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacte</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">🌐 <i
+                                class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0">
+                            <a href="#" class="dropdown-item lang-btn" data-lang="ca">Català</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="es">Español</a>
+                            <a href="#" class="dropdown-item lang-btn" data-lang="en">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
+            style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold"
+                data-i18n="simultanies.header">Simultànies amb WIM
+                Ivette García</h4>
+            <div class="d-inline-flex">
+                <p class="m-0 text-white"><a class="text-white" href="index.html" data-i18n="nav.home">Inici</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white" data-i18n="simultanies.breadcrumb">Simultànies</p>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-5">
+        <h2 class="text-center font-weight-bold mb-5" data-i18n="simultanies.title">Inscriu-te a les simultànies amb la
+            WIM Ivette García i al taller
+            ChessKid!</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                <img src="img/cartell-simultanies-ivette.webp" alt="Cartell simultànies WIM Ivette García"
+                    class="img-fluid rounded shadow">
+                <div class="mt-4 text-left">
+                    <p data-i18n="simultanies.intro">Ens complau confirmar que la WIM Ivette García, responsable de
+                        ChessKid per al món hispanoparlant
+                        i la veu en espanyol per a les lliçons de ChessKid, impartirà simultànies i un taller per a
+                        professors!</p>
+                    <h3 class="mt-4 mb-3" data-i18n="simultanies.bio_title">Coneix a Ivette García:</h3>
+                    <p data-i18n="simultanies.bio_text">Aquest mes, tindràs el plaer de conèixer a la WIM Ivette García,
+                        responsable de ChessKid per al
+                        món hispanoparlant i la veu en espanyol per a les lliçons de ChessKid! Ella va començar igual
+                        que tu, i va treballar dur per ser una jugadora, entrenadora i comentarista. Compartirà els seus
+                        millors consells per ajudar-te a millorar també. Ivette viu a Chihuahua, Mèxic, i és Maestra
+                        Internacional, FIDE Instructor i comentarista d'escacs. Ivette té molts talents diversos: per
+                        descomptat, li encanta l'escacs, i també li encanta la música. Ivette és llicenciada en Educació
+                        Física, té un MBA i ha representat al seu país natal, Mèxic, quatre vegades en l'Olimpíada
+                        Mundial d'Escacs. És considerada una de les millors escaquistes de Mèxic.</p>
+                    <h3 class="mt-4 mb-3" data-i18n="simultanies.simul_title">10:00 am a 12:00 pm: Simultànies amb WIM
+                        Ivette García</h3>
+                    <p data-i18n="simultanies.simul_text">Participa en una emocionant sessió de simultànies. Com a
+                        agraïment, tots els assistents rebran un
+                        codi QR per a dos mesos gratis de ChessKid.</p>
+
+                    <h3 class="mt-4 mb-3" data-i18n="simultanies.workshop_title">12:00 pm a 12:40 pm: Taller ChessKid
+                        per a professors</h3>
+                    <p data-i18n="simultanies.workshop_text">Aquest taller està dirigit a professors que ja utilitzen o
+                        desitgen incorporar ChessKid en les
+                        seves classes. Els professors que completin el formulari de registre per al taller rebran una
+                        subscripció de professor de ChessKid per sis mesos.</p>
+
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScTrzYJoJ3jCHoedQTs8GZkeNbPWr6mL3y_2zzrWLMyGz2t1A/viewform?embedded=true"
+                    width="100%" height="1624" frameborder="0" marginheight="0" marginwidth="0">S'està
+                    carregant…</iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5 mt-5">
+        <h2 class="text-center font-weight-bold mb-5" data-i18n="simultanies.collaborators_title">Els nostres
+            Col·laboradors</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <img src="img/cartell-colaboradors.webp" alt="Cartell de Col·laboradors del Club Escacs Pardinyes"
+                    class="img-fluid rounded shadow">
+                <div class="mt-4">
+                    <p class="lead" data-i18n="simultanies.collaborators_text1">Volem expressar el nostre més sincer
+                        agraïment a totes les entitats i persones que
+                        fan possible la nostra activitat. La vostra col·laboració és fonamental per promoure els escacs
+                        a la nostra comunitat.</p>
+                    <p data-i18n="simultanies.collaborators_text2">Si voleu formar part de la nostra xarxa de suport, no
+                        dubteu en contactar-nos!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Contacte -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4" data-i18n="footer.contact">Contacta'ns</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
+                <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <!-- X (Twitter) -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;"
+                        href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- Kick 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://kick.com/club-escacs-pardinyes/about" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-kickstarter"></i> 
+</a> -->
+
+                    <!-- TikTok 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@Club_Escacs_Pardinyes" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-tiktok"></i>
+</a> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fi de Contacte -->
+
+
+    <!-- Peu de pàgina -->
+    <div class="container border-top border-dark pt-5">
+        <p class="m-0 text-center text-black">
+            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
+            reservats. Fundat l'any 1992.
+        </p>
+    </div>
+    <!-- Fi del Peu de pàgina -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+</body>
+
+</html>

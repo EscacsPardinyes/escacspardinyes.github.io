@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+text-align: center;
+padding: 50px;
+}
+
+h1 {
+font-size: 100px;
+text-shadow: 2px 2px 5px #000000;
+/* Sombra para que el texto destaque */
+}
+
+p {
+font-size: 22px;
+text-shadow: 1px 1px 3px #000000;
+/* Sombra para mejorar la legibilidad */
+}
+
+a {
+color: #FFD700;
+text-decoration: none;
+font-weight: bold;
+padding: 10px 20px;
+border: 2px solid #FFD700;
+display: inline-block;
+margin-top: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+/* Fondo semitransparente */
+}
+
+a:hover {
+background-color: #FFD700;
+color: #000000;
+}
+
+.fun-message {
+font-size: 30px;
+font-weight: bold;
+margin-top: 40px;
+}
+
+.chess-pieces {
+font-size: 120px;
+}
+
+.white-rook {
+color: #ffffff;
+/* Torre blanca */
+}
+
+.flipped-knight {
+transform: scaleX(-1);
+/* Voltea el caballo horizontalmente */
+}
+
+.chess-piece-container {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+/* Espacio entre las piezas */
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JD61BZSM7X');
+</script>
+<!-- Bàner de Cookies -->
+<div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+        style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+        style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+</div>
+
+<script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+        if (!localStorage.getItem('cookieAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
+
+    // Funció per acceptar cookies
+    function acceptCookies() {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+</script>
+
+</head>
+
+<body>
+    <div class="chess-piece-container">
+        <h1 class="chess-pieces white-rook">♖</h1> <!-- Torre blanca -->
+        <h1 class="chess-pieces flipped-knight">♞</h1> <!-- Caballo volteado -->
+    </div>
+    <p>Uh-oh! Sembla que has fet un moviment incorrecte...</p>
+    <p>Ho sentim, però la pàgina que estàs buscant no existeix.</p>
+    <div class="fun-message">No et preocupis, fins i tot els millors jugadors d'escacs es perden de tant en tant! 😉
+    </div>
+    <a href="index.html">Torna a la pàgina principal</a>
+    <!-- Contacte -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4" data-i18n="footer.contact">Contacta'ns</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
+                <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <!-- X (Twitter) -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;"
+                        href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- Kick 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://kick.com/club-escacs-pardinyes/about" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-kickstarter"></i> 
+</a> -->
+
+                    <!-- TikTok 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@Club_Escacs_Pardinyes" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-tiktok"></i>
+</a> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fi de Contacte -->
+
+
+    <!-- Peu de pàgina -->
+    <div class="container border-top border-dark pt-5">
+        <p class="m-0 text-center text-black">
+            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
+            reservats. Fundat l'any 1992.
+        </p>
+    </div>
+    <!-- Fi del Peu de pàgina -->
+</body>
+
+</html>

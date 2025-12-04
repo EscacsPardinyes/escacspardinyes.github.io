@@ -1,0 +1,29 @@
+/*
+Este archivo contiene estilos CSS para mejorar la elegancia y la interacción.
+*/
+
+/* Efecto de elevación sutil en las cajas de características */
+.feature-box {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px); /* Eleva el bloque 5px */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilo para el selector de idioma para que quede mejor integrado */
+.language-selector a {
+    text-decoration: none;
+    padding: 2px 4px;
+    transition: all 0.2s;
+}
+
+.language-selector a:hover {
+    color: #ffc107 !important; /* Color de acento (amarillo) al pasar el ratón */
+}
+
+.language-selector a.font-weight-bold {
+    /* Estilo para el idioma activo */
+    border-bottom: 2px solid #ffc107; 
+}

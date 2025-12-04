@@ -1,0 +1,17 @@
+.dropdown-item.lang-btn {
+    color: #fff !important;
+}
+
+.dropdown-item.lang-btn:hover {
+    color: #ffc107 !important;
+    background-color: #333;
+}
+
+.dropdown-item {
+    color: #fff !important;
+}
+
+.dropdown-item:hover {
+    color: #ffc107 !important;
+    background-color: #333;
+}

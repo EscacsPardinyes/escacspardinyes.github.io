@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora d'ELO - Club Escacs Pardinyes</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style>
+    .dropdown-item.lang-btn {
+      color: #fff !important;
+    }
+
+    .dropdown-item.lang-btn:hover {
+      color: #ffc107 !important;
+      background-color: #333;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD61BZSM7X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JD61BZSM7X');
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .main-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .input-section,
+    .info-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-section {
+      width: 400px;
+    }
+
+    .info-section {
+      width: 400px;
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .inline-inputs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .inline-inputs input,
+    .inline-inputs select {
+      flex: 1;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+    }
+
+    .success {
+      color: #28a745;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .error {
+      color: #dc3545;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .info-section li {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- Bàner de Cookies -->
+  <div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; display: none; z-index: 1000;">
+    Aquest lloc web utilitza cookies per millorar la teva experiència. Consulta la nostra <a href="cookies.html"
+      style="color: #ffc107;">Política de Cookies</a>.
+    <button onclick="acceptCookies()"
+      style="margin-left: 10px; padding: 5px 10px; background-color: #ffc107; border: none; color: black;">Acceptar</button>
+  </div>
+
+  <script>
+    // Funció per mostrar el bàner de cookies
+    function checkCookieConsent() {
+      if (!localStorage.getItem('cookieAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    }
+
+    // Funció per acceptar cookies
+    function acceptCookies() {
+      localStorage.setItem('cookieAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Comprovar consentiment de cookies quan es carrega la pàgina
+    window.onload = checkCookieConsent;
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "Club Escacs Pardinyes",
+      "url": "https://escacspardinyes.com",
+      "logo": "https://escacspardinyes.com/img/logo.webp",
+      "image": "https://escacspardinyes.com/img/about.webp",
+      "description": "Club d’escacs a Lleida fundat el 1992. Oferim formació per a nens i adults, tornejos federats, activitats gratuïtes i col·laboracions socials amb escoles i entitats locals.",
+      "foundingDate": "1992",
+      "priceRange": "€10 al mes per a nens i adults. Sessions gratuïtes dilluns i divendres.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer Sant Pere Claver, 1, segona planta",
+        "addressLocality": "Lleida",
+        "postalCode": "25005",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 973 23 02 06",
+      "email": "escacspardinyes@gmail.com",
+      "openingHours": "Mo,Fr 18:30-20:30",
+      "sameAs": [
+        "https://www.instagram.com/clubescacspardinyes/",
+        "https://www.facebook.com/profile.php?id=61553973365334",
+        "https://x.com/EscacsPardinyes",
+        "https://www.youtube.com/@ClubEscacsPardinyes",
+        "https://www.chess.com/club/club-escacs-pardinyes"
+      ]
+    }
+    </script>
+</head>
+
+<body class="bg-white">
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Club Escacs Pardinyes</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto p-4 bg-secondary">
+          <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inici</a>
+          <a href="about.html" class="nav-item nav-link" data-i18n="nav.about">Sobre Nosaltres</a>
+          <a href="feature.html" class="nav-item nav-link" data-i18n="nav.feature">Què Oferim</a>
+          <a href="school.html" class="nav-item nav-link" data-i18n="nav.school">Escola d’Escacs</a>
+          <a href="federat.html" class="nav-item nav-link" data-i18n="nav.federated">Federat</a>
+          <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacte</a>
+          <a href="CalculadoraELO.html" class="nav-item nav-link active" data-i18n="elo.header">Calculadora d'ELO</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">🌐 <i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0">
+              <a href="#" class="dropdown-item lang-btn" data-lang="ca">Català</a>
+              <a href="#" class="dropdown-item lang-btn" data-lang="es">Español</a>
+              <a href="#" class="dropdown-item lang-btn" data-lang="en">English</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+      <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold" data-i18n="elo.header">
+        Calculadora d'ELO</h4>
+      <div class="d-inline-flex">
+        <p class="m-0 text-white"><a class="text-white" href="index.html">Inici</a></p>
+        <p class="m-0 text-white px-2">/</p>
+        <p class="m-0 text-white">Calculadora d'ELO</p>
+      </div>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+
+  <h1 data-i18n="elo.title">Calculadora d'ELO Torneig ♟️</h1>
+  <div class="main-container">
+
+    <div class="input-section">
+      <div class="inline-inputs">
+        <div>
+          <label for="playerElo" data-i18n="elo.initial_elo">El teu ELO inicial</label>
+          <input type="number" id="playerElo">
+        </div>
+        <div>
+          <label for="kFactor" data-i18n="elo.k_factor">Valor de K</label>
+          <select id="kFactor">
+            <option value="40">K = 40</option>
+            <option value="20">K = 20</option>
+            <option value="10">K = 10</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div id="firstRival" class="inline-inputs">
+        <div>
+          <label id="opponentLabel" data-i18n="elo.opponent_elo">ELO rival</label>
+          <input type="number" id="opponentElo">
+        </div>
+        <div>
+          <label id="resultLabel" data-i18n="elo.result">Resultat</label>
+          <select id="result">
+            <option value="1" data-i18n="elo.win">Victòria - 1</option>
+            <option value="0.5" data-i18n="elo.draw">Taules - 0.5</option>
+            <option value="0" data-i18n="elo.loss">Derrota - 0</option>
+          </select>
+        </div>
+      </div>
+      <div id="variationFirst" class="variation"></div>
+      <div class="rivals-container" id="rivalsContainer"></div>
+      <div class="inline-inputs">
+        <button onclick="addGame()" data-i18n="elo.btn_add">Afegir rival</button>
+        <button onclick="calculateTournamentElo()" data-i18n="elo.btn_calc">Calcular</button>
+      </div>
+      <div id="counter">Rivals afegits: 0/10</div>
+      <div id="errorLimit" class="info-error"></div>
+      <div id="newElo"></div>
+    </div>
+
+    <div class="info-section">
+      <h2 data-i18n="elo.k_value_title">Valor de K:</h2>
+      <ul>
+        <li data-i18n="elo.k_40"><strong>K = 40</strong> ➔ Jugadors nous (menys de 40 partides).</li>
+        <li data-i18n="elo.k_20"><strong>K = 20</strong> ➔ Jugadors amb ELO inferior a 2400.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    let rivals = [];
+    let playerEloInitial = 0;
+    let kFactorValue = 40;
+
+    function addGame() {
+      const opponentElo = document.getElementById('opponentElo').value;
+      const result = document.getElementById('result').value;
+      const errorLimit = document.getElementById('errorLimit');
+
+      if (rivals.length >= 9) {
+        errorLimit.textContent = "❌ Màxim 10 rivals.";
+        errorLimit.style.display = "block";
+        return;
+      }
+      errorLimit.style.display = "none";
+
+      rivals.push({ opponentElo: Number(opponentElo), result: Number(result) });
+      updateRivals();
+    }
+
+    function updateRivals() {
+      const container = document.getElementById('rivalsContainer');
+      container.innerHTML = '';
+      rivals.forEach((rival, index) => {
+        const block = document.createElement('div');
+        block.className = 'rival-block';
+        block.innerHTML = `
+              <div class="inline-inputs">
+                <div>
+                  <label>ELO rival ronda ${index + 2}</label>
+                  <input type="number" value="${rival.opponentElo}" onchange="updateRivalElo(${index}, this.value)">
+                </div>
+                <div>
+                  <label>Resultat ronda ${index + 2}</label>
+                  <select onchange="updateRivalResult(${index}, this.value)">
+                    <option value="1" ${rival.result == 1 ? 'selected' : ''}>Victòria - 1</option>
+                    <option value="0.5" ${rival.result == 0.5 ? 'selected' : ''}>Taules - 0.5</option>
+                    <option value="0" ${rival.result == 0 ? 'selected' : ''}>Derrota - 0</option>
+                  </select>
+                </div>
+                <i class="fas fa-trash delete-btn" onclick="deleteRival(${index})"></i>
+              </div>
+              <div class="variation" id="variation${index + 2}"></div>
+            `;
+        container.appendChild(block);
+      });
+
+      document.getElementById('counter').textContent = `Rivals afegits: ${rivals.length + 1}/10`;
+    }
+
+    function deleteRival(index) {
+      rivals.splice(index, 1);
+      updateRivals();
+    }
+
+    function updateRivalElo(index, value) {
+      rivals[index].opponentElo = Number(value);
+    }
+
+    function updateRivalResult(index, value) {
+      rivals[index].result = Number(value);
+    }
+
+    function calculateTournamentElo() {
+      const playerElo = Number(document.getElementById('playerElo').value);
+      const kFactor = Number(document.getElementById('kFactor').value);
+      const opponentEloFirst = Number(document.getElementById('opponentElo').value);
+      const resultFirst = Number(document.getElementById('result').value);
+
+      let newElo = playerElo;
+      let totalVariation = 0;
+
+      function calculateVariation(player, opponent, result, k) {
+        const expectedScore = 1 / (1 + Math.pow(10, (opponent - player) / 400));
+        return k * (result - expectedScore);
+      }
+
+      const variationFirst = calculateVariation(playerElo, opponentEloFirst, resultFirst, kFactor);
+      document.getElementById('variationFirst').innerHTML = `➔ Variació ronda 1: ${variationFirst.toFixed(1) > 0 ? '+' : ''}${variationFirst.toFixed(1)}`;
+      totalVariation += variationFirst;
+
+      rivals.forEach((rival, index) => {
+        const variation = calculateVariation(playerElo, rival.opponentElo, rival.result, kFactor);
+        document.getElementById(`variation${index + 2}`).innerHTML = `➔ Variació ronda ${index + 2}: ${variation.toFixed(1) > 0 ? '+' : ''}${variation.toFixed(1)}`;
+        totalVariation += variation;
+      });
+
+      newElo = playerElo + totalVariation;
+
+      const newEloElement = document.getElementById('newElo');
+      newEloElement.innerHTML = `
+        <div class="alert alert-info mt-3">
+            <h4 class="alert-heading">Resultat:</h4>
+            <p class="mb-0">Nou ELO: <strong>${Math.round(newElo)}</strong></p>
+            <p class="mb-0">Variació total: <strong>${totalVariation > 0 ? '+' : ''}${totalVariation.toFixed(1)}</strong></p>
+        </div>
+      `;
+    }
+  </script>
+
+      <!-- Contacte -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4" data-i18n="footer.contact">Contacta'ns</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 973 23 02 06</p>
+                <p><i class="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <!-- X (Twitter) -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;"
+                        href="https://x.com/EscacsPardinyes?t=ay6leO2o66iLH8KfJB4l_Q&s=09&fbclid=PAZXh0bgNhZW0CMTEAAaYd0C4d2wpTNF8R2ziYw8tAvXs0HdOfaP_uWmfqlu7x8NY_d0omhzKJXsI_aem_gSOPQGkcPflkUMPMOVpwyw"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.facebook.com/profile.php?id=61553973365334"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.instagram.com/clubescacspardinyes/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 40px; height: 40px;" href="https://www.youtube.com/@ClubEscacsPardinyes"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- Kick 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://kick.com/club-escacs-pardinyes/about" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-kickstarter"></i> 
+</a> -->
+
+                    <!-- TikTok 
+<a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@Club_Escacs_Pardinyes" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-tiktok"></i>
+</a> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fi de Contacte -->
+
+
+    <!-- Peu de pàgina -->
+    <div class="container border-top border-dark pt-5">
+        <p class="m-0 text-center text-black">
+            &copy; <a class="text-black font-weight-bold" href="privacy.html">Club Escacs Pardinyes</a>. Tots els drets
+            reservats. Fundat l'any 1992.
+        </p>
+    </div>
+    <!-- Fi del Peu de pàgina -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/translations.js"></script>
+  <script src="js/language-switcher.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
