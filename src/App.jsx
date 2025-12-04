@@ -25,6 +25,7 @@ function App() {
           <Route path="feature" element={<Feature />} />
           <Route path="federat" element={<Federat />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy.html" element={<Privacy />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="cookies" element={<Cookies />} />
           <Route path="elo-calculator" element={<EloCalculator />} />
