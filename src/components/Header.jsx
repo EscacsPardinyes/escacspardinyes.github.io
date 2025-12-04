@@ -5,7 +5,6 @@ import { useLanguage } from '../context/LanguageContext';
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
-    const [isGalleryOpen, setIsGalleryOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -13,13 +12,6 @@ export default function Header() {
         e.preventDefault();
         e.stopPropagation();
         setIsLangOpen(!isLangOpen);
-        setIsGalleryOpen(false); // Close other dropdown
-    };
-    const toggleGallery = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsGalleryOpen(!isGalleryOpen);
-        setIsLangOpen(false); // Close other dropdown
     };
 
     const changeLanguage = (lang, e) => {
@@ -32,7 +24,6 @@ export default function Header() {
     useEffect(() => {
         const handleClickOutside = () => {
             setIsLangOpen(false);
-            setIsGalleryOpen(false);
         };
 
         document.addEventListener('click', handleClickOutside);
@@ -58,14 +49,7 @@ export default function Header() {
                         <NavLink to="/school" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.school')}</NavLink>
                         <NavLink to="/federat" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.federated')}</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.contact')}</NavLink>
-                        <NavLink to="/elo-calculator" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.elo')}</NavLink>
 
-                        <div className={`nav-item dropdown ${isGalleryOpen ? 'show' : ''}`}>
-                            <a href="#" className="nav-link dropdown-toggle" onClick={toggleGallery}>{t('nav.gallery')} <i className="fa fa-angle-down"></i></a>
-                            <div className={`dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0 ${isGalleryOpen ? 'show' : ''}`}>
-                                <NavLink to="/sant-jordi" className="dropdown-item text-white" onClick={() => { setIsMenuOpen(false); setIsGalleryOpen(false); }}>{t('nav.santjordi')}</NavLink>
-                            </div>
-                        </div>
 
                         <div className={`nav-item dropdown ${isLangOpen ? 'show' : ''}`}>
                             <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang}>

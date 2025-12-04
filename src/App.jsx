@@ -30,6 +30,7 @@ function App() {
           <Route path="elo-calculator" element={<EloCalculator />} />
           <Route path="sant-jordi" element={<SantJordi />} />
           <Route path="TorneigAlcarras.html" element={<TorneigAlcarras />} />
+          <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
           <Route path="simultanies" element={<Simultanies />} />
           <Route path="*" element={<NotFound />} />
         </Route>
