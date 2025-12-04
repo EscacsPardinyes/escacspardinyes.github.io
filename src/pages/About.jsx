@@ -93,19 +93,19 @@ export default function About() {
                 <div className="row justify-content-center text-center py-4 align-items-center">
                     <div className="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.paeria.cat" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/logopaeria-color.webp" alt="Ajuntament de Lleida" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/logopaeria-color.webp" alt="Ajuntament de Lleida" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3">{t('about.collab_paeria')}</h5>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.diputaciolleida.cat" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/diputaciolleida.webp" alt="Diputació de Lleida" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/diputaciolleida.webp" alt="Diputació de Lleida" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3">{t('about.collab_diputacio')}</h5>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.instagram.com/orvepard/" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/orvepard.webp" alt="Orvepard" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/orvepard.webp" alt="Orvepard" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3" dangerouslySetInnerHTML={tHtml('about.collab_orvepard')}></h5>
                     </div>
@@ -115,19 +115,19 @@ export default function About() {
                 <div className="row justify-content-center text-center py-4 align-items-center">
                     <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/chesscom.webp" alt="Chess.com" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/chesscom.webp" alt="Chess.com" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3">Chess.com</h5>
                     </div>
                     <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.chessnutech.com/blogs/promoting-chess-in-society-and-schools/chessnut-sponsors-lleida-s-escacs-pardinyes-club-tournament-supporting-chess-as-a-social-and-educational-activity/" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/feature-4.webp" alt="ChessNut" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/feature-4.webp" alt="ChessNut" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3">ChessNut</h5>
                     </div>
                     <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.chesskid.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/chesskid.webp" alt="ChessKid" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+                            <img src="/img/chesskid.webp" alt="ChessKid" style={{ width: '150px', height: '150px', objectFit: 'contain' }} />
                         </a>
                         <h5 className="mt-3">ChessKid</h5>
                     </div>
