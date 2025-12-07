@@ -11,6 +11,7 @@ import Cookies from './pages/Cookies';
 import EloCalculator from './pages/EloCalculator';
 import SantJordi from './pages/SantJordi';
 import TorneigAlcarras from './pages/TorneigAlcarras';
+import TorneigNadal2025 from './pages/TorneigNadal2025';
 import Simultanies from './pages/Simultanies';
 import NotFound from './pages/NotFound';
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="sant-jordi" element={<SantJordi />} />
           <Route path="TorneigAlcarras.html" element={<TorneigAlcarras />} />
           <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
+          <Route path="torneig-nadal-2025" element={<TorneigNadal2025 />} />
           <Route path="simultanies" element={<Simultanies />} />
           <Route path="*" element={<NotFound />} />
         </Route>

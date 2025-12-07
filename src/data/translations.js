@@ -307,7 +307,27 @@ export const translations = {
         "notfound.title": "Uh-oh! Sembla que has fet un moviment incorrecte...",
         "notfound.subtitle": "Ho sentim, però la pàgina que estàs buscant no existeix.",
         "notfound.message": "No et preocupis, fins i tot els millors jugadors d'escacs es perden de tant en tant! 😉",
-        "notfound.button": "Torna a la pàgina principal"
+        "notfound.button": "Torna a la pàgina principal",
+
+        // Torneig Nadal 2025
+        "nadal2025.header": "III Torneig d'Escacs de Nadal Pardinyes",
+        "nadal2025.breadcrumb": "Torneig Nadal 2025",
+        "nadal2025.title": "III Torneig d'Escacs de Nadal Pardinyes",
+        "nadal2025.slogan": "Tots els nens juguem!!!",
+        "nadal2025.details_title": "Detalls de l'Esdeveniment:",
+        "nadal2025.intro_text": "El Club Escacs Pardinyes organitza el <strong class='text-dark'>III Torneig d'Escacs de Nadal Pardinyes</strong> amb el lema <strong class='text-dark'>'Tots els nens juguem!!!'</strong>.",
+        "nadal2025.info_title": "Data, Hora i Lloc",
+        "nadal2025.date": "<strong class='text-dark'>Data:</strong> Diumenge 22 de Desembre de 2025",
+        "nadal2025.time": "<strong class='text-dark'>Hora:</strong> 10:00h",
+        "nadal2025.location": "<strong class='text-dark'>Lloc:</strong> Club ESCACS Pardinyes, Carrer Sant Pere Claver, 1, 25005 Lleida",
+        "nadal2025.rules_title": "Bases i Format de Joc",
+        "nadal2025.format": "<strong class='text-dark'>Format:</strong> Suís a 7 rondes (aprox.)",
+        "nadal2025.rhythm": "<strong class='text-dark'>Ritme de Joc:</strong> 5 minuts + 3 segons d'increment",
+        "nadal2025.fee": "<strong class='text-dark'>Inscripció:</strong> Gratuïta",
+        "nadal2025.trophies_title": "Trofeus",
+        "nadal2025.trophies": "Trofeus per edats i al millor no federat. Medalles per a tots els participants",
+        "nadal2025.form_title": "Inscripcions",
+        "nadal2025.form_placeholder": "Les inscripcions s'obriran properament."
     },
     "es": {
         "nav.home": "Inicio",
@@ -629,7 +649,27 @@ export const translations = {
         "notfound.title": "¡Uh-oh! Parece que has hecho un movimiento incorrecto...",
         "notfound.subtitle": "Lo sentimos, pero la página que estás buscando no existe.",
         "notfound.message": "¡No te preocupes, incluso los mejores jugadores de ajedrez se pierden de vez en cuando! 😉",
-        "notfound.button": "Volver a la página principal"
+        "notfound.button": "Volver a la página principal",
+
+        // Torneig Nadal 2025
+        "nadal2025.header": "III Torneo de Ajedrez de Navidad Pardinyes",
+        "nadal2025.breadcrumb": "Torneo Navidad 2025",
+        "nadal2025.title": "III Torneo de Ajedrez de Navidad Pardinyes",
+        "nadal2025.slogan": "¡¡¡Todos los niños jugamos!!!",
+        "nadal2025.details_title": "Detalles del Evento:",
+        "nadal2025.intro_text": "El Club Escacs Pardinyes organiza el <strong class='text-dark'>III Torneo de Ajedrez de Navidad Pardinyes</strong> con el lema <strong class='text-dark'>'¡¡¡Todos los niños jugamos!!!'</strong>.",
+        "nadal2025.info_title": "Fecha, Hora y Lugar",
+        "nadal2025.date": "<strong class='text-dark'>Fecha:</strong> Domingo 22 de Diciembre de 2025",
+        "nadal2025.time": "<strong class='text-dark'>Hora:</strong> 10:00h",
+        "nadal2025.location": "<strong class='text-dark'>Lugar:</strong> Club ESCACS Pardinyes, Carrer Sant Pere Claver, 1, 25005 Lleida",
+        "nadal2025.rules_title": "Bases y Formato de Juego",
+        "nadal2025.format": "<strong class='text-dark'>Formato:</strong> Suizo a 7 rondas (aprox.)",
+        "nadal2025.rhythm": "<strong class='text-dark'>Ritmo de Juego:</strong> 5 minutos + 3 segundos de incremento",
+        "nadal2025.fee": "<strong class='text-dark'>Inscripción:</strong> Gratuita",
+        "nadal2025.trophies_title": "Trofeos",
+        "nadal2025.trophies": "Trofeos por edades y al mejor no federado. Medallas para todos los participantes",
+        "nadal2025.form_title": "Inscripciones",
+        "nadal2025.form_placeholder": "Las inscripciones se abrirán próximamente."
     },
     "en": {
         "nav.home": "Home",
@@ -867,6 +907,26 @@ export const translations = {
         "notfound.title": "Uh-oh! It seems you made a wrong move...",
         "notfound.subtitle": "We are sorry, but the page you are looking for does not exist.",
         "notfound.message": "Don't worry, even the best chess players get lost from time to time! 😉",
-        "notfound.button": "Return to the main page"
+        "notfound.button": "Return to the main page",
+
+        // Torneig Nadal 2025
+        "nadal2025.header": "III Pardinyes Christmas Chess Tournament",
+        "nadal2025.breadcrumb": "Christmas Tournament 2025",
+        "nadal2025.title": "III Pardinyes Christmas Chess Tournament",
+        "nadal2025.slogan": "All children play!!!",
+        "nadal2025.details_title": "Event Details:",
+        "nadal2025.intro_text": "Club Escacs Pardinyes organizes the <strong class='text-dark'>III Pardinyes Christmas Chess Tournament</strong> with the slogan <strong class='text-dark'>'All children play!!!'</strong>.",
+        "nadal2025.info_title": "Date, Time and Location",
+        "nadal2025.date": "<strong class='text-dark'>Date:</strong> Sunday, December 22, 2025",
+        "nadal2025.time": "<strong class='text-dark'>Time:</strong> 10:00h",
+        "nadal2025.location": "<strong class='text-dark'>Location:</strong> Club ESCACS Pardinyes, Carrer Sant Pere Claver, 1, 25005 Lleida",
+        "nadal2025.rules_title": "Rules and Game Format",
+        "nadal2025.format": "<strong class='text-dark'>Format:</strong> Swiss 7 rounds (approx.)",
+        "nadal2025.rhythm": "<strong class='text-dark'>Game Rhythm:</strong> 5 minutes + 3 seconds increment",
+        "nadal2025.fee": "<strong class='text-dark'>Registration:</strong> Free",
+        "nadal2025.trophies_title": "Trophies",
+        "nadal2025.trophies": "Trophies by age and for the best non-federated player. Medals for all participants",
+        "nadal2025.form_title": "Registration",
+        "nadal2025.form_placeholder": "Registration will open soon."
     }
 };
