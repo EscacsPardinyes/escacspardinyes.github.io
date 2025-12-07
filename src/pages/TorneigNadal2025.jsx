@@ -24,10 +24,10 @@ export default function TorneigNadal2025() {
                 <h2 className="text-center font-weight-bold mb-5">{t('nadal2025.title')}</h2>
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="/img/cartell-nadal-2025.webp"
+                        <img src="/img/cartell-nadal-2025.png"
                             alt="Cartell oficial del III Torneig d'Escacs de Nadal Pardinyes"
                             className="img-fluid rounded shadow"
-                            onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+NADAL' }}
+                            onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
                         />
 
                         <div className="mt-4 text-left">
