@@ -8,7 +8,7 @@ export const translations = {
         "nav.contact": "Contacte",
         "nav.elo": "Calculadora d'ELO",
         "nav.gallery": "Galeria",
-        "nav.nadal2025": "Torneig Nadal 2025",
+        "nav.nadal2025": "Torneig Nadal 2026",
         "nav.santjordi": "Sant@ Jordi/na 2025",
         "carousel.club": "Club d'Escacs",
         "carousel.slide1.title": "Aprèn i Competeix a Lleida",
@@ -312,7 +312,7 @@ export const translations = {
 
         // Torneig Nadal 2025
         "nadal2025.header": "III Torneig d'Escacs de Nadal Pardinyes",
-        "nadal2025.breadcrumb": "Torneig Nadal 2025",
+        "nadal2025.breadcrumb": "Torneig Nadal 2026",
         "nadal2025.title": "III Torneig d'Escacs de Nadal Pardinyes",
         "nadal2025.slogan": "Tots els nens juguem!!!",
         "nadal2025.details_title": "Detalls de l'Esdeveniment:",
@@ -339,7 +339,7 @@ export const translations = {
         "nav.contact": "Contacto",
         "nav.elo": "Calculadora de ELO",
         "nav.gallery": "Galería",
-        "nav.nadal2025": "Torneo Navidad 2025",
+        "nav.nadal2025": "Torneo Navidad 2026",
         "nav.santjordi": "Sant@ Jordi/na 2025",
         "carousel.club": "Club de Ajedrez",
         "carousel.slide1.title": "Aprende y Compite en Lleida",
@@ -655,7 +655,7 @@ export const translations = {
 
         // Torneig Nadal 2025
         "nadal2025.header": "III Torneo de Ajedrez de Navidad Pardinyes",
-        "nadal2025.breadcrumb": "Torneo Navidad 2025",
+        "nadal2025.breadcrumb": "Torneo Navidad 2026",
         "nadal2025.title": "III Torneo de Ajedrez de Navidad Pardinyes",
         "nadal2025.slogan": "¡¡¡Todos los niños jugamos!!!",
         "nadal2025.details_title": "Detalles del Evento:",
@@ -682,7 +682,7 @@ export const translations = {
         "nav.contact": "Contact",
         "nav.elo": "ELO Calculator",
         "nav.gallery": "Gallery",
-        "nav.nadal2025": "Xmas Tournament 2025",
+        "nav.nadal2025": "Xmas Tournament 2026",
         "nav.santjordi": "Sant@ Jordi/na Day 2025",
         "footer.contact": "Contact Us",
         "footer.rights": "All Rights Reserved.",
