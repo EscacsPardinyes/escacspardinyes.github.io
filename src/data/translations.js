@@ -326,7 +326,7 @@ export const translations = {
         "nadal2025.rhythm": "<strong class='text-dark'>Ritme de Joc:</strong> 5 minuts + 3 segons d'increment",
         "nadal2025.fee": "<strong class='text-dark'>Inscripció:</strong> Gratuïta",
         "nadal2025.trophies_title": "Trofeus",
-        "nadal2025.trophies": "Trofeus per a 1r i 2n de cada categoria (Sub 16, Sub 14, Sub 12, Sub 10, Sub 8).<br>Trofeu per al 1r No Federat.<br>Medalles per a tots els participants",
+        "nadal2025.trophies": "1r i 2n Sub 16<br>1r i 2n Sub 14<br>1r i 2n Sub 12<br>1r i 2n Sub 10<br>1r, 2n i 3r Sub 8<br>Medalles per a tots els participants",
         "nadal2025.form_title": "Inscripcions",
         "nadal2025.form_placeholder": "Les inscripcions s'obriran properament."
     },
@@ -669,7 +669,7 @@ export const translations = {
         "nadal2025.rhythm": "<strong class='text-dark'>Ritmo de Juego:</strong> 5 minutos + 3 segundos de incremento",
         "nadal2025.fee": "<strong class='text-dark'>Inscripción:</strong> Gratuita",
         "nadal2025.trophies_title": "Trofeos",
-        "nadal2025.trophies": "Trofeos para 1º y 2º de cada categoría (Sub 16, Sub 14, Sub 12, Sub 10, Sub 8).<br>Trofeo para el 1º No Federado.<br>Medallas para todos los participantes",
+        "nadal2025.trophies": "1º y 2º Sub 16<br>1º y 2º Sub 14<br>1º y 2º Sub 12<br>1º y 2º Sub 10<br>1º, 2º y 3º Sub 8<br>Medallas para todos los participantes",
         "nadal2025.form_title": "Inscripciones",
         "nadal2025.form_placeholder": "Las inscripciones se abrirán próximamente."
     },
@@ -928,7 +928,7 @@ export const translations = {
         "nadal2025.rhythm": "<strong class='text-dark'>Game Rhythm:</strong> 5 minutes + 3 seconds increment",
         "nadal2025.fee": "<strong class='text-dark'>Registration:</strong> Free",
         "nadal2025.trophies_title": "Trophies",
-        "nadal2025.trophies": "Trophies for 1st and 2nd of each category (U16, U14, U12, U10, U8).<br>Trophy for 1st Non-Federated.<br>Medals for all participants",
+        "nadal2025.trophies": "1st and 2nd U16<br>1st and 2nd U14<br>1st and 2nd U12<br>1st and 2nd U10<br>1st, 2nd and 3rd U8<br>Medals for all participants",
         "nadal2025.form_title": "Registration",
         "nadal2025.form_placeholder": "Registration will open soon."
     }
