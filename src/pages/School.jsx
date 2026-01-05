@@ -48,16 +48,20 @@ export default function School() {
             </div>
             {/* Escola d'Escacs End */}
 
-            {/* Informació pràctica Escola (versió compacta) */}
-            <div className="container text-center my-5">
-                <h4 className="font-weight-bold text-primary mb-3">{t('school.info_title')}</h4>
-                <p className="mb-2" dangerouslySetInnerHTML={tHtml('school.price')}></p>
-                <p className="mb-2" dangerouslySetInnerHTML={tHtml('school.membership')}></p>
-                <p className="mb-2 text-danger">{t('school.warning')}</p>
-            </div>
-
-            <div className="text-center mt-5">
-                <p dangerouslySetInnerHTML={tHtml('school.more_info')}></p>
+            {/* Informació pràctica + Imatge Minicopa */}
+            <div className="container my-5">
+                <div className="row align-items-center">
+                    <div className="col-lg-6 text-center text-lg-left">
+                        <h4 className="font-weight-bold text-primary mb-3">{t('school.info_title')}</h4>
+                        <p className="mb-2" dangerouslySetInnerHTML={tHtml('school.price')}></p>
+                        <p className="mb-2" dangerouslySetInnerHTML={tHtml('school.membership')}></p>
+                        <p className="mb-2 text-danger">{t('school.warning')}</p>
+                        <p className="mt-3" dangerouslySetInnerHTML={tHtml('school.more_info')}></p>
+                    </div>
+                    <div className="col-lg-6 mt-4 mt-lg-0 text-center">
+                        <img src="/img/Minicopa.webp" className="img-fluid rounded shadow" alt="Torneig Infantil Minicopa" style={{ maxHeight: '300px', width: 'auto' }} />
+                    </div>
+                </div>
             </div>
 
             {/* Horaris de Classes */}
@@ -298,27 +302,7 @@ export default function School() {
                 </div>
             </div>
 
-            {/* Valors del Club */}
-            <div className="container text-center my-5">
-                <h4 className="font-weight-bold text-primary mb-4">{t('school.values_title')}</h4>
-                <div className="row">
-                    <div className="col-md-4">
-                        <i className="flaticon-thinking display-4 text-primary mb-3"></i>
-                        <h5>{t('school.val_concentration')}</h5>
-                        <p>{t('school.val_concentration_text')}</p>
-                    </div>
-                    <div className="col-md-4">
-                        <i className="flaticon-group display-4 text-primary mb-3"></i>
-                        <h5>{t('school.val_companionship')}</h5>
-                        <p>{t('school.val_companionship_text')}</p>
-                    </div>
-                    <div className="col-md-4">
-                        <i className="flaticon-goal display-4 text-primary mb-3"></i>
-                        <h5>{t('school.val_improvement')}</h5>
-                        <p>{t('school.val_improvement_text')}</p>
-                    </div>
-                </div>
-            </div>
+
         </>
     );
 }

@@ -26,12 +26,12 @@ function App() {
           <Route path="feature" element={<Feature />} />
           <Route path="federat" element={<Federat />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="privacy.html" element={<Privacy />} />
+
           <Route path="privacy" element={<Privacy />} />
           <Route path="cookies" element={<Cookies />} />
           <Route path="elo-calculator" element={<EloCalculator />} />
           <Route path="sant-jordi" element={<SantJordi />} />
-          <Route path="TorneigAlcarras.html" element={<TorneigAlcarras />} />
+
           <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
           <Route path="torneig-nadal-2025" element={<TorneigNadal2025 />} />
           <Route path="simultanies" element={<Simultanies />} />

@@ -1,0 +1,20 @@
+{
+    "name": "Club Escacs Pardinyes",
+    "short_name": "Escacs Pardinyes",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2A769C",
+    "icons": [
+        {
+            "src": "/img/logo.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "/img/logo.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+    ]
+}
