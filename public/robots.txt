@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://escacspardinyes.com/sitemap.xml

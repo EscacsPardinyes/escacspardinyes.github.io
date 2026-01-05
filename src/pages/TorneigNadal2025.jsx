@@ -30,8 +30,12 @@ export default function TorneigNadal2025() {
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
                         />
 
-                        <div className="mt-4 text-left">
-                            <h3 className="mt-4 mb-3">{t('nadal2025.details_title')}</h3>
+
+                    </div>
+
+                    <div className="col-lg-6">
+                        <div className="text-left">
+                            <h3 className="mb-3">{t('nadal2025.details_title')}</h3>
 
                             <p dangerouslySetInnerHTML={tHtml('nadal2025.intro_text')}></p>
 
@@ -54,18 +58,6 @@ export default function TorneigNadal2025() {
                                 <li dangerouslySetInnerHTML={tHtml('nadal2025.trophies')}></li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div className="col-lg-6">
-                        <h3 className="text-center font-weight-bold mb-3">{t('nadal2025.form_title')}</h3>
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSetgjnLAm37aujvhjCft28gVa2CC80Hv_zj1J2BBZE7pyU1cQ/viewform?embedded=true"
-                            width="100%"
-                            height="1434"
-                            frameBorder="0"
-                            marginHeight="0"
-                            marginWidth="0"
-                        >S'està carregant…</iframe>
                     </div>
                 </div>
             </div>
