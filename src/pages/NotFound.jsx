@@ -21,8 +21,8 @@ export default function NotFound() {
 
             <div className="text-center" style={{ padding: '50px' }}>
                 <div className="chess-piece-container" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-                    <h1 className="chess-pieces white-rook" style={{ fontSize: '120px', color: '#000' }}>♖</h1>
-                    <h1 className="chess-pieces flipped-knight" style={{ fontSize: '120px', transform: 'scaleX(-1)' }}>♞</h1>
+                    <h1 className="chess-pieces white-rook floating-piece" style={{ fontSize: '120px', color: '#000' }}>♖</h1>
+                    <h1 className="chess-pieces flipped-knight floating-piece-flipped" style={{ fontSize: '120px' }}>♞</h1>
                 </div>
                 <p style={{ fontSize: '22px', textShadow: '1px 1px 3px #ccc' }}>{t('notfound.title')}</p>
                 <p style={{ fontSize: '22px', textShadow: '1px 1px 3px #ccc' }}>{t('notfound.subtitle')}</p>

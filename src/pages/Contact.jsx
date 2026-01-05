@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
     const { t } = useLanguage();
@@ -32,9 +33,9 @@ export default function Contact() {
                         <p>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
                     </div>
                     <div className="col-sm-4 text-center mb-3">
-                        <i className="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+                        <i className="fab fa-2x fa-whatsapp mb-3 text-primary"></i>
                         <h4 className="font-weight-bold">{t('contact.phone_title')}</h4>
-                        <p>+34 973 23 02 06</p>
+                        <p><a href="https://wa.me/34641915266" target="_blank" rel="noopener noreferrer" className="text-dark">+34 641 91 52 66 (WhatsApp)</a></p>
                     </div>
                     <div className="col-sm-4 text-center mb-3">
                         <i className="far fa-2x fa-envelope mb-3 text-primary"></i>
@@ -53,17 +54,7 @@ export default function Contact() {
                         ></iframe>
                     </div>
                     <div className="col-md-6 pb-5">
-                        <div className="contact-form">
-                            <div id="success"></div>
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSfhevo5_9vVUwSL5kXM1qIYRUYWeUAT24bzzIK1GEEFpLGiPQ/viewform?embedded=true"
-                                width="640"
-                                height="957"
-                                frameBorder="0"
-                                marginHeight="0"
-                                marginWidth="0"
-                            >S&#39;està carregant…</iframe>
-                        </div>
+                        <ContactForm />
                     </div>
                 </div>
             </div>

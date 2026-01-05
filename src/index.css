@@ -15,3 +15,50 @@
     color: #ffc107 !important;
     background-color: #333;
 }
+
+/* 404 Page Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-piece {
+    display: inline-block;
+    /* Essential for transform to work on span/h1 if they are inline */
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-piece-delay {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes float-flipped {
+    0% {
+        transform: scaleX(-1) translateY(0px);
+    }
+
+    50% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+
+    100% {
+        transform: scaleX(-1) translateY(0px);
+    }
+}
+
+.floating-piece-flipped {
+    display: inline-block;
+    animation: float-flipped 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import SchoolForm from '../components/SchoolForm';
 
 export default function School() {
     const { t, tHtml } = useLanguage();
@@ -295,10 +296,14 @@ export default function School() {
                 </div>
             </div>
 
-            <div className="container text-center my-5">
-                <h4 className="font-weight-bold text-primary mb-4">{t('school.enroll_title')}</h4>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfCCJPPpjgz_vT5U2fH0Nmlu58eNunraKUsbkNjwEpNkbZIA/viewform?embedded=true" width="640" height="1200" frameBorder="0" marginHeight="0" marginWidth="0">S'està carregant…</iframe>
+            <div className="container my-5">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="text-center mb-4">
+                            <h4 className="font-weight-bold text-primary">{t('school.enroll_title')}</h4>
+                        </div>
+                        <SchoolForm />
+                    </div>
                 </div>
             </div>
 
