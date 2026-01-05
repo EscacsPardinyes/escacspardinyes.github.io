@@ -38,7 +38,7 @@ export default function Header() {
                 <Link to="/" className="navbar-brand">
                     <h1 className="m-0 display-4 font-weight-bold text-uppercase text-white">Club Escacs Pardinyes</h1>
                 </Link>
-                <button type="button" className="navbar-toggler" onClick={toggleMenu}>
+                <button type="button" className="navbar-toggler" onClick={toggleMenu} aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={`collapse navbar-collapse justify-content-between ${isMenuOpen ? 'show' : ''}`} id="navbarCollapse">
@@ -53,7 +53,7 @@ export default function Header() {
 
 
                         <div className={`nav-item dropdown ${isLangOpen ? 'show' : ''}`}>
-                            <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang}>
+                            <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang} aria-label="Select Language">
                                 <img
                                     src={`/img/flags/${language}.svg`}
                                     alt={language}

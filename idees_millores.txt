@@ -1,0 +1,12 @@
+Puzzle Diario (Engagement): Podemos incrustar un tablero con el "Problema del día" de Lichess en la portada. Esto hace que la gente entre cada día solo para resolverlo.
+Botón "Volver Arriba": Un botón flotante que aparezca cuando bajas haciendo scroll, para subir de golpe. Fundamental en móviles.
+Animaciones 404: Hacer que las piezas de ajedrez de la página de error "floten" o se muevan suavemente.
+---
+Galería Interactiva: Usar un "Lightbox" para que al hacer clic en las fotos de los torneos se amplíen en pantalla completa y se puedan pasar con flechas.
+Testimonios: Añadir una sección rotativa con opiniones reales de padres o alumnos en la página de Escuela.
+Equipo Técnico: En "Qui Som", poner fotos circulares y bio corta de la Junta y Monitores con enlaces a sus perfiles FIDE.
+Calculadora ELO Gráfica: Mejorar la calculadora añadiendo un gráfico de progreso visual si añaden varias partidas.
+FAQ Desplegable: En la página de "Federat" o "Escola", poner las preguntas frecuentes en un acordeón que se abre/cierra para limpiar visualmente la página.
+Agenda Dinámica: Un pequeño widget en la Home que muestre "Próximos 3 eventos" leyendo de un archivo simple, para no tener que editar HTML cada vez.
+Efecto "Confetti": Lanzar confeti virtual cuando alguien completa el formulario de contacto o (si se pudiera) ganan el puzzle diario.
+Compartir en RRSS: Botones flotantes fijos en un lateral para compartir la página actual rápidamente en WhatsApp/Facebook.
