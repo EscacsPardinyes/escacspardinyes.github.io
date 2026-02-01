@@ -64,6 +64,9 @@ export default function ContactForm() {
                     <input type="email" className="form-control p-4" id="email" name="email" placeholder={t('contact.form.email')} required />
                 </div>
                 <div className="form-group mb-3">
+                    <input type="tel" className="form-control p-4" id="phone" name="phone" placeholder={t('contact.form.phone')} />
+                </div>
+                <div className="form-group mb-3">
                     <input type="text" className="form-control p-4" id="subject" name="subject" placeholder={t('contact.form.subject')} required />
                 </div>
                 <div className="form-group mb-3">

@@ -24,7 +24,7 @@ export default function TorneigNadal2025() {
                 <h2 className="text-center font-weight-bold mb-5">{t('nadal2025.title')}</h2>
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="/img/cartell-nadal-2025.png"
+                        <img src="/img/galeria/TornigNadal2026/cartell-nadal-2025.png"
                             alt="Cartell oficial del III Torneig d'Escacs de Nadal Pardinyes"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
@@ -62,6 +62,36 @@ export default function TorneigNadal2025() {
                 </div>
             </div>
             {/* Fi del Contingut Principal del Torneig */}
+
+            {/* Crònica i Galeria */}
+            <div className="container pb-5">
+                <hr className="mb-5" />
+                <h3 className="text-center font-weight-bold mb-4">{t('nadal2025.report_title')}</h3>
+                <div className="row justify-content-center">
+                    <div className="col-lg-10">
+                        <p className="text-justify" dangerouslySetInnerHTML={tHtml('nadal2025.report_p1')}></p>
+                        <p className="text-justify" dangerouslySetInnerHTML={tHtml('nadal2025.report_p2')}></p>
+                        <p className="text-justify" dangerouslySetInnerHTML={tHtml('nadal2025.report_p3')}></p>
+                    </div>
+                </div>
+
+                <h3 className="text-center font-weight-bold mb-4 mt-5">{t('nadal2025.gallery_title')}</h3>
+                <div className="row">
+                    {[1, 2, 3, 4].map((num) => (
+                        <div key={num} className="col-md-6 col-lg-3 mb-4">
+                            <img
+                                src={`/img/galeria/TornigNadal2026/${num}.jpeg`}
+                                className="img-fluid rounded shadow-sm hover-zoom"
+                                alt={`Torneig Nadal 2025 - Imatge ${num}`}
+                                style={{ transition: 'transform 0.3s ease-in-out', cursor: 'pointer' }}
+                                onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* Fi Crònica i Galeria */}
         </>
     );
 }

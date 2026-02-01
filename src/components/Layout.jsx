@@ -4,6 +4,7 @@ import Footer from './Footer';
 import CookieBanner from './CookieBanner';
 
 import BackToTop from './BackToTop';
+import NewsletterModal from './NewsletterModal';
 
 export default function Layout() {
     return (
@@ -13,6 +14,7 @@ export default function Layout() {
             <Footer />
             <CookieBanner />
             <BackToTop />
+            <NewsletterModal />
         </div>
     );
 }

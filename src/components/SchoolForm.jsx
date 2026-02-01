@@ -60,6 +60,9 @@ export default function SchoolForm() {
                 <div className="form-group mb-3">
                     <input type="email" className="form-control p-4" id="email" name="email" placeholder={t('contact.form.email')} required />
                 </div>
+                <div className="form-group mb-3">
+                    <input type="tel" className="form-control p-4" id="phone" name="phone" placeholder={t('contact.form.phone')} />
+                </div>
 
                 {/* Schedule Options */}
                 <div className="form-group mb-3">
