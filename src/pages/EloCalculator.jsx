@@ -170,6 +170,7 @@ export default function EloCalculator() {
                                     <p className="mb-0">Variació total: <strong>{calculationResult.totalVariation > 0 ? '+' : ''}{calculationResult.totalVariation.toFixed(1)}</strong></p>
                                 </div>
                             )}
+
                         </div>
                     </div>
 

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import Accordion from '../components/Accordion';
 
 export default function Federat() {
     const { t, tHtml } = useLanguage();
@@ -88,82 +89,13 @@ export default function Federat() {
             {/* FAQ Start */}
             <div className="container mt-5">
                 <h4 className="font-weight-bold text-primary mb-4 text-center">{t('federated.faq_title')}</h4>
-                <div className="accordion" id="faqAccordion">
-                    <div className="card">
-                        <div className="card-header p-0" id="q1">
-                            <h5 className="mb-0">
-                                <button className="btn btn-link collapsed btn-block text-left py-3 px-4" type="button" data-toggle="collapse" data-target="#a1" style={{ textDecoration: 'none' }}>
-                                    {t('federated.faq_q1')}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="a1" className="collapse" data-parent="#faqAccordion">
-                            <div className="card-body">
-                                {t('federated.faq_a1')}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="card-header p-0" id="q2">
-                            <h5 className="mb-0">
-                                <button className="btn btn-link collapsed btn-block text-left py-3 px-4" type="button" data-toggle="collapse" data-target="#a2" style={{ textDecoration: 'none' }}>
-                                    {t('federated.faq_q2')}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="a2" className="collapse" data-parent="#faqAccordion">
-                            <div className="card-body">
-                                {t('federated.faq_a2')}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="card-header p-0" id="q3">
-                            <h5 className="mb-0">
-                                <button className="btn btn-link collapsed btn-block text-left py-3 px-4" type="button" data-toggle="collapse" data-target="#a3" style={{ textDecoration: 'none' }}>
-                                    {t('federated.faq_q3')}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="a3" className="collapse" data-parent="#faqAccordion">
-                            <div className="card-body">
-                                {t('federated.faq_a3')}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="card-header p-0" id="q4">
-                            <h5 className="mb-0">
-                                <button className="btn btn-link collapsed btn-block text-left py-3 px-4" type="button" data-toggle="collapse" data-target="#a4" style={{ textDecoration: 'none' }}>
-                                    {t('federated.faq_q4')}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="a4" className="collapse" data-parent="#faqAccordion">
-                            <div className="card-body">
-                                {t('federated.faq_a4')}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="card-header p-0" id="q5">
-                            <h5 className="mb-0">
-                                <button className="btn btn-link collapsed btn-block text-left py-3 px-4" type="button" data-toggle="collapse" data-target="#a5" style={{ textDecoration: 'none' }}>
-                                    {t('federated.faq_q5')}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="a5" className="collapse" data-parent="#faqAccordion">
-                            <div className="card-body">
-                                {t('federated.faq_a5')}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Accordion id="federatFaq" items={[
+                    { title: t('federated.faq_q1'), content: t('federated.faq_a1') },
+                    { title: t('federated.faq_q2'), content: t('federated.faq_a2') },
+                    { title: t('federated.faq_q3'), content: t('federated.faq_a3') },
+                    { title: t('federated.faq_q4'), content: t('federated.faq_a4') },
+                    { title: t('federated.faq_q5'), content: t('federated.faq_a5') },
+                ]} />
             </div>
             {/* FAQ End */}
         </>

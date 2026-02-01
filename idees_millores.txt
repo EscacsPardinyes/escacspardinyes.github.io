@@ -1,12 +1,31 @@
 Puzzle Diario (Engagement): Podemos incrustar un tablero con el "Problema del día" de Lichess en la portada. Esto hace que la gente entre cada día solo para resolverlo.
-Botón "Volver Arriba": Un botón flotante que aparezca cuando bajas haciendo scroll, para subir de golpe. Fundamental en móviles.
-Animaciones 404: Hacer que las piezas de ajedrez de la página de error "floten" o se muevan suavemente.
 ---
 Galería Interactiva: Usar un "Lightbox" para que al hacer clic en las fotos de los torneos se amplíen en pantalla completa y se puedan pasar con flechas.
-Testimonios: Añadir una sección rotativa con opiniones reales de padres o alumnos en la página de Escuela.
-Equipo Técnico: En "Qui Som", poner fotos circulares y bio corta de la Junta y Monitores con enlaces a sus perfiles FIDE.
-Calculadora ELO Gráfica: Mejorar la calculadora añadiendo un gráfico de progreso visual si añaden varias partidas.
-FAQ Desplegable: En la página de "Federat" o "Escola", poner las preguntas frecuentes en un acordeón que se abre/cierra para limpiar visualmente la página.
 Agenda Dinámica: Un pequeño widget en la Home que muestre "Próximos 3 eventos" leyendo de un archivo simple, para no tener que editar HTML cada vez.
 Efecto "Confetti": Lanzar confeti virtual cuando alguien completa el formulario de contacto o (si se pudiera) ganan el puzzle diario.
 Compartir en RRSS: Botones flotantes fijos en un lateral para compartir la página actual rápidamente en WhatsApp/Facebook.
+1. 📅 Calendari de Torneigs i Actes (Integració Google Calendar)
+Molts clubs tenen un calendari visual on es veuen tots els partits de la lliga, classes i torneigs.
+
+Millora: En lloc d'haver d'editar la web cada setmana, podem integrar un Google Calendar públic. Tu afegeixes l'event al teu mòbil i apareix automàticament a la web.
+2. 🏆 Hall of Fame / Història del Club
+Una pàgina dedicada als èxits del club.
+
+Llistat de presidents històrics.
+Campions de tornejos socials anteriors.
+Fotos d'equips llegendaris.
+Això dona molta identitat i "orgull de club".
+3. ♟️ Partides en Directe / Visor PGN
+Permetre veure partides destacades dels socis o de l'equip A.
+
+Visor PGN: Podem afegir una secció on es puguin reproduir partides famoses jugades per membres del club o material didàctic per als alumnes de l'escola.
+4. 📰 Secció de Notícies / Blog (Cròniques)
+Ara tens pàgines soltes per a alguns tornejos (TorneigAlcarras, SantJordi...).
+
+Millora: Crear una pàgina principal de "Actualitat" o "Cròniques" on apareguin les entrades ordenades per data (com un blog). Això ajuda molt al SEO i a que la gent visiti la web cada setmana per llegir com ha anat la jornada de lliga.
+5. 📥 Zona de Descàrregues (Recursos Escola)
+Per a l'apartat de l'escola (
+School.jsx
+):
+Un repositori de PDFs amb exercicis, obertures bàsiques o normes per als pares.
+
