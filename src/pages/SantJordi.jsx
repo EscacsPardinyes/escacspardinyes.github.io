@@ -27,7 +27,9 @@ export default function SantJordi() {
                     <div className="d-inline-flex">
                         <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
                         <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('santjordi.breadcrumb')}</p>
+                        <p className="m-0 text-white"><Link className="text-white" to="/simultanies">{t('nav.simultanies')}</Link></p>
+                        <p className="m-0 text-white px-2">/</p>
+                        <p className="m-0 text-white">{t('nav.santjordi')}</p>
                     </div>
                 </div>
             </div>
