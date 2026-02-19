@@ -26,7 +26,9 @@ export default function SimultaniesIvette() {
                     <div className="d-inline-flex">
                         <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
                         <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('simultanies.breadcrumb')}</p>
+                        <p className="m-0 text-white"><Link className="text-white" to="/simultanies">{t('nav.simultanies')}</Link></p>
+                        <p className="m-0 text-white px-2">/</p>
+                        <p className="m-0 text-white">{t('nav.ivette')}</p>
                     </div>
                 </div>
             </div>
@@ -51,7 +53,7 @@ export default function SimultaniesIvette() {
 
             {/* Gallery Section */}
             <div className="container pb-5">
-                <h3 className="text-center font-weight-bold mb-4">{t('santjordi.header')}</h3>
+                <h3 className="text-center font-weight-bold mb-4">{t('nav.gallery')}</h3>
                 <div className="row justify-content-center">
                     {images.map((img, index) => (
                         <div key={index} className="col-md-4 col-6 mb-4">
