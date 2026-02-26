@@ -1,15 +1,16 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/SEO';
 
 export default function Privacy() {
     const { t, tHtml } = useLanguage();
 
     return (
         <>
+            <SEO title={t('privacy.header')} />
             {/* Page Header Start */}
             <div className="container-fluid page-header mb-5">
                 <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('privacy.header')}</h4>
+                    <h1 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('privacy.header')}</h1>
                 </div>
             </div>
             {/* Page Header End */}

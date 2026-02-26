@@ -12,13 +12,14 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Cookies = lazy(() => import('./pages/Cookies'));
 const EloCalculator = lazy(() => import('./pages/EloCalculator'));
-const SantJordi = lazy(() => import('./pages/SantJordi'));
 const TorneigAlcarras = lazy(() => import('./pages/TorneigAlcarras'));
 const TorneigNadal2025 = lazy(() => import('./pages/TorneigNadal2025'));
 const TorneigGMMI = lazy(() => import('./pages/TorneigGMMI'));
-const SimultaniesIvette = lazy(() => import('./pages/SimultaniesIvette'));
 const SimultaniesArami = lazy(() => import('./pages/SimultaniesArami'));
 const SimultaniesList = lazy(() => import('./pages/SimultaniesList'));
+const EventPage = lazy(() => import('./pages/EventPage'));
+const NewsList = lazy(() => import('./pages/NewsList'));
+const NewsDetail = lazy(() => import('./pages/NewsDetail'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading component
@@ -45,13 +46,15 @@ function App() {
             <Route path="privacy" element={<Privacy />} />
             <Route path="cookies" element={<Cookies />} />
             <Route path="elo-calculator" element={<EloCalculator />} />
-            <Route path="sant-jordi2025" element={<SantJordi />} />
+            <Route path="sant-jordi2025" element={<EventPage id="sant-jordi" />} />
             <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
             <Route path="torneig-nadal-2025" element={<TorneigNadal2025 />} />
             <Route path="tancats-setmana-santa-2026" element={<TorneigGMMI />} />
-            <Route path="simultanies-ivette" element={<SimultaniesIvette />} />
+            <Route path="simultanies-ivette" element={<EventPage id="ivette" />} />
             <Route path="simultanies-arami2026" element={<SimultaniesArami />} />
             <Route path="simultanies" element={<SimultaniesList />} />
+            <Route path="noticies" element={<NewsList />} />
+            <Route path="noticies/:id" element={<NewsDetail />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/SEO';
 
 export default function NotFound() {
     const { t } = useLanguage();
 
     return (
         <>
+            <SEO title="404 - Pàgina No Trobada" description={t('notfound.title')} />
             <Link to="/" style={{
                 display: 'block',
                 position: 'relative', // Context for absolute positioning

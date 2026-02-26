@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/SEO';
 
 export default function Home() {
     const { t } = useLanguage();
@@ -15,20 +16,21 @@ export default function Home() {
 
     return (
         <>
+            <SEO description={t('seo.default_description')} />
             {/* Carousel Start */}
             <div className="container-fluid p-0">
                 <div id="blog-carousel" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="w-100" src="/img/carousel-1.webp" alt="Imatge" />
+                            <img className="w-100" src="/img/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
-                                <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide1.title')}</h2>
+                                <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide1.title')}</h1>
                                 <Link to="/contact" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide1.btn')}</Link>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="w-100" src="/img/carousel-3.webp" alt="Imatge" loading="lazy" />
+                            <img className="w-100" src="/img/carousel-3.webp" alt="Competició d'escacs organitzada pel club" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
                                 <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide3.title')}</h2>
@@ -36,7 +38,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="w-100" src="/img/carousel-4.webp" alt="Imatge" loading="lazy" />
+                            <img className="w-100" src="/img/carousel-4.webp" alt="Instal·lacions del Club Escacs Pardinyes" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
                                 <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide4.title')}</h2>
@@ -58,7 +60,7 @@ export default function Home() {
             <div className="container py-5">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <img className="img-fluid mb-4 mb-lg-0" src="/img/about.webp" alt="Imatge sobre nosaltres" loading="lazy" />
+                        <img className="img-fluid mb-4 mb-lg-0 rounded shadow" src="/img/about.webp" alt="Entrenament a la seu del Club Escacs Pardinyes" loading="lazy" width="600" height="400" />
                     </div>
                     <div className="col-lg-6">
                         <h2 className="display-4 font-weight-bold mb-4">{t('about.title')}</h2>
@@ -150,7 +152,7 @@ export default function Home() {
                                     </thead>
                                     <tbody className="text-center align-middle">
                                         <tr>
-                                            <th className="bg-secondary text-white">18:30 - 19:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="18:30">18:30</time> - <time dateTime="19:30">19:30</time></th>
                                             <td>
                                                 <h5>{t('schedule.free_play')}</h5>
                                             </td>
@@ -168,7 +170,7 @@ export default function Home() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th className="bg-secondary text-white">19:30 - 20:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="19:30">19:30</time> - <time dateTime="20:30">20:30</time></th>
                                             <td>
                                                 <h5>{t('schedule.free_play')}</h5>
                                             </td>
@@ -183,7 +185,7 @@ export default function Home() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th className="bg-secondary text-white">19:45 - 21:15</th>
+                                            <th className="bg-secondary text-white"><time dateTime="19:45">19:45</time> - <time dateTime="21:15">21:15</time></th>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -212,7 +214,7 @@ export default function Home() {
                                     </thead>
                                     <tbody className="text-center align-middle">
                                         <tr>
-                                            <th className="bg-secondary text-white">18:30 - 19:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="18:30">18:30</time> - <time dateTime="19:30">19:30</time></th>
                                             <td></td>
                                             <td></td>
                                             <td>
@@ -241,7 +243,7 @@ export default function Home() {
                                     </thead>
                                     <tbody className="text-center align-middle">
                                         <tr>
-                                            <th className="bg-secondary text-white">18:30 - 19:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="18:30">18:30</time> - <time dateTime="19:30">19:30</time></th>
                                             <td></td>
                                             <td>
                                                 <h5>{t('schedule.group.eso_bat')}</h5>
@@ -252,7 +254,7 @@ export default function Home() {
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <th className="bg-secondary text-white">19:30 - 20:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="19:30">19:30</time> - <time dateTime="20:30">20:30</time></th>
                                             <td></td>
                                             <td></td>
                                             <td>
@@ -281,7 +283,7 @@ export default function Home() {
                                     </thead>
                                     <tbody className="text-center align-middle">
                                         <tr>
-                                            <th className="bg-secondary text-white">19:45 - 21:15</th>
+                                            <th className="bg-secondary text-white"><time dateTime="19:45">19:45</time> - <time dateTime="21:15">21:15</time></th>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -310,7 +312,7 @@ export default function Home() {
                                     </thead>
                                     <tbody className="text-center align-middle">
                                         <tr>
-                                            <th className="bg-secondary text-white">18:30 - 19:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="18:30">18:30</time> - <time dateTime="19:30">19:30</time></th>
                                             <td>
                                                 <h5>{t('schedule.free_play')}</h5>
                                             </td>
@@ -322,7 +324,7 @@ export default function Home() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th className="bg-secondary text-white">19:30 - 20:30</th>
+                                            <th className="bg-secondary text-white"><time dateTime="19:30">19:30</time> - <time dateTime="20:30">20:30</time></th>
                                             <td>
                                                 <h5>{t('schedule.free_play')}</h5>
                                             </td>
