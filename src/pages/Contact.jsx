@@ -1,24 +1,16 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import ContactForm from '../components/ContactForm';
+import PageHeader from '../components/PageHeader';
+import SEO from '../components/SEO';
 
 export default function Contact() {
     const { t } = useLanguage();
+    const breadcrumbs = [{ label: t('contact.header') }];
 
     return (
         <>
-            {/* Page Header Start */}
-            <div className="container-fluid page-header mb-5">
-                <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('contact.header')}</h4>
-                    <div className="d-inline-flex">
-                        <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
-                        <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('contact.header')}</p>
-                    </div>
-                </div>
-            </div>
-            {/* Page Header End */}
+            <SEO title={t('contact.header')} description={t('seo.contact_description')} />
+            <PageHeader title={t('contact.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contact Start */}
             <div className="container pt-5">
@@ -51,6 +43,7 @@ export default function Contact() {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
+                            title="Ubicació del Club Escacs Pardinyes a Google Maps"
                         ></iframe>
                     </div>
                     <div className="col-md-6 pb-5">

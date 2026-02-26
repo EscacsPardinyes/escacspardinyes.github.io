@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://escacspardinyes.com/</loc>
+    <loc>https://escacspardinyes.github.io/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/school</loc>
+    <loc>https://escacspardinyes.github.io/about</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/federat</loc>
+    <loc>https://escacspardinyes.github.io/school</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/contact</loc>
+    <loc>https://escacspardinyes.github.io/feature</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/about</loc>
+    <loc>https://escacspardinyes.github.io/federat</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/contact</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/simultanies</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/simultanies-ivette</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/feature</loc>
-    <priority>0.5</priority>
+    <loc>https://escacspardinyes.github.io/sant-jordi2025</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/TorneigAlcarras</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/torneig-nadal-2025</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.github.io/tancats-setmana-santa-2026</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

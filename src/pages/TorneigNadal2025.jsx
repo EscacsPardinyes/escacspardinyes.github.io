@@ -1,36 +1,29 @@
-import { Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import PageHeader from '../components/PageHeader';
+import SEO from '../components/SEO';
 
 export default function TorneigNadal2025() {
     const { t, tHtml } = useLanguage();
 
+    const breadcrumbs = [
+        { label: t('nadal2025.breadcrumb') }
+    ];
+
     return (
         <>
-            {/* Page Header Start */}
-            <div className="container-fluid page-header mb-5">
-                <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('nadal2025.header')}</h4>
-                    <div className="d-inline-flex">
-                        <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
-                        <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('nadal2025.breadcrumb')}</p>
-                    </div>
-                </div>
-            </div>
-            {/* Page Header End */}
+            <SEO title={t('nadal2025.breadcrumb')} description={t('nadal2025.report_p1').substring(0, 160)} />
+            <PageHeader title={t('nadal2025.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contingut Principal del Torneig */}
             <div className="container pb-5">
                 <h2 className="text-center font-weight-bold mb-5">{t('nadal2025.title')}</h2>
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="/img/galeria/TornigNadal2026/cartell-nadal-2025.png"
+                        <img
+                            src="/img/galeria/TornigNadal2026/cartell-nadal-2025.png"
                             alt="Cartell oficial del III Torneig d'Escacs de Nadal Pardinyes"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
                         />
-
-
                     </div>
 
                     <div className="col-lg-6">
@@ -86,6 +79,7 @@ export default function TorneigNadal2025() {
                                 style={{ transition: 'transform 0.3s ease-in-out', cursor: 'pointer' }}
                                 onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
                                 onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                                loading="lazy"
                             />
                         </div>
                     ))}

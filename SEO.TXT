@@ -1,0 +1,28 @@
+¡Totalmente! Ahora que los cimientos técnicos son "perfectos" (la web es rápida, segura y comprensible para Google), el siguiente gran salto es el SEO de Contenidos.
+
+Para Google, "el contenido es el rey". Aquí tienes cómo puedes mejorar drásticamente el posicionamiento creando tú mismo material:
+
+1. Crear una sección de "Blog" o "Noticias" (Fase 11)
+Es la forma más potente de atraer tráfico. Puedes escribir sobre:
+
+Crónicas de Torneos: "Cómo nos fue en el provincial", con fotos y resultados.
+Consejos de Ajedrez: "5 aperturas ideales para principiantes" o "Cómo mejorar tu elo".
+Historias del Club: Entrevistas a socios veteranos, la historia de las fotos antiguas, etc.
+Beneficios del Ajedrez: Muy bueno para SEO local ("¿Por qué apuntar a tu hijo a clases de ajedrez en Lleida?").
+2. Páginas de Aterrizaje Específicas (Landing Pages)
+Podemos crear páginas optimizadas para búsquedas muy concretas, por ejemplo:
+
+escacspardinyes.com/clases-ajedrez-lleida -> Una página dedicada 100% a convencer a padres de Lleida.
+escacspardinyes.com/aprendre-escacs-nens -> Enfocada a niños en Catalán.
+3. Guías de "Cómo..." (Evergreen Content)
+Contenido que no caduca y que la gente siempre busca:
+
+"Cómo federarse en Lleida".
+"Reglamento básico del ajedrez para padres".
+Mi propuesta técnica para ayudarte:
+Si quieres empezar a crear contenido, puedo implementar un sistema de Noticias/Blog ultra-sencillo donde tú solo tengas que añadir un archivo de texto (Markdown o JSON) y la web cree la noticia automáticamente con:
+
+URL amigable (/noticies/mi-primer-torneig).
+SEO configurado para esa noticia.
+Imagen destacada.
+¿Te gustaría que prepare la infraestructura para que puedas empezar a publicar tus propias noticias? Es lo único que nos falta para competir con las webs más grandes de ajedrez.

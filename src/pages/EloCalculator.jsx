@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/SEO';
 
 export default function EloCalculator() {
     const { t, tHtml } = useLanguage();
@@ -71,10 +72,11 @@ export default function EloCalculator() {
 
     return (
         <>
+            <SEO title={t('elo.header')} />
             {/* Page Header Start */}
             <div className="container-fluid page-header mb-5">
                 <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('elo.header')}</h4>
+                    <h1 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('elo.header')}</h1>
                     <div className="d-inline-flex">
                         <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
                         <p className="m-0 text-white px-2">/</p>
@@ -84,7 +86,7 @@ export default function EloCalculator() {
             </div>
             {/* Page Header End */}
 
-            <h1 className="text-center text-primary mb-4">{t('elo.title')}</h1>
+            <h2 className="text-center text-primary mb-4">{t('elo.title')}</h2>
 
             <div className="container">
                 <div className="row justify-content-center">

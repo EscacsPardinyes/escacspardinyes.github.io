@@ -28,4 +28,4 @@ Per a l'apartat de l'escola (
 School.jsx
 ):
 Un repositori de PDFs amb exercicis, obertures bàsiques o normes per als pares.
-
+Snippets de FAQ (Preguntas Frecuentes): Añadir marcado para que cuando busquen el club, aparezcan preguntas desplegables (ej: "¿A qué edad se puede empezar?", "¿Hay clases para adultos?") directamente en Google. Esto aumenta mucho el espacio

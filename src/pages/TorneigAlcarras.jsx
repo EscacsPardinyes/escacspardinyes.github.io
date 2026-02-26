@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import Lightbox from '../components/Lightbox';
+import PageHeader from '../components/PageHeader';
 
 export default function TorneigAlcarras() {
     const { t, tHtml } = useLanguage();
@@ -14,27 +14,22 @@ export default function TorneigAlcarras() {
         '/img/galeria/TorneigAlcarras/3.webp'
     ];
 
+    const breadcrumbs = [
+        { label: t('alcarras.breadcrumb') }
+    ];
+
     return (
         <>
-            {/* Page Header Start */}
-            <div className="container-fluid page-header mb-5">
-                <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('alcarras.header')}</h4>
-                    <div className="d-inline-flex">
-                        <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
-                        <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('alcarras.breadcrumb')}</p>
-                    </div>
-                </div>
-            </div>
-            {/* Page Header End */}
+            <SEO title={t('alcarras.breadcrumb')} description={t('alcarras.intro_text').replace(/<[^>]*>/g, '')} />
+            <PageHeader title={t('alcarras.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contingut Principal del Torneig */}
             <div className="container pb-5">
                 <h2 className="text-center font-weight-bold mb-5">{t('alcarras.title')}</h2>
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="/img/galeria/TorneigAlcarras/cartell-alcarras.webp"
+                        <img
+                            src="/img/galeria/TorneigAlcarras/cartell-alcarras.webp"
                             alt="Cartell oficial del 1r Torneig d'Escacs Vila d'Alcarràs La Marató"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
@@ -95,7 +90,13 @@ export default function TorneigAlcarras() {
                     {images.map((img, index) => (
                         <div key={index} className="col-md-4 col-6 mb-4">
                             <div className="card border-0 shadow-sm" style={{ cursor: 'pointer' }} onClick={() => { setPhotoIndex(index); setIsOpen(true); }}>
-                                <img src={img} className="card-img-top rounded" alt={`Foto ${index + 1}`} style={{ height: '200px', objectFit: 'cover' }} />
+                                <img
+                                    src={img}
+                                    className="card-img-top rounded"
+                                    alt={`Foto ${index + 1}`}
+                                    style={{ height: '200px', objectFit: 'cover' }}
+                                    loading="lazy"
+                                />
                             </div>
                         </div>
                     ))}

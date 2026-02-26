@@ -1,26 +1,18 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import SchoolForm from '../components/SchoolForm';
+import PageHeader from '../components/PageHeader';
+import SEO from '../components/SEO';
 
 export default function School() {
     const { t, tHtml } = useLanguage();
     const [activeTab, setActiveTab] = useState('all');
 
+    const breadcrumbs = [{ label: t('nav.school') }];
+
     return (
         <>
-            {/* Page Header Start */}
-            <div className="container-fluid page-header mb-5">
-                <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                    <h4 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{t('nav.school')}</h4>
-                    <div className="d-inline-flex">
-                        <p className="m-0 text-white"><Link className="text-white" to="/">{t('nav.home')}</Link></p>
-                        <p className="m-0 text-white px-2">/</p>
-                        <p className="m-0 text-white">{t('nav.school')}</p>
-                    </div>
-                </div>
-            </div>
-            {/* Page Header End */}
+            <SEO title={t('nav.school')} description={t('seo.school_description')} />
+            <PageHeader title={t('nav.school')} breadcrumbs={breadcrumbs} />
 
             {/* Escola d'Escacs Start */}
             <div className="container gym-class mb-5" style={{ marginTop: '90px' }}>
@@ -60,7 +52,7 @@ export default function School() {
                         <p className="mt-3" dangerouslySetInnerHTML={tHtml('school.more_info')}></p>
                     </div>
                     <div className="col-lg-6 mt-4 mt-lg-0 text-center">
-                        <img src="/img/Minicopa.webp" className="img-fluid rounded shadow" alt="Torneig Infantil Minicopa" style={{ maxHeight: '300px', width: 'auto' }} />
+                        <img src="/img/Minicopa.webp" className="img-fluid rounded shadow" alt="Infants participant en el Torneig Minicopa d'escacs" style={{ maxHeight: '300px', width: 'auto' }} width="450" height="300" loading="lazy" />
                     </div>
                 </div>
             </div>

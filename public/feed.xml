@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Club Escacs Pardinyes - Notícies i Tornejos</title>
+  <link>https://escacspardinyes.github.io/</link>
+  <description>Fomentant l'escacs a Lleida des de 1992. Escola d'escacs, competicions i una gran comunitat.</description>
+  <language>ca-es</language>
+  <lastBuildDate>Sat, 21 Feb 2026 00:00:00 +0000</lastBuildDate>
+  <atom:link href="https://escacspardinyes.github.io/feed.xml" rel="self" type="application/rss+xml" />
+  
+  <item>
+    <title>Simultànies amb la WFM Aramí Lobo</title>
+    <link>https://escacspardinyes.github.io/simultanies-arami</link>
+    <description>Vine a jugar contra la WFM Aramí Lobo el proper 2026.</description>
+    <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+    <guid>https://escacspardinyes.github.io/simultanies-arami</guid>
+  </item>
+
+  <item>
+    <title>Torneig de Tancats Setmana Santa 2026</title>
+    <link>https://escacspardinyes.github.io/tancats-setmana-santa-2026</link>
+    <description>Torneig de tancats per a l'obtenció de normes de GM i IM.</description>
+    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+    <guid>https://escacspardinyes.github.io/tancats-setmana-santa-2026</guid>
+  </item>
+</channel>
+</rss>
