@@ -38,8 +38,10 @@ export default function SEO({ title, description, image, schema, type = 'website
         canonicalLink.setAttribute('href', `${siteUrl}${location.pathname}`);
 
         // Update Hreflang Tags (Multilingual SEO)
-        const languages = ['ca', 'es', 'en'];
-        languages.forEach(lang => {
+        const supportedLanguages = ['ca', 'es', 'en'];
+        const defaultLang = 'ca';
+
+        supportedLanguages.forEach(lang => {
             let link = document.querySelector(`link[hreflang="${lang}"]`);
             if (!link) {
                 link = document.createElement('link');
@@ -47,8 +49,21 @@ export default function SEO({ title, description, image, schema, type = 'website
                 link.setAttribute('hreflang', lang);
                 document.head.appendChild(link);
             }
-            link.setAttribute('href', `${siteUrl}${location.pathname}`);
+            // Construct URL with lang parameter
+            const langUrl = new URL(siteUrl + location.pathname);
+            langUrl.searchParams.set('lang', lang);
+            link.setAttribute('href', langUrl.toString());
         });
+
+        // Add x-default (usually points to the default language or a language selector)
+        let xDefault = document.querySelector('link[hreflang="x-default"]');
+        if (!xDefault) {
+            xDefault = document.createElement('link');
+            xDefault.setAttribute('rel', 'alternate');
+            xDefault.setAttribute('hreflang', 'x-default');
+            document.head.appendChild(xDefault);
+        }
+        xDefault.setAttribute('href', siteUrl + location.pathname); // Point to base URL (default)
 
         // Resource Hints
         const hints = [

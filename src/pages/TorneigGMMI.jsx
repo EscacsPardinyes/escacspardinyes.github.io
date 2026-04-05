@@ -14,6 +14,7 @@ export default function TorneigGMMI() {
         phone: ''
     });
     const [status, setStatus] = useState(null); // null, 'sending', 'success', 'error'
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const breadcrumbs = [
         { label: t('gmmi.breadcrumb') }
@@ -124,12 +125,6 @@ export default function TorneigGMMI() {
                                     rel="noopener noreferrer">
                                     <i className="fa fa-download mr-2"></i>{t('gmmi.btn_bases')}
                                 </a>
-                                <a href="/img/Setmana Santa 2026/PRECIOS CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.pdf"
-                                    className="btn btn-secondary px-4 py-2"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i className="fa fa-download mr-2"></i>{t('gmmi.btn_preus')}
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +149,7 @@ export default function TorneigGMMI() {
                                     <form onSubmit={handleSubmit}>
                                         {/* Configuration */}
                                         <input type="hidden" name="_template" value="table" />
-                                        <input type="hidden" name="_subject" value={`Interès Tancats 2026: ${formData.name}`} />
+                                        <input type="hidden" name="_subject" value={`Interès Tancats: ${formData.name}`} />
                                         <input type="hidden" name="_captcha" value="false" />
 
                                         <div className="row">
@@ -249,10 +244,70 @@ export default function TorneigGMMI() {
 
                 <h3 className="text-center font-weight-bold mb-4 mt-5">{t('gmmi.gallery_title')}</h3>
                 <div className="row justify-content-center">
-                    <p className="text-muted">{t('gmmi.gallery_placeholder')}</p>
+                    {(() => {
+                        const mainImages = import.meta.glob('/public/img/galeria/Setmana Santa 2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+                        const prensaImages = import.meta.glob('/public/img/galeria/prensa/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+
+                        let photos = [
+                            ...Object.keys(prensaImages).filter(key => key.toLowerCase().includes('tancatsetmanasanta2026')),
+                            ...Object.keys(mainImages)
+                        ].map(key => key.replace('/public', ''));
+                        
+                        // Exclude the poster, logo, and any other non-gallery files that might appear matched
+                        photos = photos.filter(photo => 
+                            !photo.toLowerCase().includes('cerrados') && 
+                            !photo.toLowerCase().includes('logo-barcelona') &&
+                            !photo.toLowerCase().includes('precios')
+                        );
+
+                        if (photos.length === 0) {
+                            return <p className="text-muted">{t('gmmi.gallery_placeholder')}</p>;
+                        }
+
+                        return photos.map((photo, index) => (
+                            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4">
+                                <img 
+                                    src={photo} 
+                                    alt={`Galeria Tancats foto ${index + 1}`} 
+                                    className="img-fluid rounded shadow" 
+                                    style={{ cursor: 'pointer', transition: 'transform 0.3s' }}
+                                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.03)'}
+                                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                    onClick={() => setSelectedImage(photo)}
+                                    loading="lazy" 
+                                />
+                            </div>
+                        ));
+                    })()}
                 </div>
             </div>
             {/* Fi Crònica i Galeria */}
+
+            {/* Modal d'Imatge Ampliada */}
+            {selectedImage && (
+                <div 
+                    className="d-flex justify-content-center align-items-center" 
+                    style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9999, backgroundColor: 'rgba(0,0,0,0.85)', cursor: 'zoom-out' }}
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div className="position-relative" style={{ maxWidth: '90%', maxHeight: '90%' }}>
+                        <button 
+                            className="position-absolute" 
+                            style={{ top: '-40px', right: '0', fontSize: '2rem', background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}
+                            onClick={() => setSelectedImage(null)}
+                            aria-label="Tancar"
+                        >
+                            &times;
+                        </button>
+                        <img 
+                            src={selectedImage} 
+                            alt="Imatge ampliada" 
+                            style={{ maxWidth: '100%', maxHeight: '90vh', objectFit: 'contain' }} 
+                            className="rounded shadow-lg"
+                        />
+                    </div>
+                </div>
+            )}
         </>
     );
 }

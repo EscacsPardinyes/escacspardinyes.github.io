@@ -11,10 +11,12 @@ export default function SimultaniesArami() {
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
-    // Placeholder images - can be replaced later
-    const images = [
-        // '/img/galeria/WFMAramiLobo/1.jpg',
-    ];
+    // Load all images from the folder
+    const aromiImages = import.meta.glob('/public/img/galeria/simultanies-arami2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+    
+    let images = Object.keys(aromiImages)
+        .map(key => key.replace('/public', ''))
+        .filter(photo => !photo.toLowerCase().includes('inscripcio')); // Exclude the poster/registration image if present
 
     const breadcrumbs = [
         { label: t('nav.simultanies'), path: '/simultanies' },
@@ -95,27 +97,32 @@ export default function SimultaniesArami() {
                 </div>
             </div>
 
-            {/* Columna Plena: Formulari */}
-            <div className="container pb-5 mt-5">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <h3 className="text-center font-weight-bold mb-4">{t('simultanies.form_title')}</h3>
-                        <div className="embed-responsive shadow rounded" style={{ minHeight: '1000px', backgroundColor: '#f8f9fa' }}>
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSdzCp2b7UZZOKv_YIrSi00dxmd791quiPFq-wZEY1j_XXjw8g/viewform?embedded=true"
-                                width="100%"
-                                height="1000"
-                                frameborder="0"
-                                marginheight="0"
-                                marginwidth="0"
-                                title="Formulari d'inscripció simultànies Aramí Lobo"
-                            >
-                                S&#39;està carregant…
-                            </iframe>
-                        </div>
+            {/* Galeria de Fotos */}
+            {images.length > 0 && (
+                <div className="container pb-5 mt-5">
+                    <h3 className="text-center font-weight-bold mb-4">{t('gmmi.gallery_title') || 'Galeria d\'Imatges'}</h3>
+                    <div className="row justify-content-center">
+                        {images.map((photo, index) => (
+                            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4">
+                                <img 
+                                    src={photo} 
+                                    alt={`Foto ${index + 1}`} 
+                                    className="img-fluid rounded shadow" 
+                                    style={{ cursor: 'pointer', transition: 'transform 0.3s' }}
+                                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.03)'}
+                                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                    onClick={() => {
+                                        setPhotoIndex(index);
+                                        setIsOpen(true);
+                                    }}
+                                    loading="lazy" 
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </div>
+            )}
+            {/* Fi de contingut */}
 
 
 

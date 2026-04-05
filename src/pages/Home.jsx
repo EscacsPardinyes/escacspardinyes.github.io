@@ -22,7 +22,7 @@ export default function Home() {
                 <div id="blog-carousel" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="w-100" src="/img/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" />
+                            <img className="w-100" src="/img/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" fetchpriority="high" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
                                 <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide1.title')}</h1>
@@ -46,10 +46,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <a className="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                    <a className="carousel-control-prev" href="#blog-carousel" data-slide="prev" aria-label="Previous slide">
                         <span className="carousel-control-prev-icon"></span>
                     </a>
-                    <a className="carousel-control-next" href="#blog-carousel" data-slide="next">
+                    <a className="carousel-control-next" href="#blog-carousel" data-slide="next" aria-label="Next slide">
                         <span className="carousel-control-next-icon"></span>
                     </a>
                 </div>
