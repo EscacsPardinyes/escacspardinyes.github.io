@@ -26,3 +26,6 @@ URL amigable (/noticies/mi-primer-torneig).
 SEO configurado para esa noticia.
 Imagen destacada.
 ¿Te gustaría que prepare la infraestructura para que puedas empezar a publicar tus propias noticias? Es lo único que nos falta para competir con las webs más grandes de ajedrez.
+
+
+

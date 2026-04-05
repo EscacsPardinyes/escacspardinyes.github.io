@@ -14,16 +14,16 @@ export default function Footer() {
                         <p><a href="https://wa.me/34641915266" target="_blank" rel="noopener noreferrer" className="text-white"><i className="fab fa-whatsapp mr-2"></i>+34 641 91 52 66 (WhatsApp)</a></p>
                         <p><i className="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
                         <div className="d-flex justify-content-start mt-4">
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://x.com/EscacsPardinyes" target="_blank" rel="noopener noreferrer">
+                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://x.com/EscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer">
+                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer">
+                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer">
+                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <i className="fab fa-youtube"></i>
                             </a>
                         </div>
