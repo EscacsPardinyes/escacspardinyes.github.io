@@ -4,21 +4,17 @@ import { useLanguage } from '../context/LanguageContext';
 export default function NewsletterModal() {
     const { t } = useLanguage();
     const [showModal, setShowModal] = useState(false);
-    const [dismissed, setDismissed] = useState(false);
+    const [dismissed, setDismissed] = useState(() => !!localStorage.getItem('newsletter_dismissed'));
 
     useEffect(() => {
-        const isDismissed = localStorage.getItem('newsletter_dismissed');
-        if (isDismissed) {
-            setDismissed(true);
-            return;
-        }
+        if (dismissed) return;
 
         const timer = setTimeout(() => {
             setShowModal(true);
         }, 5000); // Show after 5 seconds
 
         return () => clearTimeout(timer);
-    }, []);
+    }, [dismissed]);
 
     const handleClose = () => {
         setShowModal(false);

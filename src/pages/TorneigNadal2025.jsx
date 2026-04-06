@@ -1,3 +1,4 @@
+import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 

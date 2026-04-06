@@ -1,0 +1,217 @@
+﻿
+> temp_react@0.0.0 lint
+> eslint .
+
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\language-switcher.js
+  27:13  error  'translations' is not defined  no-undef
+  27:35  error  'translations' is not defined  no-undef
+  28:33  error  'translations' is not defined  no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\main.js
+  34:4  error  'jQuery' is not defined  no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js
+    1:7  error  'translations' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  260:9  error  Duplicate key 'cookies.browser_title'                                                         no-dupe-keys
+  261:9  error  Duplicate key 'cookies.more_info_title'                                                       no-dupe-keys
+  537:9  error  Duplicate key 'cookies.browser_title'                                                         no-dupe-keys
+  538:9  error  Duplicate key 'cookies.more_info_title'                                                       no-dupe-keys
+  774:9  error  Duplicate key 'cookies.browser_title'                                                         no-dupe-keys
+  775:9  error  Duplicate key 'cookies.more_info_title'                                                       no-dupe-keys
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js
+  10:38  error  'define' is not defined   no-undef
+  11:3   error  'define' is not defined   no-undef
+  14:50  error  'module' is not defined   no-undef
+  15:3   error  'exports' is not defined  no-undef
+  15:21  error  'require' is not defined  no-undef
+  17:11  error  'jQuery' is not defined   no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js
+  1:41   error  'define' is not defined   no-undef
+  1:52   error  'define' is not defined   no-undef
+  1:138  error  'module' is not defined   no-undef
+  1:153  error  'exports' is not defined  no-undef
+  1:163  error  'require' is not defined  no-undef
+  1:184  error  'jQuery' is not defined   no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js
+   1:1   error  '$' is not defined                  no-undef
+   3:5   error  '$' is not defined                  no-undef
+   5:32  error  '$form' is defined but never used   no-unused-vars
+   5:39  error  'event' is defined but never used   no-unused-vars
+   5:46  error  'errors' is defined but never used  no-unused-vars
+   9:24  error  '$' is not defined                  no-undef
+  10:25  error  '$' is not defined                  no-undef
+  11:27  error  '$' is not defined                  no-undef
+  12:27  error  '$' is not defined                  no-undef
+  14:13  error  '$this' is not defined              no-undef
+  14:21  error  '$' is not defined                  no-undef
+  15:13  error  '$this' is not defined              no-undef
+  17:13  error  '$' is not defined                  no-undef
+  28:21  error  '$' is not defined                  no-undef
+  29:21  error  '$' is not defined                  no-undef
+  31:21  error  '$' is not defined                  no-undef
+  33:21  error  '$' is not defined                  no-undef
+  35:21  error  '$' is not defined                  no-undef
+  38:21  error  '$' is not defined                  no-undef
+  39:21  error  '$' is not defined                  no-undef
+  41:21  error  '$' is not defined                  no-undef
+  41:58  error  '$' is not defined                  no-undef
+  42:21  error  '$' is not defined                  no-undef
+  43:21  error  '$' is not defined                  no-undef
+  47:25  error  '$this' is not defined              no-undef
+  53:20  error  '$' is not defined                  no-undef
+  57:5   error  '$' is not defined                  no-undef
+  59:9   error  '$' is not defined                  no-undef
+  63:1   error  '$' is not defined                  no-undef
+  64:5   error  '$' is not defined                  no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js
+  1:4569   error  'e' is defined but never used  no-unused-vars
+  1:8223   error  'e' is defined but never used  no-unused-vars
+  1:10490  error  'a' is defined but never used  no-unused-vars
+  1:10492  error  'e' is defined but never used  no-unused-vars
+  1:14775  error  'e' is defined but never used  no-unused-vars
+  1:14870  error  'jQuery' is not defined        no-undef
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\CookieBanner.jsx
+  12:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  10 |         const cookieAccepted = localStorage.getItem('cookieAccepted');
+  11 |         if (!cookieAccepted) {
+> 12 |             setIsVisible(true);
+     |             ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |         }
+  14 |     }, []);
+  15 |  react-hooks/set-state-in-effect
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\Layout.jsx
+  1:18  error  'useLocation' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\NewsletterModal.jsx
+   5:13  error  't' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+  12:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  10 |         const isDismissed = localStorage.getItem('newsletter_dismissed');
+  11 |         if (isDismissed) {
+> 12 |             setDismissed(true);
+     |             ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |             return;
+  14 |         }
+  15 |  react-hooks/set-state-in-effect
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\SEO.jsx
+   42:15  error  'defaultLang' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  175:37  error  'i' is defined but never used                                                                no-unused-vars
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\context\LanguageContext.jsx
+  61:17  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js
+   133:9  error  Duplicate key 'school.advanced_title'          no-dupe-keys
+   134:9  error  Duplicate key 'school.advanced_text'           no-dupe-keys
+   135:9  error  Duplicate key 'school.info_title'              no-dupe-keys
+   136:9  error  Duplicate key 'school.price'                   no-dupe-keys
+   137:9  error  Duplicate key 'school.membership'              no-dupe-keys
+   138:9  error  Duplicate key 'school.warning'                 no-dupe-keys
+   139:9  error  Duplicate key 'school.more_info'               no-dupe-keys
+   140:9  error  Duplicate key 'school.enroll_title'            no-dupe-keys
+   141:9  error  Duplicate key 'school.values_title'            no-dupe-keys
+   142:9  error  Duplicate key 'school.val_concentration'       no-dupe-keys
+   143:9  error  Duplicate key 'school.val_concentration_text'  no-dupe-keys
+   144:9  error  Duplicate key 'school.val_companionship'       no-dupe-keys
+   145:9  error  Duplicate key 'school.val_companionship_text'  no-dupe-keys
+   146:9  error  Duplicate key 'school.val_improvement'         no-dupe-keys
+   147:9  error  Duplicate key 'school.val_improvement_text'    no-dupe-keys
+   328:9  error  Duplicate key 'cookies.browser_title'          no-dupe-keys
+   329:9  error  Duplicate key 'cookies.more_info_title'        no-dupe-keys
+   336:9  error  Duplicate key 'santjordi.header'               no-dupe-keys
+   337:9  error  Duplicate key 'santjordi.breadcrumb'           no-dupe-keys
+   338:9  error  Duplicate key 'santjordi.title'                no-dupe-keys
+   339:9  error  Duplicate key 'santjordi.p1'                   no-dupe-keys
+   340:9  error  Duplicate key 'santjordi.p2'                   no-dupe-keys
+   341:9  error  Duplicate key 'santjordi.p3'                   no-dupe-keys
+   342:9  error  Duplicate key 'santjordi.p4'                   no-dupe-keys
+   343:9  error  Duplicate key 'santjordi.p5'                   no-dupe-keys
+   601:9  error  Duplicate key 'school.title'                   no-dupe-keys
+   602:9  error  Duplicate key 'school.subtitle'                no-dupe-keys
+   603:9  error  Duplicate key 'school.beginner_title'          no-dupe-keys
+   604:9  error  Duplicate key 'school.beginner_text'           no-dupe-keys
+   605:9  error  Duplicate key 'school.btn_join'                no-dupe-keys
+   606:9  error  Duplicate key 'school.advanced_title'          no-dupe-keys
+   607:9  error  Duplicate key 'school.advanced_text'           no-dupe-keys
+   608:9  error  Duplicate key 'school.info_title'              no-dupe-keys
+   609:9  error  Duplicate key 'school.price'                   no-dupe-keys
+   610:9  error  Duplicate key 'school.membership'              no-dupe-keys
+   611:9  error  Duplicate key 'school.warning'                 no-dupe-keys
+   612:9  error  Duplicate key 'school.more_info'               no-dupe-keys
+   613:9  error  Duplicate key 'school.enroll_title'            no-dupe-keys
+   614:9  error  Duplicate key 'school.values_title'            no-dupe-keys
+   615:9  error  Duplicate key 'school.val_concentration'       no-dupe-keys
+   616:9  error  Duplicate key 'school.val_concentration_text'  no-dupe-keys
+   617:9  error  Duplicate key 'school.val_companionship'       no-dupe-keys
+   618:9  error  Duplicate key 'school.val_companionship_text'  no-dupe-keys
+   619:9  error  Duplicate key 'school.val_improvement'         no-dupe-keys
+   620:9  error  Duplicate key 'school.val_improvement_text'    no-dupe-keys
+   801:9  error  Duplicate key 'cookies.browser_title'          no-dupe-keys
+   802:9  error  Duplicate key 'cookies.more_info_title'        no-dupe-keys
+   809:9  error  Duplicate key 'santjordi.header'               no-dupe-keys
+   810:9  error  Duplicate key 'santjordi.breadcrumb'           no-dupe-keys
+   811:9  error  Duplicate key 'santjordi.title'                no-dupe-keys
+   812:9  error  Duplicate key 'santjordi.p1'                   no-dupe-keys
+   813:9  error  Duplicate key 'santjordi.p2'                   no-dupe-keys
+   814:9  error  Duplicate key 'santjordi.p3'                   no-dupe-keys
+   815:9  error  Duplicate key 'santjordi.p4'                   no-dupe-keys
+   816:9  error  Duplicate key 'santjordi.p5'                   no-dupe-keys
+  1200:9  error  Duplicate key 'cookies.browser_title'          no-dupe-keys
+  1201:9  error  Duplicate key 'cookies.more_info_title'        no-dupe-keys
+  1208:9  error  Duplicate key 'santjordi.header'               no-dupe-keys
+  1209:9  error  Duplicate key 'santjordi.breadcrumb'           no-dupe-keys
+  1210:9  error  Duplicate key 'santjordi.title'                no-dupe-keys
+  1211:9  error  Duplicate key 'santjordi.p1'                   no-dupe-keys
+  1212:9  error  Duplicate key 'santjordi.p2'                   no-dupe-keys
+  1213:9  error  Duplicate key 'santjordi.p3'                   no-dupe-keys
+  1214:9  error  Duplicate key 'santjordi.p4'                   no-dupe-keys
+  1215:9  error  Duplicate key 'santjordi.p5'                   no-dupe-keys
+  1234:9  error  Duplicate key 'news.header'                    no-dupe-keys
+  1235:9  error  Duplicate key 'news.breadcrumb'                no-dupe-keys
+  1236:9  error  Duplicate key 'news.title'                     no-dupe-keys
+  1237:9  error  Duplicate key 'news.subtitle'                  no-dupe-keys
+  1238:9  error  Duplicate key 'news.search'                    no-dupe-keys
+  1239:9  error  Duplicate key 'news.filter_all'                no-dupe-keys
+  1240:9  error  Duplicate key 'news.cat_simultanies'           no-dupe-keys
+  1241:9  error  Duplicate key 'news.cat_torneig'               no-dupe-keys
+  1242:9  error  Duplicate key 'news.cat_social'                no-dupe-keys
+  1243:9  error  Duplicate key 'news.cat_altres'                no-dupe-keys
+  1244:9  error  Duplicate key 'news.read_more'                 no-dupe-keys
+  1245:9  error  Duplicate key 'news.back'                      no-dupe-keys
+  1246:9  error  Duplicate key 'news.no_entries'                no-dupe-keys
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\SimultaniesArami.jsx
+   3:10  error  'useLocation' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  18:24  error  '_' is defined but never used                                                       no-unused-vars
+  19:16  error  '_' is defined but never used                                                       no-unused-vars
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\TorneigGMMI.jsx
+  135:48  error  '_' is defined but never used  no-unused-vars
+  136:40  error  '_' is defined but never used  no-unused-vars
+
+C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\TorneigNadal2025.jsx
+  5:26  error  'useLanguage' is not defined  no-undef
+
+Ô£û 150 problems (150 errors, 0 warnings)
+

@@ -17,6 +17,7 @@ const TorneigNadal2025 = lazy(() => import('./pages/TorneigNadal2025'));
 const TorneigGMMI = lazy(() => import('./pages/TorneigGMMI'));
 const SimultaniesArami = lazy(() => import('./pages/SimultaniesArami'));
 const SimultaniesList = lazy(() => import('./pages/SimultaniesList'));
+const TancatsList = lazy(() => import('./pages/TancatsList'));
 const EventPage = lazy(() => import('./pages/EventPage'));
 const NewsList = lazy(() => import('./pages/NewsList'));
 const NewsDetail = lazy(() => import('./pages/NewsDetail'));
@@ -53,6 +54,7 @@ function App() {
             <Route path="simultanies-ivette" element={<EventPage id="ivette" />} />
             <Route path="simultanies-arami2026" element={<SimultaniesArami />} />
             <Route path="simultanies" element={<SimultaniesList />} />
+            <Route path="tancats" element={<TancatsList />} />
             <Route path="noticies" element={<NewsList />} />
             <Route path="noticies/:id" element={<NewsDetail />} />
             <Route path="*" element={<NotFound />} />

@@ -1,0 +1,177 @@
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\language-switcher.js | Rule: no-undef | Msg: 'translations' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\language-switcher.js | Rule: no-undef | Msg: 'translations' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\language-switcher.js | Rule: no-undef | Msg: 'translations' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\main.js | Rule: no-undef | Msg: 'jQuery' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-unused-vars | Msg: 'translations' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\js\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'define' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'define' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'module' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'exports' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'require' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.js | Rule: no-undef | Msg: 'jQuery' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'define' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'define' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'module' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'exports' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'require' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\lib\easing\easing.min.js | Rule: no-undef | Msg: 'jQuery' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-unused-vars | Msg: '$form' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-unused-vars | Msg: 'event' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-unused-vars | Msg: 'errors' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$this' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$this' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$this' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\contact.js | Rule: no-undef | Msg: '$' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-unused-vars | Msg: 'e' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-unused-vars | Msg: 'e' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-unused-vars | Msg: 'a' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-unused-vars | Msg: 'e' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-unused-vars | Msg: 'e' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\legacy_site\mail\jqBootstrapValidation.min.js | Rule: no-undef | Msg: 'jQuery' is not defined.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\CookieBanner.jsx | Rule: react-hooks/set-state-in-effect | Msg: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  10 |         const cookieAccepted = localStorage.getItem('cookieAccepted');
+  11 |         if (!cookieAccepted) {
+> 12 |             setIsVisible(true);
+     |             ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |         }
+  14 |     }, []);
+  15 |
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\Layout.jsx | Rule: no-unused-vars | Msg: 'useLocation' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\NewsletterModal.jsx | Rule: no-unused-vars | Msg: 't' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\NewsletterModal.jsx | Rule: react-hooks/set-state-in-effect | Msg: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  10 |         const isDismissed = localStorage.getItem('newsletter_dismissed');
+  11 |         if (isDismissed) {
+> 12 |             setDismissed(true);
+     |             ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |             return;
+  14 |         }
+  15 |
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\SEO.jsx | Rule: no-unused-vars | Msg: 'defaultLang' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\components\SEO.jsx | Rule: no-unused-vars | Msg: 'i' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\context\LanguageContext.jsx | Rule: react-refresh/only-export-components | Msg: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.advanced_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.advanced_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.price'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.membership'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.warning'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.more_info'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.enroll_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.values_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_concentration'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_concentration_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_companionship'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_companionship_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_improvement'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_improvement_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.header'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.breadcrumb'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p1'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p2'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p3'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p4'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p5'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.subtitle'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.beginner_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.beginner_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.btn_join'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.advanced_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.advanced_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.price'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.membership'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.warning'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.more_info'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.enroll_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.values_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_concentration'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_concentration_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_companionship'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_companionship_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_improvement'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'school.val_improvement_text'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.header'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.breadcrumb'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p1'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p2'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p3'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p4'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p5'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.browser_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'cookies.more_info_title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.header'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.breadcrumb'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p1'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p2'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p3'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p4'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'santjordi.p5'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.header'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.breadcrumb'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.title'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.subtitle'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.search'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.filter_all'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.cat_simultanies'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.cat_torneig'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.cat_social'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.cat_altres'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.read_more'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.back'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\data\translations.js | Rule: no-dupe-keys | Msg: Duplicate key 'news.no_entries'.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\SimultaniesArami.jsx | Rule: no-unused-vars | Msg: 'useLocation' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\SimultaniesArami.jsx | Rule: no-unused-vars | Msg: '_' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\SimultaniesArami.jsx | Rule: no-unused-vars | Msg: '_' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\TorneigGMMI.jsx | Rule: no-unused-vars | Msg: '_' is defined but never used.
+File: C:\Users\jordi\Desktop\GitChessPardinyes\escacspardinyes.github.io\src\pages\TorneigGMMI.jsx | Rule: no-unused-vars | Msg: '_' is defined but never used.
