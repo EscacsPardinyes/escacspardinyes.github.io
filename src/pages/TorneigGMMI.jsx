@@ -3,60 +3,18 @@ import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 import { useLanguage } from '../context/LanguageContext';
 
+import posterImg from '../img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
+import posterPdf from '../img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.pdf';
+import logoBarcelona from '../img/galeria/Setmana Santa 2026/logo-barcelona.webp';
+
 export default function TorneigGMMI() {
     const { t, tHtml } = useLanguage();
-    const [formData, setFormData] = useState({
-        title: '',
-        name: '',
-        fideId: '',
-        flag: '',
-        elo: '',
-        phone: ''
-    });
-    const [status, setStatus] = useState(null); // null, 'sending', 'success', 'error'
     const [selectedImage, setSelectedImage] = useState(null);
 
     const breadcrumbs = [
+        { label: t('tancats.list_breadcrumb') || 'Tancats de GM i MI', path: '/tancats' },
         { label: t('gmmi.breadcrumb') }
     ];
-
-    const handleInputChange = (e) => {
-        const { id, value } = e.target;
-        setFormData(prev => ({ ...prev, [id]: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = e.currentTarget;
-        setStatus('sending');
-
-        const formDataToSend = new FormData(form);
-
-        try {
-            const response = await fetch("https://formsubmit.co/ajax/escacspardinyes@gmail.com", {
-                method: "POST",
-                body: formDataToSend
-            });
-
-            if (response.ok) {
-                setStatus('success');
-                form.reset();
-                setFormData({
-                    title: '',
-                    name: '',
-                    fideId: '',
-                    flag: '',
-                    elo: '',
-                    phone: ''
-                });
-            } else {
-                setStatus('error');
-            }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            setStatus('error');
-        }
-    };
 
     return (
         <>
@@ -68,7 +26,7 @@ export default function TorneigGMMI() {
                 <h2 className="text-center font-weight-bold mb-5">{t('gmmi.title')}</h2>
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="/img/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.png"
+                        <img src={posterImg}
                             alt="Cartell oficial del Torneig de GM i MI"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}
@@ -119,7 +77,7 @@ export default function TorneigGMMI() {
                             </div>
 
                             <div className="d-flex flex-column flex-md-row mt-4">
-                                <a href="/img/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.pdf"
+                                <a href={posterPdf}
                                     className="btn btn-primary mr-md-3 mb-3 mb-md-0 px-4 py-2"
                                     target="_blank"
                                     rel="noopener noreferrer">
@@ -132,83 +90,7 @@ export default function TorneigGMMI() {
             </div>
             {/* Fi del Contingut Principal del Torneig */}
 
-            {/* Formulario de Interés */}
-            <div className="bg-light py-5">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8">
-                            <div className="bg-white p-5 rounded shadow">
-                                <h3 className="text-center font-weight-bold mb-2">{t('gmmi.interest_form_title')}</h3>
-                                <p className="text-center text-muted mb-4">{t('gmmi.interest_form_subtitle')}</p>
-
-                                {status === 'success' ? (
-                                    <div className="alert alert-success text-center py-4">
-                                        <h4><i className="fa fa-check-circle mr-2"></i>{t('contact.form.success')}</h4>
-                                    </div>
-                                ) : (
-                                    <form onSubmit={handleSubmit}>
-                                        {/* Configuration */}
-                                        <input type="hidden" name="_template" value="table" />
-                                        <input type="hidden" name="_subject" value={`Interès Tancats: ${formData.name}`} />
-                                        <input type="hidden" name="_captcha" value="false" />
-
-                                        <div className="row">
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="title">{t('gmmi.form_title')}</label>
-                                                <input type="text" className="form-control" id="title" name="title" required value={formData.title} onChange={handleInputChange} />
-                                            </div>
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="name">{t('gmmi.form_name')}</label>
-                                                <input type="text" className="form-control" id="name" name="name" required value={formData.name} onChange={handleInputChange} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="fideId">{t('gmmi.form_fide')}</label>
-                                                <input type="text" className="form-control" id="fideId" name="fideId" required value={formData.fideId} onChange={handleInputChange} />
-                                            </div>
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="flag">{t('gmmi.form_flag')}</label>
-                                                <input type="text" className="form-control" id="flag" name="flag" required value={formData.flag} onChange={handleInputChange} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="elo">{t('gmmi.form_elo')}</label>
-                                                <input type="number" className="form-control" id="elo" name="elo" required value={formData.elo} onChange={handleInputChange} />
-                                            </div>
-                                            <div className="col-md-6 form-group">
-                                                <label htmlFor="phone">{t('gmmi.form_phone')}</label>
-                                                <input type="tel" className="form-control" id="phone" name="phone" required value={formData.phone} onChange={handleInputChange} />
-                                            </div>
-                                        </div>
-                                        <div className="form-group mt-3 pl-4">
-                                            <input type="checkbox" className="form-check-input" id="privacy" name="privacy" required />
-                                            <label className="form-check-label text-muted" htmlFor="privacy">
-                                                {t('contact.form.privacy')} <a href={t('contact.form.link')} target="_blank" rel="noopener noreferrer">{t('contact.form.policy')}</a>
-                                            </label>
-                                        </div>
-                                        <div className="text-center mt-4">
-                                            <button type="submit" className="btn btn-primary px-5 py-3" disabled={status === 'sending'}>
-                                                {status === 'sending' ? (
-                                                    <span><i className="fa fa-spinner fa-spin mr-2"></i> Enviant...</span>
-                                                ) : (
-                                                    t('gmmi.form_submit')
-                                                )}
-                                            </button>
-                                        </div>
-                                        {status === 'error' && (
-                                            <div className="mt-3 text-danger text-center">
-                                                Hi ha hagut un error en enviar les dades. Si us plau, prova-ho més tard o envia un mail directament.
-                                            </div>
-                                        )}
-                                    </form>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* Fi del Contingut Principal del Torneig */}
 
             {/* Secció de Col·laboradors */}
             <div className="container pb-5 pt-5">
@@ -216,7 +98,7 @@ export default function TorneigGMMI() {
                 <p className="text-center mb-5 lead">{t('gmmi.collab_text')}</p>
                 <div className="row justify-content-center align-items-center text-center">
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/Setmana Santa 2026/logo-barcelona.jpeg" alt="Club d'Escacs Barcelona" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src={logoBarcelona} alt="Club d'Escacs Barcelona" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
                         <img src="/img/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
@@ -245,13 +127,15 @@ export default function TorneigGMMI() {
                 <h3 className="text-center font-weight-bold mb-4 mt-5">{t('gmmi.gallery_title')}</h3>
                 <div className="row justify-content-center">
                     {(() => {
-                        const mainImages = import.meta.glob('/public/img/galeria/Setmana Santa 2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
-                        const prensaImages = import.meta.glob('/public/img/galeria/prensa/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+                        const mainImages = import.meta.glob('/src/img/galeria/Setmana Santa 2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
+                        const prensaImages = import.meta.glob('/src/img/galeria/prensa/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
 
                         let photos = [
-                            ...Object.keys(prensaImages).filter(key => key.toLowerCase().includes('tancatsetmanasanta2026')),
-                            ...Object.keys(mainImages)
-                        ].map(key => key.replace('/public', ''));
+                            ...Object.entries(prensaImages)
+                                .filter(([key, _]) => key.toLowerCase().includes('tancatsetmanasanta2026'))
+                                .map(([_, mod]) => mod.default || mod),
+                            ...Object.values(mainImages).map(mod => mod.default || mod)
+                        ];
                         
                         // Exclude the poster, logo, and any other non-gallery files that might appear matched
                         photos = photos.filter(photo => 

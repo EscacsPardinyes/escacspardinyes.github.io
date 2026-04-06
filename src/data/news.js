@@ -57,5 +57,110 @@ export const news = [
             
             We were also visited by Kulsum Qasim, President of ChessKid at Chess.com. It was an incredible opportunity to give visibility to women in chess and inspire new generations.`
         }
+    },
+    {
+        id: 'premsa-escacs-joves',
+        date: '2026-04-01',
+        category: 'prensa',
+        image: '/img/galeria/prensa/tancatsetmanasanta2026-01-04-2026-Escacs-son-joves.webp',
+        title: {
+            ca: 'Els escacs són per joves',
+            es: 'El ajedrez es para jóvenes',
+            en: 'Chess is for the youth'
+        },
+        summary: {
+            ca: 'Ressò als mitjans de com els escacs estan captivant les noves generacions durant el Tancat de Setmana Santa 2026.',
+            es: 'Eco en los medios de cómo el ajedrez está cautivando a las nuevas generaciones durante el Cerrado de Semana Santa 2026.',
+            en: 'Media echo on how chess is captivating new generations during the 2026 Easter Closed.'
+        },
+        content: {
+            ca: 'Ressò als mitjans de com els escacs estan captivant les noves generacions durant el Tancat de Setmana Santa 2026. Llegeix el retall per a més detalls.',
+            es: 'Eco en los medios de cómo el ajedrez está cautivando a las nuevas generaciones durante el Cerrado de Semana Santa 2026. Lee el recorte para más detalles.',
+            en: 'Media echo on how chess is captivating new generations during the 2026 Easter Closed. Read the clipping for more details.'
+        }
+    },
+    {
+        id: 'premsa-fita-historica-lleida',
+        date: '2026-04-05',
+        category: 'prensa',
+        image: '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Fita-Historica-lleida.webp',
+        title: {
+            ca: 'Fita històrica a Lleida',
+            es: 'Hito histórico en Lleida',
+            en: 'Historic milestone in Lleida'
+        },
+        summary: {
+            ca: 'La premsa destaca l\'èxit del Tancat com una fita històrica per a l\'escacs lleidatà.',
+            es: 'La prensa destaca el éxito del Cerrado como un hito histórico para el ajedrez leridano.',
+            en: 'The press highlights the success of the Closed as a historic milestone for chess in Lleida.'
+        },
+        content: {
+            ca: 'La premsa destaca l\'èxit del Tancat de Setmana Santa 2026 com una fita històrica per a l\'escacs lleidatà. Llegeix el retall per a més detalls.',
+            es: 'La prensa destaca el éxito del Cerrado de Semana Santa 2026 como un hito histórico para el ajedrez leridano. Lee el recorte para más detalles.',
+            en: 'The press highlights the success of the 2026 Easter Closed as a historic milestone for chess in Lleida. Read the clipping for more details.'
+        }
+    },
+    {
+        id: 'premsa-lleida-elit-escacs',
+        date: '2026-04-05',
+        category: 'prensa',
+        image: '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Lleida-Elit-escacs.webp',
+        title: {
+            ca: 'Lleida, l\'elit dels escacs',
+            es: 'Lleida, la élite del ajedrez',
+            en: 'Lleida, the elite of chess'
+        },
+        summary: {
+            ca: 'Ressenyen Lleida com a punt de trobada de l\'elit dels escacs gràcies a l\'organització del Tancat.',
+            es: 'Reseñan Lleida como punto de encuentro de la élite del ajedrez gracias a la organización del Cerrado.',
+            en: 'Lleida is reviewed as a meeting point for the chess elite thanks to the organization of the Closed.'
+        },
+        content: {
+            ca: 'Ressenyen Lleida com a punt de trobada de l\'elit dels escacs gràcies a l\'organització del Tancat de GMs i MIs. Llegeix el retall per a més detalls.',
+            es: 'Reseñan Lleida como punto de encuentro de la élite del ajedrez gracias a la organización del Cerrado de GMs y MIs. Lee el recorte para más detalles.',
+            en: 'Lleida is reviewed as a meeting point for the chess elite thanks to the organization of the GM and IM Closed. Read the clipping for more details.'
+        }
+    },
+    {
+        id: 'premsa-capita-argentina',
+        date: '2026-03-31',
+        category: 'prensa',
+        image: '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capita-argentina.webp',
+        title: {
+            ca: 'El capità de l\'Argentina al Tancat',
+            es: 'El capitán de Argentina en el Cerrado',
+            en: 'Argentina\'s captain at the Closed'
+        },
+        summary: {
+            ca: 'Entrevista al capità de la selecció argentina present al Tancat de Setmana Santa.',
+            es: 'Entrevista al capitán de la selección argentina presente en el Cerrado de Semana Santa.',
+            en: 'Interview with the captain of the Argentine team present at the Easter Closed.'
+        },
+        content: {
+            ca: 'Entrevista al capità de la selecció argentina present al Tancat de Setmana Santa 2026. Llegeix el retall per a més detalls.',
+            es: 'Entrevista al capitán de la selección argentina presente en el Cerrado de Semana Santa 2026. Lee el recorte para más detalles.',
+            en: 'Interview with the captain of the Argentine team present at the Easter 2026 Closed. Read the clipping for more details.'
+        }
+    },
+    {
+        id: 'premsa-capital-escacs',
+        date: '2026-03-31',
+        category: 'prensa',
+        image: '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capital-escacs.webp',
+        title: {
+            ca: 'Lleida, capital dels escacs',
+            es: 'Lleida, capital del ajedrez',
+            en: 'Lleida, chess capital'
+        },
+        summary: {
+            ca: 'Menció especial de com Lleida es converteix en la capital dels escacs per uns dies.',
+            es: 'Mención especial de cómo Lleida se convierte en la capital del ajedrez por unos días.',
+            en: 'Special mention of how Lleida becomes the capital of chess for a few days.'
+        },
+        content: {
+            ca: 'Menció especial de com Lleida es converteix en la capital dels escacs per uns dies en aquest Tancat Internacional. Llegeix el retall per a més detalls.',
+            es: 'Mención especial de cómo Lleida se convierte en la capital del ajedrez por unos días en este Cerrado Internacional. Lee el recorte para más detalles.',
+            en: 'Special mention of how Lleida becomes the capital of chess for a few days in this International Closed. Read the clipping for more details.'
+        }
     }
 ];

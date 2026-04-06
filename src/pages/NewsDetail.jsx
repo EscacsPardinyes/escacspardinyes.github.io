@@ -1,5 +1,5 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { news } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
@@ -9,6 +9,7 @@ export default function NewsDetail() {
     const { id } = useParams();
     const { language, t } = useLanguage();
     const navigate = useNavigate();
+    const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
     const item = news.find(n => n.id === id);
 
@@ -49,7 +50,8 @@ export default function NewsDetail() {
                             src={item.image}
                             alt={item.title[language]}
                             className="img-fluid rounded shadow mb-4 w-100"
-                            style={{ maxHeight: '500px', objectFit: 'cover' }}
+                            style={{ maxHeight: '500px', objectFit: item.category === 'prensa' ? 'contain' : 'cover', backgroundColor: item.category === 'prensa' ? '#f8f9fa' : 'transparent', cursor: 'pointer' }}
+                            onClick={() => setIsImageModalOpen(true)}
                         />
 
                         <div className="d-flex align-items-center mb-3">
@@ -86,6 +88,28 @@ export default function NewsDetail() {
                     </div>
                 </div>
             </div>
+
+            {isImageModalOpen && (
+                <div 
+                    className="d-flex justify-content-center align-items-center" 
+                    style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(0,0,0,0.85)', zIndex: 9999, cursor: 'zoom-out' }}
+                    onClick={() => setIsImageModalOpen(false)}
+                >
+                    <img 
+                        src={item.image} 
+                        alt={item.title[language]} 
+                        style={{ maxWidth: '90%', maxHeight: '95vh', objectFit: 'contain' }} 
+                    />
+                    <button 
+                        className="btn btn-dark position-absolute" 
+                        style={{ top: '20px', right: '20px', fontSize: '1.2rem', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                        onClick={(e) => { e.stopPropagation(); setIsImageModalOpen(false); }}
+                        aria-label="Close"
+                    >
+                        <i className="fa fa-times"></i>
+                    </button>
+                </div>
+            )}
         </>
     );
 }

@@ -12,11 +12,11 @@ export default function SimultaniesArami() {
     const [photoIndex, setPhotoIndex] = useState(0);
 
     // Load all images from the folder
-    const aromiImages = import.meta.glob('/public/img/galeria/simultanies-arami2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+    const aromiImages = import.meta.glob('/src/img/galeria/simultanies-arami2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
     
-    let images = Object.keys(aromiImages)
-        .map(key => key.replace('/public', ''))
-        .filter(photo => !photo.toLowerCase().includes('inscripcio')); // Exclude the poster/registration image if present
+    let images = Object.entries(aromiImages)
+        .filter(([key, _]) => !key.toLowerCase().includes('inscripcio')) // Exclude the poster/registration image if present
+        .map(([_, mod]) => mod.default || mod);
 
     const breadcrumbs = [
         { label: t('nav.simultanies'), path: '/simultanies' },

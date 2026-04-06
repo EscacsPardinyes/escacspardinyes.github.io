@@ -51,7 +51,7 @@ export default function Header() {
                         {/* <NavLink to="/noticies" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('news.header')}</NavLink> */}
                         <NavLink to="/simultanies" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.simultanies')}</NavLink>
                         {/* <NavLink to="/torneig-nadal-2025" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.nadal2025')}</NavLink> */}
-                        <NavLink to="/tancats-setmana-santa-2026" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.gmmi')}</NavLink>
+                        <NavLink to="/tancats" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.tancats')}</NavLink>
 
                         <NavLink to="/contact" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.contact')}</NavLink>
 

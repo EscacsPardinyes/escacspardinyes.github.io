@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function CookieBanner() {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(() => !localStorage.getItem('cookieAccepted'));
     const { t } = useLanguage();
 
     useEffect(() => {
-        const cookieAccepted = localStorage.getItem('cookieAccepted');
-        if (!cookieAccepted) {
-            setIsVisible(true);
-        }
+        // State is initialized directly
     }, []);
 
     const acceptCookies = () => {
