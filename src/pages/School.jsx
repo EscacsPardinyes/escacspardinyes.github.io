@@ -28,7 +28,7 @@ export default function School() {
                             <i className="flaticon-chess"></i>
                             <h3 className="display-4 mb-3 text-white font-weight-bold">{t('school.beginner_title')}</h3>
                             <p dangerouslySetInnerHTML={tHtml('school.beginner_text')}></p>
-                            <Link to="/contact" className="btn btn-lg btn-outline-light mt-4 px-4">{t('school.btn_join')}</Link>
+                            <a href="#inscripcio" className="btn btn-lg btn-outline-light mt-4 px-4">{t('school.btn_join')}</a>
                         </div>
                     </div>
                     <div className="col-md-6 p-0">
@@ -36,7 +36,7 @@ export default function School() {
                             <i className="flaticon-strategy"></i>
                             <h3 className="display-4 mb-3 text-white font-weight-bold">{t('school.advanced_title')}</h3>
                             <p dangerouslySetInnerHTML={tHtml('school.advanced_text')}></p>
-                            <Link to="/contact" className="btn btn-lg btn-outline-light mt-4 px-4">{t('school.btn_join')}</Link>
+                            <Link to="/masterclass" className="btn btn-lg btn-outline-light mt-4 px-4">{t('school.btn_masterclass')}</Link>
                         </div>
                     </div>
                 </div>
@@ -290,7 +290,7 @@ export default function School() {
                 </div>
             </div>
 
-            <div className="container my-5">
+            <div id="inscripcio" className="container my-5">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                         <div className="text-center mb-4">

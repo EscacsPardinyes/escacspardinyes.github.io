@@ -6,6 +6,8 @@ import Layout from './components/Layout';
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const School = lazy(() => import('./pages/School'));
+const MasterclassList = lazy(() => import('./pages/MasterclassList'));
+const MasterclassPage = lazy(() => import('./pages/MasterclassPage'));
 const Feature = lazy(() => import('./pages/Feature'));
 const Federat = lazy(() => import('./pages/Federat'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -41,6 +43,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="school" element={<School />} />
+            <Route path="masterclass" element={<MasterclassList />} />
+            <Route path="masterclass/india-de-rey" element={<MasterclassPage id="india-de-rey" />} />
             <Route path="feature" element={<Feature />} />
             <Route path="federat" element={<Federat />} />
             <Route path="contact" element={<Contact />} />
