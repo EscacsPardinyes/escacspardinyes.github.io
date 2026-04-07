@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="row pt-5">
                     <div className="col-lg-3 col-md-6 mb-5">
                         <h4 className="text-primary mb-4">{t('footer.contact')}</h4>
-                        <p><i className="fa fa-map-marker-alt mr-2"></i>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                        <p><i className="fa fa-map-marker-alt mr-2"></i>{t('contact.address_val')}</p>
                         <p><a href="https://wa.me/34641915266" target="_blank" rel="noopener noreferrer" className="text-white"><i className="fab fa-whatsapp mr-2"></i>+34 641 91 52 66 (WhatsApp)</a></p>
                         <p><i className="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
                         <div className="d-flex justify-content-start mt-4">

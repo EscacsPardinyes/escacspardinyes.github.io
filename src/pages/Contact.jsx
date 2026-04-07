@@ -22,7 +22,7 @@ export default function Contact() {
                     <div className="col-sm-4 text-center mb-3">
                         <i className="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
                         <h4 className="font-weight-bold">{t('contact.address_title')}</h4>
-                        <p>Carrer Sant Pere Claver, 1, segona planta, Lleida 25005</p>
+                        <p>{t('contact.address_val')}</p>
                     </div>
                     <div className="col-sm-4 text-center mb-3">
                         <i className="fab fa-2x fa-whatsapp mb-3 text-primary"></i>
