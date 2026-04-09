@@ -129,13 +129,43 @@ export default function TancatsList() {
 
             <hr className="container mb-5" />
 
+            {/* Properes Edicions */}
+            <div className="container pb-5">
+                <div className="text-center mb-5 mt-5">
+                    <h2 className="font-weight-bold">{t('tancats.upcoming_title')}</h2>
+                    <p className="lead">{t('tancats.upcoming_subtitle')}</p>
+                </div>
+                <div className="row justify-content-center">
+                    {/* Tancat Agost 2026 */}
+                    <div className="col-lg-4 mb-4">
+                        <div className="card border-0 shadow rounded overflow-hidden h-100 border-primary" style={{ borderWidth: '2px !important' }}>
+                            <img
+                                src="https://placehold.co/600x400/2A769C/ffffff?text=Tancat+Agost"
+                                className="card-img-top"
+                                alt="Tancat Agost 2026"
+                                style={{ height: '350px', objectFit: 'contain', backgroundColor: '#f8f9fa', padding: '10px' }}
+                                loading="lazy"
+                            />
+                            <div className="card-body text-center d-flex flex-column justify-content-between">
+                                <div className="badge badge-primary mb-2 align-self-center px-3 py-2">PROPERAMENT</div>
+                                <h4 className="font-weight-bold mb-3">{t('gmmi_agost.header')}</h4>
+                                <p className="text-muted mb-4">{t('gmmi_agost.intro_text').replace(/<[^>]*>/g, '')}</p>
+                                <Link to="/tancats-agost-2026" className="btn btn-primary mt-auto">{t('simultanies.read_more') || 'Descobreix-ho'}</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr className="container mb-5" />
+
             {/* Graella de Tancats Anteriors */}
             <div className="container pb-5">
                 <div className="text-center mb-5 mt-5">
                     <h2 className="font-weight-bold">{t('tancats.history_title')}</h2>
                     <p className="lead">{t('tancats.history_subtitle')}</p>
                 </div>
-                <div className="row">
+                <div className="row justify-content-center">
                     {/* Tancat Setmana Santa 2026 */}
                     <div className="col-lg-4 mb-4">
                         <div className="card border-0 shadow rounded overflow-hidden h-100">

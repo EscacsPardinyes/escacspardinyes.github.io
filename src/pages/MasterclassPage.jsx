@@ -30,8 +30,7 @@ export default function MasterclassPage({ id }) {
 
     const breadcrumbs = [
         { label: t('school.header'), path: '/escola' },
-        { label: t('masterclass.list_breadcrumb'), path: '/masterclass' },
-        { label: t(titleKey) }
+        { label: t('masterclass.list_breadcrumb'), path: '/masterclass' }
     ];
 
     return (
@@ -96,9 +95,16 @@ export default function MasterclassPage({ id }) {
                             </div>
                         )}
 
-                        <div className="bg-primary text-white p-4 rounded shadow-sm">
+                        <div className="bg-primary text-white p-4 rounded shadow-sm mb-4">
                             <h4 className="font-weight-bold text-white mb-3"><i className="fa fa-tag mr-2"></i>{t('masterclass.price_label')}</h4>
                             <p className="mb-0" dangerouslySetInnerHTML={tHtml(priceKey)}></p>
+                        </div>
+
+                        <div className="bg-light border-primary p-4 rounded shadow-sm" style={{ borderLeft: '5px solid' }}>
+                            <h4 className="font-weight-bold text-primary mb-3"><i className="fa fa-university mr-2"></i>{t('masterclass.payment_title')}</h4>
+                            <p className="mb-2"><strong>{t('masterclass.payment_iban')}</strong></p>
+                            <p className="mb-2">{t('masterclass.payment_beneficiary')}</p>
+                            <p className="mb-0 text-muted" style={{ fontSize: '0.9rem' }}>{t('masterclass.payment_info')}</p>
                         </div>
                     </div>
                 </div>

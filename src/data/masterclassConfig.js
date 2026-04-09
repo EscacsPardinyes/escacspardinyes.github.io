@@ -3,7 +3,7 @@ export const masterclassConfig = {
         titleKey: "masterclass.indiadey.title",
         titleKeySEO: "masterclass.indiadey.title",
         summaryKey: "masterclass.indiadey.summary",
-        poster: "/img/masterclass/india-de-rey.webp",
+        poster: "/img/masterclass/india-de-rey.png",
         path: "/masterclass/india-de-rey",
         speakerKey: "masterclass.indiadey.speaker",
         flag: "ar",
