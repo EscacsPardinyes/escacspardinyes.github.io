@@ -368,7 +368,7 @@ export const translations = {
         "common.page": "Pàgina",
         "common.of": "de",
         "nadal2025.header": "III Torneig d'Escacs de Nadal Pardinyes",
-        "nadal2025.breadcrumb": "Torneig Nadal 2026",
+        "nadal2025.breadcrumb": "Torneig Nadal 2026 ",
         "nadal2025.title": "III Torneig d'Escacs de Nadal Pardinyes",
         "nadal2025.slogan": "Tots els nens juguem!!!",
         "nadal2025.details_title": "Detalls de l'Esdeveniment:",
