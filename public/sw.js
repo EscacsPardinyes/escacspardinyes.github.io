@@ -4,7 +4,7 @@ const ASSETS_TO_CACHE = [
     '/index.html',
     '/css/style.min.css',
     '/css/custom_elegance.css',
-    '/img/logo.webp',
+    '/img/galeria/logos/logo.webp',
     '/manifest.json'
 ];
 

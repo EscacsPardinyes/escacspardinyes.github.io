@@ -14,9 +14,45 @@ export default function Home() {
         }
     }, []);
 
+    const upcomingEventsSchema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Event",
+                "name": "IV Cerrados para Normas de GM, WGM, MI y WMI Agosto 2026",
+                "description": "Torneig de tancats per a normes de Grans Mestres i Mestres Internacionals a Lleida.",
+                "startDate": "2026-08-15T09:00:00+02:00",
+                "endDate": "2026-08-19T20:00:00+02:00",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "location": {
+                    "@type": "Place",
+                    "name": "Club Escacs Pardinyes",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Sant Pere Claver, 1, 2a planta",
+                        "addressLocality": "Lleida",
+                        "postalCode": "25005",
+                        "addressCountry": "ES"
+                    }
+                },
+                "image": ["https://escacspardinyes.github.io/img/galeria/logos/logo.webp"],
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Club Escacs Pardinyes",
+                    "url": "https://escacspardinyes.github.io"
+                },
+                "url": "https://escacspardinyes.github.io/tancats/agost"
+            }
+        ]
+    };
+
     return (
         <>
-            <SEO description={t('seo.default_description')} />
+            <SEO 
+                description={t('seo.default_description')} 
+                schema={upcomingEventsSchema}
+            />
             {/* Carousel Start */}
             <div className="container-fluid p-0">
                 <div id="blog-carousel" className="carousel slide" data-ride="carousel">

@@ -10,6 +10,7 @@ import { useLanguage } from '../context/LanguageContext';
  * @param {string} props.image - The image URL for social sharing (Open Graph).
  * @param {Object} props.schema - Optional JSON-LD schema object for the page.
  * @param {string} props.type - The OG Type (default: website).
+ * @param {Array} props.breadcrumbs - Breadcrumbs for the page.
  */
 export default function SEO({ title, description, image, schema, type = 'website', breadcrumbs = [] }) {
     const location = useLocation();
@@ -17,9 +18,24 @@ export default function SEO({ title, description, image, schema, type = 'website
 
     useEffect(() => {
         const baseTitle = 'Club Escacs Pardinyes';
-        const defaultDescription = 'Club Escacs Pardinyes - Fomentant l\'escacs a Lleida des de 1992. Escola d\'escacs, competicions i una gran comunitat.';
-        const defaultImage = '/img/logo.png';
+        const defaultDescription = language === 'ca' 
+            ? "Club Escacs Pardinyes - Fomentant l'escacs a Lleida des de 1992. Escola d'escacs, competicions i una gran comunitat."
+            : language === 'es'
+                ? "Club Escacs Pardinyes - Fomentando el ajedrez en Lleida desde 1992. Escuela de ajedrez, competiciones y una gran comunidad."
+                : "Club Escacs Pardinyes - Promoting chess in Lleida since 1992. Chess school, competitions and a great community.";
+        const defaultImage = '/img/galeria/logos/logo.webp';
         const siteUrl = 'https://escacspardinyes.github.io';
+        
+        // Helper to ensure absolute URL for images
+        const getAbsoluteUrl = (path) => {
+            if (!path) return '';
+            if (path.startsWith('http')) return path;
+            return `${siteUrl}${path.startsWith('/') ? '' : '/'}${path}`;
+        };
+
+        const fullDefaultImage = getAbsoluteUrl(defaultImage);
+        const fullImageUrl = image ? getAbsoluteUrl(image) : fullDefaultImage;
+        const currentUrl = `${siteUrl}${location.pathname}`;
 
         // Update HTML Lang attribute
         document.documentElement.lang = language || 'ca';
@@ -35,7 +51,7 @@ export default function SEO({ title, description, image, schema, type = 'website
             canonicalLink.setAttribute('rel', 'canonical');
             document.head.appendChild(canonicalLink);
         }
-        canonicalLink.setAttribute('href', `${siteUrl}${location.pathname}`);
+        canonicalLink.setAttribute('href', currentUrl);
 
         // Update Hreflang Tags (Multilingual SEO)
         const supportedLanguages = ['ca', 'es', 'en'];
@@ -54,7 +70,7 @@ export default function SEO({ title, description, image, schema, type = 'website
             link.setAttribute('href', langUrl.toString());
         });
 
-        // Add x-default (usually points to the default language or a language selector)
+        // Add x-default (usually points to the default language selector)
         let xDefault = document.querySelector('link[hreflang="x-default"]');
         if (!xDefault) {
             xDefault = document.createElement('link');
@@ -62,7 +78,7 @@ export default function SEO({ title, description, image, schema, type = 'website
             xDefault.setAttribute('hreflang', 'x-default');
             document.head.appendChild(xDefault);
         }
-        xDefault.setAttribute('href', siteUrl + location.pathname); // Point to base URL (default)
+        xDefault.setAttribute('href', currentUrl);
 
         // Resource Hints
         const hints = [
@@ -91,10 +107,11 @@ export default function SEO({ title, description, image, schema, type = 'website
         const ogTags = [
             { property: 'og:title', content: pageTitle },
             { property: 'og:description', content: description || defaultDescription },
-            { property: 'og:image', content: image ? `${siteUrl}${image}` : `${siteUrl}${defaultImage}` },
-            { property: 'og:url', content: `${siteUrl}${location.pathname}` },
+            { property: 'og:image', content: fullImageUrl },
+            { property: 'og:url', content: currentUrl },
             { property: 'og:type', content: type },
-            { property: 'og:site_name', content: baseTitle }
+            { property: 'og:site_name', content: baseTitle },
+            { property: 'og:locale', content: language === 'ca' ? 'ca_ES' : language === 'es' ? 'es_ES' : 'en_US' }
         ];
 
         ogTags.forEach(tag => {
@@ -112,8 +129,9 @@ export default function SEO({ title, description, image, schema, type = 'website
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:title', content: pageTitle },
             { name: 'twitter:description', content: description || defaultDescription },
-            { name: 'twitter:image', content: image ? `${siteUrl}${image}` : `${siteUrl}${defaultImage}` },
-            { name: 'twitter:site', content: '@escacspardinyes' }
+            { name: 'twitter:image', content: fullImageUrl },
+            { name: 'twitter:site', content: '@escacspardinyes' },
+            { name: 'twitter:url', content: currentUrl }
         ];
 
         twitterTags.forEach(tag => {
@@ -130,30 +148,61 @@ export default function SEO({ title, description, image, schema, type = 'website
         const existingScripts = document.querySelectorAll('.seo-json-ld');
         existingScripts.forEach(s => s.remove());
 
-        // Default Organization Schema
-        const defaultOrganizationSchema = {
+        // 1. Club / LocalBusiness Schema
+        const clubSchema = {
             "@context": "https://schema.org",
             "@type": "SportsClub",
+            "@id": `${siteUrl}/#organization`,
             "name": "Club Escacs Pardinyes",
-            "image": `${siteUrl}${defaultImage}`,
+            "url": siteUrl,
+            "logo": fullDefaultImage,
+            "image": fullDefaultImage,
             "description": defaultDescription,
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Carrer de Pardinyes Baixes, 17",
+                "streetAddress": "Carrer Sant Pere Claver, 1, 2a planta",
                 "addressLocality": "Lleida",
                 "postalCode": "25005",
+                "addressRegion": "Lleida",
                 "addressCountry": "ES"
             },
-            "url": siteUrl,
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 41.6264,
+                "longitude": 0.6361
+            },
             "telephone": "+34641915266",
+            "email": "escacspardinyes@gmail.com",
+            "priceRange": "$",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Tuesday",
+                    "opens": "18:30",
+                    "closes": "19:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Wednesday",
+                    "opens": "18:30",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Thursday",
+                    "opens": "19:45",
+                    "closes": "21:15"
+                }
+            ],
             "sameAs": [
                 "https://www.facebook.com/escacspardinyes",
                 "https://www.instagram.com/escacspardinyes",
-                "https://twitter.com/escacspardinyes"
+                "https://twitter.com/escacspardinyes",
+                "https://www.youtube.com/@escacspardinyes"
             ]
         };
 
-        // Article Schema
+        // 2. Article Schema
         let articleSchema = null;
         if (type === 'article' && title) {
             articleSchema = {
@@ -161,41 +210,61 @@ export default function SEO({ title, description, image, schema, type = 'website
                 "@type": "NewsArticle",
                 "headline": title,
                 "description": description || defaultDescription,
-                "image": [image ? `${siteUrl}${image}` : `${siteUrl}${defaultImage}`],
+                "image": [fullImageUrl],
                 "datePublished": schema?.datePublished || new Date().toISOString(),
                 "author": [{
                     "@type": "Organization",
                     "name": "Club Escacs Pardinyes",
                     "url": siteUrl
-                }]
+                }],
+                "publisher": {
+                    "@id": `${siteUrl}/#organization`
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": currentUrl
+                }
             };
         }
 
-        // Breadcrumb Schema
+        // 3. Breadcrumb Schema
         let breadcrumbSchema = null;
         if (breadcrumbs && breadcrumbs.length > 0) {
             breadcrumbSchema = {
                 "@context": "https://schema.org",
                 "@type": "BreadcrumbList",
-                "itemListElement": breadcrumbs.map((crumb, index) => ({
-                    "@type": "ListItem",
-                    "position": index + 1,
-                    "name": crumb.label,
-                    "item": crumb.path ? `${siteUrl}${crumb.path}` : `${siteUrl}${location.pathname}`
-                }))
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": language === 'ca' ? 'Inici' : language === 'es' ? 'Inicio' : 'Home',
+                        "item": siteUrl
+                    },
+                    ...breadcrumbs.map((crumb, index) => ({
+                        "@type": "ListItem",
+                        "position": index + 2,
+                        "name": crumb.label,
+                        "item": crumb.path ? getAbsoluteUrl(crumb.path) : currentUrl
+                    }))
+                ]
             };
         }
 
-        const schemasToInject = [];
-        if (articleSchema) {
-            schemasToInject.push(articleSchema);
-        } else {
-            schemasToInject.push(schema || defaultOrganizationSchema);
+        // 4. Page Specific Schema (e.g. Event)
+        let pageSchema = schema;
+        if (pageSchema && !pageSchema["@context"]) {
+            pageSchema = {
+                "@context": "https://schema.org",
+                ...pageSchema
+            };
         }
-        
-        if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
 
-        schemasToInject.forEach((s, i) => {
+        const schemasToInject = [clubSchema];
+        if (articleSchema) schemasToInject.push(articleSchema);
+        if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
+        if (pageSchema && pageSchema["@type"] !== 'NewsArticle') schemasToInject.push(pageSchema);
+
+        schemasToInject.forEach((s) => {
             const script = document.createElement('script');
             script.className = 'seo-json-ld';
             script.type = 'application/ld+json';

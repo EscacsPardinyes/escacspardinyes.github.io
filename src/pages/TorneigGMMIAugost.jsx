@@ -46,9 +46,41 @@ export default function TorneigGMMIAugost() {
         { label: t('gmmi_agost.breadcrumb') }
     ];
 
+    const eventSchema = {
+        "@type": "Event",
+        "name": t('gmmi_agost.title'),
+        "description": t('gmmi_agost.intro_text')?.replace(/<[^>]*>/g, ''),
+        "startDate": "2026-08-15T09:00:00+02:00",
+        "endDate": "2026-08-19T20:00:00+02:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Club Escacs Pardinyes",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Carrer Sant Pere Claver, 1, 2a planta",
+                "addressLocality": "Lleida",
+                "postalCode": "25005",
+                "addressCountry": "ES"
+            }
+        },
+        "image": [posterImg.startsWith('http') ? posterImg : `https://escacspardinyes.github.io${posterImg}`],
+        "organizer": {
+            "@type": "Organization",
+            "name": "Club Escacs Pardinyes",
+            "url": "https://escacspardinyes.github.io"
+        }
+    };
+
     return (
         <>
-            <SEO title={t('gmmi_agost.breadcrumb')} description={t('gmmi_agost.intro_text').replace(/<[^>]*>/g, '')} />
+            <SEO 
+                title={t('gmmi_agost.breadcrumb')} 
+                description={t('gmmi_agost.intro_text').replace(/<[^>]*>/g, '')} 
+                schema={eventSchema}
+                breadcrumbs={breadcrumbs}
+            />
             <PageHeader title={t('gmmi_agost.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contingut Principal del Torneig */}

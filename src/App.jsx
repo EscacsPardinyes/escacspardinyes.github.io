@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -41,10 +41,26 @@ const PageLoader = () => (
   </div>
 );
 
+// Redirect legacy .html paths
+function LegacyRedirect() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname.endsWith('.html')) {
+      const cleanPath = location.pathname.replace('.html', '');
+      navigate(cleanPath, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <LegacyRedirect />
       <Suspense fallback={<PageLoader />}>
 
         <Routes>

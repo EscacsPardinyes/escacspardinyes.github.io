@@ -9,9 +9,41 @@ export default function TorneigNadal2025() {
         { label: t('nadal2025.breadcrumb') }
     ];
 
+    const eventSchema = {
+        "@type": "Event",
+        "name": t('nadal2025.title'),
+        "description": t('nadal2025.intro_text')?.replace(/<[^>]*>/g, ''),
+        "startDate": "2026-01-03T10:00:00+01:00",
+        "endDate": "2026-01-03T20:00:00+01:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Club Escacs Pardinyes",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Carrer Sant Pere Claver, 1, 2a planta",
+                "addressLocality": "Lleida",
+                "postalCode": "25005",
+                "addressCountry": "ES"
+            }
+        },
+        "image": ["https://escacspardinyes.github.io/img/galeria/TornigNadal2026/cartell-nadal-2025.webp"],
+        "organizer": {
+            "@type": "Organization",
+            "name": "Club Escacs Pardinyes",
+            "url": "https://escacspardinyes.github.io"
+        }
+    };
+
     return (
         <>
-            <SEO title={t('nadal2025.breadcrumb')} description={t('nadal2025.report_p1').substring(0, 160)} />
+            <SEO 
+                title={t('nadal2025.breadcrumb')} 
+                description={t('nadal2025.report_p1').substring(0, 160)} 
+                schema={eventSchema}
+                breadcrumbs={breadcrumbs}
+            />
             <PageHeader title={t('nadal2025.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contingut Principal del Torneig */}
