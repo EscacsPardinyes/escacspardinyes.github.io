@@ -9,9 +9,9 @@ export default function TorneigAlcarras() {
     const [photoIndex, setPhotoIndex] = useState(0);
 
     const images = [
-        '/img/galeria/TorneigAlcarras/1.webp',
-        '/img/galeria/TorneigAlcarras/2.webp',
-        '/img/galeria/TorneigAlcarras/3.webp'
+        '/img/galeria/TorneigAlcarras2025/1.webp',
+        '/img/galeria/TorneigAlcarras2025/2.webp',
+        '/img/galeria/TorneigAlcarras2025/3.webp'
     ];
 
     const breadcrumbs = [
@@ -29,7 +29,7 @@ export default function TorneigAlcarras() {
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
                         <img
-                            src="/img/galeria/TorneigAlcarras/cartell-alcarras.webp"
+                            src="/img/galeria/TorneigAlcarras2025/cartell-alcarras.webp"
                             alt="Cartell oficial del 1r Torneig d'Escacs Vila d'Alcarràs La Marató"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}

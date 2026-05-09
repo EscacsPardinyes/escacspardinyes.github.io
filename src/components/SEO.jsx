@@ -39,7 +39,6 @@ export default function SEO({ title, description, image, schema, type = 'website
 
         // Update Hreflang Tags (Multilingual SEO)
         const supportedLanguages = ['ca', 'es', 'en'];
-        const defaultLang = 'ca';
 
         supportedLanguages.forEach(lang => {
             let link = document.querySelector(`link[hreflang="${lang}"]`);
@@ -132,7 +131,7 @@ export default function SEO({ title, description, image, schema, type = 'website
         existingScripts.forEach(s => s.remove());
 
         // Default Organization Schema
-        const defaultSchema = {
+        const defaultOrganizationSchema = {
             "@context": "https://schema.org",
             "@type": "SportsClub",
             "name": "Club Escacs Pardinyes",
@@ -154,6 +153,24 @@ export default function SEO({ title, description, image, schema, type = 'website
             ]
         };
 
+        // Article Schema
+        let articleSchema = null;
+        if (type === 'article' && title) {
+            articleSchema = {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": title,
+                "description": description || defaultDescription,
+                "image": [image ? `${siteUrl}${image}` : `${siteUrl}${defaultImage}`],
+                "datePublished": schema?.datePublished || new Date().toISOString(),
+                "author": [{
+                    "@type": "Organization",
+                    "name": "Club Escacs Pardinyes",
+                    "url": siteUrl
+                }]
+            };
+        }
+
         // Breadcrumb Schema
         let breadcrumbSchema = null;
         if (breadcrumbs && breadcrumbs.length > 0) {
@@ -169,7 +186,13 @@ export default function SEO({ title, description, image, schema, type = 'website
             };
         }
 
-        const schemasToInject = [schema || defaultSchema];
+        const schemasToInject = [];
+        if (articleSchema) {
+            schemasToInject.push(articleSchema);
+        } else {
+            schemasToInject.push(schema || defaultOrganizationSchema);
+        }
+        
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
 
         schemasToInject.forEach((s, i) => {

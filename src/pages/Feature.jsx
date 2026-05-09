@@ -21,7 +21,7 @@ export default function Feature() {
                     <div className="col-md-6 mb-5">
                         <div className="row align-items-center">
                             <div className="col-sm-5">
-                                <img className="img-fluid mb-3 mb-sm-0" src="/img/Classes-1.webp" alt="Imatge de classes d'escacs" />
+                                <img className="img-fluid mb-3 mb-sm-0" src="/img/galeria/feature/Classes-1.webp" alt="Imatge de classes d'escacs" />
                                 <i className="flaticon-chess"></i>
                             </div>
                             <div className="col-sm-7">
@@ -33,7 +33,7 @@ export default function Feature() {
                     <div className="col-md-6 mb-5">
                         <div className="row align-items-center">
                             <div className="col-sm-5">
-                                <img className="img-fluid mb-3 mb-sm-0" src="/img/feature-2.webp" alt="Imatge de tornejos d'escacs" />
+                                <img className="img-fluid mb-3 mb-sm-0" src="/img/galeria/feature/feature-2.webp" alt="Imatge de tornejos d'escacs" />
                                 <i className="flaticon-strategy"></i>
                             </div>
                             <div className="col-sm-7">
@@ -45,7 +45,7 @@ export default function Feature() {
                     <div className="col-md-6 mb-5">
                         <div className="row align-items-center">
                             <div className="col-sm-5">
-                                <img className="img-fluid mb-3 mb-sm-0" src="/img/carousel-3.webp" alt="Imatge de la comunitat d'escacs" />
+                                <img className="img-fluid mb-3 mb-sm-0" src="/img/galeria/Carousel/carousel-3.webp" alt="Imatge de la comunitat d'escacs" />
                                 <i className="flaticon-community"></i>
                             </div>
                             <div className="col-sm-7">
@@ -57,7 +57,7 @@ export default function Feature() {
                     <div className="col-md-6 mb-5">
                         <div className="row align-items-center">
                             <div className="col-sm-5">
-                                <img className="img-fluid mb-3 mb-sm-0" src="/img/feature-4.webp" alt="Imatge de motivació i suport" />
+                                <img className="img-fluid mb-3 mb-sm-0" src="/img/galeria/feature/feature-4.webp" alt="Imatge de motivació i suport" />
                                 <i className="flaticon-medal"></i>
                             </div>
                             <div className="col-sm-7">

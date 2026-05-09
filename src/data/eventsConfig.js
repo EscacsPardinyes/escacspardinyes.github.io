@@ -5,15 +5,15 @@ export const eventsConfig = {
         titleKeySEO: 'nav.ivette', // Key for SEO dynamic title
         descriptionKeySEO: 'seo.ivette_description', // Key for SEO dynamic description
         summaryKey: 'simultanies.ivette_summary', // Key for list view summary
-        poster: '/img/galeria/WIMIvetteGarcía/cartell-simultanies-ivette.webp',
+        poster: '/img/galeria/WIMIvetteGarcía2025/cartell-simultanies-ivette.webp',
         paragraphs: ['simultanies.p1', 'simultanies.p2', 'simultanies.p3', 'simultanies.p4'],
         images: [
-            '/img/galeria/WIMIvetteGarcía/1.jpg',
-            '/img/galeria/WIMIvetteGarcía/2.jpg',
-            '/img/galeria/WIMIvetteGarcía/3.jpg',
-            '/img/galeria/WIMIvetteGarcía/4.jpg',
-            '/img/galeria/WIMIvetteGarcía/5.jpg',
-            '/img/galeria/WIMIvetteGarcía/6.jpg'
+            '/img/galeria/WIMIvetteGarcía2025/1.webp',
+            '/img/galeria/WIMIvetteGarcía2025/2.webp',
+            '/img/galeria/WIMIvetteGarcía2025/3.webp',
+            '/img/galeria/WIMIvetteGarcía2025/4.webp',
+            '/img/galeria/WIMIvetteGarcía2025/5.webp',
+            '/img/galeria/WIMIvetteGarcía2025/6.webp'
         ],
         breadcrumbs: (t) => [
             { label: t('nav.simultanies'), path: '/simultanies' },

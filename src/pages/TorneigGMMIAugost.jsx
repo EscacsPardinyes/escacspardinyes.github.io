@@ -158,13 +158,13 @@ export default function TorneigGMMIAugost() {
                 <p className="text-center mb-5 lead">{t('gmmi.collab_text')}</p>
                 <div className="row justify-content-center align-items-center text-center">
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/logopaeria-color.webp" alt="La Paeria - Ajuntament de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/logopaeria-color.webp" alt="La Paeria - Ajuntament de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/diputaciolleida.webp" alt="Diputació de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/diputaciolleida.webp" alt="Diputació de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                 </div>
             </div>

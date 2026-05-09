@@ -12,11 +12,14 @@ export default function SimultaniesArami() {
     const [photoIndex, setPhotoIndex] = useState(0);
 
     // Load all images from the folder
-    const aromiImages = import.meta.glob('/src/img/galeria/simultanies-arami2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
-    
-    let images = Object.entries(aromiImages)
-        .filter(([key, _]) => !key.toLowerCase().includes('inscripcio')) // Exclude the poster/registration image if present
-        .map(([_, mod]) => mod.default || mod);
+    const images = [
+        '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-03-06 at 21.17.46.webp',
+        '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-03-07 at 06.43.16.webp',
+        '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at 10.25.45.webp',
+        '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at 10.25.45o.webp',
+        '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at u.webp',
+        '/img/galeria/simultanies-arami2026/i.webp'
+    ];
 
     const breadcrumbs = [
         { label: t('nav.simultanies'), path: '/simultanies' },
@@ -28,7 +31,7 @@ export default function SimultaniesArami() {
         "@type": "Event",
         "name": t('nav.arami_short'),
         "description": t('arami.p1'),
-        "image": `https://escacspardinyes.github.io/img/galeria/WFMAramiLobo/cartell-simultanies-arami.png`,
+        "image": `https://escacspardinyes.github.io/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp`,
         "startDate": "2026-03-06",
         "location": {
             "@type": "Place",
@@ -63,7 +66,7 @@ export default function SimultaniesArami() {
             <SEO
                 title={t('nav.arami_short')}
                 description={t('arami.p1')}
-                image="/img/galeria/WFMAramiLobo/cartell-simultanies-arami.png"
+                image="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp"
                 schema={eventSchema}
                 breadcrumbs={breadcrumbs}
             />
@@ -81,7 +84,7 @@ export default function SimultaniesArami() {
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
                         <img
-                            src="/img/galeria/WFMAramiLobo/cartell-simultanies-arami.png"
+                            src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp"
                             alt="WFM Aramí Lobo Simultànies"
                             className="img-fluid rounded shadow"
                         />

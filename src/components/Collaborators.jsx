@@ -9,7 +9,7 @@ export default function Collaborators() {
             <div className="row justify-content-center">
                 <div className="col-lg-8 text-center">
                     <img
-                        src="/img/galeria/WIMIvetteGarcía/cartell-colaboradors.webp"
+                        src="/img/galeria/WIMIvetteGarcía2025/cartell-colaboradors.webp"
                         alt="Cartell de Col·laboradors del Club Escacs Pardinyes"
                         className="img-fluid rounded shadow"
                         loading="lazy"

@@ -31,9 +31,12 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading component
 const PageLoader = () => (
-  <div className="d-flex justify-content-center align-items-center" style={{ height: '50vh' }}>
-    <div className="spinner-border text-primary" role="status">
+  <div className="d-flex flex-column justify-content-center align-items-center" style={{ height: '70vh', background: 'transparent' }}>
+    <div className="spinner-grow text-primary mb-3" role="status" style={{ width: '3rem', height: '3rem' }}>
       <span className="sr-only">Carregant...</span>
+    </div>
+    <div className="text-primary font-weight-bold animate-pulse" style={{ letterSpacing: '2px', textTransform: 'uppercase' }}>
+      Club Escacs Pardinyes
     </div>
   </div>
 );

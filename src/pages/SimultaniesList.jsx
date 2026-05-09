@@ -14,7 +14,7 @@ export default function SimultaniesList() {
         id: 'arami',
         title: t('nav.arami_short'),
         summary: t('simultanies.arami_summary'),
-        img: '/img/galeria/WFMAramiLobo/cartell-simultanies-arami.png',
+        img: '/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp',
         path: '/simultanies-arami2026',
         fallbackImg: 'https://placehold.co/600x400/2A769C/ffffff?text=WFMAramiLobo'
     };

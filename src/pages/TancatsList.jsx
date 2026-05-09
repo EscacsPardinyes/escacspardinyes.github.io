@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 
-import posterImg from '../img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
+const posterImg = '/img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
 
 export default function TancatsList() {
     const { t } = useLanguage();

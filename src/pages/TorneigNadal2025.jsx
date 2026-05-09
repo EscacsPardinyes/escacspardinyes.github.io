@@ -20,7 +20,7 @@ export default function TorneigNadal2025() {
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
                         <img
-                            src="/img/galeria/TornigNadal2026/cartell-nadal-2025.png"
+                            src="/img/galeria/TornigNadal2026/cartell-nadal-2025.webp"
                             alt="Cartell oficial del III Torneig d'Escacs de Nadal Pardinyes"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=CARTEL+TORNEIG+ESCASCS' }}

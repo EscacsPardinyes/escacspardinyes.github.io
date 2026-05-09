@@ -1,9 +1,381 @@
 export const news = [
     {
+        id: 'fase-territorial-copa-catalana-2026',
+        date: '2026-01-11',
+        category: 'torneig',
+        image: '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/fotogrup.webp',
+        gallery: [
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/fotogrup.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/1r-3a.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/2n-2a.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/3r-1a.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g1.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g2.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g3.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g4.webp',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g5.webp'
+        ],
+        title: {
+            ca: 'JORNADA HISTÒRICA A LA COPA CATALANA: DOS EQUIPS CLASSIFICATS PER A LA FINAL!',
+            es: 'JORNADA HISTÓRICA EN LA COPA CATALANA: ¡DOS EQUIPOS CLASIFICADOS PARA LA FINAL!',
+            en: 'HISTORIC DAY IN THE CATALAN CUP: TWO TEAMS QUALIFIED FOR THE FINAL!'
+        },
+        summary: {
+            ca: 'El Club Escacs Pardinyes aconsegueix una actuació rècord a Bellpuig amb dos equips classificats per a la Final de la Copa Catalana.',
+            es: 'El Club Escacs Pardinyes consigue una actuación récord en Bellpuig con dos equipos clasificados para la Final de la Copa Catalana.',
+            en: 'Club Escacs Pardinyes achieves a record performance in Bellpuig with two teams qualified for the Catalan Cup Final.'
+        },
+        content: {
+            ca: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Sala de joc de la Copa Catalana a Bellpuig" />
+            
+El passat diumenge 11 de gener, el Club Escacs Pardinyes va signar una de les millors actuacions de la seva història recent a la Fase de Lleida de la Copa Catalana, disputada a l’Institut Lo Pla d’Urgell de Bellpuig. Amb una delegació rècord de 6 equips, el club va demostrar la seva bona salut aconseguint podis en totes les categories i, el més important, el bitllet per a la gran Final per a dos dels nostres conjunts.
+
+<h4 class="mt-4">Domini de la base i solvència sènior</h4>
+El planter del club va tornar a demostrar que no té sostre. El nostre equip de 3a Territorial, format íntegrament per jugadors de les categories "subs", es va proclamar Campió de la seva categoria, demostrant el gran futur que tenim per davant.
+
+Per la seva banda, el Pardinyes C va aconseguir una meritòria segona posició a Segona Territorial, sumant així la segona classificació directa per a la jornada final. No ens podem oblidar del gran paper del Pardinyes B1, que va lluitar contra els rivals més forts de la categoria per pujar al podi com a 3rs classificats de Primera Territorial.
+
+<h4 class="mt-4">Resum de podis groc-i-negres:</h4>
+<div class="row text-center mb-4">
+    <div class="col-12 mb-4">
+        <div class="mx-auto" style="max-width: 600px;">
+            <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/1r-3a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes E - 1rs a 3a Territorial" />
+            <p class="h5">🥇 <strong>Pardinyes E</strong><br/>1rs a 3a Territorial</p>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/2n-2a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes C - 2ns a 2a Territorial" />
+        <p class="h6">🥈 <strong>Pardinyes C</strong><br/>2ns a 2a Territorial</p>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/3r-1a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes B1 - 3rs a 1a Territorial" />
+        <p class="h6">🥉 <strong>Pardinyes B1</strong><br/>3rs a 1a Territorial</p>
+    </div>
+</div>
+
+<h4 class="mt-4">La Gran Final ens espera</h4>
+L’esdeveniment, que va reunir més de 160 jugadors de 40 equips de tota la província, va estar marcat per la bona esportivitat i la impecable organització del CE Bellpuig i l’Ajuntament de Bellpuig. El Club Escacs Lleida va ser el guanyador absolut d'aquesta fase.
+
+Ara, la mirada del Club Escacs Pardinyes ja està posada en el pròxim 26 d’abril de 2026. Els nostres dos equips classificats viatjaran a una seu encara per determinar per competir contra els 60 millors equips de tot Catalunya, en una jornada que aplegarà més de 240 jugadors.
+
+És un orgull veure com el club creix en totes les etapes, des dels més petits fins als sèniors. Felicitats a tots els que ho heu fet possible! 
+
+<div class="mt-4">
+    <a href="https://s3.chess-results.com/tnr1329098.aspx?lan=9&art=0&rd=8&turdet=YES&SNode=S0" target="_blank" class="btn btn-primary">
+        Consulta la classificació completa a Chess-Results
+    </a>
+</div>`,
+            es: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Sala de juego de la Copa Catalana en Bellpuig" />
+
+El pasado domingo 11 de enero, el Club Escacs Pardinyes firmó una de las mejores actuaciones de su historia reciente en la Fase de Lleida de la Copa Catalana, disputada en el Instituto Lo Pla d’Urgell de Bellpuig. Con una delegación récord de 6 equipos, el club demostró su buena salud consiguiendo podios en todas las categorías y, lo más importante, el billete para la gran Final para dos de nuestros conjuntos.
+
+<h4 class="mt-4">Dominio de la base y solvencia sénior</h4>
+La cantera del club volvió a demostrar que no tiene techo. Nuestro equipo de 3ª Territorial, formado íntegramente por jugadores de las categorías "subs", se proclamó Campeón de su categoría, demostrando el gran futuro que tenemos por delante.
+
+Por su parte, el Pardinyes C consiguió una meritoria segunda posición en Segunda Territorial, sumando así la segunda clasificación directa para la jornada final. No podemos olvidar el gran papel del Pardinyes B1, que luchó contra los rivales más fuertes de la categoría para subir al podio como 3ros clasificados de Primera Territorial.
+
+<h4 class="mt-4">Resumen de podios amarillo-y-negros:</h4>
+<div class="row text-center mb-4">
+    <div class="col-12 mb-4">
+        <div class="mx-auto" style="max-width: 600px;">
+            <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/1r-3a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes E - 1ros en 3ª Territorial" />
+            <p class="h5">🥇 <strong>Pardinyes E</strong><br/>1ros en 3ª Territorial</p>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/2n-2a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes C - 2ndos en 2ª Territorial" />
+        <p class="h6">🥈 <strong>Pardinyes C</strong><br/>2ndos en 2ª Territorial</p>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/3r-1a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes B1 - 3ros en 1ª Territorial" />
+        <p class="h6">🥉 <strong>Pardinyes B1</strong><br/>3ros en 1ª Territorial</p>
+    </div>
+</div>
+
+<h4 class="mt-4">La Gran Final nos espera</h4>
+El evento, que reunió a más de 160 jugadores de 40 equipos de toda la provincia, estuvo marcado por la buena deportividad y la impecable organización del CE Bellpuig y el Ayuntamiento de Bellpuig. El Club Escacs Lleida fue el ganador absoluto de esta fase.
+
+Ahora, la mirada del Club Escacs Pardinyes ya está puesta en el próximo 26 de abril de 2026. Nuestros dos equipos clasificados viajarán a una sede aún por determinar para competir contra los 60 mejores equipos de toda Cataluña, en una jornada que reunirá a más de 240 jugadores.
+
+¡Es un orgullo ver cómo el club crece en todas las etapas, desde los más pequeños hasta los séniors. Felicidades a todos los que lo habéis hecho posible!
+
+<div class="mt-4">
+    <a href="https://s3.chess-results.com/tnr1329098.aspx?lan=9&art=0&rd=8&turdet=YES&SNode=S0" target="_blank" class="btn btn-primary">
+        Consulta la clasificación completa en Chess-Results
+    </a>
+</div>`,
+            en: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Chess hall of the Catalan Cup in Bellpuig" />
+
+Last Sunday, January 11th, Club Escacs Pardinyes achieved one of the best performances in its recent history at the Lleida Phase of the Catalan Cup, held at the Institut Lo Pla d'Urgell in Bellpuig. With a record delegation of 6 teams, the club demonstrated its good health by achieving podiums in all categories and, most importantly, the ticket to the grand Final for two of our sets.
+
+<h4 class="mt-4">Youth dominance and senior reliability</h4>
+The club's youth academy once again proved it has no ceiling. Our 3rd Territorial team, composed entirely of players from the "subs" categories, was proclaimed Champion of its category, demonstrating the great future ahead of us.
+
+For its part, Pardinyes C achieved a meritorious second position in Second Territorial, thus adding the second direct qualification for the final day. We cannot forget the great role of Pardinyes B1, which fought against the strongest rivals in the category to climb the podium as 3rd placed in First Territorial.
+
+<h4 class="mt-4">Summary of the yellow-and-black podiums:</h4>
+<div class="row text-center mb-4">
+    <div class="col-12 mb-4">
+        <div class="mx-auto" style="max-width: 600px;">
+            <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/1r-3a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes E - 1st in 3rd Territorial" />
+            <p class="h5">🥇 <strong>Pardinyes E</strong><br/>1st in 3rd Territorial</p>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/2n-2a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes C - 2nd in 2nd Territorial" />
+        <p class="h6">🥈 <strong>Pardinyes C</strong><br/>2nd in 2nd Territorial</p>
+    </div>
+    <div class="col-md-6 mb-3">
+        <img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/3r-1a.webp" class="img-fluid rounded shadow mb-2" alt="Pardinyes B1 - 3rd in 1st Territorial" />
+        <p class="h6">🥉 <strong>Pardinyes B1</strong><br/>3rd in 1st Territorial</p>
+    </div>
+</div>
+
+<h4 class="mt-4">The Grand Final awaits us</h4>
+The event, which brought together more than 160 players from 40 teams from all over the province, was marked by good sportsmanship and the impeccable organization of CE Bellpuig and the Bellpuig City Council. Club Escacs Lleida was the absolute winner of this phase.
+
+Now, Club Escacs Pardinyes' sights are already set on April 26th, 2026. Our two qualified teams will travel to a venue yet to be determined to compete against the 60 best teams from all over Catalonia, in a day that will bring together more than 240 players.
+
+It is a pride to see how the club grows at all stages, from the youngest to the seniors. Congratulations to everyone who made it possible!
+
+<div class="mt-4">
+    <a href="https://s3.chess-results.com/tnr1329098.aspx?lan=9&art=0&rd=8&turdet=YES&SNode=S0" target="_blank" class="btn btn-primary">
+        Consult the full classification on Chess-Results
+    </a>
+</div>`
+        }
+    },
+    {
+        id: 'cronica-copa-catalana-2026',
+        date: '2026-04-28',
+        category: 'torneig',
+        image: '/img/galeria/CopaCatalana2026/FotoEquip.webp',
+        title: {
+            ca: 'Crònica de la Copa Catalana 2026',
+            es: 'Crónica de la Copa Catalana 2026',
+            en: 'Chronicle of the Catalan Cup 2026'
+        },
+        gallery: [
+            '/img/galeria/CopaCatalana2026/g1.webp',
+            '/img/galeria/CopaCatalana2026/g2.webp',
+            '/img/galeria/CopaCatalana2026/g3.webp',
+            '/img/galeria/CopaCatalana2026/g4.webp',
+            '/img/galeria/CopaCatalana2026/g5.webp',
+            '/img/galeria/CopaCatalana2026/g6.webp',
+            '/img/galeria/CopaCatalana2026/g7.webp',
+            '/img/galeria/CopaCatalana2026/g8.webp',
+            '/img/galeria/CopaCatalana2026/g9.webp',
+            '/img/galeria/CopaCatalana2026/g10.webp'
+        ],
+        summary: {
+            ca: 'El C.E. Mollet es corona campió a Lleida en una Final de la Copa Catalana amb més de 240 jugadors.',
+            es: 'El C.E. Mollet se corona campeón en Lleida en una Final de la Copa Catalana con más de 240 jugadores.',
+            en: 'C.E. Mollet is crowned champion in Lleida in a Catalan Cup Final with more than 240 players.'
+        },
+        content: {
+            ca: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+Equip del Club Escacs Mollet, campió de Divisió d'Honor - 1a Divisió de la final de la Copa Catalana
+
+El passat diumenge, 26 d’abril de 2026, es va disputar al Pavelló Municipal Els Magraners de Lleida, una nova edició de la Final de la Copa Catalana 2026, amb la participació de 60 equips i més de 240 jugadors, amb gairebé 70 dels quals titulats internacionals o mestres catalans. 
+
+Per a portar a terme aquest esdeveniment tan important del calendari escaquístic català, juntament amb la Federació Catalana d’Escacs, han col·laborat el Club Escacs Pardinyes i l’Ajuntament de Lleida.
+
+El torneig es va disputar a ritme ràpid (15’+5), dividit en sis categories (DH/1D, 2D, Preferent, 1a Categoria, 2a Categoria, 3a Categoria), amb 10 equips cada una, providents de diferents parts de Catalunya. Aquests equips estaven classificats des de les seves respectives fases prèvies de cada una de les quatre Territorials. El sistema de joc va ser de sistema lliga a 9 rondes, 5 rondes disputades al matí i 4 rondes més a la tarda.
+
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+El guanyador de la màxima categoria de Divisió d’Honor/Primera Divisió (DH/1D) va ser el C.E. Mollet, equip format pel GM Tomás Sosa, GM Pere Garriga, MI Jaime José Romero, MF Cristian Fernández i Ramon Caro. Van aconseguir el primer lloc amb 29,5 punts, amb 8 victòries i una sola derrota. 
+
+El campió de la categoria 2 Divisió (2D) va ser el C.E. Tarragona, amb 28,5 punts, aconseguint 8 victòries i una derrota. L’equip estava format per MF Francesc Xavier Farran, Joan Miquel, Marc Barceló (campió del món sub-10 de partides llampec) i Daniel Torrens.
+
+A la categoria Preferent, l’equip guanyador va ser el C.E. SCC Sabadell B, amb 25 punts, essent imbatut en tot el torneig, amb 8 victòries i un empat. L’equip estava format per MF Roger Bernadó, MI Lluís M.ª Perpinyà, CM Pau Manel Prada, AIM Danail Jurgen Sergooris i Víctor Fernández.
+
+El guanyador de la Primera Categoria va ser el C.E. La Ràpita A, amb 25,5 punts, obtenint 6 victòries, 2 empats i una derrota. L’equip estava format per MC Sergi Panella, MC Aaron Rodríguez, Carlos Celma i Marc Guàrdia.
+
+A la Segona Categoria, el primer lloc el va aconseguir el C.E. MiR A de Montcada i Reixac, amb 24 punts, 7 victòries, un empat i una derrota. L’equip estava format per Albert Segarra, Francisco Moreno, David Carbó Hors, Óscar Estaun i David Carbó Manau.
+
+Finalment, a la Tercera Categoria, l’equip guanyador va ser el C.E. Ateneu Colon G, amb 26 punts, amb un ple de 9 victòries. L’equip estava format per Àlex Escolano, Jofre Gardela, Lluc Castel i Gael Pineda.
+
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+A l’acta de cloenda hi van assistir el regidor de l’Ajuntament de Lleida, el Sr. Roberto Pino; el president de la Federació Catalana d’Escacs, el Sr. Ramon Chalmeta; el vicepresident de la Federació Catalana d’Escacs i director del torneig, el Sr. Ivan Marina; el president del C.E. Pardinyes, el Sr. Jordi Obis, el delegat Territorial de Lleida de la Federació Catalana d’Escacs, el Sr. Josep Brunet i la responsable de comunicació de la Federació Catalana d’Escacs, la Sra. Júlia Cruz.
+
+Cal destacar la bona esportivitat de tots els equips i l’eficiència i agilitat de l’equip arbitral, encapçalat per l’àrbitre lleidatà Xavier Valios, àrbitre principal del torneig. L’equip adjunt estava format per Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sànchez i Roger Rodríguez.
+
+Es detalla a continuació la resta d’equips premiats en cada categoria:
+
+DIVISIÓ D’HONOR / PRIMERA DIVISIÓ
+1r.Classificat: C.E. MOLLET A
+2n.Classificat: C.E. OLOT A
+3r.Classificat: C.E. BARCELONA A1
+
+SEGONA DIVISIÓ
+1r.Classificat: C.E. TARRAGONA A
+2n.Classificat: C.E. GRAN PENYA VILANOVA A
+3r.Classificat: C.E. SANTA EUGÈNIA A1
+
+PREFERENT TERRITORIAL
+1r.Classificat: C.E. SSC SABADELL B
+2n.Classificat: C.E. SANTA MARIA DE PALAUTORDERA A
+3r.Classificat: C.E. PEÓ VUIT A1
+
+PRIMERA TERRITORIAL
+1r.Classificat: C.E. LA RÀPITA A
+2n.Classificat: C.E. ATENEU COLON D1
+3r.Classificat: C.E. GELIDA A1
+
+SEGONA TERRITORIAL
+1r.Classificat: C.E. MiR A
+2n.Classificat: C.E. CAMBRILS B
+3r.Classificat: C.E. SANTA EUGÈNIA C
+
+TERCERA TERRITORIAL
+1r.Classificat: C.E. ATENEU COLON G
+2n.Classificat: C.E. LA RÀPITA B
+3r.Classificat: C.E. FOMENT MARTINENC D`,
+            es: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+Equipo del Club Escacs Mollet, campeón de División de Honor - 1ª División de la final de la Copa Catalana
+
+El pasado domingo, 26 de abril de 2026, se disputó en el Pabellón Municipal Els Magraners de Lleida, una nueva edición de la Final de la Copa Catalana 2026, con la participación de 60 equipos y más de 240 jugadores, con casi 70 de los cuales titulados internacionales o maestros catalanes.
+
+Para llevar a cabo este evento tan importante del calendario ajedrecístico catalán, junto con la Federación Catalana de Ajedrez, han colaborado el Club Escacs Pardinyes y el Ayuntamiento de Lleida.
+
+El torneo se disputó a ritmo rápido (15'+5), dividido en seis categorías (DH/1D, 2D, Preferente, 1ª Categoría, 2ª Categoría, 3ª Categoría), con 10 equipos cada una, provenientes de diferentes partes de Cataluña. Estos equipos estaban clasificados desde sus respectivas fases previas de cada una de las cuatro Territoriales. El sistema de juego fue de sistema liga a 9 rondas, 5 rondas disputadas por la mañana y 4 rondas más por la tarde.
+
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+El ganador de la máxima categoría de División de Honor/Primera División (DH/1D) fue el C.E. Mollet, equipo formado por el GM Tomás Sosa, GM Pere Garriga, MI Jaime José Romero, MF Cristian Fernández y Ramon Caro. Consiguieron el primer puesto con 29,5 puntos, con 8 victorias y una sola derrota.
+
+El campeón de la categoría 2ª División (2D) fue el C.E. Tarragona, con 28,5 puntos, logrando 8 victorias y una derrota. El equipo estaba formado por MF Francesc Xavier Farran, Joan Miquel, Marc Barceló (campeón del mundo sub-10 de partidas relámpago) y Daniel Torrens.
+
+En la categoría Preferente, el equipo ganador fue el C.E. SCC Sabadell B, con 25 puntos, siendo imbatido en todo el torneo, con 8 victorias y un empate. El equipo estaba formado por MF Roger Bernadó, MI Lluís M.ª Perpinyà, CM Pau Manel Prada, AIM Danail Jurgen Sergooris y Víctor Fernández.
+
+El ganador de la Primera Categoría fue el C.E. La Ràpita A, con 25,5 puntos, obteniendo 6 victorias, 2 empates y una derrota. El equipo estaba formado por MC Sergi Panella, MC Aaron Rodríguez, Carlos Celma y Marc Guàrdia.
+
+En la Segunda Categoría, el primer puesto lo consiguió el C.E. MiR A de Montcada i Reixac, con 24 puntos, 7 victorias, un empate y una derrota. El equipo estaba formado por Albert Segarra, Francisco Moreno, David Carbó Hors, Óscar Estaun y David Carbó Manau.
+
+Finalmente, en la Tercera Categoría, el equipo ganador fue el C.E. Ateneu Colon G, con 26 puntos, con un pleno de 9 victorias. El equipo estaba formado por Àlex Escolano, Jofre Gardela, Lluc Castel y Gael Pineda.
+
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+En el acto de clausura asistieron el concejal del Ayuntamiento de Lleida, el Sr. Roberto Pino; el presidente de la Federación Catalana de Ajedrez, el Sr. Ramon Chalmeta; el vicepresidente de la Federación Catalana de Ajedrez y director del torneo, el Sr. Ivan Marina; el presidente del C.E. Pardinyes, el Sr. Jordi Obis, el delegado Territorial de Lleida de la Federación Catalana de Ajedrez, el Sr. Josep Brunet y la responsable de comunicación de la Federación Catalana de Ajedrez, la Sra. Júlia Cruz.
+
+Cabe destacar la buena deportividad de todos los equipos y la eficiencia y agilidad del equipo arbitral, encabezado por el árbitro leridano Xavier Valios, árbitro principal del torneo. El equipo adjunto estaba formado por Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sánchez y Roger Rodríguez.
+
+Se detalla a continuación el resto de equipos premiados en cada categoría:
+
+DIVISIÓN DE HONOR / PRIMERA DIVISIÓN
+1r.Clasificado: C.E. MOLLET A
+2n.Clasificado: C.E. OLOT A
+3r.Clasificado: C.E. BARCELONA A1
+
+SEGUNDA DIVISIÓN
+1r.Clasificado: C.E. TARRAGONA A
+2n.Clasificado: C.E. GRAN PENYA VILANOVA A
+3r.Clasificado: C.E. SANTA EUGÈNIA A1
+
+PREFERENTE TERRITORIAL
+1r.Clasificado: C.E. SSC SABADELL B
+2n.Clasificado: C.E. SANTA MARIA DE PALAUTORDERA A
+3r.Clasificado: C.E. PEÓ VUIT A1
+
+PRIMERA TERRITORIAL
+1r.Clasificado: C.E. LA RÀPITA A
+2n.Clasificado: C.E. ATENEU COLON D1
+3r.Clasificado: C.E. GELIDA A1
+
+SEGUNDA TERRITORIAL
+1r.Clasificado: C.E. MiR A
+2n.Clasificado: C.E. CAMBRILS B
+3r.Clasificado: C.E. SANTA EUGÈNIA C
+
+TERCERA TERRITORIAL
+1r.Clasificado: C.E. ATENEU COLON G
+2n.Clasificado: C.E. LA RÀPITA B
+3r.Clasificado: C.E. FOMENT MARTINENC D`,
+            en: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+Club Escacs Mollet team, champion of Honor Division - 1st Division of the Catalan Cup final
+
+Last Sunday, April 26, 2026, a new edition of the 2026 Catalan Cup Final was held at the Els Magraners Municipal Pavilion in Lleida, with the participation of 60 teams and more than 240 players, almost 70 of whom were international titleholders or Catalan masters.
+
+To carry out this important event of the Catalan chess calendar, together with the Catalan Chess Federation, the Club Escacs Pardinyes and the Lleida City Council have collaborated.
+
+The tournament was played at a rapid pace (15'+5), divided into six categories (DH/1D, 2D, Preferent, 1st Category, 2nd Category, 3rd Category), with 10 teams each, coming from different parts of Catalonia. These teams were qualified from their respective previous phases of each of the four Territorials. The game system was a league system of 9 rounds, 5 rounds played in the morning and 4 more rounds in the afternoon.
+
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+The winner of the top category of Honor Division/First Division (DH/1D) was C.E. Mollet, a team formed by GM Tomás Sosa, GM Pere Garriga, IM Jaime José Romero, FM Cristian Fernández and Ramon Caro. They achieved first place with 29.5 points, with 8 wins and a single defeat.
+
+The champion of the 2nd Division (2D) category was C.E. Tarragona, with 28.5 points, achieving 8 wins and one defeat. The team was made up of FM Francesc Xavier Farran, Joan Miquel, Marc Barceló (under-10 world champion in blitz games) and Daniel Torrens.
+
+In the Preferent category, the winning team was C.E. SCC Sabadell B, with 25 points, being undefeated throughout the tournament, with 8 wins and one draw. The team was made up of FM Roger Bernadó, MI Lluís M.ª Perpinyà, CM Pau Manel Prada, AIM Danail Jurgen Sergooris and Víctor Fernández.
+
+The winner of the First Category was C.E. La Ràpita A, with 25.5 points, obtaining 6 wins, 2 draws and one defeat. The team was made up of MC Sergi Panella, MC Aaron Rodríguez, Carlos Celma and Marc Guàrdia.
+
+In the Second Category, first place was achieved by C.E. MiR A of Montcada i Reixac, with 24 points, 7 wins, one draw and one defeat. The team was made up of Albert Segarra, Francisco Moreno, David Carbó Hors, Óscar Estaun and David Carbó Manau.
+
+Finally, in the Third Category, the winning team was C.E. Ateneu Colon G, with 26 points, with a full house of 9 wins. The team was made up of Àlex Escolano, Jofre Gardela, Lluc Castel and Gael Pineda.
+
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+The closing ceremony was attended by the Lleida City Council councilor, Mr. Roberto Pino; the president of the Catalan Chess Federation, Mr. Ramon Chalmeta; the vice-president of the Catalan Chess Federation and tournament director, Mr. Ivan Marina; the president of C.E. Pardinyes, Mr. Jordi Obis, the Territorial delegate of Lleida of the Catalan Chess Federation, Mr. Josep Brunet and the communication manager of the Catalan Chess Federation, Mrs. Júlia Cruz.
+
+It is worth highlighting the good sportsmanship of all teams and the efficiency and agility of the refereeing team, led by the Lleida referee Xavier Valios, main referee of the tournament. The assistant team was made up of Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sànchez and Roger Rodríguez.
+
+The rest of the awarded teams in each category are detailed below:
+
+HONOR DIVISION / FIRST DIVISION
+1st Place: C.E. MOLLET A
+2nd Place: C.E. OLOT A
+3rd Place: C.E. BARCELONA A1
+
+SECOND DIVISION
+1st Place: C.E. TARRAGONA A
+2nd Place: C.E. GRAN PENYA VILANOVA A
+3rd Place: C.E. SANTA EUGÈNIA A1
+
+PREFERENT TERRITORIAL
+1st Place: C.E. SSC SABADELL B
+2nd Place: C.E. SANTA MARIA DE PALAUTORDERA A
+3rd Place: C.E. PEÓ VUIT A1
+
+FIRST TERRITORIAL
+1st Place: C.E. LA RÀPITA A
+2nd Place: C.E. ATENEU COLON D1
+3rd Place: C.E. GELIDA A1
+
+SECOND TERRITORIAL
+1st Place: C.E. MiR A
+2nd Place: C.E. CAMBRILS B
+3rd Place: C.E. SANTA EUGÈNIA C
+
+TERCERA TERRITORIAL
+1st Place: C.E. ATENEU COLON G
+2nd Place: C.E. LA RÀPITA B
+3rd Place: C.E. FOMENT MARTINENC D`
+        }
+    },
+    {
+        id: 'premsa-final-copa-catalana-2026',
+        date: '2026-04-27',
+        category: 'prensa',
+        image: '/img/galeria/prensa/FinalCopaCat.webp',
+        title: {
+            ca: 'Retall de diari: Final de la Copa Catalana',
+            es: 'Recorte de periódico: Final de la Copa Catalana',
+            en: 'Newspaper clipping: Catalan Cup Final'
+        },
+        summary: {
+            ca: 'Ressò als mitjans de la gran final de la Copa Catalana disputada a Lleida.',
+            es: 'Eco en los medios de la gran final de la Copa Catalana disputada en Lleida.',
+            en: 'Media echo of the Catalan Cup grand final held in Lleida.'
+        },
+        content: {
+            ca: 'Ressò als mitjans de la gran final de la Copa Catalana disputada a Lleida. Llegeix el retall per a més detalls.',
+            es: 'Eco en los medios de la gran final de la Copa Catalana disputada en Lleida. Lee el recorte para más detalles.',
+            en: 'Media echo of the Catalan Cup grand final held in Lleida. Read the clipping for more details.'
+        }
+    },
+    {
         id: 'iii-torneig-nadal-2025',
         date: '2026-01-04',
         category: 'torneig',
-        image: '/img/galeria/TornigNadal2026/1.jpeg',
+        image: '/img/galeria/TornigNadal2026/1.webp',
         title: {
             ca: 'Èxit de participació al III Torneig de Nadal',
             es: 'Éxito de participación en el III Torneo de Navidad',
@@ -34,28 +406,122 @@ export const news = [
     },
     {
         id: 'visita-ivette-garcia-2025',
-        date: '2025-11-15',
-        image: '/img/galeria/WIMIvetteGarcía/1.jpg',
+        date: '2025-07-08',
+        category: 'simultanies',
+        image: '/img/galeria/WIMIvetteGarcía2025/cartell-simultanies-ivette.webp',
+        gallery: [
+            '/img/galeria/WIMIvetteGarcía2025/1.webp',
+            '/img/galeria/WIMIvetteGarcía2025/2.webp',
+            '/img/galeria/WIMIvetteGarcía2025/3.webp',
+            '/img/galeria/WIMIvetteGarcía2025/4.webp',
+            '/img/galeria/WIMIvetteGarcía2025/5.webp',
+            '/img/galeria/WIMIvetteGarcía2025/6.webp',
+            '/img/galeria/WIMIvetteGarcía2025/cartell-colaboradors.webp'
+        ],
         title: {
-            ca: 'Visita històrica de la WIM Ivette García',
-            es: 'Visita histórica de la WIM Ivette García',
-            en: 'Historical visit of WIM Ivette Garcia'
+            ca: 'Jornada inoblidable amb la WIM Ivette García i Kulsum Qasim',
+            es: 'Jornada inolvidable con la WIM Ivette García y Kulsum Qasim',
+            en: 'Unforgettable day with WIM Ivette García and Kulsum Qasim'
         },
         summary: {
-            ca: 'La directora de ChessKid Español va inspirar a les nostres joves promeses amb una sessió de simultànies.',
-            es: 'La directora de ChessKid Español inspiró a nuestras jóvenes promesas con una sesión de simultáneas.',
-            en: 'The director of ChessKid Español inspired our young talents with a simultaneous session.'
+            ca: 'El club rep la visita de la directora de ChessKid Español i la Presidenta de ChessKid a Chess.com.',
+            es: 'El club recibe la visita de la directora de ChessKid Español y la Presidenta de ChessKid en Chess.com.',
+            en: 'The club hosts the director of ChessKid Español and the President of ChessKid at Chess.com.'
         },
         content: {
-            ca: `Hem tingut el privilegi de rebre la WIM Ivette García Morales, directora de ChessKid Español. La Ivette, Maestra Internacional i jugadora olímpica, va venir des de Mèxic per compartir la seva passió amb nosaltres.
-            
-            També ens va visitar Kulsum Qasim, Presidenta de ChessKid a Chess.com. Va ser una oportunitat increïble per donar visibilitat a la dona en els escacs i inspirar noves generacions.`,
-            es: `Hemos tenido el privilegio de recibir a la WIM Ivette García Morales, directora de ChessKid Español. Ivette, Maestra Internacional y jugadora olímpica, vino desde México para compartir su pasión con nosotros.
-            
-            También nos visitó Kulsum Qasim, Presidenta de ChessKid en Chess.com. Fue una oportunidad increíble para dar visibilidad a la mujer en el ajedrez e inspirar a nuevas generaciones.`,
-            en: `We had the privilege of hosting WIM Ivette Garcia Morales, director of ChessKid Español. Ivette, International Master and Olympic player, came from Mexico to share her passion with us.
-            
-            We were also visited by Kulsum Qasim, President of ChessKid at Chess.com. It was an incredible opportunity to give visibility to women in chess and inspire new generations.`
+            ca: `El passat dimarts, 8 de juliol, el @clubescacspardinyes va viure una jornada espectacular que, com a president, m'omple d'orgull.
+
+Vam tenir l'honor de rebre dues figures increïbles del món dels escacs. La WIM Ivette García Morales (@chessivette), que va venir expressament des de Chihuahua, Mèxic 🇲🇽, ens va oferir una simultània inoblidable. La seva qualitat humana i escaquística és excepcional, i personalment, estic molt content d'haver pogut aconseguir unes taules contra ella!
+
+A més, també ens va visitar Kulsum Qasim, la Presidenta de ChessKid a Chess.com, que va viatjar des de Toronto, Canadà 🇨🇦!
+
+És un privilegi poder apropar aquestes referents de l'escac femení internacional als nostres socis i, especialment, als nostres infants. La seva presència no només inspira, sinó que també dona una visibilitat crucial a la dona en el nostre esport. Moments com aquests són els que fan club!
+
+Gràcies a la Ivette i a la Kulsum per la seva generositat i per fer d'aquell dia una jornada que quedarà gravada a la memòria del club.
+
+#Escacs #Simultania #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiracio #DonaIEscacs #OrgullDePresident`,
+            es: `El pasado martes, 8 de julio, el @clubescacspardinyes vivió una jornada espectacular que, como presidente, me llena de orgullo.
+
+Tuvimos el honor de recibir a dos figuras increíbles del mundo del ajedrez. La WIM Ivette García Morales (@chessivette), que vino expresamente desde Chihuahua, México 🇲🇽, nos ofreció una simultánea inolvidable. Su calidad humana y ajedrecística es excepcional, y personalmente, ¡estoy muy contento de haber podido conseguir unas tablas contra ella!
+
+Además, también nos visitó Kulsum Qasim, la Presidenta de ChessKid en Chess.com, ¡que viajó desde Toronto, Canadá 🇨🇦!
+
+Es un privilegio poder acercar a estas referentes del ajedrez femenino internacional a nuestros socios y, especialmente, a nuestros niños. Su presencia no solo inspira, sino que también da una visibilidad crucial a la mujer en nuestro deporte. ¡Momentos como estos son los que hacen club!
+
+Gracias a Ivette y a Kulsum por su generosidad y por hacer de aquel día una jornada que quedará grabada en la memoria del club.
+
+#Escacs #Simultania #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiracio #DonaIEscacs #OrgullDePresident`,
+            en: `Last Tuesday, July 8th, @clubescacspardinyes experienced a spectacular day that, as president, fills me with pride.
+
+We had the honor of welcoming two incredible figures from the chess world. WIM Ivette García Morales (@chessivette), who came specifically from Chihuahua, Mexico 🇲🇽, offered us an unforgettable simultaneous exhibition. Her human and chess quality is exceptional, and personally, I am very happy to have managed a draw against her!
+
+Additionally, we were also visited by Kulsum Qasim, the President of ChessKid at Chess.com, who traveled from Toronto, Canada 🇨🇦!
+
+It is a privilege to be able to bring these international female chess role models closer to our members and, especially, to our children. Their presence not only inspires but also provides crucial visibility to women in our sport. Moments like these are what make a club!
+
+Thanks to Ivette and Kulsum for their generosity and for making that day a journey that will remain engraved in the club's memory.
+
+#Chess #Simultaneous #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiration #WomenInChess #PresidentPride`
+        }
+    },
+    {
+        id: 'festa-escacs-lleida-2025',
+        date: '2025-07-12',
+        category: 'torneig',
+        image: '/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp',
+        title: {
+            ca: 'Festa dels escacs de Lleida 2025',
+            es: 'Fiesta del ajedrez de Lleida 2025',
+            en: 'Lleida Chess Festival 2025'
+        },
+        summary: {
+            ca: 'El Club Escacs Pardinyes acull la recuperació de la Festa dels Escacs Lleidatans amb gran èxit.',
+            es: 'El Club Escacs Pardinyes acoge la recuperación de la Fiesta del Ajedrez Leridano con gran éxito.',
+            en: 'Club Escacs Pardinyes hosts the recovery of the Lleida Chess Festival with great success.'
+        },
+        content: {
+            ca: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+Dissabte 12 de juliol, a les instal·lacions del Club Escacs Pardinyes, situat al barri de Pardinyes de Lleida, va tenir lloc la Festa dels Escacs Lleidatans. Feia una colla d’anys que no es feia aquesta festa de la territorial de Lleida, i aquest any, de la mà del delegat Josep Brunet, s’ha volgut recuperar que tradició que serveix per tancar una temporada.
+
+La jornada va començar al matí amb el Campionat d’Escacs Individual Llampec. El torneig es va jugar pel sistema suís en onze rondes al ritme de 3 minuts per partida i 2 segons d’increment per jugada. Molt bona la participació amb cinquanta esportistes de la majoria dels clubs lleidatans. El campionat va ser guanyat pel MC Israel Camps (Balaguer) de forma invicta amb 10,5 punts, molt per davant de la resta dels rivals. En segona posició es va classificar en Jordi Ferrer (Balaguer) amb 8,5 punts i en tercera posició i tancant el podi l’Aleix Martí (Vallfogona) amb 8 punts.   El millor esportista de la categoria Sub14 va ser en Daniel Badia (Flanc de Dama) amb 7,5 punts i el millor Sub10 va ser en Jan Llovera (Flanc de Dama) amb 5 punts.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+Després del campionat, tot seguit i a les mateixes instal·lacions de club Pardinyes, es va fer el dinar de germanor amb una trentena de persones assistents. El dinar era un càtering del Restaurant Dos Plats de Lleida. Estava compost amb dos primers plats i postres a triar amb anterioritat, i va agradar força.
+
+Finalment, la jornada va acabar amb el repartiment dels trofeus o guardons de la temporada escaquista de la Territorial de Lleida. Es feu entrega dels trofeus dels campions de Lliga, dels pitxitxis de la Lliga i de la Copa de Lleida.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+Donem les gràcies a totes les persones que d’una manera o altra han ajudat a fer possible aquesta Festa dels Escacs de Lleida, sobretot a les persones del Club Escacs Pardinyes. Sobretot agrair a la bona convivència que va regnar en tot moment en aquesta jornada festiva. Moltes gràcies a tots els assitents i fins la propera temporada.
+
+<a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Classificació i resultats del Campionat Individual Llampec</a>`,
+            es: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+El sábado 12 de julio, en las instalaciones del Club Escacs Pardinyes, situado en el barrio de Pardinyes de Lleida, tuvo lugar la Festa dels Escacs Lleidatans (Fiesta del Ajedrez Leridano). Hacía bastantes años que no se celebraba esta fiesta de la territorial de Lleida, y este año, de la mano del delegado Josep Brunet, se ha querido recuperar esta tradición que sirve para cerrar la temporada.
+
+La jornada comenzó por la mañana con el Campeonato de Ajedrez Individual Relámpago. El torneo se jugó por sistema suizo a once rondas con un ritmo de 3 minutos por partida y 2 segundos de incremento por jugada. Muy buena participación con cincuenta deportistas de la mayoría de los clubes leridanos. El campeonato fue ganado por el MC Israel Camps (Balaguer) de forma invicta con 10,5 puntos, muy por delante del resto de rivales. En segunda posición se clasificó Jordi Ferrer (Balaguer) con 8,5 puntos y en tercera posición, cerrando el podio, Aleix Martí (Vallfogona) con 8 puntos. El mejor deportista de la categoría Sub14 fue Daniel Badia (Flanc de Dama) con 7,5 puntos y el mejor Sub10 fue Jan Llovera (Flanc de Dama) con 5 puntos.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+Después del campeonato, acto seguido y en las mismas instalaciones del club Pardinyes, se celebró el almuerzo de hermandad con una treintena de asistentes. El almuerzo consistió en un catering del Restaurante Dos Plats de Lleida, compuesto por dos primeros platos y postre a elegir con anterioridad, y gustó mucho.
+
+Finalmente, la jornada terminó con el reparto de los trofeos o galardones de la temporada ajedrecística de la Territorial de Lleida. Se hizo entrega de los trofeos de los campeones de Liga, de los goleadores (pitxitxis) de la Liga y de la Copa de Lleida.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+Damos las gracias a todas las personas que de una manera u otra han ayudado a hacer posible esta Fiesta del Ajedrez de Lleida, sobre todo a las personas del Club Escacs Pardinyes. Especialmente agradecer la buena convivencia que reinó en todo momento en esta jornada festiva. Muchas gracias a todos los asistentes y hasta la próxima temporada.
+
+<a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Clasificación y resultados del Campeonato Individual Relámpago</a>`,
+            en: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+On Saturday, July 12th, at the facilities of the Club Escacs Pardinyes, located in the Pardinyes neighborhood of Lleida, the Festa dels Escacs Lleidatans (Lleida Chess Festival) took place. It had been several years since this festival of the Lleida territorial was held, and this year, led by delegate Josep Brunet, we wanted to recover this tradition that serves to close the season.
+
+The day began in the morning with the Individual Blitz Chess Championship. The tournament was played using the Swiss system over eleven rounds at a pace of 3 minutes per game and 2 seconds of increment per move. There was very good participation, with fifty athletes from most of the Lleida clubs. The championship was won by MC Israel Camps (Balaguer) undefeated with 10.5 points, well ahead of the other rivals. In second place was Jordi Ferrer (Balaguer) with 8.5 points, and in third place, completing the podium, was Aleix Martí (Vallfogona) with 8 points. The best athlete in the U14 category was Daniel Badia (Flanc de Dama) with 7.5 points, and the best U10 was Jan Llovera (Flanc de Dama) with 5 points.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+After the championship, immediately following and in the same Pardinyes club facilities, a brotherhood lunch was held with about thirty attendees. The lunch was catered by Restaurant Dos Plats in Lleida, consisting of two first courses and a dessert chosen in advance, and it was very well received.
+
+Finally, the day ended with the distribution of trophies and awards for the chess season of the Lleida Territorial. Trophies were presented to the League champions, the League top scorers (pitxitxis), and the Lleida Cup winners.
+
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+We thank everyone who in one way or another helped make this Lleida Chess Festival possible, especially the people from Club Escacs Pardinyes. Above all, we appreciate the good atmosphere that prevailed at all times during this festive day. Many thanks to all attendees, and see you next season.
+
+<a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Classification and results of the Individual Blitz Championship</a>`
         }
     },
     {
@@ -161,6 +627,125 @@ export const news = [
             ca: 'Menció especial de com Lleida es converteix en la capital dels escacs per uns dies en aquest Tancat Internacional. Llegeix el retall per a més detalls.',
             es: 'Mención especial de cómo Lleida se convierte en la capital del ajedrez por unos días en este Cerrado Internacional. Lee el recorte para más detalles.',
             en: 'Special mention of how Lleida becomes the capital of chess for a few days in this International Closed. Read the clipping for more details.'
+        }
+    },
+    {
+        id: 'simultanies-arami-lobo-2026',
+        date: '2026-03-06',
+        category: 'simultanies',
+        image: '/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp',
+        gallery: [
+            '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-03-06 at 21.17.46.webp',
+            '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-03-07 at 06.43.16.webp',
+            '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at 10.25.45.webp',
+            '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at 10.25.45o.webp',
+            '/img/galeria/simultanies-arami2026/WhatsApp Image 2026-04-05 at u.webp',
+            '/img/galeria/simultanies-arami2026/i.webp'
+        ],
+        title: {
+            ca: 'Simultànies amb WFM Aramí Lobo - Pardinyes en Lila',
+            es: 'Simultáneas con WFM Aramí Lobo - Pardinyes en Lila',
+            en: 'Simultaneous Games with WFM Aramí Lobo - Pardinyes en Lila'
+        },
+        summary: {
+            ca: 'La WFM Aramí Lobo ofereix una exhibició de simultànies en la jornada \'Pardinyes en Lila\'.',
+            es: 'La WFM Aramí Lobo ofrece una exhibición de simultáneas en la jornada \'Pardinyes en Lila\'.',
+            en: 'WFM Aramí Lobo offers a simultaneous chess exhibition as part of the \'Pardinyes en Lila\' event.'
+        },
+        content: {
+            ca: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+El passat 6 de març de 2026, el Club Escacs Pardinyes va participar en la jornada 'Pardinyes en Lila' amb una exhibició de simultànies a càrrec de la WFM Aramí Lobo.
+
+L'esdeveniment va tenir lloc a la Rambla Corregidor Escofet i Pl. Maria Rúbies, de 17:00h a 19:00h. La presentació de la jornada va anar a càrrec de Carmeli Moral.
+
+Aramí Lobo és una de les grans realitats dels escacs actuals amb un futur brillant:
+• Campiona Iberoamericana de Ràpides Absoluta (2025)
+• 5 vegades Campiona d'Espanya (Sub-12 i Sub-14)
+• 4 vegades Campiona de Catalunya (Sub-10 a Sub-16)
+• 3a d'Europa Individual Sub-14 (2021)
+
+Els taulers van estar limitats a 20 jugadores, que van posar a prova el seu nivell davant d'una Campiona Iberoamericana en un ambient festiu i reivindicatiu.`,
+            es: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+El pasado 6 de marzo de 2026, el Club Escacs Pardinyes participó en la jornada 'Pardinyes en Lila' con una exhibición de simultáneas a cargo de la WFM Aramí Lobo.
+
+El evento tuvo lugar en la Rambla Corregidor Escofet y Pl. Maria Rúbies, de 17:00h a 19:00h. La presentación de la jornada corrió a cargo de Carmeli Moral.
+
+Aramí Lobo es una de las grandes realidades del ajedrez actual con un futuro brillante:
+• Campeona Iberoamericana de Rápidas Absoluta (2025)
+• 5 veces Campeona de España (Sub-12 y Sub-14)
+• 4 veces Campeona de Cataluña (Sub-10 a Sub-16)
+• 3ª de Europa Individual Sub-14 (2021)
+
+Los tableros estuvieron limitados a 20 jugadoras, que pusieron a prueba su nivel ante una Campeona Iberoamericana en un ambiente festivo y reivindicativo.`,
+            en: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+On March 6th, 2026, Club Escacs Pardinyes participated in the 'Pardinyes en Lila' event with a simultaneous chess exhibition by WFM Aramí Lobo.
+
+The event took place at Rambla Corregidor Escofet and Pl. Maria Rúbies, from 17:00h to 19:00h. The presentation was by Carmeli Moral.
+
+Aramí Lobo is a top-level chess player with a bright future:
+• Absolute Ibero-American Rapid Champion (2025)
+• 5 times Spanish Champion (U12 & U14)
+• 4 times Catalan Champion (U10 to U16)
+• 3rd in Individual European U14 (2021)
+
+The boards were limited to 20 players, who tested their skills against an Ibero-American Champion in a festive and commemorative atmosphere.`
+        }
+    },
+    {
+        id: 'jornada-sant-jordi-2025',
+        date: '2025-04-25',
+        category: 'simultanies',
+        image: '/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp',
+        gallery: [
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi1.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi2.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi3.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi4.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi5.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi6.webp',
+            '/img/galeria/JornadaSantJordi2025/JornadaSantJordi7.webp'
+        ],
+        title: {
+            ca: 'Jornada Sant@ Jordi/na 2025',
+            es: 'Jornada Sant@ Jordi/na 2025',
+            en: 'Sant@ Jordi/na Day 2025'
+        },
+        summary: {
+            ca: 'La jove prodigi Lola Fernández s\'enfronta a 8 jugadors en una tarda màgica d\'escacs.',
+            es: 'La joven prodigio Lola Fernández se enfrenta a 8 jugadores en una tarde mágica de ajedrez.',
+            en: 'Young prodigy Lola Fernández faces 8 players in a magical afternoon of chess.'
+        },
+        content: {
+            ca: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+🌟 Una tarda màgica dins la jornada de Sant@ Jordi/na! 🌟
+
+El 25 d'abril 2025, la jove prodigi Lola Fernández, amb només 9 anys, es va atrevir a enfrontar-se a 8 jugadors alhora en una espectacular simultània d’escacs ♟️🔥.
+
+I els resultats van ser impressionants: 5 victòries, 1 taules i només 2 derrotes! 👏♟️ Una gran demostració de talent i coratge!
+
+A més, vam habilitar 8 taulers més per a partides lliures, enmig d’un ambient vibrant, ple d’energia i amb una gran afluència de gent! 🙌🎉
+
+Gràcies a tots per formar part d’aquesta jornada tan especial. El futur dels escacs ja brilla amb llum pròpia! 💛`,
+            es: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+🌟 ¡Una tarde mágica dentro de la jornada de Sant@ Jordi/na! 🌟
+
+El 25 de abril de 2025, la joven prodigio Lola Fernández, con solo 9 años, se atrevió a enfrentarse a 8 jugadores a la vez en una espectacular simultánea de ajedrez ♟️🔥.
+
+Y los resultados fueron impresionantes: ¡5 victorias, 1 tablas y solo 2 derrotas! 👏♟️ ¡Una gran demostración de talento y coraje!
+
+Además, habilitamos 8 tableros más para partidas libres, en medio de un ambiente vibrante, lleno de energía y con una gran afluencia de gente. 🙌🎉
+
+Gracias a todos por formar parte de esta jornada tan especial. ¡El futuro del ajedrez ya brilla con luz propia! 💛`,
+            en: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+🌟 A magical afternoon during the Sant@ Jordi/na day! 🌟
+
+On April 25th 2025, the young prodigy Lola Fernández, only 9 years old, dared to face 8 players at once in a spectacular chess simultaneous exhibition ♟️🔥.
+
+And the results were impressive: 5 victories, 1 draw and only 2 defeats! 👏♟️ A great demonstration of talent and courage!
+
+In addition, we set up 8 more boards for free games, amidst a vibrant atmosphere, full of energy and with a large crowd! 🙌🎉
+
+Thanks to everyone for being part of this special day. The future of chess already shines with its own light! 💛`
         }
     }
 ];

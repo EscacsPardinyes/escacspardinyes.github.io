@@ -1,15 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { news } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
 
+const ITEMS_PER_PAGE = 12;
+
 export default function NewsList() {
     const { language, t } = useLanguage();
     const [searchQuery, setSearchQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState('all');
     const [sortOrder, setSortOrder] = useState('desc');
+    const [currentPage, setCurrentPage] = useState(1);
 
     const breadcrumbs = [{ label: t('news.header') }];
 
@@ -17,8 +20,7 @@ export default function NewsList() {
         { id: 'all', icon: 'fa-layer-group' },
         { id: 'simultanies', icon: 'fa-chess-board' },
         { id: 'torneig', icon: 'fa-trophy' },
-        { id: 'social', icon: 'fa-users' },
-        { id: 'altres', icon: 'fa-ellipsis-h' }
+        { id: 'prensa', icon: 'fa-newspaper' }
     ];
 
     // Filter and Sort news
@@ -36,6 +38,22 @@ export default function NewsList() {
             const dateB = new Date(b.date);
             return sortOrder === 'desc' ? dateB - dateA : dateA - dateB;
         });
+
+    // Pagination logic
+    const totalPages = Math.ceil(filteredNews.length / ITEMS_PER_PAGE);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const paginatedNews = filteredNews.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+    // Reset to page 1 when search or filters change
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [searchQuery, activeCategory, sortOrder]);
+
+    // Scroll to top when page changes
+    const handlePageChange = (newPage) => {
+        setCurrentPage(newPage);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <div style={{ backgroundColor: '#f9fbf9', minHeight: '100vh' }}>
@@ -109,7 +127,6 @@ export default function NewsList() {
                     </div>
 
                     <div className="ml-auto d-flex align-items-center px-2">
-                        <span className="small text-muted font-weight-bold mr-3">{t('sort_by') || 'ORDENAR:'}</span>
                         <button
                             onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
                             className="btn btn-sm d-flex align-items-center"
@@ -123,8 +140,8 @@ export default function NewsList() {
 
                 {/* Results Section */}
                 <div className="row">
-                    {filteredNews.length > 0 ? (
-                        filteredNews.map(item => (
+                    {paginatedNews.length > 0 ? (
+                        paginatedNews.map(item => (
                             <NewsCard key={item.id} item={item} />
                         ))
                     ) : (
@@ -139,6 +156,63 @@ export default function NewsList() {
                         </div>
                     )}
                 </div>
+
+                {/* Pagination Controls */}
+                {totalPages > 1 && (
+                    <div className="d-flex justify-content-center align-items-center mt-5 mb-4">
+                        <nav aria-label="Page navigation">
+                            <ul className="pagination pagination-lg mb-0" style={{ gap: '8px' }}>
+                                <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+                                    <button
+                                        className="page-link pagination-btn shadow-sm"
+                                        onClick={() => handlePageChange(currentPage - 1)}
+                                        disabled={currentPage === 1}
+                                        style={{ borderRadius: '12px', border: 'none', color: '#2e7d32' }}
+                                    >
+                                        <i className="fa fa-chevron-left"></i>
+                                    </button>
+                                </li>
+                                
+                                {[...Array(totalPages)].map((_, i) => (
+                                    <li key={i + 1} className={`page-item ${currentPage === i + 1 ? 'active' : ''}`}>
+                                        <button
+                                            className={`page-link pagination-btn shadow-sm ${currentPage === i + 1 ? 'active-page' : ''}`}
+                                            onClick={() => handlePageChange(i + 1)}
+                                            style={{ 
+                                                borderRadius: '12px', 
+                                                border: 'none',
+                                                minWidth: '50px',
+                                                textAlign: 'center',
+                                                fontWeight: '600',
+                                                backgroundColor: currentPage === i + 1 ? '#2e7d32' : '#fff',
+                                                color: currentPage === i + 1 ? '#fff' : '#555'
+                                            }}
+                                        >
+                                            {i + 1}
+                                        </button>
+                                    </li>
+                                ))}
+
+                                <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+                                    <button
+                                        className="page-link pagination-btn shadow-sm"
+                                        onClick={() => handlePageChange(currentPage + 1)}
+                                        disabled={currentPage === totalPages}
+                                        style={{ borderRadius: '12px', border: 'none', color: '#2e7d32' }}
+                                    >
+                                        <i className="fa fa-chevron-right"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                )}
+                
+                {totalPages > 1 && (
+                    <div className="text-center text-muted small">
+                        {t('common.page')} {currentPage} {t('common.of')} {totalPages}
+                    </div>
+                )}
             </div>
 
             <style>{`
@@ -153,6 +227,25 @@ export default function NewsList() {
                 .form-control:focus {
                     box-shadow: 0 4px 20px rgba(46, 125, 50, 0.1) !important;
                     border: 1px solid rgba(46, 125, 50, 0.1) !important;
+                }
+                .pagination-btn {
+                    transition: all 0.3s ease;
+                }
+                .pagination-btn:hover:not(:disabled) {
+                    background-color: #f0f4f0 !important;
+                    color: #2e7d32 !important;
+                    transform: translateY(-2px);
+                }
+                .active-page {
+                    background-color: #2e7d32 !important;
+                    color: white !important;
+                }
+                .page-item.disabled .page-link {
+                    background-color: #f8f9fa;
+                    opacity: 0.5;
+                }
+                .pagination {
+                    border-radius: 15px;
                 }
             `}</style>
         </div>

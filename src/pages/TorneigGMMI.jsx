@@ -3,9 +3,9 @@ import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 import { useLanguage } from '../context/LanguageContext';
 
-import posterImg from '../img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
-import posterPdf from '../img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.pdf';
-import logoBarcelona from '../img/galeria/Setmana Santa 2026/logo-barcelona.webp';
+const posterImg = '/img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
+const posterPdf = '/img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.pdf';
+const logoBarcelona = '/img/galeria/Setmana Santa 2026/logo-barcelona.webp';
 
 export default function TorneigGMMI() {
     const { t, tHtml } = useLanguage();
@@ -14,6 +14,29 @@ export default function TorneigGMMI() {
     const breadcrumbs = [
         { label: t('tancats.list_breadcrumb') || 'Tancats de GM i MI', path: '/tancats' },
         { label: t('gmmi.breadcrumb') }
+    ];
+
+    const photos = [
+        '/img/galeria/Setmana Santa 2026/Mathieu, Phileas.webp',
+        '/img/galeria/Setmana Santa 2026/Sosa, Tomas.webp',
+        '/img/galeria/Setmana Santa 2026/Tomas Sosa contra Kevin Noboa 2.webp',
+        '/img/galeria/Setmana Santa 2026/Tomas Sosa contra Kevin Noboa.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.23.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.30.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.31.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.31re.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.32.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.35.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at 00.21.36.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at j.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-03 at 22.47.24.webp',
+        '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-03 at 22.47.25.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-28-03-2026-SEGRE.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-La-Manyana-1.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-La-Manyana-2.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-SEGRE.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capital-escacs.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-La-Manyana.webp'
     ];
 
     return (
@@ -101,13 +124,13 @@ export default function TorneigGMMI() {
                         <img src={logoBarcelona} alt="Club d'Escacs Barcelona" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/logopaeria-color.webp" alt="La Paeria - Ajuntament de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/logopaeria-color.webp" alt="La Paeria - Ajuntament de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/diputaciolleida.webp" alt="Diputació de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
+                        <img src="/img/galeria/logos/diputaciolleida.webp" alt="Diputació de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -126,29 +149,10 @@ export default function TorneigGMMI() {
 
                 <h3 className="text-center font-weight-bold mb-4 mt-5">{t('gmmi.gallery_title')}</h3>
                 <div className="row justify-content-center">
-                    {(() => {
-                        const mainImages = import.meta.glob('/src/img/galeria/Setmana Santa 2026/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
-                        const prensaImages = import.meta.glob('/src/img/galeria/prensa/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, query: '?url' });
-
-                        let photos = [
-                            ...Object.entries(prensaImages)
-                                .filter(([key, _]) => key.toLowerCase().includes('tancatsetmanasanta2026'))
-                                .map(([_, mod]) => mod.default || mod),
-                            ...Object.values(mainImages).map(mod => mod.default || mod)
-                        ];
-                        
-                        // Exclude the poster, logo, and any other non-gallery files that might appear matched
-                        photos = photos.filter(photo => 
-                            !photo.toLowerCase().includes('cerrados') && 
-                            !photo.toLowerCase().includes('logo-barcelona') &&
-                            !photo.toLowerCase().includes('precios')
-                        );
-
-                        if (photos.length === 0) {
-                            return <p className="text-muted">{t('gmmi.gallery_placeholder')}</p>;
-                        }
-
-                        return photos.map((photo, index) => (
+                    {photos.length === 0 ? (
+                        <p className="text-muted">{t('gmmi.gallery_placeholder')}</p>
+                    ) : (
+                        photos.map((photo, index) => (
                             <div key={index} className="col-12 col-sm-6 col-md-4 mb-4">
                                 <img 
                                     src={photo} 
@@ -161,8 +165,8 @@ export default function TorneigGMMI() {
                                     loading="lazy" 
                                 />
                             </div>
-                        ));
-                    })()}
+                        ))
+                    )}
                 </div>
             </div>
             {/* Fi Crònica i Galeria */}
