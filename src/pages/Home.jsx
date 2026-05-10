@@ -36,13 +36,13 @@ export default function Home() {
                         "addressCountry": "ES"
                     }
                 },
-                "image": ["https://escacspardinyes.github.io/img/galeria/logos/logo.webp"],
+                "image": ["https://escacspardinyes.com/img/galeria/logos/logo.webp"],
                 "organizer": {
                     "@type": "Organization",
                     "name": "Club Escacs Pardinyes",
-                    "url": "https://escacspardinyes.github.io"
+                    "url": "https://escacspardinyes.com"
                 },
-                "url": "https://escacspardinyes.github.io/tancats/agost"
+                "url": "https://escacspardinyes.com/tancats/agost"
             }
         ]
     };

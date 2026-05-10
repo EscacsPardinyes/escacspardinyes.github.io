@@ -28,11 +28,11 @@ export default function TorneigNadal2025() {
                 "addressCountry": "ES"
             }
         },
-        "image": ["https://escacspardinyes.github.io/img/galeria/TornigNadal2026/cartell-nadal-2025.webp"],
+        "image": ["https://escacspardinyes.com/img/galeria/TornigNadal2026/cartell-nadal-2025.webp"],
         "organizer": {
             "@type": "Organization",
             "name": "Club Escacs Pardinyes",
-            "url": "https://escacspardinyes.github.io"
+            "url": "https://escacspardinyes.com"
         }
     };
 

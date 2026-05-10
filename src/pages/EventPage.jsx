@@ -36,7 +36,7 @@ export default function EventPage({ id }) {
         "@type": "Event",
         "name": t(titleKeySEO),
         "description": t(descriptionKeySEO),
-        "image": `https://escacspardinyes.github.io${poster}`,
+        "image": `https://escacspardinyes.com${poster}`,
         "startDate": id === 'sant-jordi' ? "2025-04-23" : "2025-01-01", // Approximate or specific if known
         "location": {
             "@type": "Place",
@@ -52,7 +52,7 @@ export default function EventPage({ id }) {
         "organizer": {
             "@type": "Organization",
             "name": "Club Escacs Pardinyes",
-            "url": "https://escacspardinyes.github.io"
+            "url": "https://escacspardinyes.com"
         }
     };
 

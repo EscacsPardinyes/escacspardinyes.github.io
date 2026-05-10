@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://escacspardinyes.github.io/</loc>
+    <loc>https://escacspardinyes.com/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/about</loc>
+    <loc>https://escacspardinyes.com/about</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/school</loc>
+    <loc>https://escacspardinyes.com/school</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/masterclass</loc>
+    <loc>https://escacspardinyes.com/masterclass</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/federat</loc>
+    <loc>https://escacspardinyes.com/federat</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/contact</loc>
+    <loc>https://escacspardinyes.com/contact</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies</loc>
+    <loc>https://escacspardinyes.com/noticies</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/simultanies</loc>
+    <loc>https://escacspardinyes.com/simultanies</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/tancats</loc>
+    <loc>https://escacspardinyes.com/tancats</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/elo-calculator</loc>
+    <loc>https://escacspardinyes.com/elo-calculator</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -64,110 +64,110 @@
 
   <!-- Specific Pages -->
   <url>
-    <loc>https://escacspardinyes.github.io/masterclass/india-de-rey</loc>
+    <loc>https://escacspardinyes.com/masterclass/india-de-rey</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/sant-jordi2025</loc>
+    <loc>https://escacspardinyes.com/sant-jordi2025</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/TorneigAlcarras</loc>
+    <loc>https://escacspardinyes.com/TorneigAlcarras</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/torneig-nadal-2025</loc>
+    <loc>https://escacspardinyes.com/torneig-nadal-2025</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/tancats-setmana-santa-2026</loc>
+    <loc>https://escacspardinyes.com/tancats-setmana-santa-2026</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/tancats-agost-2026</loc>
+    <loc>https://escacspardinyes.com/tancats-agost-2026</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/simultanies-ivette</loc>
+    <loc>https://escacspardinyes.com/simultanies-ivette</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/simultanies-arami2026</loc>
+    <loc>https://escacspardinyes.com/simultanies-arami2026</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
 
   <!-- News Articles -->
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/fase-territorial-copa-catalana-2026</loc>
+    <loc>https://escacspardinyes.com/noticies/fase-territorial-copa-catalana-2026</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/cronica-copa-catalana-2026</loc>
+    <loc>https://escacspardinyes.com/noticies/cronica-copa-catalana-2026</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-final-copa-catalana-2026</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-final-copa-catalana-2026</loc>
     <lastmod>2026-04-27</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/iii-torneig-nadal-2025</loc>
+    <loc>https://escacspardinyes.com/noticies/iii-torneig-nadal-2025</loc>
     <lastmod>2026-01-04</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/visita-ivette-garcia-2025</loc>
+    <loc>https://escacspardinyes.com/noticies/visita-ivette-garcia-2025</loc>
     <lastmod>2025-07-08</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/festa-escacs-lleida-2025</loc>
+    <loc>https://escacspardinyes.com/noticies/festa-escacs-lleida-2025</loc>
     <lastmod>2025-07-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-escacs-joves</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-escacs-joves</loc>
     <lastmod>2026-04-01</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-fita-historica-lleida</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-fita-historica-lleida</loc>
     <lastmod>2026-04-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-lleida-elit-escacs</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-lleida-elit-escacs</loc>
     <lastmod>2026-04-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-capita-argentina</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-capita-argentina</loc>
     <lastmod>2026-03-31</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/premsa-capital-escacs</loc>
+    <loc>https://escacspardinyes.com/noticies/premsa-capital-escacs</loc>
     <lastmod>2026-03-31</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/simultanies-arami-lobo-2026</loc>
+    <loc>https://escacspardinyes.com/noticies/simultanies-arami-lobo-2026</loc>
     <lastmod>2026-03-06</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.github.io/noticies/jornada-sant-jordi-2025</loc>
+    <loc>https://escacspardinyes.com/noticies/jornada-sant-jordi-2025</loc>
     <lastmod>2025-04-25</lastmod>
     <priority>0.6</priority>
   </url>

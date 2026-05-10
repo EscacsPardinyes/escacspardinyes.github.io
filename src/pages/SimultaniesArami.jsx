@@ -31,7 +31,7 @@ export default function SimultaniesArami() {
         "@type": "Event",
         "name": t('nav.arami_short'),
         "description": t('arami.p1'),
-        "image": `https://escacspardinyes.github.io/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp`,
+        "image": `https://escacspardinyes.com/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp`,
         "startDate": "2026-03-06",
         "location": {
             "@type": "Place",
@@ -47,7 +47,7 @@ export default function SimultaniesArami() {
         "organizer": {
             "@type": "Organization",
             "name": "Club Escacs Pardinyes",
-            "url": "https://escacspardinyes.github.io"
+            "url": "https://escacspardinyes.com"
         }
     };
 

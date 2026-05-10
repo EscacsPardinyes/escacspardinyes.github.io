@@ -109,12 +109,12 @@ export default function EloCalculator() {
                             <hr />
                             <div className="d-flex gap-3 mb-3">
                                 <div className="flex-fill">
-                                    <label className="form-label">{t('elo.opponent_elo')}</label>
-                                    <input type="number" className="form-control" value={opponentElo} onChange={(e) => setOpponentElo(e.target.value)} />
+                                    <label htmlFor="opponentElo" className="form-label">{t('elo.opponent_elo')}</label>
+                                    <input type="number" id="opponentElo" name="opponentElo" className="form-control" value={opponentElo} onChange={(e) => setOpponentElo(e.target.value)} />
                                 </div>
                                 <div className="flex-fill">
-                                    <label className="form-label">{t('elo.result')}</label>
-                                    <select className="form-control" value={result} onChange={(e) => setResult(e.target.value)}>
+                                    <label htmlFor="result" className="form-label">{t('elo.result')}</label>
+                                    <select id="result" name="result" className="form-control" value={result} onChange={(e) => setResult(e.target.value)}>
                                         <option value="1">{t('elo.win')}</option>
                                         <option value="0.5">{t('elo.draw')}</option>
                                         <option value="0">{t('elo.loss')}</option>
@@ -133,12 +133,12 @@ export default function EloCalculator() {
                                     <div key={index} className="mb-3 p-3 border rounded bg-light position-relative">
                                         <div className="d-flex gap-3 mb-2">
                                             <div className="flex-fill">
-                                                <label className="form-label">{t('elo.opponent_elo')} ronda {index + 2}</label>
-                                                <input type="number" className="form-control" value={rival.opponentElo} onChange={(e) => updateRivalElo(index, e.target.value)} />
+                                                <label htmlFor={`opponentElo-${index}`} className="form-label">{t('elo.opponent_elo')} ronda {index + 2}</label>
+                                                <input type="number" id={`opponentElo-${index}`} name={`opponentElo-${index}`} className="form-control" value={rival.opponentElo} onChange={(e) => updateRivalElo(index, e.target.value)} />
                                             </div>
                                             <div className="flex-fill">
-                                                <label className="form-label">{t('elo.result')} ronda {index + 2}</label>
-                                                <select className="form-control" value={rival.result} onChange={(e) => updateRivalResult(index, e.target.value)}>
+                                                <label htmlFor={`result-${index}`} className="form-label">{t('elo.result')} ronda {index + 2}</label>
+                                                <select id={`result-${index}`} name={`result-${index}`} className="form-control" value={rival.result} onChange={(e) => updateRivalResult(index, e.target.value)}>
                                                     <option value="1">{t('elo.win')}</option>
                                                     <option value="0.5">{t('elo.draw')}</option>
                                                     <option value="0">{t('elo.loss')}</option>

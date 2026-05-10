@@ -65,11 +65,11 @@ export default function TorneigGMMIAugost() {
                 "addressCountry": "ES"
             }
         },
-        "image": [posterImg.startsWith('http') ? posterImg : `https://escacspardinyes.github.io${posterImg}`],
+        "image": [posterImg.startsWith('http') ? posterImg : `https://escacspardinyes.com${posterImg}`],
         "organizer": {
             "@type": "Organization",
             "name": "Club Escacs Pardinyes",
-            "url": "https://escacspardinyes.github.io"
+            "url": "https://escacspardinyes.com"
         }
     };
 

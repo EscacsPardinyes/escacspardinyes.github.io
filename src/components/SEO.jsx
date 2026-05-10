@@ -24,7 +24,7 @@ export default function SEO({ title, description, image, schema, type = 'website
                 ? "Club Escacs Pardinyes - Fomentando el ajedrez en Lleida desde 1992. Escuela de ajedrez, competiciones y una gran comunidad."
                 : "Club Escacs Pardinyes - Promoting chess in Lleida since 1992. Chess school, competitions and a great community.";
         const defaultImage = '/img/galeria/logos/logo.webp';
-        const siteUrl = 'https://escacspardinyes.github.io';
+        const siteUrl = 'https://escacspardinyes.com';
         
         // Helper to ensure absolute URL for images
         const getAbsoluteUrl = (path) => {
