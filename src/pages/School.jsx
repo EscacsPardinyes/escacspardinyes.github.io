@@ -28,25 +28,25 @@ export default function School() {
             {/* Hero Section: School Levels */}
             <div className="container py-5" style={{ marginTop: '50px' }}>
                 <div className="text-center mb-5">
-                    <h2 className="display-4 font-weight-bold">{t('school.title')}</h2>
-                    <p className="lead mx-auto" style={{ maxWidth: '800px' }} dangerouslySetInnerHTML={tHtml('school.subtitle')}></p>
+                    <h2 className="display-4 font-weight-bold mb-3">{t('school.title')}</h2>
+                    <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }} dangerouslySetInnerHTML={tHtml('school.subtitle')}></p>
                     
                     {/* Recent Success Highlight */}
-                    <div className="mt-4 d-inline-block p-3 px-4 rounded-pill shadow-sm" style={{ backgroundColor: '#fff9e6', border: '1px solid #ffc107' }}>
-                        <span className="h5 mb-0 text-dark">
-                            <i className="fas fa-trophy text-primary mr-2"></i>
-                            <strong>Èxit recent:</strong> Campions Sub-10 i Sub-20 a la Minicopa 2026! 🏆 
+                    <div className="success-badge mb-4">
+                        <span className="h5 mb-0 text-dark d-flex align-items-center flex-wrap justify-content-center">
+                            <i className="fas fa-trophy text-warning mr-2 animate-pulse"></i>
+                            <strong>Èxit recent:</strong>&nbsp;Campions Sub-10 i Sub-20 a la Minicopa 2026! 🏆 
                             <Link to="/noticies/minicopa-territorial-lleida-2026" className="ml-2 text-primary font-weight-bold" style={{ textDecoration: 'underline' }}>Llegir més</Link>
                         </span>
                     </div>
                 </div>
                 <div className="row g-4">
                     <div className="col-md-6 mb-4 mb-md-0">
-                        <div className="school-card h-100 d-flex flex-column gradient-primary text-white p-5 shadow">
-                            <div className="mb-4">
-                                <i className="fas fa-chess-pawn fa-4xl" style={{ fontSize: '4rem' }}></i>
+                        <div className="school-card h-100 d-flex flex-column gradient-primary p-5 shadow-lg">
+                            <div className="mb-4 floating-piece">
+                                <i className="fas fa-chess-pawn" style={{ fontSize: '4.5rem' }}></i>
                             </div>
-                            <h3 className="display-4 mb-3 text-white font-weight-bold">{t('school.beginner_title')}</h3>
+                            <h3 className="display-4 mb-3 font-weight-bold">{t('school.beginner_title')}</h3>
                             <p className="flex-grow-1 lead" dangerouslySetInnerHTML={tHtml('school.beginner_text')}></p>
                             <div className="mt-4">
                                 <a href="#inscripcio" className="btn btn-lg btn-outline-light px-5 py-3 font-weight-bold">{t('school.btn_join')}</a>
@@ -54,14 +54,14 @@ export default function School() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="school-card h-100 d-flex flex-column gradient-secondary text-white p-5 shadow">
-                            <div className="mb-4">
-                                <i className="fas fa-chess-knight fa-4xl" style={{ fontSize: '4rem' }}></i>
+                        <div className="school-card h-100 d-flex flex-column gradient-secondary text-white p-5 shadow-lg">
+                            <div className="mb-4 floating-piece-delay">
+                                <i className="fas fa-chess-knight" style={{ fontSize: '4.5rem', color: '#ffc107' }}></i>
                             </div>
                             <h3 className="display-4 mb-3 text-white font-weight-bold">{t('school.advanced_title')}</h3>
-                            <p className="flex-grow-1 lead" dangerouslySetInnerHTML={tHtml('school.advanced_text')}></p>
+                            <p className="flex-grow-1 lead text-light" dangerouslySetInnerHTML={tHtml('school.advanced_text')}></p>
                             <div className="mt-4">
-                                <Link to="/masterclass" className="btn btn-lg btn-outline-light px-5 py-3 font-weight-bold">{t('school.btn_masterclass')}</Link>
+                                <Link to="/masterclass" className="btn btn-lg btn-outline-warning px-5 py-3 font-weight-bold text-white" style={{borderColor: '#ffc107'}}>{t('school.btn_masterclass')}</Link>
                             </div>
                         </div>
                     </div>
@@ -125,9 +125,12 @@ export default function School() {
                     </div>
                     <div className="col-lg-6 text-center">
                         <div className="position-relative d-inline-block">
-                            <img src="/img/galeria/Minicopa2026/Fotogrup.webp" className="img-fluid rounded-xl shadow-lg" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" style={{ maxHeight: '400px', borderRadius: '20px' }} width="600" height="400" loading="lazy" />
-                            <div className="position-absolute shadow-sm bg-white p-3 rounded" style={{ bottom: '-20px', right: '-20px', maxWidth: '240px', border: '1px solid #ffc107' }}>
-                                <p className="mb-0 font-weight-bold text-dark small">Projecte de base: El més fort de Lleida ciutat! 🦁</p>
+                            <img src="/img/galeria/Minicopa2026/Fotogrup.webp" className="img-fluid img-premium" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" style={{ maxHeight: '450px' }} width="600" height="400" loading="lazy" />
+                            <div className="position-absolute shadow-lg bg-white p-3 rounded-xl" style={{ bottom: '-15px', right: '-15px', maxWidth: '260px', border: '2px solid #ffc107' }}>
+                                <p className="mb-0 font-weight-bold text-dark small">
+                                    <i className="fas fa-star text-warning mr-1"></i>
+                                    Projecte de base: El més fort de Lleida ciutat! 🦁
+                                </p>
                             </div>
                         </div>
                     </div>
