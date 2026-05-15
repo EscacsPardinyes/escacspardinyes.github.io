@@ -60,7 +60,28 @@ export default function NewsDetail() {
             navigate('/noticies');
         }
         window.scrollTo(0, 0);
-    }, [id, item, navigate]);
+
+        // Add click listeners to images in content
+        const contentBody = document.querySelector('.news-content-body');
+        if (contentBody) {
+            const imgs = contentBody.querySelectorAll('img');
+            imgs.forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', () => {
+                    const src = img.getAttribute('src');
+                    const galleryIndex = allImages.indexOf(src);
+                    if (galleryIndex !== -1) {
+                        setModalImageIndex(galleryIndex);
+                    } else {
+                        // If not in gallery, we could add it or just show it
+                        // For simplicity, we'll try to find it in allImages
+                        setModalImageIndex(0); // Fallback
+                    }
+                    setIsImageModalOpen(true);
+                });
+            });
+        }
+    }, [id, item, navigate, allImages]);
 
     if (!item) return null;
 
@@ -73,7 +94,7 @@ export default function NewsDetail() {
     const shareTitle = item.title[language];
 
     return (
-        <div style={{ backgroundColor: '#fcfdfc' }}>
+        <div style={{ backgroundColor: '#ffffff' }}>
             <SEO
                 title={item.title[language]}
                 description={item.summary[language]}
@@ -129,7 +150,7 @@ export default function NewsDetail() {
 
                         {/* Article Header */}
                         <div className="text-center mb-5">
-                            <h1 className="display-4 font-weight-bold mb-4" style={{ color: '#1a3a1a', lineHeight: '1.2' }}>{item.title[language]}</h1>
+                            <h1 className="display-4 font-weight-bold mb-4" style={{ color: '#111', lineHeight: '1.2' }}>{item.title[language]}</h1>
                             <p className="lead text-muted mx-auto" style={{ maxWidth: '800px', fontSize: '1.25rem', fontStyle: 'italic' }}>
                                 {item.summary[language]}
                             </p>
@@ -230,7 +251,7 @@ export default function NewsDetail() {
                         {/* Related News Section */}
                         {relatedNews.length > 0 && (
                             <div className="mt-5">
-                                <h3 className="h3 font-weight-bold mb-4" style={{ color: '#1a3a1a' }}>{t('news.related')}</h3>
+                                <h3 className="h3 font-weight-bold mb-4" style={{ color: '#111' }}>{t('news.related')}</h3>
                                 <div className="row">
                                     {relatedNews.map(related => (
                                         <NewsCard key={related.id} item={related} />
@@ -343,7 +364,7 @@ export default function NewsDetail() {
                     transition: background 0.3s ease;
                 }
                 .nav-news-link:hover {
-                    background-color: #f0f7f0;
+                    background-color: #fff9e6;
                 }
                 .text-truncate-2 {
                     display: -webkit-box;

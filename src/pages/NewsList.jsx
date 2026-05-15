@@ -56,7 +56,7 @@ export default function NewsList() {
     };
 
     return (
-        <div style={{ backgroundColor: '#f9fbf9', minHeight: '100vh' }}>
+        <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
             <SEO title={t('news.header')} description={t('news.subtitle')} />
             <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} />
 
@@ -64,7 +64,7 @@ export default function NewsList() {
                 {/* Search & Header Section */}
                 <div className="row mb-5 align-items-end">
                     <div className="col-lg-6 mb-4 mb-lg-0">
-                        <h2 className="display-4 font-weight-bold mb-3" style={{ color: '#1a3a1a', letterSpacing: '-1px' }}>
+                        <h2 className="display-4 font-weight-bold mb-3" style={{ color: '#111', letterSpacing: '-1px' }}>
                             {t('news.title')}
                         </h2>
                         <p className="lead text-muted mb-0" style={{ maxWidth: '500px' }}>
@@ -73,7 +73,7 @@ export default function NewsList() {
                     </div>
                     <div className="col-lg-6">
                         <div className="position-relative">
-                            <i className="fa fa-search position-absolute" style={{ left: '20px', top: '50%', transform: 'translateY(-50%)', color: '#2e7d32', zIndex: 10 }}></i>
+                            <i className="fa fa-search position-absolute" style={{ left: '20px', top: '50%', transform: 'translateY(-50%)', color: '#ffc107', zIndex: 10 }}></i>
                             <input
                                 type="text"
                                 className="form-control"
@@ -116,8 +116,8 @@ export default function NewsList() {
                                     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                                     border: 'none',
                                     fontWeight: '600',
-                                    backgroundColor: activeCategory === cat.id ? '#2e7d32' : 'transparent',
-                                    color: activeCategory === cat.id ? '#fff' : '#555'
+                                    backgroundColor: activeCategory === cat.id ? '#ffc107' : 'transparent',
+                                    color: activeCategory === cat.id ? '#111' : '#555'
                                 }}
                             >
                                 <i className={`fa ${cat.icon} mr-2`} style={{ opacity: activeCategory === cat.id ? 1 : 0.6 }}></i>
@@ -130,7 +130,7 @@ export default function NewsList() {
                         <button
                             onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
                             className="btn btn-sm d-flex align-items-center"
-                            style={{ borderRadius: '10px', backgroundColor: '#f0f4f0', color: '#2e7d32', fontWeight: '700' }}
+                            style={{ borderRadius: '10px', backgroundColor: '#eee', color: '#111', fontWeight: '700' }}
                         >
                             <i className={`fa fa-sort-amount-${sortOrder === 'desc' ? 'down' : 'up'} mr-2`}></i>
                             {sortOrder === 'desc' ? 'RECENTS' : 'ANTICS'}
@@ -167,7 +167,7 @@ export default function NewsList() {
                                         className="page-link pagination-btn shadow-sm"
                                         onClick={() => handlePageChange(currentPage - 1)}
                                         disabled={currentPage === 1}
-                                        style={{ borderRadius: '12px', border: 'none', color: '#2e7d32' }}
+                                        style={{ borderRadius: '12px', border: 'none', color: '#111' }}
                                     >
                                         <i className="fa fa-chevron-left"></i>
                                     </button>
@@ -184,8 +184,8 @@ export default function NewsList() {
                                                 minWidth: '50px',
                                                 textAlign: 'center',
                                                 fontWeight: '600',
-                                                backgroundColor: currentPage === i + 1 ? '#2e7d32' : '#fff',
-                                                color: currentPage === i + 1 ? '#fff' : '#555'
+                                                backgroundColor: currentPage === i + 1 ? '#ffc107' : '#fff',
+                                                color: currentPage === i + 1 ? '#111' : '#555'
                                             }}
                                         >
                                             {i + 1}
@@ -198,7 +198,7 @@ export default function NewsList() {
                                         className="page-link pagination-btn shadow-sm"
                                         onClick={() => handlePageChange(currentPage + 1)}
                                         disabled={currentPage === totalPages}
-                                        style={{ borderRadius: '12px', border: 'none', color: '#2e7d32' }}
+                                        style={{ borderRadius: '12px', border: 'none', color: '#111' }}
                                     >
                                         <i className="fa fa-chevron-right"></i>
                                     </button>
@@ -218,27 +218,27 @@ export default function NewsList() {
             <style>{`
                 .active-filter {
                     transform: translateY(-2px);
-                    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+                    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
                 }
                 .inactive-filter:hover {
-                    background-color: #f1f8f1 !important;
-                    color: #2e7d32 !important;
+                    background-color: #fff9e6 !important;
+                    color: #ffc107 !important;
                 }
                 .form-control:focus {
-                    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.1) !important;
-                    border: 1px solid rgba(46, 125, 50, 0.1) !important;
+                    box-shadow: 0 4px 20px rgba(255, 193, 7, 0.1) !important;
+                    border: 1px solid rgba(255, 193, 7, 0.1) !important;
                 }
                 .pagination-btn {
                     transition: all 0.3s ease;
                 }
                 .pagination-btn:hover:not(:disabled) {
-                    background-color: #f0f4f0 !important;
-                    color: #2e7d32 !important;
+                    background-color: #fff9e6 !important;
+                    color: #ffc107 !important;
                     transform: translateY(-2px);
                 }
                 .active-page {
-                    background-color: #2e7d32 !important;
-                    color: white !important;
+                    background-color: #ffc107 !important;
+                    color: #111 !important;
                 }
                 .page-item.disabled .page-link {
                     background-color: #f8f9fa;

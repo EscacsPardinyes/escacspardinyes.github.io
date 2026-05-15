@@ -3,8 +3,8 @@ import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 import { useLanguage } from '../context/LanguageContext';
 
-// Placeholders for August 2026 assets (Replace with real paths once available)
-const posterImg = 'https://placehold.co/600x800/2A769C/ffffff?text=COMING+SOON';
+// Placeholders for Setmana Santa 2027 assets (Replace with real paths once available)
+const posterImg = 'https://placehold.co/600x800/2A769C/ffffff?text=SETMANA+SANTA+2027';
 
 export default function TorneigGMMIAugost() {
     const { t, tHtml } = useLanguage();
@@ -50,8 +50,8 @@ export default function TorneigGMMIAugost() {
         "@type": "Event",
         "name": t('gmmi_agost.title'),
         "description": t('gmmi_agost.intro_text')?.replace(/<[^>]*>/g, ''),
-        "startDate": "2026-08-15T09:00:00+02:00",
-        "endDate": "2026-08-19T20:00:00+02:00",
+        "startDate": "2027-03-22T09:00:00+01:00",
+        "endDate": "2027-03-26T20:00:00+01:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
@@ -89,7 +89,7 @@ export default function TorneigGMMIAugost() {
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0 text-center">
                         <img src={posterImg}
-                            alt="Cartell oficial del Torneig d'Agost"
+                            alt="Cartell oficial del Torneig de Setmana Santa 2027"
                             className="img-fluid rounded shadow"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=COMING+SOON' }}
                             loading="lazy"
@@ -133,13 +133,13 @@ export default function TorneigGMMIAugost() {
                                 ) : (
                                     <form onSubmit={handleSubmit}>
                                         <input type="hidden" name="_template" value="table" />
-                                        <input type="hidden" name="_subject" value={`Reserva Tancats Agost: ${formData.name}`} />
+                                        <input type="hidden" name="_subject" value={`Reserva Tancats Setmana Santa 2027: ${formData.name}`} />
                                         <input type="hidden" name="_captcha" value="false" />
 
                                         <div className="row">
                                             <div className="col-md-6 form-group small">
                                                 <label htmlFor="title">{t('gmmi.form_title')}</label>
-                                                <input type="text" className="form-control form-control-sm" id="title" name="title" required value={formData.title} onChange={handleInputChange} placeholder="Ex: GM / MI / WGM / WMI" />
+                                                <input type="text" className="form-control form-control-sm" id="title" name="title" required value={formData.title} onChange={handleInputChange} placeholder="Ex: GM / MI" />
                                             </div>
                                             <div className="col-md-6 form-group small">
                                                 <label htmlFor="name">{t('gmmi.form_name')}</label>

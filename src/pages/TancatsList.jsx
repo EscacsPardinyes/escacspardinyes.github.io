@@ -140,9 +140,9 @@ export default function TancatsList() {
                     <div className="col-lg-4 mb-4">
                         <div className="card border-0 shadow rounded overflow-hidden h-100 border-primary" style={{ borderWidth: '2px !important' }}>
                             <img
-                                src="https://placehold.co/600x400/2A769C/ffffff?text=Tancat+Agost"
+                                src="https://placehold.co/600x400/2A769C/ffffff?text=Setmana+Santa+2027"
                                 className="card-img-top"
-                                alt="Tancat Agost 2026"
+                                alt="Tancats Setmana Santa 2027"
                                 style={{ height: '350px', objectFit: 'contain', backgroundColor: '#f8f9fa', padding: '10px' }}
                                 loading="lazy"
                             />
@@ -150,7 +150,7 @@ export default function TancatsList() {
                                 <div className="badge badge-primary mb-2 align-self-center px-3 py-2">PROPERAMENT</div>
                                 <h4 className="font-weight-bold mb-3">{t('gmmi_agost.header')}</h4>
                                 <p className="text-muted mb-4">{t('gmmi_agost.intro_text').replace(/<[^>]*>/g, '')}</p>
-                                <Link to="/tancats-agost-2026" className="btn btn-primary mt-auto">{t('simultanies.read_more') || 'Descobreix-ho'}</Link>
+                                <Link to="/tancats-setmana-santa-2027" className="btn btn-primary mt-auto">{t('simultanies.read_more') || 'Descobreix-ho'}</Link>
                             </div>
                         </div>
                     </div>

@@ -26,7 +26,7 @@ export default function NewsCard({ item }) {
                     <div className="position-absolute" style={{ top: '15px', right: '15px' }}>
                         <span className="badge px-3 py-2" style={{
                             backgroundColor: 'rgba(255,255,255,0.9)',
-                            color: '#2e7d32',
+                            color: '#ffc107',
                             borderRadius: '10px',
                             fontSize: '0.7rem',
                             fontWeight: '800',
@@ -40,11 +40,11 @@ export default function NewsCard({ item }) {
 
                 <div className="card-body p-4 d-flex flex-column">
                     <div className="d-flex align-items-center mb-3 text-muted" style={{ fontSize: '0.85rem' }}>
-                        <i className="fa fa-calendar-alt mr-2 text-primary" style={{ color: '#2e7d32' }}></i>
+                        <i className="fa fa-calendar-alt mr-2 text-primary" style={{ color: '#ffc107' }}></i>
                         {new Date(item.date).toLocaleDateString(language, { day: 'numeric', month: 'long', year: 'numeric' })}
                     </div>
 
-                    <h5 className="card-title font-weight-bold mb-3" style={{ color: '#1a3a1a', lineHeight: '1.4' }}>
+                    <h5 className="card-title font-weight-bold mb-3" style={{ color: '#111', lineHeight: '1.4' }}>
                         {item.title[language]}
                     </h5>
 
@@ -52,7 +52,7 @@ export default function NewsCard({ item }) {
                         {item.summary[language].length > 120 ? item.summary[language].substring(0, 117) + '...' : item.summary[language]}
                     </p>
 
-                    <Link to={`/noticies/${item.id}`} className="read-more-link d-inline-flex align-items-center mt-3 font-weight-bold" style={{ color: '#2e7d32', textDecoration: 'none', fontSize: '0.9rem' }}>
+                    <Link to={`/noticies/${item.id}`} className="read-more-link d-inline-flex align-items-center mt-3 font-weight-bold" style={{ color: '#ffc107', textDecoration: 'none', fontSize: '0.9rem' }}>
                         {t('news.read_more').toUpperCase()}
                         <i className="fa fa-arrow-right ml-2" style={{ transition: 'transform 0.3s ease' }}></i>
                     </Link>
@@ -62,7 +62,7 @@ export default function NewsCard({ item }) {
             <style>{`
                 .news-card-premium:hover {
                     transform: translateY(-10px);
-                    box-shadow: 0 20px 40px rgba(46, 125, 50, 0.1) !important;
+                    box-shadow: 0 20px 40px rgba(255, 193, 7, 0.15) !important;
                 }
                 .news-card-premium:hover .news-image {
                     transform: scale(1.1);

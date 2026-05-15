@@ -80,7 +80,7 @@ function App() {
             <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
             <Route path="torneig-nadal-2025" element={<TorneigNadal2025 />} />
             <Route path="tancats-setmana-santa-2026" element={<TorneigGMMI />} />
-            <Route path="tancats-agost-2026" element={<TorneigGMMIAugost />} />
+            <Route path="tancats-setmana-santa-2027" element={<TorneigGMMIAugost />} />
 
             <Route path="simultanies-ivette" element={<EventPage id="ivette" />} />
             <Route path="simultanies-arami2026" element={<SimultaniesArami />} />

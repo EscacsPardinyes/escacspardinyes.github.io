@@ -19,10 +19,10 @@ export default function Home() {
         "@graph": [
             {
                 "@type": "Event",
-                "name": "IV Cerrados para Normas de GM, WGM, MI y WMI Agosto 2026",
-                "description": "Torneig de tancats per a normes de Grans Mestres i Mestres Internacionals a Lleida.",
-                "startDate": "2026-08-15T09:00:00+02:00",
-                "endDate": "2026-08-19T20:00:00+02:00",
+                "name": "V Tancats per a Normes de GM i MI Setmana Santa 2027",
+                "description": "Cinquena edició dels tancats internacionals per a l'obtenció de normes de Gran Mestre i Mestre Internacional.",
+                "startDate": "2027-03-22T09:00:00+02:00",
+                "endDate": "2027-03-26T20:00:00+02:00",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "eventStatus": "https://schema.org/EventScheduled",
                 "location": {
@@ -42,7 +42,7 @@ export default function Home() {
                     "name": "Club Escacs Pardinyes",
                     "url": "https://escacspardinyes.com"
                 },
-                "url": "https://escacspardinyes.com/tancats/agost"
+                "url": "https://escacspardinyes.com/tancats-setmana-santa-2027"
             }
         ]
     };
@@ -60,24 +60,24 @@ export default function Home() {
                         <div className="carousel-item active">
                             <img className="w-100" src="/img/galeria/Carousel/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" fetchPriority="high" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
-                                <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide1.title')}</h1>
+                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide1.title')}</h1>
                                 <Link to="/contact" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide1.btn')}</Link>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img className="w-100" src="/img/galeria/Carousel/carousel-3.webp" alt="Competició d'escacs organitzada pel club" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
-                                <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide3.title')}</h2>
+                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide3.title')}</h2>
                                 <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide3.btn')}</a>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img className="w-100" src="/img/galeria/Carousel/carousel-4.webp" alt="Instal·lacions del Club Escacs Pardinyes" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary text-capitalize m-0">{t('carousel.club')}</h3>
-                                <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">{t('carousel.slide4.title')}</h2>
+                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide4.title')}</h2>
                                 <Link to="/about" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide4.btn')}</Link>
                             </div>
                         </div>

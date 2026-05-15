@@ -74,3 +74,74 @@
         height: 500px;
     }
 }
+
+@media (min-width: 992px) {
+    .bg-lg-transparent {
+        background-color: transparent !important;
+    }
+}
+
+/* School Section Improvements */
+.school-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.school-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.gradient-primary {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+}
+
+.gradient-secondary {
+    background: linear-gradient(135deg, #111111, #333333);
+}
+
+.info-card {
+    border-left: 5px solid #ffc107;
+    background: #f8f9fa;
+    transition: background 0.3s ease;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+.info-card:hover {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-section .card {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.value-item {
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: scale(1.05);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+.table-level-beginner { background-color: rgba(40, 167, 69, 0.05) !important; }
+.table-level-intermediate { background-color: rgba(255, 193, 7, 0.05) !important; }
+.table-level-advanced { background-color: rgba(102, 16, 242, 0.05) !important; }
+.table-level-games { background-color: rgba(23, 162, 184, 0.05) !important; }
