@@ -48,29 +48,27 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`container-fluid p-0 nav-bar ${isScrolled ? 'shadow-sm' : ''}`} 
+        <header className={`container-fluid p-0 nav-bar ${isScrolled ? 'scrolled shadow-sm' : ''}`} 
              style={{ 
-                transition: 'all 0.5s',
-                backgroundColor: isScrolled ? 'rgba(0, 0, 0, 0.95)' : 'transparent',
                 position: 'fixed',
                 top: 0,
                 left: 0,
                 right: 0,
                 zIndex: 1050
              }}>
-            <nav className={`navbar navbar-expand-lg navbar-dark py-3 ${isScrolled ? 'py-lg-2' : 'py-lg-3'}`} style={{ transition: 'all 0.5s' }}>
+            <nav className={`navbar navbar-expand-lg navbar-dark py-3 ${isScrolled ? 'py-lg-1' : 'py-lg-3'}`} style={{ transition: 'all 0.5s' }}>
                 <Link to="/" className="navbar-brand">
                     <h1 className="m-0 display-4 font-weight-bold text-uppercase text-white" style={{ 
-                        fontSize: isScrolled ? '1.5rem' : '2.2rem', 
+                        fontSize: isScrolled ? '1.4rem' : '2rem', 
                         transition: 'all 0.5s',
                         lineHeight: 1
                     }}>Club Escacs Pardinyes</h1>
                 </Link>
-                <button type="button" className="navbar-toggler" onClick={toggleMenu} aria-label="Toggle navigation">
+                <button type="button" className="navbar-toggler border-0" onClick={toggleMenu} aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={`collapse navbar-collapse justify-content-between ${isMenuOpen ? 'show' : ''}`} id="navbarCollapse">
-                    <div className={`navbar-nav ml-auto p-4 ${isScrolled ? '' : 'bg-secondary'} bg-lg-transparent`} style={{ transition: 'all 0.5s' }}>
+                    <div className="navbar-nav ml-auto p-4 p-lg-0 bg-lg-transparent">
                         <NavLink to="/" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.home')}</NavLink>
                         <NavLink to="/about" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.about')}</NavLink>
                         <NavLink to="/feature" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.feature')}</NavLink>
@@ -88,14 +86,19 @@ export default function Header() {
                                 />
                                 <i className="fa fa-angle-down ml-1"></i>
                             </a>
-                            <div className={`dropdown-menu bg-secondary border-0 rounded-0 w-100 m-0 ${isLangOpen ? 'show' : ''}`}>
-                                <a href="#" className="dropdown-item lang-btn text-white d-flex align-items-center" onClick={(e) => changeLanguage('ca', e)}>
+                            <div className={`dropdown-menu dropdown-menu-right border-0 shadow-lg ${isLangOpen ? 'show' : ''}`} 
+                                 style={{ 
+                                    backgroundColor: 'rgba(10, 10, 10, 0.9)', 
+                                    backdropFilter: 'blur(10px)',
+                                    marginTop: '10px'
+                                 }}>
+                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('ca', e)}>
                                     <img src="/img/flags/ca.svg" alt="Català" style={{ width: '20px', marginRight: '10px' }} /> Català
                                 </a>
-                                <a href="#" className="dropdown-item lang-btn text-white d-flex align-items-center" onClick={(e) => changeLanguage('es', e)}>
+                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('es', e)}>
                                     <img src="/img/flags/es.svg" alt="Español" style={{ width: '20px', marginRight: '10px' }} /> Español
                                 </a>
-                                <a href="#" className="dropdown-item lang-btn text-white d-flex align-items-center" onClick={(e) => changeLanguage('en', e)}>
+                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('en', e)}>
                                     <img src="/img/flags/en.svg" alt="English" style={{ width: '20px', marginRight: '10px' }} /> English
                                 </a>
                             </div>

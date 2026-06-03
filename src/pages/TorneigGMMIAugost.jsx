@@ -21,22 +21,25 @@ export default function TorneigGMMIAugost() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const form = e.currentTarget;
         setStatus('sending');
-        const formDataToSend = new FormData(form);
+        
         try {
-            const response = await fetch("https://formsubmit.co/ajax/escacspardinyes@gmail.com", {
-                method: "POST", body: formDataToSend
+            const response = await fetch('https://formsubmit.co/ajax/escacspardinyes@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
             });
+
             if (response.ok) {
                 setStatus('success');
-                form.reset();
-                setFormData({ title: '', name: '', fideId: '', flag: '', elo: '', phone: '' });
             } else {
                 setStatus('error');
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error('Form submission error:', error);
             setStatus('error');
         }
     };
@@ -129,9 +132,12 @@ export default function TorneigGMMIAugost() {
                                 {status === 'success' ? (
                                     <div className="alert alert-success text-center py-3">
                                         <h5><i className="fa fa-check-circle mr-2"></i>{t('contact.form.success')}</h5>
+                                        <button onClick={() => setStatus(null)} className="btn btn-outline-success btn-sm mt-2">Enviar un altre</button>
                                     </div>
                                 ) : (
-                                    <form onSubmit={handleSubmit}>
+                                    <form 
+                                        onSubmit={handleSubmit}
+                                    >
                                         <input type="hidden" name="_template" value="table" />
                                         <input type="hidden" name="_subject" value={`Reserva Tancats Setmana Santa 2027: ${formData.name}`} />
                                         <input type="hidden" name="_captcha" value="false" />
@@ -170,8 +176,9 @@ export default function TorneigGMMIAugost() {
                                             )}
                                         </button>
                                         {status === 'error' && (
-                                            <div className="mt-2 text-danger small text-center">
-                                                Error en enviar. Prova-ho més tard.
+                                            <div className="mt-2 text-danger small text-center font-weight-bold">
+                                                <i className="fa fa-exclamation-circle mr-1"></i>
+                                                Error en el servei de correu. Envia un mail a <strong>escacspardinyes@gmail.com</strong>
                                             </div>
                                         )}
                                     </form>

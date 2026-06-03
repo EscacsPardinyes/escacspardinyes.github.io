@@ -23,22 +23,25 @@ export default function TancatsList() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const form = e.currentTarget;
         setStatus('sending');
-        const formDataToSend = new FormData(form);
+        
         try {
-            const response = await fetch("https://formsubmit.co/ajax/escacspardinyes@gmail.com", {
-                method: "POST", body: formDataToSend
+            const response = await fetch('https://formsubmit.co/ajax/escacspardinyes@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
             });
+
             if (response.ok) {
                 setStatus('success');
-                form.reset();
-                setFormData({ title: '', name: '', fideId: '', flag: '', elo: '', phone: '' });
             } else {
                 setStatus('error');
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error('Form submission error:', error);
             setStatus('error');
         }
     };
@@ -63,9 +66,12 @@ export default function TancatsList() {
                             {status === 'success' ? (
                                 <div className="alert alert-success text-center py-4">
                                     <h4><i className="fa fa-check-circle mr-2"></i>{t('contact.form.success')}</h4>
+                                    <button onClick={() => setStatus(null)} className="btn btn-outline-success mt-3">Enviar un altre</button>
                                 </div>
                             ) : (
-                                <form onSubmit={handleSubmit}>
+                                <form 
+                                    onSubmit={handleSubmit}
+                                >
                                     <input type="hidden" name="_template" value="table" />
                                     <input type="hidden" name="_subject" value={`Interès Tancats: ${formData.name}`} />
                                     <input type="hidden" name="_captcha" value="false" />
@@ -116,8 +122,9 @@ export default function TancatsList() {
                                         </button>
                                     </div>
                                     {status === 'error' && (
-                                        <div className="mt-3 text-danger text-center">
-                                            Hi ha hagut un error en enviar les dades. Si us plau, prova-ho més tard o envia un mail directament.
+                                        <div className="mt-3 text-danger text-center font-weight-bold small">
+                                            <i className="fa fa-exclamation-circle mr-1"></i>
+                                            Error en el servei de correu. Prova-ho més tard o envia un mail a <strong>escacspardinyes@gmail.com</strong>
                                         </div>
                                     )}
                                 </form>

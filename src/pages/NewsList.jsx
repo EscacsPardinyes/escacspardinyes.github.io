@@ -60,40 +60,33 @@ export default function NewsList() {
             <SEO title={t('news.header')} description={t('news.subtitle')} />
             <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} />
 
-            <div className="container py-5">
+            <div className="container section-padding">
                 {/* Search & Header Section */}
-                <div className="row mb-5 align-items-end">
+                <div className="row mb-5 align-items-center">
                     <div className="col-lg-6 mb-4 mb-lg-0">
-                        <h2 className="display-4 font-weight-bold mb-3" style={{ color: '#111', letterSpacing: '-1px' }}>
+                        <h2 className="display-3 font-weight-bold mb-3">
                             {t('news.title')}
                         </h2>
-                        <p className="lead text-muted mb-0" style={{ maxWidth: '500px' }}>
+                        <p className="lead text-muted mb-0">
                             {t('news.subtitle')}
                         </p>
                     </div>
                     <div className="col-lg-6">
-                        <div className="position-relative">
-                            <i className="fa fa-search position-absolute" style={{ left: '20px', top: '50%', transform: 'translateY(-50%)', color: '#ffc107', zIndex: 10 }}></i>
+                        <div className="position-relative shadow-sm rounded-pill overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.1)' }}>
+                            <i className="fa fa-search position-absolute text-primary" style={{ left: '25px', top: '50%', transform: 'translateY(-50%)', zIndex: 10 }}></i>
                             <input
                                 type="text"
-                                className="form-control"
+                                className="form-control border-0 py-4"
                                 placeholder={t('news.search')}
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                style={{
-                                    paddingLeft: '50px',
-                                    height: '60px',
-                                    borderRadius: '30px',
-                                    border: 'none',
-                                    boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
-                                    fontSize: '1.1rem'
-                                }}
+                                style={{ paddingLeft: '60px', height: '60px', fontSize: '1.1rem' }}
                             />
                             {searchQuery && (
                                 <button
                                     onClick={() => setSearchQuery('')}
                                     className="btn position-absolute"
-                                    style={{ right: '15px', top: '50%', transform: 'translateY(-50%)', color: '#999', padding: '5px 10px' }}
+                                    style={{ right: '15px', top: '50%', transform: 'translateY(-50%)', color: '#999' }}
                                 >
                                     <i className="fa fa-times-circle"></i>
                                 </button>
@@ -103,37 +96,29 @@ export default function NewsList() {
                 </div>
 
                 {/* Filters Section */}
-                <div className="d-flex flex-wrap align-items-center justify-content-between mb-5 p-3" style={{ backgroundColor: '#fff', borderRadius: '20px', boxShadow: '0 5px 20px rgba(0,0,0,0.03)' }}>
-                    <div className="d-flex flex-wrap">
+                <div className="glass-card d-flex flex-wrap align-items-center justify-content-between mb-5 p-3" style={{ borderRadius: '24px' }}>
+                    <div className="d-flex flex-wrap gap-2">
                         {categories.map(cat => (
                             <button
                                 key={cat.id}
                                 onClick={() => setActiveCategory(cat.id)}
-                                className={`btn btn-sm mr-2 mb-2 mb-md-0 d-flex align-items-center ${activeCategory === cat.id ? 'active-filter' : 'inactive-filter'}`}
-                                style={{
-                                    borderRadius: '12px',
-                                    padding: '10px 20px',
-                                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                                    border: 'none',
-                                    fontWeight: '600',
-                                    backgroundColor: activeCategory === cat.id ? '#ffc107' : 'transparent',
-                                    color: activeCategory === cat.id ? '#111' : '#555'
-                                }}
+                                className={`btn btn-sm d-flex align-items-center px-4 py-2 font-weight-bold rounded-pill transition-base ${activeCategory === cat.id ? 'btn-primary' : 'btn-light'}`}
+                                style={{ border: 'none' }}
                             >
-                                <i className={`fa ${cat.icon} mr-2`} style={{ opacity: activeCategory === cat.id ? 1 : 0.6 }}></i>
+                                <i className={`fa ${cat.icon} mr-2`}></i>
                                 {cat.id === 'all' ? t('news.filter_all') : t(`news.cat_${cat.id}`)}
                             </button>
                         ))}
                     </div>
 
-                    <div className="ml-auto d-flex align-items-center px-2">
+                    <div className="ml-md-auto mt-3 mt-md-0 d-flex align-items-center">
+                        <span className="text-muted small mr-3 font-weight-bold text-uppercase">Ordenar:</span>
                         <button
                             onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
-                            className="btn btn-sm d-flex align-items-center"
-                            style={{ borderRadius: '10px', backgroundColor: '#eee', color: '#111', fontWeight: '700' }}
+                            className="btn btn-dark btn-sm rounded-pill px-3 py-2 d-flex align-items-center"
                         >
                             <i className={`fa fa-sort-amount-${sortOrder === 'desc' ? 'down' : 'up'} mr-2`}></i>
-                            {sortOrder === 'desc' ? 'RECENTS' : 'ANTICS'}
+                            {sortOrder === 'desc' ? 'Recents' : 'Antics'}
                         </button>
                     </div>
                 </div>

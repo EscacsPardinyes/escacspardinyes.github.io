@@ -74,7 +74,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="w-100" src="/img/galeria/Carousel/carousel-4.webp" alt="Instal·lacions del Club Escacs Pardinyes" loading="lazy" width="1920" height="1080" />
+                            <img className="w-100" src="/img/galeria/Minicopa2026/Fotogrup.webp" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="text-primary m-0">{t('carousel.club')}</h3>
                                 <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide4.title')}</h2>
@@ -93,55 +93,53 @@ export default function Home() {
             {/* Carousel End */}
 
             {/* About Start */}
-            <div className="container py-5">
+            <div className="container section-padding">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <img className="img-fluid mb-4 mb-lg-0 rounded shadow" src="/img/about.webp" alt="Entrenament a la seu del Club Escacs Pardinyes" loading="lazy" width="600" height="400" />
+                        <img className="img-fluid mb-4 mb-lg-0 rounded-lg shadow-lg" src="/img/about.webp" alt="Entrenament a la seu del Club Escacs Pardinyes" loading="lazy" width="600" height="400" style={{ borderRadius: '24px' }} />
                     </div>
-                    <div className="col-lg-6">
-                        <h2 className="display-4 font-weight-bold mb-4">{t('about.title')}</h2>
-                        <p>{t('about.desc')}</p>
+                    <div className="col-lg-6 pl-lg-5">
+                        <h2 className="display-4 font-weight-bold mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('about.title')}</h2>
+                        <p className="lead mb-4">{t('about.desc')}</p>
                         <div className="row py-2">
-                            <div className="col-sm-6">
-                                <i className="flaticon-chess display-2 text-primary"></i>
-                                <h4 className="font-weight-bold">{t('about.federated.title')}</h4>
-                                <p>{t('about.federated.desc')}</p>
+                            <div className="col-sm-12 mb-4">
+                                <div className="d-flex align-items-start">
+                                    <i className="flaticon-chess display-4 text-primary mr-3"></i>
+                                    <div>
+                                        <h4 className="font-weight-bold mb-2">{t('about.federated.title')}</h4>
+                                        <p className="text-muted">{t('about.federated.desc')}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <Link to="/about" className="btn btn-lg px-4 btn-outline-primary">{t('about.btn')}</Link>
+                        <Link to="/about" className="btn btn-lg btn-primary px-5 mt-2">{t('about.btn')}</Link>
                     </div>
                 </div>
             </div>
             {/* About End */}
 
             {/* Features Start */}
-            <div className="container-fluid my-5">
-                <div className="row">
-                    <div className="col-lg-4 p-0">
-                        <div className="d-flex align-items-center bg-secondary text-white px-5" style={{ minHeight: '300px' }}>
-                            <i className="flaticon-strategy display-3 text-primary mr-3"></i>
-                            <div className="">
-                                <h2 className="text-white mb-3">{t('features.progress.title')}</h2>
-                                <p>{t('features.progress.desc')}</p>
-                            </div>
+            <div className="container section-padding bg-light rounded-lg" style={{ borderRadius: '40px' }}>
+                <div className="row px-3">
+                    <div className="col-lg-4 mb-4 mb-lg-0">
+                        <div className="value-item">
+                            <i className="flaticon-strategy value-icon"></i>
+                            <h3 className="mb-3">{t('features.progress.title')}</h3>
+                            <p className="text-muted">{t('features.progress.desc')}</p>
                         </div>
                     </div>
-                    <div className="col-lg-4 p-0">
-                        <div className="d-flex align-items-center bg-primary text-white px-5" style={{ minHeight: '300px' }}>
-                            <i className="flaticon-competition display-3 text-secondary mr-3"></i>
-                            <div className="">
-                                <h2 className="text-white mb-3">{t('features.competition.title')}</h2>
-                                <p>{t('features.competition.desc')}</p>
-                            </div>
+                    <div className="col-lg-4 mb-4 mb-lg-0">
+                        <div className="value-item">
+                            <i className="flaticon-competition value-icon"></i>
+                            <h3 className="mb-3">{t('features.competition.title')}</h3>
+                            <p className="text-muted">{t('features.competition.desc')}</p>
                         </div>
                     </div>
-                    <div className="col-lg-4 p-0">
-                        <div className="d-flex align-items-center bg-secondary text-white px-5" style={{ minHeight: '300px' }}>
-                            <i className="flaticon-study display-3 text-primary mr-3"></i>
-                            <div className="">
-                                <h2 className="text-white mb-3">{t('features.training.title')}</h2>
-                                <p>{t('features.training.desc')}</p>
-                            </div>
+                    <div className="col-lg-4">
+                        <div className="value-item">
+                            <i className="flaticon-study value-icon"></i>
+                            <h3 className="mb-3">{t('features.training.title')}</h3>
+                            <p className="text-muted">{t('features.training.desc')}</p>
                         </div>
                     </div>
                 </div>
@@ -149,10 +147,10 @@ export default function Home() {
             {/* Features End */}
 
             {/* Schedule Start */}
-            <div className="container gym-feature py-5">
+            <div className="container section-padding">
                 <div className="d-flex flex-column text-center mb-5">
-                    <h4 className="text-primary font-weight-bold">{t('schedule.title')}</h4>
-                    <h4 className="display-4 font-weight-bold">{t('schedule.subtitle')}</h4>
+                    <h4 className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px' }}>{t('schedule.title')}</h4>
+                    <h2 className="display-4 font-weight-bold">{t('schedule.subtitle')}</h2>
                 </div>
                 <div className="tab-class">
                     <ul className="nav nav-pills justify-content-center mb-4">

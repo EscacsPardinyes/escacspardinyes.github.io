@@ -8,88 +8,99 @@ export default function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('sending');
-
-        const formData = new FormData(e.target);
+        
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/escacspardinyes@gmail.com", {
-                method: "POST",
-                body: formData
+            const response = await fetch('https://formsubmit.co/ajax/escacspardinyes@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
             });
 
             if (response.ok) {
                 setStatus('success');
-                e.target.reset();
             } else {
                 setStatus('error');
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error('Form submission error:', error);
             setStatus('error');
         }
     };
 
     if (status === 'success') {
         return (
-            <div className="alert alert-success p-5 text-center shadow-sm">
-                <i className="fas fa-check-circle fa-4x text-success mb-4"></i>
-                <h4 className="font-weight-bold">{t('contact.form.success')}</h4>
-
-                <button onClick={() => setStatus(null)} className="btn btn-outline-primary mt-4">Enviar un altre missatge</button>
+            <div className="text-center py-5 animate-fade-in">
+                <div className="mb-4 d-inline-flex align-items-center justify-content-center bg-success text-white rounded-circle" style={{ width: '80px', height: '80px' }}>
+                    <i className="fas fa-check fa-2x"></i>
+                </div>
+                <h4 className="font-weight-bold mb-3">{t('contact.form.success')}</h4>
+                <p className="text-muted mb-4">Hem rebut el teu missatge. T'escriurem ben aviat!</p>
+                <button onClick={() => setStatus(null)} className="btn btn-primary rounded-pill">Enviar un altre missatge</button>
             </div>
         );
     }
 
     return (
         <div className="contact-form">
-            <form onSubmit={handleSubmit} className="p-4 bg-white rounded shadow-sm">
-
-                {/* Honeypot for spam protection */}
+            <form 
+                onSubmit={handleSubmit}
+            >
                 <input type="text" name="_honey" style={{ display: 'none' }} />
-
-                {/* Configuration */}
                 <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_subject" value="Nou missatge de web Escacs Pardinyes" />
-
-                {/* Force JSON response for AJAX (though fetch url /ajax/ does this too) */}
                 <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_autoresponse" value="Hem rebut el teu missatge correctament. Ens posarem en contacte amb tu ben aviat." />
 
-                {/* Autoresponse: This sends a copy to the user */}
-                <input type="hidden" name="_autoresponse" value="Hem rebut el teu missatge correctament. Ens posarem en contacte amb tu ben aviat. / Hemos recibido tu mensaje correctamente. Contactaremos contigo pronto. / We received your message. We will contact you soon." />
-
-                <div className="form-group mb-3">
-                    <input type="text" className="form-control p-4" id="name" name="name" placeholder={t('contact.form.name')} required />
+                <div className="row g-3">
+                    <div className="col-md-6 mb-3">
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">Nom complet</label>
+                        <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="name" placeholder={t('contact.form.name')} required style={{ height: '55px' }} />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">Correu electrònic</label>
+                        <input type="email" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="email" placeholder={t('contact.form.email')} required style={{ height: '55px' }} />
+                    </div>
                 </div>
-                <div className="form-group mb-3">
-                    <input type="email" className="form-control p-4" id="email" name="email" placeholder={t('contact.form.email')} required />
+                <div className="mb-3">
+                    <label className="small font-weight-bold text-muted text-uppercase mb-2">Assumpte</label>
+                    <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="subject" placeholder={t('contact.form.subject')} required style={{ height: '55px' }} />
                 </div>
-                <div className="form-group mb-3">
-                    <input type="tel" className="form-control p-4" id="phone" name="phone" placeholder={t('contact.form.phone')} />
+                <div className="mb-4">
+                    <label className="small font-weight-bold text-muted text-uppercase mb-2">El teu missatge</label>
+                    <textarea className="form-control border-0 bg-light p-3 rounded-xl shadow-none" rows="5" name="message" placeholder={t('contact.form.message')} required></textarea>
                 </div>
-                <div className="form-group mb-3">
-                    <input type="text" className="form-control p-4" id="subject" name="subject" placeholder={t('contact.form.subject')} required />
-                </div>
-                <div className="form-group mb-3">
-                    <textarea className="form-control p-4" rows="6" id="message" name="message" placeholder={t('contact.form.message')} required></textarea>
-                </div>
-                <div className="form-group mb-3 pl-4">
-                    <input type="checkbox" className="form-check-input" id="privacy" name="privacy" required />
-                    <label className="form-check-label" htmlFor="privacy">
-                        {t('contact.form.privacy')} <a href={t('contact.form.link')} target="_blank" rel="noopener noreferrer">{t('contact.form.policy')}</a>
-                    </label>
+                <div className="mb-4">
+                    <div className="form-check d-flex align-items-center">
+                        <input type="checkbox" className="form-check-input mt-0" id="privacy" name="privacy" required style={{ width: '20px', height: '20px' }} />
+                        <label className="form-check-label ml-3 small text-muted" htmlFor="privacy">
+                            {t('contact.form.privacy')} <a href={t('contact.form.link')} target="_blank" rel="noopener noreferrer" className="text-primary font-weight-bold">{t('contact.form.policy')}</a>
+                        </label>
+                    </div>
                 </div>
                 <div>
-                    <button className="btn btn-primary btn-block py-3 px-5" type="submit" disabled={status === 'sending'}>
+                    <button className="btn btn-primary btn-lg btn-block rounded-pill shadow-md" type="submit" disabled={status === 'sending'}>
                         {status === 'sending' ? (
                             <span><i className="fas fa-spinner fa-spin mr-2"></i> Enviant...</span>
                         ) : (
-                            t('contact.form.send')
+                            <>
+                                <i className="fas fa-paper-plane mr-2"></i>
+                                {t('contact.form.send')}
+                            </>
                         )}
                     </button>
                 </div>
                 {status === 'error' && (
-                    <div className="mt-3 text-danger text-center">
-                        Hi ha hagut un error en enviar el missatge. Si us plau, prova-ho més tard o envia un mail directament.
+                    <div className="mt-4 p-3 bg-danger-light text-danger rounded-xl text-center small font-weight-bold">
+                        <i className="fas fa-exclamation-circle mr-2"></i>
+                        Hi ha hagut un error en enviar el missatge (El servei extern de correu no respon). 
+                        Si us plau, envia un email directament a <strong>escacspardinyes@gmail.com</strong>
                     </div>
                 )}
             </form>

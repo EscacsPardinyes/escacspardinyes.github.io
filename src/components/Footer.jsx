@@ -5,36 +5,41 @@ export default function Footer() {
     const { t } = useLanguage();
 
     return (
-        <>
-            <div className="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
-                <div className="row pt-5">
-                    <div className="col-lg-3 col-md-6 mb-5">
-                        <h4 className="text-primary mb-4">{t('footer.contact')}</h4>
-                        <p><i className="fa fa-map-marker-alt mr-2"></i>{t('contact.address_val')}</p>
-                        <p><a href="https://wa.me/34641915266" target="_blank" rel="noopener noreferrer" className="text-white"><i className="fab fa-whatsapp mr-2"></i>+34 641 91 52 66 (WhatsApp)</a></p>
-                        <p><i className="fa fa-envelope mr-2"></i>escacspardinyes@gmail.com</p>
+        <footer className="footer container-fluid mt-0 py-5 px-sm-3 px-md-5 text-white">
+            <div className="container py-5">
+                <div className="row">
+                    <div className="col-lg-4 col-md-6 mb-5">
+                        <h4 className="text-primary mb-4 text-uppercase" style={{ letterSpacing: '2px' }}>{t('footer.contact')}</h4>
+                        <p className="mb-3 d-flex align-items-center"><i className="fa fa-map-marker-alt mr-3 text-primary"></i>{t('contact.address_val')}</p>
+                        <p className="mb-3 d-flex align-items-center">
+                            <a href="https://wa.me/34641915266" target="_blank" rel="noopener noreferrer" className="text-white d-flex align-items-center">
+                                <i className="fab fa-whatsapp mr-3 text-primary" style={{ fontSize: '1.2rem' }}></i>
+                                +34 641 91 52 66
+                            </a>
+                        </p>
+                        <p className="mb-3 d-flex align-items-center"><i className="fa fa-envelope mr-3 text-primary"></i>escacspardinyes@gmail.com</p>
                         <div className="d-flex justify-content-start mt-4">
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://x.com/EscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <a className="btn btn-outline-primary rounded-circle text-center mr-2 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', padding: 0 }} href="https://x.com/EscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <a className="btn btn-outline-primary rounded-circle text-center mr-2 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', padding: 0 }} href="https://www.facebook.com/profile.php?id=61553973365334" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <a className="btn btn-outline-primary rounded-circle text-center mr-2 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', padding: 0 }} href="https://www.instagram.com/clubescacspardinyes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a className="btn btn-outline-light rounded-circle text-center mr-2 px-0" style={{ width: '40px', height: '40px' }} href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <a className="btn btn-outline-primary rounded-circle text-center mr-2 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', padding: 0 }} href="https://www.youtube.com/@ClubEscacsPardinyes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <i className="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="container border-top border-dark pt-5">
-                <p className="m-0 text-center text-black">
-                    &copy; <Link className="text-black font-weight-bold" to="/privacy">Club Escacs Pardinyes</Link>. {t('footer.rights')} {t('footer.founded')}
+            <div className="container copyright-section text-center border-0">
+                <p className="m-0">
+                    &copy; <Link className="font-weight-bold" to="/privacy">Club Escacs Pardinyes</Link>. {t('footer.rights')} {t('footer.founded')}
                 </p>
             </div>
-        </>
+        </footer>
     );
 }

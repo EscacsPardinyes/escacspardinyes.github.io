@@ -101,34 +101,34 @@ export default function School() {
             </div>
 
             {/* Practical Info Section */}
-            <div className="container my-5 py-5">
+            <div className="container section-padding">
                 <div className="row align-items-center">
                     <div className="col-lg-6 mb-5 mb-lg-0">
-                        <h4 className="display-4 font-weight-bold text-primary mb-4">{t('school.info_title')}</h4>
-                        <div className="info-card mb-3">
+                        <h4 className="display-4 font-weight-bold text-primary mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('school.info_title')}</h4>
+                        <div className="info-card mb-3 shadow-sm">
                             <p className="mb-0 h5" dangerouslySetInnerHTML={tHtml('school.price')}></p>
                         </div>
-                        <div className="info-card mb-3">
+                        <div className="info-card mb-3 shadow-sm">
                             <p className="mb-0 h5" dangerouslySetInnerHTML={tHtml('school.membership')}></p>
                         </div>
-                        <div className="info-card mb-3 border-danger">
+                        <div className="info-card mb-3 border-danger shadow-sm" style={{ background: 'rgba(220, 53, 69, 0.05)' }}>
                             <p className="mb-0 h5 text-danger font-weight-bold">
                                 <i className="fas fa-exclamation-triangle mr-2"></i>
                                 {t('school.warning')}
                             </p>
                         </div>
                         <div className="mt-4">
-                            <Link to="/federat" className="btn btn-primary btn-lg px-4 shadow-sm">
+                            <Link to="/federat" className="btn btn-primary btn-lg px-5 shadow-md">
                                 {t('school.more_info').replace(/<a.*?>|<\/a>/g, '')}
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-6 text-center">
                         <div className="position-relative d-inline-block">
-                            <img src="/img/galeria/Minicopa2026/Fotogrup.webp" className="img-fluid img-premium" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" style={{ maxHeight: '450px' }} width="600" height="400" loading="lazy" />
-                            <div className="position-absolute shadow-lg bg-white p-3 rounded-xl" style={{ bottom: '-15px', right: '-15px', maxWidth: '260px', border: '2px solid #ffc107' }}>
-                                <p className="mb-0 font-weight-bold text-dark small">
-                                    <i className="fas fa-star text-warning mr-1"></i>
+                            <img src="/img/galeria/Minicopa2026/Fotogrup.webp" className="img-fluid img-premium" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" style={{ maxHeight: '450px', borderRadius: '32px' }} width="600" height="400" loading="lazy" />
+                            <div className="position-absolute shadow-lg bg-white p-4" style={{ bottom: '-20px', right: '-20px', maxWidth: '280px', border: '2px solid var(--primary-color)', borderRadius: '20px' }}>
+                                <p className="mb-0 font-weight-bold text-dark">
+                                    <i className="fas fa-star text-warning mr-2"></i>
                                     Projecte de base: El més fort de Lleida ciutat! 🦁
                                 </p>
                             </div>
@@ -290,16 +290,16 @@ export default function School() {
             </div>
 
             {/* Enrollment Form */}
-            <div id="inscripcio" className="bg-light py-5">
+            <div id="inscripcio" className="bg-light section-padding">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-9">
                             <div className="text-center mb-5">
-                                <i className="fas fa-edit fa-3x text-primary mb-3"></i>
-                                <h2 className="display-4 font-weight-bold">{t('school.enroll_title')}</h2>
-                                <p className="text-muted">Uneix-te a la nostra escola i comença el teu camí cap a la mestria.</p>
+                                <i className="fas fa-edit fa-3x text-primary mb-4"></i>
+                                <h2 className="display-4 font-weight-bold mb-3">{t('school.enroll_title')}</h2>
+                                <p className="lead text-muted mx-auto" style={{ maxWidth: '600px' }}>Uneix-te a la nostra escola i comença el teu camí cap a la mestria. T'esperem!</p>
                             </div>
-                            <div className="shadow-lg rounded-xl overflow-hidden bg-white">
+                            <div className="shadow-lg overflow-hidden bg-white" style={{ borderRadius: '32px', border: '1px solid rgba(0,0,0,0.05)' }}>
                                 <SchoolForm />
                             </div>
                         </div>

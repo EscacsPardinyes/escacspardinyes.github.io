@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function NewsletterModal() {
-    const { t } = useLanguage();
+    useLanguage();
     const [showModal, setShowModal] = useState(false);
+    const [status, setStatus] = useState(null); // null, 'sending', 'success'
     const [dismissed, setDismissed] = useState(() => !!localStorage.getItem('newsletter_dismissed'));
 
     useEffect(() => {
@@ -22,7 +23,36 @@ export default function NewsletterModal() {
         setDismissed(true);
     };
 
-    if (!showModal || dismissed) return null;
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('sending');
+        
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/escacspardinyes@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                setStatus('success');
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setStatus('error');
+        }
+    };
+
+    if ((!showModal || dismissed) && status !== 'success') return null;
 
     return (
         <div style={{
@@ -62,50 +92,69 @@ export default function NewsletterModal() {
                     &times;
                 </button>
 
-                <div className="text-center mb-4">
-                    <h3 className="font-weight-bold mb-3">Déjanos tus datos para no perderte nada</h3>
-                    <p className="mb-4">
-                        ...o ¡ven a conocernos!<br />
-                        Estamos en Carrer Sant Pere Claver, 1, Lleida.<br />
-                        ¡Te esperamos con los tableros preparados para jugar!
-                    </p>
-                </div>
-
-                <form action="https://formsubmit.co/escacspardinyes@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Nova Subscripció Newsletter" />
-                    <input type="hidden" name="_captcha" value="false" />
-
-                    <div className="form-group mb-3">
-                        <div className="input-group">
-                            <div className="input-group-prepend">
-                                <span className="input-group-text bg-white border-right-0"><i className="fa fa-user"></i></span>
-                            </div>
-                            <input type="text" name="name" className="form-control border-left-0" placeholder="Nombre" required />
-                        </div>
+                {status === 'success' ? (
+                    <div className="text-center py-4">
+                        <i className="fa fa-check-circle fa-4x text-success mb-3"></i>
+                        <h3 className="font-weight-bold mb-3">¡Gracias por suscribirte!</h3>
+                        <p className="mb-4">Te mantendremos informado de todas las novedades.</p>
+                        <button onClick={handleClose} className="btn btn-primary px-4">Cerrar</button>
                     </div>
-
-                    <div className="form-group mb-3">
-                        <div className="input-group">
-                            <div className="input-group-prepend">
-                                <span className="input-group-text bg-white border-right-0"><i className="fa fa-phone"></i></span>
-                            </div>
-                            <input type="tel" name="phone" className="form-control border-left-0" placeholder="Teléfono" required />
+                ) : (
+                    <>
+                        <div className="text-center mb-4">
+                            <h3 className="font-weight-bold mb-3">Déjanos tus datos para no perderte nada</h3>
+                            <p className="mb-4">
+                                ...o ¡ven a conocernos!<br />
+                                Estamos en Carrer Sant Pere Claver, 1, Lleida.<br />
+                                ¡Te esperamos con los tableros preparados para jugar!
+                            </p>
                         </div>
-                    </div>
 
-                    <div className="form-group mb-4">
-                        <div className="input-group">
-                            <div className="input-group-prepend">
-                                <span className="input-group-text bg-white border-right-0"><i className="fa fa-envelope"></i></span>
+                        <form 
+                            onSubmit={handleSubmit}
+                        >
+                            <input type="hidden" name="_subject" value="Nova Subscripció Newsletter" />
+                            <input type="hidden" name="_captcha" value="false" />
+
+                            <div className="form-group mb-3">
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text bg-white border-right-0"><i className="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" name="name" className="form-control border-left-0" placeholder="Nombre" required />
+                                </div>
                             </div>
-                            <input type="email" name="email" className="form-control border-left-0" placeholder="E-mail" required />
-                        </div>
-                    </div>
 
-                    <button type="submit" className="btn btn-primary btn-block text-white font-weight-bold py-2">
-                        Enviar <i className="fa fa-arrow-right ml-2"></i>
-                    </button>
-                </form>
+                            <div className="form-group mb-3">
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text bg-white border-right-0"><i className="fa fa-phone"></i></span>
+                                    </div>
+                                    <input type="tel" name="phone" className="form-control border-left-0" placeholder="Teléfono" required />
+                                </div>
+                            </div>
+
+                            <div className="form-group mb-4">
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text bg-white border-right-0"><i className="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="email" name="email" className="form-control border-left-0" placeholder="E-mail" required />
+                                </div>
+                            </div>
+
+                            <button type="submit" className="btn btn-primary btn-block text-white font-weight-bold py-2" disabled={status === 'sending'}>
+                                {status === 'sending' ? 'Enviando...' : 'Enviar'} <i className="fa fa-arrow-right ml-2"></i>
+                            </button>
+
+                            {status === 'error' && (
+                                <div className="mt-3 text-danger text-center small font-weight-bold">
+                                    Error en el servicio. Inténtalo más tarde o envíanos un mail.
+                                </div>
+                            )}
+                        </form>
+                    </>
+                )}
             </div>
         </div>
     );

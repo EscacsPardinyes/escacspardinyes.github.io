@@ -8,23 +8,28 @@ export default function SchoolForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('sending');
-
-        const formData = new FormData(e.target);
+        
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/escacspardinyes@gmail.com", {
-                method: "POST",
-                body: formData
+            const response = await fetch('https://formsubmit.co/ajax/escacspardinyes@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
             });
 
             if (response.ok) {
                 setStatus('success');
-                e.target.reset();
             } else {
                 setStatus('error');
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error('Form submission error:', error);
             setStatus('error');
         }
     };
@@ -41,7 +46,10 @@ export default function SchoolForm() {
 
     return (
         <div className="contact-form">
-            <form onSubmit={handleSubmit} className="p-4 bg-white rounded shadow-sm">
+            <form 
+                onSubmit={handleSubmit}
+                className="p-4 bg-white rounded shadow-sm"
+            >
 
                 {/* Honeypot for spam protection */}
                 <input type="text" name="_honey" style={{ display: 'none' }} />
@@ -111,8 +119,9 @@ export default function SchoolForm() {
                     </button>
                 </div>
                 {status === 'error' && (
-                    <div className="mt-3 text-danger text-center">
-                        Hi ha hagut un error en enviar. Si us plau, envia un mail directament.
+                    <div className="mt-3 text-danger text-center small font-weight-bold">
+                        <i className="fas fa-exclamation-circle mr-1"></i>
+                        Error en el servei de correu. Si us plau, envia un mail a <strong>escacspardinyes@gmail.com</strong>
                     </div>
                 )}
             </form>
