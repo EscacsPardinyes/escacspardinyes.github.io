@@ -5,6 +5,7 @@ import SchoolForm from '../components/SchoolForm';
 import PageHeader from '../components/PageHeader';
 import Accordion from '../components/Accordion';
 import SEO from '../components/SEO';
+import ScheduleTable from '../components/ScheduleTable';
 
 export default function School() {
     const { t, tHtml } = useLanguage();
@@ -171,115 +172,7 @@ export default function School() {
                             </li>
                         </ul>
                         <div className="tab-content">
-                            <div id="class-all" className={`tab-pane fade ${activeTab === 'all' ? 'show active' : ''}`}>
-                                <div className="table-responsive rounded shadow-sm">
-                                    <table className="table table-bordered m-0 overflow-hidden">
-                                        <thead className="bg-dark text-white text-center">
-                                            <tr>
-                                                <th className="py-3">{t('schedule.header.time')}</th>
-                                                <th className="py-3">{t('schedule.header.mon')}</th>
-                                                <th className="py-3">{t('schedule.header.tue')}</th>
-                                                <th className="py-3">{t('schedule.header.wed')}</th>
-                                                <th className="py-3">{t('schedule.header.thu')}</th>
-                                                <th className="py-3">{t('schedule.header.fri')}</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-center align-middle">
-                                            <tr>
-                                                <th className="bg-light font-weight-bold">18:30 - 19:30</th>
-                                                <td className="table-level-games">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.free_play')}</h6>
-                                                </td>
-                                                <td className="table-level-intermediate">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.group.eso_bat')}</h6>
-                                                    <small className="text-muted">{t('schedule.level.intermediate')}</small>
-                                                </td>
-                                                <td className="table-level-beginner">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.class.adults_primary')}</h6>
-                                                    <small className="text-muted">{t('schedule.level.beginner')}</small>
-                                                </td>
-                                                <td></td>
-                                                <td className="table-level-games">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.free_play')}</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th className="bg-light font-weight-bold">19:30 - 20:30</th>
-                                                <td className="table-level-games">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.free_play')}</h6>
-                                                </td>
-                                                <td></td>
-                                                <td className="table-level-intermediate">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.class.adults')}</h6>
-                                                    <small className="text-muted">{t('schedule.level.intermediate')}</small>
-                                                </td>
-                                                <td></td>
-                                                <td className="table-level-games">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.free_play')}</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th className="bg-light font-weight-bold">19:45 - 21:15</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="table-level-advanced">
-                                                    <h6 className="mb-0 font-weight-bold">{t('schedule.class.adults')}</h6>
-                                                    <small className="text-muted">{t('schedule.level.advanced')}</small>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            
-                            <div id="class-beginner" className={`tab-pane fade ${activeTab === 'beginner' ? 'show active' : ''}`}>
-                                <div className="text-center py-5 bg-light rounded shadow-sm">
-                                    <h5 className="font-weight-bold text-primary mb-3">{t('schedule.header.wed')}</h5>
-                                    <h4 className="mb-2">18:30 - 19:30</h4>
-                                    <p className="h5 mb-0">{t('schedule.class.adults_primary')} ({t('schedule.level.beginner')})</p>
-                                </div>
-                            </div>
-
-                            <div id="class-intermediate" className={`tab-pane fade ${activeTab === 'intermediate' ? 'show active' : ''}`}>
-                                <div className="row g-4 justify-content-center text-center">
-                                    <div className="col-md-5">
-                                        <div className="py-4 bg-light rounded shadow-sm">
-                                            <h5 className="font-weight-bold text-primary mb-2">{t('schedule.header.tue')}</h5>
-                                            <h4>18:30 - 19:30</h4>
-                                            <p className="mb-0">{t('schedule.group.eso_bat')}</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-5">
-                                        <div className="py-4 bg-light rounded shadow-sm">
-                                            <h5 className="font-weight-bold text-primary mb-2">{t('schedule.header.wed')}</h5>
-                                            <h4>19:30 - 20:30</h4>
-                                            <p className="mb-0">{t('schedule.class.adults')}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="class-advanced" className={`tab-pane fade ${activeTab === 'advanced' ? 'show active' : ''}`}>
-                                <div className="text-center py-5 bg-light rounded shadow-sm mx-auto" style={{maxWidth: '500px'}}>
-                                    <h5 className="font-weight-bold text-primary mb-3">{t('schedule.header.thu')}</h5>
-                                    <h4 className="mb-2">19:45 - 21:15</h4>
-                                    <p className="h5 mb-0">{t('schedule.class.advanced')} ({t('schedule.level.advanced')})</p>
-                                </div>
-                            </div>
-
-                            <div id="class-games" className={`tab-pane fade ${activeTab === 'games' ? 'show active' : ''}`}>
-                                <div className="row g-4 justify-content-center text-center">
-                                    <div className="col-md-4">
-                                        <div className="py-4 bg-light rounded shadow-sm">
-                                            <h5 className="font-weight-bold text-primary mb-2">{t('schedule.header.mon')} i {t('schedule.header.fri')}</h5>
-                                            <h4>18:30 - 20:30</h4>
-                                            <p className="mb-0">{t('schedule.free_play')}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <ScheduleTable activeTab={activeTab} />
                         </div>
                     </div>
                 </div>
