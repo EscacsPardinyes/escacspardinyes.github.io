@@ -1,4 +1,230 @@
 export const news = [
+{
+    "id": "individual2026",
+    "title": {
+        "ca": "🏆 Èxit rotund del Club Pardinyes al Campionat Individual de Lleida!",
+        "es": "🏆 Èxit rotund del Club Pardinyes al Campionat Individual de Lleida!",
+        "en": "🏆 Èxit rotund del Club Pardinyes al Campionat Individual de Lleida!"
+    },
+    "date": "2025-11-04",
+    "category": 'torneig',
+    "image": "/img/galeria/Noticies/individual2026/img1.webp",
+    "summary": {
+        "ca": "Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.",
+        "es": "Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.",
+        "en": "Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes."
+    },
+    "content": {
+        "ca": "<p>Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.</p><p>El nostre club ha estat representat per una espectacular expedició de 29 jugadors. Gràcies a l'esforç i al compromís de tots ells, hem aconseguit proclamar-nos el Segon Millor Club del torneig! 🥈👏</p><p>Volem felicitar especialment als companys que han obtingut premi en les seves categories:</p><p>GRUP II ♟️ Velimir Stankov: 1r Classificat Tram C i 1r Classificat +65 ♟️ Nadal Cabiscol Català: 1r Classificat +50</p><p>PROMOCIÓ (Sub-14) Un podi tenyit completament dels nostres colors! 🥇 Angel Alcazar Lozano: 1r Classificat S14 🥈 Aleix Ramon Argiles Pascual: 2n Classificat S14 🥉 Adrian Freddy Mbengono Ngono: 3r Classificat S14</p><p>Enhorabona a tot l'equip per aquests grans resultats i per fer créixer el club partida a partida! 💪🖤💛</p>",
+        "es": "<p>Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.</p><p>El nostre club ha estat representat per una espectacular expedició de 29 jugadors. Gràcies a l'esforç i al compromís de tots ells, hem aconseguit proclamar-nos el Segon Millor Club del torneig! 🥈👏</p><p>Volem felicitar especialment als companys que han obtingut premi en les seves categories:</p><p>GRUP II ♟️ Velimir Stankov: 1r Classificat Tram C i 1r Classificat +65 ♟️ Nadal Cabiscol Català: 1r Classificat +50</p><p>PROMOCIÓ (Sub-14) Un podi tenyit completament dels nostres colors! 🥇 Angel Alcazar Lozano: 1r Classificat S14 🥈 Aleix Ramon Argiles Pascual: 2n Classificat S14 🥉 Adrian Freddy Mbengono Ngono: 3r Classificat S14</p><p>Enhorabona a tot l'equip per aquests grans resultats i per fer créixer el club partida a partida! 💪🖤💛</p>",
+        "en": "<p>Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.</p><p>El nostre club ha estat representat per una espectacular expedició de 29 jugadors. Gràcies a l'esforç i al compromís de tots ells, hem aconseguit proclamar-nos el Segon Millor Club del torneig! 🥈👏</p><p>Volem felicitar especialment als companys que han obtingut premi en les seves categories:</p><p>GRUP II ♟️ Velimir Stankov: 1r Classificat Tram C i 1r Classificat +65 ♟️ Nadal Cabiscol Català: 1r Classificat +50</p><p>PROMOCIÓ (Sub-14) Un podi tenyit completament dels nostres colors! 🥇 Angel Alcazar Lozano: 1r Classificat S14 🥈 Aleix Ramon Argiles Pascual: 2n Classificat S14 🥉 Adrian Freddy Mbengono Ngono: 3r Classificat S14</p><p>Enhorabona a tot l'equip per aquests grans resultats i per fer créixer el club partida a partida! 💪🖤💛</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/individual2026/img1.webp",
+            "/img/galeria/Noticies/individual2026/img2.webp",
+            "/img/galeria/Noticies/individual2026/img3.webp",
+            "/img/galeria/Noticies/individual2026/img4.webp",
+            "/img/galeria/Noticies/individual2026/img5.webp",
+            "/img/galeria/Noticies/individual2026/img6.webp",
+            "/img/galeria/Noticies/individual2026/img7.webp"
+        ]
+},
+{
+    "id": "interinstituts2026",
+    "title": {
+        "ca": "♟️ Victòria i talent al VI Torneig Interprovincial d’Escacs!",
+        "es": "♟️ Victòria i talent al VI Torneig Interprovincial d’Escacs!",
+        "en": "♟️ Victòria i talent al VI Torneig Interprovincial d’Escacs!"
+    },
+    "date": "2026-04-19",
+    "category": 'torneig',
+    "image": "/img/galeria/Noticies/Interinstituts2026/img1.webp",
+    "summary": {
+        "ca": "Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.",
+        "es": "Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.",
+        "en": "Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida."
+    },
+    "content": {
+        "ca": "<p>Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.</p><p>Ha estat una jornada fantàstica de concentració i estratègia on hem compartit tauler amb l’Escola Andorrana, el Col·legi Episcopal, l’Institut Nou d’Alcarràs, l’Institut Els Templers, l’Institut La Serra i l’Institut Joan Solà.</p><p>🏆 I tenim una gran notícia! Un dels nostres joves jugadors s'ha alçat amb la primera posició del torneig. Moltes felicitats per aquest gran resultat i per demostrar que el futur dels escacs a casa nostra està en bones mans!</p><p>Gràcies a tots els centres participants i, especialment, a l'INS Seròs per ser uns amfitrions de luxe. 🤝✨</p>",
+        "es": "<p>Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.</p><p>Ha estat una jornada fantàstica de concentració i estratègia on hem compartit tauler amb l’Escola Andorrana, el Col·legi Episcopal, l’Institut Nou d’Alcarràs, l’Institut Els Templers, l’Institut La Serra i l’Institut Joan Solà.</p><p>🏆 I tenim una gran notícia! Un dels nostres joves jugadors s'ha alçat amb la primera posició del torneig. Moltes felicitats per aquest gran resultat i per demostrar que el futur dels escacs a casa nostra està en bones mans!</p><p>Gràcies a tots els centres participants i, especialment, a l'INS Seròs per ser uns amfitrions de luxe. 🤝✨</p>",
+        "en": "<p>Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.</p><p>Ha estat una jornada fantàstica de concentració i estratègia on hem compartit tauler amb l’Escola Andorrana, el Col·legi Episcopal, l’Institut Nou d’Alcarràs, l’Institut Els Templers, l’Institut La Serra i l’Institut Joan Solà.</p><p>🏆 I tenim una gran notícia! Un dels nostres joves jugadors s'ha alçat amb la primera posició del torneig. Moltes felicitats per aquest gran resultat i per demostrar que el futur dels escacs a casa nostra està en bones mans!</p><p>Gràcies a tots els centres participants i, especialment, a l'INS Seròs per ser uns amfitrions de luxe. 🤝✨</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/Interinstituts2026/img1.webp",
+        "/img/galeria/Noticies/Interinstituts2026/img2.webp",
+        "/img/galeria/Noticies/Interinstituts2026/img3.webp",
+        "/img/galeria/Noticies/Interinstituts2026/img4.webp"
+    ]
+},
+{
+    "id": "lliga2026",
+    "title": {
+        "ca": "Som el club amb més escaquistes en joc de Lleida! ♟️🔥",
+        "es": "Som el club amb més escaquistes en joc de Lleida! ♟️🔥",
+        "en": "Som el club amb més escaquistes en joc de Lleida! ♟️🔥"
+    },
+    "date": "2026-03-17",
+    "category": 'altres',
+    "image": "/img/galeria/Noticies/Lliga2026/img1.webp",
+    "summary": {
+        "ca": "​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈",
+        "es": "​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈",
+        "en": "​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈"
+    },
+    "content": {
+        "ca": "<p>​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈</p><p>​Aquests són els nostres titulars de la temporada:</p><p>​🔹 Primer Equip: Hem tornat a Segona Catalana després de 20 anys! Tot i que no hem pogut mantenir la categoria, l'experiència ens ha servit per agafar impuls. Tornarem a pujar molt aviat, estigueu-ne segurs! 💪</p><p>🔹 Equip B: Objectiu complert! Mantenim la categoria a Primera Provincial.</p><p>🔹 Equip C: 🔥 CAMPIONS de Segona Provincial! Ara, a per totes al play-off d'ascens.</p><p>🔹 Equip D: Molta lluita i aprenentatge constant en cada ronda.</p><p>🔹 Equip E: ✨ CAMPIONS de Tercera Provincial! També encetem el camí del play-off amb la màxima il·lusió.</p><p>​❤️ Un agraïment especial a la nostra gent</p><p>​Aquest creixement no seria possible sense les persones que donen vida al club:</p><p>​🙌 A les noves incorporacions: Gràcies per triar-nos. Esperem que la vostra primera experiència amb nosaltres hagi estat magnífica i que hàgiu gaudit aprenent tant a nivell individual com en el vessant col·lectiu de jugar en equip.</p><p>​🤝 Als nostres veterans: Gràcies per seguir confiant en el projecte any rere any. Sou la base i el pilar fonamental del club, ajudant els nous a integrar-se i transmetent els valors de l'entitat.</p><p>​Gràcies a tots vosaltres, el club creix esportivament i en diversitat: dones, homes, adults i sub-12, sub-14... tots aporteu el vostre gra de sorra en cada mobilització i en cada partida.</p><p>​Gràcies, família del Club Escacs Pardinyes. El barri es mou peça a peça! 💜</p>",
+        "es": "<p>​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈</p><p>​Aquests són els nostres titulars de la temporada:</p><p>​🔹 Primer Equip: Hem tornat a Segona Catalana després de 20 anys! Tot i que no hem pogut mantenir la categoria, l'experiència ens ha servit per agafar impuls. Tornarem a pujar molt aviat, estigueu-ne segurs! 💪</p><p>🔹 Equip B: Objectiu complert! Mantenim la categoria a Primera Provincial.</p><p>🔹 Equip C: 🔥 CAMPIONS de Segona Provincial! Ara, a per totes al play-off d'ascens.</p><p>🔹 Equip D: Molta lluita i aprenentatge constant en cada ronda.</p><p>🔹 Equip E: ✨ CAMPIONS de Tercera Provincial! També encetem el camí del play-off amb la màxima il·lusió.</p><p>​❤️ Un agraïment especial a la nostra gent</p><p>​Aquest creixement no seria possible sense les persones que donen vida al club:</p><p>​🙌 A les noves incorporacions: Gràcies per triar-nos. Esperem que la vostra primera experiència amb nosaltres hagi estat magnífica i que hàgiu gaudit aprenent tant a nivell individual com en el vessant col·lectiu de jugar en equip.</p><p>​🤝 Als nostres veterans: Gràcies per seguir confiant en el projecte any rere any. Sou la base i el pilar fonamental del club, ajudant els nous a integrar-se i transmetent els valors de l'entitat.</p><p>​Gràcies a tots vosaltres, el club creix esportivament i en diversitat: dones, homes, adults i sub-12, sub-14... tots aporteu el vostre gra de sorra en cada mobilització i en cada partida.</p><p>​Gràcies, família del Club Escacs Pardinyes. El barri es mou peça a peça! 💜</p>",
+        "en": "<p>​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈</p><p>​Aquests són els nostres titulars de la temporada:</p><p>​🔹 Primer Equip: Hem tornat a Segona Catalana després de 20 anys! Tot i que no hem pogut mantenir la categoria, l'experiència ens ha servit per agafar impuls. Tornarem a pujar molt aviat, estigueu-ne segurs! 💪</p><p>🔹 Equip B: Objectiu complert! Mantenim la categoria a Primera Provincial.</p><p>🔹 Equip C: 🔥 CAMPIONS de Segona Provincial! Ara, a per totes al play-off d'ascens.</p><p>🔹 Equip D: Molta lluita i aprenentatge constant en cada ronda.</p><p>🔹 Equip E: ✨ CAMPIONS de Tercera Provincial! També encetem el camí del play-off amb la màxima il·lusió.</p><p>​❤️ Un agraïment especial a la nostra gent</p><p>​Aquest creixement no seria possible sense les persones que donen vida al club:</p><p>​🙌 A les noves incorporacions: Gràcies per triar-nos. Esperem que la vostra primera experiència amb nosaltres hagi estat magnífica i que hàgiu gaudit aprenent tant a nivell individual com en el vessant col·lectiu de jugar en equip.</p><p>​🤝 Als nostres veterans: Gràcies per seguir confiant en el projecte any rere any. Sou la base i el pilar fonamental del club, ajudant els nous a integrar-se i transmetent els valors de l'entitat.</p><p>​Gràcies a tots vosaltres, el club creix esportivament i en diversitat: dones, homes, adults i sub-12, sub-14... tots aporteu el vostre gra de sorra en cada mobilització i en cada partida.</p><p>​Gràcies, família del Club Escacs Pardinyes. El barri es mou peça a peça! 💜</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/Lliga2026/img1.webp",
+            "/img/galeria/Noticies/Lliga2026/img2.webp",
+            "/img/galeria/Noticies/Lliga2026/img3.webp",
+            "/img/galeria/Noticies/Lliga2026/img4.webp"
+        ]
+},
+{
+    "id": "mes-internacional-del-joc-2026",
+    "title": {
+        "ca": "♟️ Gran èxit de les Partides Simultànies d’Escacs de la #BibliotecaCafiv!",
+        "es": "♟️ Gran èxit de les Partides Simultànies d’Escacs de la #BibliotecaCafiv!",
+        "en": "♟️ Gran èxit de les Partides Simultànies d’Escacs de la #BibliotecaCafiv!"
+    },
+    "date": "2025-11-27",
+    "category": 'altres',
+    "image": "/img/galeria/Noticies/Mes Internacional del Joc 2026/img1.webp",
+    "summary": {
+        "ca": "El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀",
+        "es": "El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀",
+        "en": "El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀"
+    },
+    "content": {
+        "ca": "<p>El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀</p><p>Moltes gràcies a totes les persones que heu vingut a jugar, aprendre i gaudir d’una estona plena d’estratègia, concentració i companyonia.</p><p>Un agraïment especial al MF Joan Trepat 🌟</p><p>També volem donar les gràcies a les Biblioteques de la UdL (@bibliotequesudl l) i a la Càtedra d’Escacs, Educació i Desenvolupament Cognitiu de la UdL per tornar a comptar un any més amb nosaltres per realitzar activitats d'escacs a la Universitat de Lleida (@universitatdelleida ).</p><p>📸 Aquí teniu un recull d’imatges del torneig! 🏆</p>",
+        "es": "<p>El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀</p><p>Moltes gràcies a totes les persones que heu vingut a jugar, aprendre i gaudir d’una estona plena d’estratègia, concentració i companyonia.</p><p>Un agraïment especial al MF Joan Trepat 🌟</p><p>També volem donar les gràcies a les Biblioteques de la UdL (@bibliotequesudl l) i a la Càtedra d’Escacs, Educació i Desenvolupament Cognitiu de la UdL per tornar a comptar un any més amb nosaltres per realitzar activitats d'escacs a la Universitat de Lleida (@universitatdelleida ).</p><p>📸 Aquí teniu un recull d’imatges del torneig! 🏆</p>",
+        "en": "<p>El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀</p><p>Moltes gràcies a totes les persones que heu vingut a jugar, aprendre i gaudir d’una estona plena d’estratègia, concentració i companyonia.</p><p>Un agraïment especial al MF Joan Trepat 🌟</p><p>També volem donar les gràcies a les Biblioteques de la UdL (@bibliotequesudl l) i a la Càtedra d’Escacs, Educació i Desenvolupament Cognitiu de la UdL per tornar a comptar un any més amb nosaltres per realitzar activitats d'escacs a la Universitat de Lleida (@universitatdelleida ).</p><p>📸 Aquí teniu un recull d’imatges del torneig! 🏆</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/Mes Internacional del Joc 2026/img1.webp",
+            "/img/galeria/Noticies/Mes Internacional del Joc 2026/img2.webp",
+            "/img/galeria/Noticies/Mes Internacional del Joc 2026/img3.webp",
+            "/img/galeria/Noticies/Mes Internacional del Joc 2026/img4.webp"
+        ]
+},
+{
+    "id": "minicopa2025",
+    "title": {
+        "ca": "El nostre club està de celebració! 🎉",
+        "es": "El nostre club està de celebració! 🎉",
+        "en": "El nostre club està de celebració! 🎉"
+    },
+    "date": "2025-09-27",
+    "category": 'torneig',
+    "image": "/img/galeria/Noticies/minicopa2025/img1.webp",
+    "summary": {
+        "ca": "​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.",
+        "es": "​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.",
+        "en": "​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió."
+    },
+    "content": {
+        "ca": "<p>​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.</p><p>​Aquests moments són la prova que l'esforç i la constància porten els nostres joves a millorar. Continuarem fomentant la passió pels escacs! ❤️</p>",
+        "es": "<p>​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.</p><p>​Aquests moments són la prova que l'esforç i la constància porten els nostres joves a millorar. Continuarem fomentant la passió pels escacs! ❤️</p>",
+        "en": "<p>​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.</p><p>​Aquests moments són la prova que l'esforç i la constància porten els nostres joves a millorar. Continuarem fomentant la passió pels escacs! ❤️</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/minicopa2025/img1.webp",
+            "/img/galeria/Noticies/minicopa2025/img2.webp",
+            "/img/galeria/Noticies/minicopa2025/img3.webp",
+            "/img/galeria/Noticies/minicopa2025/img4.webp",
+            "/img/galeria/Noticies/minicopa2025/img5.webp",
+            "/img/galeria/Noticies/minicopa2025/img6.webp",
+            "/img/galeria/Noticies/minicopa2025/img7.webp",
+            "/img/galeria/Noticies/minicopa2025/img8.webp"
+        ]
+},
+{
+    "id": "santjordi2026",
+    "title": {
+        "ca": "A Pardinyes, per Sant Jordi, no només movem pàgines, també movem fitxes! 🌹📚♟️",
+        "es": "A Pardinyes, per Sant Jordi, no només movem pàgines, també movem fitxes! 🌹📚♟️",
+        "en": "A Pardinyes, per Sant Jordi, no només movem pàgines, també movem fitxes! 🌹📚♟️"
+    },
+    "date": "2026-04-22",
+    "category": 'altres',
+    "image": "/img/galeria/Noticies/SantJordi2026/img1.webp",
+    "summary": {
+        "ca": "​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.",
+        "es": "​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.",
+        "en": "​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia."
+    },
+    "content": {
+        "ca": "<p>​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.</p>",
+        "es": "<p>​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.</p>",
+        "en": "<p>​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/SantJordi2026/img1.webp",
+        "/img/galeria/Noticies/SantJordi2026/img2.webp",
+        "/img/galeria/Noticies/SantJordi2026/img3.webp",
+        "/img/galeria/Noticies/SantJordi2026/img4.webp",
+        "/img/galeria/Noticies/SantJordi2026/img5.webp",
+        "/img/galeria/Noticies/SantJordi2026/img6.webp"
+    ]
+},
+{
+    "id": "somcultura2026",
+    "title": {
+        "ca": "Avui hem anat a Som Cultura, la gran fira d’entitats culturals de Lleida organitzada pel Col·lectiu Cultural Cappont @cculturalcappont .🎉",
+        "es": "Avui hem anat a Som Cultura, la gran fira d’entitats culturals de Lleida organitzada pel Col·lectiu Cultural Cappont @cculturalcappont .🎉",
+        "en": "Avui hem anat a Som Cultura, la gran fira d’entitats culturals de Lleida organitzada pel Col·lectiu Cultural Cappont @cculturalcappont .🎉"
+    },
+    "date": "2025-11-23",
+    "category": 'altres',
+    "image": "/img/galeria/Noticies/SomCultura2026/img1.webp",
+    "summary": {
+        "ca": "És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.",
+        "es": "És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.",
+        "en": "És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia."
+    },
+    "content": {
+        "ca": "<p>És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.</p><p>El grup de sardanes i el Club d’Escacs Pardinyes @clubescacspardinyes hi hem estat presents un any més, compartint el nostre dia a dia, fent difusió de la nostra activitat i gaudint de totes les propostes d’aquesta festa de la cultura popular. 💛🖤♟️💃</p><p>Gràcies a totes les entitats i persones que ho han fet possible. Ens veiem a la propera! 🙌✨</p>",
+        "es": "<p>És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.</p><p>El grup de sardanes i el Club d’Escacs Pardinyes @clubescacspardinyes hi hem estat presents un any més, compartint el nostre dia a dia, fent difusió de la nostra activitat i gaudint de totes les propostes d’aquesta festa de la cultura popular. 💛🖤♟️💃</p><p>Gràcies a totes les entitats i persones que ho han fet possible. Ens veiem a la propera! 🙌✨</p>",
+        "en": "<p>És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.</p><p>El grup de sardanes i el Club d’Escacs Pardinyes @clubescacspardinyes hi hem estat presents un any més, compartint el nostre dia a dia, fent difusió de la nostra activitat i gaudint de totes les propostes d’aquesta festa de la cultura popular. 💛🖤♟️💃</p><p>Gràcies a totes les entitats i persones que ho han fet possible. Ens veiem a la propera! 🙌✨</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/SomCultura2026/img1.webp",
+            "/img/galeria/Noticies/SomCultura2026/img2.webp",
+            "/img/galeria/Noticies/SomCultura2026/img3.webp"
+        ]
+},
+{
+    "id": "torneiglamaratotv3-2025",
+    "title": {
+        "ca": "♟️ Escacs i solidaritat: REPTE ACONSEGUIT! ❤️",
+        "es": "♟️ Escacs i solidaritat: REPTE ACONSEGUIT! ❤️",
+        "en": "♟️ Escacs i solidaritat: REPTE ACONSEGUIT! ❤️"
+    },
+    "date": "2025-12-08",
+    "category": 'torneig',
+    "image": "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img1.webp",
+    "summary": {
+        "ca": "Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.",
+        "es": "Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.",
+        "en": "Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat."
+    },
+    "content": {
+        "ca": "<p>Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.</p><p>Ha estat un plaer veure la sala de 'Lo Casino' plena de taulers, estratègia i, sobretot, ganes de col·laborar.</p><p>Gràcies als jugadors, famílies i als col·laboradors que ho heu fet possible!</p><p>📍 Club Escacs Pardinyes & Ajuntament d'Alcarràs</p>",
+        "es": "<p>Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.</p><p>Ha estat un plaer veure la sala de 'Lo Casino' plena de taulers, estratègia i, sobretot, ganes de col·laborar.</p><p>Gràcies als jugadors, famílies i als col·laboradors que ho heu fet possible!</p><p>📍 Club Escacs Pardinyes & Ajuntament d'Alcarràs</p>",
+        "en": "<p>Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.</p><p>Ha estat un plaer veure la sala de 'Lo Casino' plena de taulers, estratègia i, sobretot, ganes de col·laborar.</p><p>Gràcies als jugadors, famílies i als col·laboradors que ho heu fet possible!</p><p>📍 Club Escacs Pardinyes & Ajuntament d'Alcarràs</p>"
+    },
+    "gallery": [
+            "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img1.webp",
+            "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img2.webp",
+            "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img3.webp",
+            "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img4.webp",
+            "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img5.webp"
+        ]
+},
+
     {
         id: 'minicopa-territorial-lleida-2026',
         date: '2026-04-25',

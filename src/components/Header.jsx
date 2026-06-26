@@ -77,6 +77,19 @@ export default function Header() {
                         <NavLink to="/tancats" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.tancats')}</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>{t('nav.contact')}</NavLink>
 
+                        <button 
+                            type="button" 
+                            className="nav-item nav-link border-0 bg-transparent text-left d-flex align-items-center" 
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                                window.dispatchEvent(new CustomEvent('open-search-modal'));
+                            }}
+                            title="Cerca (Cmd/Ctrl + K)"
+                        >
+                            <i className="fa fa-search"></i>
+                            <span className="d-lg-none ml-2">Cercar</span>
+                        </button>
+
                         <div className={`nav-item dropdown ${isLangOpen ? 'show' : ''}`}>
                             <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang} aria-label="Select Language">
                                 <img

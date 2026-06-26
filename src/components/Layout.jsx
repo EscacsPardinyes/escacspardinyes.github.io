@@ -5,6 +5,7 @@ import CookieBanner from './CookieBanner';
 
 import BackToTop from './BackToTop';
 import NewsletterModal from './NewsletterModal';
+import SearchModal from './SearchModal';
 
 export default function Layout() {
     return (
@@ -15,6 +16,7 @@ export default function Layout() {
             <CookieBanner />
             <BackToTop />
             <NewsletterModal />
+            <SearchModal />
         </div>
     );
 }

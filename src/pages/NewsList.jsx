@@ -20,7 +20,8 @@ export default function NewsList() {
         { id: 'all', icon: 'fa-layer-group' },
         { id: 'simultanies', icon: 'fa-chess-board' },
         { id: 'torneig', icon: 'fa-trophy' },
-        { id: 'prensa', icon: 'fa-newspaper' }
+        { id: 'prensa', icon: 'fa-newspaper' },
+        { id: 'altres', icon: 'fa-star' }
     ];
 
     // Filter and Sort news

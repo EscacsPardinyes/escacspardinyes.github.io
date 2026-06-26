@@ -39,9 +39,38 @@ export default function TorneigGMMI() {
         '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-La-Manyana.webp'
     ];
 
+    const eventSchema = {
+        "@type": "Event",
+        "name": t('gmmi.header'),
+        "startDate": "2026-03-28", // Approximated start date
+        "endDate": "2026-04-03",   // Approximated end date
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Club Escacs Pardinyes",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Carrer Sant Pere Claver, 1",
+                "addressLocality": "Lleida",
+                "postalCode": "25005",
+                "addressCountry": "ES"
+            }
+        },
+        "image": [
+            `https://escacspardinyes.com${posterImg}`
+        ],
+        "description": t('gmmi.intro_text').replace(/<[^>]*>/g, ''),
+        "organizer": {
+            "@type": "Organization",
+            "name": "Club Escacs Pardinyes",
+            "url": "https://escacspardinyes.com"
+        }
+    };
+
     return (
         <>
-            <SEO title={t('gmmi.breadcrumb')} description={t('gmmi.intro_text').replace(/<[^>]*>/g, '')} />
+            <SEO title={t('gmmi.breadcrumb')} description={t('gmmi.intro_text').replace(/<[^>]*>/g, '')} schema={eventSchema} />
             <PageHeader title={t('gmmi.header')} breadcrumbs={breadcrumbs} />
 
             {/* Contingut Principal del Torneig */}

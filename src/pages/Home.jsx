@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { news } from '../data/news';
+import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
 
 export default function Home() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
     const [activeTab, setActiveTab] = useState('all');
 
     useEffect(() => {
@@ -145,6 +147,25 @@ export default function Home() {
                 </div>
             </div>
             {/* Features End */}
+
+            {/* Latest News Start */}
+            <div className="container section-padding">
+                <div className="d-flex flex-column text-center mb-5">
+                    <h4 className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px' }}>{language === 'ca' ? 'Actualitat' : language === 'es' ? 'Actualidad' : 'Latest News'}</h4>
+                    <h2 className="display-4 font-weight-bold">{language === 'ca' ? 'Últimes Notícies' : language === 'es' ? 'Últimas Noticias' : 'Recent Updates'}</h2>
+                </div>
+                <div className="row g-4">
+                    {[...news].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map(item => (
+                        <NewsCard key={item.id} item={item} />
+                    ))}
+                </div>
+                <div className="text-center mt-5">
+                    <Link to="/noticies" className="btn btn-lg btn-outline-primary px-5 py-3 font-weight-bold" style={{ borderRadius: '50px' }}>
+                        {language === 'ca' ? 'Veure totes les notícies' : language === 'es' ? 'Ver todas las noticias' : 'View all news'}
+                    </Link>
+                </div>
+            </div>
+            {/* Latest News End */}
 
             {/* Schedule Start */}
             <div className="container section-padding">

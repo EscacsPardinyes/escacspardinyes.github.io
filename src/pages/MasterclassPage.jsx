@@ -33,12 +33,39 @@ export default function MasterclassPage({ id }) {
         { label: t('masterclass.list_breadcrumb'), path: '/masterclass' }
     ];
 
+    const courseSchema = {
+        "@type": "Course",
+        "name": t(titleKeySEO),
+        "description": t(summaryKey),
+        "provider": {
+            "@type": "Organization",
+            "name": "Club Escacs Pardinyes",
+            "sameAs": "https://escacspardinyes.com"
+        },
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Onsite",
+            "location": {
+                "@type": "Place",
+                "name": "Club Escacs Pardinyes",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Carrer Sant Pere Claver, 1",
+                    "addressLocality": "Lleida",
+                    "postalCode": "25005",
+                    "addressCountry": "ES"
+                }
+            }
+        }
+    };
+
     return (
         <>
             <SEO
                 title={t(titleKeySEO)}
                 description={t(summaryKey)}
                 image={poster}
+                schema={courseSchema}
             />
             <PageHeader title={t('masterclass.list_header')} breadcrumbs={breadcrumbs} />
 

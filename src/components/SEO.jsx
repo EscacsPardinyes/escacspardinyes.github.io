@@ -11,8 +11,9 @@ import { useLanguage } from '../context/LanguageContext';
  * @param {Object} props.schema - Optional JSON-LD schema object for the page.
  * @param {string} props.type - The OG Type (default: website).
  * @param {Array} props.breadcrumbs - Breadcrumbs for the page.
+ * @param {Array} props.faq - Optional array of FAQ items {question, answer} for FAQ snippets.
  */
-export default function SEO({ title, description, image, schema, type = 'website', breadcrumbs = [] }) {
+export default function SEO({ title, description, image, schema, type = 'website', breadcrumbs = [], faq = [] }) {
     const location = useLocation();
     const { language } = useLanguage();
 
@@ -113,6 +114,15 @@ export default function SEO({ title, description, image, schema, type = 'website
             { property: 'og:site_name', content: baseTitle },
             { property: 'og:locale', content: language === 'ca' ? 'ca_ES' : language === 'es' ? 'es_ES' : 'en_US' }
         ];
+
+        // Add theme-color for mobile browsers
+        let themeColor = document.querySelector('meta[name="theme-color"]');
+        if (!themeColor) {
+            themeColor = document.createElement('meta');
+            themeColor.setAttribute('name', 'theme-color');
+            document.head.appendChild(themeColor);
+        }
+        themeColor.setAttribute('content', '#ffc107');
 
         ogTags.forEach(tag => {
             let element = document.querySelector(`meta[property="${tag.property}"]`);
@@ -250,7 +260,24 @@ export default function SEO({ title, description, image, schema, type = 'website
             };
         }
 
-        // 4. Page Specific Schema (e.g. Event)
+        // 4. FAQ Schema
+        let faqSchema = null;
+        if (faq && faq.length > 0) {
+            faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faq.map(f => ({
+                    "@type": "Question",
+                    "name": f.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": f.answer
+                    }
+                }))
+            };
+        }
+
+        // 5. Page Specific Schema (e.g. Event)
         let pageSchema = schema;
         if (pageSchema && !pageSchema["@context"]) {
             pageSchema = {
@@ -262,6 +289,7 @@ export default function SEO({ title, description, image, schema, type = 'website
         const schemasToInject = [clubSchema];
         if (articleSchema) schemasToInject.push(articleSchema);
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
+        if (faqSchema) schemasToInject.push(faqSchema);
         if (pageSchema && pageSchema["@type"] !== 'NewsArticle') schemasToInject.push(pageSchema);
 
         schemasToInject.forEach((s) => {
@@ -272,7 +300,7 @@ export default function SEO({ title, description, image, schema, type = 'website
             document.head.appendChild(script);
         });
 
-    }, [title, description, image, location, language, schema, type, breadcrumbs]);
+    }, [title, description, image, location, language, schema, type, breadcrumbs, faq]);
 
     return null;
 }

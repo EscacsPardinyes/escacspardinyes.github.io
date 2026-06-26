@@ -20,9 +20,14 @@ export default function School() {
         { title: t('school.faq_q5'), content: t('school.faq_a5') },
     ];
 
+    const seoFaq = faqItems.map(item => ({
+        question: item.title,
+        answer: item.content
+    }));
+
     return (
         <>
-            <SEO title={t('nav.school')} description={t('seo.school_description')} />
+            <SEO title={t('nav.school')} description={t('seo.school_description')} faq={seoFaq} />
             <PageHeader title={t('nav.school')} breadcrumbs={breadcrumbs} />
 
             {/* Hero Section: School Levels */}
@@ -124,13 +129,16 @@ export default function School() {
                         </div>
                     </div>
                     <div className="col-lg-6 text-center">
-                        <div className="position-relative d-inline-block">
+                        <div className="position-relative d-inline-block mt-4 mt-lg-0">
                             <img src="/img/galeria/Minicopa2026/Fotogrup.webp" className="img-fluid img-premium" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" style={{ maxHeight: '450px', borderRadius: '32px' }} width="600" height="400" loading="lazy" />
-                            <div className="position-absolute shadow-lg bg-white p-4" style={{ bottom: '-20px', right: '-20px', maxWidth: '280px', border: '2px solid var(--primary-color)', borderRadius: '20px' }}>
-                                <p className="mb-0 font-weight-bold text-dark">
+                            <div className="position-absolute shadow-lg bg-white p-4 text-left" style={{ bottom: '-20px', right: '-20px', maxWidth: '280px', border: '2px solid var(--primary-color)', borderRadius: '20px' }}>
+                                <p className="mb-2 font-weight-bold text-dark">
                                     <i className="fas fa-star text-warning mr-2"></i>
                                     Projecte de base: El més fort de Lleida ciutat! 🦁
                                 </p>
+                                <Link to="/noticies/minicopa-territorial-lleida-2026" className="btn btn-sm btn-outline-primary mt-1 font-weight-bold w-100" style={{ borderRadius: '20px', textTransform: 'uppercase', fontSize: '0.75rem' }}>
+                                    Llegir més <i className="fas fa-arrow-right ml-1"></i>
+                                </Link>
                             </div>
                         </div>
                     </div>
