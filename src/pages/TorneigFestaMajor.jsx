@@ -51,7 +51,7 @@ export default function TorneigFestaMajor() {
                 
                 <div className="row">
                     <div className="col-lg-6 mb-4 mb-lg-0">
-                        <div className="bg-light p-4 rounded shadow-sm border-left border-primary h-100" style={{ borderWidth: '4px !important' }}>
+                        <div className="bg-light p-4 rounded shadow-sm border-left border-primary" style={{ borderWidth: '4px !important' }}>
                             <h4 className="mt-2 mb-3"><i className="fa fa-info-circle text-primary mr-2"></i>Detalls del Torneig</h4>
                             <ul className="list-unstyled ml-4" style={{ fontSize: '1.1rem', lineHeight: '2' }}>
                                 <li><i className="fa fa-calendar-alt text-primary mr-2"></i><strong>Data i hora:</strong> Dissabte 1 d'agost a les 10:00 Hores</li>
@@ -62,6 +62,15 @@ export default function TorneigFestaMajor() {
                                 <li><i className="fa fa-university text-primary mr-2"></i><strong>Pagament:</strong> Per transferència bancària al compte <strong>ES07 2100 0336 6602 0036 8934</strong> (Cal indicar el nom del jugador al concepte)</li>
                                 <li><i className="fab fa-whatsapp text-success mr-2"></i><strong>Contacte (WhatsApp):</strong> +34 641 91 52 66</li>
                             </ul>
+                        </div>
+                        
+                        <div className="text-center mt-4">
+                            <img 
+                                src="/img/galeria/TorneigFestaMajor/cartell.webp" 
+                                alt="Cartell Oficial del Torneig de Festa Major" 
+                                className="img-fluid rounded shadow-lg"
+                                style={{ maxHeight: '700px' }}
+                            />
                         </div>
                     </div>
 
