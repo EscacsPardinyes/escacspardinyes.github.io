@@ -49,6 +49,7 @@ export default function SearchModal() {
     // Predefined pages
     const pages = [
         { title: t('nav.home'), url: '/', type: 'page', icon: 'fa-home' },
+        { title: 'Torneig de Festa Major', url: '/torneig-festa-major', type: 'page', icon: 'fa-chess-rook' },
         { title: t('nav.about'), url: '/about', type: 'page', icon: 'fa-info-circle' },
         { title: t('nav.school'), url: '/school', type: 'page', icon: 'fa-graduation-cap' },
         { title: t('nav.federated'), url: '/federat', type: 'page', icon: 'fa-chess-king' },

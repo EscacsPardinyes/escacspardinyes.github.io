@@ -95,6 +95,17 @@ export default function Home() {
             </div>
             {/* Carousel End */}
 
+            {/* Event Banner */}
+            <div className="container-fluid bg-primary text-white py-3 text-center position-relative shadow-sm">
+                <h5 className="m-0 font-weight-bold d-inline-block align-middle mr-3">
+                    <i className="fa fa-bullhorn mr-2"></i> Proper esdeveniment: Torneig de Festa Major - 9 Rondes (1 d'agost)
+                </h5>
+                <Link to="/torneig-festa-major" className="btn btn-outline-light btn-sm font-weight-bold ml-2">
+                    Més informació i inscripcions
+                </Link>
+            </div>
+            {/* Event Banner End */}
+
             {/* About Start */}
             <div className="container section-padding">
                 <div className="row align-items-center">
