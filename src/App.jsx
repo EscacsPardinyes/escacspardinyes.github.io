@@ -21,6 +21,7 @@ const TorneigNadal2025 = lazy(() => import('./pages/TorneigNadal2025'));
 const TorneigGMMI = lazy(() => import('./pages/TorneigGMMI'));
 const TorneigGMMIAugost = lazy(() => import('./pages/TorneigGMMIAugost'));
 const TorneigFestaMajor = lazy(() => import('./pages/TorneigFestaMajor'));
+const HistorialFestaMajor = lazy(() => import('./pages/HistorialFestaMajor'));
 
 const SimultaniesArami = lazy(() => import('./pages/SimultaniesArami'));
 const SimultaniesList = lazy(() => import('./pages/SimultaniesList'));
@@ -83,6 +84,7 @@ function App() {
             <Route path="tancats-setmana-santa-2026" element={<TorneigGMMI />} />
             <Route path="tancats-setmana-santa-2027" element={<TorneigGMMIAugost />} />
             <Route path="torneig-festa-major" element={<TorneigFestaMajor />} />
+            <Route path="torneig-festa-major/historial" element={<HistorialFestaMajor />} />
 
             <Route path="simultanies-ivette" element={<EventPage id="ivette" />} />
             <Route path="simultanies-arami2026" element={<SimultaniesArami />} />

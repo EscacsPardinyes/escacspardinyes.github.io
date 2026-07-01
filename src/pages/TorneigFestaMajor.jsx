@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
@@ -131,6 +132,13 @@ export default function TorneigFestaMajor() {
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <hr className="mt-5 mb-4" />
+                <div className="text-center">
+                    <Link to="/torneig-festa-major/historial" className="btn btn-info px-4 py-3 font-weight-bold shadow-sm" style={{ borderRadius: '30px' }}>
+                        <i className="fa fa-history mr-2"></i>{t('festamajor.history_btn') || "Consulta les classificacions d'anys anteriors"}
+                    </Link>
                 </div>
             </div>
         </>
