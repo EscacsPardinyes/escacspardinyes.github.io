@@ -513,7 +513,8 @@ export const translations = {
         "festamajor.prizes_kids_14": "Millor jugador Sub-14",
         "festamajor.prizes_kids_12": "Millor jugador Sub-12",
         "festamajor.prizes_kids_10": "Millor jugador Sub-10",
-        "festamajor.prizes_kids_8": "Millor jugador Sub-8"
+        "festamajor.prizes_kids_8": "Millor jugador Sub-8",
+        "festamajor.history_btn": "Consulta les classificacions d'anys anteriors"
     },
     "es": {
         "nav.home": "Inicio",
@@ -1037,7 +1038,8 @@ export const translations = {
         "festamajor.prizes_kids_14": "Mejor jugador Sub-14",
         "festamajor.prizes_kids_12": "Mejor jugador Sub-12",
         "festamajor.prizes_kids_10": "Mejor jugador Sub-10",
-        "festamajor.prizes_kids_8": "Mejor jugador Sub-8"
+        "festamajor.prizes_kids_8": "Mejor jugador Sub-8",
+        "festamajor.history_btn": "Consulta las clasificaciones de años anteriores"
     },
     "en": {
         "nav.home": "Home",
@@ -1553,6 +1555,7 @@ export const translations = {
         "festamajor.prizes_kids_14": "Best U14 player",
         "festamajor.prizes_kids_12": "Best U12 player",
         "festamajor.prizes_kids_10": "Best U10 player",
-        "festamajor.prizes_kids_8": "Best U8 player"
+        "festamajor.prizes_kids_8": "Best U8 player",
+        "festamajor.history_btn": "Check previous years' standings"
     }
 };
