@@ -66,6 +66,42 @@ export default function TorneigFestaMajor() {
                                 <li><i className="fab fa-whatsapp text-success mr-2"></i><strong>{t('festamajor.contact_label')}</strong> <span dangerouslySetInnerHTML={tHtml('festamajor.contact_val')}></span></li>
                             </ul>
                         </div>
+
+                        <div className="bg-light p-4 rounded shadow-sm border-left border-warning mt-4" style={{ borderWidth: '4px !important' }}>
+                            <h4 className="mt-2 mb-3"><i className="fa fa-trophy text-warning mr-2"></i>{t('festamajor.prizes_title')}</h4>
+                            
+                            <h5 className="font-weight-bold text-dark mt-3">{t('festamajor.prizes_general_title')}</h5>
+                            <ul className="list-unstyled ml-4">
+                                <li>🥇 {t('festamajor.prizes_general_1')}</li>
+                                <li>🥈 {t('festamajor.prizes_general_2')}</li>
+                                <li>🥉 {t('festamajor.prizes_general_3')}</li>
+                            </ul>
+
+                            <h5 className="font-weight-bold text-dark mt-4">{t('festamajor.prizes_elo_title')}</h5>
+                            <ul className="list-unstyled ml-4">
+                                <li>🏅 {t('festamajor.prizes_elo_a')}</li>
+                                <li>🏅 {t('festamajor.prizes_elo_b')}</li>
+                                <li>🏅 {t('festamajor.prizes_elo_c')}</li>
+                                <li>🏅 {t('festamajor.prizes_elo_d')}</li>
+                            </ul>
+
+                            <h5 className="font-weight-bold text-dark mt-4">{t('festamajor.prizes_special_title')}</h5>
+                            <ul className="list-unstyled ml-4">
+                                <li>⭐ {t('festamajor.prizes_special_local')}</li>
+                                <li>⭐ {t('festamajor.prizes_special_v50')}</li>
+                                <li>⭐ {t('festamajor.prizes_special_v65')}</li>
+                                <li>⭐ {t('festamajor.prizes_special_female')}</li>
+                            </ul>
+
+                            <h5 className="font-weight-bold text-dark mt-4">{t('festamajor.prizes_kids_title')}</h5>
+                            <ul className="list-unstyled ml-4">
+                                <li>👦 {t('festamajor.prizes_kids_16')}</li>
+                                <li>👦 {t('festamajor.prizes_kids_14')}</li>
+                                <li>👦 {t('festamajor.prizes_kids_12')}</li>
+                                <li>👦 {t('festamajor.prizes_kids_10')}</li>
+                                <li>👦 {t('festamajor.prizes_kids_8')}</li>
+                            </ul>
+                        </div>
                         
                         <div className="text-center mt-4">
                             <img 
