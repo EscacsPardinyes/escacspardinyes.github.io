@@ -60,20 +60,36 @@ export default function ContactForm() {
 
                 <div className="row g-3">
                     <div className="col-md-6 mb-3">
-                        <label className="small font-weight-bold text-muted text-uppercase mb-2">Nom complet</label>
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.name')}</label>
                         <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="name" placeholder={t('contact.form.name')} required style={{ height: '55px' }} />
                     </div>
                     <div className="col-md-6 mb-3">
-                        <label className="small font-weight-bold text-muted text-uppercase mb-2">Correu electrònic</label>
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.email')}</label>
                         <input type="email" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="email" placeholder={t('contact.form.email')} required style={{ height: '55px' }} />
                     </div>
                 </div>
-                <div className="mb-3">
-                    <label className="small font-weight-bold text-muted text-uppercase mb-2">Assumpte</label>
-                    <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="subject" placeholder={t('contact.form.subject')} required style={{ height: '55px' }} />
+                <div className="row g-3">
+                    <div className="col-md-6 mb-3">
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.phone')}</label>
+                        <input 
+                            type="tel" 
+                            className="form-control border-0 bg-light p-3 rounded-xl shadow-none" 
+                            name="phone" 
+                            placeholder={t('contact.form.phone')} 
+                            style={{ height: '55px' }} 
+                            pattern="[\d\s\+]+"
+                            onInput={(e) => {
+                                e.target.value = e.target.value.replace(/[^\d\s+]/g, '');
+                            }}
+                        />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.subject')}</label>
+                        <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="subject" placeholder={t('contact.form.subject')} required style={{ height: '55px' }} />
+                    </div>
                 </div>
                 <div className="mb-4">
-                    <label className="small font-weight-bold text-muted text-uppercase mb-2">El teu missatge</label>
+                    <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.message')}</label>
                     <textarea className="form-control border-0 bg-light p-3 rounded-xl shadow-none" rows="5" name="message" placeholder={t('contact.form.message')} required></textarea>
                 </div>
                 <div className="mb-4">
