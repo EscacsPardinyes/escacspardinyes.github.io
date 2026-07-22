@@ -337,7 +337,7 @@ Thanks to all the children, teenagers, and families who made this possible. We k
         image: '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/fotogrup.webp',
         gallery: [
             '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/fotogrup.webp',
-            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg',
+            '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.webp',
             '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/1r-3a.webp',
             '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/2n-2a.webp',
             '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/3r-1a.webp',
@@ -358,7 +358,7 @@ Thanks to all the children, teenagers, and families who made this possible. We k
             en: 'Club Escacs Pardinyes achieves a record performance in Bellpuig with two teams qualified for the Catalan Cup Final.'
         },
         content: {
-            ca: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Sala de joc de la Copa Catalana a Bellpuig" />
+            ca: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.webp" class="img-fluid rounded shadow mb-4" alt="Sala de joc de la Copa Catalana a Bellpuig" />
             
 El passat diumenge 11 de gener, el Club Escacs Pardinyes va signar una de les millors actuacions de la seva història recent a la Fase de Lleida de la Copa Catalana, disputada a l’Institut Lo Pla d’Urgell de Bellpuig. Amb una delegació rècord de 6 equips, el club va demostrar la seva bona salut aconseguint podis en totes les categories i, el més important, el bitllet per a la gran Final per a dos dels nostres conjunts.
 
@@ -397,7 +397,7 @@ Ara, la mirada del Club Escacs Pardinyes ja està posada en el pròxim 26 d’ab
         Consulta la classificació completa a Chess-Results
     </a>
 </div>`,
-            es: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Sala de juego de la Copa Catalana en Bellpuig" />
+            es: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.webp" class="img-fluid rounded shadow mb-4" alt="Sala de juego de la Copa Catalana en Bellpuig" />
 
 El pasado domingo 11 de enero, el Club Escacs Pardinyes firmó una de las mejores actuaciones de su historia reciente en la Fase de Lleida de la Copa Catalana, disputada en el Instituto Lo Pla d’Urgell de Bellpuig. Con una delegación récord de 6 equipos, el club demostró su buena salud consiguiendo podios en todas las categorías y, lo más importante, el billete para la gran Final para dos de nuestros conjuntos.
 
@@ -436,7 +436,7 @@ Ahora, la mirada del Club Escacs Pardinyes ya está puesta en el próximo 26 de 
         Consulta la clasificación completa en Chess-Results
     </a>
 </div>`,
-            en: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.jpeg" class="img-fluid rounded shadow mb-4" alt="Chess hall of the Catalan Cup in Bellpuig" />
+            en: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.webp" class="img-fluid rounded shadow mb-4" alt="Chess hall of the Catalan Cup in Bellpuig" />
 
 Last Sunday, January 11th, Club Escacs Pardinyes achieved one of the best performances in its recent history at the Lleida Phase of the Catalan Cup, held at the Institut Lo Pla d'Urgell in Bellpuig. With a record delegation of 6 teams, the club demonstrated its good health by achieving podiums in all categories and, most importantly, the ticket to the grand Final for two of our sets.
 
