@@ -536,7 +536,13 @@ export const translations = {
         "enquesta.form.comments": "Comentaris o suggeriments addicionals",
         "enquesta.form.submit": "Enviar Enquesta",
         "enquesta.form.success": "Gràcies per la teva col·laboració! Hem rebut la teva opinió.",
-        "enquesta.form.error": "Error en el servei de correu. Si us plau, envia un mail a escacspardinyes@gmail.com"
+        "enquesta.form.error": "Error en el servei de correu. Si us plau, envia un mail a escacspardinyes@gmail.com",
+        "unsubscribe.title": "Baixa de Notificacions",
+        "unsubscribe.subtitle": "Si no vols rebre més correus sobre els nostres tornejos, introdueix el teu correu electrònic a continuació.",
+        "unsubscribe.form.email": "Correu electrònic",
+        "unsubscribe.form.submit": "Donar-se de baixa",
+        "unsubscribe.form.success": "T'has donat de baixa correctament. Ja no rebràs més correus.",
+        "unsubscribe.form.error": "Hi ha hagut un error. Si us plau, envia un correu a escacspardinyes@gmail.com"
     },
     "es": {
         "nav.home": "Inicio",
@@ -1083,7 +1089,13 @@ export const translations = {
         "enquesta.form.comments": "Comentarios o sugerencias adicionales",
         "enquesta.form.submit": "Enviar Encuesta",
         "enquesta.form.success": "¡Gracias por tu colaboración! Hemos recibido tu opinión.",
-        "enquesta.form.error": "Error en el servicio de correo. Por favor, envía un mail a escacspardinyes@gmail.com"
+        "enquesta.form.error": "Error en el servicio de correo. Por favor, envía un mail a escacspardinyes@gmail.com",
+        "unsubscribe.title": "Baja de Notificaciones",
+        "unsubscribe.subtitle": "Si no quieres recibir más correos sobre nuestros torneos, introduce tu correo electrónico a continuación.",
+        "unsubscribe.form.email": "Correo electrónico",
+        "unsubscribe.form.submit": "Darse de baja",
+        "unsubscribe.form.success": "Te has dado de baja correctamente. Ya no recibirás más correos.",
+        "unsubscribe.form.error": "Ha habido un error. Por favor, envía un correo a escacspardinyes@gmail.com"
     },
     "en": {
         "nav.home": "Home",
@@ -1622,6 +1634,12 @@ export const translations = {
         "enquesta.form.comments": "Additional comments or suggestions",
         "enquesta.form.submit": "Submit Survey",
         "enquesta.form.success": "Thank you for your collaboration! We have received your opinion.",
-        "enquesta.form.error": "Email service error. Please, send an email to escacspardinyes@gmail.com"
+        "enquesta.form.error": "Email service error. Please, send an email to escacspardinyes@gmail.com",
+        "unsubscribe.title": "Unsubscribe from Notifications",
+        "unsubscribe.subtitle": "If you don't want to receive more emails about our tournaments, enter your email below.",
+        "unsubscribe.form.email": "Email address",
+        "unsubscribe.form.submit": "Unsubscribe",
+        "unsubscribe.form.success": "You have successfully unsubscribed. You will no longer receive emails.",
+        "unsubscribe.form.error": "There was an error. Please, send an email to escacspardinyes@gmail.com"
     }
 };
