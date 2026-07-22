@@ -102,6 +102,11 @@ export default function TorneigFestaMajor() {
                                 <li>👦 {t('festamajor.prizes_kids_10')}</li>
                                 <li>👦 {t('festamajor.prizes_kids_8')}</li>
                             </ul>
+
+                            <p className="mt-4 font-italic text-muted">
+                                <i className="fa fa-exclamation-triangle text-warning mr-2"></i>
+                                {t('festamajor.prizes_not_cumulative')}
+                            </p>
                         </div>
                         
                         <div className="text-center mt-4">
