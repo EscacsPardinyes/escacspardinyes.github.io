@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
-Sitemap: https://escacspardinyes.com/sitemap.xml
+
+# Specifically allow AI crawlers (GEO / AIO)
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# Standard Sitemap
+Sitemap: https://escacspardinyes.com/sitemap.xml

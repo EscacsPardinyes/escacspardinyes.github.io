@@ -1,5 +1,4 @@
-Puzzle Diario (Engagement): Podemos incrustar un tablero con el "Problema del día" de Lichess en la portada. Esto hace que la gente entre cada día solo para resolverlo.
----
+
 Galería Interactiva: Usar un "Lightbox" para que al hacer clic en las fotos de los torneos se amplíen en pantalla completa y se puedan pasar con flechas.
 Agenda Dinámica: Un pequeño widget en la Home que muestre "Próximos 3 eventos" leyendo de un archivo simple, para no tener que editar HTML cada vez.
 Efecto "Confetti": Lanzar confeti virtual cuando alguien completa el formulario de contacto o (si se pudiera) ganan el puzzle diario.
