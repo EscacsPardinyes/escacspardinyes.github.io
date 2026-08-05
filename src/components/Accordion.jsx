@@ -10,8 +10,8 @@ export default function Accordion({ id, items }) {
                             <button
                                 className={`btn btn-link btn-block text-left py-3 px-4 ${index === 0 ? '' : 'collapsed'}`}
                                 type="button"
-                                data-toggle="collapse"
-                                data-target={`#${id}-collapse-${index}`}
+                                data-bs-toggle="collapse"
+                                data-bs-target={`#${id}-collapse-${index}`}
                                 aria-expanded={index === 0 ? 'true' : 'false'}
                                 aria-controls={`${id}-collapse-${index}`}
                                 style={{ textDecoration: 'none' }}
@@ -24,7 +24,7 @@ export default function Accordion({ id, items }) {
                         id={`${id}-collapse-${index}`}
                         className={`collapse ${index === 0 ? 'show' : ''}`}
                         aria-labelledby={`${id}-heading-${index}`}
-                        data-parent={`#${id}`}
+                        data-bs-parent={`#${id}`}
                     >
                         <div className="card-body">
                             {item.content}

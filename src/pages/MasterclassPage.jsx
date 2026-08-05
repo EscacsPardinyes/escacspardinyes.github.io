@@ -7,7 +7,7 @@ import { Navigate } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 export default function MasterclassPage({ id }) {
-    const { t, tHtml } = useLanguage();
+    const { t, tHtml, language } = useLanguage();
     const config = masterclassConfig[id];
 
     const [isOpen, setIsOpen] = useState(false);
@@ -143,7 +143,7 @@ export default function MasterclassPage({ id }) {
                             <h3 className="text-center font-weight-bold mb-4">{t('masterclass.enroll_title')}</h3>
                             <div className="embed-responsive shadow rounded" style={{ height: '800px', overflow: 'hidden' }}>
                                 <iframe 
-                                    src={`${registrationIframe}${registrationIframe.includes('?') ? '&' : '?'}hl=${useLanguage().language}`} 
+                                    src={`${registrationIframe}${registrationIframe.includes('?') ? '&' : '?'}hl=${language}`} 
                                     width="100%" 
                                     height="100%" 
                                     frameBorder="0" 

@@ -16,10 +16,10 @@ export const historialFestaMajor = [
             { posicio: 3, nom: "Ramón Verdés", club: "C.E. Bellpuig", trofeu: "🥉 Tercer Classificat" }
         ],
         trams: [
-            { tram: "Tram A (més de 1900 ELO)", guanyador: "Joshua Solani", club: "C.E. Vallfogona" },
-            { tram: "Tram B (ELO 1700-1899)", guanyador: "Daniel Badia", club: "C.E. Flanc de Dama" },
-            { tram: "Tram C (ELO 1500-1699)", guanyador: "Antoni Biel", club: "C.E. Pardinyes" },
-            { tram: "Tram D (fins a 1499 ELO)", guanyador: "Daniel Chávez", club: "No Federat" }
+            { tram: "Tram A (1900-2099 ELO CAT)", guanyador: "Joshua Solani", club: "C.E. Vallfogona" },
+            { tram: "Tram B (1700-1899 ELO CAT)", guanyador: "Daniel Badia", club: "C.E. Flanc de Dama" },
+            { tram: "Tram C (1500-1699 ELO CAT)", guanyador: "Antoni Biel", club: "C.E. Pardinyes" },
+            { tram: "Tram D (fins a 1499 ELO CAT)", guanyador: "Daniel Chávez", club: "No Federat" }
         ],
         especials: [
             { categoria: "Millor jugador local", guanyador: "Josep Brunet", club: "C.E. Pardinyes" },
