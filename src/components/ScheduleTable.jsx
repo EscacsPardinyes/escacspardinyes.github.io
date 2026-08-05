@@ -8,32 +8,32 @@ export default function ScheduleTable({ activeTab = 'all' }) {
             timeStart: "18:30",
             timeEnd: "19:30",
             days: [
-                { type: 'games', title: 'schedule.free_play' }, // Mon
-                { type: 'intermediate', title: 'schedule.group.eso_bat', level: 'schedule.level.intermediate' }, // Tue
+                { type: 'beginner', title: 'schedule.class.primary', level: 'schedule.level.beginner' }, // Mon
+                null, // Tue
                 { type: 'beginner', title: 'schedule.class.adults_primary', level: 'schedule.level.beginner' }, // Wed
                 null, // Thu
-                { type: 'games', title: 'schedule.free_play' } // Fri
+                null // Fri
+            ]
+        },
+        {
+            timeStart: "18:30",
+            timeEnd: "20:00",
+            days: [
+                null, // Mon
+                { type: 'intermediate', title: 'schedule.group.eso_bat', level: 'schedule.level.intermediate' }, // Tue
+                null, // Wed
+                null, // Thu
+                null // Fri
             ]
         },
         {
             timeStart: "19:30",
-            timeEnd: "20:30",
-            days: [
-                { type: 'games', title: 'schedule.free_play' }, // Mon
-                null, // Tue
-                { type: 'intermediate', title: 'schedule.class.adults', level: 'schedule.level.intermediate' }, // Wed
-                null, // Thu
-                { type: 'games', title: 'schedule.free_play' } // Fri
-            ]
-        },
-        {
-            timeStart: "19:45",
-            timeEnd: "21:15",
+            timeEnd: "21:00",
             days: [
                 null, // Mon
                 null, // Tue
-                null, // Wed
-                { type: 'advanced', title: 'schedule.class.adults', level: 'schedule.level.advanced' }, // Thu
+                { type: 'intermediate', title: 'schedule.class.adults', level: 'schedule.level.intermediate' }, // Wed
+                { type: 'advanced', title: 'schedule.class.advanced', level: 'schedule.level.advanced' }, // Thu
                 null // Fri
             ]
         }
@@ -42,7 +42,11 @@ export default function ScheduleTable({ activeTab = 'all' }) {
     // Filter rows based on activeTab
     const filteredSchedule = scheduleData.filter(row => {
         if (activeTab === 'all') return true;
-        return row.days.some(day => day && day.type === activeTab);
+        return row.days.some(dayData => {
+            if (!dayData) return false;
+            if (Array.isArray(dayData)) return dayData.some(d => d.type === activeTab);
+            return dayData.type === activeTab;
+        });
     });
 
     if (filteredSchedule.length === 0) {
@@ -69,16 +73,20 @@ export default function ScheduleTable({ activeTab = 'all' }) {
                                 <th className="bg-secondary text-white">
                                     <time dateTime={row.timeStart}>{row.timeStart}</time> - <time dateTime={row.timeEnd}>{row.timeEnd}</time>
                                 </th>
-                                {row.days.map((day, dayIndex) => {
-                                    const shouldShow = day && (activeTab === 'all' || day.type === activeTab);
+                                {row.days.map((dayData, dayIndex) => {
+                                    const events = Array.isArray(dayData) ? dayData : (dayData ? [dayData] : []);
+                                    const eventsToShow = activeTab === 'all' 
+                                        ? events 
+                                        : events.filter(e => e.type === activeTab);
+                                    
                                     return (
                                         <td key={dayIndex}>
-                                            {shouldShow ? (
-                                                <>
-                                                    <h5>{t(day.title)}</h5>
-                                                    {day.level && <p className="text-muted">{t(day.level)}</p>}
-                                                </>
-                                            ) : null}
+                                            {eventsToShow.map((e, i) => (
+                                                <div key={i} className={i > 0 ? "mt-3" : ""}>
+                                                    <h5>{t(e.title)}</h5>
+                                                    {e.level && <p className="text-muted mb-0">{t(e.level)}</p>}
+                                                </div>
+                                            ))}
                                         </td>
                                     );
                                 })}
