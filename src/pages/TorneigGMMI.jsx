@@ -31,12 +31,13 @@ export default function TorneigGMMI() {
         '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-02 at j.webp',
         '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-03 at 22.47.24.webp',
         '/img/galeria/Setmana Santa 2026/WhatsApp Image 2026-04-03 at 22.47.25.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-28-03-2026-SEGRE.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-La-Manyana-1.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-La-Manyana-2.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-30-03-2026-SEGRE.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capital-escacs.webp',
-        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-La-Manyana.webp'
+        '/img/galeria/prensa/WhatsApp Image 2026-03-31 at 16.04.03.webp',
+        '/img/galeria/prensa/WhatsApp Image 2026-04-05 at 15.27.04.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-01-04-2026-Escacs-son-joves.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Fita-Historica-lleida.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Lleida-Elit-escacs.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capita-argentina.webp',
+        '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capital-escacs.webp'
     ];
 
     const eventSchema = {
