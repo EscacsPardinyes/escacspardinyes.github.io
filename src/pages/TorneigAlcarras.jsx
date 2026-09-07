@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
+import SEO from '../components/SEO';
 
 export default function TorneigAlcarras() {
     const { t, tHtml } = useLanguage();

@@ -17,6 +17,7 @@ const Privacy = lazy(() => import('./pages/Privacy'));
 const Cookies = lazy(() => import('./pages/Cookies'));
 const EloCalculator = lazy(() => import('./pages/EloCalculator'));
 const TorneigAlcarras = lazy(() => import('./pages/TorneigAlcarras'));
+const TorneigAlcarras2 = lazy(() => import('./pages/TorneigAlcarras2'));
 const TorneigNadal2025 = lazy(() => import('./pages/TorneigNadal2025'));
 const TorneigGMMI = lazy(() => import('./pages/TorneigGMMI'));
 const TorneigGMMIAugost = lazy(() => import('./pages/TorneigGMMIAugost'));
@@ -83,6 +84,7 @@ function App() {
             <Route path="elo-calculator" element={<EloCalculator />} />
             <Route path="sant-jordi2025" element={<EventPage id="sant-jordi" />} />
             <Route path="TorneigAlcarras" element={<TorneigAlcarras />} />
+            <Route path="torneig-alcarras-2" element={<TorneigAlcarras2 />} />
             <Route path="torneig-nadal-2025" element={<TorneigNadal2025 />} />
             <Route path="tancats-setmana-santa-2026" element={<TorneigGMMI />} />
             <Route path="tancats-setmana-santa-2027" element={<TorneigGMMIAugost />} />

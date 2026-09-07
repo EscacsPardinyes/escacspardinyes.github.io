@@ -1,4 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 
@@ -79,6 +80,7 @@ export default function TorneigBordeta() {
                             <ul className="list-unstyled ml-4">
                                 <li dangerouslySetInnerHTML={tHtml('bordeta.trophy_champion')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('bordeta.trophy_senior')}></li>
+                                <li dangerouslySetInnerHTML={tHtml('bordeta.trophy_sub14')}></li>
                             </ul>
 
                             <h4 className="mt-4 mb-2"><i className="fa fa-handshake text-success mr-2"></i>{t('bordeta.collaborators_title')}</h4>
@@ -86,8 +88,72 @@ export default function TorneigBordeta() {
                                 <li dangerouslySetInnerHTML={tHtml('bordeta.collaborator_diputacio')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('bordeta.collaborator_ajuntament')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('bordeta.collaborator_club')}></li>
+                                <li dangerouslySetInnerHTML={tHtml('bordeta.collaborator_casal')}></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Formulari d'Inscripció */}
+            <div className="container pb-5">
+                <hr className="mb-5" />
+                <h3 className="text-center font-weight-bold mb-4">
+                    <i className="fa fa-clipboard-list text-primary mr-2"></i>
+                    {t('bordeta.form_title')}
+                </h3>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="rounded shadow p-3" style={{ backgroundColor: '#fff' }}>
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSfxLuUGFq3U7arqV6eVOn_umFXhc1lC3fLS4eFzbXmT0SHG1A/viewform?embedded=true"
+                                width="100%"
+                                height="1279"
+                                frameBorder="0"
+                                marginHeight="0"
+                                marginWidth="0"
+                                title={t('bordeta.form_title')}
+                                style={{ border: 'none', maxWidth: '100%' }}
+                            >
+                                S&apos;està carregant…
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Secció Classes d'Escacs */}
+            <div className="container pb-5">
+                <hr className="mb-5" />
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 text-center">
+                        <h3 className="font-weight-bold mb-3">
+                            <i className="fa fa-graduation-cap text-primary mr-2"></i>
+                            {t('bordeta.classes_title')}
+                        </h3>
+                        <p className="mb-4" dangerouslySetInnerHTML={tHtml('bordeta.classes_text')}></p>
+                        <Link to="/school" className="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow">
+                            <i className="fa fa-chess-knight mr-2"></i>
+                            {t('bordeta.classes_btn')}
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            {/* Secció Pròxims Tornejos */}
+            <div className="container pb-5">
+                <hr className="mb-5" />
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 text-center">
+                        <h3 className="font-weight-bold mb-3">
+                            <i className="fa fa-calendar-plus text-primary mr-2"></i>
+                            {t('bordeta.upcoming_title')}
+                        </h3>
+                        <p className="mb-4">{t('bordeta.upcoming_text')}</p>
+                        <Link to="/torneig-alcarras-2" className="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill shadow-sm">
+                            <i className="fa fa-arrow-right mr-2"></i>
+                            {t('bordeta.upcoming_btn')}
+                        </Link>
                     </div>
                 </div>
             </div>
