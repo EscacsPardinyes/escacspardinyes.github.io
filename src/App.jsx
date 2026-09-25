@@ -76,6 +76,7 @@ function App() {
             <Route path="school" element={<School />} />
             <Route path="masterclass" element={<MasterclassList />} />
             <Route path="masterclass/india-de-rey" element={<MasterclassPage id="india-de-rey" />} />
+            <Route path="masterclass/tactica-cruz" element={<MasterclassPage id="tactica-cruz" />} />
             <Route path="feature" element={<Feature />} />
             <Route path="federat" element={<Federat />} />
             <Route path="contact" element={<Contact />} />
