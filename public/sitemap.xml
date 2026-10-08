@@ -1,174 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- Pagines principals -->
   <url>
     <loc>https://escacspardinyes.com/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/about</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/school</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://escacspardinyes.com/masterclass</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/federat</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/contact</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/masterclass</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/simultanies</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/tancats</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/elo-calculator</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Specific Pages -->
-  <url>
-    <loc>https://escacspardinyes.com/masterclass/india-de-rey</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://escacspardinyes.com/sant-jordi2025</loc>
-    <lastmod>2026-05-10</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/TorneigAlcarras</loc>
-    <lastmod>2026-05-10</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/torneig-alcarras-2</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/torneig-nadal-2025</loc>
-    <lastmod>2026-05-10</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/tancats-setmana-santa-2026</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/tancats-setmana-santa-2027</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/torneig-festa-major</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/tancats-agost-2026</loc>
-    <lastmod>2026-05-10</lastmod>
-    <priority>0.6</priority>
+    <loc>https://escacspardinyes.com/torneig-festa-major/historial</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://escacspardinyes.com/simultanies-ivette</loc>
-    <lastmod>2026-05-10</lastmod>
-    <priority>0.6</priority>
+    <loc>https://escacspardinyes.com/torneig-bordeta</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/simultanies-arami2026</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Masterclasses -->
+  <url>
+    <loc>https://escacspardinyes.com/masterclass/india-de-rey</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/masterclass/tactica-cruz</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Esdeveniments -->
+  <url>
+    <loc>https://escacspardinyes.com/simultanies-ivette</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/sant-jordi2025</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- News Articles -->
+  <!-- Noticies -->
+  <url>
+    <loc>https://escacspardinyes.com/noticies/torneig-festa-major-2026</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/individual2026</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/interinstituts2026</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/lliga2026</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/mes-internacional-del-joc-2026</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/minicopa2025</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/santjordi2026</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/somcultura2026</loc>
+    <lastmod>2025-11-23</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/torneiglamaratotv3-2025</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/minicopa-territorial-lleida-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/fase-territorial-copa-catalana-2026</loc>
     <lastmod>2026-01-11</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/cronica-copa-catalana-2026</loc>
     <lastmod>2026-04-28</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-final-copa-catalana-2026</loc>
     <lastmod>2026-04-27</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/iii-torneig-nadal-2025</loc>
     <lastmod>2026-01-04</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/visita-ivette-garcia-2025</loc>
     <lastmod>2025-07-08</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/festa-escacs-lleida-2025</loc>
     <lastmod>2025-07-12</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-escacs-joves</loc>
     <lastmod>2026-04-01</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-fita-historica-lleida</loc>
     <lastmod>2026-04-05</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-lleida-elit-escacs</loc>
     <lastmod>2026-04-05</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-capita-argentina</loc>
     <lastmod>2026-03-31</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/premsa-capital-escacs</loc>
     <lastmod>2026-03-31</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/simultanies-arami-lobo-2026</loc>
     <lastmod>2026-03-06</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/jornada-sant-jordi-2025</loc>
     <lastmod>2025-04-25</lastmod>
-    <priority>0.6</priority>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

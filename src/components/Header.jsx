@@ -58,11 +58,12 @@ export default function Header() {
              }}>
             <nav className={`navbar navbar-expand-lg navbar-dark py-3 ${isScrolled ? 'py-lg-1' : 'py-lg-3'}`} style={{ transition: 'all 0.5s' }}>
                 <Link to="/" className="navbar-brand">
-                    <h1 className="m-0 display-4 font-weight-bold text-uppercase text-white" style={{ 
+                    <span className="m-0 display-4 font-weight-bold text-uppercase text-white" style={{ 
                         fontSize: isScrolled ? '1.4rem' : '2rem', 
                         transition: 'all 0.5s',
-                        lineHeight: 1
-                    }}>Club Escacs Pardinyes</h1>
+                        lineHeight: 1,
+                        display: 'block'
+                    }}>Club Escacs Pardinyes</span>
                 </Link>
                 <button type="button" className="navbar-toggler border-0" onClick={toggleMenu} aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

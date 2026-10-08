@@ -72,7 +72,7 @@ export default function EloCalculator() {
 
     return (
         <>
-            <SEO title={t('elo.header')} />
+            <SEO title={t('elo.header')} description="Calcula la variació del teu ELO FIDE/FCE de forma ràpida i senzilla. Eina gratuïta per als jugadors del Club Escacs Pardinyes i de Lleida." />
             {/* Page Header Start */}
             <div className="container-fluid page-header mb-5">
                 <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
@@ -86,7 +86,7 @@ export default function EloCalculator() {
             </div>
             {/* Page Header End */}
 
-            <h2 className="text-center text-primary mb-4">{t('elo.title')}</h2>
+
 
             <div className="container section-padding">
                 <div className="text-center mb-5">

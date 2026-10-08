@@ -5,6 +5,9 @@ import { compression } from 'vite-plugin-compression2'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    port: 3001,
+  },
   plugins: [
     react(),
     compression(),

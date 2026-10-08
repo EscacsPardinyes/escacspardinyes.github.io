@@ -68,6 +68,7 @@ export default function Home() {
     return (
         <>
             <SEO 
+                title={t('seo.home_title')}
                 description={t('seo.default_description')} 
                 schema={upcomingEventsSchema}
                 faq={aiFaqs}
@@ -79,7 +80,7 @@ export default function Home() {
                         <div className="carousel-item active">
                             <img className="w-100" src="/img/galeria/Carousel/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" fetchPriority="high" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
                                 <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide1.title')}</h1>
                                 <Link to="/contact" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide1.btn')}</Link>
                             </div>
@@ -87,7 +88,7 @@ export default function Home() {
                         <div className="carousel-item">
                             <img className="w-100" src="/img/galeria/Carousel/carousel-3.webp" alt="Competició d'escacs organitzada pel club" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
                                 <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide3.title')}</h2>
                                 <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide3.btn')}</a>
                             </div>
@@ -95,7 +96,7 @@ export default function Home() {
                         <div className="carousel-item">
                             <img className="w-100" src="/img/galeria/Minicopa2026/Fotogrup.webp" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <h3 className="text-primary m-0">{t('carousel.club')}</h3>
+                                <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
                                 <h2 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide4.title')}</h2>
                                 <Link to="/about" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide4.btn')}</Link>
                             </div>
@@ -170,7 +171,7 @@ export default function Home() {
             {/* Latest News Start */}
             <div className="container section-padding">
                 <div className="d-flex flex-column text-center mb-5">
-                    <h4 className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px' }}>{language === 'ca' ? 'Actualitat' : language === 'es' ? 'Actualidad' : 'Latest News'}</h4>
+                    <p className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px', fontSize: '0.9rem' }}>{language === 'ca' ? 'Actualitat' : language === 'es' ? 'Actualidad' : 'Latest News'}</p>
                     <h2 className="display-4 font-weight-bold">{language === 'ca' ? 'Últimes Notícies' : language === 'es' ? 'Últimas Noticias' : 'Recent Updates'}</h2>
                 </div>
                 <div className="row g-4">
@@ -189,7 +190,7 @@ export default function Home() {
             {/* Schedule Start */}
             <div className="container section-padding">
                 <div className="d-flex flex-column text-center mb-5">
-                    <h4 className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px' }}>{t('schedule.title')}</h4>
+                    <p className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px', fontSize: '0.9rem' }}>{t('schedule.title')}</p>
                     <h2 className="display-4 font-weight-bold">{t('schedule.subtitle')}</h2>
                 </div>
                 <div className="tab-class">

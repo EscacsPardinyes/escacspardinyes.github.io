@@ -25,7 +25,7 @@ export default function Cookies() {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 lineHeight: '1.6'
             }}>
-                <h1 style={{ fontSize: '2em', color: '#E31C25', textAlign: 'center', marginBottom: '20px' }}>{t('cookies.title')}</h1>
+                <h2 style={{ fontSize: '2em', color: '#E31C25', textAlign: 'center', marginBottom: '20px' }}>{t('cookies.title')}</h2>
 
                 <p>{t('cookies.intro')}</p>
 

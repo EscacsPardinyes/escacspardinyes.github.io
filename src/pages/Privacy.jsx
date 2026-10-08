@@ -25,7 +25,7 @@ export default function Privacy() {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 lineHeight: '1.6'
             }}>
-                <h1 style={{ fontSize: '2em', color: '#E31C25', textAlign: 'center', marginBottom: '20px' }}>{t('privacy.title')}</h1>
+                <h2 style={{ fontSize: '2em', color: '#E31C25', textAlign: 'center', marginBottom: '20px' }}>{t('privacy.title')}</h2>
 
                 <p>{t('privacy.intro')}</p>
 
