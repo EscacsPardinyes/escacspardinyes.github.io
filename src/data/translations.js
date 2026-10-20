@@ -26,8 +26,12 @@ export const translations = {
         "seo.list_description": "Consulta l'històric de simultànies realitzades al Club Escacs Pardinyes amb grans mestres i joves promeses.",
         "seo.ivette_description": "Crònica de la jornada de simultànies amb la WIM Ivette García Morales i Kulsum Qasim de ChessKid al nostre club.",
         "seo.santjordi_description": "Galeria d'imatges i crònica de la jornada de Sant Jordi 2025 amb la simultània de la Lola Fernández.",
-        "seo.home_title": "Club Escacs Pardinyes | Escola d'Escacs a Lleida",
-        "carousel.club": "Club d'Escacs",
+    "seo.cookies_description": "Política de cookies del Club Escacs Pardinyes. Explicació de com utilitzem les cookies i com gestionar-les.",
+    "seo.privacy_description": "Política de privacitat del Club Escacs Pardinyes. Detalls sobre com es protegeixen les dades personals.",
+    "seo.home_title": "Club Escacs Pardinyes | Escola d'Escacs a Lleida",
+    "carousel.club": "Club d'Escacs",
+
+
         "carousel.slide1.title": "Aprèn i Competeix a Lleida",
         "carousel.slide1.btn": "Uneix-te Ara",
         "carousel.slide3.title": "Uneix-te a la Nostra Comunitat Online",

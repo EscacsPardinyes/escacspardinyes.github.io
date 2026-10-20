@@ -106,7 +106,7 @@ export default function NewsDetail() {
                     dateModified: item.date
                 }}
             />
-            <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} />
+            <p className="text-muted mb-4">{t('news.header')}</p>
 
             <div className="container py-5">
                 <div className="row justify-content-center">

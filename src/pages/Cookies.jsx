@@ -6,7 +6,7 @@ export default function Cookies() {
 
     return (
         <>
-            <SEO title={t('cookies.header')} />
+            <SEO title={t('cookies.header')} description={t('seo.cookies_description')} />
             {/* Page Header Start */}
             <div className="container-fluid page-header mb-5">
                 <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>

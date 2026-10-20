@@ -52,7 +52,7 @@ export default function School() {
 
                         {/* Practical Info (Prices) */}
                         <div className="mb-5">
-                            <h4 className="font-weight-bold text-primary mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('school.info_title')}</h4>
+                            <h3 className="font-weight-bold text-primary mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('school.info_title')}</h3>
                             <div className="d-flex flex-column gap-3">
                                 <div className="info-card shadow-sm p-4 bg-white rounded border-left-primary" style={{ borderLeft: '4px solid var(--primary-color)' }}>
                                     <p className="mb-0 h5" dangerouslySetInnerHTML={tHtml('school.price')}></p>
@@ -73,8 +73,8 @@ export default function School() {
                         {/* Schedule Section */}
                         <div className="mb-5">
                             <div className="d-flex flex-column mb-4">
-                                <h4 className="text-primary font-weight-bold text-uppercase" style={{ letterSpacing: '1px' }}>{t('schedule.title')}</h4>
-                                <h3 className="h2 font-weight-bold">{t('schedule.subtitle')}</h3>
+                                <h3 className="text-primary font-weight-bold text-uppercase" style={{ letterSpacing: '1px' }}>{t('schedule.title')}</h3>
+                                <h4 className="h2 font-weight-bold">{t('schedule.subtitle')}</h4>
                             </div>
                             <div className="tab-class">
                                 <ul className="nav nav-pills mb-4 gap-2 flex-wrap">
@@ -102,7 +102,7 @@ export default function School() {
 
                         {/* FAQ Section */}
                         <div className="mb-5">
-                            <h4 className="text-primary font-weight-bold mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('school.faq_title')}</h4>
+                            <h3 className="text-primary font-weight-bold mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('school.faq_title')}</h3>
                             <Accordion id="schoolFaq" items={faqItems} />
                         </div>
                     </div>

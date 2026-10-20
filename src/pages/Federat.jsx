@@ -43,7 +43,7 @@ export default function Federat() {
 
                 <div className="row">
                     <div className="col-md-6">
-                        <h4 className="text-primary">{t('federated.benefits_title')}</h4>
+                        <h3 className="text-primary">{t('federated.benefits_title')}</h3>
                         <ul>
                             <li dangerouslySetInnerHTML={tHtml('federated.benefit_1')}></li>
                             <li dangerouslySetInnerHTML={tHtml('federated.benefit_2')}></li>
@@ -52,7 +52,7 @@ export default function Federat() {
                         </ul>
                     </div>
                     <div className="col-md-6">
-                        <h4 className="text-primary">{t('federated.fees_title')}</h4>
+                        <h3 className="text-primary">{t('federated.fees_title')}</h3>
                         <p>{t('federated.fees_text')}</p>
 
                         <ul>
@@ -70,7 +70,7 @@ export default function Federat() {
                 <p>{t('federated.soci_option')}</p>
 
                 <div className="mt-5 text-center">
-                    <h4 className="text-primary">{t('federated.req_title')}</h4>
+                    <h3 className="text-primary">{t('federated.req_title')}</h3>
                     <p>{t('federated.req_text')}</p>
                 </div>
 
