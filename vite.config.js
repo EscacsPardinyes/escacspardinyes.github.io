@@ -13,25 +13,33 @@ export default defineConfig({
     compression(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['img/galeria/logos/logo.webp'],
+      includeAssets: ['img/icons/apple-touch-icon.png'],
       manifest: {
         name: 'Club Escacs Pardinyes',
         short_name: 'CE Pardinyes',
         description: 'La gran família dels escacs a Lleida',
-        theme_color: '#ffc107',
+        lang: 'ca',
+        start_url: '/',
+        theme_color: '#ffc107', // same as --primary and the theme-color meta in index.html / SEO.jsx
         background_color: '#ffffff',
         display: 'standalone',
         icons: [
           {
-            src: '/img/galeria/logos/logo.webp',
+            src: '/img/icons/pwa-192.png',
             sizes: '192x192',
-            type: 'image/webp'
+            type: 'image/png'
           },
           {
-            src: '/img/galeria/logos/logo.webp',
+            src: '/img/icons/pwa-512.png',
             sizes: '512x512',
-            type: 'image/webp',
-            purpose: 'any maskable'
+            type: 'image/png'
+          },
+          {
+            // Logo with padding so Android's circular/rounded masks don't crop it
+            src: '/img/icons/pwa-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
           }
         ]
       },
