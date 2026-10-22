@@ -36,9 +36,20 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}'],
-        maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
+        // Precache only the app shell; gallery images (~48 MB) are cached on demand below
+        globPatterns: ['**/*.{js,css,html,ico,svg}'],
         runtimeCaching: [
+          {
+            urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'image',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images-cache',
+              expiration: {
+                maxEntries: 150,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+              }
+            }
+          },
           {
             urlPattern: /^https:\/\/cdnjs\.cloudflare\.com\/.*/i,
             handler: 'CacheFirst',

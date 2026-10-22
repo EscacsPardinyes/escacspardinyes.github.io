@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { news } from '../data/news';
 
 export default function SearchModal() {
     const { t, language } = useLanguage();
@@ -10,7 +9,14 @@ export default function SearchModal() {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [selectedIndex, setSelectedIndex] = useState(0);
+    // news.js is large: load it only the first time the search is opened (not on every page)
+    const [news, setNews] = useState(null);
     const inputRef = useRef(null);
+
+    useEffect(() => {
+        if (!isOpen || news) return;
+        import('../data/news').then((m) => setNews(m.news));
+    }, [isOpen, news]);
     const listRef = useRef(null);
 
     // Global keyboard listener for Cmd+K / Ctrl+K
@@ -70,7 +76,7 @@ export default function SearchModal() {
         const matchedPages = pages.filter(p => p.title.toLowerCase().includes(lowerQuery));
 
         // Search news
-        const matchedNews = news.filter(n => 
+        const matchedNews = (news || []).filter(n =>
             n.title[language]?.toLowerCase().includes(lowerQuery) || 
             n.summary[language]?.toLowerCase().includes(lowerQuery)
         ).map(n => ({
@@ -83,7 +89,7 @@ export default function SearchModal() {
 
         setResults([...matchedPages, ...matchedNews].slice(0, 8)); // limit to 8 results
         setSelectedIndex(0);
-    }, [query, language]);
+    }, [query, language, news]);
 
     // Keyboard navigation within the modal
     const handleModalKeyDown = (e) => {

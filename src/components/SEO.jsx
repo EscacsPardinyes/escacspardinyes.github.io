@@ -13,11 +13,21 @@ import { useLanguage } from '../context/LanguageContext';
  * @param {Array} props.breadcrumbs - Breadcrumbs for the page.
  * @param {Array} props.faq - Optional array of FAQ items {question, answer} for FAQ snippets.
  */
-export default function SEO({ title, description, image, schema, type = 'website', breadcrumbs = [], faq = [] }) {
-    const location = useLocation();
+export default function SEO({ title, description, image, schema: schemaProp, type = 'website', breadcrumbs: breadcrumbsProp = [], faq: faqProp = [] }) {
+    const { pathname } = useLocation();
     const { language } = useLanguage();
 
+    // Pages pass new objects/arrays on every render: compare them by content so the
+    // <head> is only rebuilt when something actually changes
+    const schemaKey = JSON.stringify(schemaProp ?? null);
+    const breadcrumbsKey = JSON.stringify(breadcrumbsProp);
+    const faqKey = JSON.stringify(faqProp);
+
     useEffect(() => {
+        const schema = JSON.parse(schemaKey);
+        const breadcrumbs = JSON.parse(breadcrumbsKey);
+        const faq = JSON.parse(faqKey);
+
         const baseTitle = 'Club Escacs Pardinyes';
         const defaultDescription = language === 'ca' 
             ? "Club Escacs Pardinyes - Fomentant l'escacs a Lleida des de 1992. Escola d'escacs, competicions i una gran comunitat."
@@ -36,7 +46,7 @@ export default function SEO({ title, description, image, schema, type = 'website
 
         const fullDefaultImage = getAbsoluteUrl(defaultImage);
         const fullImageUrl = image ? getAbsoluteUrl(image) : fullDefaultImage;
-        const currentUrl = `${siteUrl}${location.pathname}`;
+        const currentUrl = `${siteUrl}${pathname}`;
 
         // Update HTML Lang attribute
         document.documentElement.lang = language || 'ca';
@@ -67,7 +77,7 @@ export default function SEO({ title, description, image, schema, type = 'website
                 document.head.appendChild(link);
             }
             // Construct URL with lang parameter
-            const langUrl = new URL(siteUrl + location.pathname);
+            const langUrl = new URL(siteUrl + pathname);
             langUrl.searchParams.set('lang', lang);
             link.setAttribute('href', langUrl.toString());
         });
@@ -291,7 +301,8 @@ export default function SEO({ title, description, image, schema, type = 'website
         if (articleSchema) schemasToInject.push(articleSchema);
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
         if (faqSchema) schemasToInject.push(faqSchema);
-        if (pageSchema && pageSchema["@type"] !== 'NewsArticle') schemasToInject.push(pageSchema);
+        // NewsDetail passes only dates (no @type) to feed the article schema: don't inject it on its own
+        if (pageSchema && pageSchema["@type"] && pageSchema["@type"] !== 'NewsArticle') schemasToInject.push(pageSchema);
 
         schemasToInject.forEach((s) => {
             const script = document.createElement('script');
@@ -301,7 +312,7 @@ export default function SEO({ title, description, image, schema, type = 'website
             document.head.appendChild(script);
         });
 
-    }, [title, description, image, location, language, schema, type, breadcrumbs, faq]);
+    }, [title, description, image, pathname, language, schemaKey, type, breadcrumbsKey, faqKey]);
 
     return null;
 }
