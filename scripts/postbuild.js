@@ -186,7 +186,9 @@ function generateStaticMetaFiles() {
         const image = route.image || DEFAULT_IMAGE;
         const fullImageUrl = image.startsWith('http') ? image : `${BASE_URL}${image.startsWith('/') ? '' : '/'}${image}`;
         const pageUrl = `${BASE_URL}${route.path}`;
-        const title = escapeHtml(`${cleanText(route.title, 120)} | ${SITE_NAME}`);
+        // Same rule as SEO.jsx: don't append the club name if the title already has it
+        const rawTitle = cleanText(route.title, 120);
+        const title = escapeHtml(rawTitle.includes(SITE_NAME) ? rawTitle : `${rawTitle} | ${SITE_NAME}`);
         const desc = escapeHtml(cleanText(route.desc));
         const img = escapeHtml(encodeURI(fullImageUrl));
 

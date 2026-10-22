@@ -42,7 +42,8 @@ export default function SEO({ title, description, image, schema, type = 'website
         document.documentElement.lang = language || 'ca';
 
         // Update Title
-        const pageTitle = title ? `${title} | ${baseTitle}` : baseTitle;
+        // Some titles (e.g. the home page) already include the club name
+        const pageTitle = !title ? baseTitle : title.includes(baseTitle) ? title : `${title} | ${baseTitle}`;
         document.title = pageTitle;
 
         // Update Canonical Link

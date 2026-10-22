@@ -5,6 +5,7 @@ const METRICOOL_SRC = 'https://tracker.metricool.com/resources/be.js';
 const METRICOOL_HASH = '2184f666a01c5252ff0154bdad5ead69';
 
 export const OPEN_COOKIE_SETTINGS_EVENT = 'open-cookie-settings';
+export const CONSENT_CHANGE_EVENT = 'cookie-consent-change';
 
 export function getConsent() {
     try {
@@ -22,6 +23,7 @@ export function setConsent(value) {
     } catch {
         // Storage unavailable: the choice only lasts for this page view
     }
+    window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT));
 
     if (value === 'accepted') {
         loadAnalytics();
