@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { news } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
@@ -45,10 +45,22 @@ export default function NewsList() {
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const paginatedNews = filteredNews.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-    // Reset to page 1 when search or filters change
-    useEffect(() => {
+    // Changing the search or filters goes back to page 1 (done in the handlers, not in an effect,
+    // to avoid an extra render)
+    const updateSearch = (value) => {
+        setSearchQuery(value);
         setCurrentPage(1);
-    }, [searchQuery, activeCategory, sortOrder]);
+    };
+
+    const updateCategory = (category) => {
+        setActiveCategory(category);
+        setCurrentPage(1);
+    };
+
+    const toggleSortOrder = () => {
+        setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
+        setCurrentPage(1);
+    };
 
     // Scroll to top when page changes
     const handlePageChange = (newPage) => {
@@ -80,12 +92,12 @@ export default function NewsList() {
                                 className="form-control border-0 py-4"
                                 placeholder={t('news.search')}
                                 value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
+                                onChange={(e) => updateSearch(e.target.value)}
                                 style={{ paddingLeft: '60px', height: '60px', fontSize: '1.1rem' }}
                             />
                             {searchQuery && (
                                 <button
-                                    onClick={() => setSearchQuery('')}
+                                    onClick={() => updateSearch('')}
                                     className="btn position-absolute"
                                     style={{ right: '15px', top: '50%', transform: 'translateY(-50%)', color: '#999' }}
                                 >
@@ -102,7 +114,7 @@ export default function NewsList() {
                         {categories.map(cat => (
                             <button
                                 key={cat.id}
-                                onClick={() => setActiveCategory(cat.id)}
+                                onClick={() => updateCategory(cat.id)}
                                 className={`btn btn-sm d-flex align-items-center px-4 py-2 font-weight-bold rounded-pill transition-base ${activeCategory === cat.id ? 'btn-primary' : 'btn-light'}`}
                                 style={{ border: 'none' }}
                             >
@@ -115,7 +127,7 @@ export default function NewsList() {
                     <div className="ml-md-auto mt-3 mt-md-0 d-flex align-items-center">
                         <span className="text-muted small mr-3 font-weight-bold text-uppercase">Ordenar:</span>
                         <button
-                            onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
+                            onClick={toggleSortOrder}
                             className="btn btn-dark btn-sm rounded-pill px-3 py-2 d-flex align-items-center"
                         >
                             <i className={`fa fa-sort-amount-${sortOrder === 'desc' ? 'down' : 'up'} mr-2`}></i>
@@ -136,7 +148,7 @@ export default function NewsList() {
                                 <i className="fa fa-search-minus fa-4x text-muted opacity-50"></i>
                             </div>
                             <h4 className="text-muted">{t('news.no_entries')}</h4>
-                            <button onClick={() => { setSearchQuery(''); setActiveCategory('all'); }} className="btn btn-link text-primary mt-2">
+                            <button onClick={() => { updateSearch(''); updateCategory('all'); }} className="btn btn-link text-primary mt-2">
                                 Veure totes les notícies
                             </button>
                         </div>
