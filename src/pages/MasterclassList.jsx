@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
@@ -8,7 +8,7 @@ export default function MasterclassList() {
     const { t } = useLanguage();
 
     const breadcrumbs = [
-        { label: t('school.header'), path: '/escola' },
+        { label: t('school.header'), path: '/school' },
         { label: t('masterclass.list_breadcrumb') }
     ];
 

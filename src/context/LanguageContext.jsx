@@ -1,18 +1,23 @@
-import { createContext, useState, useContext, useEffect, useCallback } from 'react';
-import { getTranslations, loadTranslations, getInitialLanguage, SUPPORTED_LANGUAGES } from '../data/translations';
+import { createContext, useContext, useEffect, useCallback, useReducer } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { getTranslations, loadTranslations } from '../data/translations';
+import { LANGUAGES, getLangFromPath, localizePath } from '../utils/i18nRouting';
 
 const LanguageContext = createContext();
 
+// The language comes from the URL (/es/..., /en/..., or no prefix for Catalan).
+// Must be rendered inside the router.
 export function LanguageProvider({ children }) {
-    // main.jsx loads the initial language before the first render
-    const [language, setCurrentLanguage] = useState(getInitialLanguage);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const language = getLangFromPath(location.pathname);
+    const [, rerender] = useReducer((x) => x + 1, 0);
 
-    // Switch only once the language file is downloaded, so the page never shows missing texts
-    const setLanguage = useCallback(async (lang) => {
-        if (!SUPPORTED_LANGUAGES.includes(lang)) return;
-        await loadTranslations(lang);
-        setCurrentLanguage(lang);
-    }, []);
+    // main.jsx loads the initial language before the first render; this covers arriving at
+    // another language later (e.g. browser back/forward)
+    useEffect(() => {
+        if (!getTranslations(language)) loadTranslations(language).then(rerender);
+    }, [language]);
 
     useEffect(() => {
         try {
@@ -21,15 +26,19 @@ export function LanguageProvider({ children }) {
             // Storage unavailable
         }
         document.documentElement.lang = language;
-
-        // Update URL query parameter without reloading if it's different
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('lang') !== language) {
-            params.set('lang', language);
-            const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
-            window.history.replaceState({}, '', newUrl);
-        }
     }, [language]);
+
+    // Switch only once the language file is downloaded, so the page never shows missing texts
+    const setLanguage = useCallback(async (lang) => {
+        if (!LANGUAGES.includes(lang)) return;
+        await loadTranslations(lang);
+        navigate(localizePath(location.pathname, lang) + location.search + location.hash, {
+            state: { keepScroll: true }
+        });
+    }, [location, navigate]);
+
+    // Internal path in the current language: localize('/school') -> '/es/school'
+    const localize = useCallback((path) => localizePath(path, language), [language]);
 
     const t = (key) => {
         // Check if translation exists for the current language
@@ -52,7 +61,7 @@ export function LanguageProvider({ children }) {
     };
 
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, t, tHtml }}>
+        <LanguageContext.Provider value={{ language, setLanguage, localize, t, tHtml }}>
             {children}
         </LanguageContext.Provider>
     );

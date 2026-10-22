@@ -2,8 +2,6 @@
 // Spanish and English are separate chunks, downloaded only when that language is used.
 import ca from './ca.js';
 
-export const SUPPORTED_LANGUAGES = ['ca', 'es', 'en'];
-
 const loaders = {
     es: () => import('./es.js'),
     en: () => import('./en.js'),
@@ -20,17 +18,4 @@ export async function loadTranslations(lang) {
         loaded[lang] = (await loaders[lang]()).default;
     }
     return loaded[lang];
-}
-
-// URL ?lang= (SEO and deep links) > saved preference > Catalan
-export function getInitialLanguage() {
-    const langParam = new URLSearchParams(window.location.search).get('lang');
-    if (SUPPORTED_LANGUAGES.includes(langParam)) return langParam;
-    try {
-        const savedLang = localStorage.getItem('language');
-        if (SUPPORTED_LANGUAGES.includes(savedLang)) return savedLang;
-    } catch {
-        // Storage unavailable
-    }
-    return 'ca';
 }

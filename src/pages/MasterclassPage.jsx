@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
 import { masterclassConfig } from '../data/masterclassConfig';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from '../components/LocalizedLink';
 import SEO from '../components/SEO';
 
 export default function MasterclassPage({ id }) {
@@ -29,7 +29,7 @@ export default function MasterclassPage({ id }) {
     } = config;
 
     const breadcrumbs = [
-        { label: t('school.header'), path: '/escola' },
+        { label: t('school.header'), path: '/school' },
         { label: t('masterclass.list_breadcrumb'), path: '/masterclass' }
     ];
 

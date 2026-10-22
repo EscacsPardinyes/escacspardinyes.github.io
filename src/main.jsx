@@ -4,9 +4,9 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import './assets/style.min.css'
-import { LanguageProvider } from './context/LanguageContext.jsx'
 import { getConsent, loadAnalytics } from './utils/consent.js'
-import { getInitialLanguage, loadTranslations } from './data/translations'
+import { loadTranslations } from './data/translations'
+import { applyInitialLanguageRedirect } from './utils/i18nRouting.js'
 
 if (getConsent() === 'accepted') {
   loadAnalytics()
@@ -14,14 +14,12 @@ if (getConsent() === 'accepted') {
 
 // Load the visitor's language (es/en are separate chunks) before the first render to avoid
 // a flash of Catalan. If it fails (e.g. offline), render anyway: texts fall back to Catalan.
-loadTranslations(getInitialLanguage())
+loadTranslations(applyInitialLanguageRedirect())
   .catch(() => {})
   .finally(() => {
     createRoot(document.getElementById('root')).render(
       <StrictMode>
-        <LanguageProvider>
-          <App />
-        </LanguageProvider>
+        <App />
       </StrictMode>,
     )
   })

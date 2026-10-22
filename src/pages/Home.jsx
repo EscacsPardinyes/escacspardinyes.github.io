@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import { news } from '../data/news';
 import NewsCard from '../components/NewsCard';

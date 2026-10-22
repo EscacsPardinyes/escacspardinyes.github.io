@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { LANGUAGES, localizePath, withTrailingSlash } from '../utils/i18nRouting';
 
 /**
  * SEO Component to handle dynamic document title, meta tags, JSON-LD, and canonical links.
@@ -44,9 +45,12 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             return `${siteUrl}${path.startsWith('/') ? '' : '/'}${path}`;
         };
 
+        // Canonical page URL in a given language (always with trailing slash, see i18nRouting)
+        const pageUrl = (path, lang) => `${siteUrl}${withTrailingSlash(localizePath(path, lang))}`;
+
         const fullDefaultImage = getAbsoluteUrl(defaultImage);
         const fullImageUrl = image ? getAbsoluteUrl(image) : fullDefaultImage;
-        const currentUrl = `${siteUrl}${pathname}`;
+        const currentUrl = pageUrl(pathname, language);
 
         // Update HTML Lang attribute
         document.documentElement.lang = language || 'ca';
@@ -65,32 +69,18 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
         }
         canonicalLink.setAttribute('href', currentUrl);
 
-        // Update Hreflang Tags (Multilingual SEO)
-        const supportedLanguages = ['ca', 'es', 'en'];
-
-        supportedLanguages.forEach(lang => {
-            let link = document.querySelector(`link[hreflang="${lang}"]`);
+        // Update Hreflang Tags (Multilingual SEO): the same page at /, /es/ and /en/
+        // x-default points to the Catalan version (the default language)
+        [...LANGUAGES, 'x-default'].forEach(lang => {
+            let link = document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`);
             if (!link) {
                 link = document.createElement('link');
                 link.setAttribute('rel', 'alternate');
                 link.setAttribute('hreflang', lang);
                 document.head.appendChild(link);
             }
-            // Construct URL with lang parameter
-            const langUrl = new URL(siteUrl + pathname);
-            langUrl.searchParams.set('lang', lang);
-            link.setAttribute('href', langUrl.toString());
+            link.setAttribute('href', pageUrl(pathname, lang === 'x-default' ? 'ca' : lang));
         });
-
-        // Add x-default (usually points to the default language selector)
-        let xDefault = document.querySelector('link[hreflang="x-default"]');
-        if (!xDefault) {
-            xDefault = document.createElement('link');
-            xDefault.setAttribute('rel', 'alternate');
-            xDefault.setAttribute('hreflang', 'x-default');
-            document.head.appendChild(xDefault);
-        }
-        xDefault.setAttribute('href', currentUrl);
 
         // Resource Hints
         const hints = [
@@ -259,13 +249,13 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
                         "@type": "ListItem",
                         "position": 1,
                         "name": language === 'ca' ? 'Inici' : language === 'es' ? 'Inicio' : 'Home',
-                        "item": siteUrl
+                        "item": pageUrl('/', language)
                     },
                     ...breadcrumbs.map((crumb, index) => ({
                         "@type": "ListItem",
                         "position": index + 2,
                         "name": crumb.label,
-                        "item": crumb.path ? getAbsoluteUrl(crumb.path) : currentUrl
+                        "item": crumb.path ? pageUrl(crumb.path, language) : currentUrl
                     }))
                 ]
             };
@@ -301,8 +291,9 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
         if (articleSchema) schemasToInject.push(articleSchema);
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
         if (faqSchema) schemasToInject.push(faqSchema);
-        // NewsDetail passes only dates (no @type) to feed the article schema: don't inject it on its own
-        if (pageSchema && pageSchema["@type"] && pageSchema["@type"] !== 'NewsArticle') schemasToInject.push(pageSchema);
+        // NewsDetail passes only dates (no @type/@graph) to feed the article schema: don't inject it on its own
+        const isStandaloneSchema = pageSchema && (pageSchema["@graph"] || (pageSchema["@type"] && pageSchema["@type"] !== 'NewsArticle'));
+        if (isStandaloneSchema) schemasToInject.push(pageSchema);
 
         schemasToInject.forEach((s) => {
             const script = document.createElement('script');

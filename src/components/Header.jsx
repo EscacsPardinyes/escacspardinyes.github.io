@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { Link, NavLink } from './LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
+import { localizePath } from '../utils/i18nRouting';
+
+const LANGUAGE_OPTIONS = [
+    { code: 'ca', label: 'Català' },
+    { code: 'es', label: 'Español' },
+    { code: 'en', label: 'English' }
+];
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const { language, setLanguage, t } = useLanguage();
+    const { pathname } = useLocation();
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleLang = (e) => {
@@ -107,15 +116,19 @@ export default function Header() {
                                     backdropFilter: 'blur(10px)',
                                     marginTop: '10px'
                                  }}>
-                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('ca', e)}>
-                                    <img src="/img/flags/ca.svg" alt="Català" style={{ width: '20px', marginRight: '10px' }} /> Català
-                                </a>
-                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('es', e)}>
-                                    <img src="/img/flags/es.svg" alt="Español" style={{ width: '20px', marginRight: '10px' }} /> Español
-                                </a>
-                                <a href="#" className="dropdown-item lang-btn d-flex align-items-center" onClick={(e) => changeLanguage('en', e)}>
-                                    <img src="/img/flags/en.svg" alt="English" style={{ width: '20px', marginRight: '10px' }} /> English
-                                </a>
+                                {/* Real links to the same page in each language, so search engines find them */}
+                                {LANGUAGE_OPTIONS.map(({ code, label }) => (
+                                    <a
+                                        key={code}
+                                        href={localizePath(pathname, code)}
+                                        hrefLang={code}
+                                        lang={code}
+                                        className="dropdown-item lang-btn d-flex align-items-center"
+                                        onClick={(e) => changeLanguage(code, e)}
+                                    >
+                                        <img src={`/img/flags/${code}.svg`} alt={label} style={{ width: '20px', marginRight: '10px' }} /> {label}
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>

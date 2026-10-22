@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from './LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import { getConsent, setConsent, OPEN_COOKIE_SETTINGS_EVENT } from '../utils/consent';
 

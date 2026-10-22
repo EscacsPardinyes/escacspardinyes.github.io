@@ -1,5 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 

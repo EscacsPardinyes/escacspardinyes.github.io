@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function SearchModal() {
-    const { t, language } = useLanguage();
-    const navigate = useNavigate();
+    const { t, language, localize } = useLanguage();
+    const routerNavigate = useNavigate();
+    const navigate = (url) => routerNavigate(localize(url));
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);

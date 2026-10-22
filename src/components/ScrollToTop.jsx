@@ -6,11 +6,13 @@ import { useLocation } from "react-router-dom";
  * whenever the route path changes.
  */
 export default function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, state } = useLocation();
+  // Switching language changes the path but it's the same page: keep the scroll position
+  const keepScroll = state?.keepScroll;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (!keepScroll) window.scrollTo(0, 0);
+  }, [pathname, keepScroll]);
 
   return null;
 }

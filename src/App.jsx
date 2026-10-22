@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-ro
 import { lazy, Suspense, useEffect } from 'react';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import { LanguageProvider } from './context/LanguageContext';
 
 
 // Lazy load pages
@@ -62,15 +63,11 @@ function LegacyRedirect() {
   return null;
 }
 
-function App() {
+// Same pages for every language: Catalan at "/", Spanish at "/es", English at "/en"
+// (see src/utils/i18nRouting.js). Changing a path here changes it in all three languages.
+function pageRoutes() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <LegacyRedirect />
-      <Suspense fallback={<PageLoader />}>
-
-        <Routes>
-          <Route path="/" element={<Layout />}>
+    <>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="school" element={<School />} />
@@ -102,9 +99,24 @@ function App() {
             <Route path="noticies" element={<NewsList />} />
             <Route path="noticies/:id" element={<NewsDetail />} />
             <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </Suspense>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <LanguageProvider>
+        <ScrollToTop />
+        <LegacyRedirect />
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Layout />}>{pageRoutes()}</Route>
+            <Route path="/es" element={<Layout />}>{pageRoutes()}</Route>
+            <Route path="/en" element={<Layout />}>{pageRoutes()}</Route>
+          </Routes>
+        </Suspense>
+      </LanguageProvider>
     </BrowserRouter>
   );
 }

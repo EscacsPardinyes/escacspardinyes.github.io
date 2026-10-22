@@ -46,7 +46,22 @@ export default defineConfig({
       workbox: {
         // Precache only the app shell; gallery images (~48 MB) are cached on demand below
         globPatterns: ['**/*.{js,css,html,ico,svg}'],
+        // Every route has its own prerendered HTML (scripts/prerender.js): don't answer all
+        // navigations with index.html (the home page). Pages come from the network, with the
+        // last visited copy as offline fallback.
+        navigateFallback: null,
         runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'pages-cache',
+              networkTimeoutSeconds: 5,
+              expiration: {
+                maxEntries: 50
+              }
+            }
+          },
           {
             urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'image',
             handler: 'CacheFirst',

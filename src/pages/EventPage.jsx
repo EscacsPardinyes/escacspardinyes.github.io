@@ -4,7 +4,7 @@ import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
 import Collaborators from '../components/Collaborators';
 import { eventsConfig } from '../data/eventsConfig';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from '../components/LocalizedLink';
 import SEO from '../components/SEO';
 
 export default function EventPage({ id }) {

@@ -83,7 +83,7 @@ function updateReferencesInSource(oldFilePath, newFilePath) {
                 fs.writeFileSync(srcFile, content, 'utf8');
                 updatedFilesCount++;
             }
-        } catch (e) {
+        } catch {
             // Ignorar arxius que no es puguin llegir bé
         }
     }

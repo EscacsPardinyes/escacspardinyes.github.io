@@ -1,4 +1,5 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useEffect, useState, useMemo } from 'react';
 import { news } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
@@ -8,7 +9,7 @@ import SEO from '../components/SEO';
 
 export default function NewsDetail() {
     const { id } = useParams();
-    const { language, t } = useLanguage();
+    const { language, t, localize } = useLanguage();
     const navigate = useNavigate();
     const [isImageModalOpen, setIsImageModalOpen] = useState(false);
     const [modalImageIndex, setModalImageIndex] = useState(0);
@@ -57,10 +58,10 @@ export default function NewsDetail() {
 
     useEffect(() => {
         if (!item) {
-            navigate('/noticies');
+            navigate(localize('/noticies'));
         }
         window.scrollTo(0, 0);
-    }, [id, item, navigate]);
+    }, [id, item, navigate, localize]);
 
     // Open the image modal when clicking an image inside the article content (event delegation)
     const handleContentClick = (e) => {

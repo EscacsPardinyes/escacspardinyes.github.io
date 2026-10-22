@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import Accordion from '../components/Accordion';
 import PageHeader from '../components/PageHeader';

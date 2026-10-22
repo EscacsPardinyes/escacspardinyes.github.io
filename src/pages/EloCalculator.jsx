@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import SEO from '../components/SEO';
 

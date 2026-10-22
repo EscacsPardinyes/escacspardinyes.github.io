@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import SchoolForm from '../components/SchoolForm';
 import PageHeader from '../components/PageHeader';
