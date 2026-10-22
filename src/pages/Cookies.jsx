@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import SEO from '../components/SEO';
+import { openCookieSettings } from '../utils/consent';
 
 export default function Cookies() {
     const { t, tHtml } = useLanguage();
@@ -42,6 +43,11 @@ export default function Cookies() {
 
                 <h2 style={{ fontSize: '1.5em', color: '#111111', marginTop: '20px', borderBottom: '2px solid #E31C25', paddingBottom: '5px' }}>{t('cookies.manage_title')}</h2>
                 <p>{t('cookies.manage_text')}</p>
+                <p>
+                    <button type="button" className="btn btn-primary" onClick={openCookieSettings}>
+                        {t('cookie.banner.settings')}
+                    </button>
+                </p>
 
                 <h2 style={{ fontSize: '1.5em', color: '#111111', marginTop: '20px', borderBottom: '2px solid #E31C25', paddingBottom: '5px' }}>{t('cookies.browser_title')}</h2>
                 <ul style={{ paddingLeft: '20px', margin: '10px 0' }}>

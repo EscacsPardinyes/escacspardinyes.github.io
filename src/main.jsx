@@ -5,6 +5,11 @@ import App from './App.jsx'
 import './index.css'
 import './assets/style.min.css'
 import { LanguageProvider } from './context/LanguageContext.jsx'
+import { getConsent, loadAnalytics } from './utils/consent.js'
+
+if (getConsent() === 'accepted') {
+  loadAnalytics()
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
