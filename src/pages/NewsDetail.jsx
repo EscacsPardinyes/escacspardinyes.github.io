@@ -32,7 +32,7 @@ export default function NewsDetail() {
             .slice(0, 3);
     }, [id, item]);
 
-    const allImages = item ? [item.image, ...(item.gallery || [])] : [];
+    const allImages = useMemo(() => (item ? [item.image, ...(item.gallery || [])] : []), [item]);
 
     const handlePrev = (e) => {
         if (e) e.stopPropagation();
@@ -60,28 +60,15 @@ export default function NewsDetail() {
             navigate('/noticies');
         }
         window.scrollTo(0, 0);
+    }, [id, item, navigate]);
 
-        // Add click listeners to images in content
-        const contentBody = document.querySelector('.news-content-body');
-        if (contentBody) {
-            const imgs = contentBody.querySelectorAll('img');
-            imgs.forEach(img => {
-                img.style.cursor = 'zoom-in';
-                img.addEventListener('click', () => {
-                    const src = img.getAttribute('src');
-                    const galleryIndex = allImages.indexOf(src);
-                    if (galleryIndex !== -1) {
-                        setModalImageIndex(galleryIndex);
-                    } else {
-                        // If not in gallery, we could add it or just show it
-                        // For simplicity, we'll try to find it in allImages
-                        setModalImageIndex(0); // Fallback
-                    }
-                    setIsImageModalOpen(true);
-                });
-            });
-        }
-    }, [id, item, navigate, allImages]);
+    // Open the image modal when clicking an image inside the article content (event delegation)
+    const handleContentClick = (e) => {
+        if (e.target.tagName !== 'IMG') return;
+        const galleryIndex = allImages.indexOf(e.target.getAttribute('src'));
+        setModalImageIndex(galleryIndex !== -1 ? galleryIndex : 0);
+        setIsImageModalOpen(true);
+    };
 
     if (!item) return null;
 
@@ -162,8 +149,9 @@ export default function NewsDetail() {
                             style={{ 
                                 fontSize: '1.15rem', 
                                 lineHeight: '1.8', 
-                                color: '#333' 
-                            }} 
+                                color: '#333'
+                            }}
+                            onClick={handleContentClick}
                             dangerouslySetInnerHTML={{ __html: item.content[language].replace(/\n/g, '<br />') }}
                         />
 
@@ -336,6 +324,7 @@ export default function NewsDetail() {
                     border-radius: 12px;
                     margin: 2rem 0;
                     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                    cursor: zoom-in;
                 }
                 .btn-social-icon {
                     width: 45px;
