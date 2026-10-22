@@ -19,7 +19,7 @@ export default function Contact() {
                     <p className="lead text-muted mx-auto" style={{ maxWidth: '600px' }}>Estem aquí per ajudar-te. Contacta amb nosaltres per qualsevol dubte o per venir a provar un dia.</p>
                 </div>
 
-                <div className="row g-4 mb-5">
+                <div className="row mb-5">
                     <div className="col-md-4">
                         <div className="glass-card p-5 h-100 text-center transition-base hover-up" style={{ borderRadius: '32px' }}>
                             <div className="icon-box mb-4 mx-auto bg-primary-light rounded-circle d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px' }}>
@@ -52,7 +52,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="row g-5 align-items-stretch">
+                <div className="row align-items-stretch">
                     <div className="col-lg-6">
                         <div className="h-100 shadow-lg overflow-hidden" style={{ borderRadius: '32px', border: '1px solid rgba(0,0,0,0.05)' }}>
                             <iframe

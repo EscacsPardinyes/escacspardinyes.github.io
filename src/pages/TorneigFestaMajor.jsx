@@ -112,7 +112,7 @@ export default function TorneigFestaMajor() {
                     <p className="text-muted">{t('festamajor.gallery_desc')}</p>
                 </div>
                 
-                <div className="row g-3 px-2">
+                <div className="row px-2">
                     {galleryImages.map((src, idx) => (
                         <div key={idx} className="col-6 col-md-4 col-lg-3 mb-3">
                             <div 

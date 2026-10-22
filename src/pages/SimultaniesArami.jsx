@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useLocation } from 'react-router-dom';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
 import Collaborators from '../components/Collaborators';

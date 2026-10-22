@@ -6,16 +6,22 @@ import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
 import ScheduleTable from '../components/ScheduleTable';
 
+const SLIDE_COUNT = 3;
+
 export default function Home() {
     const { t, language } = useLanguage();
     const [activeTab, setActiveTab] = useState('all');
 
+    // Hero carousel (no Bootstrap JS): auto-advance every 5s, paused on hover/focus
+    const [slide, setSlide] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const goTo = (i) => setSlide((i + SLIDE_COUNT) % SLIDE_COUNT);
+
     useEffect(() => {
-        // Initialize carousel if jQuery and Bootstrap are available
-        if (window.$ && window.$.fn.carousel) {
-            window.$('#blog-carousel').carousel();
-        }
-    }, []);
+        if (paused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        const timer = setTimeout(() => setSlide((s) => (s + 1) % SLIDE_COUNT), 5000);
+        return () => clearTimeout(timer);
+    }, [slide, paused]);
 
     const upcomingEventsSchema = {
         "@context": "https://schema.org",
@@ -75,9 +81,17 @@ export default function Home() {
             />
             {/* Carousel Start */}
             <div className="container-fluid p-0">
-                <div id="blog-carousel" className="carousel slide" data-ride="carousel">
+                <div
+                    id="blog-carousel"
+                    className="carousel slide"
+                    aria-roledescription="carousel"
+                    onMouseEnter={() => setPaused(true)}
+                    onMouseLeave={() => setPaused(false)}
+                    onFocus={() => setPaused(true)}
+                    onBlur={() => setPaused(false)}
+                >
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
+                        <div className={`carousel-item ${slide === 0 ? 'active' : ''}`}>
                             <img className="w-100" src="/img/galeria/Carousel/carousel-1.webp" alt="Alumnes del Club Escacs Pardinyes jugant una partida" width="1920" height="1080" fetchPriority="high" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
@@ -85,7 +99,7 @@ export default function Home() {
                                 <Link to="/contact" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide1.btn')}</Link>
                             </div>
                         </div>
-                        <div className="carousel-item">
+                        <div className={`carousel-item ${slide === 1 ? 'active' : ''}`}>
                             <img className="w-100" src="/img/galeria/Carousel/carousel-3.webp" alt="Competició d'escacs organitzada pel club" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
@@ -93,7 +107,7 @@ export default function Home() {
                                 <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide3.btn')}</a>
                             </div>
                         </div>
-                        <div className="carousel-item">
+                        <div className={`carousel-item ${slide === 2 ? 'active' : ''}`}>
                             <img className="w-100" src="/img/galeria/Minicopa2026/Fotogrup.webp" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
@@ -102,12 +116,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <a className="carousel-control-prev" href="#blog-carousel" data-slide="prev" aria-label="Previous slide">
+                    <button type="button" className="carousel-control-prev" onClick={() => goTo(slide - 1)} aria-label="Previous slide">
                         <span className="carousel-control-prev-icon"></span>
-                    </a>
-                    <a className="carousel-control-next" href="#blog-carousel" data-slide="next" aria-label="Next slide">
+                    </button>
+                    <button type="button" className="carousel-control-next" onClick={() => goTo(slide + 1)} aria-label="Next slide">
                         <span className="carousel-control-next-icon"></span>
-                    </a>
+                    </button>
                 </div>
             </div>
             {/* Carousel End */}
@@ -174,7 +188,7 @@ export default function Home() {
                     <p className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px', fontSize: '0.9rem' }}>{language === 'ca' ? 'Actualitat' : language === 'es' ? 'Actualidad' : 'Latest News'}</p>
                     <h2 className="display-4 font-weight-bold">{language === 'ca' ? 'Últimes Notícies' : language === 'es' ? 'Últimas Noticias' : 'Recent Updates'}</h2>
                 </div>
-                <div className="row g-4">
+                <div className="row">
                     {[...news].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map(item => (
                         <NewsCard key={item.id} item={item} />
                     ))}

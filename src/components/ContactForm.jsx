@@ -58,7 +58,7 @@ export default function ContactForm() {
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_autoresponse" value="Hem rebut el teu missatge correctament. Ens posarem en contacte amb tu ben aviat." />
 
-                <div className="row g-3">
+                <div className="row">
                     <div className="col-md-6 mb-3">
                         <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.name')}</label>
                         <input type="text" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="name" placeholder={t('contact.form.name')} required style={{ height: '55px' }} />
@@ -68,7 +68,7 @@ export default function ContactForm() {
                         <input type="email" className="form-control border-0 bg-light p-3 rounded-xl shadow-none" name="email" placeholder={t('contact.form.email')} required style={{ height: '55px' }} />
                     </div>
                 </div>
-                <div className="row g-3">
+                <div className="row">
                     <div className="col-md-6 mb-3">
                         <label className="small font-weight-bold text-muted text-uppercase mb-2">{t('contact.form.phone')}</label>
                         <input 

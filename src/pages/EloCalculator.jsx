@@ -99,16 +99,16 @@ export default function EloCalculator() {
                 <div className="row justify-content-center">
                     <div className="col-lg-7 mb-5">
                         <div className="glass-card p-4 p-md-5" style={{ borderRadius: '32px' }}>
-                            <div className="row g-4 mb-4">
+                            <div className="row mb-4">
                                 <div className="col-md-6">
-                                    <label htmlFor="playerElo" className="form-label font-weight-bold text-uppercase small letter-spacing-1">{t('elo.initial_elo')}</label>
+                                    <label htmlFor="playerElo" className="font-weight-bold text-uppercase small letter-spacing-1">{t('elo.initial_elo')}</label>
                                     <div className="input-group">
                                         <span className="input-group-text bg-white border-right-0"><i className="fas fa-user text-primary"></i></span>
                                         <input type="number" id="playerElo" className="form-control border-left-0 shadow-none" placeholder="Ex: 1800" value={playerElo} onChange={(e) => setPlayerElo(e.target.value)} style={{ height: '50px' }} />
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="kFactor" className="form-label font-weight-bold text-uppercase small letter-spacing-1">{t('elo.k_factor')}</label>
+                                    <label htmlFor="kFactor" className="font-weight-bold text-uppercase small letter-spacing-1">{t('elo.k_factor')}</label>
                                     <div className="input-group">
                                         <span className="input-group-text bg-white border-right-0"><i className="fas fa-bolt text-primary"></i></span>
                                         <select id="kFactor" className="form-control border-left-0 shadow-none" value={kFactor} onChange={(e) => setKFactor(e.target.value)} style={{ height: '50px' }}>
@@ -125,13 +125,13 @@ export default function EloCalculator() {
                                     <span className="badge bg-primary text-dark mr-2 rounded-circle d-flex align-items-center justify-content-center" style={{ width: '24px', height: '24px' }}>1</span>
                                     Ronda inicial
                                 </h5>
-                                <div className="row g-3">
+                                <div className="row">
                                     <div className="col-md-7">
-                                        <label htmlFor="opponentElo" className="form-label small text-muted">{t('elo.opponent_elo')}</label>
+                                        <label htmlFor="opponentElo" className="small text-muted">{t('elo.opponent_elo')}</label>
                                         <input type="number" id="opponentElo" name="opponentElo" className="form-control" placeholder="Elo rival" value={opponentElo} onChange={(e) => setOpponentElo(e.target.value)} />
                                     </div>
                                     <div className="col-md-5">
-                                        <label htmlFor="result" className="form-label small text-muted">{t('elo.result')}</label>
+                                        <label htmlFor="result" className="small text-muted">{t('elo.result')}</label>
                                         <select id="result" name="result" className="form-control" value={result} onChange={(e) => setResult(e.target.value)}>
                                             <option value="1">{t('elo.win')} (1)</option>
                                             <option value="0.5">{t('elo.draw')} (½)</option>
@@ -157,13 +157,13 @@ export default function EloCalculator() {
                                             <span className="badge bg-dark text-white mr-2 rounded-circle d-flex align-items-center justify-content-center" style={{ width: '24px', height: '24px' }}>{index + 2}</span>
                                             Ronda {index + 2}
                                         </h5>
-                                        <div className="row g-3">
+                                        <div className="row">
                                             <div className="col-md-7">
-                                                <label htmlFor={`opponentElo-${index}`} className="form-label small text-muted">{t('elo.opponent_elo')}</label>
+                                                <label htmlFor={`opponentElo-${index}`} className="small text-muted">{t('elo.opponent_elo')}</label>
                                                 <input type="number" id={`opponentElo-${index}`} name={`opponentElo-${index}`} className="form-control" placeholder="Elo rival" value={rival.opponentElo} onChange={(e) => updateRivalElo(index, e.target.value)} />
                                             </div>
                                             <div className="col-md-5">
-                                                <label htmlFor={`result-${index}`} className="form-label small text-muted">{t('elo.result')}</label>
+                                                <label htmlFor={`result-${index}`} className="small text-muted">{t('elo.result')}</label>
                                                 <select id={`result-${index}`} name={`result-${index}`} className="form-control" value={rival.result} onChange={(e) => updateRivalResult(index, e.target.value)}>
                                                     <option value="1">{t('elo.win')} (1)</option>
                                                     <option value="0.5">{t('elo.draw')} (½)</option>

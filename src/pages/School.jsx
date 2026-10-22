@@ -37,7 +37,7 @@ export default function School() {
                     <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }} dangerouslySetInnerHTML={tHtml('school.subtitle')}></p>
                 </div>
 
-                <div className="row g-5">
+                <div className="row">
                     {/* LEFT COLUMN: Info & Schedule */}
                     <div className="col-lg-7">
                         

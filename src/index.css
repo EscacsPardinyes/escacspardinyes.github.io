@@ -235,6 +235,42 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem !important;
 }
 
+/* Home carousel is driven by React (no Bootstrap JS): slides stacked, crossfade on .active */
+#blog-carousel .carousel-item {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+#blog-carousel .carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+#blog-carousel .carousel-control-prev,
+#blog-carousel .carousel-control-next {
+    background: none;
+    border: 0;
+    z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #blog-carousel .carousel-item {
+        transition: none;
+    }
+}
+
+/* Bootstrap 5 "gap" utilities used in a few pages (the site's CSS is Bootstrap 4, which lacks them) */
+.gap-2 { gap: 0.5rem !important; }
+.gap-3 { gap: 1rem !important; }
+.gap-4 { gap: 1.5rem !important; }
+
 @media (max-width: 768px) {
     #blog-carousel, .carousel-inner, .carousel-item {
         height: 80vh;

@@ -1,16 +1,25 @@
-# React + Vite
+# Club Escacs Pardinyes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web del Club Escacs Pardinyes (Lleida): https://escacspardinyes.com
 
-Currently, two official plugins are available:
+React + Vite, publicada a GitHub Pages amb GitHub Actions (`.github/workflows/deploy.yml`) a cada push a `main`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Comandes
 
-## React Compiler
+```bash
+npm install
+npm run dev       # servidor de desenvolupament (http://localhost:3001)
+npm run build     # build a dist/ + postbuild (sitemap i HTML per ruta per a SEO)
+npm run preview   # serveix dist/ en local
+npm run lint
+npm run optimize  # optimitza imatges (scripts/optimize-images.js)
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## On és cada cosa
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/pages/` — una pàgina per ruta (rutes a `src/App.jsx`).
+- `src/data/news.js` — notícies.
+- `src/data/eventsConfig.js`, `src/data/masterclassConfig.js` — esdeveniments i masterclasses.
+- `src/data/translations/` — textos en `ca.js`, `es.js` i `en.js`. El català és l'idioma per defecte i el que s'usa si falta una traducció.
+- `scripts/postbuild.js` — genera `sitemap.xml` i un `index.html` amb meta tags per a cada ruta. Una ruta nova s'ha d'afegir també a la llista `staticPages` d'aquest fitxer.
+- `src/utils/consent.js` — consentiment de cookies; Metricool només es carrega si s'accepta.
