@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import { news } from '../src/data/news.js';
 import { masterclassConfig } from '../src/data/masterclassConfig.js';
 import { eventsConfig } from '../src/data/eventsConfig.js';
-import { translations } from '../src/data/translations.js';
+import ca from '../src/data/translations/ca.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,7 +16,7 @@ const DEFAULT_IMAGE = '/img/galeria/logos/logo.webp';
 
 // Helper: Catalan translation (same fallback as LanguageContext: returns the key if missing)
 function t(key) {
-    const value = translations.ca[key];
+    const value = ca[key];
     if (!value) console.warn(`  Traduccio no trobada: ${key}`);
     return value || key;
 }

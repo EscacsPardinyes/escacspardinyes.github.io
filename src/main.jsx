@@ -6,18 +6,25 @@ import './index.css'
 import './assets/style.min.css'
 import { LanguageProvider } from './context/LanguageContext.jsx'
 import { getConsent, loadAnalytics } from './utils/consent.js'
+import { getInitialLanguage, loadTranslations } from './data/translations'
 
 if (getConsent() === 'accepted') {
   loadAnalytics()
 }
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <LanguageProvider>
-      <App />
-    </LanguageProvider>
-  </StrictMode>,
-)
+// Load the visitor's language (es/en are separate chunks) before the first render to avoid
+// a flash of Catalan. If it fails (e.g. offline), render anyway: texts fall back to Catalan.
+loadTranslations(getInitialLanguage())
+  .catch(() => {})
+  .finally(() => {
+    createRoot(document.getElementById('root')).render(
+      <StrictMode>
+        <LanguageProvider>
+          <App />
+        </LanguageProvider>
+      </StrictMode>,
+    )
+  })
 
 import { registerSW } from 'virtual:pwa-register'
 

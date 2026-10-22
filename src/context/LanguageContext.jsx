@@ -1,27 +1,25 @@
-import { createContext, useState, useContext, useEffect } from 'react';
-import { translations } from '../data/translations';
+import { createContext, useState, useContext, useEffect, useCallback } from 'react';
+import { getTranslations, loadTranslations, getInitialLanguage, SUPPORTED_LANGUAGES } from '../data/translations';
 
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-    const [language, setLanguage] = useState(() => {
-        // 1. Check URL query parameter first (for SEO and deep links)
-        const params = new URLSearchParams(window.location.search);
-        const langParam = params.get('lang');
-        if (langParam && translations[langParam]) {
-            return langParam;
-        }
-        // 2. Check localStorage
-        const savedLang = localStorage.getItem('language');
-        if (savedLang && translations[savedLang]) {
-            return savedLang;
-        }
-        // 3. Default to Catalan
-        return 'ca';
-    });
+    // main.jsx loads the initial language before the first render
+    const [language, setCurrentLanguage] = useState(getInitialLanguage);
+
+    // Switch only once the language file is downloaded, so the page never shows missing texts
+    const setLanguage = useCallback(async (lang) => {
+        if (!SUPPORTED_LANGUAGES.includes(lang)) return;
+        await loadTranslations(lang);
+        setCurrentLanguage(lang);
+    }, []);
 
     useEffect(() => {
-        localStorage.setItem('language', language);
+        try {
+            localStorage.setItem('language', language);
+        } catch {
+            // Storage unavailable
+        }
         document.documentElement.lang = language;
 
         // Update URL query parameter without reloading if it's different
@@ -35,12 +33,14 @@ export function LanguageProvider({ children }) {
 
     const t = (key) => {
         // Check if translation exists for the current language
-        if (translations[language] && translations[language][key]) {
-            return translations[language][key];
+        const current = getTranslations(language);
+        if (current && current[key]) {
+            return current[key];
         }
         // Fallback to Catalan if not found
-        if (translations['ca'] && translations['ca'][key]) {
-            return translations['ca'][key];
+        const ca = getTranslations('ca');
+        if (ca[key]) {
+            return ca[key];
         }
         // Return key if nothing found
         return key;

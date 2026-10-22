@@ -26,7 +26,6 @@ export const masterclassConfig = {
         speakerKey: "masterclass.tacticacruz.speaker",
         achievementsKey: "masterclass.tacticacruz.achievements",
         priceKey: "masterclass.tacticacruz.price",
-        registrationIframe: "https://docs.google.com/forms/d/e/1FAIpQLSdwdVPKZm36NBYtn9xtiVTpTQAflzyOyNi2gsLzbCoPbYXvZA/viewform?embedded=true",
         isFree: true,
         paragraphs: [
             "masterclass.tacticacruz.p1",
