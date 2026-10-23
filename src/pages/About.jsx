@@ -9,7 +9,7 @@ export default function About() {
 
     return (
         <>
-            <SEO title={t('nav.about')} description={t('seo.about_description')} />
+            <SEO title={t('seo.about_title')} description={t('seo.about_description')} />
             <PageHeader title={t('about.header')} breadcrumbs={breadcrumbs} />
 
             {/* Sobre el Club Escacs Pardinyes Start */}

@@ -81,6 +81,10 @@ export default function SchoolForm() {
                         <label className="custom-control-label" htmlFor="schedule1">{t('school.form.schedule_option_1')}</label>
                     </div>
                     <div className="custom-control custom-radio mb-2">
+                        <input type="radio" id="schedule6" name="schedule" className="custom-control-input" value={t('school.form.schedule_option_6')} />
+                        <label className="custom-control-label" htmlFor="schedule6">{t('school.form.schedule_option_6')}</label>
+                    </div>
+                    <div className="custom-control custom-radio mb-2">
                         <input type="radio" id="schedule2" name="schedule" className="custom-control-input" value={t('school.form.schedule_option_2')} />
                         <label className="custom-control-label" htmlFor="schedule2">{t('school.form.schedule_option_2')}</label>
                     </div>

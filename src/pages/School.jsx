@@ -28,13 +28,15 @@ export default function School() {
 
     return (
         <>
-            <SEO title={t('nav.school')} description={t('seo.school_description')} faq={seoFaq} />
+            <SEO title={t('seo.school_title')} description={t('seo.school_description')} faq={seoFaq} />
             <PageHeader title={t('nav.school')} breadcrumbs={breadcrumbs} />
 
             <div className="container py-5" style={{ marginTop: '20px' }}>
                 <div className="text-center mb-5">
                     <h2 className="display-4 font-weight-bold mb-3">{t('school.title')}</h2>
                     <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }} dangerouslySetInnerHTML={tHtml('school.subtitle')}></p>
+                    <Link to="/classes-escacs-adults-lleida" className="btn btn-outline-primary mr-sm-2 mb-2">{t('nav.adults')}</Link>
+                    <Link to="/on-jugar-escacs-lleida" className="btn btn-outline-primary mb-2">{t('nav.where')}</Link>
                 </div>
 
                 <div className="row">
@@ -94,7 +96,7 @@ export default function School() {
                                         <button className={`nav-link px-3 py-2 font-weight-bold ${activeTab === 'games' ? 'active' : ''}`} onClick={() => setActiveTab('games')}>{t('schedule.tab.games')}</button>
                                     </li>
                                 </ul>
-                                <div className="tab-content shadow-sm rounded overflow-hidden bg-white">
+                                <div className="tab-content">
                                     <ScheduleTable activeTab={activeTab} />
                                 </div>
                             </div>

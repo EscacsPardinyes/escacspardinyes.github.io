@@ -10,7 +10,7 @@ export default function Federat() {
 
     return (
         <>
-            <SEO title={t('nav.federated')} description={t('seo.federated_description')} />
+            <SEO title={t('seo.federated_title')} description={t('seo.federated_description')} />
             <PageHeader title={t('federated.header')} breadcrumbs={breadcrumbs} />
 
             {/* Com federar-me */}
@@ -57,6 +57,7 @@ export default function Federat() {
 
                         <ul>
                             <li dangerouslySetInnerHTML={tHtml('federated.fee_16_plus')}></li>
+                            <li dangerouslySetInnerHTML={tHtml('federated.fee_16_20')}></li>
                             <li dangerouslySetInnerHTML={tHtml('federated.fee_65_plus')}></li>
                             <li dangerouslySetInnerHTML={tHtml('federated.fee_disabled')}></li>
                             <li dangerouslySetInnerHTML={tHtml('federated.fee_disabled_65')}></li>

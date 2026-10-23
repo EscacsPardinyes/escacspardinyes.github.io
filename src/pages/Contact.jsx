@@ -9,7 +9,7 @@ export default function Contact() {
 
     return (
         <>
-            <SEO title={t('contact.header')} description={t('seo.contact_description')} />
+            <SEO title={t('seo.contact_title')} description={t('seo.contact_description')} />
             <PageHeader title={t('contact.header')} breadcrumbs={breadcrumbs} />
 
             <div className="container section-padding">

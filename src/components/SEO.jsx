@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { LANGUAGES, localizePath, withTrailingSlash } from '../utils/i18nRouting';
+import { openingHours } from '../data/schedule';
 
 /**
  * SEO Component to handle dynamic document title, meta tags, JSON-LD, and canonical links.
@@ -164,6 +165,12 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             "@type": "SportsClub",
             "@id": `${siteUrl}/#organization`,
             "name": "Club Escacs Pardinyes",
+            "alternateName": ["CE Pardinyes", "Club d'Escacs Pardinyes", "Club de Ajedrez Pardinyes"],
+            "sport": "Chess",
+            "areaServed": [
+                { "@type": "City", "name": "Lleida" },
+                { "@type": "AdministrativeArea", "name": "Segrià" }
+            ],
             "url": siteUrl,
             "logo": fullDefaultImage,
             "image": fullDefaultImage,
@@ -184,26 +191,8 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             "telephone": "+34641915266",
             "email": "escacspardinyes@gmail.com",
             "priceRange": "$",
-            "openingHoursSpecification": [
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Tuesday",
-                    "opens": "18:30",
-                    "closes": "19:30"
-                },
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Wednesday",
-                    "opens": "18:30",
-                    "closes": "20:30"
-                },
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Thursday",
-                    "opens": "19:45",
-                    "closes": "21:15"
-                }
-            ],
+            // Derived from the timetable shown on the site, so they can't drift apart
+            "openingHoursSpecification": openingHours,
             "sameAs": [
                 "https://www.facebook.com/escacspardinyes",
                 "https://www.instagram.com/escacspardinyes",

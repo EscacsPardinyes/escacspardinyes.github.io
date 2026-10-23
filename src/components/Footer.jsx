@@ -33,6 +33,13 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
+                    <div className="col-lg-4 col-md-6 mb-5">
+                        <h4 className="text-primary mb-4 text-uppercase" style={{ letterSpacing: '2px' }}>{t('nav.school')}</h4>
+                        <p className="mb-2"><Link className="text-white" to="/school">{t('seo.school_title')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/classes-escacs-adults-lleida">{t('seo.adults_title')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/on-jugar-escacs-lleida">{t('nav.where')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/federat">{t('seo.federated_title')}</Link></p>
+                    </div>
                 </div>
             </div>
             <div className="container copyright-section text-center border-0">

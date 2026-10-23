@@ -20,7 +20,9 @@ export default {
           /dropdown-item/,
           /carousel-item/,
           // icons.css only holds icons found in the source (some built with template literals)
-          /^fa/
+          /^fa/,
+          // ScheduleTable.jsx builds schedule-event-<type> with a template literal
+          /^schedule-event-/
         ],
         deep: [
           /^modal/,

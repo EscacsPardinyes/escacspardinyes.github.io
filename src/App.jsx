@@ -9,6 +9,8 @@ import { LanguageProvider } from './context/LanguageContext';
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const School = lazy(() => import('./pages/School'));
+const AdultClasses = lazy(() => import('./pages/AdultClasses'));
+const WhereToPlay = lazy(() => import('./pages/WhereToPlay'));
 const MasterclassList = lazy(() => import('./pages/MasterclassList'));
 const MasterclassPage = lazy(() => import('./pages/MasterclassPage'));
 const Feature = lazy(() => import('./pages/Feature'));
@@ -71,6 +73,8 @@ function pageRoutes() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="school" element={<School />} />
+            <Route path="classes-escacs-adults-lleida" element={<AdultClasses />} />
+            <Route path="on-jugar-escacs-lleida" element={<WhereToPlay />} />
             <Route path="masterclass" element={<MasterclassList />} />
             <Route path="masterclass/india-de-rey" element={<MasterclassPage id="india-de-rey" />} />
             <Route path="masterclass/tactica-cruz" element={<MasterclassPage id="tactica-cruz" />} />

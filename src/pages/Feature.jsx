@@ -8,7 +8,7 @@ export default function Feature() {
 
     return (
         <>
-            <SEO title={t('features.page.header')} description={t('seo.feature_description')} />
+            <SEO title={t('seo.feature_title')} description={t('seo.feature_description')} />
             <PageHeader title={t('features.page.header')} breadcrumbs={breadcrumbs} />
 
             {/* Què Oferim del Club Start */}

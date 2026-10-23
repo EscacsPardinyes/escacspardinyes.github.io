@@ -68,10 +68,12 @@ function toDate(dateStr) {
 // sitemap: false = not listed.
 const staticPages = [
     { path: '/',                              changefreq: 'weekly',  priority: '1.0', title: k('seo.home_title'),           desc: k('seo.default_description') },
-    { path: '/about',                         changefreq: 'monthly', priority: '0.8', title: k('nav.about'),                desc: k('seo.about_description') },
-    { path: '/school',                        changefreq: 'monthly', priority: '0.8', title: k('nav.school'),               desc: k('seo.school_description') },
-    { path: '/federat',                       changefreq: 'monthly', priority: '0.8', title: k('nav.federated'),            desc: k('seo.federated_description') },
-    { path: '/contact',                       changefreq: 'monthly', priority: '0.8', title: k('contact.header'),           desc: k('seo.contact_description') },
+    { path: '/about',                         changefreq: 'monthly', priority: '0.8', title: k('seo.about_title'),          desc: k('seo.about_description') },
+    { path: '/school',                        changefreq: 'monthly', priority: '0.8', title: k('seo.school_title'),         desc: k('seo.school_description') },
+    { path: '/classes-escacs-adults-lleida',  changefreq: 'monthly', priority: '0.8', title: k('seo.adults_title'),         desc: k('seo.adults_description') },
+    { path: '/on-jugar-escacs-lleida',        changefreq: 'monthly', priority: '0.8', title: k('seo.where_title'),          desc: k('seo.where_description') },
+    { path: '/federat',                     changefreq: 'monthly', priority: '0.8', title: k('seo.federated_title'),      desc: k('seo.federated_description') },
+    { path: '/contact',                       changefreq: 'monthly', priority: '0.8', title: k('seo.contact_title'),        desc: k('seo.contact_description') },
     { path: '/noticies',                      changefreq: 'daily',   priority: '0.9', title: k('news.header'),              desc: k('news.subtitle') },
     { path: '/masterclass',                   changefreq: 'monthly', priority: '0.8', title: k('masterclass.list_header'),  desc: k('seo.masterclass_description') },
     { path: '/simultanies',                   changefreq: 'monthly', priority: '0.7', title: k('simultanies.list_header'),  desc: k('seo.list_description') },
@@ -88,7 +90,7 @@ const staticPages = [
     { path: '/torneig-bordeta',               changefreq: 'yearly',  priority: '0.5', title: k('bordeta.breadcrumb'),       desc: k('bordeta.intro_text') },
     { path: '/simultanies-arami2026',         changefreq: 'yearly',  priority: '0.5', title: k('nav.arami_short'),          desc: k('arami.p1'), image: '/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp' },
     // Secondary pages (served with 200, not listed in the sitemap)
-    { path: '/feature',  sitemap: false, title: k('features.page.header'), desc: k('seo.feature_description') },
+    { path: '/feature',  sitemap: false, title: k('seo.feature_title'),    desc: k('seo.feature_description') },
     { path: '/privacy',  sitemap: false, title: k('privacy.header'),       desc: k('seo.privacy_description') },
     { path: '/cookies',  sitemap: false, title: k('cookies.header'),       desc: k('seo.cookies_description') },
     { path: '/enquesta', sitemap: false, title: k('enquesta.title'),       desc: k('enquesta.subtitle') },
