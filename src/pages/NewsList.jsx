@@ -21,6 +21,7 @@ export default function NewsList() {
         { id: 'simultanies', icon: 'fa-chess-board' },
         { id: 'torneig', icon: 'fa-trophy' },
         { id: 'prensa', icon: 'fa-newspaper' },
+        { id: 'guia', icon: 'fa-book-open' },
         { id: 'altres', icon: 'fa-star' }
     ];
 

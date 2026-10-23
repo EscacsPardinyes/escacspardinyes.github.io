@@ -62,6 +62,7 @@ export default function SearchModal() {
         { title: t('nav.federated'), url: '/federat', type: 'page', icon: 'fa-chess-king' },
         { title: t('nav.adults'), url: '/classes-escacs-adults-lleida', type: 'page', icon: 'fa-chess-knight' },
         { title: t('nav.where'), url: '/on-jugar-escacs-lleida', type: 'page', icon: 'fa-chess-board' },
+        { title: t('nav.schools'), url: '/extraescolars-escacs-escoles', type: 'page', icon: 'fa-school' },
         { title: t('nav.tancats'), url: '/tancats', type: 'page', icon: 'fa-trophy' },
         { title: t('nav.contact'), url: '/contact', type: 'page', icon: 'fa-envelope' },
     ];

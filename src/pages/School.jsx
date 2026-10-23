@@ -36,7 +36,8 @@ export default function School() {
                     <h2 className="display-4 font-weight-bold mb-3">{t('school.title')}</h2>
                     <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }} dangerouslySetInnerHTML={tHtml('school.subtitle')}></p>
                     <Link to="/classes-escacs-adults-lleida" className="btn btn-outline-primary mr-sm-2 mb-2">{t('nav.adults')}</Link>
-                    <Link to="/on-jugar-escacs-lleida" className="btn btn-outline-primary mb-2">{t('nav.where')}</Link>
+                    <Link to="/on-jugar-escacs-lleida" className="btn btn-outline-primary mr-sm-2 mb-2">{t('nav.where')}</Link>
+                    <Link to="/extraescolars-escacs-escoles" className="btn btn-outline-primary mb-2">{t('nav.schools')}</Link>
                 </div>
 
                 <div className="row">

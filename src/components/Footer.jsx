@@ -38,7 +38,9 @@ export default function Footer() {
                         <p className="mb-2"><Link className="text-white" to="/school">{t('seo.school_title')}</Link></p>
                         <p className="mb-2"><Link className="text-white" to="/classes-escacs-adults-lleida">{t('seo.adults_title')}</Link></p>
                         <p className="mb-2"><Link className="text-white" to="/on-jugar-escacs-lleida">{t('nav.where')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/extraescolars-escacs-escoles">{t('nav.schools')}</Link></p>
                         <p className="mb-2"><Link className="text-white" to="/federat">{t('seo.federated_title')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/noticies/beneficis-escacs-nens">{t('news.cat_guia')}</Link></p>
                     </div>
                 </div>
             </div>

@@ -151,6 +151,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://escacspardinyes.com/extraescolars-escacs-escoles/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/es/extraescolars-escacs-escoles/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/en/extraescolars-escacs-escoles/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/extraescolars-escacs-escoles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/extraescolars-escacs-escoles/" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://escacspardinyes.com/federat/</loc>
     <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/federat/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/federat/" />
@@ -749,6 +779,96 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/beneficis-escacs-nens/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/es/noticies/beneficis-escacs-nens/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/en/noticies/beneficis-escacs-nens/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/beneficis-escacs-nens/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/beneficis-escacs-nens/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/es/noticies/com-federar-se-escacs-lleida/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/en/noticies/com-federar-se-escacs-lleida/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/com-federar-se-escacs-lleida/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/com-federar-se-escacs-lleida/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/es/noticies/regles-basiques-escacs-pares/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://escacspardinyes.com/en/noticies/regles-basiques-escacs-pares/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://escacspardinyes.com/es/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://escacspardinyes.com/en/noticies/regles-basiques-escacs-pares/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://escacspardinyes.com/noticies/regles-basiques-escacs-pares/" />
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://escacspardinyes.com/noticies/torneig-festa-major-2026/</loc>

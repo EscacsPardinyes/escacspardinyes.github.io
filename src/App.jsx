@@ -11,6 +11,7 @@ const About = lazy(() => import('./pages/About'));
 const School = lazy(() => import('./pages/School'));
 const AdultClasses = lazy(() => import('./pages/AdultClasses'));
 const WhereToPlay = lazy(() => import('./pages/WhereToPlay'));
+const SchoolsProgram = lazy(() => import('./pages/SchoolsProgram'));
 const MasterclassList = lazy(() => import('./pages/MasterclassList'));
 const MasterclassPage = lazy(() => import('./pages/MasterclassPage'));
 const Feature = lazy(() => import('./pages/Feature'));
@@ -75,6 +76,7 @@ function pageRoutes() {
             <Route path="school" element={<School />} />
             <Route path="classes-escacs-adults-lleida" element={<AdultClasses />} />
             <Route path="on-jugar-escacs-lleida" element={<WhereToPlay />} />
+            <Route path="extraescolars-escacs-escoles" element={<SchoolsProgram />} />
             <Route path="masterclass" element={<MasterclassList />} />
             <Route path="masterclass/india-de-rey" element={<MasterclassPage id="india-de-rey" />} />
             <Route path="masterclass/tactica-cruz" element={<MasterclassPage id="tactica-cruz" />} />
