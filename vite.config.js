@@ -2,6 +2,37 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import { compression } from 'vite-plugin-compression2'
+import path from 'path'
+import { pathToFileURL } from 'url'
+
+// news.js holds every article in 3 languages (~200 KB). The home page only shows the
+// latest 3 cards, so it imports this virtual module: those 3 items without content/gallery.
+function latestNews() {
+  const virtualId = 'virtual:latest-news'
+  const resolvedId = '\0' + virtualId
+  const newsFile = path.resolve('src/data/news.js')
+  return {
+    name: 'latest-news',
+    resolveId(id) {
+      if (id === virtualId) return resolvedId
+    },
+    async load(id) {
+      if (id !== resolvedId) return
+      this.addWatchFile(newsFile)
+      const { news } = await import(`${pathToFileURL(newsFile).href}?t=${Date.now()}`)
+      const latest = [...news]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 3)
+        .map(({ id, title, date, category, image, summary }) => ({ id, title, date, category, image, summary }))
+      return `export const latestNews = ${JSON.stringify(latest)};`
+    },
+    handleHotUpdate({ file, server }) {
+      if (path.resolve(file) !== newsFile) return
+      const mod = server.moduleGraph.getModuleById(resolvedId)
+      if (mod) server.moduleGraph.invalidateModule(mod)
+    }
+  }
+}
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -10,6 +41,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    latestNews(),
     compression(),
     VitePWA({
       registerType: 'autoUpdate',
@@ -45,7 +77,7 @@ export default defineConfig({
       },
       workbox: {
         // Precache only the app shell; gallery images (~48 MB) are cached on demand below
-        globPatterns: ['**/*.{js,css,html,ico,svg}'],
+        globPatterns: ['**/*.{js,css,html,ico,svg,woff2}'],
         // Every route has its own prerendered HTML (scripts/prerender.js): don't answer all
         // navigations with index.html (the home page). Pages come from the network, with the
         // last visited copy as offline fallback.
@@ -70,20 +102,6 @@ export default defineConfig({
               expiration: {
                 maxEntries: 150,
                 maxAgeSeconds: 60 * 60 * 24 * 30
-              }
-            }
-          },
-          {
-            urlPattern: /^https:\/\/cdnjs\.cloudflare\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'cloudflare-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
               }
             }
           }

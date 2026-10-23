@@ -18,7 +18,9 @@ export default {
           /modal-backdrop/,
           /dropdown-menu/,
           /dropdown-item/,
-          /carousel-item/
+          /carousel-item/,
+          // icons.css only holds icons found in the source (some built with template literals)
+          /^fa/
         ],
         deep: [
           /^modal/,

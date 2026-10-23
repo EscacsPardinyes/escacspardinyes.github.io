@@ -84,8 +84,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
 
         // Resource Hints
         const hints = [
-            { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-            { rel: 'preconnect', href: 'https://cdnjs.cloudflare.com' }
+            { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
         ];
         hints.forEach(hint => {
             if (!document.querySelector(`link[rel="${hint.rel}"][href="${hint.href}"]`)) {

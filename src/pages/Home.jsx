@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
-import { news } from '../data/news';
+import { latestNews } from 'virtual:latest-news';
 import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
 import ScheduleTable from '../components/ScheduleTable';
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="container section-padding">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <img className="img-fluid mb-4 mb-lg-0 rounded-lg shadow-lg" src="/img/about.webp" alt="Entrenament a la seu del Club Escacs Pardinyes" loading="lazy" width="600" height="400" style={{ borderRadius: '24px' }} />
+                        <img className="img-fluid mb-4 mb-lg-0 rounded-lg shadow-lg" src="/img/grup-club.webp" alt="Foto de grup de la cloenda del curs 2025/26 del Club Escacs Pardinyes" loading="lazy" width="600" height="450" style={{ borderRadius: '24px' }} />
                     </div>
                     <div className="col-lg-6 pl-lg-5">
                         <h2 className="display-4 font-weight-bold mb-4 text-uppercase" style={{ letterSpacing: '1px' }}>{t('about.title')}</h2>
@@ -189,7 +189,7 @@ export default function Home() {
                     <h2 className="display-4 font-weight-bold">{t('news.latest_title')}</h2>
                 </div>
                 <div className="row">
-                    {[...news].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map(item => (
+                    {latestNews.map(item => (
                         <NewsCard key={item.id} item={item} />
                     ))}
                 </div>

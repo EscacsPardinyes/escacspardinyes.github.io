@@ -17,14 +17,14 @@ export default function NotFound() {
                 overflow: 'hidden', // Prevent blur scrollbars
                 textDecoration: 'none'
             }} aria-label={t('nav.home')}>
-                {/* Blurred Background to fill screen */}
+                {/* Blurred Background to fill screen (still frame: blurred, the motion isn't noticeable) */}
                 <div style={{
                     position: 'absolute',
                     top: 0,
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url(/img/404gif.webp)',
+                    backgroundImage: 'url(/img/404-poster.webp)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     filter: 'blur(15px)',
@@ -32,16 +32,25 @@ export default function NotFound() {
                     opacity: 0.6
                 }}></div>
 
-                {/* Main Content Image - Contained */}
-                <div style={{
-                    position: 'relative', // Sit on top of blur
-                    width: '100%',
-                    height: '100%',
-                    backgroundImage: 'url(/img/404gif.webp)',
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                }}></div>
+                {/* Main Content Animation - Contained (video is ~200 KB vs 15 MB as animated WebP) */}
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    poster="/img/404-poster.webp"
+                    aria-hidden="true"
+                    style={{
+                        position: 'relative', // Sit on top of blur
+                        display: 'block',
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'contain',
+                    }}
+                >
+                    <source src="/img/404.webm" type="video/webm" />
+                    <source src="/img/404.mp4" type="video/mp4" />
+                </video>
             </Link>
         </>
     );
