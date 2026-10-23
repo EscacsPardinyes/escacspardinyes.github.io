@@ -1105,5 +1105,1271 @@ In addition, we set up 8 more boards for free games, amidst a vibrant atmosphere
 
 Thanks to everyone for being part of this special day. The future of chess already shines with its own light! 💛`
         }
-    }
+    },
+{
+    "id": "absolut-individual-lleida-2023",
+    "title": {
+        "ca": "🏆 Cloenda de l'Absolut Individual de Lleida 2023",
+        "es": "🏆 Clausura del Absoluto Individual de Lleida 2023",
+        "en": "🏆 Closing ceremony of the 2023 Lleida Individual Championship"
+    },
+    "date": "2023-12-03",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/absolut-individual-lleida-2023/img1.webp",
+    "summary": {
+        "ca": "Després de 8 diumenges de competició, hem lliurat els trofeus del torneig juntament amb l'Associació de Veïns de Pardinyes.",
+        "es": "Después de 8 domingos de competición, hemos entregado los trofeos del torneo junto con la Asociación de Vecinos de Pardinyes.",
+        "en": "After 8 Sundays of competition, we handed out the tournament trophies together with the Pardinyes Residents' Association."
+    },
+    "content": {
+        "ca": "<p>Aquest any hem tingut el plaer de celebrar el torneig Absolut Individual de Lleida 2023. Els jugadors s'han enfrontat durant 8 diumenges per coronar el campió. ♟️</p><p>El dia de la cloenda vam tenir l'honor de lliurar els trofeus juntament amb l'Associació de Veïns de Pardinyes. També es van lliurar els trofeus del Pitxitxi territorial d'escacs de Lleida 2023, amb la gran notícia que 3 dels nostres jugadors van ser guardonats. 🏆</p>",
+        "es": "<p>Este año hemos tenido el placer de celebrar el torneo Absoluto Individual de Lleida 2023. Los jugadores se han enfrentado durante 8 domingos para coronar al campeón. ♟️</p><p>El día de la clausura tuvimos el honor de entregar los trofeos junto con la Asociación de Vecinos de Pardinyes. También se entregaron los trofeos del Pichichi territorial de ajedrez de Lleida 2023, con la gran noticia de que 3 de nuestros jugadores fueron galardonados. 🏆</p>",
+        "en": "<p>This year we had the pleasure of hosting the 2023 Lleida Individual Championship. Players competed over 8 Sundays to crown the champion. ♟️</p><p>At the closing ceremony we had the honour of handing out the trophies together with the Pardinyes Residents' Association. The trophies of the 2023 Lleida territorial \"Pitxitxi\" were also awarded, and 3 of our players were among the winners. 🏆</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/absolut-individual-lleida-2023/img1.webp",
+        "/img/galeria/Noticies/absolut-individual-lleida-2023/img2.webp",
+        "/img/galeria/Noticies/absolut-individual-lleida-2023/img3.webp",
+        "/img/galeria/Noticies/absolut-individual-lleida-2023/img4.webp",
+        "/img/galeria/Noticies/absolut-individual-lleida-2023/img5.webp"
+    ]
+},
+{
+    "id": "sopar-anual-2023",
+    "title": {
+        "ca": "🌟 Sopar anual del club i relleu a la presidència",
+        "es": "🌟 Cena anual del club y relevo en la presidencia",
+        "en": "🌟 Annual club dinner and a new president"
+    },
+    "date": "2023-12-22",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/sopar-anual-2023/img1.webp",
+    "summary": {
+        "ca": "Homenatge a Canuto Ibáñez després de 14 anys com a president i benvinguda al nou president, Ramon Duró.",
+        "es": "Homenaje a Canuto Ibáñez tras 14 años como presidente y bienvenida al nuevo presidente, Ramon Duró.",
+        "en": "A tribute to Canuto Ibáñez after 14 years as president, and a welcome to the new president, Ramon Duró."
+    },
+    "content": {
+        "ca": "<p>Vam celebrar el sopar anual del Club d'Escacs Pardinyes, amb un moment molt especial dedicat al nostre president sortint, Canuto Ibáñez, amb l'agraïment de tot el club pels seus 14 anys de dedicació. Com a mostra de gratitud, li vam lliurar una placa commemorativa.</p><p>Donem la benvinguda al nou president, Ramon Duró. Que aquesta transició sigui un nou moviment estratègic cap a més èxits i diversió als escacs! ♞♖</p>",
+        "es": "<p>Celebramos la cena anual del Club d'Escacs Pardinyes, con un momento muy especial dedicado a nuestro presidente saliente, Canuto Ibáñez, con el agradecimiento de todo el club por sus 14 años de dedicación. Como muestra de gratitud, le entregamos una placa conmemorativa.</p><p>Damos la bienvenida al nuevo presidente, Ramon Duró. ¡Que esta transición sea un nuevo movimiento estratégico hacia más éxitos y diversión en el ajedrez! ♞♖</p>",
+        "en": "<p>We held the annual dinner of Club d'Escacs Pardinyes, with a very special moment dedicated to our outgoing president, Canuto Ibáñez, thanking him on behalf of the whole club for his 14 years of service. As a token of gratitude, we presented him with a commemorative plaque.</p><p>We welcome our new president, Ramon Duró. May this transition be a new strategic move towards more success and fun in chess! ♞♖</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/sopar-anual-2023/img1.webp",
+        "/img/galeria/Noticies/sopar-anual-2023/img2.webp",
+        "/img/galeria/Noticies/sopar-anual-2023/img3.webp"
+    ]
+},
+{
+    "id": "i-torneig-nadal-2024",
+    "title": {
+        "ca": "🎄 I Torneig d'Escacs de Nadal per a infants",
+        "es": "🎄 I Torneo de Ajedrez de Navidad para niños",
+        "en": "🎄 1st Christmas Chess Tournament for children"
+    },
+    "date": "2024-01-04",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/i-torneig-nadal-2024/img1.webp",
+    "summary": {
+        "ca": "Més de 50 joves, molts competint per primera vegada, al nostre primer Torneig de Nadal, amb el suport de l'Associació de Veïns de Pardinyes.",
+        "es": "Más de 50 jóvenes, muchos compitiendo por primera vez, en nuestro primer Torneo de Navidad, con el apoyo de la Asociación de Vecinos de Pardinyes.",
+        "en": "More than 50 youngsters, many competing for the first time, at our first Christmas Tournament, supported by the Pardinyes Residents' Association."
+    },
+    "content": {
+        "ca": "<p>Vam inaugurar l'any amb el nostre primer Torneig d'Escacs de Nadal per a Infants. Amb la participació de més de 50 joves entusiastes, molts competint per primera vegada, va ser un inici d'any memorable. 🎉</p><p>Un agraïment especial a l'Associació de Veïns de Pardinyes (@orvepard) per la seva col·laboració essencial, que va permetre a aquests joves viure una experiència competitiva única.</p><p>A més, el diari Segre se'n va fer ressò a la pàgina 26. Gràcies per reconèixer l'esforç i la passió dels nostres joves jugadors! 📰</p>",
+        "es": "<p>Inauguramos el año con nuestro primer Torneo de Ajedrez de Navidad para Niños. Con la participación de más de 50 jóvenes entusiastas, muchos compitiendo por primera vez, fue un inicio de año memorable. 🎉</p><p>Un agradecimiento especial a la Asociación de Vecinos de Pardinyes (@orvepard) por su colaboración esencial, que permitió a estos jóvenes vivir una experiencia competitiva única.</p><p>Además, el diario Segre se hizo eco en su página 26. ¡Gracias por reconocer el esfuerzo y la pasión de nuestros jóvenes jugadores! 📰</p>",
+        "en": "<p>We kicked off the year with our first Christmas Chess Tournament for Children. With more than 50 enthusiastic youngsters taking part, many of them competing for the first time, it was a memorable start to the year. 🎉</p><p>Special thanks to the Pardinyes Residents' Association (@orvepard) for their essential support, which gave these young players a unique competitive experience.</p><p>The Segre newspaper also covered it on page 26. Thank you for recognising the effort and passion of our young players! 📰</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img1.webp",
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img2.webp",
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img3.webp",
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img4.webp",
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img5.webp",
+        "/img/galeria/Noticies/i-torneig-nadal-2024/img6.webp"
+    ]
+},
+{
+    "id": "copa-catalana-2024",
+    "title": {
+        "ca": "🏆 Els equips A i B a la Copa Catalana 2024",
+        "es": "🏆 Los equipos A y B en la Copa Catalana 2024",
+        "en": "🏆 Teams A and B at the 2024 Catalan Cup"
+    },
+    "date": "2024-01-14",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/copa-catalana-2024/img1.webp",
+    "summary": {
+        "ca": "L'equip A aconsegueix una brillant 4a posició a la seva categoria i el B lluita fins a la 8a.",
+        "es": "El equipo A consigue una brillante 4.ª posición en su categoría y el B lucha hasta la 8.ª.",
+        "en": "Team A finished a brilliant 4th in its category, while team B fought its way to 8th."
+    },
+    "content": {
+        "ca": "<p>Orgull immens dels nostres equips A i B a la Copa Catalana! El nostre equip A va aconseguir una brillant 4a posició en la seva categoria, mentre que el B va lluitar amb coratge fins a la 8a posició.</p><p>Cada partida va ser una demostració de talent, esforç i esperit d'equip. Aquestes experiències ens fan més forts com a club i com a comunitat. 👏</p>",
+        "es": "<p>¡Orgullo inmenso de nuestros equipos A y B en la Copa Catalana! Nuestro equipo A consiguió una brillante 4.ª posición en su categoría, mientras que el B luchó con coraje hasta la 8.ª posición.</p><p>Cada partida fue una demostración de talento, esfuerzo y espíritu de equipo. Estas experiencias nos hacen más fuertes como club y como comunidad. 👏</p>",
+        "en": "<p>Huge pride in our A and B teams at the Catalan Cup! Team A achieved a brilliant 4th place in its category, while team B fought bravely to finish 8th.</p><p>Every game was a display of talent, effort and team spirit. Experiences like this make us stronger as a club and as a community. 👏</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/copa-catalana-2024/img1.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img2.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img3.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img4.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img5.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img6.webp",
+        "/img/galeria/Noticies/copa-catalana-2024/img7.webp"
+    ]
+},
+{
+    "id": "campionat-edats-lleida-2024",
+    "title": {
+        "ca": "🌟 Èxits dels nostres joves al Campionat d'Edats 2024",
+        "es": "🌟 Éxitos de nuestros jóvenes en el Campeonato de Edades 2024",
+        "en": "🌟 Success for our young players at the 2024 Age-Group Championship"
+    },
+    "date": "2024-02-25",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/campionat-edats-lleida-2024/img1.webp",
+    "summary": {
+        "ca": "Dos campions, en Sub-18 i Sub-14, i un tercer lloc a l'Individual d'Edats Sub-18.",
+        "es": "Dos campeones, en Sub-18 y Sub-14, y un tercer puesto en el Individual de Edades Sub-18.",
+        "en": "Two champions, in U-18 and U-14, and a third place in the U-18 individual age-group championship."
+    },
+    "content": {
+        "ca": "<p>Èxit dels nostres joves al Campionat d'Edats! Felicitats als nostres campions, un en Sub-18 i un altre en Sub-14, per les seves victòries impressionants.</p><p>A més, un dels nostres jugadors més joves va aconseguir la tercera posició al Campionat Individual d'Edats, categoria Sub-18. 🥉 El futur dels escacs a Pardinyes brilla gràcies a vosaltres!</p>",
+        "es": "<p>¡Éxito de nuestros jóvenes en el Campeonato de Edades! Felicidades a nuestros campeones, uno en Sub-18 y otro en Sub-14, por sus impresionantes victorias.</p><p>Además, uno de nuestros jugadores más jóvenes consiguió la tercera posición en el Campeonato Individual de Edades, categoría Sub-18. 🥉 ¡El futuro del ajedrez en Pardinyes brilla gracias a vosotros!</p>",
+        "en": "<p>Success for our young players at the Age-Group Championship! Congratulations to our champions, one in U-18 and another in U-14, on their impressive wins.</p><p>In addition, one of our youngest players finished third in the U-18 Individual Age-Group Championship. 🥉 The future of chess in Pardinyes shines thanks to you!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/campionat-edats-lleida-2024/img1.webp",
+        "/img/galeria/Noticies/campionat-edats-lleida-2024/img2.webp",
+        "/img/galeria/Noticies/campionat-edats-lleida-2024/img3.webp",
+        "/img/galeria/Noticies/campionat-edats-lleida-2024/img4.webp"
+    ]
+},
+{
+    "id": "lliga-catalana-2024",
+    "title": {
+        "ca": "♞ Resum de la Lliga Catalana 2024",
+        "es": "♞ Resumen de la Liga Catalana 2024",
+        "en": "♞ 2024 Catalan League round-up"
+    },
+    "date": "2024-03-19",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/lliga-catalana-2024/img1.webp",
+    "summary": {
+        "ca": "Victòries, empats i molt d'aprenentatge per als equips A i B al llarg de la temporada de lliga.",
+        "es": "Victorias, empates y mucho aprendizaje para los equipos A y B a lo largo de la temporada de liga.",
+        "en": "Wins, draws and plenty of learning for teams A and B throughout the league season."
+    },
+    "content": {
+        "ca": "<p>Repassem la temporada dels nostres dos equips a la Lliga Catalana d'Escacs 2024:</p><p><strong>Equip A</strong>: victòria contra el Balàfia (1,5 - 8,5), victòria contra el Mollerussa (8 - 2), derrota ajustada contra el Lleida B (6 - 4), empat vibrant contra el Baix Segre (5 - 5) i victòria a Ponts (3,5 - 6,5). 🏆</p><p><strong>Equip B</strong>: victòria contra La Seu (5,5 - 2,5), empat contra l'Andorra C (4 - 4), derrotes contra el Bellpuig (2 - 6), el Juneda (0 - 8) i el Balaguer B (1,5 - 6,5), triomf contundent en el derbi contra el Lleida C (6,5 - 1,5), victòria contra el Flanc de Dama (5½ - 2½) i derrota a l'última ronda a Ivars (6 - 2).</p><p>Més enllà dels resultats, celebrem l'esforç, la passió i el compromís de tots els jugadors al llarg de la competició. 💪♟️</p>",
+        "es": "<p>Repasamos la temporada de nuestros dos equipos en la Liga Catalana de Ajedrez 2024:</p><p><strong>Equipo A</strong>: victoria contra el Balàfia (1,5 - 8,5), victoria contra el Mollerussa (8 - 2), derrota ajustada contra el Lleida B (6 - 4), empate vibrante contra el Baix Segre (5 - 5) y victoria en Ponts (3,5 - 6,5). 🏆</p><p><strong>Equipo B</strong>: victoria contra La Seu (5,5 - 2,5), empate contra el Andorra C (4 - 4), derrotas contra el Bellpuig (2 - 6), el Juneda (0 - 8) y el Balaguer B (1,5 - 6,5), triunfo contundente en el derbi contra el Lleida C (6,5 - 1,5), victoria contra el Flanc de Dama (5½ - 2½) y derrota en la última ronda en Ivars (6 - 2).</p><p>Más allá de los resultados, celebramos el esfuerzo, la pasión y el compromiso de todos los jugadores a lo largo de la competición. 💪♟️</p>",
+        "en": "<p>A look back at our two teams' season in the 2024 Catalan Chess League:</p><p><strong>Team A</strong>: a win against Balàfia (1.5 - 8.5), a win against Mollerussa (8 - 2), a narrow loss to Lleida B (6 - 4), a thrilling draw against Baix Segre (5 - 5) and a win in Ponts (3.5 - 6.5). 🏆</p><p><strong>Team B</strong>: a win against La Seu (5.5 - 2.5), a draw against Andorra C (4 - 4), losses to Bellpuig (2 - 6), Juneda (0 - 8) and Balaguer B (1.5 - 6.5), a resounding derby win against Lleida C (6.5 - 1.5), a win against Flanc de Dama (5½ - 2½) and a last-round loss in Ivars (6 - 2).</p><p>Beyond the results, we celebrate the effort, passion and commitment of every player throughout the competition. 💪♟️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/lliga-catalana-2024/img1.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img2.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img3.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img4.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img5.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img6.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img7.webp",
+        "/img/galeria/Noticies/lliga-catalana-2024/img8.webp"
+    ]
+},
+{
+    "id": "visita-xavi-palau-2024",
+    "title": {
+        "ca": "🤝 Visita de Xavi Palau al club",
+        "es": "🤝 Visita de Xavi Palau al club",
+        "en": "🤝 Xavi Palau visits the club"
+    },
+    "date": "2024-02-12",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/visita-xavi-palau-2024/img1.webp",
+    "summary": {
+        "ca": "Vam rebre la visita de Xavi Palau, del PP de Lleida, que es va interessar pel món dels escacs i pel club.",
+        "es": "Recibimos la visita de Xavi Palau, del PP de Lleida, que se interesó por el mundo del ajedrez y por el club.",
+        "en": "We were visited by Xavi Palau, of the Lleida PP, who showed interest in chess and in the club."
+    },
+    "content": {
+        "ca": "<p>Vam tenir l'honor de rebre la visita de Xavi Palau, del PP de Lleida, al nostre club. La seva curiositat i interès pel món dels escacs reafirma el valor d'aquest joc a la nostra comunitat. Gràcies per apropar-te i compartir aquest moment amb nosaltres! 🤝♟️</p>",
+        "es": "<p>Tuvimos el honor de recibir la visita de Xavi Palau, del PP de Lleida, en nuestro club. Su curiosidad e interés por el mundo del ajedrez reafirma el valor de este juego en nuestra comunidad. ¡Gracias por acercarte y compartir este momento con nosotros! 🤝♟️</p>",
+        "en": "<p>We had the honour of welcoming Xavi Palau, of the Lleida PP, to our club. His curiosity and interest in chess reaffirm the value of the game in our community. Thank you for coming and sharing this moment with us! 🤝♟️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/visita-xavi-palau-2024/img1.webp",
+        "/img/galeria/Noticies/visita-xavi-palau-2024/img2.webp",
+        "/img/galeria/Noticies/visita-xavi-palau-2024/img3.webp",
+        "/img/galeria/Noticies/visita-xavi-palau-2024/img4.webp"
+    ]
+},
+{
+    "id": "queens-superbow-2024",
+    "title": {
+        "ca": "👑 Segon lloc al torneig per parelles Queen's SuperBow",
+        "es": "👑 Segundo puesto en el torneo por parejas Queen's SuperBow",
+        "en": "👑 Second place at the Queen's SuperBow pairs tournament"
+    },
+    "date": "2024-03-19",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/queens-superbow-2024/img1.webp",
+    "summary": {
+        "ca": "Dos dels nostres jugadors van quedar segons a la primera edició del torneig per parelles del club Flanc de Dama.",
+        "es": "Dos de nuestros jugadores quedaron segundos en la primera edición del torneo por parejas del club Flanc de Dama.",
+        "en": "Two of our players finished second at the first edition of the Flanc de Dama club's pairs tournament."
+    },
+    "content": {
+        "ca": "<p>El dissabte 16 de març, alguns membres del nostre club van participar en la primera edició del torneig per parelles Queen's SuperBow del club Flanc de Dama (@flancdedama).</p><p>Dos dels nostres jugadors van aconseguir un magnífic segon lloc! Felicitats per aquest gran èxit. 🏆</p>",
+        "es": "<p>El sábado 16 de marzo, algunos miembros de nuestro club participaron en la primera edición del torneo por parejas Queen's SuperBow del club Flanc de Dama (@flancdedama).</p><p>¡Dos de nuestros jugadores consiguieron un magnífico segundo puesto! Felicidades por este gran éxito. 🏆</p>",
+        "en": "<p>On Saturday 16 March, some of our members took part in the first edition of the Queen's SuperBow pairs tournament organised by Flanc de Dama (@flancdedama).</p><p>Two of our players achieved a magnificent second place! Congratulations on this great result. 🏆</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/queens-superbow-2024/img1.webp",
+        "/img/galeria/Noticies/queens-superbow-2024/img2.webp"
+    ]
+},
+{
+    "id": "sant-jordi-2024",
+    "title": {
+        "ca": "🌹 Sant Jordi 2024: escacs, llibres i roses",
+        "es": "🌹 Sant Jordi 2024: ajedrez, libros y rosas",
+        "en": "🌹 Sant Jordi 2024: chess, books and roses"
+    },
+    "date": "2024-04-22",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/sant-jordi-2024/img1.webp",
+    "summary": {
+        "ca": "Una tarda d'escacs al carrer a Pardinyes per celebrar Sant Jordi amb la biblioteca i el Pla educatiu d'entorn.",
+        "es": "Una tarde de ajedrez en la calle en Pardinyes para celebrar Sant Jordi con la biblioteca y el Plan educativo de entorno.",
+        "en": "An afternoon of street chess in Pardinyes to celebrate Sant Jordi with the local library and the community education plan."
+    },
+    "content": {
+        "ca": "<p>Vam celebrar Sant Jordi amb escacs i llibres a Pardinyes! Una tarda plena de moviments gràcies a la col·laboració de la Biblioteca de Pardinyes, el Pla educatiu d'entorn de Lleida i la Carlota. 🌹📚</p><p>La passió pel joc i la literatura ens uneix i fa créixer el nostre barri. 🏰♟️</p>",
+        "es": "<p>¡Celebramos Sant Jordi con ajedrez y libros en Pardinyes! Una tarde llena de movimientos gracias a la colaboración de la Biblioteca de Pardinyes, el Plan educativo de entorno de Lleida y Carlota. 🌹📚</p><p>La pasión por el juego y la literatura nos une y hace crecer nuestro barrio. 🏰♟️</p>",
+        "en": "<p>We celebrated Sant Jordi with chess and books in Pardinyes! An afternoon full of moves, thanks to the Pardinyes Library, Lleida's community education plan and Carlota. 🌹📚</p><p>A passion for the game and for literature brings us together and helps our neighbourhood grow. 🏰♟️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/sant-jordi-2024/img1.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img2.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img3.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img4.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img5.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img6.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img7.webp",
+        "/img/galeria/Noticies/sant-jordi-2024/img8.webp"
+    ]
+},
+{
+    "id": "festa-major-mollerussa-equips-2024",
+    "title": {
+        "ca": "♟️ Campionat per equips de la Festa Major de Mollerussa 2024",
+        "es": "♟️ Campeonato por equipos de la Fiesta Mayor de Mollerussa 2024",
+        "en": "♟️ 2024 Mollerussa Festa Major team championship"
+    },
+    "date": "2024-05-21",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img1.webp",
+    "summary": {
+        "ca": "Vam participar al XLIII Campionat per equips de la Festa Major de Mollerussa.",
+        "es": "Participamos en el XLIII Campeonato por equipos de la Fiesta Mayor de Mollerussa.",
+        "en": "We took part in the 43rd Mollerussa Festa Major team championship."
+    },
+    "content": {
+        "ca": "<p>El diumenge 19 de maig vam participar en el XLIII Campionat per equips de la Festa Major de Mollerussa 2024. Una jornada plena d'emocions, estratègia i bona companyia. Seguim sumant experiències i aprenentatges! ♟️💪</p>",
+        "es": "<p>El domingo 19 de mayo participamos en el XLIII Campeonato por equipos de la Fiesta Mayor de Mollerussa 2024. Una jornada llena de emociones, estrategia y buena compañía. ¡Seguimos sumando experiencias y aprendizajes! ♟️💪</p>",
+        "en": "<p>On Sunday 19 May we took part in the 43rd Mollerussa Festa Major team championship. A day full of excitement, strategy and good company. We keep gaining experience and learning! ♟️💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img1.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img2.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img3.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img4.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img5.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img6.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img7.webp",
+        "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img8.webp"
+    ]
+},
+{
+    "id": "visita-xavi-estrada-2024",
+    "title": {
+        "ca": "🤝 Visita del regidor Xavi Estrada",
+        "es": "🤝 Visita del concejal Xavi Estrada",
+        "en": "🤝 Councillor Xavi Estrada visits the club"
+    },
+    "date": "2024-05-24",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/visita-xavi-estrada-2024/img1.webp",
+    "summary": {
+        "ca": "El regidor d'ERC a l'Ajuntament de Lleida va conèixer les necessitats del club i va jugar unes partides amb nosaltres.",
+        "es": "El concejal de ERC en el Ayuntamiento de Lleida conoció las necesidades del club y jugó unas partidas con nosotros.",
+        "en": "The ERC councillor at Lleida City Council learned about the club's needs and played a few games with us."
+    },
+    "content": {
+        "ca": "<p>El dilluns 20 de maig vam tenir l'honor de rebre la visita de Xavi Estrada, regidor d'ERC a l'Ajuntament de Lleida. Durant la visita vam compartir les nostres necessitats com a club i vam fer algunes partides d'escacs junts. ♟️</p><p>Ens alegra veure l'interès dels representants municipals pel nostre club i per les activitats que fem. Seguim treballant per fomentar els escacs a Lleida! 💪</p>",
+        "es": "<p>El lunes 20 de mayo tuvimos el honor de recibir la visita de Xavi Estrada, concejal de ERC en el Ayuntamiento de Lleida. Durante la visita compartimos nuestras necesidades como club y jugamos algunas partidas de ajedrez juntos. ♟️</p><p>Nos alegra ver el interés de los representantes municipales por nuestro club y por las actividades que hacemos. ¡Seguimos trabajando para fomentar el ajedrez en Lleida! 💪</p>",
+        "en": "<p>On Monday 20 May we had the honour of welcoming Xavi Estrada, ERC councillor at Lleida City Council. During the visit we shared our needs as a club and played a few games of chess together. ♟️</p><p>We are glad to see local representatives taking an interest in our club and its activities. We keep working to promote chess in Lleida! 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/visita-xavi-estrada-2024/img1.webp",
+        "/img/galeria/Noticies/visita-xavi-estrada-2024/img2.webp"
+    ]
+},
+{
+    "id": "tornejos-primavera-2024",
+    "title": {
+        "ca": "♟️ Primavera de tornejos: Peñíscola, Memorial Enric Farré i Llampec territorial",
+        "es": "♟️ Primavera de torneos: Peñíscola, Memorial Enric Farré y Relámpago territorial",
+        "en": "♟️ A spring of tournaments: Peñíscola, Enric Farré Memorial and territorial Blitz"
+    },
+    "date": "2024-06-18",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/tornejos-primavera-2024/img1.webp",
+    "summary": {
+        "ca": "Els nostres jugadors van competir a l'IRT Sub-1800 de Peñíscola, al III Memorial Enric Farré i al Campionat Llampec de la territorial.",
+        "es": "Nuestros jugadores compitieron en el IRT Sub-1800 de Peñíscola, en el III Memorial Enric Farré y en el Campeonato Relámpago territorial.",
+        "en": "Our players competed at the U-1800 IRT in Peñíscola, the 3rd Enric Farré Memorial and the territorial Blitz Championship."
+    },
+    "content": {
+        "ca": "<p>Uns mesos plens de competició per als nostres jugadors:</p><p>🏨 El nostre jugador José Antonio va participar a l'IRT Sub-1800 Gran Hotel Peñíscola, una gran experiència.</p><p>👏 Tres jugadors del club van participar al III Memorial Enric Farré.</p><p>⚡ Quatre jugadors van competir al Campionat Llampec Individual de la territorial de Lleida.</p><p>Cada torneig és una oportunitat per créixer i aprendre! 🌟</p>",
+        "es": "<p>Unos meses llenos de competición para nuestros jugadores:</p><p>🏨 Nuestro jugador José Antonio participó en el IRT Sub-1800 Gran Hotel Peñíscola, una gran experiencia.</p><p>👏 Tres jugadores del club participaron en el III Memorial Enric Farré.</p><p>⚡ Cuatro jugadores compitieron en el Campeonato Relámpago Individual de la territorial de Lleida.</p><p>¡Cada torneo es una oportunidad para crecer y aprender! 🌟</p>",
+        "en": "<p>A busy few months of competition for our players:</p><p>🏨 Our player José Antonio took part in the U-1800 IRT at the Gran Hotel Peñíscola, a great experience.</p><p>👏 Three club players took part in the 3rd Enric Farré Memorial.</p><p>⚡ Four players competed in the Lleida territorial Individual Blitz Championship.</p><p>Every tournament is a chance to grow and learn! 🌟</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/tornejos-primavera-2024/img1.webp",
+        "/img/galeria/Noticies/tornejos-primavera-2024/img2.webp",
+        "/img/galeria/Noticies/tornejos-primavera-2024/img3.webp",
+        "/img/galeria/Noticies/tornejos-primavera-2024/img4.webp",
+        "/img/galeria/Noticies/tornejos-primavera-2024/img5.webp",
+        "/img/galeria/Noticies/tornejos-primavera-2024/img6.webp"
+    ]
+},
+{
+    "id": "i-torneig-festa-major-pardinyes-2024",
+    "title": {
+        "ca": "🎉 I Torneig Llampec de la Festa Major de Pardinyes: gairebé 100 participants!",
+        "es": "🎉 I Torneo Relámpago de la Fiesta Mayor de Pardinyes: ¡casi 100 participantes!",
+        "en": "🎉 1st Pardinyes Festa Major Blitz Tournament: almost 100 players!"
+    },
+    "date": "2024-08-04",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/i-torneig-festa-major-pardinyes-2024/img1.webp",
+    "summary": {
+        "ca": "El 3 d'agost vam celebrar el primer torneig d'escacs de la Festa Major de Pardinyes, amb un èxit rotund.",
+        "es": "El 3 de agosto celebramos el primer torneo de ajedrez de la Fiesta Mayor de Pardinyes, con un éxito rotundo.",
+        "en": "On 3 August we held the first chess tournament of the Pardinyes Festa Major, and it was a resounding success."
+    },
+    "content": {
+        "ca": "<p>El 3 d'agost vam celebrar el torneig d'escacs de la Festa Major de Pardinyes i va ser un èxit rotund, amb gairebé 100 participants! 🏆</p><p>Gràcies a tots els que hi vau participar i vau fer d'aquest esdeveniment una jornada inoblidable. 🙌 Volem agrair a l'Ajuntament de Lleida, Esports Lleida i Lleida Jove el seu suport continuat.</p><p>Estem decidits a seguir organitzant tornejos amb l'objectiu de convertir Lleida en un referent dels escacs!</p>",
+        "es": "<p>El 3 de agosto celebramos el torneo de ajedrez de la Fiesta Mayor de Pardinyes y fue un éxito rotundo, ¡con casi 100 participantes! 🏆</p><p>Gracias a todos los que participasteis e hicisteis de este evento una jornada inolvidable. 🙌 Queremos agradecer al Ayuntamiento de Lleida, Esports Lleida y Lleida Jove su apoyo continuado.</p><p>¡Estamos decididos a seguir organizando torneos con el objetivo de convertir Lleida en un referente del ajedrez!</p>",
+        "en": "<p>On 3 August we held the Pardinyes Festa Major chess tournament and it was a resounding success, with almost 100 players! 🏆</p><p>Thanks to everyone who took part and made it an unforgettable day. 🙌 We would like to thank Lleida City Council, Esports Lleida and Lleida Jove for their continued support.</p><p>We are determined to keep organising tournaments with the aim of making Lleida a benchmark for chess!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/i-torneig-festa-major-pardinyes-2024/img1.webp",
+        "/img/galeria/Noticies/i-torneig-festa-major-pardinyes-2024/img2.webp",
+        "/img/galeria/Noticies/i-torneig-festa-major-pardinyes-2024/img3.webp"
+    ]
+},
+{
+    "id": "estiu-tornejos-2024",
+    "title": {
+        "ca": "☀️ Un estiu de tornejos: Golmés, el Vendrell, Vallfogona i més",
+        "es": "☀️ Un verano de torneos: Golmés, El Vendrell, Vallfogona y más",
+        "en": "☀️ A summer of tournaments: Golmés, El Vendrell, Vallfogona and more"
+    },
+    "date": "2024-08-25",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/estiu-tornejos-2024/img1.webp",
+    "summary": {
+        "ca": "Sotscampions al Llampec de les Piscines de Golmés, segons de tram a la Festa Major de Golmés i presència a molts altres tornejos.",
+        "es": "Subcampeones en el Relámpago de las Piscinas de Golmés, segundos de tramo en la Fiesta Mayor de Golmés y presencia en muchos otros torneos.",
+        "en": "Runner-up at the Golmés Pools Blitz, second in a rating section at the Golmés Festa Major and many other tournaments."
+    },
+    "content": {
+        "ca": "<p>Aquest estiu el club no ha parat de competir:</p><p>🏆 Al Torneig Llampec de les Piscines de Golmés 2024, un dels nostres jugadors va quedar sotscampió.</p><p>♟️ El 13 de juliol vam participar al IV Open Internacional Vila del Vendrell.</p><p>🔥 El 21 de juliol vam jugar el XVII Campionat de Ràpides de Vallfogona.</p><p>🥈 El 4 d'agost, al VI Torneig de Festa Major de Golmés, un dels nostres jugadors va quedar segon del seu tram.</p><p>🌍 I el 25 d'agost vam arribar a jugar 4 tornejos el mateix dia: dos de Blitz, un d'Actiu i un de Standard, a Balàfia, Alcalá de Henares i Sants (Barcelona).</p>",
+        "es": "<p>Este verano el club no ha parado de competir:</p><p>🏆 En el Torneo Relámpago de las Piscinas de Golmés 2024, uno de nuestros jugadores quedó subcampeón.</p><p>♟️ El 13 de julio participamos en el IV Open Internacional Vila del Vendrell.</p><p>🔥 El 21 de julio jugamos el XVII Campeonato de Rápidas de Vallfogona.</p><p>🥈 El 4 de agosto, en el VI Torneo de Fiesta Mayor de Golmés, uno de nuestros jugadores quedó segundo de su tramo.</p><p>🌍 Y el 25 de agosto llegamos a jugar 4 torneos el mismo día: dos de Blitz, uno de Activo y uno de Standard, en Balàfia, Alcalá de Henares y Sants (Barcelona).</p>",
+        "en": "<p>The club didn't stop competing this summer:</p><p>🏆 At the 2024 Golmés Pools Blitz Tournament, one of our players finished runner-up.</p><p>♟️ On 13 July we took part in the 4th Vila del Vendrell International Open.</p><p>🔥 On 21 July we played the 17th Vallfogona Rapid Championship.</p><p>🥈 On 4 August, at the 6th Golmés Festa Major Tournament, one of our players finished second in his rating section.</p><p>🌍 And on 25 August we played 4 tournaments on the same day: two Blitz, one Active and one Standard, in Balàfia, Alcalá de Henares and Sants (Barcelona).</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/estiu-tornejos-2024/img1.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img2.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img3.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img4.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img5.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img6.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img7.webp",
+        "/img/galeria/Noticies/estiu-tornejos-2024/img8.webp"
+    ]
+},
+{
+    "id": "estades-estiu-cf-pardinyes-2024",
+    "title": {
+        "ca": "⚽♟️ Escacs a les estades d'estiu del CF Pardinyes",
+        "es": "⚽♟️ Ajedrez en los campus de verano del CF Pardinyes",
+        "en": "⚽♟️ Chess at CF Pardinyes summer camps"
+    },
+    "date": "2024-08-06",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img1.webp",
+    "summary": {
+        "ca": "Durant el juliol vam col·laborar amb el CF Pardinyes per donar a conèixer els escacs a més infants.",
+        "es": "Durante julio colaboramos con el CF Pardinyes para dar a conocer el ajedrez a más niños.",
+        "en": "In July we teamed up with CF Pardinyes to introduce more children to chess."
+    },
+    "content": {
+        "ca": "<p>Durant el mes de juliol, des del club vam col·laborar amb el CF Pardinyes (@cfpardinyesoficial) a les seves estades d'estiu, amb l'objectiu de donar a conèixer els escacs a més infants. ♟️👧🧒</p><p>Vam gaudir molt veient com els més petits descobrien la màgia d'aquest joc. Gràcies per l'oportunitat! 🙌</p>",
+        "es": "<p>Durante el mes de julio, desde el club colaboramos con el CF Pardinyes (@cfpardinyesoficial) en sus campus de verano, con el objetivo de dar a conocer el ajedrez a más niños. ♟️👧🧒</p><p>Disfrutamos mucho viendo cómo los más pequeños descubrían la magia de este juego. ¡Gracias por la oportunidad! 🙌</p>",
+        "en": "<p>During July, the club worked with CF Pardinyes (@cfpardinyesoficial) at their summer camps, with the aim of introducing more children to chess. ♟️👧🧒</p><p>We really enjoyed watching the youngest discover the magic of the game. Thanks for the opportunity! 🙌</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img1.webp",
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img2.webp",
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img3.webp",
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img4.webp",
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img5.webp",
+        "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img6.webp"
+    ]
+},
+{
+    "id": "exits-setembre-2024",
+    "title": {
+        "ca": "🏆 Setembre de triomfs: Bellpuig, Alcoletge i Vallfogona",
+        "es": "🏆 Septiembre de triunfos: Bellpuig, Alcoletge y Vallfogona",
+        "en": "🏆 A September of wins: Bellpuig, Alcoletge and Vallfogona"
+    },
+    "date": "2024-09-25",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/exits-setembre-2024/img1.webp",
+    "summary": {
+        "ca": "Primer lloc al Memorial Josep M. Roselló de Bellpuig, campions a Alcoletge i primers de tram a l'Open de Vallfogona.",
+        "es": "Primer puesto en el Memorial Josep M. Roselló de Bellpuig, campeones en Alcoletge y primeros de tramo en el Open de Vallfogona.",
+        "en": "First place at the Josep M. Roselló Memorial in Bellpuig, champions in Alcoletge and first in a rating section at the Vallfogona Open."
+    },
+    "content": {
+        "ca": "<p>Un setembre ple d'èxits per al club:</p><p>🥇 El 8 de setembre, un dels nostres jugadors va quedar primer al Memorial Josep M. Roselló - Ràpides Festa Major de Bellpuig 2024.</p><p>🏆 Al Torneig de Festa Major d'Alcoletge, un jugador del club va aconseguir la primera posició general i un altre va ser primer de la seva categoria d'edat.</p><p>♟️ Al 30è Open Internacional d'Escacs Actius de Vallfogona 2024, un dels nostres jugadors va quedar primer de tram.</p><p>Seguim sumant èxits! 💪</p>",
+        "es": "<p>Un septiembre lleno de éxitos para el club:</p><p>🥇 El 8 de septiembre, uno de nuestros jugadores quedó primero en el Memorial Josep M. Roselló - Rápidas Fiesta Mayor de Bellpuig 2024.</p><p>🏆 En el Torneo de Fiesta Mayor de Alcoletge, un jugador del club consiguió la primera posición general y otro fue primero de su categoría de edad.</p><p>♟️ En el 30.º Open Internacional de Ajedrez Activo de Vallfogona 2024, uno de nuestros jugadores quedó primero de tramo.</p><p>¡Seguimos sumando éxitos! 💪</p>",
+        "en": "<p>A September full of success for the club:</p><p>🥇 On 8 September, one of our players won the Josep M. Roselló Memorial - Bellpuig Festa Major Rapid 2024.</p><p>🏆 At the Alcoletge Festa Major Tournament, one club player took first place overall and another was first in his age category.</p><p>♟️ At the 30th Vallfogona International Active Chess Open 2024, one of our players finished first in his rating section.</p><p>We keep adding wins! 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/exits-setembre-2024/img1.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img2.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img3.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img4.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img5.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img6.webp",
+        "/img/galeria/Noticies/exits-setembre-2024/img7.webp"
+    ]
+},
+{
+    "id": "festa-major-lleida-2024",
+    "title": {
+        "ca": "🎉 Torneig d'escacs de la Festa Major de Lleida 2024",
+        "es": "🎉 Torneo de ajedrez de la Fiesta Mayor de Lleida 2024",
+        "en": "🎉 2024 Lleida Festa Major chess tournament"
+    },
+    "date": "2024-09-29",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/festa-major-lleida-2024/img1.webp",
+    "summary": {
+        "ca": "Més de 60 participants al torneig que el club va organitzar durant la Festa Major de Lleida.",
+        "es": "Más de 60 participantes en el torneo que el club organizó durante la Fiesta Mayor de Lleida.",
+        "en": "More than 60 players at the tournament the club organised during the Lleida Festa Major."
+    },
+    "content": {
+        "ca": "<p>Durant la Festa Major de Lleida, el Club d'Escacs Pardinyes va organitzar un torneig espectacular on més de 60 participants van demostrar el seu talent i passió pel joc! 🥳♟️</p><p>Gràcies a tots els jugadors, famílies i amics que van fer d'aquest esdeveniment una jornada inoblidable. Aquest èxit ens motiva a continuar organitzant activitats per fomentar els escacs a la nostra ciutat. 💖</p>",
+        "es": "<p>Durante la Fiesta Mayor de Lleida, el Club d'Escacs Pardinyes organizó un torneo espectacular en el que más de 60 participantes demostraron su talento y pasión por el juego. 🥳♟️</p><p>Gracias a todos los jugadores, familias y amigos que hicieron de este evento una jornada inolvidable. Este éxito nos motiva a seguir organizando actividades para fomentar el ajedrez en nuestra ciudad. 💖</p>",
+        "en": "<p>During the Lleida Festa Major, Club d'Escacs Pardinyes organised a spectacular tournament in which more than 60 players showed their talent and passion for the game! 🥳♟️</p><p>Thanks to all the players, families and friends who made it an unforgettable day. This success motivates us to keep organising activities to promote chess in our city. 💖</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/festa-major-lleida-2024/img1.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img2.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img3.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img4.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img5.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img6.webp",
+        "/img/galeria/Noticies/festa-major-lleida-2024/img7.webp"
+    ]
+},
+{
+    "id": "tamborinada-2024",
+    "title": {
+        "ca": "🎉 Escacs a la Tamborinada de Lleida",
+        "es": "🎉 Ajedrez en la Tamborinada de Lleida",
+        "en": "🎉 Chess at the Lleida Tamborinada"
+    },
+    "date": "2024-11-25",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/tamborinada-2024/img1.webp",
+    "summary": {
+        "ca": "Adults i infants van gaudir dels escacs a la Tamborinada, a la plaça Blas Infante.",
+        "es": "Adultos y niños disfrutaron del ajedrez en la Tamborinada, en la plaza Blas Infante.",
+        "en": "Adults and children enjoyed chess at the Tamborinada festival in Plaça Blas Infante."
+    },
+    "content": {
+        "ca": "<p>Vam tenir el plaer de participar a la Tamborinada de Lleida, a la plaça Blas Infante, en una jornada plena d'activitats, cultura i comunitat. 🌟</p><p>Tant adults com infants van poder gaudir jugant a escacs i descobrint aquest món ple d'estratègia i diversió. Gràcies a tots els participants, organitzadors i entitats que la van fer possible! 👏</p>",
+        "es": "<p>Tuvimos el placer de participar en la Tamborinada de Lleida, en la plaza Blas Infante, en una jornada llena de actividades, cultura y comunidad. 🌟</p><p>Tanto adultos como niños pudieron disfrutar jugando al ajedrez y descubriendo este mundo lleno de estrategia y diversión. ¡Gracias a todos los participantes, organizadores y entidades que la hicieron posible! 👏</p>",
+        "en": "<p>We had the pleasure of taking part in the Lleida Tamborinada in Plaça Blas Infante, a day full of activities, culture and community. 🌟</p><p>Adults and children alike enjoyed playing chess and discovering a world full of strategy and fun. Thanks to all the participants, organisers and associations who made it possible! 👏</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/tamborinada-2024/img1.webp",
+        "/img/galeria/Noticies/tamborinada-2024/img2.webp",
+        "/img/galeria/Noticies/tamborinada-2024/img3.webp"
+    ]
+},
+{
+    "id": "jornada-biblioteca-cafiv-2024",
+    "title": {
+        "ca": "♟️ Jornada d'escacs a la Biblioteca del CAFIV",
+        "es": "♟️ Jornada de ajedrez en la Biblioteca del CAFIV",
+        "en": "♟️ Chess day at the CAFIV Library"
+    },
+    "date": "2024-11-29",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img1.webp",
+    "summary": {
+        "ca": "Una jornada d'escacs dins del Mes Internacional del Joc a la Biblioteca del CAFIV de la UdL.",
+        "es": "Una jornada de ajedrez dentro del Mes Internacional del Juego en la Biblioteca del CAFIV de la UdL.",
+        "en": "A chess day during International Games Month at the UdL's CAFIV Library."
+    },
+    "content": {
+        "ca": "<p>El dimarts 26 de novembre vam gaudir d'una jornada plena d'estratègia i diversió a la Biblioteca del CAFIV, dins del Mes Internacional del Joc. 🙌</p><p>Gràcies a tots els participants, des dels més petits fins als experts, que vau venir a jugar, aprendre i compartir la vostra passió pels escacs. 🧠💡</p>",
+        "es": "<p>El martes 26 de noviembre disfrutamos de una jornada llena de estrategia y diversión en la Biblioteca del CAFIV, dentro del Mes Internacional del Juego. 🙌</p><p>Gracias a todos los participantes, desde los más pequeños hasta los expertos, que vinisteis a jugar, aprender y compartir vuestra pasión por el ajedrez. 🧠💡</p>",
+        "en": "<p>On Tuesday 26 November we enjoyed a day full of strategy and fun at the CAFIV Library, as part of International Games Month. 🙌</p><p>Thanks to all the participants, from the youngest to the experts, who came to play, learn and share their passion for chess. 🧠💡</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img1.webp",
+        "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img2.webp",
+        "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img3.webp",
+        "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img4.webp"
+    ]
+},
+{
+    "id": "individual-lleida-2024",
+    "title": {
+        "ca": "🏆 Èxit rotund a l'Individual de Lleida 2024",
+        "es": "🏆 Éxito rotundo en el Individual de Lleida 2024",
+        "en": "🏆 Resounding success at the 2024 Lleida Individual Championship"
+    },
+    "date": "2024-12-04",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/individual-lleida-2024/img1.webp",
+    "summary": {
+        "ca": "Trofeus en els tres grups i reconeixement com a segon millor club del torneig.",
+        "es": "Trofeos en los tres grupos y reconocimiento como segundo mejor club del torneo.",
+        "en": "Trophies in all three groups and recognition as the second-best club of the tournament."
+    },
+    "content": {
+        "ca": "<p>El nostre club va competir amb representació en els tres grups de l'Absolut Individual de Lleida 2024, i els resultats no podien ser millors. Hem aconseguit trofeus en tots tres:</p><p>🏆 Grup A: 1r classificat Tram A<br>🏅 Grup B: 2n classificat absolut<br>🏅 Grup B: Millor veterà +50<br>🥉 Grup Promoció: 3r classificat Sub-8</p><p>A més, hem estat reconeguts com a <strong>2n millor club del torneig</strong>! 🥈 Continuem treballant per mantenir el club al capdamunt. 💪</p>",
+        "es": "<p>Nuestro club compitió con representación en los tres grupos del Absoluto Individual de Lleida 2024, y los resultados no podían ser mejores. Hemos conseguido trofeos en los tres:</p><p>🏆 Grupo A: 1.º clasificado Tramo A<br>🏅 Grupo B: 2.º clasificado absoluto<br>🏅 Grupo B: Mejor veterano +50<br>🥉 Grupo Promoción: 3.º clasificado Sub-8</p><p>Además, ¡hemos sido reconocidos como <strong>2.º mejor club del torneo</strong>! 🥈 Seguimos trabajando para mantener el club en lo más alto. 💪</p>",
+        "en": "<p>Our club had players in all three groups of the 2024 Lleida Individual Championship, and the results could not have been better. We won trophies in all of them:</p><p>🏆 Group A: 1st place, Section A<br>🏅 Group B: 2nd place overall<br>🏅 Group B: Best veteran +50<br>🥉 Promotion Group: 3rd place U-8</p><p>On top of that, we were recognised as the <strong>2nd best club of the tournament</strong>! 🥈 We keep working to keep the club at the top. 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/individual-lleida-2024/img1.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img2.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img3.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img4.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img5.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img6.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img7.webp",
+        "/img/galeria/Noticies/individual-lleida-2024/img8.webp"
+    ]
+},
+{
+    "id": "llampec-equips-lleida-2024",
+    "title": {
+        "ca": "🥈 Segons al Campionat Llampec per Equips de Lleida 2024",
+        "es": "🥈 Segundos en el Campeonato Relámpago por Equipos de Lleida 2024",
+        "en": "🥈 Runners-up at the 2024 Lleida Team Blitz Championship"
+    },
+    "date": "2024-12-31",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/llampec-equips-lleida-2024/img1.webp",
+    "summary": {
+        "ca": "El Club Escacs Pardinyes aconsegueix un magnífic segon lloc en un campionat molt intens.",
+        "es": "El Club Escacs Pardinyes consigue un magnífico segundo puesto en un campeonato muy intenso.",
+        "en": "Club Escacs Pardinyes achieved a magnificent second place in a very intense championship."
+    },
+    "content": {
+        "ca": "<p>El Club Escacs Pardinyes va aconseguir un magnífic segon lloc al Campionat d'Escacs Llampec per Equips de Lleida 2024! 🥈♟️</p><p>Continuem creixent com a club i portant el nom de Pardinyes ben alt! 💪</p>",
+        "es": "<p>¡El Club Escacs Pardinyes consiguió un magnífico segundo puesto en el Campeonato de Ajedrez Relámpago por Equipos de Lleida 2024! 🥈♟️</p><p>¡Seguimos creciendo como club y llevando el nombre de Pardinyes bien alto! 💪</p>",
+        "en": "<p>Club Escacs Pardinyes achieved a magnificent second place at the 2024 Lleida Team Blitz Chess Championship! 🥈♟️</p><p>We keep growing as a club and flying the Pardinyes flag high! 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/llampec-equips-lleida-2024/img1.webp",
+        "/img/galeria/Noticies/llampec-equips-lleida-2024/img2.webp",
+        "/img/galeria/Noticies/llampec-equips-lleida-2024/img3.webp",
+        "/img/galeria/Noticies/llampec-equips-lleida-2024/img4.webp",
+        "/img/galeria/Noticies/llampec-equips-lleida-2024/img5.webp"
+    ]
+},
+{
+    "id": "ii-torneig-nadal-2025",
+    "title": {
+        "ca": "🎄 II Torneig d'Escacs Infantil de Nadal: més de 60 infants",
+        "es": "🎄 II Torneo de Ajedrez Infantil de Navidad: más de 60 niños",
+        "en": "🎄 2nd Children's Christmas Chess Tournament: more than 60 kids"
+    },
+    "date": "2025-01-06",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/ii-torneig-nadal-2025/img1.webp",
+    "summary": {
+        "ca": "Comencem el 2025 amb més de 60 infants de tot Catalunya competint al nostre barri.",
+        "es": "Empezamos 2025 con más de 60 niños de toda Cataluña compitiendo en nuestro barrio.",
+        "en": "We started 2025 with more than 60 children from all over Catalonia competing in our neighbourhood."
+    },
+    "content": {
+        "ca": "<p>Comencem el 2025 amb grans èxits! El club ha iniciat l'any complint els primers objectius amb la celebració de la 2a edició del Torneig d'Escacs Infantil. 👏</p><p>Més de 60 infants de tot Catalunya van venir a competir i gaudir d'una jornada emocionant al barri de Pardinyes, que es consolida com un punt de trobada de l'esport i la cultura a Lleida. 💛</p><p>Volem convertir Lleida en un referent dels escacs i, amb esdeveniments com aquest, n'estem més a prop! 🚀</p>",
+        "es": "<p>¡Empezamos 2025 con grandes éxitos! El club ha iniciado el año cumpliendo los primeros objetivos con la celebración de la 2.ª edición del Torneo de Ajedrez Infantil. 👏</p><p>Más de 60 niños de toda Cataluña vinieron a competir y disfrutar de una jornada emocionante en el barrio de Pardinyes, que se consolida como un punto de encuentro del deporte y la cultura en Lleida. 💛</p><p>Queremos convertir Lleida en un referente del ajedrez y, con eventos como este, ¡estamos más cerca! 🚀</p>",
+        "en": "<p>We started 2025 on a high! The club kicked off the year by meeting its first goals with the 2nd edition of the Children's Chess Tournament. 👏</p><p>More than 60 children from all over Catalonia came to compete and enjoy an exciting day in the Pardinyes neighbourhood, which is becoming a meeting point for sport and culture in Lleida. 💛</p><p>We want to make Lleida a benchmark for chess, and events like this bring us closer! 🚀</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img1.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img2.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img3.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img4.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img5.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img6.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img7.webp",
+        "/img/galeria/Noticies/ii-torneig-nadal-2025/img8.webp"
+    ]
+},
+{
+    "id": "copa-catalana-2025",
+    "title": {
+        "ca": "🚩 Inici de temporada a la Copa Catalana 2025",
+        "es": "🚩 Inicio de temporada en la Copa Catalana 2025",
+        "en": "🚩 Season opener at the 2025 Catalan Cup"
+    },
+    "date": "2025-01-14",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/copa-catalana-2025/img1.webp",
+    "summary": {
+        "ca": "El club comença la temporada 2025 a la Fase Lleida de la Copa Catalana.",
+        "es": "El club empieza la temporada 2025 en la Fase Lleida de la Copa Catalana.",
+        "en": "The club opened its 2025 season at the Lleida phase of the Catalan Cup."
+    },
+    "content": {
+        "ca": "<p>El Club Escacs Pardinyes va començar la nova temporada participant a la Copa Catalana – Fase Lleida 2025. 🏆♟️</p><p>Va ser una jornada plena d'emoció, jugades brillants i molta passió pels escacs. Som un equip!</p>",
+        "es": "<p>El Club Escacs Pardinyes empezó la nueva temporada participando en la Copa Catalana – Fase Lleida 2025. 🏆♟️</p><p>Fue una jornada llena de emoción, jugadas brillantes y mucha pasión por el ajedrez. ¡Somos un equipo!</p>",
+        "en": "<p>Club Escacs Pardinyes started the new season by taking part in the Catalan Cup – Lleida Phase 2025. 🏆♟️</p><p>It was a day full of excitement, brilliant moves and a lot of passion for chess. We are a team!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/copa-catalana-2025/img1.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img2.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img3.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img4.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img5.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img6.webp",
+        "/img/galeria/Noticies/copa-catalana-2025/img7.webp"
+    ]
+},
+{
+    "id": "foto-club-2025",
+    "title": {
+        "ca": "📸 Foto de club 2025: ja som més de 30 jugadors!",
+        "es": "📸 Foto de club 2025: ¡ya somos más de 30 jugadores!",
+        "en": "📸 2025 club photo: we are now more than 30 players!"
+    },
+    "date": "2025-02-02",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/foto-club-2025/img1.webp",
+    "summary": {
+        "ca": "Comencem l'any amb més força que mai i continuem creixent com a comunitat.",
+        "es": "Empezamos el año con más fuerza que nunca y seguimos creciendo como comunidad.",
+        "en": "We are starting the year stronger than ever and keep growing as a community."
+    },
+    "content": {
+        "ca": "<p>Aquest any el comencem amb més força que mai! Ja som més de 30 jugadors i continuem creixent com a comunitat. 💛🖤</p><p>Gràcies a tots els jugadors, famílies i col·laboradors que feu possible aquest projecte. Sense vosaltres, el Club Escacs Pardinyes no seria el que és avui!</p>",
+        "es": "<p>¡Este año lo empezamos con más fuerza que nunca! Ya somos más de 30 jugadores y seguimos creciendo como comunidad. 💛🖤</p><p>Gracias a todos los jugadores, familias y colaboradores que hacéis posible este proyecto. ¡Sin vosotros, el Club Escacs Pardinyes no sería lo que es hoy!</p>",
+        "en": "<p>We are starting this year stronger than ever! We are now more than 30 players and keep growing as a community. 💛🖤</p><p>Thanks to all the players, families and supporters who make this project possible. Without you, Club Escacs Pardinyes would not be what it is today!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/foto-club-2025/img1.webp"
+    ]
+},
+{
+    "id": "escacs-al-carrer-2025",
+    "title": {
+        "ca": "♟️ Escacs al carrer: un èxit malgrat el temps",
+        "es": "♟️ Ajedrez en la calle: un éxito a pesar del tiempo",
+        "en": "♟️ Street chess: a success despite the weather"
+    },
+    "date": "2025-02-16",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/escacs-al-carrer-2025/img1.webp",
+    "summary": {
+        "ca": "Gran participació a la plaça Josep Pinyol, amb la visita de representants de cinc partits polítics.",
+        "es": "Gran participación en la plaza Josep Pinyol, con la visita de representantes de cinco partidos políticos.",
+        "en": "Great turnout in Plaça Josep Pinyol, with visits from representatives of five political parties."
+    },
+    "content": {
+        "ca": "<p>Vam portar els escacs a la plaça Josep Pinyol i, tot i que el temps no ens ho va posar fàcil, vam tenir una gran participació! Molts jugadors s'hi van acostar, i també vam rebre la visita de representants de cinc partits polítics diferents, cosa que demostra l'interès per fomentar els escacs a la ciutat.</p><p>Amb l'arribada del bon temps, volem fer d'aquesta iniciativa una activitat recurrent. ♟️☀️</p>",
+        "es": "<p>Llevamos el ajedrez a la plaza Josep Pinyol y, aunque el tiempo no nos lo puso fácil, ¡tuvimos una gran participación! Muchos jugadores se acercaron, y también recibimos la visita de representantes de cinco partidos políticos distintos, lo que demuestra el interés por fomentar el ajedrez en la ciudad.</p><p>Con la llegada del buen tiempo, queremos convertir esta iniciativa en una actividad recurrente. ♟️☀️</p>",
+        "en": "<p>We took chess to Plaça Josep Pinyol and, although the weather didn't make it easy, the turnout was great! Lots of players came along, and we were also visited by representatives of five different political parties, showing the interest in promoting chess in the city.</p><p>With the arrival of good weather, we want to make this a regular activity. ♟️☀️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/escacs-al-carrer-2025/img1.webp",
+        "/img/galeria/Noticies/escacs-al-carrer-2025/img2.webp",
+        "/img/galeria/Noticies/escacs-al-carrer-2025/img3.webp",
+        "/img/galeria/Noticies/escacs-al-carrer-2025/img4.webp"
+    ]
+},
+{
+    "id": "campionat-edats-lleida-2025",
+    "title": {
+        "ca": "🥉 Podi Sub-8 al Campionat d'Edats de Lleida 2025",
+        "es": "🥉 Podio Sub-8 en el Campeonato de Edades de Lleida 2025",
+        "en": "🥉 U-8 podium at the 2025 Lleida Age-Group Championship"
+    },
+    "date": "2025-02-28",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/campionat-edats-lleida-2025/img1.webp",
+    "summary": {
+        "ca": "Un dels nostres joves talents aconsegueix el 3r lloc en la categoria Sub-8.",
+        "es": "Uno de nuestros jóvenes talentos consigue el 3.er puesto en la categoría Sub-8.",
+        "en": "One of our young talents took 3rd place in the U-8 category."
+    },
+    "content": {
+        "ca": "<p>Ha finalitzat el Campionat d'Edats de Lleida 2025. El nostre club hi ha estat present i un dels nostres joves talents ha aconseguit una gran fita: 3r lloc en la categoria Sub-8! 🥉♟️</p><p>Seguim endavant amb més competicions i reptes! 🔥</p>",
+        "es": "<p>Ha finalizado el Campeonato de Edades de Lleida 2025. Nuestro club ha estado presente y uno de nuestros jóvenes talentos ha conseguido un gran logro: ¡3.er puesto en la categoría Sub-8! 🥉♟️</p><p>¡Seguimos adelante con más competiciones y retos! 🔥</p>",
+        "en": "<p>The 2025 Lleida Age-Group Championship is over. Our club was there, and one of our young talents achieved a great milestone: 3rd place in the U-8 category! 🥉♟️</p><p>On to more competitions and challenges! 🔥</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/campionat-edats-lleida-2025/img1.webp",
+        "/img/galeria/Noticies/campionat-edats-lleida-2025/img2.webp",
+        "/img/galeria/Noticies/campionat-edats-lleida-2025/img3.webp"
+    ]
+},
+{
+    "id": "campions-preferent-2025",
+    "title": {
+        "ca": "🏆 Campions de Preferent i ascens a Segona Catalana!",
+        "es": "🏆 ¡Campeones de Preferente y ascenso a Segunda Catalana!",
+        "en": "🏆 Preferent champions and promotion to Segona Catalana!"
+    },
+    "date": "2025-03-03",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/campions-preferent-2025/img1.webp",
+    "summary": {
+        "ca": "Després d'una gran remuntada, el club es proclama campió de Preferent i aconsegueix l'ascens.",
+        "es": "Tras una gran remontada, el club se proclama campeón de Preferente y consigue el ascenso.",
+        "en": "After a great comeback, the club was crowned Preferent champion and won promotion."
+    },
+    "content": {
+        "ca": "<p>El Club Escacs Pardinyes ha fet història! 💪 Després d'una temporada plena d'emoció i esforç, ens hem proclamat campions de Preferent, aconseguint l'ascens després d'una gran remuntada.</p><p>Tot i començar amb una derrota per la mínima contra l'Almenar (4½ - 5½), l'equip va demostrar caràcter i determinació, encadenant victòria rere victòria fins a certificar el lideratge amb un triomf 4 - 6 contra el Club d'Escacs Lleida a l'última jornada.</p><p>Aquesta fita és també un reflex del gran creixement del club: cada cop més jugadors joves s'han sumat al projecte, i alguns ja han aconseguit les seves primeres copes. 🏅</p><p>El diari Segre també es va fer ressò del nostre ascens a Segona Catalana. 📰</p><p>Gràcies a tots els jugadors, socis i seguidors, i també a Orvepard, a l'Ajuntament de Lleida i a la Diputació de Lleida pel seu suport al nostre projecte. Aquest triomf és de tots! 🔥</p>",
+        "es": "<p>¡El Club Escacs Pardinyes ha hecho historia! 💪 Después de una temporada llena de emoción y esfuerzo, nos hemos proclamado campeones de Preferente, consiguiendo el ascenso tras una gran remontada.</p><p>A pesar de empezar con una derrota por la mínima contra el Almenar (4½ - 5½), el equipo demostró carácter y determinación, encadenando victoria tras victoria hasta certificar el liderato con un triunfo 4 - 6 contra el Club d'Escacs Lleida en la última jornada.</p><p>Este logro es también un reflejo del gran crecimiento del club: cada vez más jugadores jóvenes se han sumado al proyecto, y algunos ya han conseguido sus primeras copas. 🏅</p><p>El diario Segre también se hizo eco de nuestro ascenso a Segunda Catalana. 📰</p><p>Gracias a todos los jugadores, socios y seguidores, y también a Orvepard, al Ayuntamiento de Lleida y a la Diputación de Lleida por su apoyo a nuestro proyecto. ¡Este triunfo es de todos! 🔥</p>",
+        "en": "<p>Club Escacs Pardinyes has made history! 💪 After a season full of excitement and effort, we were crowned Preferent champions, winning promotion after a great comeback.</p><p>Despite starting with a narrow loss to Almenar (4½ - 5½), the team showed character and determination, stringing together win after win until sealing first place with a 4 - 6 victory over Club d'Escacs Lleida on the final day.</p><p>This milestone also reflects the club's strong growth: more and more young players have joined the project, and some have already won their first trophies. 🏅</p><p>The Segre newspaper also covered our promotion to Segona Catalana. 📰</p><p>Thanks to all our players, members and supporters, and also to Orvepard, Lleida City Council and the Lleida Provincial Council for supporting our project. This victory belongs to everyone! 🔥</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/campions-preferent-2025/img1.webp",
+        "/img/galeria/Noticies/campions-preferent-2025/img2.webp",
+        "/img/galeria/Noticies/campions-preferent-2025/img3.webp",
+        "/img/galeria/Noticies/campions-preferent-2025/img4.webp",
+        "/img/galeria/Noticies/campions-preferent-2025/img5.webp"
+    ]
+},
+{
+    "id": "circuit-enrocat-2024-25",
+    "title": {
+        "ca": "♟️ Els nostres joves al Circuit EnroCA'T 2024/25",
+        "es": "♟️ Nuestros jóvenes en el Circuito EnroCA'T 2024/25",
+        "en": "♟️ Our young players at the 2024/25 EnroCA'T Circuit"
+    },
+    "date": "2025-05-04",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/circuit-enrocat-2024-25/img1.webp",
+    "summary": {
+        "ca": "Trofeus a Sidamon i al Palau d'Anglesola, i vuit joves del club competint a Fondarella.",
+        "es": "Trofeos en Sidamon y en el Palau d'Anglesola, y ocho jóvenes del club compitiendo en Fondarella.",
+        "en": "Trophies in Sidamon and El Palau d'Anglesola, and eight young club players competing in Fondarella."
+    },
+    "content": {
+        "ca": "<p>Els nostres joves han estat molt actius al Circuit EnroCA'T 2024/25:</p><p>🏆 <strong>Sidamon</strong>: un dels nostres jugadors va aconseguir trofeu a la categoria Prebenjamí.</p><p>🥇 <strong>El Palau d'Anglesola</strong>: diversos jugadors del club hi van participar, amb una menció especial per a Manases, primer de la seva categoria.</p><p>💪 <strong>Fondarella</strong>: el dissabte 3 de maig, vuit joves del club van participar en una gran jornada de competició i aprenentatge.</p><p>Felicitats a tots pel seu compromís i nivell competitiu! 💛🖤</p>",
+        "es": "<p>Nuestros jóvenes han estado muy activos en el Circuito EnroCA'T 2024/25:</p><p>🏆 <strong>Sidamon</strong>: uno de nuestros jugadores consiguió trofeo en la categoría Prebenjamín.</p><p>🥇 <strong>El Palau d'Anglesola</strong>: varios jugadores del club participaron, con una mención especial para Manases, primero de su categoría.</p><p>💪 <strong>Fondarella</strong>: el sábado 3 de mayo, ocho jóvenes del club participaron en una gran jornada de competición y aprendizaje.</p><p>¡Felicidades a todos por su compromiso y nivel competitivo! 💛🖤</p>",
+        "en": "<p>Our young players have been very active in the 2024/25 EnroCA'T Circuit:</p><p>🏆 <strong>Sidamon</strong>: one of our players won a trophy in the under-8 category.</p><p>🥇 <strong>El Palau d'Anglesola</strong>: several club players took part, with a special mention for Manases, first in his category.</p><p>💪 <strong>Fondarella</strong>: on Saturday 3 May, eight young club players took part in a great day of competition and learning.</p><p>Congratulations to all of them on their commitment and competitive level! 💛🖤</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img1.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img2.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img3.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img4.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img5.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img6.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img7.webp",
+        "/img/galeria/Noticies/circuit-enrocat-2024-25/img8.webp"
+    ]
+},
+{
+    "id": "torneig-primavera-flix-2025",
+    "title": {
+        "ca": "🌸 I Torneig de Primavera a Flix",
+        "es": "🌸 I Torneo de Primavera en Flix",
+        "en": "🌸 1st Spring Tournament in Flix"
+    },
+    "date": "2025-04-19",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/torneig-primavera-flix-2025/img1.webp",
+    "summary": {
+        "ca": "Una gran tarda d'escacs al Casal de Joves \"Lo Refugi\" de Flix.",
+        "es": "Una gran tarde de ajedrez en el Casal de Joves \"Lo Refugi\" de Flix.",
+        "en": "A great afternoon of chess at the \"Lo Refugi\" youth centre in Flix."
+    },
+    "content": {
+        "ca": "<p>Vam viure una gran tarda d'escacs a Flix, participant al I Torneig de Primavera al Casal de Joves \"Lo Refugi\", amb partides intenses i molt bon ambient.</p><p>Agraïm la invitació al club d'escacs de Flix i a la Regidoria de Joventut de Flix. Una experiència enriquidora per als nostres joves, que continuen creixent dins i fora del tauler.</p>",
+        "es": "<p>Vivimos una gran tarde de ajedrez en Flix, participando en el I Torneo de Primavera en el Casal de Joves \"Lo Refugi\", con partidas intensas y muy buen ambiente.</p><p>Agradecemos la invitación al club de ajedrez de Flix y a la Concejalía de Juventud de Flix. Una experiencia enriquecedora para nuestros jóvenes, que siguen creciendo dentro y fuera del tablero.</p>",
+        "en": "<p>We enjoyed a great afternoon of chess in Flix, taking part in the 1st Spring Tournament at the \"Lo Refugi\" youth centre, with intense games and a great atmosphere.</p><p>Thanks to the Flix chess club and the Flix Youth Department for the invitation. An enriching experience for our young players, who keep growing on and off the board.</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/torneig-primavera-flix-2025/img1.webp",
+        "/img/galeria/Noticies/torneig-primavera-flix-2025/img2.webp"
+    ]
+},
+{
+    "id": "cap-de-setmana-escacs-abril-2025",
+    "title": {
+        "ca": "🏰 Cap de setmana d'escacs intens: Montoliu, Castellterçol i Osca",
+        "es": "🏰 Fin de semana de ajedrez intenso: Montoliu, Castellterçol y Huesca",
+        "en": "🏰 A busy chess weekend: Montoliu, Castellterçol and Huesca"
+    },
+    "date": "2025-04-28",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img1.webp",
+    "summary": {
+        "ca": "Tres tornejos en un sol cap de setmana, amb el segon millor Sub-12 a Castellterçol.",
+        "es": "Tres torneos en un solo fin de semana, con el segundo mejor Sub-12 en Castellterçol.",
+        "en": "Three tournaments in a single weekend, including second-best U-12 in Castellterçol."
+    },
+    "content": {
+        "ca": "<p>Aquest cap de setmana el Club Escacs Pardinyes ha estat present a diversos tornejos:</p><p>🔹 Dissabte, 10 jugadors van participar a la Sisena Trobada Intermunicipal d'Escacs al Segrià, a Montoliu de Lleida.</p><p>🔹 Diumenge, ens vam desplaçar a Castellterçol per disputar el Torneig al Castell, on l'Ian va fer un gran 5/8 i es va proclamar segon millor Sub-12! 🥈</p><p>🔹 També diumenge, dos jugadors van viatjar a Osca per competir al V Torneo de Ajedrez Fundación Ramón Rey Ardid.</p><p>Un cap de setmana ple d'experiències, aprenentatge i passió pel nostre esport! 💛♟️</p>",
+        "es": "<p>Este fin de semana el Club Escacs Pardinyes ha estado presente en varios torneos:</p><p>🔹 El sábado, 10 jugadores participaron en el Sexto Encuentro Intermunicipal de Ajedrez del Segrià, en Montoliu de Lleida.</p><p>🔹 El domingo, nos desplazamos a Castellterçol para disputar el Torneig al Castell, donde Ian hizo un gran 5/8 y se proclamó segundo mejor Sub-12. 🥈</p><p>🔹 También el domingo, dos jugadores viajaron a Huesca para competir en el V Torneo de Ajedrez Fundación Ramón Rey Ardid.</p><p>¡Un fin de semana lleno de experiencias, aprendizaje y pasión por nuestro deporte! 💛♟️</p>",
+        "en": "<p>This weekend Club Escacs Pardinyes took part in several tournaments:</p><p>🔹 On Saturday, 10 players took part in the 6th Segrià Intermunicipal Chess Meeting in Montoliu de Lleida.</p><p>🔹 On Sunday, we travelled to Castellterçol for the Torneig al Castell, where Ian scored a great 5/8 and finished as second-best U-12! 🥈</p><p>🔹 Also on Sunday, two players travelled to Huesca to compete in the 5th Ramón Rey Ardid Foundation Chess Tournament.</p><p>A weekend full of experiences, learning and passion for our sport! 💛♟️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img1.webp",
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img2.webp",
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img3.webp",
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img4.webp",
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img5.webp",
+        "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img6.webp"
+    ]
+},
+{
+    "id": "memorial-igor-florez-2025",
+    "title": {
+        "ca": "🌟 Millor Sub-14 al Memorial Igor H. Florez",
+        "es": "🌟 Mejor Sub-14 en el Memorial Igor H. Florez",
+        "en": "🌟 Best U-14 at the Igor H. Florez Memorial"
+    },
+    "date": "2025-05-29",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/memorial-igor-florez-2025/img1.webp",
+    "summary": {
+        "ca": "Els nostres joves brillen al XXV Torneig Escolar Memorial Igor H. Florez, i tres jugadors competeixen a l'Open Joviat de Manresa.",
+        "es": "Nuestros jóvenes brillan en el XXV Torneo Escolar Memorial Igor H. Florez, y tres jugadores compiten en el Open Joviat de Manresa.",
+        "en": "Our young players shone at the 25th Igor H. Florez Memorial School Tournament, and three players competed at the Joviat Open in Manresa."
+    },
+    "content": {
+        "ca": "<p>El dissabte 17 de maig, alguns dels nostres joves talents van participar al XXV Torneig Escolar d'Escacs Memorial Igor H. Florez. Va ser una jornada plena d'aprenentatge i competitivitat, amb una menció especial per al nostre jove jugador que va ser el <strong>millor Sub-14 del torneig</strong>! 🏆</p><p>A més, l'1 de maig, tres jugadors del club van participar al VI Open Internacional d'Escacs Actius Fundació Joviat, a l'Escola Joviat de Manresa. Una gran experiència en un entorn d'alt nivell! 👏</p>",
+        "es": "<p>El sábado 17 de mayo, algunos de nuestros jóvenes talentos participaron en el XXV Torneo Escolar de Ajedrez Memorial Igor H. Florez. Fue una jornada llena de aprendizaje y competitividad, con una mención especial para nuestro joven jugador, que fue el <strong>mejor Sub-14 del torneo</strong>. 🏆</p><p>Además, el 1 de mayo, tres jugadores del club participaron en el VI Open Internacional de Ajedrez Activo Fundació Joviat, en la Escola Joviat de Manresa. ¡Una gran experiencia en un entorno de alto nivel! 👏</p>",
+        "en": "<p>On Saturday 17 May, some of our young talents took part in the 25th Igor H. Florez Memorial School Chess Tournament. It was a day full of learning and competition, with a special mention for our young player who was the <strong>best U-14 of the tournament</strong>! 🏆</p><p>In addition, on 1 May three club players took part in the 6th Fundació Joviat International Active Chess Open at Escola Joviat in Manresa. A great experience in a high-level setting! 👏</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/memorial-igor-florez-2025/img1.webp",
+        "/img/galeria/Noticies/memorial-igor-florez-2025/img2.webp",
+        "/img/galeria/Noticies/memorial-igor-florez-2025/img3.webp",
+        "/img/galeria/Noticies/memorial-igor-florez-2025/img4.webp",
+        "/img/galeria/Noticies/memorial-igor-florez-2025/img5.webp"
+    ]
+},
+{
+    "id": "torneig-collegi-episcopal-2025",
+    "title": {
+        "ca": "♟️ Torneig i simultànies amb el MF Joan Trepat al Col·legi Episcopal",
+        "es": "♟️ Torneo y simultáneas con el MF Joan Trepat en el Col·legi Episcopal",
+        "en": "♟️ Tournament and simultaneous exhibition with FM Joan Trepat at Col·legi Episcopal"
+    },
+    "date": "2025-06-13",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img1.webp",
+    "summary": {
+        "ca": "El 7 de juny vam coorganitzar un torneig infantil al Col·legi Episcopal i vam rebre el Mestre FIDE Joan Trepat.",
+        "es": "El 7 de junio coorganizamos un torneo infantil en el Col·legi Episcopal y recibimos al Maestro FIDE Joan Trepat.",
+        "en": "On 7 June we co-organised a children's tournament at Col·legi Episcopal and welcomed FIDE Master Joan Trepat."
+    },
+    "content": {
+        "ca": "<p>El dissabte 7 de juny va ser un dia ple d'estratègia i emoció al Col·legi Episcopal! Vam celebrar el torneig d'escacs coorganitzat pel Col·legi Episcopal i el Club Escacs Pardinyes, on l'enginy i la concentració van ser els grans protagonistes. Felicitats a tots els infants per la seva dedicació!</p><p>El mateix dia vam rebre el Mestre FIDE Joan Trepat ✨. Alumnes i familiars van gaudir d'unes simultànies d'escacs, una oportunitat única per aprendre i posar a prova les seves habilitats. Moltíssimes gràcies per la teva presència!</p>",
+        "es": "<p>¡El sábado 7 de junio fue un día lleno de estrategia y emoción en el Col·legi Episcopal! Celebramos el torneo de ajedrez coorganizado por el Col·legi Episcopal y el Club Escacs Pardinyes, donde el ingenio y la concentración fueron los grandes protagonistas. ¡Felicidades a todos los niños por su dedicación!</p><p>El mismo día recibimos al Maestro FIDE Joan Trepat ✨. Alumnos y familiares disfrutaron de unas simultáneas de ajedrez, una oportunidad única para aprender y poner a prueba sus habilidades. ¡Muchísimas gracias por tu presencia!</p>",
+        "en": "<p>Saturday 7 June was a day full of strategy and excitement at Col·legi Episcopal! We held the chess tournament co-organised by Col·legi Episcopal and Club Escacs Pardinyes, where ingenuity and concentration took centre stage. Congratulations to all the children on their dedication!</p><p>On the same day we welcomed FIDE Master Joan Trepat ✨. Students and families enjoyed a simultaneous exhibition, a unique chance to learn and test their skills. Thank you so much for coming!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img1.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img2.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img3.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img4.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img5.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img6.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img7.webp",
+        "/img/galeria/Noticies/torneig-collegi-episcopal-2025/img8.webp"
+    ]
+},
+{
+    "id": "tornejos-estiu-2025",
+    "title": {
+        "ca": "☀️ Estiu de tornejos 2025: Farré, Mollerussa, Vila-seca, el Vendrell i Barcelona",
+        "es": "☀️ Verano de torneos 2025: Farré, Mollerussa, Vila-seca, El Vendrell y Barcelona",
+        "en": "☀️ Summer of tournaments 2025: Farré, Mollerussa, Vila-seca, El Vendrell and Barcelona"
+    },
+    "date": "2025-07-16",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/tornejos-estiu-2025/img1.webp",
+    "summary": {
+        "ca": "Primer de tram al 4t Memorial Enric Farré, segon lloc a la cloenda de la Lliga Online per Escoles i premi de tram al Vendrell.",
+        "es": "Primero de tramo en el 4.º Memorial Enric Farré, segundo puesto en la clausura de la Liga Online por Escuelas y premio de tramo en El Vendrell.",
+        "en": "First in a rating section at the 4th Enric Farré Memorial, second place at the Online Schools League final and a section prize in El Vendrell."
+    },
+    "content": {
+        "ca": "<p>L'inici de l'estiu ha estat ple de competició:</p><p>🏆 <strong>4t Memorial Enric Farré</strong>: 6 jugadors ens van representar i un d'ells va aconseguir la primera posició de tram.</p><p>🥈 <strong>Barcelona</strong>: dos dels nostres petits talents de l'escola Alba van participar a la Cloenda de la Lliga Online d'Escacs per Escoles 2025, i un d'ells va quedar segon de la general.</p><p>♟️ <strong>V Obert Internacional Ciutat de Mollerussa</strong>: 3 jugadors van representar el club en un ambient de competició internacional.</p><p>😄 <strong>Vila-seca Good Partner Chess</strong>: vam presentar dos equips i, tot i la calor, el bon ambient va ser el protagonista. Felicitats al CE Vila-seca pel seu 50è aniversari!</p><p>🏅 <strong>V Open Internacional Vila del Vendrell - Memorial Josep M. Pellicer</strong>: el 13 de juliol, un dels nostres jugadors va aconseguir un merescut premi de tram.</p>",
+        "es": "<p>El inicio del verano ha estado lleno de competición:</p><p>🏆 <strong>4.º Memorial Enric Farré</strong>: 6 jugadores nos representaron y uno de ellos consiguió la primera posición de tramo.</p><p>🥈 <strong>Barcelona</strong>: dos de nuestros pequeños talentos de la escuela Alba participaron en la Clausura de la Liga Online de Ajedrez por Escuelas 2025, y uno de ellos quedó segundo de la general.</p><p>♟️ <strong>V Abierto Internacional Ciutat de Mollerussa</strong>: 3 jugadores representaron al club en un ambiente de competición internacional.</p><p>😄 <strong>Vila-seca Good Partner Chess</strong>: presentamos dos equipos y, a pesar del calor, el buen ambiente fue el protagonista. ¡Felicidades al CE Vila-seca por su 50.º aniversario!</p><p>🏅 <strong>V Open Internacional Vila del Vendrell - Memorial Josep M. Pellicer</strong>: el 13 de julio, uno de nuestros jugadores consiguió un merecido premio de tramo.</p>",
+        "en": "<p>The start of summer has been full of competition:</p><p>🏆 <strong>4th Enric Farré Memorial</strong>: 6 players represented us and one of them finished first in his rating section.</p><p>🥈 <strong>Barcelona</strong>: two of our young talents from Escola Alba took part in the 2025 Online Schools Chess League final, and one of them finished second overall.</p><p>♟️ <strong>5th Ciutat de Mollerussa International Open</strong>: 3 players represented the club in an international setting.</p><p>😄 <strong>Vila-seca Good Partner Chess</strong>: we fielded two teams and, despite the heat, the great atmosphere stole the show. Congratulations to CE Vila-seca on its 50th anniversary!</p><p>🏅 <strong>5th Vila del Vendrell International Open - Josep M. Pellicer Memorial</strong>: on 13 July, one of our players earned a well-deserved section prize.</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/tornejos-estiu-2025/img1.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img2.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img3.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img4.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img5.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img6.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img7.webp",
+        "/img/galeria/Noticies/tornejos-estiu-2025/img8.webp"
+    ]
+},
+{
+    "id": "residencia-balafia-2025",
+    "title": {
+        "ca": "🤩 Mini torneig a la Residència Balafia II",
+        "es": "🤩 Mini torneo en la Residencia Balafia II",
+        "en": "🤩 Mini tournament at the Balafia II care home"
+    },
+    "date": "2025-07-24",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/residencia-balafia-2025/img1.webp",
+    "summary": {
+        "ca": "Una tarda intergeneracional d'escacs amb els residents de la Residència Geriàtrica Balafia II.",
+        "es": "Una tarde intergeneracional de ajedrez con los residentes de la Residencia Geriátrica Balafia II.",
+        "en": "An intergenerational afternoon of chess with the residents of the Balafia II care home."
+    },
+    "content": {
+        "ca": "<p>Gran tarda la que vam passar el dimarts 22 de juliol a la Residència Geriàtrica Balafia II! Vam organitzar un mini torneig on persones de totes les edats es van unir per jugar i compartir un moment fantàstic amb els residents.</p><p>Un plaer veure com la diversió no té edat i com es creen connexions tan boniques! 🤩</p>",
+        "es": "<p>¡Gran tarde la que pasamos el martes 22 de julio en la Residencia Geriátrica Balafia II! Organizamos un mini torneo donde personas de todas las edades se unieron para jugar y compartir un momento fantástico con los residentes.</p><p>¡Un placer ver cómo la diversión no tiene edad y cómo se crean conexiones tan bonitas! 🤩</p>",
+        "en": "<p>What a great afternoon we spent on Tuesday 22 July at the Balafia II care home! We organised a mini tournament where people of all ages came together to play and share a wonderful time with the residents.</p><p>It was a pleasure to see that fun has no age and to watch such lovely connections being made! 🤩</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/residencia-balafia-2025/img1.webp",
+        "/img/galeria/Noticies/residencia-balafia-2025/img2.webp",
+        "/img/galeria/Noticies/residencia-balafia-2025/img3.webp",
+        "/img/galeria/Noticies/residencia-balafia-2025/img4.webp"
+    ]
+},
+{
+    "id": "ian-novell-estiu-2025",
+    "title": {
+        "ca": "🥈🥉 Doble podi de l'Ian Novell aquest estiu",
+        "es": "🥈🥉 Doble podio de Ian Novell este verano",
+        "en": "🥈🥉 A double podium for Ian Novell this summer"
+    },
+    "date": "2025-08-05",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/ian-novell-estiu-2025/img1.webp",
+    "summary": {
+        "ca": "Segon al 1r Torneig Infantil de Montblanc i tercer Sub-10 al XXXV Torneo Internacional San Lorenzo.",
+        "es": "Segundo en el 1.er Torneo Infantil de Montblanc y tercero Sub-10 en el XXXV Torneo Internacional San Lorenzo.",
+        "en": "Second at the 1st Montblanc Children's Tournament and third U-10 at the 35th San Lorenzo International Tournament."
+    },
+    "content": {
+        "ca": "<p>Enhorabona al nostre jove talent, l'Ian Novell, de 9 anys!</p><p>🥈 Va aconseguir la segona posició al 1r Torneig Infantil de les colònies del club Escacs Montblanc 2025.</p><p>🥉 I al XXXV Torneo Internacional San Lorenzo 2025 va pujar al podi amb un meritori 3r lloc a la categoria Sub-10, en una competició on tots els nostres jugadors van demostrar un gran nivell.</p><p>La seva dedicació i talent són un exemple per a tots. Un orgull veure'l créixer! 💪</p>",
+        "es": "<p>¡Enhorabuena a nuestro joven talento, Ian Novell, de 9 años!</p><p>🥈 Consiguió la segunda posición en el 1.er Torneo Infantil de las colonias del club Escacs Montblanc 2025.</p><p>🥉 Y en el XXXV Torneo Internacional San Lorenzo 2025 subió al podio con un meritorio 3.er puesto en la categoría Sub-10, en una competición donde todos nuestros jugadores demostraron un gran nivel.</p><p>Su dedicación y talento son un ejemplo para todos. ¡Un orgullo verle crecer! 💪</p>",
+        "en": "<p>Congratulations to our young talent, 9-year-old Ian Novell!</p><p>🥈 He finished second at the 1st Children's Tournament of the Escacs Montblanc 2025 summer camp.</p><p>🥉 And at the 35th San Lorenzo International Tournament 2025 he made the podium with a well-earned 3rd place in the U-10 category, in a competition where all our players showed a great level.</p><p>His dedication and talent are an example to us all. So proud to watch him grow! 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img1.webp",
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img2.webp",
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img3.webp",
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img4.webp",
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img5.webp",
+        "/img/galeria/Noticies/ian-novell-estiu-2025/img6.webp"
+    ]
+},
+{
+    "id": "simultanies-joan-trepat-2025",
+    "title": {
+        "ca": "🏆 Simultànies amb el MF Joan Trepat al club",
+        "es": "🏆 Simultáneas con el MF Joan Trepat en el club",
+        "en": "🏆 Simultaneous exhibition with FM Joan Trepat at the club"
+    },
+    "date": "2025-08-04",
+    "category": "simultanies",
+    "image": "/img/galeria/Noticies/simultanies-joan-trepat-2025/img1.webp",
+    "summary": {
+        "ca": "Participants de totes les edats van jugar contra el Mestre FIDE Joan Trepat Herranz.",
+        "es": "Participantes de todas las edades jugaron contra el Maestro FIDE Joan Trepat Herranz.",
+        "en": "Players of all ages took on FIDE Master Joan Trepat Herranz."
+    },
+    "content": {
+        "ca": "<p>La nostra jornada de partides simultànies va ser un èxit! 🏆 Vam tenir participants de totes les edats que van gaudir jugant contra el Mestre FIDE Joan Trepat Herranz al Club Escacs Pardinyes.</p><p>Esperem veure-us de nou a les properes activitats! 🗓️</p>",
+        "es": "<p>¡Nuestra jornada de partidas simultáneas fue un éxito! 🏆 Tuvimos participantes de todas las edades que disfrutaron jugando contra el Maestro FIDE Joan Trepat Herranz en el Club Escacs Pardinyes.</p><p>¡Esperamos volver a veros en las próximas actividades! 🗓️</p>",
+        "en": "<p>Our simultaneous exhibition was a success! 🏆 Players of all ages enjoyed taking on FIDE Master Joan Trepat Herranz at Club Escacs Pardinyes.</p><p>We hope to see you again at our next activities! 🗓️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img1.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img2.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img3.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img4.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img5.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img6.webp",
+        "/img/galeria/Noticies/simultanies-joan-trepat-2025/img7.webp"
+    ]
+},
+{
+    "id": "cloenda-curs-2025-26",
+    "title": {
+        "ca": "♟️ Cloenda del curs 2025/26 amb torneig per parelles",
+        "es": "♟️ Clausura del curso 2025/26 con torneo por parejas",
+        "en": "♟️ End of the 2025/26 season with a pairs tournament"
+    },
+    "date": "2026-07-01",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/cloenda-curs-2025-26/img1.webp",
+    "summary": {
+        "ca": "Més de 40 jugadors, socis i amics van acomiadar la temporada compartint tauler i bon ambient.",
+        "es": "Más de 40 jugadores, socios y amigos despidieron la temporada compartiendo tablero y buen ambiente.",
+        "en": "More than 40 players, members and friends said goodbye to the season sharing boards and a great atmosphere."
+    },
+    "content": {
+        "ca": "<p>El dissabte 20 de juny vam celebrar el tancament del curs d'escacs 2025/26 d'una manera immillorable. Més de 40 jugadors, socis i amics del club ens vam reunir per acomiadar la temporada compartint tauler, riures i molta passió pels escacs. 🤝🔥</p><p>Per tancar-ho amb clau d'or, vam organitzar un divertit torneig per parelles on el més important va ser el gran ambient. 🏆🎉</p><p>Gràcies a tothom qui ha format part d'aquest curs, des dels que fan els primers passos fins als més veterans. A carregar piles per a la temporada vinent! 🚀</p>",
+        "es": "<p>El sábado 20 de junio celebramos el cierre del curso de ajedrez 2025/26 de una manera inmejorable. Más de 40 jugadores, socios y amigos del club nos reunimos para despedir la temporada compartiendo tablero, risas y mucha pasión por el ajedrez. 🤝🔥</p><p>Para cerrarlo con broche de oro, organizamos un divertido torneo por parejas donde lo más importante fue el gran ambiente. 🏆🎉</p><p>Gracias a todos los que habéis formado parte de este curso, desde los que dan los primeros pasos hasta los más veteranos. ¡A cargar pilas para la próxima temporada! 🚀</p>",
+        "en": "<p>On Saturday 20 June we wrapped up the 2025/26 chess season in the best possible way. More than 40 players, members and friends of the club got together to say goodbye to the season, sharing boards, laughter and plenty of passion for chess. 🤝🔥</p><p>To end on a high, we organised a fun pairs tournament where the great atmosphere was what mattered most. 🏆🎉</p><p>Thanks to everyone who has been part of this season, from beginners to veterans. Time to recharge for next season! 🚀</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img1.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img2.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img3.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img4.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img5.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img6.webp",
+        "/img/galeria/Noticies/cloenda-curs-2025-26/img7.webp"
+    ]
+},
+{
+    "id": "obert-mollerussa-2026",
+    "title": {
+        "ca": "♟️ Gran paper al VI Obert Internacional Ciutat de Mollerussa",
+        "es": "♟️ Gran papel en el VI Abierto Internacional Ciutat de Mollerussa",
+        "en": "♟️ Strong showing at the 6th Ciutat de Mollerussa International Open"
+    },
+    "date": "2026-07-01",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/obert-mollerussa-2026/img1.webp",
+    "summary": {
+        "ca": "5 dels nostres jugadors ho van donar tot en un torneig d'altíssim nivell.",
+        "es": "5 de nuestros jugadores lo dieron todo en un torneo de altísimo nivel.",
+        "en": "5 of our players gave their all in a very high-level tournament."
+    },
+    "content": {
+        "ca": "<p>5 dels nostres jugadors van estar donant-ho tot al VI Obert Internacional d'Escacs Ciutat de Mollerussa, un torneig d'altíssim nivell. Van ser jornades de molta concentració, estratègia i, sobretot, de gaudir del millor escacs. 🧠🔥</p><p>Molt orgullosos de la vostra participació i de com heu representat el club! 🏆👏</p>",
+        "es": "<p>5 de nuestros jugadores lo dieron todo en el VI Abierto Internacional de Ajedrez Ciutat de Mollerussa, un torneo de altísimo nivel. Fueron jornadas de mucha concentración, estrategia y, sobre todo, de disfrutar del mejor ajedrez. 🧠🔥</p><p>¡Muy orgullosos de vuestra participación y de cómo habéis representado al club! 🏆👏</p>",
+        "en": "<p>5 of our players gave their all at the 6th Ciutat de Mollerussa International Chess Open, a very high-level tournament. It was a weekend of deep concentration, strategy and, above all, enjoying top-class chess. 🧠🔥</p><p>Very proud of your participation and of how you represented the club! 🏆👏</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/obert-mollerussa-2026/img1.webp",
+        "/img/galeria/Noticies/obert-mollerussa-2026/img2.webp",
+        "/img/galeria/Noticies/obert-mollerussa-2026/img3.webp",
+        "/img/galeria/Noticies/obert-mollerussa-2026/img4.webp"
+    ]
+},
+{
+    "id": "llampec-lleida-cloenda-lliga-2026",
+    "title": {
+        "ca": "🏆 Èxit al Campionat Llampec de Lleida i a la cloenda de la Lliga",
+        "es": "🏆 Éxito en el Campeonato Relámpago de Lleida y en la clausura de la Liga",
+        "en": "🏆 Success at the Lleida Blitz Championship and the League closing ceremony"
+    },
+    "date": "2026-07-08",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img1.webp",
+    "summary": {
+        "ca": "Subcampions per equips, un segon lloc individual i 4 guardons de la Lliga Catalana per tancar una temporada històrica.",
+        "es": "Subcampeones por equipos, un segundo puesto individual y 4 galardones de la Liga Catalana para cerrar una temporada histórica.",
+        "en": "Team runners-up, an individual second place and 4 Catalan League awards to close a historic season."
+    },
+    "content": {
+        "ca": "<p>Bellpuig va acollir el Campionat Llampec de Lleida, la cita que tanca oficialment la temporada de la delegació territorial, i el nostre club va tornar a casa amb les mans plenes d'èxits!</p><p><strong>📈 Un any de creixement històric</strong><br>L'any passat vam presentar només 2 equips a la competició, i aquest any n'hem presentat 5! Som cada vegada més, estem més units i el club està més viu que mai.</p><p><strong>⚡ Campionat Llampec</strong><br>Ferran Gutiérrez va fer un resultat increïble de 8/9 punts, empatat amb el primer classificat, i es va emportar el segon lloc de la general. Gràcies al rendiment col·lectiu, el Pardinyes es va proclamar segon millor equip del torneig.</p><p><strong>🍽️ Dinar de germanor i premis de la Lliga</strong><br>🥇 Campions de la 2a Categoria<br>🥇 Campions de la 3a Categoria<br>🏅 Millor 4t tauler de 3a Categoria<br>🏅 5è millor jugador de 2a Categoria</p><p>Moltes felicitats a tots els jugadors, socis i col·laboradors. Això és només el principi. Som-hi, Pardinyes! ♟️🔥</p>",
+        "es": "<p>Bellpuig acogió el Campeonato Relámpago de Lleida, la cita que cierra oficialmente la temporada de la delegación territorial, ¡y nuestro club volvió a casa con las manos llenas de éxitos!</p><p><strong>📈 Un año de crecimiento histórico</strong><br>El año pasado presentamos solo 2 equipos a la competición, ¡y este año hemos presentado 5! Somos cada vez más, estamos más unidos y el club está más vivo que nunca.</p><p><strong>⚡ Campeonato Relámpago</strong><br>Ferran Gutiérrez hizo un resultado increíble de 8/9 puntos, empatado con el primer clasificado, y se llevó el segundo puesto de la general. Gracias al rendimiento colectivo, el Pardinyes se proclamó segundo mejor equipo del torneo.</p><p><strong>🍽️ Comida de hermandad y premios de la Liga</strong><br>🥇 Campeones de 2.ª Categoría<br>🥇 Campeones de 3.ª Categoría<br>🏅 Mejor 4.º tablero de 3.ª Categoría<br>🏅 5.º mejor jugador de 2.ª Categoría</p><p>Muchas felicidades a todos los jugadores, socios y colaboradores. Esto es solo el principio. ¡Vamos, Pardinyes! ♟️🔥</p>",
+        "en": "<p>Bellpuig hosted the Lleida Blitz Championship, the event that officially closes the territorial season, and our club came home with plenty of success!</p><p><strong>📈 A year of historic growth</strong><br>Last year we entered just 2 teams in the competition; this year we entered 5! There are more of us than ever, we are more united and the club is more alive than ever.</p><p><strong>⚡ Blitz Championship</strong><br>Ferran Gutiérrez scored an incredible 8/9, tied with the winner, and took second place overall. Thanks to the collective performance, Pardinyes finished as the second-best team of the tournament.</p><p><strong>🍽️ Club lunch and League awards</strong><br>🥇 2nd Category champions<br>🥇 3rd Category champions<br>🏅 Best 4th board in 3rd Category<br>🏅 5th best player in 2nd Category</p><p>Congratulations to all our players, members and supporters. This is only the beginning. Come on, Pardinyes! ♟️🔥</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img1.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img2.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img3.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img4.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img5.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img6.webp",
+        "/img/galeria/Noticies/llampec-lleida-cloenda-lliga-2026/img7.webp"
+    ]
+},
+{
+    "id": "soleras-2026",
+    "title": {
+        "ca": "🐉 Torneig solidari i simultànies al Soleràs",
+        "es": "🐉 Torneo solidario y simultáneas en El Soleràs",
+        "en": "🐉 Charity tournament and simultaneous exhibition in El Soleràs"
+    },
+    "date": "2026-07-14",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/soleras-2026/img1.webp",
+    "summary": {
+        "ca": "Més de 65 persones al Torneig d'Escacs Solidari Drac Artcai 2026 i 20 valents a les simultànies.",
+        "es": "Más de 65 personas en el Torneo de Ajedrez Solidario Drac Artcai 2026 y 20 valientes en las simultáneas.",
+        "en": "More than 65 people at the 2026 Drac Artcai Charity Chess Tournament and 20 brave players at the simultaneous exhibition."
+    },
+    "content": {
+        "ca": "<p>Molt feliços d'haver coorganitzat el <strong>Torneig d'Escacs Solidari Drac Artcai 2026</strong>! Una jornada increïble on vam aconseguir moure més de 65 persones repartides en dos grups: un per a federats i un altre per a no federats. 🤝</p><p>També vam viure una jornada fantàstica de <strong>simultànies</strong> al Soleràs, on fins a 20 jugadors i aficionats es van atrevir a intentar guanyar un dels nostres jugadors. 🔥</p><p>Gràcies de tot cor a tots els participants, acompanyants i col·laboradors que vau fer possible aquests grans dies d'escacs i solidaritat. Junts sumem! 🖤</p>",
+        "es": "<p>¡Muy felices de haber coorganizado el <strong>Torneo de Ajedrez Solidario Drac Artcai 2026</strong>! Una jornada increíble en la que conseguimos mover a más de 65 personas repartidas en dos grupos: uno para federados y otro para no federados. 🤝</p><p>También vivimos una jornada fantástica de <strong>simultáneas</strong> en El Soleràs, donde hasta 20 jugadores y aficionados se atrevieron a intentar ganar a uno de nuestros jugadores. 🔥</p><p>Gracias de todo corazón a todos los participantes, acompañantes y colaboradores que hicisteis posibles estos grandes días de ajedrez y solidaridad. ¡Juntos sumamos! 🖤</p>",
+        "en": "<p>We are very happy to have co-organised the <strong>2026 Drac Artcai Charity Chess Tournament</strong>! An incredible day with more than 65 people split into two groups: one for federated players and one for non-federated players. 🤝</p><p>We also enjoyed a fantastic <strong>simultaneous exhibition</strong> in El Soleràs, where up to 20 players and fans dared to try to beat one of our players. 🔥</p><p>Heartfelt thanks to all the participants, companions and collaborators who made these great days of chess and solidarity possible. Together we add up! 🖤</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/soleras-2026/img1.webp",
+        "/img/galeria/Noticies/soleras-2026/img2.webp",
+        "/img/galeria/Noticies/soleras-2026/img3.webp",
+        "/img/galeria/Noticies/soleras-2026/img4.webp",
+        "/img/galeria/Noticies/soleras-2026/img5.webp",
+        "/img/galeria/Noticies/soleras-2026/img6.webp",
+        "/img/galeria/Noticies/soleras-2026/img7.webp",
+        "/img/galeria/Noticies/soleras-2026/img8.webp"
+    ]
+},
+{
+    "id": "fins-aviat-fortunato-2026",
+    "title": {
+        "ca": "🌍 Un fins aviat a Fortunato Mba Mba Avomo",
+        "es": "🌍 Un hasta pronto a Fortunato Mba Mba Avomo",
+        "en": "🌍 See you soon, Fortunato Mba Mba Avomo"
+    },
+    "date": "2026-08-14",
+    "category": "altres",
+    "image": "/img/galeria/Noticies/fins-aviat-fortunato-2026/img1.webp",
+    "summary": {
+        "ca": "El Torneig de Festa Major 2026 va servir per acomiadar (per ara!) el president del club «Maestro Enoho Djibloho» de Guinea Equatorial.",
+        "es": "El Torneo de Fiesta Mayor 2026 sirvió para despedir (¡por ahora!) al presidente del club «Maestro Enoho Djibloho» de Guinea Ecuatorial.",
+        "en": "The 2026 Festa Major Tournament was the perfect setting to say goodbye (for now!) to the president of the «Maestro Enoho Djibloho» club of Equatorial Guinea."
+    },
+    "content": {
+        "ca": "<p>El Torneig de Festa Major 2026 no va ser un torneig qualsevol: va ser el marc perfecte per acomiadar (per ara!) en Fortunato Mba Mba Avomo, president del Club de Ajedrez «Maestro Enoho Djibloho» de Guinea Equatorial, que ha col·laborat de prop amb el Club Escacs Pardinyes durant tot aquest curs. 🤝</p><p>Volem agrair-li de tot cor la seva gran aportació, treball i dedicació al llarg d'aquests mesos. I la millor notícia és que no és un adéu definitiu: la temporada vinent el tornarem a tenir amb nosaltres per continuar impulsant junts aquest projecte de cooperació internacional dels escacs! ✈️♟️</p>",
+        "es": "<p>El Torneo de Fiesta Mayor 2026 no fue un torneo cualquiera: fue el marco perfecto para despedir (¡por ahora!) a Fortunato Mba Mba Avomo, presidente del Club de Ajedrez «Maestro Enoho Djibloho» de Guinea Ecuatorial, que ha colaborado de cerca con el Club Escacs Pardinyes durante todo este curso. 🤝</p><p>Queremos agradecerle de todo corazón su gran aportación, trabajo y dedicación a lo largo de estos meses. Y la mejor noticia es que no es un adiós definitivo: ¡la próxima temporada lo volveremos a tener con nosotros para seguir impulsando juntos este proyecto de cooperación internacional del ajedrez! ✈️♟️</p>",
+        "en": "<p>The 2026 Festa Major Tournament was no ordinary tournament: it was the perfect setting to say goodbye (for now!) to Fortunato Mba Mba Avomo, president of the «Maestro Enoho Djibloho» Chess Club of Equatorial Guinea, who has worked closely with Club Escacs Pardinyes throughout this season. 🤝</p><p>We sincerely thank him for his great contribution, work and dedication over these months. And the best news is that it's not a final goodbye: next season he will be back with us to keep driving this international chess cooperation project together! ✈️♟️</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img1.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img2.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img3.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img4.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img5.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img6.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img7.webp",
+        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img8.webp"
+    ]
+},
+{
+    "id": "inici-individual-lleida-2026",
+    "title": {
+        "ca": "🏠 Comença l'Individual de Lleida 2026 a casa nostra",
+        "es": "🏠 Empieza el Individual de Lleida 2026 en nuestra casa",
+        "en": "🏠 The 2026 Lleida Individual Championship starts at our club"
+    },
+    "date": "2026-10-07",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/inici-individual-lleida-2026/img1.webp",
+    "summary": {
+        "ca": "Per 3a vegada en 4 anys, el club és seu organitzadora del torneig, amb 3 jugadors al Grup A, 19 al Grup B i molts més a la promoció.",
+        "es": "Por 3.ª vez en 4 años, el club es sede organizadora del torneo, con 3 jugadores en el Grupo A, 19 en el Grupo B y muchos más en la promoción.",
+        "en": "For the 3rd time in 4 years the club is hosting the tournament, with 3 players in Group A, 19 in Group B and many more in the promotion group."
+    },
+    "content": {
+        "ca": "<p>Ja ha començat l'Individual! 🔥 I el Club Escacs Pardinyes ho celebra d'una manera molt especial: un any més tornem a ser seu organitzadora. És el 3r cop en els darrers 4 anys que tenim el plaer d'acollir aquest gran torneig a la nostra seu! 🙌</p><p>Durant 8 diumenges ens trobaràs jugant i donant-ho tot a casa. Aquest any estem molt ben representats: ♟️ 3 jugadors al Grup A, ♟️ 19 jugadors al Grup B i 🏆 molts més a la categoria de promoció.</p><p>Per a nosaltres, l'Individual no és només un torneig: és el moment de tornar a seure davant del tauler, competir, aprendre, compartir i, sobretot, gaudir dels escacs! ❤️♟️ Molts ànims a tots els nostres jugadors i jugadores!</p>",
+        "es": "<p>¡Ya ha empezado el Individual! 🔥 Y el Club Escacs Pardinyes lo celebra de una manera muy especial: un año más volvemos a ser sede organizadora. ¡Es la 3.ª vez en los últimos 4 años que tenemos el placer de acoger este gran torneo en nuestra sede! 🙌</p><p>Durante 8 domingos nos encontrarás jugando y dándolo todo en casa. Este año estamos muy bien representados: ♟️ 3 jugadores en el Grupo A, ♟️ 19 jugadores en el Grupo B y 🏆 muchos más en la categoría de promoción.</p><p>Para nosotros, el Individual no es solo un torneo: es el momento de volver a sentarse ante el tablero, competir, aprender, compartir y, sobre todo, ¡disfrutar del ajedrez! ❤️♟️ ¡Muchos ánimos a todos nuestros jugadores y jugadoras!</p>",
+        "en": "<p>The Individual Championship has begun! 🔥 And Club Escacs Pardinyes is celebrating in a very special way: once again we are the host venue. It is the 3rd time in the last 4 years that we have had the pleasure of hosting this great tournament at our club! 🙌</p><p>For 8 Sundays you'll find us playing and giving it our all at home. This year we are very well represented: ♟️ 3 players in Group A, ♟️ 19 players in Group B and 🏆 many more in the promotion category.</p><p>For us, the Individual is not just a tournament: it's the moment to sit back down at the board, compete, learn, share and, above all, enjoy chess! ❤️♟️ Good luck to all our players!</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img1.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img2.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img3.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img4.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img5.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img6.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img7.webp",
+        "/img/galeria/Noticies/inici-individual-lleida-2026/img8.webp"
+    ]
+},
+{
+    "id": "masterclass-cruz-lloret-2026",
+    "title": {
+        "ca": "👑 Rumb a Lloret de Mar com a campions, després d'una masterclass de luxe",
+        "es": "👑 Rumbo a Lloret de Mar como campeones, tras una masterclass de lujo",
+        "en": "👑 Heading to Lloret de Mar as champions, after a top-class masterclass"
+    },
+    "date": "2026-10-08",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img1.webp",
+    "summary": {
+        "ca": "Classificats com a primers en Sub-10 i Sub-18/20, els nostres equips es van preparar amb l'IM Filemón Cruz i el FM Jonathan Cruz.",
+        "es": "Clasificados como primeros en Sub-10 y Sub-18/20, nuestros equipos se prepararon con el MI Filemón Cruz y el MF Jonathan Cruz.",
+        "en": "Qualified in first place in U-10 and U-18/20, our teams prepared with IM Filemón Cruz and FM Jonathan Cruz."
+    },
+    "content": {
+        "ca": "<p>Aquest pont d'octubre ens n'anem a competir a Lloret de Mar, i ho fem per la porta gran! Gràcies als grans resultats aconseguits, el Club Escacs Pardinyes s'ha classificat com a <strong>primers en les categories Sub-10 i Sub-18/20</strong>. 🥇♟️</p><p>Per preparar aquest repte, el dissabte 3 d'octubre vam organitzar una Masterclass de Tàctica a la nostra seu amb dos ponents de luxe: el Mestre Internacional <strong>Filemón Cruz</strong>, 4 vegades olímpic amb el Perú, i el Mestre FIDE <strong>Jonathan Cruz</strong>, campió de Catalunya de Ràpides. 🇵🇪</p><p>Després d'aquesta jornada de formació d'alt nivell, els nostres joves ja estan més que a punt per demostrar tot el seu talent. Molts ànims a tots els jugadors i jugadores que viatgen a Lloret! 💪👑</p>",
+        "es": "<p>Este puente de octubre nos vamos a competir a Lloret de Mar, ¡y lo hacemos por la puerta grande! Gracias a los grandes resultados conseguidos, el Club Escacs Pardinyes se ha clasificado como <strong>primeros en las categorías Sub-10 y Sub-18/20</strong>. 🥇♟️</p><p>Para preparar este reto, el sábado 3 de octubre organizamos una Masterclass de Táctica en nuestra sede con dos ponentes de lujo: el Maestro Internacional <strong>Filemón Cruz</strong>, 4 veces olímpico con Perú, y el Maestro FIDE <strong>Jonathan Cruz</strong>, campeón de Cataluña de Rápidas. 🇵🇪</p><p>Tras esta jornada de formación de alto nivel, nuestros jóvenes ya están más que listos para demostrar todo su talento. ¡Muchos ánimos a todos los jugadores y jugadoras que viajan a Lloret! 💪👑</p>",
+        "en": "<p>This October long weekend we are off to compete in Lloret de Mar, and we are doing it in style! Thanks to our great results, Club Escacs Pardinyes qualified <strong>in first place in the U-10 and U-18/20 categories</strong>. 🥇♟️</p><p>To prepare for the challenge, on Saturday 3 October we held a Tactics Masterclass at our club with two outstanding coaches: International Master <strong>Filemón Cruz</strong>, a 4-time Olympian for Peru, and FIDE Master <strong>Jonathan Cruz</strong>, Catalan Rapid champion. 🇵🇪</p><p>After this top-level training session, our young players are more than ready to show their talent. Good luck to all our players travelling to Lloret! 💪👑</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img1.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img2.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img3.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img4.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img5.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img6.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img7.webp",
+        "/img/galeria/Noticies/masterclass-cruz-lloret-2026/img8.webp"
+    ]
+},
+{
+    "id": "campionat-catalunya-edats-2026",
+    "title": {
+        "ca": "♟️ Campionat de Catalunya d'equips per edats 2026",
+        "es": "♟️ Campeonato de Cataluña de equipos por edades 2026",
+        "en": "♟️ 2026 Catalan Age-Group Team Championship"
+    },
+    "date": "2026-10-18",
+    "category": "torneig",
+    "image": "/img/galeria/Noticies/campionat-catalunya-edats-2026/img1.webp",
+    "summary": {
+        "ca": "Una delegació de 10 jugadors va defensar els colors del club en les categories Sub-10, Sub-16 i Sub-20.",
+        "es": "Una delegación de 10 jugadores defendió los colores del club en las categorías Sub-10, Sub-16 y Sub-20.",
+        "en": "A delegation of 10 players defended the club's colours in the U-10, U-16 and U-20 categories."
+    },
+    "content": {
+        "ca": "<p>Quin pont d'octubre més intens i ple d'aprenentatge! 🤯 El Club d'Escacs Pardinyes vam ser presents al Campionat de Catalunya d'equips per edats, i no podríem estar més orgullosos dels nostres jugadors. 🙌</p><p>Una delegació de 10 autèntics cracs es va deixar la pell (i les neurones 🧠) defensant els colors del club en tres categories molt exigents: 👦👧 Sub-10, ⚡ Sub-16 i 🔥 Sub-20.</p><p>Més enllà dels resultats, ens quedem amb l'esforç, la concentració, el companyerisme i l'experiència viscuda. El futur dels escacs a Pardinyes està en molt bones mans! 💪</p>",
+        "es": "<p>¡Qué puente de octubre tan intenso y lleno de aprendizaje! 🤯 El Club d'Escacs Pardinyes estuvimos presentes en el Campeonato de Cataluña de equipos por edades, y no podríamos estar más orgullosos de nuestros jugadores. 🙌</p><p>Una delegación de 10 auténticos cracks se dejó la piel (y las neuronas 🧠) defendiendo los colores del club en tres categorías muy exigentes: 👦👧 Sub-10, ⚡ Sub-16 y 🔥 Sub-20.</p><p>Más allá de los resultados, nos quedamos con el esfuerzo, la concentración, el compañerismo y la experiencia vivida. ¡El futuro del ajedrez en Pardinyes está en muy buenas manos! 💪</p>",
+        "en": "<p>What an intense October long weekend, full of learning! 🤯 Club d'Escacs Pardinyes took part in the Catalan Age-Group Team Championship, and we couldn't be prouder of our players. 🙌</p><p>A delegation of 10 real stars gave everything (brain cells included 🧠) defending the club's colours in three very demanding categories: 👦👧 U-10, ⚡ U-16 and 🔥 U-20.</p><p>Beyond the results, we'll remember the effort, concentration, team spirit and the whole experience. The future of chess in Pardinyes is in very good hands! 💪</p>"
+    },
+    "gallery": [
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img1.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img2.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img3.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img4.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img5.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img6.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img7.webp",
+        "/img/galeria/Noticies/campionat-catalunya-edats-2026/img8.webp"
+    ]
+}
 ];
