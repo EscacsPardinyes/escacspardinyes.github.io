@@ -33,7 +33,9 @@ export default function NewsDetail() {
             .slice(0, 3);
     }, [id, item]);
 
-    const allImages = useMemo(() => (item ? [item.image, ...(item.gallery || [])] : []), [item]);
+    // The cover is often repeated inside the gallery: dedupe so the viewer doesn't show it twice
+    const allImages = useMemo(() => (item ? [...new Set([item.image, ...(item.gallery || [])])] : []), [item]);
+    const [linkCopied, setLinkCopied] = useState(false);
 
     const handlePrev = (e) => {
         if (e) e.stopPropagation();
@@ -81,6 +83,25 @@ export default function NewsDetail() {
     const shareUrl = window.location.href;
     const shareTitle = item.title[language];
 
+    // Native share sheet where available; otherwise copy the link to the clipboard
+    const handleNativeShare = async () => {
+        if (navigator.share) {
+            try {
+                await navigator.share({ title: shareTitle, text: item.summary[language], url: shareUrl });
+            } catch {
+                // Share sheet cancelled by the user
+            }
+            return;
+        }
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            setLinkCopied(true);
+            setTimeout(() => setLinkCopied(false), 2000);
+        } catch {
+            // Clipboard not available (e.g. insecure context)
+        }
+    };
+
     return (
         <div style={{ backgroundColor: '#ffffff' }}>
             <SEO
@@ -94,9 +115,9 @@ export default function NewsDetail() {
                     dateModified: item.date
                 }}
             />
-            <p className="text-muted mb-4">{t('news.header')}</p>
+            <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} />
 
-            <div className="container py-5">
+            <div className="container pb-5">
                 <div className="row justify-content-center">
                     <div className="col-lg-9">
                         {/* Header Actions */}
@@ -173,21 +194,19 @@ export default function NewsDetail() {
                             </a>
                             <button
                                 className="btn btn-social-icon btn-share-native shadow-sm"
-                                onClick={() => {
-                                    if (navigator.share) {
-                                        navigator.share({ title: shareTitle, text: item.summary[language], url: shareUrl });
-                                    }
-                                }}
-                                aria-label="Other options"
+                                onClick={handleNativeShare}
+                                aria-label={linkCopied ? t('common.link_copied') : t('common.share')}
+                                title={linkCopied ? t('common.link_copied') : t('common.share')}
                             >
-                                <i className="fa fa-share-alt"></i>
+                                <i className={`fa ${linkCopied ? 'fa-check' : 'fa-share-alt'}`}></i>
                             </button>
+                            {linkCopied && <span className="small text-muted" role="status">{t('common.link_copied')}</span>}
                         </div>
 
                         {/* Gallery Section */}
                         {item.gallery && item.gallery.length > 0 && (
                             <div className="mt-5 pt-4 border-top">
-                                <h3 className="h2 font-weight-bold mb-4">{language === 'ca' ? "Galeria d'imatges" : language === 'es' ? "Galería de imágenes" : "Image Gallery"}</h3>
+                                <h3 className="h2 font-weight-bold mb-4">{t('news.gallery')}</h3>
                                 <div className="row">
                                     {item.gallery.map((img, index) => (
                                         <div key={index} className="col-md-4 col-sm-6 mb-4">
@@ -195,7 +214,7 @@ export default function NewsDetail() {
                                                 className="rounded shadow-sm overflow-hidden gallery-thumb-container" 
                                                 style={{ height: '220px', cursor: 'zoom-in' }}
                                                 onClick={() => {
-                                                    setModalImageIndex(index + 1);
+                                                    setModalImageIndex(allImages.indexOf(img));
                                                     setIsImageModalOpen(true);
                                                 }}
                                             >

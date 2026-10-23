@@ -1,6 +1,14 @@
 import { Link } from './LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 
+const SUMMARY_MAX_CHARS = 120;
+
+// Truncate by code points (not UTF-16 units) so emojis are never cut in half
+function truncate(text, max) {
+    const chars = Array.from(text);
+    return chars.length > max ? chars.slice(0, max - 3).join('').trimEnd() + '...' : text;
+}
+
 export default function NewsCard({ item }) {
     const { language, t } = useLanguage();
 
@@ -49,7 +57,7 @@ export default function NewsCard({ item }) {
                     </h4>
 
                     <p className="card-text text-muted flex-grow-1 mb-4" style={{ fontSize: '0.95rem', lineHeight: '1.7' }}>
-                        {item.summary[language].length > 120 ? item.summary[language].substring(0, 117) + '...' : item.summary[language]}
+                        {truncate(item.summary[language], SUMMARY_MAX_CHARS)}
                     </p>
 
                     <Link to={`/noticies/${item.id}`} className="btn btn-outline-primary btn-sm rounded-pill font-weight-bold py-2 px-4 align-self-start" style={{ textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '1px' }}>

@@ -9,7 +9,7 @@ import ScheduleTable from '../components/ScheduleTable';
 const SLIDE_COUNT = 3;
 
 export default function Home() {
-    const { t, language } = useLanguage();
+    const { t } = useLanguage();
     const [activeTab, setActiveTab] = useState('all');
 
     // Hero carousel (no Bootstrap JS): auto-advance every 5s, paused on hover/focus
@@ -185,8 +185,8 @@ export default function Home() {
             {/* Latest News Start */}
             <div className="container section-padding">
                 <div className="d-flex flex-column text-center mb-5">
-                    <p className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px', fontSize: '0.9rem' }}>{language === 'ca' ? 'Actualitat' : language === 'es' ? 'Actualidad' : 'Latest News'}</p>
-                    <h2 className="display-4 font-weight-bold">{language === 'ca' ? 'Últimes Notícies' : language === 'es' ? 'Últimas Noticias' : 'Recent Updates'}</h2>
+                    <p className="text-primary font-weight-bold text-uppercase mb-3" style={{ letterSpacing: '3px', fontSize: '0.9rem' }}>{t('news.latest_kicker')}</p>
+                    <h2 className="display-4 font-weight-bold">{t('news.latest_title')}</h2>
                 </div>
                 <div className="row">
                     {[...news].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map(item => (
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
                 <div className="text-center mt-5">
                     <Link to="/noticies" className="btn btn-lg btn-outline-primary px-5 py-3 font-weight-bold" style={{ borderRadius: '50px' }}>
-                        {language === 'ca' ? 'Veure totes les notícies' : language === 'es' ? 'Ver todas las noticias' : 'View all news'}
+                        {t('news.view_all')}
                     </Link>
                 </div>
             </div>

@@ -125,13 +125,13 @@ export default function NewsList() {
                     </div>
 
                     <div className="ml-md-auto mt-3 mt-md-0 d-flex align-items-center">
-                        <span className="text-muted small mr-3 font-weight-bold text-uppercase">Ordenar:</span>
+                        <span className="text-muted small mr-3 font-weight-bold text-uppercase">{t('news.sort')}:</span>
                         <button
                             onClick={toggleSortOrder}
                             className="btn btn-dark btn-sm rounded-pill px-3 py-2 d-flex align-items-center"
                         >
                             <i className={`fa fa-sort-amount-${sortOrder === 'desc' ? 'down' : 'up'} mr-2`}></i>
-                            {sortOrder === 'desc' ? 'Recents' : 'Antics'}
+                            {sortOrder === 'desc' ? t('news.sort_recent') : t('news.sort_oldest')}
                         </button>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ export default function NewsList() {
                             </div>
                             <h4 className="text-muted">{t('news.no_entries')}</h4>
                             <button onClick={() => { updateSearch(''); updateCategory('all'); }} className="btn btn-link text-primary mt-2">
-                                Veure totes les notícies
+                                {t('news.view_all')}
                             </button>
                         </div>
                     )}
