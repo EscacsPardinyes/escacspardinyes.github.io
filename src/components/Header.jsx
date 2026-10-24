@@ -68,10 +68,8 @@ export default function Header() {
              }}>
             <nav className={`navbar navbar-expand-lg navbar-dark py-3 ${isScrolled ? 'py-lg-1' : 'py-lg-3'}`} style={{ transition: 'all 0.5s' }}>
                 <Link to="/" className="navbar-brand">
-                    <span className="m-0 display-4 font-weight-bold text-uppercase text-white" style={{ 
-                        // Scales down on phones so the name and the menu button fit on one line
-                        // (the name is ~13.3x its font size wide; same sizes as before from ~560px up)
-                        fontSize: isScrolled ? 'clamp(1rem, 7.2vw - 0.5rem, 1.4rem)' : 'clamp(1rem, 7.2vw - 0.5rem, 2rem)',
+                    {/* Font size comes from modern.css (.navbar-brand span) */}
+                    <span className="m-0 display-4 font-weight-bold text-uppercase text-white" style={{
                         transition: 'all 0.5s',
                         lineHeight: 1,
                         display: 'block'

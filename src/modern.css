@@ -117,7 +117,9 @@ a { transition: color 0.2s ease; }
     font-weight: 800 !important;
     letter-spacing: -0.03em;
     text-transform: none !important;
-    font-size: 1.35rem !important;
+    /* The name is ~10.3x its font size wide: shrink on the narrowest phones so it and the
+       burger button stay on one line (320px fits); 1.35rem from ~360px up */
+    font-size: clamp(1.1rem, 9vw - 0.6rem, 1.35rem) !important;
 }
 .nav-bar .nav-link {
     font-family: var(--font-sans);
