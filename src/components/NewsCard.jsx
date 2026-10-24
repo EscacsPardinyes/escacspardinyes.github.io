@@ -9,11 +9,11 @@ function truncate(text, max) {
     return chars.length > max ? chars.slice(0, max - 3).join('').trimEnd() + '...' : text;
 }
 
-export default function NewsCard({ item }) {
+export default function NewsCard({ item, featured = false }) {
     const { language, t } = useLanguage();
 
     return (
-        <div className="col-lg-4 col-md-6 mb-4 animate-fade-in">
+        <div className={`${featured ? 'col-12 news-featured' : 'col-lg-4 col-md-6'} mb-4 animate-fade-in`}>
             <div className="card h-100 border-0 news-card-premium shadow-hover"
                 style={{
                     borderRadius: '24px',

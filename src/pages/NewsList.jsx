@@ -69,6 +69,9 @@ export default function NewsList() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    // Newest article first on the unfiltered list gets the wide layout
+    const isFeatured = (index) => index === 0 && currentPage === 1 && !searchQuery && activeCategory === 'all' && sortOrder === 'desc';
+
     return (
         <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
             <SEO title={t('news.header')} description={t('news.subtitle')} />
@@ -140,8 +143,8 @@ export default function NewsList() {
                 {/* Results Section */}
                 <div className="row">
                     {paginatedNews.length > 0 ? (
-                        paginatedNews.map(item => (
-                            <NewsCard key={item.id} item={item} />
+                        paginatedNews.map((item, index) => (
+                            <NewsCard key={item.id} item={item} featured={isFeatured(index)} />
                         ))
                     ) : (
                         <div className="col-12 text-center py-5">

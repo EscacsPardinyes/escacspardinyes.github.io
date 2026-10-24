@@ -7,6 +7,7 @@ import BackToTop from './BackToTop';
 import NewsletterModal from './NewsletterModal';
 import SearchModal from './SearchModal';
 import WhatsAppButton from './WhatsAppButton';
+import ScrollReveal from './ScrollReveal';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function Layout() {
@@ -36,6 +37,7 @@ export default function Layout() {
             <WhatsAppButton />
             <NewsletterModal />
             <SearchModal />
+            <ScrollReveal />
         </div>
     );
 }

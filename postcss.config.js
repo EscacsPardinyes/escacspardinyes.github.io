@@ -24,6 +24,9 @@ export default {
           // ScheduleTable.jsx builds schedule-event-<type> with a template literal
           /^schedule-event-/
         ],
+        // modern.css dark theme: ThemeToggle sets it through dataset.theme, so the attribute
+        // selector text never appears in the source
+        greedy: [/data-theme/],
         deep: [
           /^modal/,
           /^nav/,

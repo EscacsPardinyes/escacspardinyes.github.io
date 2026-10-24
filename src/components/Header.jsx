@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Link, NavLink } from './LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import { localizePath } from '../utils/i18nRouting';
+import ThemeToggle from './ThemeToggle';
 
 const LANGUAGE_OPTIONS = [
     { code: 'ca', label: 'Català' },
@@ -102,6 +103,8 @@ export default function Header() {
                             <i className="fa fa-search"></i>
                             <span className="d-lg-none ml-2">Cercar</span>
                         </button>
+
+                        <ThemeToggle />
 
                         <div className={`nav-item dropdown ${isLangOpen ? 'show' : ''}`}>
                             <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang} aria-label="Select Language">
