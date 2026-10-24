@@ -145,7 +145,7 @@ export default function Home() {
             {/* Key facts */}
             <div className="container hero-stats-wrap">
                 <ul className="hero-stats">
-                    {[['founded', 'fa-landmark'], ['ages', 'fa-users'], ['trial', 'fa-gift'], ['fce', 'fa-chess-king']].map(([key, icon]) => (
+                    {[['founded', 'fa-landmark'], ['ages', 'fa-users'], ['events', 'fa-trophy'], ['fce', 'fa-chess-king']].map(([key, icon]) => (
                         <li key={key}>
                             <i className={`fa ${icon}`} aria-hidden="true"></i>
                             <strong>{t(`stats.${key}_value`)}</strong>
