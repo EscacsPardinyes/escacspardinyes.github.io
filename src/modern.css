@@ -940,3 +940,40 @@ hr.container { box-sizing: border-box; padding: 0; }
 :root .container > h4.text-primary, :root .container > h2.text-primary { color: var(--ink) !important; }
 .callout-card h3.text-primary { padding-left: 0; }
 .callout-card h3.text-primary::before { display: none; }
+
+/* ---------- Schedule filter pills use the level colors of the timetable ---------- */
+.nav-pills .nav-item { --pill-color: var(--ink); --pill-text: #fff; }
+.nav-pills .nav-item:nth-child(2) { --pill-color: #28a745; --pill-text: #fff; }
+.nav-pills .nav-item:nth-child(3) { --pill-color: #ffc107; --pill-text: #111; }
+.nav-pills .nav-item:nth-child(4) { --pill-color: #6610f2; --pill-text: #fff; }
+.nav-pills .nav-item:nth-child(5) { --pill-color: #17a2b8; --pill-text: #fff; }
+[data-theme="dark"] .nav-pills .nav-item:nth-child(1) { --pill-color: #f4f5f7; --pill-text: #111; }
+[data-theme="dark"] .nav-pills .nav-item:nth-child(4) { --pill-color: #8f4dff; }
+
+.nav-pills .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-color: color-mix(in srgb, var(--pill-color) 45%, transparent);
+}
+.nav-pills .nav-item:not(:first-child) .nav-link::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--pill-color);
+    flex-shrink: 0;
+}
+.nav-pills .nav-link:hover:not(.active) {
+    background: color-mix(in srgb, var(--pill-color) 14%, var(--surface));
+    border-color: var(--pill-color);
+}
+.nav-pills .nav-link.active,
+[data-theme="dark"] .nav-pills .nav-link.active {
+    background: var(--pill-color) !important;
+    border-color: var(--pill-color);
+    color: var(--pill-text) !important;
+    box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--pill-color) 70%, transparent);
+}
+.nav-pills .nav-link.active::before { background: var(--pill-text); }
+[data-theme="dark"] .nav-pills .nav-link:hover:not(.active) { background: color-mix(in srgb, var(--pill-color) 22%, var(--surface-alt)); }
