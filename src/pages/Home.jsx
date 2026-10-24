@@ -96,7 +96,11 @@ export default function Home() {
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
                                 <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide1.title')}</h1>
-                                <Link to="/contact" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide1.btn')}</Link>
+                                <p className="hero-sub mt-3 mb-0">{t('carousel.slide1.sub')}</p>
+                                <div className="hero-actions mt-4 mt-md-5">
+                                    <Link to="/contact" className="btn btn-lg btn-primary px-md-5">{t('carousel.slide1.btn')}</Link>
+                                    <Link to="/school" className="btn btn-lg btn-outline-light px-md-5">{t('carousel.slide1.btn2')}</Link>
+                                </div>
                             </div>
                         </div>
                         <div className={`carousel-item ${slide === 1 ? 'active' : ''}`}>
@@ -122,9 +126,34 @@ export default function Home() {
                     <button type="button" className="carousel-control-next" onClick={() => goTo(slide + 1)} aria-label="Next slide">
                         <span className="carousel-control-next-icon"></span>
                     </button>
+                    <div className="hero-dots">
+                        {Array.from({ length: SLIDE_COUNT }, (_, i) => (
+                            <button
+                                key={i}
+                                type="button"
+                                className={i === slide ? 'is-active' : ''}
+                                onClick={() => goTo(i)}
+                                aria-label={`${t('carousel.go_to')} ${i + 1}`}
+                                aria-current={i === slide}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
             {/* Carousel End */}
+
+            {/* Key facts */}
+            <div className="container hero-stats-wrap">
+                <ul className="hero-stats">
+                    {[['founded', 'fa-landmark'], ['ages', 'fa-users'], ['trial', 'fa-gift'], ['fce', 'fa-chess-king']].map(([key, icon]) => (
+                        <li key={key}>
+                            <i className={`fa ${icon}`} aria-hidden="true"></i>
+                            <strong>{t(`stats.${key}_value`)}</strong>
+                            <span>{t(`stats.${key}_label`)}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
 
 
