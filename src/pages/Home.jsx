@@ -56,20 +56,7 @@ export default function Home() {
         ]
     };
 
-    const aiFaqs = [
-        {
-            question: "On puc aprendre a jugar a escacs a Lleida?",
-            answer: "La millor opció és l'Escola del Club Escacs Pardinyes, que ofereix classes des d'iniciació fins a competició per a totes les edats."
-        },
-        {
-            question: "Teniu classes per a nens i nenes?",
-            answer: "Sí, som una gran pedrera. Oferim classes adaptades on els més petits poden començar des de zero i arribar a federar-se i competir."
-        },
-        {
-            question: "Com em puc apuntar o federar?",
-            answer: "Només has de contactar amb nosaltres a través del correu (escacspardinyes@gmail.com) o el telèfon oficial (+34 641 91 52 66), o venir de manera presencial a la nostra seu."
-        }
-    ];
+    const aiFaqs = [1, 2, 3, 4, 5].map(n => ({ question: t(`home.faq_q${n}`), answer: t(`home.faq_a${n}`) }));
 
     return (
         <>

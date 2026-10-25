@@ -17,7 +17,7 @@ import { openingHours } from '../data/schedule';
  */
 export default function SEO({ title, description, image, schema: schemaProp, type = 'website', breadcrumbs: breadcrumbsProp = [], faq: faqProp = [] }) {
     const { pathname } = useLocation();
-    const { language } = useLanguage();
+    const { language, t } = useLanguage();
 
     // Pages pass new objects/arrays on every render: compare them by content so the
     // <head> is only rebuilt when something actually changes
@@ -31,11 +31,8 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
         const faq = JSON.parse(faqKey);
 
         const baseTitle = 'Club Escacs Pardinyes';
-        const defaultDescription = language === 'ca' 
-            ? "Club Escacs Pardinyes - Fomentant l'escacs a Lleida des de 1992. Escola d'escacs, competicions i una gran comunitat."
-            : language === 'es'
-                ? "Club Escacs Pardinyes - Fomentando el ajedrez en Lleida desde 1992. Escuela de ajedrez, competiciones y una gran comunidad."
-                : "Club Escacs Pardinyes - Promoting chess in Lleida since 1992. Chess school, competitions and a great community.";
+        const defaultDescription = t('seo.default_description');
+        const entityDescription = t('seo.entity_description');
         const defaultImage = '/img/galeria/logos/logo.webp';
         const siteUrl = 'https://escacspardinyes.com';
         
@@ -167,6 +164,28 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             "name": "Club Escacs Pardinyes",
             "alternateName": ["CE Pardinyes", "Club d'Escacs Pardinyes", "Club de Ajedrez Pardinyes"],
             "sport": "Chess",
+            "foundingDate": "1992",
+            "foundingLocation": { "@type": "Place", "name": "Pardinyes, Lleida" },
+            "memberOf": {
+                "@type": "SportsOrganization",
+                "name": "Federació Catalana d'Escacs",
+                "alternateName": "FCE",
+                "url": "https://www.escacs.cat"
+            },
+            "knowsAbout": ["Chess", "Chess lessons", "Chess tournaments", "FIDE rating", "Grandmaster norms", "International Master norms", "Chess for children", "Chess league"],
+            "audience": { "@type": "Audience", "audienceType": "Children from age 5, teenagers and adults" },
+            "makesOffer": [
+                {
+                    "@type": "Offer",
+                    "name": t('schema.offer_school'),
+                    "price": "20",
+                    "priceCurrency": "EUR",
+                    "url": pageUrl('/school', language),
+                    "itemOffered": { "@type": "Course", "name": t('seo.school_title'), "courseMode": "onsite", "provider": { "@id": `${siteUrl}/#organization` } }
+                },
+                { "@type": "Offer", "name": t('schema.offer_membership'), "price": "35", "priceCurrency": "EUR", "url": pageUrl('/federat', language) },
+                { "@type": "Offer", "name": t('schema.offer_federation'), "price": "75", "priceCurrency": "EUR", "url": pageUrl('/federat', language) }
+            ],
             "areaServed": [
                 { "@type": "City", "name": "Lleida" },
                 { "@type": "AdministrativeArea", "name": "Segrià" }
@@ -174,7 +193,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             "url": siteUrl,
             "logo": fullDefaultImage,
             "image": fullDefaultImage,
-            "description": defaultDescription,
+            "description": entityDescription,
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Carrer Sant Pere Claver, 1, 2a planta",
@@ -190,7 +209,8 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             },
             "telephone": "+34641915266",
             "email": "escacspardinyes@gmail.com",
-            "priceRange": "$",
+            "priceRange": "€15–€75",
+            "slogan": t('carousel.slide1.title'),
             // Derived from the timetable shown on the site, so they can't drift apart
             "openingHoursSpecification": openingHours,
             "sameAs": [
@@ -199,6 +219,17 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
                 "https://twitter.com/escacspardinyes",
                 "https://www.youtube.com/@escacspardinyes"
             ]
+        };
+
+        // WebSite entity: ties the site, its language and the club together for answer engines
+        const websiteSchema = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": `${siteUrl}/#website`,
+            "url": siteUrl,
+            "name": baseTitle,
+            "inLanguage": language,
+            "publisher": { "@id": `${siteUrl}/#organization` }
         };
 
         // 2. Article Schema
@@ -276,7 +307,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             };
         }
 
-        const schemasToInject = [clubSchema];
+        const schemasToInject = [clubSchema, websiteSchema];
         if (articleSchema) schemasToInject.push(articleSchema);
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
         if (faqSchema) schemasToInject.push(faqSchema);
@@ -292,7 +323,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             document.head.appendChild(script);
         });
 
-    }, [title, description, image, pathname, language, schemaKey, type, breadcrumbsKey, faqKey]);
+    }, [title, description, image, pathname, language, t, schemaKey, type, breadcrumbsKey, faqKey]);
 
     return null;
 }
