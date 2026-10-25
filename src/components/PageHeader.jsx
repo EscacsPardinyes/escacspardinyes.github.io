@@ -6,14 +6,16 @@ import { useLanguage } from '../context/LanguageContext';
  * @param {Object} props
  * @param {string} props.title - The main title of the header
  * @param {Array} props.breadcrumbs - Array of { label: string, path?: string }
+ * @param {string} props.as - Tag of the title (h1 by default; use 'p' when the page has its own h1)
  */
-export default function PageHeader({ title, breadcrumbs = [] }) {
+export default function PageHeader({ title, breadcrumbs = [], as = 'h1' }) {
     const { t } = useLanguage();
+    const TitleTag = as;
 
     return (
         <div className="container-fluid page-header mb-5">
             <div className="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style={{ minHeight: '400px' }}>
-                <h1 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{title}</h1>
+                <TitleTag className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">{title}</TitleTag>
                 <div className="d-inline-flex">
                     <p className="m-0 text-white">
                         <Link className="text-white" to="/">{t('nav.home')}</Link>

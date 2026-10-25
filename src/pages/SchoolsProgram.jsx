@@ -61,7 +61,7 @@ export default function SchoolsProgram() {
                                 </li>
                             ))}
                         </ul>
-                        <Link to="/noticies/beneficis-escacs-nens" className="font-weight-bold">{t('schools.link_benefits')} →</Link>
+                        <Link to="/noticies/escacs-per-a-nens-lleida" className="font-weight-bold">{t('schools.link_benefits')} →</Link>
                     </div>
 
                     {/* Experience */}

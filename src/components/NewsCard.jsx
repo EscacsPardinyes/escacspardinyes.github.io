@@ -1,5 +1,6 @@
 import { Link } from './LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
+import { stripEmoji } from '../utils/plainText';
 
 const SUMMARY_MAX_CHARS = 120;
 
@@ -26,7 +27,7 @@ export default function NewsCard({ item, featured = false }) {
                 <div className="position-relative overflow-hidden" style={{ height: '240px' }}>
                     <img
                         src={item.image}
-                        alt={item.title[language]}
+                        alt={stripEmoji(item.title[language])}
                         style={{ width: '100%', height: '100%', objectFit: item.category === 'prensa' ? 'contain' : 'cover', backgroundColor: item.category === 'prensa' ? '#f8f9fa' : 'transparent', transition: 'transform 0.8s ease' }}
                         className="card-img-top news-image"
                         loading="lazy"

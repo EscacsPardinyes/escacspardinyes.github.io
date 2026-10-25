@@ -1,19 +1,20 @@
 export const news = [
 // ── Evergreen guides (category 'guia'): content that answers common searches ──
 {
-    "id": "beneficis-escacs-nens",
+    "id": "escacs-per-a-nens-lleida",
+    "oldIds": ["beneficis-escacs-nens"],
     "title": {
-        "ca": "♟️ Beneficis dels escacs per als nens: per què apuntar el teu fill o filla",
-        "es": "♟️ Beneficios del ajedrez para los niños: por qué apuntar a tu hijo o hija",
-        "en": "♟️ Benefits of chess for children: why sign your child up"
+        "ca": "♟️ Escacs per a nens a Lleida: beneficis i per on començar",
+        "es": "♟️ Ajedrez para niños en Lleida: beneficios y cómo empezar",
+        "en": "♟️ Chess for children in Lleida: benefits and how to start"
     },
-    "date": "2026-09-14",
+    "date": "2026-10-06",
     "category": 'guia',
     "image": "/img/galeria/Minicopa2026/2.webp",
     "summary": {
-        "ca": "Concentració, pensament lògic, paciència i saber perdre. Repassem què aporten els escacs als nens i nenes, a quina edat començar i com triar una escola d'escacs a Lleida.",
-        "es": "Concentración, pensamiento lógico, paciencia y saber perder. Repasamos qué aporta el ajedrez a niños y niñas, a qué edad empezar y cómo elegir una escuela de ajedrez en Lleida.",
-        "en": "Focus, logical thinking, patience and learning to lose. What chess gives children, when to start and how to choose a chess school in Lleida."
+        "ca": "Concentració, pensament lògic i paciència: què aporten els escacs als nens, a quina edat començar i com triar una escola d'escacs a Lleida.",
+        "es": "Concentración, pensamiento lógico y paciencia: qué aporta el ajedrez a los niños, a qué edad empezar y cómo elegir una escuela de ajedrez en Lleida.",
+        "en": "Focus, logical thinking and patience: what chess gives children, when to start and how to choose a chess school in Lleida."
     },
     "content": {
         "ca": "<p>Cada setembre moltes famílies de Lleida es pregunten quina activitat extraescolar triar. Els escacs són una de les més completes: es poden començar molt aviat, no depenen de la condició física i ajuden en coses que es noten a l'escola i a casa.</p><h2>1. Concentració i atenció</h2><p>Una partida demana estar atent durant molta estona i pensar abans de moure. Els nens aprenen, jugant, a mantenir l'atenció en una sola tasca.</p><h2>2. Pensament lògic i planificació</h2><p>Als escacs cal calcular, preveure què farà el rival i fer un pla. És el mateix tipus de raonament que fan servir per resoldre problemes de matemàtiques.</p><h2>3. Paciència i control dels impulsos</h2><p>Moure massa ràpid gairebé sempre surt car. A poc a poc aprenen a esperar, revisar i decidir amb calma.</p><h2>4. Saber guanyar i saber perdre</h2><p>Tothom perd partides, també els mestres. Els escacs ensenyen a acceptar l'error, analitzar què ha fallat i tornar-hi, amb respecte pel rival: abans i després de cada partida es donen la mà.</p><h2>5. Una activitat per a tothom</h2><p>Nens i nenes de qualsevol edat i condició física juguen al mateix nivell. I és una afició que es pot compartir amb pares, avis i amics tota la vida.</p><h2>A quina edat es pot començar?</h2><p>Recomanem començar a partir dels <strong>5 anys</strong> (P5), quan ja poden mantenir l'atenció i entendre les regles bàsiques. No cal saber jugar abans de venir.</p><h2>Com triar una escola d'escacs a Lleida</h2><ul><li><strong>Grups per edat i nivell</strong>, perquè cada nen avanci al seu ritme.</li><li><strong>Classe de prova</strong> per veure si li agrada abans de comprometre's.</li><li><strong>Competició opcional</strong>: tornejos interns i escolars per als que vulguin anar més enllà.</li></ul><p>A l'<a href=\"/school\">Escola d'Escacs del Club Escacs Pardinyes</a> tenim grups per a P5, primària, ESO i batxillerat, i la primera classe és gratuïta. Si sou una escola o una AMPA, també oferim <a href=\"/extraescolars-escacs-escoles\">extraescolars d'escacs al vostre centre</a>.</p>",
@@ -28,7 +29,7 @@ export const news = [
         "es": "📋 Cómo federarse en ajedrez en Lleida: pasos, precios y ventajas",
         "en": "📋 How to get a chess licence in Lleida: steps, prices and benefits"
     },
-    "date": "2026-05-20",
+    "date": "2026-09-29",
     "category": 'guia',
     "image": "/img/galeria/CopaCatalana2026/g1.webp",
     "summary": {
@@ -49,13 +50,13 @@ export const news = [
         "es": "📖 Reglas básicas del ajedrez para padres y madres",
         "en": "📖 Basic chess rules for parents"
     },
-    "date": "2026-02-11",
+    "date": "2026-09-22",
     "category": 'guia',
     "image": "/img/galeria/JornadaSantJordi2025/JornadaSantJordi4.webp",
     "summary": {
-        "ca": "El teu fill o filla ha començat a fer escacs i vols jugar amb ell? Et resumim com es mouen les peces, què és l'escac i mat i les jugades especials, perquè pugueu jugar junts a casa.",
-        "es": "¿Tu hijo o hija ha empezado ajedrez y quieres jugar con él? Te resumimos cómo se mueven las piezas, qué es el jaque mate y las jugadas especiales, para que podáis jugar juntos en casa.",
-        "en": "Has your child started chess and you'd like to play with them? Here's how the pieces move, what checkmate is and the special moves, so you can play together at home."
+        "ca": "Com es mouen les peces, què és l'escac i mat i quines són les jugades especials, perquè pugueu jugar junts a casa.",
+        "es": "Cómo se mueven las piezas, qué es el jaque mate y cuáles son las jugadas especiales, para que podáis jugar juntos en casa.",
+        "en": "How the pieces move, what checkmate is and the special moves, so you can play together at home."
     },
     "content": {
         "ca": "<p>No cal ser un expert per jugar amb els fills. Amb aquestes regles bàsiques podreu jugar partides a casa i acompanyar el que aprenen a classe.</p><h2>El tauler</h2><p>Té 64 caselles, blanques i negres. Es col·loca de manera que cada jugador tingui una <strong>casella blanca a la cantonada de la dreta</strong>. Sempre comencen les blanques.</p><h2>Com es mouen les peces</h2><ul><li><strong>Rei:</strong> una casella en qualsevol direcció.</li><li><strong>Dama:</strong> tantes caselles com vulgui en línia recta o en diagonal.</li><li><strong>Torre:</strong> en línia recta, endavant, enrere o als costats.</li><li><strong>Alfil:</strong> en diagonal; cada alfil sempre va pel mateix color.</li><li><strong>Cavall:</strong> en forma de «L» (dues caselles i una de costat). És l'única peça que pot saltar per sobre d'altres.</li><li><strong>Peó:</strong> endavant una casella (dues en el seu primer moviment) i captura en diagonal.</li></ul><h2>Escac i escac i mat</h2><p>Fer <strong>escac</strong> és atacar el rei rival, que ha de sortir de l'atac. Si no pot fer-ho de cap manera, és <strong>escac i mat</strong> i la partida s'acaba. Si el jugador que ha de moure no té cap moviment legal però no està en escac, és <strong>taules per ofegat</strong>.</p><h2>Tres jugades especials</h2><ul><li><strong>Enroc:</strong> el rei es mou dues caselles cap a una torre i la torre salta a l'altre costat del rei. Només es pot fer si ni el rei ni la torre s'han mogut, no hi ha peces entre ells i el rei no està ni passa per una casella atacada.</li><li><strong>Coronació:</strong> quan un peó arriba a l'última fila es converteix en dama, torre, alfil o cavall.</li><li><strong>Captura al pas:</strong> si un peó avança dues caselles i queda al costat d'un peó rival, aquest el pot capturar com si només n'hagués avançat una, però només a la jugada següent.</li></ul><h2>Consells per jugar amb els fills</h2><ul><li>Deixeu-los pensar i no els corregiu cada jugada.</li><li>Feliciteu les bones idees, encara que perdin.</li><li>Doneu la mà abans i després de la partida, com als tornejos.</li></ul><p>Si voleu que aprenguin amb un monitor, a l'<a href=\"/school\">Escola d'Escacs del club</a> la primera classe és gratuïta. I si sou vosaltres els que voleu aprendre, tenim <a href=\"/classes-escacs-adults-lleida\">classes per a adults</a>.</p>",
@@ -64,19 +65,40 @@ export const news = [
     }
 },
 {
+    "id": "que-es-un-tancat-gm-mi",
+    "title": {
+        "ca": "🏅 Què és un torneig tancat de GM i MI i per què és tan important",
+        "es": "🏅 Qué es un torneo cerrado de GM y MI y por qué es tan importante",
+        "en": "🏅 What is a GM and IM closed tournament and why it matters"
+    },
+    "date": "2026-03-10",
+    "category": 'guia',
+    "image": "/img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp",
+    "summary": {
+        "ca": "Com funcionen els tancats de normes de GM i MI, què és una norma i què aporten a una ciutat com Lleida.",
+        "es": "Cómo funcionan los cerrados de normas de GM y MI, qué es una norma y qué aportan a una ciudad como Lleida.",
+        "en": "How GM and IM norm tournaments work, what a norm is and what they bring to a city like Lleida."
+    },
+    "content": {
+        "ca": "<p>Del 30 de març al 3 d'abril el club acollirà uns <strong>tancats per a normes de GM i MI</strong>. Si mai n'has sentit a parlar i et preguntes què és això, aquí tens una guia ràpida.</p><h2>Què és un torneig tancat?</h2><p>És un torneig <strong>per invitació</strong>, no obert a tothom, en què un grup reduït de jugadors s'enfronta tots contra tots (format <em>round robin</em>). Com que es juga amb un grup tancat, es pot controlar qui hi participa, i això és el que permet que els resultats comptin per aconseguir un títol.</p><h2>Què és una norma?</h2><p>Per ser <strong>Mestre Internacional (MI)</strong> o <strong>Gran Mestre (GM)</strong>, la FIDE no demana només tenir un Elo alt: cal demostrar-ho en torneigs concrets. Cada bon resultat en un torneig que compleix els requisits s'anomena <strong>norma</strong>. En línies generals:</p><ul><li>Cal fer un <strong>rendiment mínim</strong> durant el torneig (més alt per a GM que per a MI).</li><li>Una part dels rivals han de tenir títol i <strong>han de ser de diferents federacions</strong>.</li><li>El torneig ha de tenir un <strong>mínim de partides</strong> i complir la normativa FIDE.</li><li>Per obtenir el títol calen <strong>tres normes</strong> i, a més, arribar a un Elo FIDE mínim.</li></ul><p>Els requisits exactes els fixa el reglament de la FIDE i es revisen de tant en tant, per això cada torneig n'ha de garantir el compliment.</p><h2>Per què és tan difícil aconseguir una norma?</h2><p>Perquè gairebé no hi ha oportunitats. Un jugador pot tenir el nivell, però necessita un torneig amb prou rivals titulats d'altres països, i aquests torneigs són escassos. Molts joves talentosos viatgen mesos per trobar-ne un. Per això cada tancat que s'organitza és una porta oberta.</p><h2>Què aporta un tancat a Lleida?</h2><ul><li><strong>Joves jugadors amb possibilitat de fer-se un nom.</strong> Poden aconseguir una norma sense haver d'anar-se'n lluny.</li><li><strong>Escacs d'alt nivell a casa.</strong> Veure de prop jugadors titulats és una experiència única, sobretot per als nens i nenes de l'escola.</li><li><strong>Visibilitat per a la ciutat.</strong> Lleida surt al mapa escaquístic i els mitjans en parlen.</li><li><strong>Inspiració.</strong> Els nostres alumnes veuen on pot portar l'esforç i la constància.</li></ul><h2>Com ho viurem al club?</h2><p>Cada partida és una lliçó. Els socis i les famílies poden passar per la sala per <strong>seguir el torneig</strong> i, si volen, conèixer els jugadors. Consulta tots els detalls, calendari i bases a la pàgina del <a href=\"/tancats-setmana-santa-2026\">Tancat de GM i MI de Setmana Santa 2026</a>.</p><p>Si ets un jugador amb títol o amb opcions de norma i t'interessa participar en aquesta edició o en les properes, pots deixar les teves dades al formulari d'interès d'aquella mateixa pàgina. I si voleu que els vostres fills s'entrenin per arribar algun dia a un nivell així, passeu per l'<a href=\"/school\">Escola d'Escacs</a>: la primera classe és gratuïta.</p>",
+        "es": "<p>Del 30 de marzo al 3 de abril el club acogerá unos <strong>cerrados para normas de GM y MI</strong>. Si nunca has oído hablar de ellos y te preguntas qué son, aquí tienes una guía rápida.</p><h2>¿Qué es un torneo cerrado?</h2><p>Es un torneo <strong>por invitación</strong>, no abierto a todo el mundo, en el que un grupo reducido de jugadores se enfrenta todos contra todos (formato <em>round robin</em>). Al ser un grupo cerrado, se puede controlar quién participa, y eso es lo que permite que los resultados cuenten para conseguir un título.</p><h2>¿Qué es una norma?</h2><p>Para ser <strong>Maestro Internacional (MI)</strong> o <strong>Gran Maestro (GM)</strong>, la FIDE no pide solo tener un Elo alto: hay que demostrarlo en torneos concretos. Cada buen resultado en un torneo que cumple los requisitos se llama <strong>norma</strong>. A grandes rasgos:</p><ul><li>Hay que hacer un <strong>rendimiento mínimo</strong> durante el torneo (más alto para GM que para MI).</li><li>Una parte de los rivales deben tener título y <strong>ser de distintas federaciones</strong>.</li><li>El torneo debe tener un <strong>mínimo de partidas</strong> y cumplir la normativa FIDE.</li><li>Para obtener el título hacen falta <strong>tres normas</strong> y, además, alcanzar un Elo FIDE mínimo.</li></ul><p>Los requisitos exactos los fija el reglamento de la FIDE y se revisan de vez en cuando, por eso cada torneo debe garantizar su cumplimiento.</p><h2>¿Por qué es tan difícil conseguir una norma?</h2><p>Porque casi no hay oportunidades. Un jugador puede tener el nivel, pero necesita un torneo con suficientes rivales titulados de otros países, y esos torneos son escasos. Muchos jóvenes talentosos viajan durante meses para encontrar uno. Por eso cada cerrado que se organiza es una puerta abierta.</p><h2>¿Qué aporta un cerrado a Lleida?</h2><ul><li><strong>Jóvenes jugadores con posibilidad de hacerse un nombre.</strong> Pueden conseguir una norma sin irse lejos.</li><li><strong>Ajedrez de alto nivel en casa.</strong> Ver de cerca a jugadores titulados es una experiencia única, sobre todo para los niños y niñas de la escuela.</li><li><strong>Visibilidad para la ciudad.</strong> Lleida aparece en el mapa ajedrecístico y los medios hablan de ello.</li><li><strong>Inspiración.</strong> Nuestros alumnos ven hasta dónde pueden llevar el esfuerzo y la constancia.</li></ul><h2>¿Cómo lo viviremos en el club?</h2><p>Cada partida es una lección. Los socios y las familias pueden pasar por la sala para <strong>seguir el torneo</strong> y, si quieren, conocer a los jugadores. Consulta todos los detalles, calendario y bases en la página del <a href=\"/es/tancats-setmana-santa-2026\">Cerrado de GM y MI de Semana Santa 2026</a>.</p><p>Si eres un jugador con título o con opciones de norma y te interesa participar en esta edición o en las próximas, puedes dejar tus datos en el formulario de interés de esa misma página. Y si queréis que vuestros hijos se entrenen para llegar algún día a un nivel así, pasad por la <a href=\"/es/school\">Escuela de Ajedrez</a>: la primera clase es gratuita.</p>",
+        "en": "<p>From 30 March to 3 April the club will host <strong>GM and IM norm closed tournaments</strong>. If you've never heard of them and wonder what they are, here's a quick guide.</p><h2>What is a closed tournament?</h2><p>It's an <strong>invitation-only</strong> tournament, not open to everyone, where a small group of players face each other all against all (<em>round robin</em> format). Because the group is closed, the organisers can control who takes part, and that's what allows the results to count towards a title.</p><h2>What is a norm?</h2><p>To become an <strong>International Master (IM)</strong> or a <strong>Grandmaster (GM)</strong>, FIDE doesn't just ask for a high rating: you have to prove it in specific tournaments. Each good result in a tournament that meets the requirements is called a <strong>norm</strong>. In broad terms:</p><ul><li>You need a <strong>minimum performance</strong> during the event (higher for GM than for IM).</li><li>Part of your opponents must hold titles and <strong>come from different federations</strong>.</li><li>The tournament needs a <strong>minimum number of games</strong> and must follow FIDE regulations.</li><li>To earn the title you need <strong>three norms</strong> and also reach a minimum FIDE rating.</li></ul><p>The exact requirements are set by the FIDE handbook and are reviewed from time to time, which is why each tournament has to guarantee compliance.</p><h2>Why is a norm so hard to get?</h2><p>Because opportunities are scarce. A player may have the level but needs a tournament with enough titled opponents from other countries, and such tournaments are rare. Many talented youngsters travel for months to find one. That's why every closed tournament that is organised is an open door.</p><h2>What does a closed tournament bring to Lleida?</h2><ul><li><strong>Young players with a chance to make a name.</strong> They can earn a norm without travelling far.</li><li><strong>Top-level chess at home.</strong> Watching titled players up close is a unique experience, especially for the children of the school.</li><li><strong>Visibility for the city.</strong> Lleida appears on the chess map and the media talk about it.</li><li><strong>Inspiration.</strong> Our students see where effort and perseverance can lead.</li></ul><h2>How will we experience it at the club?</h2><p>Every game is a lesson. Members and families are welcome to drop by the hall to <strong>follow the tournament</strong> and, if they wish, meet the players. Find all the details, schedule and rules on the <a href=\"/en/tancats-setmana-santa-2026\">GM and IM Closed Tournament, Easter 2026</a> page.</p><p>If you're a titled player or in line for a norm and want to take part in this edition or the next ones, leave your details in the interest form on that page. And if you'd like your children to train towards reaching that level one day, visit the <a href=\"/en/school\">Chess School</a>: the first class is free.</p>"
+    }
+},
+{
     "id": "torneig-festa-major-2026",
     "title": {
-        "ca": "🏆 Èxit d'organització i grans resultats locals al Torneig de Festa Major 2026!",
-        "es": "🏆 ¡Éxito de organización y grandes resultados locales en el Torneo de Fiesta Mayor 2026!",
-        "en": "🏆 Great organizational success and local results at the 2026 Festa Major Tournament!"
+        "ca": "🏆 Torneig de Festa Major 2026 a Lleida: guanyadors i crònica",
+        "es": "🏆 Torneo de Fiesta Mayor 2026 en Lleida: ganadores y crónica",
+        "en": "🏆 2026 Festa Major Tournament in Lleida: winners and report"
     },
     "date": "2026-08-02",
     "category": 'torneig',
     "image": "/img/galeria/TorneigFestaMajor/foto-1.webp",
     "summary": {
-        "ca": "El Club Escacs Pardinyes ha celebrat una edició espectacular del seu tradicional torneig, destacant l'excel·lent actuació i els premis dels nostres jugadors locals. Repassa la crònica completa!",
-        "es": "El Club Escacs Pardinyes ha celebrado una edición espectacular de su tradicional torneo, destacando la excelente actuación y los premios de nuestros jugadores locales. ¡Repasa la crónica completa!",
-        "en": "Club Escacs Pardinyes has celebrated a spectacular edition of its traditional tournament, highlighting the excellent performance and prizes of our local players. Read the full chronicle!"
+        "ca": "Crònica del Torneig de Festa Major 2026 del Club Escacs Pardinyes: guanya Daniel Badia i premis per als nostres jugadors locals.",
+        "es": "Crónica del Torneo de Fiesta Mayor 2026 del Club Escacs Pardinyes: gana Daniel Badia y premios para nuestros jugadores locales.",
+        "en": "Report on the 2026 Festa Major Tournament at Club Escacs Pardinyes: Daniel Badia wins, with prizes for our local players."
     },
     "content": {
         "ca": "<p>S'ha celebrat amb un rotund èxit d'organització i participació el tradicional Torneig de Festa Major del Club Escacs Pardinyes. La competició d'enguany ha estat una gran festa on els escacs i el bon ambient al club han estat els clars protagonistes.</p><p>Estem especialment orgullosos de la gran actuació dels nostres jugadors locals, que han deixat el pavelló del club ben alt! 💛🖤 Volem felicitar a <strong>Àngel Blanch</strong> per emportar-se el premi al Millor Local i Veterà +50, al nostre jove talent <strong>Eloi Canales</strong> com a Millor Sub-14 Local, a l'incombustible <strong>Velimir Stankov</strong> com a Millor Veterà +65, i a l'<strong>Aleix Ramon Argiles</strong> coronant-se com a Millor Sub-16 absolut del torneig.</p><p>Pel que fa a la classificació general, el podi ha estat molt renyit i s'ha decidit per desempat a 7 punts. La victòria absoluta ha estat per a Daniel Badia, seguit per Daniel Sastre i Edgar Niubo.</p><p>La resta de premiats han estat Héctor Garcia, Dídac Gómez, Elias Belmonte i Oliver Bencosme en les categories per trams d'Elo, juntament amb Arlet Calabria com a Millor Femenina i Oliver Bencosme repetint com a Millor Sub-10.</p><p>Moltíssimes gràcies a tots els socis, voluntaris, participants i famílies que heu fet possible, un any més, aquest magnífic torneig a casa nostra. Sou el millor club!</p>",
@@ -91,24 +113,25 @@ export const news = [
     ]
 },
 {
-    "id": "individual2026",
+    "id": "campionat-individual-lleida-2026",
+    "oldIds": ["individual2026"],
     "title": {
-        "ca": "🏆 Èxit rotund del Club Pardinyes al Campionat Individual de Lleida!",
-        "es": "🏆 ¡Éxito rotundo del Club Pardinyes en el Campeonato Individual de Lleida!",
-        "en": "🏆 Resounding success for Club Pardinyes at the Lleida Individual Championship!"
+        "ca": "🏆 Campionat Individual de Lleida 2026: el Pardinyes, segon millor club",
+        "es": "🏆 Campeonato Individual de Lleida 2026: el Pardinyes, segundo mejor club",
+        "en": "🏆 2026 Lleida Individual Championship: Pardinyes, second-best club"
     },
     "date": "2025-11-04",
     "category": 'torneig',
     "image": "/img/galeria/Noticies/individual2026/img1.webp",
     "summary": {
-        "ca": "Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.",
-        "es": "Durante 8 intensas semanas, más de 100 jugadores se han reunido para disputar el Campeonato Individual de la Delegación Territorial de Lleida de la Federació Catalana d’Escacs, que ha contado con la colaboración del Club Escacs Pardinyes.",
-        "en": "Over 8 intense weeks, more than 100 players gathered to compete in the Individual Championship of the Lleida Territorial Delegation of the Catalan Chess Federation, held with the collaboration of Club Escacs Pardinyes."
+        "ca": "Més de 100 jugadors durant 8 setmanes al torneig que organitzem a Pardinyes. El club hi va portar 29 jugadors i va ser segon millor club.",
+        "es": "Más de 100 jugadores durante 8 semanas en el torneo que organizamos en Pardinyes. El club llevó 29 jugadores y fue segundo mejor club.",
+        "en": "More than 100 players over 8 weeks at the tournament we host in Pardinyes. The club brought 29 players and finished second-best club."
     },
     "content": {
-        "ca": "<p>Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, que ha comptat amb la col·laboració del Club Escacs Pardinyes.</p><p>El nostre club ha estat representat per una espectacular expedició de 29 jugadors. Gràcies a l'esforç i al compromís de tots ells, hem aconseguit proclamar-nos el Segon Millor Club del torneig! 🥈👏</p><p>Volem felicitar especialment als companys que han obtingut premi en les seves categories:</p><p>GRUP II ♟️ Velimir Stankov: 1r Classificat Tram C i 1r Classificat +65 ♟️ Nadal Cabiscol Català: 1r Classificat +50</p><p>PROMOCIÓ (Sub-14) Un podi tenyit completament dels nostres colors! 🥇 Angel Alcazar Lozano: 1r Classificat S14 🥈 Aleix Ramon Argiles Pascual: 2n Classificat S14 🥉 Adrian Freddy Mbengono Ngono: 3r Classificat S14</p><p>Enhorabona a tot l'equip per aquests grans resultats i per fer créixer el club partida a partida! 💪🖤💛</p>",
-        "es": "<p>Durante 8 intensas semanas, más de 100 jugadores se han reunido para disputar el Campeonato Individual de la Delegación Territorial de Lleida de la Federació Catalana d’Escacs, que ha contado con la colaboración del Club Escacs Pardinyes.</p><p>Nuestro club ha estado representado por una espectacular expedición de 29 jugadores. Gracias al esfuerzo y al compromiso de todos ellos, ¡hemos conseguido proclamarnos Segundo Mejor Club del torneo! 🥈👏</p><p>Queremos felicitar especialmente a los compañeros que han obtenido premio en sus categorías:</p><p>GRUPO II ♟️ Velimir Stankov: 1.º Clasificado Tramo C y 1.º Clasificado +65 ♟️ Nadal Cabiscol Català: 1.º Clasificado +50</p><p>PROMOCIÓN (Sub-14) ¡Un podio teñido completamente de nuestros colores! 🥇 Angel Alcazar Lozano: 1.º Clasificado S14 🥈 Aleix Ramon Argiles Pascual: 2.º Clasificado S14 🥉 Adrian Freddy Mbengono Ngono: 3.º Clasificado S14</p><p>¡Enhorabuena a todo el equipo por estos grandes resultados y por hacer crecer el club partida a partida! 💪🖤💛</p>",
-        "en": "<p>Over 8 intense weeks, more than 100 players gathered to compete in the Individual Championship of the Lleida Territorial Delegation of the Catalan Chess Federation, held with the collaboration of Club Escacs Pardinyes.</p><p>Our club was represented by a spectacular delegation of 29 players. Thanks to the effort and commitment of all of them, we were crowned Second Best Club of the tournament! 🥈👏</p><p>We especially want to congratulate the teammates who won prizes in their categories:</p><p>GROUP II ♟️ Velimir Stankov: 1st place Section C and 1st place +65 ♟️ Nadal Cabiscol Català: 1st place +50</p><p>PROMOTION (U-14) A podium entirely in our colours! 🥇 Angel Alcazar Lozano: 1st place U14 🥈 Aleix Ramon Argiles Pascual: 2nd place U14 🥉 Adrian Freddy Mbengono Ngono: 3rd place U14</p><p>Congratulations to the whole team for these great results and for helping the club grow game by game! 💪🖤💛</p>"
+        "ca": "<p>Durant 8 setmanes intenses, més de 100 jugadors s'han reunit per disputar el Campionat Individual de la Delegació Territorial de Lleida de la Federació Catalana d’Escacs, organitzat pel Club Escacs Pardinyes.</p><p>El nostre club ha estat representat per una espectacular expedició de 29 jugadors. Gràcies a l'esforç i al compromís de tots ells, hem aconseguit proclamar-nos el Segon Millor Club del torneig! 🥈👏</p><p>Volem felicitar especialment als companys que han obtingut premi en les seves categories:</p><p>GRUP II ♟️ Velimir Stankov: 1r Classificat Tram C i 1r Classificat +65 ♟️ Nadal Cabiscol Català: 1r Classificat +50</p><p>PROMOCIÓ (Sub-14) Un podi tenyit completament dels nostres colors! 🥇 Angel Alcazar Lozano: 1r Classificat S14 🥈 Aleix Ramon Argiles Pascual: 2n Classificat S14 🥉 Adrian Freddy Mbengono Ngono: 3r Classificat S14</p><p>Enhorabona a tot l'equip per aquests grans resultats i per fer créixer el club partida a partida! 💪🖤💛</p>",
+        "es": "<p>Durante 8 intensas semanas, más de 100 jugadores se han reunido para disputar el Campeonato Individual de la Delegación Territorial de Lleida de la Federació Catalana d’Escacs, organizado por el Club Escacs Pardinyes.</p><p>Nuestro club ha estado representado por una espectacular expedición de 29 jugadores. Gracias al esfuerzo y al compromiso de todos ellos, ¡hemos conseguido proclamarnos Segundo Mejor Club del torneo! 🥈👏</p><p>Queremos felicitar especialmente a los compañeros que han obtenido premio en sus categorías:</p><p>GRUPO II ♟️ Velimir Stankov: 1.º Clasificado Tramo C y 1.º Clasificado +65 ♟️ Nadal Cabiscol Català: 1.º Clasificado +50</p><p>PROMOCIÓN (Sub-14) ¡Un podio teñido completamente de nuestros colores! 🥇 Angel Alcazar Lozano: 1.º Clasificado S14 🥈 Aleix Ramon Argiles Pascual: 2.º Clasificado S14 🥉 Adrian Freddy Mbengono Ngono: 3.º Clasificado S14</p><p>¡Enhorabuena a todo el equipo por estos grandes resultados y por hacer crecer el club partida a partida! 💪🖤💛</p>",
+        "en": "<p>Over 8 intense weeks, more than 100 players gathered to compete in the Individual Championship of the Lleida Territorial Delegation of the Catalan Chess Federation, organised by Club Escacs Pardinyes.</p><p>Our club was represented by a spectacular delegation of 29 players. Thanks to the effort and commitment of all of them, we were crowned Second Best Club of the tournament! 🥈👏</p><p>We especially want to congratulate the teammates who won prizes in their categories:</p><p>GROUP II ♟️ Velimir Stankov: 1st place Section C and 1st place +65 ♟️ Nadal Cabiscol Català: 1st place +50</p><p>PROMOTION (U-14) A podium entirely in our colours! 🥇 Angel Alcazar Lozano: 1st place U14 🥈 Aleix Ramon Argiles Pascual: 2nd place U14 🥉 Adrian Freddy Mbengono Ngono: 3rd place U14</p><p>Congratulations to the whole team for these great results and for helping the club grow game by game! 💪🖤💛</p>"
     },
     "gallery": [
             "/img/galeria/Noticies/individual2026/img1.webp",
@@ -121,19 +144,20 @@ export const news = [
         ]
 },
 {
-    "id": "interinstituts2026",
+    "id": "vi-torneig-interprovincial-escacs-2026",
+    "oldIds": ["interinstituts2026"],
     "title": {
-        "ca": "♟️ Victòria i talent al VI Torneig Interprovincial d’Escacs!",
-        "es": "♟️ ¡Victoria y talento en el VI Torneo Interprovincial de Ajedrez!",
-        "en": "♟️ Victory and talent at the 6th Interprovincial Chess Tournament!"
+        "ca": "♟️ VI Torneig Interprovincial d'Escacs: coorganitzat amb l'INS Seròs",
+        "es": "♟️ VI Torneo Interprovincial de Ajedrez: coorganizado con el INS Seròs",
+        "en": "♟️ 6th Interprovincial Chess Tournament: co-organised with INS Seròs"
     },
     "date": "2026-04-19",
     "category": 'torneig',
     "image": "/img/galeria/Noticies/Interinstituts2026/img1.webp",
     "summary": {
-        "ca": "Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.",
-        "es": "Estamos muy orgullosos de haber coorganizado, junto con el INS Seròs, una nueva edición de este torneo que ya es todo un referente en las Terres de Lleida.",
-        "en": "We are very proud to have co-organised, together with INS Seròs, a new edition of this tournament, which has become a benchmark event in the Lleida region."
+        "ca": "Coorganitzem amb l'INS Seròs el torneig escolar de referència a Terres de Lleida, amb diversos centres i un jove del Pardinyes campió.",
+        "es": "Coorganizamos con el INS Seròs el torneo escolar de referencia en Terres de Lleida, con varios centros y un joven del Pardinyes campeón.",
+        "en": "We co-organised with INS Seròs the leading school tournament in Terres de Lleida, with several schools and a Pardinyes youngster as champion."
     },
     "content": {
         "ca": "<p>Estem molt orgullosos d’haver coorganitzat, juntament amb l’INS Seròs, una nova edició d’aquest torneig que ja és tot un referent a les Terres de Lleida.</p><p>Ha estat una jornada fantàstica de concentració i estratègia on hem compartit tauler amb l’Escola Andorrana, el Col·legi Episcopal, l’Institut Nou d’Alcarràs, l’Institut Els Templers, l’Institut La Serra i l’Institut Joan Solà.</p><p>🏆 I tenim una gran notícia! Un dels nostres joves jugadors s'ha alçat amb la primera posició del torneig. Moltes felicitats per aquest gran resultat i per demostrar que el futur dels escacs a casa nostra està en bones mans!</p><p>Gràcies a tots els centres participants i, especialment, a l'INS Seròs per ser uns amfitrions de luxe. 🤝✨</p>",
@@ -148,22 +172,23 @@ export const news = [
     ]
 },
 {
-    "id": "lliga2026",
+    "id": "lliga-escacs-lleida-2026-pardinyes",
+    "oldIds": ["lliga2026"],
     "title": {
-        "ca": "Som el club amb més escaquistes en joc de Lleida! ♟️🔥",
-        "es": "¡Somos el club con más ajedrecistas en juego de Lleida! ♟️🔥",
-        "en": "We are the club with the most active chess players in Lleida! ♟️🔥"
+        "ca": "Lliga 2026: el Pardinyes, el club de Lleida amb més escaquistes en joc",
+        "es": "Liga 2026: el Pardinyes, el club de Lleida con más ajedrecistas en juego",
+        "en": "2026 League: Pardinyes, the Lleida club with the most players in action"
     },
     "date": "2026-03-17",
     "category": 'altres',
     "image": "/img/galeria/Noticies/Lliga2026/img1.webp",
     "summary": {
-        "ca": "​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈",
-        "es": "Cerramos la fase regular de la Liga 2026 con un orgullo inmenso. Este año hemos presentado 5 equipos y hemos movilizado a 32 jugadores y jugadoras cada domingo, convirtiéndonos en el club de la ciudad con más participación activa en los tableros. 📈",
-        "en": "We close the regular phase of the 2026 League with immense pride. This year we fielded 5 teams and mobilised 32 players every Sunday, making us the club in the city with the most active participation at the boards. 📈"
+        "ca": "Tanquem la fase regular de la Lliga 2026 amb 5 equips i 32 jugadors cada diumenge, i dos equips campions de categoria provincial.",
+        "es": "Cerramos la fase regular de la Liga 2026 con 5 equipos y 32 jugadores cada domingo, y dos equipos campeones de categoría provincial.",
+        "en": "We close the 2026 League regular season with 5 teams and 32 players every Sunday, and two provincial division champions."
     },
     "content": {
-        "ca": "<p>​Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈</p><p>​Aquests són els nostres titulars de la temporada:</p><p>​🔹 Primer Equip: Hem tornat a Segona Catalana després de 20 anys! Tot i que no hem pogut mantenir la categoria, l'experiència ens ha servit per agafar impuls. Tornarem a pujar molt aviat, estigueu-ne segurs! 💪</p><p>🔹 Equip B: Objectiu complert! Mantenim la categoria a Primera Provincial.</p><p>🔹 Equip C: 🔥 CAMPIONS de Segona Provincial! Ara, a per totes al play-off d'ascens.</p><p>🔹 Equip D: Molta lluita i aprenentatge constant en cada ronda.</p><p>🔹 Equip E: ✨ CAMPIONS de Tercera Provincial! També encetem el camí del play-off amb la màxima il·lusió.</p><p>​❤️ Un agraïment especial a la nostra gent</p><p>​Aquest creixement no seria possible sense les persones que donen vida al club:</p><p>​🙌 A les noves incorporacions: Gràcies per triar-nos. Esperem que la vostra primera experiència amb nosaltres hagi estat magnífica i que hàgiu gaudit aprenent tant a nivell individual com en el vessant col·lectiu de jugar en equip.</p><p>​🤝 Als nostres veterans: Gràcies per seguir confiant en el projecte any rere any. Sou la base i el pilar fonamental del club, ajudant els nous a integrar-se i transmetent els valors de l'entitat.</p><p>​Gràcies a tots vosaltres, el club creix esportivament i en diversitat: dones, homes, adults i sub-12, sub-14... tots aporteu el vostre gra de sorra en cada mobilització i en cada partida.</p><p>​Gràcies, família del Club Escacs Pardinyes. El barri es mou peça a peça! 💜</p>",
+        "ca": "<p>Tanquem la fase regular de la Lliga 2026 amb un orgull immens. Enguany hem presentat 5 equips i hem mobilitzat 32 jugadors i jugadores cada diumenge, convertint-nos en el club de la ciutat amb més participació activa als taulers. 📈</p><p>Aquests són els nostres titulars de la temporada:</p><p>🔹 Primer Equip: Hem tornat a Segona Catalana després de 20 anys! Tot i que no hem pogut mantenir la categoria, l'experiència ens ha servit per agafar impuls. Tornarem a pujar molt aviat, estigueu-ne segurs! 💪</p><p>🔹 Equip B: Objectiu complert! Mantenim la categoria a Primera Provincial.</p><p>🔹 Equip C: 🔥 CAMPIONS de Segona Provincial! Ara, a per totes al play-off d'ascens.</p><p>🔹 Equip D: Molta lluita i aprenentatge constant en cada ronda.</p><p>🔹 Equip E: ✨ CAMPIONS de Tercera Provincial! També encetem el camí del play-off amb la màxima il·lusió.</p><p>❤️ Un agraïment especial a la nostra gent</p><p>Aquest creixement no seria possible sense les persones que donen vida al club:</p><p>🙌 A les noves incorporacions: Gràcies per triar-nos. Esperem que la vostra primera experiència amb nosaltres hagi estat magnífica i que hàgiu gaudit aprenent tant a nivell individual com en el vessant col·lectiu de jugar en equip.</p><p>🤝 Als nostres veterans: Gràcies per seguir confiant en el projecte any rere any. Sou la base i el pilar fonamental del club, ajudant els nous a integrar-se i transmetent els valors de l'entitat.</p><p>Gràcies a tots vosaltres, el club creix esportivament i en diversitat: dones, homes, adults i sub-12, sub-14... tots aporteu el vostre gra de sorra en cada mobilització i en cada partida.</p><p>Gràcies, família del Club Escacs Pardinyes. El barri es mou peça a peça! 💜</p>",
         "es": "<p>Cerramos la fase regular de la Liga 2026 con un orgullo inmenso. Este año hemos presentado 5 equipos y hemos movilizado a 32 jugadores y jugadoras cada domingo, convirtiéndonos en el club de la ciudad con más participación activa en los tableros. 📈</p><p>Estos son nuestros titulares de la temporada:</p><p>🔹 Primer Equipo: ¡Hemos vuelto a Segunda Catalana después de 20 años! Aunque no hemos podido mantener la categoría, la experiencia nos ha servido para coger impulso. ¡Volveremos a subir muy pronto, estad seguros! 💪</p><p>🔹 Equipo B: ¡Objetivo cumplido! Mantenemos la categoría en Primera Provincial.</p><p>🔹 Equipo C: 🔥 ¡CAMPEONES de Segunda Provincial! Ahora, a por todas en el play-off de ascenso.</p><p>🔹 Equipo D: Mucha lucha y aprendizaje constante en cada ronda.</p><p>🔹 Equipo E: ✨ ¡CAMPEONES de Tercera Provincial! También empezamos el camino del play-off con la máxima ilusión.</p><p>❤️ Un agradecimiento especial a nuestra gente</p><p>Este crecimiento no sería posible sin las personas que dan vida al club:</p><p>🙌 A las nuevas incorporaciones: Gracias por elegirnos. Esperamos que vuestra primera experiencia con nosotros haya sido magnífica y que hayáis disfrutado aprendiendo tanto a nivel individual como en la vertiente colectiva de jugar en equipo.</p><p>🤝 A nuestros veteranos: Gracias por seguir confiando en el proyecto año tras año. Sois la base y el pilar fundamental del club, ayudando a los nuevos a integrarse y transmitiendo los valores de la entidad.</p><p>Gracias a todos vosotros, el club crece deportivamente y en diversidad: mujeres, hombres, adultos y sub-12, sub-14... todos aportáis vuestro granito de arena en cada movilización y en cada partida.</p><p>Gracias, familia del Club Escacs Pardinyes. ¡El barrio se mueve pieza a pieza! 💜</p>",
         "en": "<p>We close the regular phase of the 2026 League with immense pride. This year we fielded 5 teams and mobilised 32 players every Sunday, making us the club in the city with the most active participation at the boards. 📈</p><p>These are our headlines of the season:</p><p>🔹 First Team: We returned to Segona Catalana after 20 years! Although we couldn't keep the category, the experience has given us momentum. We'll be back up very soon, you can count on it! 💪</p><p>🔹 Team B: Mission accomplished! We stay in Primera Provincial.</p><p>🔹 Team C: 🔥 CHAMPIONS of Segona Provincial! Now, all in for the promotion play-off.</p><p>🔹 Team D: Plenty of fight and constant learning in every round.</p><p>🔹 Team E: ✨ CHAMPIONS of Tercera Provincial! We also start the play-off road with great excitement.</p><p>❤️ Special thanks to our people</p><p>This growth would not be possible without the people who bring the club to life:</p><p>🙌 To our new members: Thank you for choosing us. We hope your first experience with us has been magnificent and that you have enjoyed learning both individually and as part of a team.</p><p>🤝 To our veterans: Thank you for continuing to trust the project year after year. You are the foundation and pillar of the club, helping newcomers settle in and passing on the club's values.</p><p>Thanks to all of you, the club is growing both in sport and in diversity: women, men, adults and U-12, U-14 players... you all do your part in every match day and every game.</p><p>Thank you, Club Escacs Pardinyes family. The neighbourhood moves piece by piece! 💜</p>"
     },
@@ -175,24 +200,25 @@ export const news = [
         ]
 },
 {
-    "id": "mes-internacional-del-joc-2026",
+    "id": "simultanies-mes-internacional-del-joc-2025",
+    "oldIds": ["mes-internacional-del-joc-2026"],
     "title": {
-        "ca": "♟️ Gran èxit de les Partides Simultànies d’Escacs de la #BibliotecaCafiv!",
-        "es": "♟️ ¡Gran éxito de las Partidas Simultáneas de Ajedrez de la #BibliotecaCafiv!",
-        "en": "♟️ Great success for the #BibliotecaCafiv Simultaneous Chess Games!"
+        "ca": "♟️ Simultànies d'escacs al Mes Internacional del Joc a la UdL",
+        "es": "♟️ Simultáneas de ajedrez en el Mes Internacional del Juego en la UdL",
+        "en": "♟️ Simultaneous chess at the UdL for International Games Month"
     },
     "date": "2025-11-27",
     "category": 'altres',
     "image": "/img/galeria/Noticies/Mes Internacional del Joc 2026/img1.webp",
     "summary": {
-        "ca": "El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀",
-        "es": "La mañana del 27 de noviembre volvimos a colaborar con el Mes Internacional del Juego. ¡El torneo de partidas simultáneas de ajedrez ha sido todo un éxito de participación! 🚀",
-        "en": "On the morning of 27 November we once again took part in International Games Month. The simultaneous chess event was a huge success in terms of participation! 🚀"
+        "ca": "El 27 de novembre vam fer partides simultànies amb el MF Joan Trepat a la biblioteca CAFIV de la UdL, dins el Mes Internacional del Joc.",
+        "es": "El 27 de noviembre celebramos partidas simultáneas con el MF Joan Trepat en la biblioteca CAFIV de la UdL, dentro del Mes Internacional del Juego.",
+        "en": "On 27 November we held simultaneous games with FM Joan Trepat at the UdL CAFIV library, as part of International Games Month."
     },
     "content": {
-        "ca": "<p>El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀</p><p>Moltes gràcies a totes les persones que heu vingut a jugar, aprendre i gaudir d’una estona plena d’estratègia, concentració i companyonia.</p><p>Un agraïment especial al MF Joan Trepat 🌟</p><p>També volem donar les gràcies a les Biblioteques de la UdL (@bibliotequesudl l) i a la Càtedra d’Escacs, Educació i Desenvolupament Cognitiu de la UdL per tornar a comptar un any més amb nosaltres per realitzar activitats d'escacs a la Universitat de Lleida (@universitatdelleida ).</p><p>📸 Aquí teniu un recull d’imatges del torneig! 🏆</p>",
-        "es": "<p>La mañana del 27 de noviembre volvimos a colaborar con el Mes Internacional del Juego. ¡El torneo de partidas simultáneas de ajedrez ha sido todo un éxito de participación! 🚀</p><p>Muchas gracias a todas las personas que habéis venido a jugar, aprender y disfrutar de un rato lleno de estrategia, concentración y compañerismo.</p><p>Un agradecimiento especial al MF Joan Trepat 🌟</p><p>También queremos dar las gracias a las Bibliotecas de la UdL (@bibliotequesudl) y a la Cátedra de Ajedrez, Educación y Desarrollo Cognitivo de la UdL por volver a contar un año más con nosotros para realizar actividades de ajedrez en la Universitat de Lleida (@universitatdelleida).</p><p>📸 ¡Aquí tenéis una recopilación de imágenes del torneo! 🏆</p>",
-        "en": "<p>On the morning of 27 November we once again took part in International Games Month. The simultaneous chess event was a huge success in terms of participation! 🚀</p><p>Many thanks to everyone who came to play, learn and enjoy a time full of strategy, concentration and camaraderie.</p><p>Special thanks to FM Joan Trepat 🌟</p><p>We also want to thank the UdL Libraries (@bibliotequesudl) and the UdL Chair of Chess, Education and Cognitive Development for counting on us once again this year to run chess activities at the University of Lleida (@universitatdelleida).</p><p>📸 Here is a collection of photos from the event! 🏆</p>"
+        "ca": "<p>El matí del 27 de novembre hem tornat a col·laborar amb el Mes Internacional del Joc. El torneig de partides simultànies d'escacs ha estat tot un èxit de participació! 🚀</p><p>Moltes gràcies a totes les persones que heu vingut a jugar, aprendre i gaudir d’una estona plena d’estratègia, concentració i companyonia.</p><p>Un agraïment especial al MF Joan Trepat 🌟</p><p>També volem donar les gràcies a les Biblioteques de la UdL i a la Càtedra d’Escacs, Educació i Desenvolupament Cognitiu de la UdL per tornar a comptar un any més amb nosaltres per realitzar activitats d'escacs a la Universitat de Lleida.</p><p>📸 Aquí teniu un recull d’imatges del torneig! 🏆</p>",
+        "es": "<p>La mañana del 27 de noviembre volvimos a colaborar con el Mes Internacional del Juego. ¡El torneo de partidas simultáneas de ajedrez ha sido todo un éxito de participación! 🚀</p><p>Muchas gracias a todas las personas que habéis venido a jugar, aprender y disfrutar de un rato lleno de estrategia, concentración y compañerismo.</p><p>Un agradecimiento especial al MF Joan Trepat 🌟</p><p>También queremos dar las gracias a las Bibliotecas de la UdL y a la Cátedra de Ajedrez, Educación y Desarrollo Cognitivo de la UdL por volver a contar un año más con nosotros para realizar actividades de ajedrez en la Universitat de Lleida.</p><p>📸 ¡Aquí tenéis una recopilación de imágenes del torneo! 🏆</p>",
+        "en": "<p>On the morning of 27 November we once again took part in International Games Month. The simultaneous chess event was a huge success in terms of participation! 🚀</p><p>Many thanks to everyone who came to play, learn and enjoy a time full of strategy, concentration and camaraderie.</p><p>Special thanks to FM Joan Trepat 🌟</p><p>We also want to thank the UdL Libraries and the UdL Chair of Chess, Education and Cognitive Development for counting on us once again this year to run chess activities at the University of Lleida.</p><p>📸 Here is a collection of photos from the event! 🏆</p>"
     },
     "gallery": [
             "/img/galeria/Noticies/Mes Internacional del Joc 2026/img1.webp",
@@ -202,22 +228,23 @@ export const news = [
         ]
 },
 {
-    "id": "minicopa2025",
+    "id": "minicopa-2025-torneig-infantil-pardinyes",
+    "oldIds": ["minicopa2025"],
     "title": {
-        "ca": "El nostre club està de celebració! 🎉",
-        "es": "¡Nuestro club está de celebración! 🎉",
-        "en": "Our club is celebrating! 🎉"
+        "ca": "Minicopa 2025: 12 equips infantils d'escacs a Pardinyes",
+        "es": "Minicopa 2025: 12 equipos infantiles de ajedrez en Pardinyes",
+        "en": "Minicopa 2025: 12 children's chess teams at Pardinyes"
     },
     "date": "2025-09-27",
     "category": 'torneig',
     "image": "/img/galeria/Noticies/minicopa2025/img1.webp",
     "summary": {
-        "ca": "​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.",
-        "es": "Ayer tuvimos el honor de acoger un gran torneo infantil con 12 equipos. Disfrutamos mucho viendo el talento y la dedicación de nuestros dos equipos infantiles, que compitieron con mucha ilusión.",
-        "en": "Yesterday we had the honour of hosting a great youth tournament with 12 teams. We really enjoyed watching the talent and dedication of our two youth teams, who competed with great enthusiasm."
+        "ca": "Vam acollir un torneig infantil per equips amb 12 equips i vam veure competir amb molta il·lusió els nostres dos equips del Pardinyes.",
+        "es": "Acogimos un torneo infantil por equipos con 12 equipos y vimos competir con mucha ilusión a nuestros dos equipos del Pardinyes.",
+        "en": "We hosted a children's team tournament with 12 teams and watched our two Pardinyes teams compete with great enthusiasm."
     },
     "content": {
-        "ca": "<p>​Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.</p><p>​Aquests moments són la prova que l'esforç i la constància porten els nostres joves a millorar. Continuarem fomentant la passió pels escacs! ❤️</p>",
+        "ca": "<p>Ahir vam tenir l'honor d'acollir un gran torneig infantil amb 12 equips. Vam gaudir molt veient el talent i la dedicació dels nostres dos equips infantils, que van competir amb molta il·lusió.</p><p>Aquests moments són la prova que l'esforç i la constància porten els nostres joves a millorar. Continuarem fomentant la passió pels escacs! ❤️</p>",
         "es": "<p>Ayer tuvimos el honor de acoger un gran torneo infantil con 12 equipos. Disfrutamos mucho viendo el talento y la dedicación de nuestros dos equipos infantiles, que compitieron con mucha ilusión.</p><p>Estos momentos son la prueba de que el esfuerzo y la constancia llevan a nuestros jóvenes a mejorar. ¡Seguiremos fomentando la pasión por el ajedrez! ❤️</p>",
         "en": "<p>Yesterday we had the honour of hosting a great youth tournament with 12 teams. We really enjoyed watching the talent and dedication of our two youth teams, who competed with great enthusiasm.</p><p>These moments are proof that effort and perseverance help our young players improve. We will keep fostering a passion for chess! ❤️</p>"
     },
@@ -233,22 +260,23 @@ export const news = [
         ]
 },
 {
-    "id": "santjordi2026",
+    "id": "sant-jordi-2026-escacs-pardinyes",
+    "oldIds": ["santjordi2026"],
     "title": {
-        "ca": "A Pardinyes, per Sant Jordi, no només movem pàgines, també movem fitxes! 🌹📚♟️",
-        "es": "En Pardinyes, por Sant Jordi, ¡no solo pasamos páginas, también movemos fichas! 🌹📚♟️",
-        "en": "In Pardinyes, on Sant Jordi, we don't just turn pages, we move pieces too! 🌹📚♟️"
+        "ca": "🌹 Sant Jordi 2026 a Pardinyes: escacs, llibres i roses al barri",
+        "es": "🌹 Sant Jordi 2026 en Pardinyes: ajedrez, libros y rosas en el barrio",
+        "en": "🌹 Sant Jordi 2026 in Pardinyes: chess, books and roses"
     },
     "date": "2026-04-22",
     "category": 'altres',
     "image": "/img/galeria/Noticies/SantJordi2026/img1.webp",
     "summary": {
-        "ca": "​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.",
-        "es": "Nos sumamos a la Semana Cultural del barrio para celebrar que la cultura se lee, se vive y se juega. Tanto si eres de dragones y rosas como de torres y caballos, te esperamos para compartir la mejor estrategia.",
-        "en": "We are joining the neighbourhood's Cultural Week to celebrate that culture is read, lived and played. Whether you're into dragons and roses or rooks and knights, we're waiting for you to share the best strategy."
+        "ca": "Ens unim a la Setmana Cultural de Pardinyes per Sant Jordi: la cultura es llegeix, es viu i també es juga, amb escacs per a tothom.",
+        "es": "Nos unimos a la Semana Cultural de Pardinyes por Sant Jordi: la cultura se lee, se vive y también se juega, con ajedrez para todos.",
+        "en": "We join the Pardinyes Cultural Week for Sant Jordi: culture is read, lived and also played, with chess for everyone."
     },
     "content": {
-        "ca": "<p>​Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.</p>",
+        "ca": "<p>Ens unim a la Setmana Cultural del barri per celebrar que la cultura es llegeix, es viu i es juga. Tant si ets de dracs i roses com de torres i cavalls, t'esperem per compartir la millor estratègia.</p>",
         "es": "<p>Nos sumamos a la Semana Cultural del barrio para celebrar que la cultura se lee, se vive y se juega. Tanto si eres de dragones y rosas como de torres y caballos, te esperamos para compartir la mejor estrategia.</p>",
         "en": "<p>We are joining the neighbourhood's Cultural Week to celebrate that culture is read, lived and played. Whether you're into dragons and roses or rooks and knights, we're waiting for you to share the best strategy.</p>"
     },
@@ -262,24 +290,25 @@ export const news = [
     ]
 },
 {
-    "id": "somcultura2026",
+    "id": "som-cultura-2025-lleida",
+    "oldIds": ["somcultura2026"],
     "title": {
-        "ca": "Avui hem anat a Som Cultura, la gran fira d’entitats culturals de Lleida organitzada pel Col·lectiu Cultural Cappont @cculturalcappont .🎉",
-        "es": "Hoy hemos ido a Som Cultura, la gran feria de entidades culturales de Lleida organizada por el Col·lectiu Cultural Cappont @cculturalcappont. 🎉",
-        "en": "Today we went to Som Cultura, Lleida's big fair of cultural associations organised by Col·lectiu Cultural Cappont @cculturalcappont. 🎉"
+        "ca": "El Pardinyes a Som Cultura, la fira d'entitats culturals de Lleida",
+        "es": "El Pardinyes en Som Cultura, la feria de entidades culturales de Lleida",
+        "en": "Pardinyes at Som Cultura, Lleida's cultural associations fair"
     },
     "date": "2025-11-23",
     "category": 'altres',
     "image": "/img/galeria/Noticies/SomCultura2026/img1.webp",
     "summary": {
-        "ca": "És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.",
-        "es": "Es el segundo año que participamos y ha vuelto a ser una jornada llena de tradición, convivencia y buena energía.",
-        "en": "This is the second year we have taken part, and once again it was a day full of tradition, togetherness and good energy."
+        "ca": "Segon any a Som Cultura, la fira d'entitats organitzada pel Col·lectiu Cultural Cappont, amb el grup de sardanes i el club d'escacs.",
+        "es": "Segundo año en Som Cultura, la feria de entidades organizada por el Col·lectiu Cultural Cappont, con el grupo de sardanas y el club de ajedrez.",
+        "en": "Our second year at Som Cultura, the associations fair run by the Col·lectiu Cultural Cappont, with the sardana group and the chess club."
     },
     "content": {
-        "ca": "<p>És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.</p><p>El grup de sardanes i el Club d’Escacs Pardinyes @clubescacspardinyes hi hem estat presents un any més, compartint el nostre dia a dia, fent difusió de la nostra activitat i gaudint de totes les propostes d’aquesta festa de la cultura popular. 💛🖤♟️💃</p><p>Gràcies a totes les entitats i persones que ho han fet possible. Ens veiem a la propera! 🙌✨</p>",
-        "es": "<p>Es el segundo año que participamos y ha vuelto a ser una jornada llena de tradición, convivencia y buena energía.</p><p>El grupo de sardanas y el Club d’Escacs Pardinyes @clubescacspardinyes hemos estado presentes un año más, compartiendo nuestro día a día, dando a conocer nuestra actividad y disfrutando de todas las propuestas de esta fiesta de la cultura popular. 💛🖤♟️💃</p><p>Gracias a todas las entidades y personas que lo han hecho posible. ¡Nos vemos en la próxima! 🙌✨</p>",
-        "en": "<p>This is the second year we have taken part, and once again it was a day full of tradition, togetherness and good energy.</p><p>The sardana group and Club d’Escacs Pardinyes @clubescacspardinyes were there once again, sharing our day-to-day, promoting our activities and enjoying everything this celebration of popular culture had to offer. 💛🖤♟️💃</p><p>Thanks to all the associations and people who made it possible. See you next time! 🙌✨</p>"
+        "ca": "<p>És el segon any que hi participem i ha tornat a ser una jornada plena de tradició, convivència i bona energia.</p><p>El grup de sardanes i el Club d’Escacs Pardinyes hi hem estat presents un any més, compartint el nostre dia a dia, fent difusió de la nostra activitat i gaudint de totes les propostes d’aquesta festa de la cultura popular. 💛🖤♟️💃</p><p>Gràcies a totes les entitats i persones que ho han fet possible. Ens veiem a la propera! 🙌✨</p>",
+        "es": "<p>Es el segundo año que participamos y ha vuelto a ser una jornada llena de tradición, convivencia y buena energía.</p><p>El grupo de sardanas y el Club d’Escacs Pardinyes hemos estado presentes un año más, compartiendo nuestro día a día, dando a conocer nuestra actividad y disfrutando de todas las propuestas de esta fiesta de la cultura popular. 💛🖤♟️💃</p><p>Gracias a todas las entidades y personas que lo han hecho posible. ¡Nos vemos en la próxima! 🙌✨</p>",
+        "en": "<p>This is the second year we have taken part, and once again it was a day full of tradition, togetherness and good energy.</p><p>The sardana group and Club d’Escacs Pardinyes were there once again, sharing our day-to-day, promoting our activities and enjoying everything this celebration of popular culture had to offer. 💛🖤♟️💃</p><p>Thanks to all the associations and people who made it possible. See you next time! 🙌✨</p>"
     },
     "gallery": [
             "/img/galeria/Noticies/SomCultura2026/img1.webp",
@@ -288,24 +317,25 @@ export const news = [
         ]
 },
 {
-    "id": "torneiglamaratotv3-2025",
+    "id": "torneig-escacs-alcarras-marato-tv3-2025",
+    "oldIds": ["torneiglamaratotv3-2025"],
     "title": {
-        "ca": "♟️ Escacs i solidaritat: REPTE ACONSEGUIT! ❤️",
-        "es": "♟️ Ajedrez y solidaridad: ¡RETO CONSEGUIDO! ❤️",
-        "en": "♟️ Chess and solidarity: CHALLENGE ACHIEVED! ❤️"
+        "ca": "♟️ 1r Torneig d'Escacs Vila d'Alcarràs: 241 € per a La Marató de TV3",
+        "es": "♟️ 1.er Torneo de Ajedrez Vila d'Alcarràs: 241 € para La Marató de TV3",
+        "en": "♟️ 1st Vila d'Alcarràs Chess Tournament: €241 for La Marató de TV3"
     },
     "date": "2025-12-08",
     "category": 'torneig',
     "image": "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img1.webp",
     "summary": {
-        "ca": "Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.",
-        "es": "Muchísimas gracias a todos los que vinisteis ayer al 1.er Torneo de Ajedrez Vila d'Alcarràs. Gracias a vuestra participación, hemos recaudado un total de 241 €, que ya se han ingresado íntegramente en la cuenta de @lamaratotv3cat.",
-        "en": "Many thanks to everyone who came yesterday to the 1st Vila d'Alcarràs Chess Tournament. Thanks to your participation, we raised a total of €241, which has already been paid in full into the @lamaratotv3cat account."
+        "ca": "Escacs solidaris a Alcarràs: el torneig va recaptar 241 € per a La Marató de TV3, ingressats íntegrament, amb la sala de Lo Casino plena.",
+        "es": "Ajedrez solidario en Alcarràs: el torneo recaudó 241 € para La Marató de TV3, ingresados íntegramente, con la sala de Lo Casino llena.",
+        "en": "Charity chess in Alcarràs: the tournament raised €241 for La Marató de TV3, paid in full, with the Lo Casino hall packed."
     },
     "content": {
-        "ca": "<p>Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de @lamaratotv3cat.</p><p>Ha estat un plaer veure la sala de 'Lo Casino' plena de taulers, estratègia i, sobretot, ganes de col·laborar.</p><p>Gràcies als jugadors, famílies i als col·laboradors que ho heu fet possible!</p><p>📍 Club Escacs Pardinyes & Ajuntament d'Alcarràs</p>",
-        "es": "<p>Muchísimas gracias a todos los que vinisteis ayer al 1.er Torneo de Ajedrez Vila d'Alcarràs. Gracias a vuestra participación, hemos recaudado un total de 241 €, que ya se han ingresado íntegramente en la cuenta de @lamaratotv3cat.</p><p>Ha sido un placer ver la sala de 'Lo Casino' llena de tableros, estrategia y, sobre todo, ganas de colaborar.</p><p>¡Gracias a los jugadores, familias y colaboradores que lo habéis hecho posible!</p><p>📍 Club Escacs Pardinyes & Ayuntamiento de Alcarràs</p>",
-        "en": "<p>Many thanks to everyone who came yesterday to the 1st Vila d'Alcarràs Chess Tournament. Thanks to your participation, we raised a total of €241, which has already been paid in full into the @lamaratotv3cat account.</p><p>It was a pleasure to see the 'Lo Casino' hall full of boards, strategy and, above all, a desire to help.</p><p>Thanks to the players, families and collaborators who made it possible!</p><p>📍 Club Escacs Pardinyes & Alcarràs City Council</p>"
+        "ca": "<p>Moltíssimes gràcies a tots els que vau venir ahir al 1r Torneig d'Escacs Vila d'Alcarràs. Gràcies a la vostra participació, hem recaptat un total de 241 €, que ja han estat ingressats íntegrament al compte de La Marató de TV3.</p><p>Ha estat un plaer veure la sala de 'Lo Casino' plena de taulers, estratègia i, sobretot, ganes de col·laborar.</p><p>Gràcies als jugadors, famílies i als col·laboradors que ho heu fet possible!</p><p>📍 Club Escacs Pardinyes & Ajuntament d'Alcarràs</p>",
+        "es": "<p>Muchísimas gracias a todos los que vinisteis ayer al 1.er Torneo de Ajedrez Vila d'Alcarràs. Gracias a vuestra participación, hemos recaudado un total de 241 €, que ya se han ingresado íntegramente en la cuenta de La Marató de TV3.</p><p>Ha sido un placer ver la sala de 'Lo Casino' llena de tableros, estrategia y, sobre todo, ganas de colaborar.</p><p>¡Gracias a los jugadores, familias y colaboradores que lo habéis hecho posible!</p><p>📍 Club Escacs Pardinyes & Ayuntamiento de Alcarràs</p>",
+        "en": "<p>Many thanks to everyone who came yesterday to the 1st Vila d'Alcarràs Chess Tournament. Thanks to your participation, we raised a total of €241, which has already been paid in full into the La Marató de TV3 account.</p><p>It was a pleasure to see the 'Lo Casino' hall full of boards, strategy and, above all, a desire to help.</p><p>Thanks to the players, families and collaborators who made it possible!</p><p>📍 Club Escacs Pardinyes & Alcarràs City Council</p>"
     },
     "gallery": [
             "/img/galeria/Noticies/TorneigLaMaratoTV3-2025/img1.webp",
@@ -340,14 +370,14 @@ export const news = [
             '/img/galeria/Minicopa2026/campionssub10.webp'
         ],
         title: {
-            ca: 'GESTA HISTÒRICA A LA MINI COPA TERRITORIAL LLEIDA 2026!',
-            es: '¡GESTA HISTÓRICA EN LA MINI COPA TERRITORIAL LLEIDA 2026!',
-            en: 'HISTORIC FEAT AT THE 2026 MINI TERRITORIAL CUP LLEIDA!'
+            ca: 'Mini Copa Territorial Lleida 2026: el Pardinyes, campió Sub-10 i Sub-20',
+            es: 'Mini Copa Territorial Lleida 2026: el Pardinyes, campeón Sub-10 y Sub-20',
+            en: 'Lleida Territorial Mini Cup 2026: Pardinyes, U-10 and U-20 champions'
         },
         summary: {
-            ca: 'El Club d’Escacs Pardinyes triomfa a la Mini Copa amb els títols de Campions Sub-10 i Sub-20, i un 3r lloc Sub-16.',
-            es: 'El Club d’Escacs Pardinyes triunfa en la Mini Copa con los títulos de Campeones Sub-10 y Sub-20, y un 3er puesto Sub-16.',
-            en: 'Club d’Escacs Pardinyes triumphs at the Mini Cup with U-10 and U-20 Champion titles, and a 3rd place in U-16.'
+            ca: 'Campions Sub-10 i Sub-20 i tercers Sub-16 a la Mini Copa Territorial de Lleida, amb pas al Campionat de Catalunya d\'equips per edats.',
+            es: 'Campeones Sub-10 y Sub-20 y terceros Sub-16 en la Mini Copa Territorial de Lleida, con pase al Campeonato de Cataluña de equipos por edades.',
+            en: 'U-10 and U-20 champions and U-16 third place at the Lleida Territorial Mini Cup, qualifying for the Catalan Age-Group Team Championship.'
         },
         content: {
             ca: `<img src="/img/galeria/Minicopa2026/Fotogrup.webp" class="img-fluid rounded shadow mb-4" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa" />
@@ -422,7 +452,8 @@ Thanks to all the children, teenagers, and families who made this possible. We k
         }
     },
     {
-        id: 'fase-territorial-copa-catalana-2026',
+        id: 'copa-catalana-2026-fase-lleida',
+        oldIds: ['fase-territorial-copa-catalana-2026'],
         date: '2026-01-11',
         category: 'torneig',
         image: '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/fotogrup.webp',
@@ -439,26 +470,26 @@ Thanks to all the children, teenagers, and families who made this possible. We k
             '/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/g5.webp'
         ],
         title: {
-            ca: 'JORNADA HISTÒRICA A LA COPA CATALANA: DOS EQUIPS CLASSIFICATS PER A LA FINAL!',
-            es: 'JORNADA HISTÓRICA EN LA COPA CATALANA: ¡DOS EQUIPOS CLASIFICADOS PARA LA FINAL!',
-            en: 'HISTORIC DAY IN THE CATALAN CUP: TWO TEAMS QUALIFIED FOR THE FINAL!'
+            ca: 'Copa Catalana 2026, fase de Lleida: dos equips del Pardinyes a la final',
+            es: 'Copa Catalana 2026, fase de Lleida: dos equipos del Pardinyes a la final',
+            en: 'Catalan Cup 2026, Lleida stage: two Pardinyes teams reach the final'
         },
         summary: {
-            ca: 'El Club Escacs Pardinyes aconsegueix una actuació rècord a Bellpuig amb dos equips classificats per a la Final de la Copa Catalana.',
-            es: 'El Club Escacs Pardinyes consigue una actuación récord en Bellpuig con dos equipos clasificados para la Final de la Copa Catalana.',
-            en: 'Club Escacs Pardinyes achieves a record performance in Bellpuig with two teams qualified for the Catalan Cup Final.'
+            ca: 'El Pardinyes porta 6 equips a la fase de Lleida de la Copa Catalana, a Bellpuig, aconsegueix podis i classifica dos equips per a la final.',
+            es: 'El Pardinyes lleva 6 equipos a la fase de Lleida de la Copa Catalana, en Bellpuig, logra podios y clasifica dos equipos para la final.',
+            en: 'Pardinyes brings 6 teams to the Lleida stage of the Catalan Cup in Bellpuig, wins podiums and qualifies two teams for the final.'
         },
         content: {
             ca: `<img src="/img/galeria/cronica-de-la-copa-catalana-fase-territorial-de-lleida-2026/Sala_Copa_Lleida_2026.webp" class="img-fluid rounded shadow mb-4" alt="Sala de joc de la Copa Catalana a Bellpuig" />
             
 El passat diumenge 11 de gener, el Club Escacs Pardinyes va signar una de les millors actuacions de la seva història recent a la Fase de Lleida de la Copa Catalana, disputada a l’Institut Lo Pla d’Urgell de Bellpuig. Amb una delegació rècord de 6 equips, el club va demostrar la seva bona salut aconseguint podis en totes les categories i, el més important, el bitllet per a la gran Final per a dos dels nostres conjunts.
 
-<h4 class="mt-4">Domini de la base i solvència sènior</h4>
+<h2 class="h4 mt-4">Domini de la base i solvència sènior</h2>
 El planter del club va tornar a demostrar que no té sostre. El nostre equip de 3a Territorial, format íntegrament per jugadors de les categories "subs", es va proclamar Campió de la seva categoria, demostrant el gran futur que tenim per davant.
 
 Per la seva banda, el Pardinyes C va aconseguir una meritòria segona posició a Segona Territorial, sumant així la segona classificació directa per a la jornada final. No ens podem oblidar del gran paper del Pardinyes B1, que va lluitar contra els rivals més forts de la categoria per pujar al podi com a 3rs classificats de Primera Territorial.
 
-<h4 class="mt-4">Resum de podis groc-i-negres:</h4>
+<h2 class="h4 mt-4">Resum de podis groc-i-negres:</h2>
 <div class="row text-center mb-4">
     <div class="col-12 mb-4">
         <div class="mx-auto" style="max-width: 600px;">
@@ -476,7 +507,7 @@ Per la seva banda, el Pardinyes C va aconseguir una meritòria segona posició a
     </div>
 </div>
 
-<h4 class="mt-4">La Gran Final ens espera</h4>
+<h2 class="h4 mt-4">La Gran Final ens espera</h2>
 L’esdeveniment, que va reunir més de 160 jugadors de 40 equips de tota la província, va estar marcat per la bona esportivitat i la impecable organització del CE Bellpuig i l’Ajuntament de Bellpuig. El Club Escacs Lleida va ser el guanyador absolut d'aquesta fase.
 
 Ara, la mirada del Club Escacs Pardinyes ja està posada en el pròxim 26 d’abril de 2026. Els nostres dos equips classificats viatjaran a una seu encara per determinar per competir contra els 60 millors equips de tot Catalunya, en una jornada que aplegarà més de 240 jugadors.
@@ -492,12 +523,12 @@ Ara, la mirada del Club Escacs Pardinyes ja està posada en el pròxim 26 d’ab
 
 El pasado domingo 11 de enero, el Club Escacs Pardinyes firmó una de las mejores actuaciones de su historia reciente en la Fase de Lleida de la Copa Catalana, disputada en el Instituto Lo Pla d’Urgell de Bellpuig. Con una delegación récord de 6 equipos, el club demostró su buena salud consiguiendo podios en todas las categorías y, lo más importante, el billete para la gran Final para dos de nuestros conjuntos.
 
-<h4 class="mt-4">Dominio de la base y solvencia sénior</h4>
+<h2 class="h4 mt-4">Dominio de la base y solvencia sénior</h2>
 La cantera del club volvió a demostrar que no tiene techo. Nuestro equipo de 3ª Territorial, formado íntegramente por jugadores de las categorías "subs", se proclamó Campeón de su categoría, demostrando el gran futuro que tenemos por delante.
 
 Por su parte, el Pardinyes C consiguió una meritoria segunda posición en Segunda Territorial, sumando así la segunda clasificación directa para la jornada final. No podemos olvidar el gran papel del Pardinyes B1, que luchó contra los rivales más fuertes de la categoría para subir al podio como 3ros clasificados de Primera Territorial.
 
-<h4 class="mt-4">Resumen de podios amarillo-y-negros:</h4>
+<h2 class="h4 mt-4">Resumen de podios amarillo-y-negros:</h2>
 <div class="row text-center mb-4">
     <div class="col-12 mb-4">
         <div class="mx-auto" style="max-width: 600px;">
@@ -515,7 +546,7 @@ Por su parte, el Pardinyes C consiguió una meritoria segunda posición en Segun
     </div>
 </div>
 
-<h4 class="mt-4">La Gran Final nos espera</h4>
+<h2 class="h4 mt-4">La Gran Final nos espera</h2>
 El evento, que reunió a más de 160 jugadores de 40 equipos de toda la provincia, estuvo marcado por la buena deportividad y la impecable organización del CE Bellpuig y el Ayuntamiento de Bellpuig. El Club Escacs Lleida fue el ganador absoluto de esta fase.
 
 Ahora, la mirada del Club Escacs Pardinyes ya está puesta en el próximo 26 de abril de 2026. Nuestros dos equipos clasificados viajarán a una sede aún por determinar para competir contra los 60 mejores equipos de toda Cataluña, en una jornada que reunirá a más de 240 jugadores.
@@ -531,12 +562,12 @@ Ahora, la mirada del Club Escacs Pardinyes ya está puesta en el próximo 26 de 
 
 Last Sunday, January 11th, Club Escacs Pardinyes achieved one of the best performances in its recent history at the Lleida Phase of the Catalan Cup, held at the Institut Lo Pla d'Urgell in Bellpuig. With a record delegation of 6 teams, the club demonstrated its good health by achieving podiums in all categories and, most importantly, the ticket to the grand Final for two of our sets.
 
-<h4 class="mt-4">Youth dominance and senior reliability</h4>
+<h2 class="h4 mt-4">Youth dominance and senior reliability</h2>
 The club's youth academy once again proved it has no ceiling. Our 3rd Territorial team, composed entirely of players from the "subs" categories, was proclaimed Champion of its category, demonstrating the great future ahead of us.
 
 For its part, Pardinyes C achieved a meritorious second position in Second Territorial, thus adding the second direct qualification for the final day. We cannot forget the great role of Pardinyes B1, which fought against the strongest rivals in the category to climb the podium as 3rd placed in First Territorial.
 
-<h4 class="mt-4">Summary of the yellow-and-black podiums:</h4>
+<h2 class="h4 mt-4">Summary of the yellow-and-black podiums:</h2>
 <div class="row text-center mb-4">
     <div class="col-12 mb-4">
         <div class="mx-auto" style="max-width: 600px;">
@@ -554,7 +585,7 @@ For its part, Pardinyes C achieved a meritorious second position in Second Terri
     </div>
 </div>
 
-<h4 class="mt-4">The Grand Final awaits us</h4>
+<h2 class="h4 mt-4">The Grand Final awaits us</h2>
 The event, which brought together more than 160 players from 40 teams from all over the province, was marked by good sportsmanship and the impeccable organization of CE Bellpuig and the Bellpuig City Council. Club Escacs Lleida was the absolute winner of this phase.
 
 Now, Club Escacs Pardinyes' sights are already set on April 26th, 2026. Our two qualified teams will travel to a venue yet to be determined to compete against the 60 best teams from all over Catalonia, in a day that will bring together more than 240 players.
@@ -569,14 +600,15 @@ It is a pride to see how the club grows at all stages, from the youngest to the 
         }
     },
     {
-        id: 'cronica-copa-catalana-2026',
+        id: 'final-copa-catalana-2026-lleida',
+        oldIds: ['cronica-copa-catalana-2026'],
         date: '2026-04-28',
         category: 'torneig',
         image: '/img/galeria/CopaCatalana2026/FotoEquip.webp',
         title: {
-            ca: 'Crònica de la Copa Catalana 2026',
-            es: 'Crónica de la Copa Catalana 2026',
-            en: 'Chronicle of the Catalan Cup 2026'
+            ca: 'Final de la Copa Catalana d\'Escacs 2026 a Lleida: crònica',
+            es: 'Final de la Copa Catalana de Ajedrez 2026 en Lleida: crónica',
+            en: '2026 Catalan Chess Cup Final in Lleida: report'
         },
         gallery: [
             '/img/galeria/CopaCatalana2026/g1.webp',
@@ -591,12 +623,12 @@ It is a pride to see how the club grows at all stages, from the youngest to the 
             '/img/galeria/CopaCatalana2026/g10.webp'
         ],
         summary: {
-            ca: 'El C.E. Mollet es corona campió a Lleida en una Final de la Copa Catalana amb més de 240 jugadors.',
-            es: 'El C.E. Mollet se corona campeón en Lleida en una Final de la Copa Catalana con más de 240 jugadores.',
-            en: 'C.E. Mollet is crowned champion in Lleida in a Catalan Cup Final with more than 240 players.'
+            ca: 'El C.E. Mollet guanya la Divisió d\'Honor a la Final de la Copa Catalana 2026 a Lleida, amb 60 equips i més de 240 jugadors.',
+            es: 'El C.E. Mollet gana la División de Honor en la Final de la Copa Catalana 2026 en Lleida, con 60 equipos y más de 240 jugadores.',
+            en: 'C.E. Mollet wins the Premier Division at the 2026 Catalan Cup Final in Lleida, with 60 teams and more than 240 players.'
         },
         content: {
-            ca: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+            ca: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" alt="Equip del C.E. Mollet, campió de la Final de la Copa Catalana 2026" />
 Equip del Club Escacs Mollet, campió de Divisió d'Honor - 1a Divisió de la final de la Copa Catalana
 
 El passat diumenge, 26 d’abril de 2026, es va disputar al Pavelló Municipal Els Magraners de Lleida, una nova edició de la Final de la Copa Catalana 2026, amb la participació de 60 equips i més de 240 jugadors, amb gairebé 70 dels quals titulats internacionals o mestres catalans. 
@@ -605,7 +637,7 @@ Per a portar a terme aquest esdeveniment tan important del calendari escaquísti
 
 El torneig es va disputar a ritme ràpid (15’+5), dividit en sis categories (DH/1D, 2D, Preferent, 1a Categoria, 2a Categoria, 3a Categoria), amb 10 equips cada una, providents de diferents parts de Catalunya. Aquests equips estaven classificats des de les seves respectives fases prèvies de cada una de les quatre Territorials. El sistema de joc va ser de sistema lliga a 9 rondes, 5 rondes disputades al matí i 4 rondes més a la tarda.
 
-<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" alt="Sala de joc de la Final de la Copa Catalana 2026 al Pavelló Els Magraners de Lleida" />
 El guanyador de la màxima categoria de Divisió d’Honor/Primera Divisió (DH/1D) va ser el C.E. Mollet, equip format pel GM Tomás Sosa, GM Pere Garriga, MI Jaime José Romero, MF Cristian Fernández i Ramon Caro. Van aconseguir el primer lloc amb 29,5 punts, amb 8 victòries i una sola derrota. 
 
 El campió de la categoria 2 Divisió (2D) va ser el C.E. Tarragona, amb 28,5 punts, aconseguint 8 victòries i una derrota. L’equip estava format per MF Francesc Xavier Farran, Joan Miquel, Marc Barceló (campió del món sub-10 de partides llampec) i Daniel Torrens.
@@ -618,7 +650,7 @@ A la Segona Categoria, el primer lloc el va aconseguir el C.E. MiR A de Montcada
 
 Finalment, a la Tercera Categoria, l’equip guanyador va ser el C.E. Ateneu Colon G, amb 26 punts, amb un ple de 9 victòries. L’equip estava format per Àlex Escolano, Jofre Gardela, Lluc Castel i Gael Pineda.
 
-<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" alt="Autoritats i organitzadors a la cloenda de la Final de la Copa Catalana 2026" />
 A l’acta de cloenda hi van assistir el regidor de l’Ajuntament de Lleida, el Sr. Roberto Pino; el president de la Federació Catalana d’Escacs, el Sr. Ramon Chalmeta; el vicepresident de la Federació Catalana d’Escacs i director del torneig, el Sr. Ivan Marina; el president del C.E. Pardinyes, el Sr. Jordi Obis, el delegat Territorial de Lleida de la Federació Catalana d’Escacs, el Sr. Josep Brunet i la responsable de comunicació de la Federació Catalana d’Escacs, la Sra. Júlia Cruz.
 
 Cal destacar la bona esportivitat de tots els equips i l’eficiència i agilitat de l’equip arbitral, encapçalat per l’àrbitre lleidatà Xavier Valios, àrbitre principal del torneig. L’equip adjunt estava format per Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sànchez i Roger Rodríguez.
@@ -654,7 +686,7 @@ TERCERA TERRITORIAL
 1r.Classificat: C.E. ATENEU COLON G
 2n.Classificat: C.E. LA RÀPITA B
 3r.Classificat: C.E. FOMENT MARTINENC D`,
-            es: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+            es: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" alt="Equipo del C.E. Mollet, campeón de la Final de la Copa Catalana 2026" />
 Equipo del Club Escacs Mollet, campeón de División de Honor - 1ª División de la final de la Copa Catalana
 
 El pasado domingo, 26 de abril de 2026, se disputó en el Pabellón Municipal Els Magraners de Lleida, una nueva edición de la Final de la Copa Catalana 2026, con la participación de 60 equipos y más de 240 jugadores, con casi 70 de los cuales titulados internacionales o maestros catalanes.
@@ -663,7 +695,7 @@ Para llevar a cabo este evento tan importante del calendario ajedrecístico cata
 
 El torneo se disputó a ritmo rápido (15'+5), dividido en seis categorías (DH/1D, 2D, Preferente, 1ª Categoría, 2ª Categoría, 3ª Categoría), con 10 equipos cada una, provenientes de diferentes partes de Cataluña. Estos equipos estaban clasificados desde sus respectivas fases previas de cada una de las cuatro Territoriales. El sistema de juego fue de sistema liga a 9 rondas, 5 rondas disputadas por la mañana y 4 rondas más por la tarde.
 
-<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" alt="Sala de juego de la Final de la Copa Catalana 2026 en el Pabellón Els Magraners de Lleida" />
 El ganador de la máxima categoría de División de Honor/Primera División (DH/1D) fue el C.E. Mollet, equipo formado por el GM Tomás Sosa, GM Pere Garriga, MI Jaime José Romero, MF Cristian Fernández y Ramon Caro. Consiguieron el primer puesto con 29,5 puntos, con 8 victorias y una sola derrota.
 
 El campeón de la categoría 2ª División (2D) fue el C.E. Tarragona, con 28,5 puntos, logrando 8 victorias y una derrota. El equipo estaba formado por MF Francesc Xavier Farran, Joan Miquel, Marc Barceló (campeón del mundo sub-10 de partidas relámpago) y Daniel Torrens.
@@ -676,7 +708,7 @@ En la Segunda Categoría, el primer puesto lo consiguió el C.E. MiR A de Montca
 
 Finalmente, en la Tercera Categoría, el equipo ganador fue el C.E. Ateneu Colon G, con 26 puntos, con un pleno de 9 victorias. El equipo estaba formado por Àlex Escolano, Jofre Gardela, Lluc Castel y Gael Pineda.
 
-<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" alt="Autoridades y organizadores en la clausura de la Final de la Copa Catalana 2026" />
 En el acto de clausura asistieron el concejal del Ayuntamiento de Lleida, el Sr. Roberto Pino; el presidente de la Federación Catalana de Ajedrez, el Sr. Ramon Chalmeta; el vicepresidente de la Federación Catalana de Ajedrez y director del torneo, el Sr. Ivan Marina; el presidente del C.E. Pardinyes, el Sr. Jordi Obis, el delegado Territorial de Lleida de la Federación Catalana de Ajedrez, el Sr. Josep Brunet y la responsable de comunicación de la Federación Catalana de Ajedrez, la Sra. Júlia Cruz.
 
 Cabe destacar la buena deportividad de todos los equipos y la eficiencia y agilidad del equipo arbitral, encabezado por el árbitro leridano Xavier Valios, árbitro principal del torneo. El equipo adjunto estaba formado por Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sánchez y Roger Rodríguez.
@@ -712,7 +744,7 @@ TERCERA TERRITORIAL
 1r.Clasificado: C.E. ATENEU COLON G
 2n.Clasificado: C.E. LA RÀPITA B
 3r.Clasificado: C.E. FOMENT MARTINENC D`,
-            en: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" />
+            en: `<img src="/img/galeria/CopaCatalana2026/Mollet_campio_Copa_Catalana.webp" class="img-fluid rounded shadow mb-4" alt="C.E. Mollet team, 2026 Catalan Cup Final champions" />
 Club Escacs Mollet team, champion of Honor Division - 1st Division of the Catalan Cup final
 
 Last Sunday, April 26, 2026, a new edition of the 2026 Catalan Cup Final was held at the Els Magraners Municipal Pavilion in Lleida, with the participation of 60 teams and more than 240 players, almost 70 of whom were international titleholders or Catalan masters.
@@ -721,7 +753,7 @@ To carry out this important event of the Catalan chess calendar, together with t
 
 The tournament was played at a rapid pace (15'+5), divided into six categories (DH/1D, 2D, Preferent, 1st Category, 2nd Category, 3rd Category), with 10 teams each, coming from different parts of Catalonia. These teams were qualified from their respective previous phases of each of the four Territorials. The game system was a league system of 9 rounds, 5 rounds played in the morning and 4 more rounds in the afternoon.
 
-<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/240.webp" class="img-fluid rounded shadow mb-4" alt="Playing hall of the 2026 Catalan Cup Final at the Els Magraners pavilion in Lleida" />
 The winner of the top category of Honor Division/First Division (DH/1D) was C.E. Mollet, a team formed by GM Tomás Sosa, GM Pere Garriga, IM Jaime José Romero, FM Cristian Fernández and Ramon Caro. They achieved first place with 29.5 points, with 8 wins and a single defeat.
 
 The champion of the 2nd Division (2D) category was C.E. Tarragona, with 28.5 points, achieving 8 wins and one defeat. The team was made up of FM Francesc Xavier Farran, Joan Miquel, Marc Barceló (under-10 world champion in blitz games) and Daniel Torrens.
@@ -734,7 +766,7 @@ In the Second Category, first place was achieved by C.E. MiR A of Montcada i Rei
 
 Finally, in the Third Category, the winning team was C.E. Ateneu Colon G, with 26 points, with a full house of 9 wins. The team was made up of Àlex Escolano, Jofre Gardela, Lluc Castel and Gael Pineda.
 
-<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/CopaCatalana2026/personalitats_final_copa_catalana.webp" class="img-fluid rounded shadow mb-4" alt="Officials and organisers at the 2026 Catalan Cup Final closing ceremony" />
 The closing ceremony was attended by the Lleida City Council councilor, Mr. Roberto Pino; the president of the Catalan Chess Federation, Mr. Ramon Chalmeta; the vice-president of the Catalan Chess Federation and tournament director, Mr. Ivan Marina; the president of C.E. Pardinyes, Mr. Jordi Obis, the Territorial delegate of Lleida of the Catalan Chess Federation, Mr. Josep Brunet and the communication manager of the Catalan Chess Federation, Mrs. Júlia Cruz.
 
 It is worth highlighting the good sportsmanship of all teams and the efficiency and agility of the refereeing team, led by the Lleida referee Xavier Valios, main referee of the tournament. The assistant team was made up of Claudia Botías, Jesús Caballero, Eric Gatell, Andrés Camilo Navarro, Albert Sànchez and Roger Rodríguez.
@@ -778,14 +810,14 @@ TERCERA TERRITORIAL
         category: 'prensa',
         image: '/img/galeria/prensa/FinalCopaCat.webp',
         title: {
-            ca: 'Retall de diari: Final de la Copa Catalana',
-            es: 'Recorte de periódico: Final de la Copa Catalana',
-            en: 'Newspaper clipping: Catalan Cup Final'
+            ca: 'Premsa: la Final de la Copa Catalana d\'Escacs a Lleida',
+            es: 'Prensa: la Final de la Copa Catalana de Ajedrez en Lleida',
+            en: 'Press: the Catalan Chess Cup Final in Lleida'
         },
         summary: {
-            ca: 'Ressò als mitjans de la gran final de la Copa Catalana disputada a Lleida.',
-            es: 'Eco en los medios de la gran final de la Copa Catalana disputada en Lleida.',
-            en: 'Media echo of the Catalan Cup grand final held in Lleida.'
+            ca: 'Retall de premsa sobre la Final de la Copa Catalana d\'Escacs 2026 disputada a Lleida, amb la col·laboració del Club Escacs Pardinyes.',
+            es: 'Recorte de prensa sobre la Final de la Copa Catalana de Ajedrez 2026 disputada en Lleida, con la colaboración del Club Escacs Pardinyes.',
+            en: 'Press clipping on the 2026 Catalan Chess Cup Final held in Lleida, with the collaboration of Club Escacs Pardinyes.'
         },
         content: {
             ca: 'Ressò als mitjans de la gran final de la Copa Catalana disputada a Lleida. Llegeix el retall per a més detalls.',
@@ -799,14 +831,14 @@ TERCERA TERRITORIAL
         category: 'torneig',
         image: '/img/galeria/TornigNadal2026/1.webp',
         title: {
-            ca: 'Èxit de participació al III Torneig de Nadal',
-            es: 'Éxito de participación en el III Torneo de Navidad',
-            en: 'Great participation at the III Christmas Tournament'
+            ca: 'III Torneig Infantil d\'Escacs de Nadal a Pardinyes: 45 infants',
+            es: 'III Torneo Infantil de Ajedrez de Navidad en Pardinyes: 45 niños',
+            en: '3rd Children\'s Christmas Chess Tournament in Pardinyes: 45 kids'
         },
         summary: {
-            ca: 'Més de 45 infants van gaudir d\'una jornada d\'escacs inoblidable al Centre Cívic de Pardinyes.',
-            es: 'Más de 45 niños disfrutaron de una jornada de ajedrez inolvidable en el Centro Cívico de Pardinyes.',
-            en: 'More than 45 children enjoyed an unforgettable chess day at the Pardinyes Civic Center.'
+            ca: 'Quaranta-cinc infants van jugar al III Torneig Infantil de Nadal al Centre Cívic de Pardinyes; Genís Satorra va guanyar amb 7 punts de 7.',
+            es: 'Cuarenta y cinco niños jugaron en el III Torneo Infantil de Navidad en el Centro Cívico de Pardinyes; Genís Satorra ganó con 7 puntos de 7.',
+            en: 'Forty-five children played the 3rd Children\'s Christmas Tournament at the Pardinyes Civic Centre; Genís Satorra won with 7 points out of 7.'
         },
         content: {
             ca: `El Centre Cívic de Pardinyes es va convertir en l'epicentre dels escacs base lleidatans amb la celebració de la tercera edició del seu tradicional Torneig Infantil de Nadal. 
@@ -846,44 +878,38 @@ TERCERA TERRITORIAL
             en: 'Unforgettable day with WIM Ivette García and Kulsum Qasim'
         },
         summary: {
-            ca: 'El club rep la visita de la directora de ChessKid Español i la Presidenta de ChessKid a Chess.com.',
-            es: 'El club recibe la visita de la directora de ChessKid Español y la Presidenta de ChessKid en Chess.com.',
-            en: 'The club hosts the director of ChessKid Español and the President of ChessKid at Chess.com.'
+            ca: 'La WIM Ivette García va fer simultànies al club i ens va visitar Kulsum Qasim, presidenta de ChessKid a Chess.com.',
+            es: 'La WIM Ivette García hizo simultáneas en el club y nos visitó Kulsum Qasim, presidenta de ChessKid en Chess.com.',
+            en: 'WIM Ivette García gave a simul at the club and we were visited by Kulsum Qasim, president of ChessKid at Chess.com.'
         },
         content: {
-            ca: `El passat dimarts, 8 de juliol, el @clubescacspardinyes va viure una jornada espectacular que, com a president, m'omple d'orgull.
+            ca: `El passat dimarts, 8 de juliol, el Club Escacs Pardinyes va viure una jornada espectacular que, com a president, m'omple d'orgull.
 
-Vam tenir l'honor de rebre dues figures increïbles del món dels escacs. La WIM Ivette García Morales (@chessivette), que va venir expressament des de Chihuahua, Mèxic 🇲🇽, ens va oferir una simultània inoblidable. La seva qualitat humana i escaquística és excepcional, i personalment, estic molt content d'haver pogut aconseguir unes taules contra ella!
+Vam tenir l'honor de rebre dues figures increïbles del món dels escacs. La WIM Ivette García Morales, que va venir expressament des de Chihuahua, Mèxic 🇲🇽, ens va oferir una simultània inoblidable. La seva qualitat humana i escaquística és excepcional, i personalment, estic molt content d'haver pogut aconseguir unes taules contra ella!
 
 A més, també ens va visitar Kulsum Qasim, la Presidenta de ChessKid a Chess.com, que va viatjar des de Toronto, Canadà 🇨🇦!
 
 És un privilegi poder apropar aquestes referents de l'escac femení internacional als nostres socis i, especialment, als nostres infants. La seva presència no només inspira, sinó que també dona una visibilitat crucial a la dona en el nostre esport. Moments com aquests són els que fan club!
 
-Gràcies a la Ivette i a la Kulsum per la seva generositat i per fer d'aquell dia una jornada que quedarà gravada a la memòria del club.
+Gràcies a la Ivette i a la Kulsum per la seva generositat i per fer d'aquell dia una jornada que quedarà gravada a la memòria del club.`,
+            es: `El pasado martes, 8 de julio, el Club Escacs Pardinyes vivió una jornada espectacular que, como presidente, me llena de orgullo.
 
-#Escacs #Simultania #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiracio #DonaIEscacs #OrgullDePresident`,
-            es: `El pasado martes, 8 de julio, el @clubescacspardinyes vivió una jornada espectacular que, como presidente, me llena de orgullo.
-
-Tuvimos el honor de recibir a dos figuras increíbles del mundo del ajedrez. La WIM Ivette García Morales (@chessivette), que vino expresamente desde Chihuahua, México 🇲🇽, nos ofreció una simultánea inolvidable. Su calidad humana y ajedrecística es excepcional, y personalmente, ¡estoy muy contento de haber podido conseguir unas tablas contra ella!
+Tuvimos el honor de recibir a dos figuras increíbles del mundo del ajedrez. La WIM Ivette García Morales, que vino expresamente desde Chihuahua, México 🇲🇽, nos ofreció una simultánea inolvidable. Su calidad humana y ajedrecística es excepcional, y personalmente, ¡estoy muy contento de haber podido conseguir unas tablas contra ella!
 
 Además, también nos visitó Kulsum Qasim, la Presidenta de ChessKid en Chess.com, ¡que viajó desde Toronto, Canadá 🇨🇦!
 
 Es un privilegio poder acercar a estas referentes del ajedrez femenino internacional a nuestros socios y, especialmente, a nuestros niños. Su presencia no solo inspira, sino que también da una visibilidad crucial a la mujer en nuestro deporte. ¡Momentos como estos son los que hacen club!
 
-Gracias a Ivette y a Kulsum por su generosidad y por hacer de aquel día una jornada que quedará grabada en la memoria del club.
+Gracias a Ivette y a Kulsum por su generosidad y por hacer de aquel día una jornada que quedará grabada en la memoria del club.`,
+            en: `Last Tuesday, July 8th, Club Escacs Pardinyes experienced a spectacular day that, as president, fills me with pride.
 
-#Escacs #Simultania #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiracio #DonaIEscacs #OrgullDePresident`,
-            en: `Last Tuesday, July 8th, @clubescacspardinyes experienced a spectacular day that, as president, fills me with pride.
-
-We had the honor of welcoming two incredible figures from the chess world. WIM Ivette García Morales (@chessivette), who came specifically from Chihuahua, Mexico 🇲🇽, offered us an unforgettable simultaneous exhibition. Her human and chess quality is exceptional, and personally, I am very happy to have managed a draw against her!
+We had the honor of welcoming two incredible figures from the chess world. WIM Ivette García Morales, who came specifically from Chihuahua, Mexico 🇲🇽, offered us an unforgettable simultaneous exhibition. Her human and chess quality is exceptional, and personally, I am very happy to have managed a draw against her!
 
 Additionally, we were also visited by Kulsum Qasim, the President of ChessKid at Chess.com, who traveled from Toronto, Canada 🇨🇦!
 
 It is a privilege to be able to bring these international female chess role models closer to our members and, especially, to our children. Their presence not only inspires but also provides crucial visibility to women in our sport. Moments like these are what make a club!
 
-Thanks to Ivette and Kulsum for their generosity and for making that day a journey that will remain engraved in the club's memory.
-
-#Chess #Simultaneous #ClubEscacsPardinyes #WIMIvetteGarcia #KulsumQasim #ChessKid #ChessCom #Inspiration #WomenInChess #PresidentPride`
+Thanks to Ivette and Kulsum for their generosity and for making that day a journey that will remain engraved in the club's memory.`
         }
     },
     {
@@ -892,55 +918,55 @@ Thanks to Ivette and Kulsum for their generosity and for making that day a journ
         category: 'torneig',
         image: '/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp',
         title: {
-            ca: 'Festa dels escacs de Lleida 2025',
-            es: 'Fiesta del ajedrez de Lleida 2025',
-            en: 'Lleida Chess Festival 2025'
+            ca: 'Festa dels Escacs Lleidatans 2025 al Club Pardinyes',
+            es: 'Fiesta del Ajedrez Leridano 2025 en el Club Pardinyes',
+            en: '2025 Lleida Chess Festival at Club Pardinyes'
         },
         summary: {
-            ca: 'El Club Escacs Pardinyes acull la recuperació de la Festa dels Escacs Lleidatans amb gran èxit.',
-            es: 'El Club Escacs Pardinyes acoge la recuperación de la Fiesta del Ajedrez Leridano con gran éxito.',
-            en: 'Club Escacs Pardinyes hosts the recovery of the Lleida Chess Festival with great success.'
+            ca: 'Recuperem la Festa dels Escacs Lleidatans amb el Campionat Llampec, dinar de germanor i lliurament dels trofeus de la temporada territorial.',
+            es: 'Recuperamos la Fiesta del Ajedrez Leridano con el Campeonato Relámpago, comida de hermandad y entrega de los trofeos de la temporada territorial.',
+            en: 'The Lleida Chess Festival returns with the Blitz Championship, a team lunch and the territorial season trophy presentation.'
         },
         content: {
-            ca: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+            ca: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" alt="Festa dels Escacs Lleidatans 2025 al Club Escacs Pardinyes" />
 Dissabte 12 de juliol, a les instal·lacions del Club Escacs Pardinyes, situat al barri de Pardinyes de Lleida, va tenir lloc la Festa dels Escacs Lleidatans. Feia una colla d’anys que no es feia aquesta festa de la territorial de Lleida, i aquest any, de la mà del delegat Josep Brunet, s’ha volgut recuperar que tradició que serveix per tancar una temporada.
 
 La jornada va començar al matí amb el Campionat d’Escacs Individual Llampec. El torneig es va jugar pel sistema suís en onze rondes al ritme de 3 minuts per partida i 2 segons d’increment per jugada. Molt bona la participació amb cinquanta esportistes de la majoria dels clubs lleidatans. El campionat va ser guanyat pel MC Israel Camps (Balaguer) de forma invicta amb 10,5 punts, molt per davant de la resta dels rivals. En segona posició es va classificar en Jordi Ferrer (Balaguer) amb 8,5 punts i en tercera posició i tancant el podi l’Aleix Martí (Vallfogona) amb 8 punts.   El millor esportista de la categoria Sub14 va ser en Daniel Badia (Flanc de Dama) amb 7,5 punts i el millor Sub10 va ser en Jan Llovera (Flanc de Dama) amb 5 punts.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" alt="Jugadors al Campionat Llampec de la Festa dels Escacs Lleidatans 2025" />
 Després del campionat, tot seguit i a les mateixes instal·lacions de club Pardinyes, es va fer el dinar de germanor amb una trentena de persones assistents. El dinar era un càtering del Restaurant Dos Plats de Lleida. Estava compost amb dos primers plats i postres a triar amb anterioritat, i va agradar força.
 
 Finalment, la jornada va acabar amb el repartiment dels trofeus o guardons de la temporada escaquista de la Territorial de Lleida. Es feu entrega dels trofeus dels campions de Lliga, dels pitxitxis de la Lliga i de la Copa de Lleida.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" alt="Participants a la Festa dels Escacs Lleidatans 2025" />
 Donem les gràcies a totes les persones que d’una manera o altra han ajudat a fer possible aquesta Festa dels Escacs de Lleida, sobretot a les persones del Club Escacs Pardinyes. Sobretot agrair a la bona convivència que va regnar en tot moment en aquesta jornada festiva. Moltes gràcies a tots els assitents i fins la propera temporada.
 
 <a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Classificació i resultats del Campionat Individual Llampec</a>`,
-            es: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+            es: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" alt="Fiesta del Ajedrez Leridano 2025 en el Club Escacs Pardinyes" />
 El sábado 12 de julio, en las instalaciones del Club Escacs Pardinyes, situado en el barrio de Pardinyes de Lleida, tuvo lugar la Festa dels Escacs Lleidatans (Fiesta del Ajedrez Leridano). Hacía bastantes años que no se celebraba esta fiesta de la territorial de Lleida, y este año, de la mano del delegado Josep Brunet, se ha querido recuperar esta tradición que sirve para cerrar la temporada.
 
 La jornada comenzó por la mañana con el Campeonato de Ajedrez Individual Relámpago. El torneo se jugó por sistema suizo a once rondas con un ritmo de 3 minutos por partida y 2 segundos de incremento por jugada. Muy buena participación con cincuenta deportistas de la mayoría de los clubes leridanos. El campeonato fue ganado por el MC Israel Camps (Balaguer) de forma invicta con 10,5 puntos, muy por delante del resto de rivales. En segunda posición se clasificó Jordi Ferrer (Balaguer) con 8,5 puntos y en tercera posición, cerrando el podio, Aleix Martí (Vallfogona) con 8 puntos. El mejor deportista de la categoría Sub14 fue Daniel Badia (Flanc de Dama) con 7,5 puntos y el mejor Sub10 fue Jan Llovera (Flanc de Dama) con 5 puntos.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" alt="Jugadores en el Campeonato Relámpago de la Fiesta del Ajedrez Leridano 2025" />
 Después del campeonato, acto seguido y en las mismas instalaciones del club Pardinyes, se celebró el almuerzo de hermandad con una treintena de asistentes. El almuerzo consistió en un catering del Restaurante Dos Plats de Lleida, compuesto por dos primeros platos y postre a elegir con anterioridad, y gustó mucho.
 
 Finalmente, la jornada terminó con el reparto de los trofeos o galardones de la temporada ajedrecística de la Territorial de Lleida. Se hizo entrega de los trofeos de los campeones de Liga, de los goleadores (pitxitxis) de la Liga y de la Copa de Lleida.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" alt="Participantes en la Fiesta del Ajedrez Leridano 2025" />
 Damos las gracias a todas las personas que de una manera u otra han ayudado a hacer posible esta Fiesta del Ajedrez de Lleida, sobre todo a las personas del Club Escacs Pardinyes. Especialmente agradecer la buena convivencia que reinó en todo momento en esta jornada festiva. Muchas gracias a todos los asistentes y hasta la próxima temporada.
 
 <a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Clasificación y resultados del Campeonato Individual Relámpago</a>`,
-            en: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" />
+            en: `<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_1.webp" class="img-fluid rounded shadow mb-4" alt="2025 Lleida Chess Festival at Club Escacs Pardinyes" />
 On Saturday, July 12th, at the facilities of the Club Escacs Pardinyes, located in the Pardinyes neighborhood of Lleida, the Festa dels Escacs Lleidatans (Lleida Chess Festival) took place. It had been several years since this festival of the Lleida territorial was held, and this year, led by delegate Josep Brunet, we wanted to recover this tradition that serves to close the season.
 
 The day began in the morning with the Individual Blitz Chess Championship. The tournament was played using the Swiss system over eleven rounds at a pace of 3 minutes per game and 2 seconds of increment per move. There was very good participation, with fifty athletes from most of the Lleida clubs. The championship was won by MC Israel Camps (Balaguer) undefeated with 10.5 points, well ahead of the other rivals. In second place was Jordi Ferrer (Balaguer) with 8.5 points, and in third place, completing the podium, was Aleix Martí (Vallfogona) with 8 points. The best athlete in the U14 category was Daniel Badia (Flanc de Dama) with 7.5 points, and the best U10 was Jan Llovera (Flanc de Dama) with 5 points.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_3.webp" class="img-fluid rounded shadow mb-4" alt="Players at the Blitz Championship of the 2025 Lleida Chess Festival" />
 After the championship, immediately following and in the same Pardinyes club facilities, a brotherhood lunch was held with about thirty attendees. The lunch was catered by Restaurant Dos Plats in Lleida, consisting of two first courses and a dessert chosen in advance, and it was very well received.
 
 Finally, the day ended with the distribution of trophies and awards for the chess season of the Lleida Territorial. Trophies were presented to the League champions, the League top scorers (pitxitxis), and the Lleida Cup winners.
 
-<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" />
+<img src="/img/galeria/Festa-dels-escacs-de-lleida-2025/festa_lleida_2.webp" class="img-fluid rounded shadow mb-4" alt="Participants at the 2025 Lleida Chess Festival" />
 We thank everyone who in one way or another helped make this Lleida Chess Festival possible, especially the people from Club Escacs Pardinyes. Above all, we appreciate the good atmosphere that prevailed at all times during this festive day. Many thanks to all attendees, and see you next season.
 
 <a href="https://s3.chess-results.com/tnrWZ.aspx?lan=9&art=1&rd=11&tno=1213584" target="_blank" class="btn btn-primary mt-3">Classification and results of the Individual Blitz Championship</a>`
@@ -952,14 +978,14 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
         category: 'prensa',
         image: '/img/galeria/prensa/tancatsetmanasanta2026-01-04-2026-Escacs-son-joves.webp',
         title: {
-            ca: 'Els escacs són per joves',
-            es: 'El ajedrez es para jóvenes',
-            en: 'Chess is for the youth'
+            ca: 'Premsa: els escacs captiven els joves al Tancat de Setmana Santa',
+            es: 'Prensa: el ajedrez cautiva a los jóvenes en el Cerrado de Semana Santa',
+            en: 'Press: chess captivates young people at the Easter Closed Tournament'
         },
         summary: {
-            ca: 'Ressò als mitjans de com els escacs estan captivant les noves generacions durant el Tancat de Setmana Santa 2026.',
-            es: 'Eco en los medios de cómo el ajedrez está cautivando a las nuevas generaciones durante el Cerrado de Semana Santa 2026.',
-            en: 'Media echo on how chess is captivating new generations during the 2026 Easter Closed.'
+            ca: 'Retall de premsa sobre com els escacs atrauen les noves generacions durant el Tancat de GM i MI de Setmana Santa 2026 a Lleida.',
+            es: 'Recorte de prensa sobre cómo el ajedrez atrae a las nuevas generaciones durante el Cerrado de GM y MI de Semana Santa 2026 en Lleida.',
+            en: 'Press clipping on how chess is attracting younger generations during the 2026 Easter GM and IM Closed Tournament in Lleida.'
         },
         content: {
             ca: 'Ressò als mitjans de com els escacs estan captivant les noves generacions durant el Tancat de Setmana Santa 2026. Llegeix el retall per a més detalls.',
@@ -973,14 +999,14 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
         category: 'prensa',
         image: '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Fita-Historica-lleida.webp',
         title: {
-            ca: 'Fita històrica a Lleida',
-            es: 'Hito histórico en Lleida',
-            en: 'Historic milestone in Lleida'
+            ca: 'Premsa: fita històrica per als escacs a Lleida',
+            es: 'Prensa: hito histórico para el ajedrez en Lleida',
+            en: 'Press: a historic milestone for chess in Lleida'
         },
         summary: {
-            ca: 'La premsa destaca l\'èxit del Tancat com una fita històrica per a l\'escacs lleidatà.',
-            es: 'La prensa destaca el éxito del Cerrado como un hito histórico para el ajedrez leridano.',
-            en: 'The press highlights the success of the Closed as a historic milestone for chess in Lleida.'
+            ca: 'La premsa destaca el Tancat de Setmana Santa 2026 com una fita històrica per als escacs lleidatans. Retall de diari.',
+            es: 'La prensa destaca el Cerrado de Semana Santa 2026 como un hito histórico para el ajedrez leridano. Recorte de periódico.',
+            en: 'The press highlights the 2026 Easter Closed Tournament as a historic milestone for chess in Lleida. Newspaper clipping.'
         },
         content: {
             ca: 'La premsa destaca l\'èxit del Tancat de Setmana Santa 2026 com una fita històrica per a l\'escacs lleidatà. Llegeix el retall per a més detalls.',
@@ -994,14 +1020,14 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
         category: 'prensa',
         image: '/img/galeria/prensa/tancatsetmanasanta2026-05-04-2026-Lleida-Elit-escacs.webp',
         title: {
-            ca: 'Lleida, l\'elit dels escacs',
-            es: 'Lleida, la élite del ajedrez',
-            en: 'Lleida, the elite of chess'
+            ca: 'Premsa: Lleida, l\'elit dels escacs',
+            es: 'Prensa: Lleida, la élite del ajedrez',
+            en: 'Press: Lleida, home of elite chess'
         },
         summary: {
-            ca: 'Ressenyen Lleida com a punt de trobada de l\'elit dels escacs gràcies a l\'organització del Tancat.',
-            es: 'Reseñan Lleida como punto de encuentro de la élite del ajedrez gracias a la organización del Cerrado.',
-            en: 'Lleida is reviewed as a meeting point for the chess elite thanks to the organization of the Closed.'
+            ca: 'Retall de premsa que presenta Lleida com a punt de trobada de l\'elit dels escacs gràcies al Tancat de GM i MI del Pardinyes.',
+            es: 'Recorte de prensa que presenta Lleida como punto de encuentro de la élite del ajedrez gracias al Cerrado de GM y MI del Pardinyes.',
+            en: 'Press clipping presenting Lleida as a meeting point for elite chess thanks to Pardinyes\' GM and IM Closed Tournament.'
         },
         content: {
             ca: 'Ressenyen Lleida com a punt de trobada de l\'elit dels escacs gràcies a l\'organització del Tancat de GMs i MIs. Llegeix el retall per a més detalls.',
@@ -1015,14 +1041,14 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
         category: 'prensa',
         image: '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capita-argentina.webp',
         title: {
-            ca: 'El capità de l\'Argentina al Tancat',
-            es: 'El capitán de Argentina en el Cerrado',
-            en: 'Argentina\'s captain at the Closed'
+            ca: 'Premsa: entrevista al capità de l\'Argentina al Tancat',
+            es: 'Prensa: entrevista al capitán de Argentina en el Cerrado',
+            en: 'Press: interview with Argentina\'s captain at the Closed Tournament'
         },
         summary: {
-            ca: 'Entrevista al capità de la selecció argentina present al Tancat de Setmana Santa.',
-            es: 'Entrevista al capitán de la selección argentina presente en el Cerrado de Semana Santa.',
-            en: 'Interview with the captain of the Argentine team present at the Easter Closed.'
+            ca: 'Entrevista al capità de la selecció argentina d\'escacs, present al Tancat de GM i MI de Setmana Santa 2026 a Lleida.',
+            es: 'Entrevista al capitán de la selección argentina de ajedrez, presente en el Cerrado de GM y MI de Semana Santa 2026 en Lleida.',
+            en: 'Interview with the captain of Argentina\'s chess team, present at the 2026 Easter GM and IM Closed Tournament in Lleida.'
         },
         content: {
             ca: 'Entrevista al capità de la selecció argentina present al Tancat de Setmana Santa 2026. Llegeix el retall per a més detalls.',
@@ -1036,14 +1062,14 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
         category: 'prensa',
         image: '/img/galeria/prensa/tancatsetmanasanta2026-31-03-2026-Capital-escacs.webp',
         title: {
-            ca: 'Lleida, capital dels escacs',
-            es: 'Lleida, capital del ajedrez',
-            en: 'Lleida, chess capital'
+            ca: 'Premsa: Lleida, capital dels escacs',
+            es: 'Prensa: Lleida, capital del ajedrez',
+            en: 'Press: Lleida, capital of chess'
         },
         summary: {
-            ca: 'Menció especial de com Lleida es converteix en la capital dels escacs per uns dies.',
-            es: 'Mención especial de cómo Lleida se convierte en la capital del ajedrez por unos días.',
-            en: 'Special mention of how Lleida becomes the capital of chess for a few days.'
+            ca: 'Retall de premsa: Lleida es converteix en la capital dels escacs durant uns dies gràcies al Tancat Internacional de Setmana Santa.',
+            es: 'Recorte de prensa: Lleida se convierte en la capital del ajedrez durante unos días gracias al Cerrado Internacional de Semana Santa.',
+            en: 'Press clipping: Lleida becomes the capital of chess for a few days thanks to the Easter International Closed Tournament.'
         },
         content: {
             ca: 'Menció especial de com Lleida es converteix en la capital dels escacs per uns dies en aquest Tancat Internacional. Llegeix el retall per a més detalls.',
@@ -1070,12 +1096,12 @@ We thank everyone who in one way or another helped make this Lleida Chess Festiv
             en: 'Simultaneous Games with WFM Aramí Lobo - Pardinyes en Lila'
         },
         summary: {
-            ca: 'La WFM Aramí Lobo ofereix una exhibició de simultànies en la jornada \'Pardinyes en Lila\'.',
-            es: 'La WFM Aramí Lobo ofrece una exhibición de simultáneas en la jornada \'Pardinyes en Lila\'.',
-            en: 'WFM Aramí Lobo offers a simultaneous chess exhibition as part of the \'Pardinyes en Lila\' event.'
+            ca: 'La WFM Aramí Lobo, campiona iberoamericana de ràpides, va jugar simultànies contra 20 jugadores a \'Pardinyes en Lila\' el 6 de març de 2026.',
+            es: 'La WFM Aramí Lobo, campeona iberoamericana de rápidas, jugó simultáneas contra 20 jugadoras en \'Pardinyes en Lila\' el 6 de marzo de 2026.',
+            en: 'WFM Aramí Lobo, Ibero-American rapid champion, played a simul against 20 players at \'Pardinyes en Lila\' on 6 March 2026.'
         },
         content: {
-            ca: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+            ca: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" alt="Cartell de les simultànies amb la WFM Aramí Lobo a 'Pardinyes en Lila'" />
 El passat 6 de març de 2026, el Club Escacs Pardinyes va participar en la jornada 'Pardinyes en Lila' amb una exhibició de simultànies a càrrec de la WFM Aramí Lobo.
 
 L'esdeveniment va tenir lloc a la Rambla Corregidor Escofet i Pl. Maria Rúbies, de 17:00h a 19:00h. La presentació de la jornada va anar a càrrec de Carmeli Moral.
@@ -1087,7 +1113,7 @@ Aramí Lobo és una de les grans realitats dels escacs actuals amb un futur bril
 • 3a d'Europa Individual Sub-14 (2021)
 
 Els taulers van estar limitats a 20 jugadores, que van posar a prova el seu nivell davant d'una Campiona Iberoamericana en un ambient festiu i reivindicatiu.`,
-            es: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+            es: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" alt="Cartel de las simultáneas con la WFM Aramí Lobo en 'Pardinyes en Lila'" />
 El pasado 6 de marzo de 2026, el Club Escacs Pardinyes participó en la jornada 'Pardinyes en Lila' con una exhibición de simultáneas a cargo de la WFM Aramí Lobo.
 
 El evento tuvo lugar en la Rambla Corregidor Escofet y Pl. Maria Rúbies, de 17:00h a 19:00h. La presentación de la jornada corrió a cargo de Carmeli Moral.
@@ -1099,7 +1125,7 @@ Aramí Lobo es una de las grandes realidades del ajedrez actual con un futuro br
 • 3ª de Europa Individual Sub-14 (2021)
 
 Los tableros estuvieron limitados a 20 jugadoras, que pusieron a prueba su nivel ante una Campeona Iberoamericana en un ambiente festivo y reivindicativo.`,
-            en: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" />
+            en: `<img src="/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp" class="img-fluid rounded shadow mb-4" alt="Poster for the simul with WFM Aramí Lobo at 'Pardinyes en Lila'" />
 On March 6th, 2026, Club Escacs Pardinyes participated in the 'Pardinyes en Lila' event with a simultaneous chess exhibition by WFM Aramí Lobo.
 
 The event took place at Rambla Corregidor Escofet and Pl. Maria Rúbies, from 17:00h to 19:00h. The presentation was by Carmeli Moral.
@@ -1114,7 +1140,8 @@ The boards were limited to 20 players, who tested their skills against an Ibero-
         }
     },
     {
-        id: 'jornada-sant-jordi-2025',
+        id: 'simultanies-sant-jordi-2025-lola-fernandez',
+        oldIds: ['jornada-sant-jordi-2025'],
         date: '2025-04-25',
         category: 'simultanies',
         image: '/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp',
@@ -1128,17 +1155,17 @@ The boards were limited to 20 players, who tested their skills against an Ibero-
             '/img/galeria/JornadaSantJordi2025/JornadaSantJordi7.webp'
         ],
         title: {
-            ca: 'Jornada Sant@ Jordi/na 2025',
-            es: 'Jornada Sant@ Jordi/na 2025',
-            en: 'Sant@ Jordi/na Day 2025'
+            ca: 'Simultànies de Sant Jordi 2025 a Pardinyes amb la jove Lola Fernández',
+            es: 'Simultáneas de Sant Jordi 2025 en Pardinyes con la joven Lola Fernández',
+            en: 'Sant Jordi 2025 simul in Pardinyes with young Lola Fernández'
         },
         summary: {
-            ca: 'La jove prodigi Lola Fernández s\'enfronta a 8 jugadors en una tarda màgica d\'escacs.',
-            es: 'La joven prodigio Lola Fernández se enfrenta a 8 jugadores en una tarde mágica de ajedrez.',
-            en: 'Young prodigy Lola Fernández faces 8 players in a magical afternoon of chess.'
+            ca: 'Lola Fernández, de 9 anys, va jugar simultànies contra 8 rivals (5 victòries, 1 taules i 2 derrotes) a la jornada de Sant Jordi 2025.',
+            es: 'Lola Fernández, de 9 años, jugó simultáneas contra 8 rivales (5 victorias, 1 tablas y 2 derrotas) en la jornada de Sant Jordi 2025.',
+            en: 'Nine-year-old Lola Fernández played a simul against 8 opponents (5 wins, 1 draw and 2 losses) on Sant Jordi day 2025.'
         },
         content: {
-            ca: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+            ca: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" alt="Cartell de les simultànies de la jornada de Sant Jordi 2025 amb Lola Fernández" />
 🌟 Una tarda màgica dins la jornada de Sant@ Jordi/na! 🌟
 
 El 25 d'abril 2025, la jove prodigi Lola Fernández, amb només 9 anys, es va atrevir a enfrontar-se a 8 jugadors alhora en una espectacular simultània d’escacs ♟️🔥.
@@ -1148,7 +1175,7 @@ I els resultats van ser impressionants: 5 victòries, 1 taules i només 2 derrot
 A més, vam habilitar 8 taulers més per a partides lliures, enmig d’un ambient vibrant, ple d’energia i amb una gran afluència de gent! 🙌🎉
 
 Gràcies a tots per formar part d’aquesta jornada tan especial. El futur dels escacs ja brilla amb llum pròpia! 💛`,
-            es: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+            es: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" alt="Cartel de las simultáneas de la jornada de Sant Jordi 2025 con Lola Fernández" />
 🌟 ¡Una tarde mágica dentro de la jornada de Sant@ Jordi/na! 🌟
 
 El 25 de abril de 2025, la joven prodigio Lola Fernández, con solo 9 años, se atrevió a enfrentarse a 8 jugadores a la vez en una espectacular simultánea de ajedrez ♟️🔥.
@@ -1158,7 +1185,7 @@ Y los resultados fueron impresionantes: ¡5 victorias, 1 tablas y solo 2 derrota
 Además, habilitamos 8 tableros más para partidas libres, en medio de un ambiente vibrante, lleno de energía y con una gran afluencia de gente. 🙌🎉
 
 Gracias a todos por formar parte de esta jornada tan especial. ¡El futuro del ajedrez ya brilla con luz propia! 💛`,
-            en: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" />
+            en: `<img src="/img/galeria/JornadaSantJordi2025/cartell-simultanies.webp" class="img-fluid rounded shadow mb-4" alt="Poster for the Sant Jordi 2025 simul with Lola Fernández" />
 🌟 A magical afternoon during the Sant@ Jordi/na day! 🌟
 
 On April 25th 2025, the young prodigy Lola Fernández, only 9 years old, dared to face 8 players at once in a spectacular chess simultaneous exhibition ♟️🔥.
@@ -1240,9 +1267,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
         "en": "More than 50 youngsters, many competing for the first time, at our first Christmas Tournament, supported by the Pardinyes Residents' Association."
     },
     "content": {
-        "ca": "<p>Vam inaugurar l'any amb el nostre primer Torneig d'Escacs de Nadal per a Infants. Amb la participació de més de 50 joves entusiastes, molts competint per primera vegada, va ser un inici d'any memorable. 🎉</p><p>Un agraïment especial a l'Associació de Veïns de Pardinyes (@orvepard) per la seva col·laboració essencial, que va permetre a aquests joves viure una experiència competitiva única.</p><p>A més, el diari Segre se'n va fer ressò a la pàgina 26. Gràcies per reconèixer l'esforç i la passió dels nostres joves jugadors! 📰</p>",
-        "es": "<p>Inauguramos el año con nuestro primer Torneo de Ajedrez de Navidad para Niños. Con la participación de más de 50 jóvenes entusiastas, muchos compitiendo por primera vez, fue un inicio de año memorable. 🎉</p><p>Un agradecimiento especial a la Asociación de Vecinos de Pardinyes (@orvepard) por su colaboración esencial, que permitió a estos jóvenes vivir una experiencia competitiva única.</p><p>Además, el diario Segre se hizo eco en su página 26. ¡Gracias por reconocer el esfuerzo y la pasión de nuestros jóvenes jugadores! 📰</p>",
-        "en": "<p>We kicked off the year with our first Christmas Chess Tournament for Children. With more than 50 enthusiastic youngsters taking part, many of them competing for the first time, it was a memorable start to the year. 🎉</p><p>Special thanks to the Pardinyes Residents' Association (@orvepard) for their essential support, which gave these young players a unique competitive experience.</p><p>The Segre newspaper also covered it on page 26. Thank you for recognising the effort and passion of our young players! 📰</p>"
+        "ca": "<p>Vam inaugurar l'any amb el nostre primer Torneig d'Escacs de Nadal per a Infants. Amb la participació de més de 50 joves entusiastes, molts competint per primera vegada, va ser un inici d'any memorable. 🎉</p><p>Un agraïment especial a l'Associació de Veïns de Pardinyes (Orvepard) per la seva col·laboració essencial, que va permetre a aquests joves viure una experiència competitiva única.</p><p>A més, el diari Segre se'n va fer ressò a la pàgina 26. Gràcies per reconèixer l'esforç i la passió dels nostres joves jugadors! 📰</p>",
+        "es": "<p>Inauguramos el año con nuestro primer Torneo de Ajedrez de Navidad para Niños. Con la participación de más de 50 jóvenes entusiastas, muchos compitiendo por primera vez, fue un inicio de año memorable. 🎉</p><p>Un agradecimiento especial a la Asociación de Vecinos de Pardinyes (Orvepard) por su colaboración esencial, que permitió a estos jóvenes vivir una experiencia competitiva única.</p><p>Además, el diario Segre se hizo eco en su página 26. ¡Gracias por reconocer el esfuerzo y la pasión de nuestros jóvenes jugadores! 📰</p>",
+        "en": "<p>We kicked off the year with our first Christmas Chess Tournament for Children. With more than 50 enthusiastic youngsters taking part, many of them competing for the first time, it was a memorable start to the year. 🎉</p><p>Special thanks to the Pardinyes Residents' Association (Orvepard) for their essential support, which gave these young players a unique competitive experience.</p><p>The Segre newspaper also covered it on page 26. Thank you for recognising the effort and passion of our young players! 📰</p>"
     },
     "gallery": [
         "/img/galeria/Noticies/i-torneig-nadal-2024/img1.webp",
@@ -1264,9 +1291,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/copa-catalana-2024/img1.webp",
     "summary": {
-        "ca": "L'equip A aconsegueix una brillant 4a posició a la seva categoria i el B lluita fins a la 8a.",
-        "es": "El equipo A consigue una brillante 4.ª posición en su categoría y el B lucha hasta la 8.ª.",
-        "en": "Team A finished a brilliant 4th in its category, while team B fought its way to 8th."
+        "ca": "Els equips A i B del Pardinyes a la Copa Catalana 2024: el A acaba 4t a la seva categoria i el B lluita fins a la 8a posició.",
+        "es": "Los equipos A y B del Pardinyes en la Copa Catalana 2024: el A acaba 4.º en su categoría y el B lucha hasta el 8.º puesto.",
+        "en": "Pardinyes A and B teams at the 2024 Catalan Cup: A finishes 4th in its category and B fights to 8th place."
     },
     "content": {
         "ca": "<p>Orgull immens dels nostres equips A i B a la Copa Catalana! El nostre equip A va aconseguir una brillant 4a posició en la seva categoria, mentre que el B va lluitar amb coratge fins a la 8a posició.</p><p>Cada partida va ser una demostració de talent, esforç i esperit d'equip. Aquestes experiències ens fan més forts com a club i com a comunitat. 👏</p>",
@@ -1294,9 +1321,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/campionat-edats-lleida-2024/img1.webp",
     "summary": {
-        "ca": "Dos campions, en Sub-18 i Sub-14, i un tercer lloc a l'Individual d'Edats Sub-18.",
-        "es": "Dos campeones, en Sub-18 y Sub-14, y un tercer puesto en el Individual de Edades Sub-18.",
-        "en": "Two champions, in U-18 and U-14, and a third place in the U-18 individual age-group championship."
+        "ca": "Dos campions, Sub-18 i Sub-14, i un tercer lloc Sub-18 a l'Individual: grans resultats dels joves del Pardinyes al Campionat d'Edats de Lleida 2024.",
+        "es": "Dos campeones Sub-18 y Sub-14 y un tercer puesto Sub-18: grandes resultados de los jóvenes del Pardinyes en el Campeonato de Edades de Lleida 2024.",
+        "en": "Two champions, U-18 and U-14, and a U-18 third place in the Individual: great results for young Pardinyes players at the 2024 Lleida Age-Group Championship."
     },
     "content": {
         "ca": "<p>Èxit dels nostres joves al Campionat d'Edats! Felicitats als nostres campions, un en Sub-18 i un altre en Sub-14, per les seves victòries impressionants.</p><p>A més, un dels nostres jugadors més joves va aconseguir la tercera posició al Campionat Individual d'Edats, categoria Sub-18. 🥉 El futur dels escacs a Pardinyes brilla gràcies a vosaltres!</p>",
@@ -1321,9 +1348,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/lliga-catalana-2024/img1.webp",
     "summary": {
-        "ca": "Victòries, empats i molt d'aprenentatge per als equips A i B al llarg de la temporada de lliga.",
-        "es": "Victorias, empates y mucho aprendizaje para los equipos A y B a lo largo de la temporada de liga.",
-        "en": "Wins, draws and plenty of learning for teams A and B throughout the league season."
+        "ca": "Repàs de la temporada 2024 dels equips A i B del Pardinyes a la Lliga Catalana d'Escacs: victòries, empats i molt d'aprenentatge.",
+        "es": "Repaso de la temporada 2024 de los equipos A y B del Pardinyes en la Liga Catalana de Ajedrez: victorias, empates y mucho aprendizaje.",
+        "en": "Review of the 2024 season of Pardinyes teams A and B in the Catalan Chess League: wins, draws and plenty of learning."
     },
     "content": {
         "ca": "<p>Repassem la temporada dels nostres dos equips a la Lliga Catalana d'Escacs 2024:</p><p><strong>Equip A</strong>: victòria contra el Balàfia (1,5 - 8,5), victòria contra el Mollerussa (8 - 2), derrota ajustada contra el Lleida B (6 - 4), empat vibrant contra el Baix Segre (5 - 5) i victòria a Ponts (3,5 - 6,5). 🏆</p><p><strong>Equip B</strong>: victòria contra La Seu (5,5 - 2,5), empat contra l'Andorra C (4 - 4), derrotes contra el Bellpuig (2 - 6), el Juneda (0 - 8) i el Balaguer B (1,5 - 6,5), triomf contundent en el derbi contra el Lleida C (6,5 - 1,5), victòria contra el Flanc de Dama (5½ - 2½) i derrota a l'última ronda a Ivars (6 - 2).</p><p>Més enllà dels resultats, celebrem l'esforç, la passió i el compromís de tots els jugadors al llarg de la competició. 💪♟️</p>",
@@ -1384,9 +1411,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
         "en": "Two of our players finished second at the first edition of the Flanc de Dama club's pairs tournament."
     },
     "content": {
-        "ca": "<p>El dissabte 16 de març, alguns membres del nostre club van participar en la primera edició del torneig per parelles Queen's SuperBow del club Flanc de Dama (@flancdedama).</p><p>Dos dels nostres jugadors van aconseguir un magnífic segon lloc! Felicitats per aquest gran èxit. 🏆</p>",
-        "es": "<p>El sábado 16 de marzo, algunos miembros de nuestro club participaron en la primera edición del torneo por parejas Queen's SuperBow del club Flanc de Dama (@flancdedama).</p><p>¡Dos de nuestros jugadores consiguieron un magnífico segundo puesto! Felicidades por este gran éxito. 🏆</p>",
-        "en": "<p>On Saturday 16 March, some of our members took part in the first edition of the Queen's SuperBow pairs tournament organised by Flanc de Dama (@flancdedama).</p><p>Two of our players achieved a magnificent second place! Congratulations on this great result. 🏆</p>"
+        "ca": "<p>El dissabte 16 de març, alguns membres del nostre club van participar en la primera edició del torneig per parelles Queen's SuperBow del club Flanc de Dama.</p><p>Dos dels nostres jugadors van aconseguir un magnífic segon lloc! Felicitats per aquest gran èxit. 🏆</p>",
+        "es": "<p>El sábado 16 de marzo, algunos miembros de nuestro club participaron en la primera edición del torneo por parejas Queen's SuperBow del club Flanc de Dama.</p><p>¡Dos de nuestros jugadores consiguieron un magnífico segundo puesto! Felicidades por este gran éxito. 🏆</p>",
+        "en": "<p>On Saturday 16 March, some of our members took part in the first edition of the Queen's SuperBow pairs tournament organised by Flanc de Dama.</p><p>Two of our players achieved a magnificent second place! Congratulations on this great result. 🏆</p>"
     },
     "gallery": [
         "/img/galeria/Noticies/queens-superbow-2024/img1.webp",
@@ -1435,9 +1462,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/festa-major-mollerussa-equips-2024/img1.webp",
     "summary": {
-        "ca": "Vam participar al XLIII Campionat per equips de la Festa Major de Mollerussa.",
-        "es": "Participamos en el XLIII Campeonato por equipos de la Fiesta Mayor de Mollerussa.",
-        "en": "We took part in the 43rd Mollerussa Festa Major team championship."
+        "ca": "El 19 de maig vam participar al XLIII Campionat per equips de la Festa Major de Mollerussa 2024, una jornada d'estratègia i bona companyia.",
+        "es": "El 19 de mayo participamos en el XLIII Campeonato por equipos de la Fiesta Mayor de Mollerussa 2024, una jornada de estrategia y buena compañía.",
+        "en": "On 19 May we took part in the 43rd Mollerussa Festa Major Team Championship 2024, a day of strategy and good company."
     },
     "content": {
         "ca": "<p>El diumenge 19 de maig vam participar en el XLIII Campionat per equips de la Festa Major de Mollerussa 2024. Una jornada plena d'emocions, estratègia i bona companyia. Seguim sumant experiències i aprenentatges! ♟️💪</p>",
@@ -1577,14 +1604,14 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "altres",
     "image": "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img1.webp",
     "summary": {
-        "ca": "Durant el juliol vam col·laborar amb el CF Pardinyes per donar a conèixer els escacs a més infants.",
-        "es": "Durante julio colaboramos con el CF Pardinyes para dar a conocer el ajedrez a más niños.",
-        "en": "In July we teamed up with CF Pardinyes to introduce more children to chess."
+        "ca": "El Pardinyes va col·laborar a les estades d'estiu del CF Pardinyes per donar a conèixer els escacs a més infants durant el juliol.",
+        "es": "El Pardinyes colaboró en los campus de verano del CF Pardinyes para dar a conocer el ajedrez a más niños durante julio.",
+        "en": "Pardinyes worked with CF Pardinyes at their summer camps in July to introduce chess to more children."
     },
     "content": {
-        "ca": "<p>Durant el mes de juliol, des del club vam col·laborar amb el CF Pardinyes (@cfpardinyesoficial) a les seves estades d'estiu, amb l'objectiu de donar a conèixer els escacs a més infants. ♟️👧🧒</p><p>Vam gaudir molt veient com els més petits descobrien la màgia d'aquest joc. Gràcies per l'oportunitat! 🙌</p>",
-        "es": "<p>Durante el mes de julio, desde el club colaboramos con el CF Pardinyes (@cfpardinyesoficial) en sus campus de verano, con el objetivo de dar a conocer el ajedrez a más niños. ♟️👧🧒</p><p>Disfrutamos mucho viendo cómo los más pequeños descubrían la magia de este juego. ¡Gracias por la oportunidad! 🙌</p>",
-        "en": "<p>During July, the club worked with CF Pardinyes (@cfpardinyesoficial) at their summer camps, with the aim of introducing more children to chess. ♟️👧🧒</p><p>We really enjoyed watching the youngest discover the magic of the game. Thanks for the opportunity! 🙌</p>"
+        "ca": "<p>Durant el mes de juliol, des del club vam col·laborar amb el CF Pardinyes a les seves estades d'estiu, amb l'objectiu de donar a conèixer els escacs a més infants. ♟️👧🧒</p><p>Vam gaudir molt veient com els més petits descobrien la màgia d'aquest joc. Gràcies per l'oportunitat! 🙌</p>",
+        "es": "<p>Durante el mes de julio, desde el club colaboramos con el CF Pardinyes en sus campus de verano, con el objetivo de dar a conocer el ajedrez a más niños. ♟️👧🧒</p><p>Disfrutamos mucho viendo cómo los más pequeños descubrían la magia de este juego. ¡Gracias por la oportunidad! 🙌</p>",
+        "en": "<p>During July, the club worked with CF Pardinyes at their summer camps, with the aim of introducing more children to chess. ♟️👧🧒</p><p>We really enjoyed watching the youngest discover the magic of the game. Thanks for the opportunity! 🙌</p>"
     },
     "gallery": [
         "/img/galeria/Noticies/estades-estiu-cf-pardinyes-2024/img1.webp",
@@ -1636,9 +1663,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/festa-major-lleida-2024/img1.webp",
     "summary": {
-        "ca": "Més de 60 participants al torneig que el club va organitzar durant la Festa Major de Lleida.",
-        "es": "Más de 60 participantes en el torneo que el club organizó durante la Fiesta Mayor de Lleida.",
-        "en": "More than 60 players at the tournament the club organised during the Lleida Festa Major."
+        "ca": "Més de 60 participants al torneig d'escacs que el Pardinyes va organitzar durant la Festa Major de Lleida 2024.",
+        "es": "Más de 60 participantes en el torneo de ajedrez que el Pardinyes organizó durante la Fiesta Mayor de Lleida 2024.",
+        "en": "More than 60 participants at the chess tournament Pardinyes organised during the 2024 Lleida Festa Major."
     },
     "content": {
         "ca": "<p>Durant la Festa Major de Lleida, el Club d'Escacs Pardinyes va organitzar un torneig espectacular on més de 60 participants van demostrar el seu talent i passió pel joc! 🥳♟️</p><p>Gràcies a tots els jugadors, famílies i amics que van fer d'aquest esdeveniment una jornada inoblidable. Aquest èxit ens motiva a continuar organitzant activitats per fomentar els escacs a la nostra ciutat. 💖</p>",
@@ -1666,9 +1693,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "altres",
     "image": "/img/galeria/Noticies/tamborinada-2024/img1.webp",
     "summary": {
-        "ca": "Adults i infants van gaudir dels escacs a la Tamborinada, a la plaça Blas Infante.",
-        "es": "Adultos y niños disfrutaron del ajedrez en la Tamborinada, en la plaza Blas Infante.",
-        "en": "Adults and children enjoyed chess at the Tamborinada festival in Plaça Blas Infante."
+        "ca": "Adults i infants van jugar a escacs a la Tamborinada de Lleida, a la plaça Blas Infante, en una jornada de cultura i comunitat.",
+        "es": "Adultos y niños jugaron al ajedrez en la Tamborinada de Lleida, en la plaza Blas Infante, en una jornada de cultura y comunidad.",
+        "en": "Adults and children played chess at the Tamborinada in Lleida, in Plaça Blas Infante, on a day of culture and community."
     },
     "content": {
         "ca": "<p>Vam tenir el plaer de participar a la Tamborinada de Lleida, a la plaça Blas Infante, en una jornada plena d'activitats, cultura i comunitat. 🌟</p><p>Tant adults com infants van poder gaudir jugant a escacs i descobrint aquest món ple d'estratègia i diversió. Gràcies a tots els participants, organitzadors i entitats que la van fer possible! 👏</p>",
@@ -1692,9 +1719,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "altres",
     "image": "/img/galeria/Noticies/jornada-biblioteca-cafiv-2024/img1.webp",
     "summary": {
-        "ca": "Una jornada d'escacs dins del Mes Internacional del Joc a la Biblioteca del CAFIV de la UdL.",
-        "es": "Una jornada de ajedrez dentro del Mes Internacional del Juego en la Biblioteca del CAFIV de la UdL.",
-        "en": "A chess day during International Games Month at the UdL's CAFIV Library."
+        "ca": "El 26 de novembre vam fer una jornada d'escacs a la Biblioteca del CAFIV de la UdL, dins del Mes Internacional del Joc, per a tots els nivells.",
+        "es": "El 26 de noviembre celebramos una jornada de ajedrez en la Biblioteca del CAFIV de la UdL, dentro del Mes Internacional del Juego, para todos los niveles.",
+        "en": "On 26 November we held a chess day at the UdL's CAFIV Library, as part of International Games Month, for all levels."
     },
     "content": {
         "ca": "<p>El dimarts 26 de novembre vam gaudir d'una jornada plena d'estratègia i diversió a la Biblioteca del CAFIV, dins del Mes Internacional del Joc. 🙌</p><p>Gràcies a tots els participants, des dels més petits fins als experts, que vau venir a jugar, aprendre i compartir la vostra passió pels escacs. 🧠💡</p>",
@@ -1719,9 +1746,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/individual-lleida-2024/img1.webp",
     "summary": {
-        "ca": "Trofeus en els tres grups i reconeixement com a segon millor club del torneig.",
-        "es": "Trofeos en los tres grupos y reconocimiento como segundo mejor club del torneo.",
-        "en": "Trophies in all three groups and recognition as the second-best club of the tournament."
+        "ca": "Trofeus als tres grups de l'Absolut Individual de Lleida 2024 i reconeixement com a segon millor club del torneig per al Pardinyes.",
+        "es": "Trofeos en los tres grupos del Absoluto Individual de Lleida 2024 y reconocimiento como segundo mejor club del torneo para el Pardinyes.",
+        "en": "Trophies in all three groups of the 2024 Lleida Individual Championship and recognition as the tournament's second-best club."
     },
     "content": {
         "ca": "<p>El nostre club va competir amb representació en els tres grups de l'Absolut Individual de Lleida 2024, i els resultats no podien ser millors. Hem aconseguit trofeus en tots tres:</p><p>🏆 Grup A: 1r classificat Tram A<br>🏅 Grup B: 2n classificat absolut<br>🏅 Grup B: Millor veterà +50<br>🥉 Grup Promoció: 3r classificat Sub-8</p><p>A més, hem estat reconeguts com a <strong>2n millor club del torneig</strong>! 🥈 Continuem treballant per mantenir el club al capdamunt. 💪</p>",
@@ -1750,9 +1777,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/llampec-equips-lleida-2024/img1.webp",
     "summary": {
-        "ca": "El Club Escacs Pardinyes aconsegueix un magnífic segon lloc en un campionat molt intens.",
-        "es": "El Club Escacs Pardinyes consigue un magnífico segundo puesto en un campeonato muy intenso.",
-        "en": "Club Escacs Pardinyes achieved a magnificent second place in a very intense championship."
+        "ca": "El Club Escacs Pardinyes aconsegueix un magnífic segon lloc al Campionat d'Escacs Llampec per Equips de Lleida 2024.",
+        "es": "El Club Escacs Pardinyes logra un magnífico segundo puesto en el Campeonato de Ajedrez Relámpago por Equipos de Lleida 2024.",
+        "en": "Club Escacs Pardinyes finishes a magnificent second at the 2024 Lleida Blitz Team Chess Championship."
     },
     "content": {
         "ca": "<p>El Club Escacs Pardinyes va aconseguir un magnífic segon lloc al Campionat d'Escacs Llampec per Equips de Lleida 2024! 🥈♟️</p><p>Continuem creixent com a club i portant el nom de Pardinyes ben alt! 💪</p>",
@@ -1778,9 +1805,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/ii-torneig-nadal-2025/img1.webp",
     "summary": {
-        "ca": "Comencem el 2025 amb més de 60 infants de tot Catalunya competint al nostre barri.",
-        "es": "Empezamos 2025 con más de 60 niños de toda Cataluña compitiendo en nuestro barrio.",
-        "en": "We started 2025 with more than 60 children from all over Catalonia competing in our neighbourhood."
+        "ca": "Més de 60 infants de tot Catalunya van competir al II Torneig d'Escacs Infantil de Nadal de Pardinyes, a començaments de 2025.",
+        "es": "Más de 60 niños de toda Cataluña compitieron en el II Torneo de Ajedrez Infantil de Navidad de Pardinyes, a principios de 2025.",
+        "en": "More than 60 children from all over Catalonia competed at the 2nd Pardinyes Children's Christmas Chess Tournament, in early 2025."
     },
     "content": {
         "ca": "<p>Comencem el 2025 amb grans èxits! El club ha iniciat l'any complint els primers objectius amb la celebració de la 2a edició del Torneig d'Escacs Infantil. 👏</p><p>Més de 60 infants de tot Catalunya van venir a competir i gaudir d'una jornada emocionant al barri de Pardinyes, que es consolida com un punt de trobada de l'esport i la cultura a Lleida. 💛</p><p>Volem convertir Lleida en un referent dels escacs i, amb esdeveniments com aquest, n'estem més a prop! 🚀</p>",
@@ -1809,9 +1836,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/copa-catalana-2025/img1.webp",
     "summary": {
-        "ca": "El club comença la temporada 2025 a la Fase Lleida de la Copa Catalana.",
-        "es": "El club empieza la temporada 2025 en la Fase Lleida de la Copa Catalana.",
-        "en": "The club opened its 2025 season at the Lleida phase of the Catalan Cup."
+        "ca": "El Club Escacs Pardinyes arrenca la temporada 2025 a la Fase Lleida de la Copa Catalana, una jornada plena d'emoció i bones jugades.",
+        "es": "El Club Escacs Pardinyes arranca la temporada 2025 en la Fase Lleida de la Copa Catalana, una jornada llena de emoción y buenas jugadas.",
+        "en": "Club Escacs Pardinyes kicks off the 2025 season at the Lleida stage of the Catalan Cup, a day full of excitement and great moves."
     },
     "content": {
         "ca": "<p>El Club Escacs Pardinyes va començar la nova temporada participant a la Copa Catalana – Fase Lleida 2025. 🏆♟️</p><p>Va ser una jornada plena d'emoció, jugades brillants i molta passió pels escacs. Som un equip!</p>",
@@ -1839,9 +1866,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "altres",
     "image": "/img/galeria/Noticies/foto-club-2025/img1.webp",
     "summary": {
-        "ca": "Comencem l'any amb més força que mai i continuem creixent com a comunitat.",
-        "es": "Empezamos el año con más fuerza que nunca y seguimos creciendo como comunidad.",
-        "en": "We are starting the year stronger than ever and keep growing as a community."
+        "ca": "Foto de família del Club Escacs Pardinyes 2025: ja som més de 30 jugadors i continuem creixent com a comunitat.",
+        "es": "Foto de familia del Club Escacs Pardinyes 2025: ya somos más de 30 jugadores y seguimos creciendo como comunidad.",
+        "en": "Club Escacs Pardinyes 2025 team photo: we're now more than 30 players and still growing as a community."
     },
     "content": {
         "ca": "<p>Aquest any el comencem amb més força que mai! Ja som més de 30 jugadors i continuem creixent com a comunitat. 💛🖤</p><p>Gràcies a tots els jugadors, famílies i col·laboradors que feu possible aquest projecte. Sense vosaltres, el Club Escacs Pardinyes no seria el que és avui!</p>",
@@ -1890,9 +1917,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/campionat-edats-lleida-2025/img1.webp",
     "summary": {
-        "ca": "Un dels nostres joves talents aconsegueix el 3r lloc en la categoria Sub-8.",
-        "es": "Uno de nuestros jóvenes talentos consigue el 3.er puesto en la categoría Sub-8.",
-        "en": "One of our young talents took 3rd place in the U-8 category."
+        "ca": "Un jove talent del Pardinyes aconsegueix el 3r lloc a la categoria Sub-8 del Campionat d'Edats de Lleida 2025.",
+        "es": "Un joven talento del Pardinyes logra el 3.er puesto en la categoría Sub-8 del Campeonato de Edades de Lleida 2025.",
+        "en": "A young Pardinyes talent takes 3rd place in the U-8 category at the 2025 Lleida Age-Group Championship."
     },
     "content": {
         "ca": "<p>Ha finalitzat el Campionat d'Edats de Lleida 2025. El nostre club hi ha estat present i un dels nostres joves talents ha aconseguit una gran fita: 3r lloc en la categoria Sub-8! 🥉♟️</p><p>Seguim endavant amb més competicions i reptes! 🔥</p>",
@@ -1916,9 +1943,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/campions-preferent-2025/img1.webp",
     "summary": {
-        "ca": "Després d'una gran remuntada, el club es proclama campió de Preferent i aconsegueix l'ascens.",
-        "es": "Tras una gran remontada, el club se proclama campeón de Preferente y consigue el ascenso.",
-        "en": "After a great comeback, the club was crowned Preferent champion and won promotion."
+        "ca": "El Pardinyes es proclama campió de Preferent després d'una gran remuntada i ascendeix a Segona Catalana, amb ressò al diari Segre.",
+        "es": "El Pardinyes se proclama campeón de Preferente tras una gran remontada y asciende a Segunda Catalana, con eco en el diario Segre.",
+        "en": "Pardinyes are crowned Preferent champions after a great comeback and promoted to Segona Catalana, covered by the Segre newspaper."
     },
     "content": {
         "ca": "<p>El Club Escacs Pardinyes ha fet història! 💪 Després d'una temporada plena d'emoció i esforç, ens hem proclamat campions de Preferent, aconseguint l'ascens després d'una gran remuntada.</p><p>Tot i començar amb una derrota per la mínima contra l'Almenar (4½ - 5½), l'equip va demostrar caràcter i determinació, encadenant victòria rere victòria fins a certificar el lideratge amb un triomf 4 - 6 contra el Club d'Escacs Lleida a l'última jornada.</p><p>Aquesta fita és també un reflex del gran creixement del club: cada cop més jugadors joves s'han sumat al projecte, i alguns ja han aconseguit les seves primeres copes. 🏅</p><p>El diari Segre també es va fer ressò del nostre ascens a Segona Catalana. 📰</p><p>Gràcies a tots els jugadors, socis i seguidors, i també a Orvepard, a l'Ajuntament de Lleida i a la Diputació de Lleida pel seu suport al nostre projecte. Aquest triomf és de tots! 🔥</p>",
@@ -1944,9 +1971,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/circuit-enrocat-2024-25/img1.webp",
     "summary": {
-        "ca": "Trofeus a Sidamon i al Palau d'Anglesola, i vuit joves del club competint a Fondarella.",
-        "es": "Trofeos en Sidamon y en el Palau d'Anglesola, y ocho jóvenes del club compitiendo en Fondarella.",
-        "en": "Trophies in Sidamon and El Palau d'Anglesola, and eight young club players competing in Fondarella."
+        "ca": "Els joves del Pardinyes al Circuit EnroCA'T 2024/25: trofeus a Sidamon i al Palau d'Anglesola i vuit jugadors competint a Fondarella.",
+        "es": "Los jóvenes del Pardinyes en el Circuit EnroCA'T 2024/25: trofeos en Sidamon y Palau d'Anglesola y ocho jugadores compitiendo en Fondarella.",
+        "en": "Young Pardinyes players at the 2024/25 EnroCA'T Circuit: trophies in Sidamon and Palau d'Anglesola and eight players competing in Fondarella."
     },
     "content": {
         "ca": "<p>Els nostres joves han estat molt actius al Circuit EnroCA'T 2024/25:</p><p>🏆 <strong>Sidamon</strong>: un dels nostres jugadors va aconseguir trofeu a la categoria Prebenjamí.</p><p>🥇 <strong>El Palau d'Anglesola</strong>: diversos jugadors del club hi van participar, amb una menció especial per a Manases, primer de la seva categoria.</p><p>💪 <strong>Fondarella</strong>: el dissabte 3 de maig, vuit joves del club van participar en una gran jornada de competició i aprenentatge.</p><p>Felicitats a tots pel seu compromís i nivell competitiu! 💛🖤</p>",
@@ -1975,9 +2002,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/torneig-primavera-flix-2025/img1.webp",
     "summary": {
-        "ca": "Una gran tarda d'escacs al Casal de Joves \"Lo Refugi\" de Flix.",
-        "es": "Una gran tarde de ajedrez en el Casal de Joves \"Lo Refugi\" de Flix.",
-        "en": "A great afternoon of chess at the \"Lo Refugi\" youth centre in Flix."
+        "ca": "El Pardinyes va jugar al I Torneig de Primavera de Flix, al Casal de Joves «Lo Refugi», amb partides intenses i molt bon ambient.",
+        "es": "El Pardinyes jugó en el I Torneo de Primavera de Flix, en el Casal de Jóvenes «Lo Refugi», con partidas intensas y muy buen ambiente.",
+        "en": "Pardinyes played in the 1st Spring Tournament in Flix, at the «Lo Refugi» youth centre, with intense games and a great atmosphere."
     },
     "content": {
         "ca": "<p>Vam viure una gran tarda d'escacs a Flix, participant al I Torneig de Primavera al Casal de Joves \"Lo Refugi\", amb partides intenses i molt bon ambient.</p><p>Agraïm la invitació al club d'escacs de Flix i a la Regidoria de Joventut de Flix. Una experiència enriquidora per als nostres joves, que continuen creixent dins i fora del tauler.</p>",
@@ -2000,9 +2027,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/cap-de-setmana-escacs-abril-2025/img1.webp",
     "summary": {
-        "ca": "Tres tornejos en un sol cap de setmana, amb el segon millor Sub-12 a Castellterçol.",
-        "es": "Tres torneos en un solo fin de semana, con el segundo mejor Sub-12 en Castellterçol.",
-        "en": "Three tournaments in a single weekend, including second-best U-12 in Castellterçol."
+        "ca": "Tres tornejos en un sol cap de setmana a Montoliu de Lleida, Castellterçol i Osca, amb l'Ian segon millor Sub-12 a Castellterçol.",
+        "es": "Tres torneos en un solo fin de semana en Montoliu de Lleida, Castellterçol y Huesca, con Ian segundo mejor Sub-12 en Castellterçol.",
+        "en": "Three tournaments in one weekend in Montoliu de Lleida, Castellterçol and Huesca, with Ian as second-best U-12 in Castellterçol."
     },
     "content": {
         "ca": "<p>Aquest cap de setmana el Club Escacs Pardinyes ha estat present a diversos tornejos:</p><p>🔹 Dissabte, 10 jugadors van participar a la Sisena Trobada Intermunicipal d'Escacs al Segrià, a Montoliu de Lleida.</p><p>🔹 Diumenge, ens vam desplaçar a Castellterçol per disputar el Torneig al Castell, on l'Ian va fer un gran 5/8 i es va proclamar segon millor Sub-12! 🥈</p><p>🔹 També diumenge, dos jugadors van viatjar a Osca per competir al V Torneo de Ajedrez Fundación Ramón Rey Ardid.</p><p>Un cap de setmana ple d'experiències, aprenentatge i passió pel nostre esport! 💛♟️</p>",
@@ -2175,9 +2202,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "simultanies",
     "image": "/img/galeria/Noticies/simultanies-joan-trepat-2025/img1.webp",
     "summary": {
-        "ca": "Participants de totes les edats van jugar contra el Mestre FIDE Joan Trepat Herranz.",
-        "es": "Participantes de todas las edades jugaron contra el Maestro FIDE Joan Trepat Herranz.",
-        "en": "Players of all ages took on FIDE Master Joan Trepat Herranz."
+        "ca": "Jornada de simultànies al club amb el Mestre FIDE Joan Trepat Herranz, amb participants de totes les edats.",
+        "es": "Jornada de simultáneas en el club con el Maestro FIDE Joan Trepat Herranz, con participantes de todas las edades.",
+        "en": "Simultaneous games at the club with FIDE Master Joan Trepat Herranz, with players of all ages."
     },
     "content": {
         "ca": "<p>La nostra jornada de partides simultànies va ser un èxit! 🏆 Vam tenir participants de totes les edats que van gaudir jugant contra el Mestre FIDE Joan Trepat Herranz al Club Escacs Pardinyes.</p><p>Esperem veure-us de nou a les properes activitats! 🗓️</p>",
@@ -2235,9 +2262,9 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "category": "torneig",
     "image": "/img/galeria/Noticies/obert-mollerussa-2026/img1.webp",
     "summary": {
-        "ca": "5 dels nostres jugadors ho van donar tot en un torneig d'altíssim nivell.",
-        "es": "5 de nuestros jugadores lo dieron todo en un torneo de altísimo nivel.",
-        "en": "5 of our players gave their all in a very high-level tournament."
+        "ca": "Cinc jugadors del Pardinyes van participar al VI Obert Internacional d'Escacs Ciutat de Mollerussa, un torneig d'altíssim nivell.",
+        "es": "Cinco jugadores del Pardinyes participaron en el VI Abierto Internacional de Ajedrez Ciudad de Mollerussa, un torneo de altísimo nivel.",
+        "en": "Five Pardinyes players took part in the 6th Mollerussa International Open, a very high-level tournament."
     },
     "content": {
         "ca": "<p>5 dels nostres jugadors van estar donant-ho tot al VI Obert Internacional d'Escacs Ciutat de Mollerussa, un torneig d'altíssim nivell. Van ser jornades de molta concentració, estratègia i, sobretot, de gaudir del millor escacs. 🧠🔥</p><p>Molt orgullosos de la vostra participació i de com heu representat el club! 🏆👏</p>",
@@ -2282,7 +2309,8 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     ]
 },
 {
-    "id": "soleras-2026",
+    "id": "torneig-solidari-soleras-2026",
+    "oldIds": ["soleras-2026"],
     "title": {
         "ca": "🐉 Torneig solidari i simultànies al Soleràs",
         "es": "🐉 Torneo solidario y simultáneas en El Soleràs",
@@ -2325,7 +2353,7 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     "summary": {
         "ca": "El Torneig de Festa Major 2026 va servir per acomiadar (per ara!) el president del club «Maestro Enoho Djibloho» de Guinea Equatorial.",
         "es": "El Torneo de Fiesta Mayor 2026 sirvió para despedir (¡por ahora!) al presidente del club «Maestro Enoho Djibloho» de Guinea Ecuatorial.",
-        "en": "The 2026 Festa Major Tournament was the perfect setting to say goodbye (for now!) to the president of the «Maestro Enoho Djibloho» club of Equatorial Guinea."
+        "en": "The 2026 Festa Major Tournament was a chance to say goodbye (for now!) to the president of Equatorial Guinea's «Maestro Enoho Djibloho» club."
     },
     "content": {
         "ca": "<p>El Torneig de Festa Major 2026 no va ser un torneig qualsevol: va ser el marc perfecte per acomiadar (per ara!) en Fortunato Mba Mba Avomo, president del Club de Ajedrez «Maestro Enoho Djibloho» de Guinea Equatorial, que ha col·laborat de prop amb el Club Escacs Pardinyes durant tot aquest curs. 🤝</p><p>Volem agrair-li de tot cor la seva gran aportació, treball i dedicació al llarg d'aquests mesos. I la millor notícia és que no és un adéu definitiu: la temporada vinent el tornarem a tenir amb nosaltres per continuar impulsant junts aquest projecte de cooperació internacional dels escacs! ✈️♟️</p>",
@@ -2375,7 +2403,8 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     ]
 },
 {
-    "id": "masterclass-cruz-lloret-2026",
+    "id": "masterclass-tactica-filemon-cruz-2026",
+    "oldIds": ["masterclass-cruz-lloret-2026"],
     "title": {
         "ca": "👑 Rumb a Lloret de Mar com a campions, després d'una masterclass de luxe",
         "es": "👑 Rumbo a Lloret de Mar como campeones, tras una masterclass de lujo",
@@ -2406,7 +2435,8 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     ]
 },
 {
-    "id": "campionat-catalunya-edats-2026",
+    "id": "campionat-catalunya-equips-edats-2026",
+    "oldIds": ["campionat-catalunya-edats-2026"],
     "title": {
         "ca": "♟️ Campionat de Catalunya d'equips per edats 2026",
         "es": "♟️ Campeonato de Cataluña de equipos por edades 2026",

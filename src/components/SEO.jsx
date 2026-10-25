@@ -211,6 +211,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
                 "description": description || defaultDescription,
                 "image": [fullImageUrl],
                 "datePublished": schema?.datePublished || new Date().toISOString(),
+                "dateModified": schema?.dateModified || schema?.datePublished || new Date().toISOString(),
                 "author": [{
                     "@type": "Organization",
                     "name": "Club Escacs Pardinyes",

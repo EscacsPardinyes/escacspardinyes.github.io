@@ -6,6 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
+import { stripEmoji } from '../utils/plainText';
 
 export default function NewsDetail() {
     const { id } = useParams();
@@ -15,12 +16,12 @@ export default function NewsDetail() {
     const [modalImageIndex, setModalImageIndex] = useState(0);
 
     // Find current item
-    const itemIndex = news.findIndex(n => n.id === id);
-    const item = news[itemIndex];
+    // Renamed articles keep working at their old URL (oldIds) and redirect to the new one
+    const item = news.find(n => n.id === id) || news.find(n => n.oldIds?.includes(id));
 
     // Navigation logic (sorted by date)
     const sortedNews = useMemo(() => [...news].sort((a, b) => new Date(b.date) - new Date(a.date)), []);
-    const currentSortedIndex = sortedNews.findIndex(n => n.id === id);
+    const currentSortedIndex = sortedNews.findIndex(n => n.id === item?.id);
     const nextItem = currentSortedIndex > 0 ? sortedNews[currentSortedIndex - 1] : null;
     const prevItem = currentSortedIndex < sortedNews.length - 1 ? sortedNews[currentSortedIndex + 1] : null;
 
@@ -28,10 +29,10 @@ export default function NewsDetail() {
     const relatedNews = useMemo(() => {
         if (!item) return [];
         return news
-            .filter(n => n.id !== id && (n.category === item.category))
+            .filter(n => n.id !== item.id && (n.category === item.category))
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .slice(0, 3);
-    }, [id, item]);
+    }, [item]);
 
     // The cover is often repeated inside the gallery: dedupe so the viewer doesn't show it twice
     const allImages = useMemo(() => (item ? [...new Set([item.image, ...(item.gallery || [])])] : []), [item]);
@@ -61,6 +62,8 @@ export default function NewsDetail() {
     useEffect(() => {
         if (!item) {
             navigate(localize('/noticies'));
+        } else if (item.id !== id) {
+            navigate(localize(`/noticies/${item.id}`), { replace: true });
         }
         window.scrollTo(0, 0);
     }, [id, item, navigate, localize]);
@@ -75,9 +78,12 @@ export default function NewsDetail() {
 
     if (!item) return null;
 
+    // Emojis stay in the visible title but not in the <title>, breadcrumbs, alt texts or structured data
+    const plainTitle = stripEmoji(item.title[language]);
+
     const breadcrumbs = [
         { label: t('news.breadcrumb'), path: '/noticies' },
-        { label: item.title[language] }
+        { label: plainTitle }
     ];
 
     const shareUrl = window.location.href;
@@ -105,17 +111,17 @@ export default function NewsDetail() {
     return (
         <div style={{ backgroundColor: '#ffffff' }}>
             <SEO
-                title={item.title[language]}
+                title={plainTitle}
                 description={item.summary[language]}
                 image={item.image}
                 type="article"
                 breadcrumbs={breadcrumbs}
                 schema={{
                     datePublished: item.date,
-                    dateModified: item.date
+                    dateModified: item.modified || item.date
                 }}
             />
-            <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} />
+            <PageHeader title={t('news.header')} breadcrumbs={breadcrumbs} as="p" />
 
             <div className="container pb-5">
                 <div className="row justify-content-center">
@@ -136,7 +142,7 @@ export default function NewsDetail() {
                         <div className="position-relative mb-5 shadow-lg rounded overflow-hidden news-main-img-container">
                             <img
                                 src={item.image}
-                                alt={item.title[language]}
+                                alt={plainTitle}
                                 className="img-fluid w-100"
                                 style={{ 
                                     maxHeight: '600px', 
@@ -176,6 +182,17 @@ export default function NewsDetail() {
                             onClick={handleContentClick}
                             dangerouslySetInnerHTML={{ __html: item.content[language].replace(/\n/g, '<br />') }}
                         />
+
+                        {/* Internal links to the pages that convert visitors into students and members */}
+                        <aside className="p-4 rounded mb-5 text-center" style={{ backgroundColor: '#f8f9fa', border: '1px solid #eee' }}>
+                            <h2 className="h4 font-weight-bold mb-2">{t('news.cta_title')}</h2>
+                            <p className="text-muted mb-3">{t('news.cta_text')}</p>
+                            <div className="d-flex flex-wrap justify-content-center" style={{ gap: '10px' }}>
+                                <Link to="/school" className="btn btn-primary">{t('news.cta_school')}</Link>
+                                <Link to="/classes-escacs-adults-lleida" className="btn btn-outline-primary">{t('news.cta_adults')}</Link>
+                                <Link to="/federat" className="btn btn-outline-primary">{t('news.cta_federat')}</Link>
+                            </div>
+                        </aside>
 
                         {/* Social Sharing Section */}
                         <div className="p-4 rounded mb-5 d-flex flex-wrap align-items-center justify-content-center" style={{ backgroundColor: '#fff', border: '1px solid #eee', gap: '15px' }}>
@@ -220,7 +237,7 @@ export default function NewsDetail() {
                                             >
                                                 <img 
                                                     src={img} 
-                                                    alt={`${item.title[language]} - ${index + 1}`}
+                                                    alt={`${plainTitle} - ${index + 1}`}
                                                     className="w-100 h-100 gallery-thumb-img"
                                                     style={{ objectFit: 'cover' }}
                                                     loading="lazy"
@@ -290,7 +307,7 @@ export default function NewsDetail() {
 
                     <img 
                         src={allImages[modalImageIndex]} 
-                        alt={item.title[language]} 
+                        alt={plainTitle}
                         className="modal-main-img"
                         style={{ maxWidth: '90%', maxHeight: '85vh', objectFit: 'contain', boxShadow: '0 0 50px rgba(0,0,0,0.5)' }} 
                         onClick={(e) => e.stopPropagation()}

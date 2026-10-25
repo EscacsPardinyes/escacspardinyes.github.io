@@ -40,7 +40,7 @@ export default function Footer() {
                         <p className="mb-2"><Link className="text-white" to="/on-jugar-escacs-lleida">{t('nav.where')}</Link></p>
                         <p className="mb-2"><Link className="text-white" to="/extraescolars-escacs-escoles">{t('nav.schools')}</Link></p>
                         <p className="mb-2"><Link className="text-white" to="/federat">{t('seo.federated_title')}</Link></p>
-                        <p className="mb-2"><Link className="text-white" to="/noticies/beneficis-escacs-nens">{t('news.cat_guia')}</Link></p>
+                        <p className="mb-2"><Link className="text-white" to="/noticies/escacs-per-a-nens-lleida">{t('news.cat_guia')}</Link></p>
                     </div>
                 </div>
             </div>

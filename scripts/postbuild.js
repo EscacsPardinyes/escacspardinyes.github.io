@@ -8,6 +8,7 @@ import ca from '../src/data/translations/ca.js';
 import es from '../src/data/translations/es.js';
 import en from '../src/data/translations/en.js';
 import { LANGUAGES, localizePath, withTrailingSlash } from '../src/utils/i18nRouting.js';
+import { stripEmoji } from '../src/utils/plainText.js';
 import { prerenderRoutes } from './prerender.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -42,7 +43,7 @@ function pageUrl(pagePath, lang) {
 
 // Helper: strip HTML tags, collapse whitespace and truncate for meta descriptions
 function cleanText(str, max = 155) {
-    const text = (str || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    const text = stripEmoji((str || '').replace(/<[^>]*>/g, ''));
     return text.length > max ? `${text.substring(0, max - 1).trimEnd()}…` : text;
 }
 
@@ -235,9 +236,38 @@ function generateStaticMetaFiles() {
     return generated;
 }
 
+// ── 3. REDIRECTS FOR RENAMED NEWS URLS ────────────────────────────────────────
+// GitHub Pages has no server-side redirects: each old URL gets a tiny page that points to the
+// new one (canonical + meta refresh). It isn't in the sitemap and isn't prerendered.
+function generateNewsRedirects() {
+    let count = 0;
+    news.forEach(n => (n.oldIds || []).forEach(oldId => {
+        LANGUAGES.forEach(lang => {
+            const target = escapeHtml(pageUrl(`/noticies/${n.id}`, lang));
+            const routeDir = path.join(DIST_DIR, withTrailingSlash(localizePath(`/noticies/${oldId}`, lang)));
+            fs.mkdirSync(routeDir, { recursive: true });
+            fs.writeFileSync(path.join(routeDir, 'index.html'), `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+    <meta charset="utf-8">
+    <title>${escapeHtml(cleanText(resolve(n.title, lang), 120))}</title>
+    <link rel="canonical" href="${target}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url=${target}">
+</head>
+<body><a href="${target}">${target}</a></body>
+</html>
+`);
+            count++;
+        });
+    }));
+    if (count) console.log(`${count} redireccions de notícies renombrades generades.`);
+}
+
 // ── RUN ───────────────────────────────────────────────────────────────────────
 generateSitemap();
 const generatedRoutes = generateStaticMetaFiles();
+generateNewsRedirects();
 // 3. Fill each HTML file with the rendered page content
 if (generatedRoutes) {
     await prerenderRoutes(DIST_DIR, generatedRoutes);
