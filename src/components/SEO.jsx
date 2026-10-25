@@ -217,7 +217,8 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
                 "https://www.facebook.com/escacspardinyes",
                 "https://www.instagram.com/escacspardinyes",
                 "https://twitter.com/escacspardinyes",
-                "https://www.youtube.com/@escacspardinyes"
+                "https://www.youtube.com/@escacspardinyes",
+                "https://www.chess.com/club/club-escacs-pardinyes"
             ]
         };
 
@@ -230,6 +231,23 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             "name": baseTitle,
             "inLanguage": language,
             "publisher": { "@id": `${siteUrl}/#organization` }
+        };
+
+        // Page-level entity: tells engines what kind of page this is and what it is about
+        const pageKind = /^\/(es\/|en\/)?about\/?$/.test(pathname) ? 'AboutPage'
+            : /^\/(es\/|en\/)?contact\/?$/.test(pathname) ? 'ContactPage'
+            : 'WebPage';
+        const webPageSchema = type === 'article' ? null : {
+            "@context": "https://schema.org",
+            "@type": pageKind,
+            "@id": `${currentUrl}#webpage`,
+            "url": currentUrl,
+            "name": pageTitle,
+            "description": description || defaultDescription,
+            "inLanguage": language,
+            "isPartOf": { "@id": `${siteUrl}/#website` },
+            "about": { "@id": `${siteUrl}/#organization` },
+            "primaryImageOfPage": { "@type": "ImageObject", "url": fullImageUrl }
         };
 
         // 2. Article Schema
@@ -308,6 +326,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
         }
 
         const schemasToInject = [clubSchema, websiteSchema];
+        if (webPageSchema) schemasToInject.push(webPageSchema);
         if (articleSchema) schemasToInject.push(articleSchema);
         if (breadcrumbSchema) schemasToInject.push(breadcrumbSchema);
         if (faqSchema) schemasToInject.push(faqSchema);

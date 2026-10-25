@@ -144,6 +144,22 @@ export default function Home() {
 
 
 
+            {/* Key facts table: one-glance, scrapable summary of the club */}
+            <div className="container section-padding pb-0">
+                <h2 className="h3 font-weight-bold mb-3">{t('facts.title')}</h2>
+                <p className="lead">{t('seo.entity_description')}</p>
+                <table className="table table-sm">
+                    <tbody>
+                        {['what', 'founded', 'fed', 'address', 'contact', 'classes', 'fees', 'play', 'events'].map((key) => (
+                            <tr key={key}>
+                                <th scope="row" className="w-25">{t(`facts.k_${key}`)}</th>
+                                <td>{t(`facts.v_${key}`)}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+
             {/* About Start */}
             <div className="container section-padding">
                 <div className="row align-items-center">
