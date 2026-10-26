@@ -54,7 +54,7 @@ export default function NewsCard({ item, featured = false }) {
                     </div>
 
                     <h4 className="card-title font-weight-bold mb-3" style={{ fontSize: '1.25rem', lineHeight: '1.4' }}>
-                        {item.title[language]}
+                        {stripEmoji(item.title[language])}
                     </h4>
 
                     <p className="card-text text-muted flex-grow-1 mb-4" style={{ fontSize: '0.95rem', lineHeight: '1.7' }}>
