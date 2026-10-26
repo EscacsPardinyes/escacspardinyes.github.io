@@ -2362,37 +2362,6 @@ Thanks to everyone for being part of this special day. The future of chess alrea
     ]
 },
 {
-    "id": "fins-aviat-fortunato-2026",
-    "title": {
-        "ca": "🌍 Un fins aviat a Fortunato Mba Mba Avomo",
-        "es": "🌍 Un hasta pronto a Fortunato Mba Mba Avomo",
-        "en": "🌍 See you soon, Fortunato Mba Mba Avomo"
-    },
-    "date": "2026-08-14",
-    "category": "altres",
-    "image": "/img/galeria/Noticies/fins-aviat-fortunato-2026/img1.webp",
-    "summary": {
-        "ca": "El Torneig de Festa Major 2026 va servir per acomiadar (per ara!) el president del club «Maestro Enoho Djibloho» de Guinea Equatorial.",
-        "es": "El Torneo de Fiesta Mayor 2026 sirvió para despedir (¡por ahora!) al presidente del club «Maestro Enoho Djibloho» de Guinea Ecuatorial.",
-        "en": "The 2026 Festa Major Tournament was a chance to say goodbye (for now!) to the president of Equatorial Guinea's «Maestro Enoho Djibloho» club."
-    },
-    "content": {
-        "ca": "<p>El Torneig de Festa Major 2026 no va ser un torneig qualsevol: va ser el marc perfecte per acomiadar (per ara!) en Fortunato Mba Mba Avomo, president del Club de Ajedrez «Maestro Enoho Djibloho» de Guinea Equatorial, que ha col·laborat de prop amb el Club Escacs Pardinyes durant tot aquest curs. 🤝</p><p>Volem agrair-li de tot cor la seva gran aportació, treball i dedicació al llarg d'aquests mesos. I la millor notícia és que no és un adéu definitiu: la temporada vinent el tornarem a tenir amb nosaltres per continuar impulsant junts aquest projecte de cooperació internacional dels escacs! ✈️♟️</p>",
-        "es": "<p>El Torneo de Fiesta Mayor 2026 no fue un torneo cualquiera: fue el marco perfecto para despedir (¡por ahora!) a Fortunato Mba Mba Avomo, presidente del Club de Ajedrez «Maestro Enoho Djibloho» de Guinea Ecuatorial, que ha colaborado de cerca con el Club Escacs Pardinyes durante todo este curso. 🤝</p><p>Queremos agradecerle de todo corazón su gran aportación, trabajo y dedicación a lo largo de estos meses. Y la mejor noticia es que no es un adiós definitivo: ¡la próxima temporada lo volveremos a tener con nosotros para seguir impulsando juntos este proyecto de cooperación internacional del ajedrez! ✈️♟️</p>",
-        "en": "<p>The 2026 Festa Major Tournament was no ordinary tournament: it was the perfect setting to say goodbye (for now!) to Fortunato Mba Mba Avomo, president of the «Maestro Enoho Djibloho» Chess Club of Equatorial Guinea, who has worked closely with Club Escacs Pardinyes throughout this season. 🤝</p><p>We sincerely thank him for his great contribution, work and dedication over these months. And the best news is that it's not a final goodbye: next season he will be back with us to keep driving this international chess cooperation project together! ✈️♟️</p>"
-    },
-    "gallery": [
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img1.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img2.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img3.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img4.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img5.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img6.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img7.webp",
-        "/img/galeria/Noticies/fins-aviat-fortunato-2026/img8.webp"
-    ]
-},
-{
     "id": "inici-individual-lleida-2026",
     "title": {
         "ca": "🏠 Comença l'Individual de Lleida 2026 a casa nostra",
