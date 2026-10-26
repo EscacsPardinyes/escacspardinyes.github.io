@@ -15,10 +15,11 @@ const FEES = ['fee_16_plus', 'fee_16_20', 'fee_65_plus', 'fee_disabled', 'fee_di
 export default function Federat() {
     const { t, tHtml } = useLanguage();
     const breadcrumbs = [{ label: t('nav.federated') }];
+    const faqItems = [1, 2, 3, 4, 5].map(n => ({ title: t(`federated.faq_q${n}`), content: t(`federated.faq_a${n}`) }));
 
     return (
         <>
-            <SEO title={t('seo.federated_title')} description={t('seo.federated_description')} />
+            <SEO title={t('seo.federated_title')} description={t('seo.federated_description')} faq={faqItems.map(i => ({ question: i.title, answer: i.content }))} />
             <PageHeader title={t('federated.header')} breadcrumbs={breadcrumbs} />
 
             {/* Com federar-me */}
@@ -79,13 +80,7 @@ export default function Federat() {
             {/* FAQ Start */}
             <div className="container mt-5">
                 <h4 className="font-weight-bold text-primary mb-4 text-center">{t('federated.faq_title')}</h4>
-                <Accordion id="federatFaq" items={[
-                    { title: t('federated.faq_q1'), content: t('federated.faq_a1') },
-                    { title: t('federated.faq_q2'), content: t('federated.faq_a2') },
-                    { title: t('federated.faq_q3'), content: t('federated.faq_a3') },
-                    { title: t('federated.faq_q4'), content: t('federated.faq_a4') },
-                    { title: t('federated.faq_q5'), content: t('federated.faq_a5') },
-                ]} />
+                <Accordion id="federatFaq" items={faqItems} />
             </div>
             {/* FAQ End */}
         </>
