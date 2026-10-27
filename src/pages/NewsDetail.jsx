@@ -165,7 +165,7 @@ export default function NewsDetail() {
 
                         {/* Article Header */}
                         <div className="text-center mb-5">
-                            <h1 className="display-4 font-weight-bold mb-4" style={{ color: '#111', lineHeight: '1.2' }}>{item.title[language]}</h1>
+                            <h1 className="display-4 font-weight-bold mb-4" style={{ color: '#111', lineHeight: '1.2' }}>{plainTitle}</h1>
                             <p className="lead text-muted mx-auto" style={{ maxWidth: '800px', fontSize: '1.25rem', fontStyle: 'italic' }}>
                                 {item.summary[language]}
                             </p>
