@@ -26,3 +26,6 @@ public/fonts/fa-*.woff2
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code local settings (machine-specific paths)
+.claude/settings.local.json
