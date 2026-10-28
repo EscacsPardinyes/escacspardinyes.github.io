@@ -11,6 +11,7 @@ function latestNews() {
   const virtualId = 'virtual:latest-news'
   const resolvedId = '\0' + virtualId
   const newsFile = path.resolve('src/data/news.js')
+  const newsDir = path.resolve('src/data/news') + path.sep
   return {
     name: 'latest-news',
     resolveId(id) {
@@ -27,7 +28,8 @@ function latestNews() {
       return `export const latestNews = ${JSON.stringify(latest)};`
     },
     handleHotUpdate({ file, server }) {
-      if (path.resolve(file) !== newsFile) return
+      const resolved = path.resolve(file)
+      if (resolved !== newsFile && !resolved.startsWith(newsDir)) return
       const mod = server.moduleGraph.getModuleById(resolvedId)
       if (mod) server.moduleGraph.invalidateModule(mod)
     }
