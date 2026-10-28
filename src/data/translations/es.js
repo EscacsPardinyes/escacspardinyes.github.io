@@ -402,7 +402,7 @@ export default {
     "cafiv.tiebreak": "<strong class='text-dark'>Tablas:</strong> en caso de tablas, pasa de ronda el jugador con negras.",
     "cafiv.priority": "<strong class='text-dark'>Prioridad:</strong> se priorizará la inscripción de los estudiantes de la UdL.",
     "cafiv.prizes_title": "Premios y Sorteo",
-    "cafiv.prize_first": "<strong class='text-dark'>1.º clasificado:</strong> premio al campeón del torneo.",
+    "cafiv.prize_first": "<strong class='text-dark'>1.º clasificado:</strong> premio al campeón del torneo y un año de ficha gratuita.",
     "cafiv.prize_second": "<strong class='text-dark'>2.º clasificado:</strong> premio al subcampeón del torneo.",
     "cafiv.prize_raffle": "<strong class='text-dark'>Sorteo:</strong> entre todos los participantes del torneo.",
     "cafiv.organizers_title": "Organizadores",

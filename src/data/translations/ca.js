@@ -396,7 +396,7 @@ export default {
     "cafiv.tiebreak": "<strong class='text-dark'>Taules:</strong> en cas de taules, passa de ronda el jugador amb negres.",
     "cafiv.priority": "<strong class='text-dark'>Prioritat:</strong> es prioritzarà la inscripció dels estudiants de la UdL.",
     "cafiv.prizes_title": "Premis i Sorteig",
-    "cafiv.prize_first": "<strong class='text-dark'>1r classificat:</strong> premi al campió del torneig.",
+    "cafiv.prize_first": "<strong class='text-dark'>1r classificat:</strong> premi al campió del torneig i un any de fitxa gratuïta.",
     "cafiv.prize_second": "<strong class='text-dark'>2n classificat:</strong> premi al subcampió del torneig.",
     "cafiv.prize_raffle": "<strong class='text-dark'>Sorteig:</strong> entre tots els participants del torneig.",
     "cafiv.organizers_title": "Organitzadors",
