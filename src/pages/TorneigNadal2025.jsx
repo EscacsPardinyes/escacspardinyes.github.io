@@ -106,7 +106,7 @@ export default function TorneigNadal2025() {
                     {[1, 2, 3, 4].map((num) => (
                         <div key={num} className="col-md-6 col-lg-3 mb-4">
                             <img
-                                src={`/img/galeria/TornigNadal2026/${num}.jpeg`}
+                                src={`/img/galeria/TornigNadal2026/${num}.webp`}
                                 className="img-fluid rounded shadow-sm hover-zoom"
                                 alt={`Torneig Nadal 2025 - Imatge ${num}`}
                                 style={{ transition: 'transform 0.3s ease-in-out', cursor: 'pointer' }}

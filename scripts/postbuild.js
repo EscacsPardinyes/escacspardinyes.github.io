@@ -90,6 +90,8 @@ const staticPages = [
     { path: '/torneig-festa-major',           changefreq: 'yearly',  priority: '0.6', title: k('festamajor.breadcrumb'),    desc: 'Crònica i resultats del Torneig de Festa Major 2026 del Club Escacs Pardinyes.' },
     { path: '/torneig-festa-major/historial', changefreq: 'yearly',  priority: '0.5', title: 'Historial i Classificacions del Torneig de Festa Major', desc: "Historial de guanyadors, cròniques i classificacions del Torneig d'Escacs de Festa Major de Pardinyes." },
     { path: '/torneig-bordeta',               changefreq: 'yearly',  priority: '0.5', title: k('bordeta.breadcrumb'),       desc: k('bordeta.intro_text') },
+    { path: '/tornejos',                      changefreq: 'monthly', priority: '0.7', title: k('tornejos.header'),         desc: k('tornejos.subtitle') },
+    { path: '/torneig-biblioteca-cafiv',      changefreq: 'monthly', priority: '0.7', title: k('cafiv.breadcrumb'),         desc: k('cafiv.intro_text') },
     { path: '/simultanies-arami2026',         changefreq: 'yearly',  priority: '0.5', title: k('nav.arami_short'),          desc: k('arami.p1'), image: '/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp' },
     // Secondary pages (served with 200, not listed in the sitemap)
     { path: '/feature',  sitemap: false, title: k('seo.feature_title'),    desc: k('seo.feature_description') },

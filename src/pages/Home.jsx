@@ -28,8 +28,8 @@ export default function Home() {
         "@graph": [
             {
                 "@type": "Event",
-                "name": "V Tancats per a Normes de GM i MI Setmana Santa 2027",
-                "description": "Cinquena edició dels tancats internacionals per a l'obtenció de normes de Gran Mestre i Mestre Internacional.",
+                "name": "II Tancats per a Normes de GM i MI Setmana Santa 2027",
+                "description": "Segona edició dels tancats internacionals per a l'obtenció de normes de Gran Mestre i Mestre Internacional.",
                 "startDate": "2027-03-22T09:00:00+02:00",
                 "endDate": "2027-03-26T20:00:00+02:00",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
