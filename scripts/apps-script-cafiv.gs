@@ -5,6 +5,7 @@
 // 3. Copia la URL (acaba en /exec) a CAFIV_SCRIPT_URL de src/components/CafivForm.jsx.
 // Cada cop que canviis el codi cal fer un desplegament nou.
 
+const NOTIFY_EMAIL = 'obis2001@gmail.com';
 const HEADERS = ['Data', 'Nom i cognoms', 'Email', 'Telèfon', 'Estudiant UdL', 'Federat', 'Privacitat'];
 
 function doPost(e) {
@@ -24,6 +25,16 @@ function doPost(e) {
     safe(d.federated),
     d.privacy ? 'Acceptada' : ''
   ]);
+
+  // Avís per correu a cada inscripció (si falla, la inscripció ja s'ha desat igualment)
+  try {
+    MailApp.sendEmail(
+      NOTIFY_EMAIL,
+      'Nova inscripció torneig CAFIV: ' + d.name,
+      'Nom: ' + d.name + '\nEmail: ' + d.email + '\nTelèfon: ' + (d.phone || '-') +
+      '\nEstudiant UdL: ' + d.udl_student + '\nFederat: ' + d.federated
+    );
+  } catch (err) {}
 
   return ContentService.createTextOutput('ok');
 }
