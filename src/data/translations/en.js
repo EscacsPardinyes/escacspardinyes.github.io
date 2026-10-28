@@ -366,7 +366,7 @@ export default {
     "cafiv.tiebreak": "<strong class='text-dark'>Draws:</strong> if a game is drawn, the player with the black pieces advances.",
     "cafiv.priority": "<strong class='text-dark'>Priority:</strong> registrations from UdL students will be prioritised.",
     "cafiv.prizes_title": "Prizes and Raffle",
-    "cafiv.prize_first": "<strong class='text-dark'>1st place:</strong> prize for the tournament champion.",
+    "cafiv.prize_first": "<strong class='text-dark'>1st place:</strong> prize for the tournament champion and a free one-year club licence.",
     "cafiv.prize_second": "<strong class='text-dark'>2nd place:</strong> prize for the runner-up.",
     "cafiv.prize_raffle": "<strong class='text-dark'>Raffle:</strong> open to all tournament participants.",
     "cafiv.organizers_title": "Organisers",

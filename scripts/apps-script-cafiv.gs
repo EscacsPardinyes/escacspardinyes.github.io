@@ -5,7 +5,7 @@
 // 3. Copia la URL (acaba en /exec) a CAFIV_SCRIPT_URL de src/components/CafivForm.jsx.
 // Cada cop que canviis el codi cal fer un desplegament nou.
 
-const NOTIFY_EMAIL = 'obis2001@gmail.com';
+const NOTIFY_EMAIL = 'escacspardinyes@gmail.com';
 const HEADERS = ['Data', 'Nom i cognoms', 'Email', 'Telèfon', 'Estudiant UdL', 'Federat', 'Privacitat'];
 
 function doPost(e) {
