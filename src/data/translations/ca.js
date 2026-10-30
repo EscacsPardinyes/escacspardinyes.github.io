@@ -401,7 +401,7 @@ export default {
     "cafiv.prize_raffle": "<strong class='text-dark'>Sorteig:</strong> entre tots els participants del torneig.",
     "cafiv.organizers_title": "Organitzadors",
     "cafiv.organizer_pardinyes": "<strong class='text-dark'>Club Escacs Pardinyes</strong>",
-    "cafiv.organizer_udl": "<strong class='text-dark'>Càtedra d'Escacs de la UdL</strong>",
+    "cafiv.organizer_udl": "<strong class='text-dark'>Càtedra d'Escacs, Educació i Desenvolupament Cognitiu</strong>",
     "cafiv.collaborators_title": "Amb la col·laboració de",
     "cafiv.collaborator_diputacio": "<strong class='text-dark'>Diputació de Lleida</strong>",
     "cafiv.collaborator_ajuntament": "<strong class='text-dark'>Ajuntament de Lleida</strong>",

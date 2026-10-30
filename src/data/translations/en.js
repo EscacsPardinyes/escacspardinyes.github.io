@@ -371,7 +371,7 @@ export default {
     "cafiv.prize_raffle": "<strong class='text-dark'>Raffle:</strong> open to all tournament participants.",
     "cafiv.organizers_title": "Organisers",
     "cafiv.organizer_pardinyes": "<strong class='text-dark'>Club Escacs Pardinyes</strong>",
-    "cafiv.organizer_udl": "<strong class='text-dark'>UdL Chess Chair</strong>",
+    "cafiv.organizer_udl": "<strong class='text-dark'>Chair in Chess, Education and Cognitive Development</strong>",
     "cafiv.collaborators_title": "In collaboration with",
     "cafiv.collaborator_diputacio": "<strong class='text-dark'>Lleida Provincial Council (Diputació)</strong>",
     "cafiv.collaborator_ajuntament": "<strong class='text-dark'>Lleida City Council</strong>",
