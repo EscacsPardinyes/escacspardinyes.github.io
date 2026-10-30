@@ -391,7 +391,7 @@ export default {
     "cafiv.breadcrumb": "Torneo 30 años Biblioteca CAFIV",
     "cafiv.title": "Torneo de Ajedrez por los 30 años de la Biblioteca del CAFIV",
     "cafiv.details_title": "Detalles del Evento:",
-    "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong> organiza un torneo de ajedrez para celebrar los <strong class='text-dark'>30 años de la Biblioteca del CAFIV</strong>. Una jornada de partidas rápidas, premios y sorteo para todos los participantes.",
+    "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong> y la <strong class='text-dark'>Cátedra de Ajedrez, Educación y Desarrollo Cognitivo</strong> de la Universitat de Lleida organizan un torneo de ajedrez para celebrar los <strong class='text-dark'>30 años de la Biblioteca del CAFIV</strong>, con la colaboración de la Diputació de Lleida y el Ayuntamiento de Lleida. Una jornada de partidas rápidas, premios y sorteo para todos los participantes.",
     "cafiv.info_title": "Fecha, Hora y Lugar",
     "cafiv.date": "<strong class='text-dark'>Fecha:</strong> 25 de noviembre",
     "cafiv.time": "<strong class='text-dark'>Hora de inicio:</strong> por confirmar",

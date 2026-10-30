@@ -355,7 +355,7 @@ export default {
     "cafiv.breadcrumb": "CAFIV Library 30th Anniversary Tournament",
     "cafiv.title": "Chess Tournament for the 30th Anniversary of the CAFIV Library",
     "cafiv.details_title": "Event Details:",
-    "cafiv.intro_text": "<strong class='text-dark'>Club Escacs Pardinyes</strong> is organising a chess tournament to celebrate the <strong class='text-dark'>30th anniversary of the CAFIV Library</strong>. A day of rapid games, prizes and a raffle for all participants.",
+    "cafiv.intro_text": "<strong class='text-dark'>Club Escacs Pardinyes</strong> and the <strong class='text-dark'>Chair in Chess, Education and Cognitive Development</strong> of the University of Lleida are organising a chess tournament to celebrate the <strong class='text-dark'>30th anniversary of the CAFIV Library</strong>, in collaboration with the Lleida Provincial Council (Diputació) and Lleida City Council. A day of rapid games, prizes and a raffle for all participants.",
     "cafiv.info_title": "Date, Time and Place",
     "cafiv.date": "<strong class='text-dark'>Date:</strong> 25 November",
     "cafiv.time": "<strong class='text-dark'>Start time:</strong> to be confirmed",

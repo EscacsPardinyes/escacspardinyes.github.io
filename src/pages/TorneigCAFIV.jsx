@@ -38,11 +38,17 @@ export default function TorneigCAFIV() {
                 "addressCountry": "ES"
             }
         },
-        "organizer": {
-            "@type": "Organization",
-            "name": "Club Escacs Pardinyes",
-            "url": "https://escacspardinyes.com"
-        }
+        "organizer": [
+            {
+                "@type": "Organization",
+                "name": "Club Escacs Pardinyes",
+                "url": "https://escacspardinyes.com"
+            },
+            {
+                "@type": "Organization",
+                "name": "Càtedra d'Escacs, Educació i Desenvolupament Cognitiu - Universitat de Lleida"
+            }
+        ]
     };
 
     return (

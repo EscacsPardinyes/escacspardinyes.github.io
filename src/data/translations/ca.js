@@ -385,7 +385,7 @@ export default {
     "cafiv.breadcrumb": "Torneig 30 anys Biblioteca CAFIV",
     "cafiv.title": "Torneig d'Escacs per als 30 anys de la Biblioteca del CAFIV",
     "cafiv.details_title": "Detalls de l'Esdeveniment:",
-    "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong> organitza un torneig d'escacs per celebrar els <strong class='text-dark'>30 anys de la Biblioteca del CAFIV</strong>. Una jornada de partides ràpides, premis i sorteig per a tots els participants.",
+    "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong> i la <strong class='text-dark'>Càtedra d'Escacs, Educació i Desenvolupament Cognitiu</strong> de la Universitat de Lleida organitzen un torneig d'escacs per celebrar els <strong class='text-dark'>30 anys de la Biblioteca del CAFIV</strong>, amb la col·laboració de la Diputació de Lleida i l'Ajuntament de Lleida. Una jornada de partides ràpides, premis i sorteig per a tots els participants.",
     "cafiv.info_title": "Data, Hora i Lloc",
     "cafiv.date": "<strong class='text-dark'>Data:</strong> 25 de novembre",
     "cafiv.time": "<strong class='text-dark'>Hora d'inici:</strong> per confirmar",
