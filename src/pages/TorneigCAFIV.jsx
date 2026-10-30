@@ -4,6 +4,16 @@ import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 import CafivForm from '../components/CafivForm';
 
+const organizers = [
+    { src: '/img/galeria/logos/logo.webp', key: 'cafiv.organizer_pardinyes', alt: 'Club Escacs Pardinyes', col: 'col-sm-5' },
+    { src: '/img/galeria/TorneigCAFIV/logo-catedra-udl.webp', key: 'cafiv.organizer_udl', alt: "Universitat de Lleida - Càtedra Escacs, Educació i Desenvolupament Cognitiu", col: 'col-sm-7' }
+];
+
+const collaborators = [
+    { src: '/img/galeria/logos/diputaciolleida.webp', key: 'cafiv.collaborator_diputacio', alt: 'Diputació de Lleida' },
+    { src: '/img/galeria/logos/logopaeria-color.webp', key: 'cafiv.collaborator_ajuntament', alt: 'Ajuntament de Lleida - La Paeria' }
+];
+
 export default function TorneigCAFIV() {
     const { t, tHtml } = useLanguage();
 
@@ -77,17 +87,37 @@ export default function TorneigCAFIV() {
 
                         <h4 className="mt-4 mb-3"><i className="fa fa-handshake text-success mr-2"></i>{t('cafiv.organizers_title')}</h4>
                         <div className="row">
-                            {[['/img/galeria/logos/logo.webp', 'cafiv.organizer_pardinyes', 'Club Escacs Pardinyes'], ['/img/galeria/TorneigCAFIV/logo-udl.gif', 'cafiv.organizer_udl', 'Universitat de Lleida']].map(([src, key, alt]) => (
-                                <div className="col-sm-6 mb-3" key={src}>
-                                    <div className="h-100 bg-white rounded shadow-sm p-3 text-center">
-                                        <img
-                                            src={src}
-                                            alt={alt}
-                                            className="mb-2"
-                                            style={{ height: '70px', width: 'auto', maxWidth: '100%' }}
-                                            onError={(e) => { e.target.style.display = 'none'; }}
-                                        />
-                                        <div dangerouslySetInnerHTML={tHtml(key)}></div>
+                            {organizers.map((item) => (
+                                <div className={item.col + ' mb-3'} key={item.src}>
+                                    <div className="h-100 bg-white rounded shadow-sm p-3 text-center d-flex flex-column justify-content-between">
+                                        <div className="d-flex align-items-center justify-content-center mb-2" style={{ height: '90px' }}>
+                                            <img
+                                                src={item.src}
+                                                alt={item.alt}
+                                                style={{ maxHeight: '90px', maxWidth: '100%', width: 'auto' }}
+                                                onError={(e) => { e.target.style.display = 'none'; }}
+                                            />
+                                        </div>
+                                        <div dangerouslySetInnerHTML={tHtml(item.key)}></div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <h4 className="mt-4 mb-3"><i className="fa fa-handshake text-primary mr-2"></i>{t('cafiv.collaborators_title')}</h4>
+                        <div className="row">
+                            {collaborators.map((item) => (
+                                <div className="col-sm-6 mb-3" key={item.src}>
+                                    <div className="h-100 bg-white rounded shadow-sm p-3 text-center d-flex flex-column justify-content-between">
+                                        <div className="d-flex align-items-center justify-content-center mb-2" style={{ height: '90px' }}>
+                                            <img
+                                                src={item.src}
+                                                alt={item.alt}
+                                                style={{ maxHeight: '90px', maxWidth: '100%', width: 'auto' }}
+                                                onError={(e) => { e.target.style.display = 'none'; }}
+                                            />
+                                        </div>
+                                        <div dangerouslySetInnerHTML={tHtml(item.key)}></div>
                                     </div>
                                 </div>
                             ))}
