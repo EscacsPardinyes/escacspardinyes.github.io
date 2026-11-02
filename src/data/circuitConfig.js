@@ -175,7 +175,6 @@ export const circuitConfig = {
             ['Sistema', 'Lliga (Round Robin)'],
             ['Ritme de joc', '90 minuts + 30 segons per jugada (90+30)'],
             ['Vàlid per a', 'Elo FIDE i Elo català'],
-            ['Inscripció', 'Per confirmar'],
         ],
         dates: 'Del 3 a l\'11 de juliol de 2027',
         time: '17:00',
