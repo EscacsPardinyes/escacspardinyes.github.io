@@ -104,21 +104,15 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Fila 2: Chess.com - ChessNut - ChessKid */}
+                {/* Fila 2: Chess.com - ChessKid */}
                 <div className="row justify-content-center text-center py-4 align-items-center">
-                    <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
+                    <div className="col-lg-6 col-md-6 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer">
                             <img src="/img/galeria/logos/chesscom.webp" alt="Logotip de Chess.com, plataforma d'escacs en línia amb el club Escacs Pardinyes" style={{ width: '150px', height: '150px', objectFit: 'contain' }} loading="lazy" />
                         </a>
                         <h5 className="mt-3">Chess.com</h5>
                     </div>
-                    <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
-                        <a href="https://www.chessnutech.com/blogs/promoting-chess-in-society-and-schools/chessnut-sponsors-lleida-s-escacs-pardinyes-club-tournament-supporting-chess-as-a-social-and-educational-activity/" target="_blank" rel="noopener noreferrer">
-                            <img src="/img/galeria/feature/feature-4.webp" alt="Logotip de ChessNut, fabricant de taulers electrònics i patrocinador de tornejos del club" style={{ width: '150px', height: '150px', objectFit: 'contain' }} loading="lazy" />
-                        </a>
-                        <h5 className="mt-3">ChessNut</h5>
-                    </div>
-                    <div className="col-lg-4 col-md-4 mb-4 d-flex flex-column align-items-center">
+                    <div className="col-lg-6 col-md-6 mb-4 d-flex flex-column align-items-center">
                         <a href="https://www.chesskid.com/" target="_blank" rel="noopener noreferrer">
                             <img src="/img/galeria/logos/chesskid.webp" alt="Logotip de ChessKid, plataforma d'escacs per a nens col·laboradora del club" style={{ width: '150px', height: '150px', objectFit: 'contain' }} loading="lazy" />
                         </a>
