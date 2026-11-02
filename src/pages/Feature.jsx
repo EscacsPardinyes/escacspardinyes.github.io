@@ -54,18 +54,6 @@ export default function Feature() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-5">
-                        <div className="row align-items-center">
-                            <div className="col-sm-5">
-                                <img className="img-fluid mb-3 mb-sm-0" src="/img/galeria/feature/feature-4.webp" alt="Imatge de motivació i suport" />
-                                <i className="flaticon-medal"></i>
-                            </div>
-                            <div className="col-sm-7">
-                                <h4 className="font-weight-bold">{t('feature.tech_title')}</h4>
-                                <p>{t('feature.tech_text')}</p>
-                            </div>
-                        </div>
-                    </div>
                     {/* Nova secció Comunitat Online Chess.com */}
                     <div className="col-md-12 text-center mt-5">
                         <h4 className="font-weight-bold">{t('feature.chesscom_title')}</h4>
