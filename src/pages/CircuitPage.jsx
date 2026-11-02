@@ -8,7 +8,7 @@ import { circuitUi } from '../data/circuitStrings';
 import { localizeConfig } from '../data/circuitTranslations';
 
 // Grups de dades segons l'etiqueta de cada fet de circuitConfig (les etiquetes són sempre en català)
-const RULE_LABELS = ['Per a qui', 'Format', 'Durada', 'Ritme de joc', 'Objectiu', 'Sistema', 'Vàlid per a', 'Inscripció', 'Inscripció jugadors del club', 'Inscripció FM, MI i GM'];
+const RULE_LABELS = ['Per a qui', 'Format', 'Durada', 'Ritme de joc', 'Objectiu', 'Sistema', 'Vàlid per a', 'Inscripció', 'Inscripció jugadors del club', 'Inscripció convidats', 'Inscripció reduïda'];
 
 export default function CircuitPage({ id }) {
     const { t, language } = useLanguage();
