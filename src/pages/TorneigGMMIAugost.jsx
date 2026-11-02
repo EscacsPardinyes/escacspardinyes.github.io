@@ -118,7 +118,6 @@ export default function TorneigGMMIAugost() {
                             <ul className="list-unstyled ml-4">
                                 <li dangerouslySetInnerHTML={tHtml('gmmi_agost.format')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('gmmi_agost.rhythm')}></li>
-                                <li dangerouslySetInnerHTML={tHtml('gmmi_agost.fee')}></li>
                             </ul>
 
                             <h4 className="mt-4 mb-3"><i className="fa fa-trophy text-warning mr-2"></i>{t('gmmi_agost.trophies_title')}</h4>
