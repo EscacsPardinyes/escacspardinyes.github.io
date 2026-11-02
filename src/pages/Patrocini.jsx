@@ -85,7 +85,7 @@ const options = [
     },
     {
         title: 'Opció 3: Naming Premi Actiu FM Lleida (maig)',
-        price: 'Des de 800 €',
+        price: 'Des de 500 €',
         items: [
             ['Descripció', 'L\'esdeveniment de proximitat. Presència a la gran festa del barri.'],
             ['Visibilitat', 'Logo mida M al photocall i 1 roll-up a la sala.'],
@@ -95,7 +95,7 @@ const options = [
     },
     {
         title: 'Opció 4: Naming Tancats d\'Elit (març)',
-        price: 'Des de 1.000 €',
+        price: 'Des de 750 €',
         items: [
             ['Descripció', 'L\'aparador internacional. Focalitzat en el retorn digital i l\'elit mundial.'],
             ['Visibilitat digital', 'El teu logotip integrat permanentment de forma gràfica a la pantalla de les retransmissions en directe / Twitch (impactant els milers d\'espectadors concurrents).'],
@@ -109,6 +109,14 @@ const options = [
             ['Descripció', 'Suport a l\'esport base. Aportació per finançar els premis aficionats.'],
             ['Visibilitat', 'Logo mida S al photocall general de col·laboradors.'],
             ['Xarxes socials', 'Agraïment públic en publicacions dedicades a les xarxes socials del club i menció durant l\'entrega de guardons finals.'],
+        ],
+    },
+    {
+        title: 'Opció 6: Amic del club',
+        price: 'Des de 150 €',
+        items: [
+            ['Descripció', 'La manera més senzilla d\'afegir-se al circuit. Ideal per a comerços i professionals de proximitat.'],
+            ['Xarxes socials', 'Publicació pròpia a les xarxes socials del club donant les gràcies al teu negoci.'],
         ],
     },
 ];
