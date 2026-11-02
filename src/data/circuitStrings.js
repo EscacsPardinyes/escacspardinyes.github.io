@@ -88,7 +88,8 @@ export const circuitUi = {
             "Vàlid per a": "Válido para",
             "Inscripció": "Inscripción",
             "Inscripció jugadors del club": "Inscripción jugadores del club",
-            "Inscripció FM, MI i GM": "Inscripción MF, MI y GM",
+            "Inscripció convidats": "Inscripción invitados",
+            "Inscripció reduïda": "Inscripción reducida",
         },
         form: {
             name: "Nombre y apellidos *",
@@ -153,7 +154,8 @@ export const circuitUi = {
             "Vàlid per a": "Rated for",
             "Inscripció": "Entry fee",
             "Inscripció jugadors del club": "Entry fee for club players",
-            "Inscripció FM, MI i GM": "Entry fee for FM, IM and GM",
+            "Inscripció convidats": "Entry fee for invited players",
+            "Inscripció reduïda": "Reduced entry fee",
         },
         form: {
             name: "Full name *",
@@ -218,7 +220,8 @@ export const circuitUi = {
             "Vàlid per a": "Comptant pour",
             "Inscripció": "Droits d'inscription",
             "Inscripció jugadors del club": "Inscription des joueurs du club",
-            "Inscripció FM, MI i GM": "Inscription FM, MI et GM",
+            "Inscripció convidats": "Inscription des invités",
+            "Inscripció reduïda": "Tarif réduit",
         },
         form: {
             name: "Nom et prénom *",
