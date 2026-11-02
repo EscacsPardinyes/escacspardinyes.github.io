@@ -798,3 +798,36 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 26px;
     }
 }
+/* Pàgina del dossier de patrocini */
+.patro-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin: 0 0 32px; }
+.patro-stat { background: #111; color: #fff; border-radius: 12px; padding: 18px 12px; text-align: center; border-bottom: 4px solid #E31C25; }
+.patro-stat strong { display: block; font-size: 1.9rem; line-height: 1.1; color: #ffc107; }
+.patro-stat span { font-size: .85rem; opacity: .85; }
+.patro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 16px 0; }
+.patro-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, .08); border-top: 4px solid #E31C25; height: 100%; }
+.patro-card h3, .patro-card h4 { font-size: 1.1rem; margin-bottom: 8px; }
+.patro-card p { margin-bottom: 0; font-size: .95rem; }
+.patro-badge { display: inline-block; background: #ffc107; color: #111; font-weight: 700; font-size: .8rem; border-radius: 20px; padding: 2px 12px; margin-bottom: 8px; text-transform: uppercase; }
+.patro-price { font-size: 1.5rem; font-weight: 800; color: #E31C25; margin-bottom: 8px; }
+.patro-card ul { padding-left: 18px; margin: 0; font-size: .95rem; }
+.patro-card li { margin-bottom: 6px; }
+.patro-budget { list-style: none; padding: 0; }
+.patro-budget li { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e5e5e5; }
+.patro-budget .amount { flex: 0 0 105px; font-weight: 800; color: #E31C25; font-size: 1.1rem; white-space: nowrap; }
+.patro-budget .total { background: #111; color: #fff; border-radius: 8px; padding: 14px; border: 0; }
+.patro-budget .total .amount { color: #ffc107; }
+.patro-contact { background: #111; color: #fff; border-radius: 12px; padding: 28px; margin-top: 16px; }
+.patro-contact a { color: #ffc107; }
+.patro-quote { background: #fff8e1; border-left: 4px solid #ffc107; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+@media (max-width: 575px) { .patro-budget li { flex-direction: column; gap: 4px; } }
+.patro-player { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.patro-player img { border-radius: 3px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .15); }
+.patro-title { background: #111; color: #ffc107; font-size: .75rem; font-weight: 800; border-radius: 4px; padding: 1px 8px; letter-spacing: .5px; }
+.patro-photo { width: 100%; height: 230px; object-fit: cover; object-position: center 20%; border-radius: 8px; margin-bottom: 12px; }
+.patro-photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0; }
+.patro-photos figure { margin: 0; }
+.patro-photos img { width: 100%; height: 100%; max-height: 320px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12); }
+.patro-photos figcaption { font-size: .85rem; color: #666; margin-top: 6px; text-align: center; }
+.patro-card .patro-links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .85rem; font-weight: 600; }
+
+.patro-poster{display:block;width:100%;height:auto;border-radius:10px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.18)}

@@ -72,7 +72,7 @@ import campionatCatalunyaEquipsEdats2026 from './news/campionat-catalunya-equips
 
 // One article per file in ./news/. Add the import and put it in the list (order does not matter:
 // pages sort by date). Same shape as before: { id, title, date, category, image, summary, content, ... }
-export const news = [
+const rawNews = [
 // ── Evergreen guides (category 'guia'): content that answers common searches ──
   escacsPerANensLleida,
   comFederarSeEscacsLleida,
@@ -146,3 +146,14 @@ export const news = [
   masterclassTacticaFilemonCruz2026,
   campionatCatalunyaEquipsEdats2026,
 ]
+
+// Francès: les notícies no estan traduïdes i es mostren en anglès
+const withFrench = (item) => {
+    const out = { ...item };
+    for (const [k, v] of Object.entries(item)) {
+        if (v && typeof v === 'object' && !Array.isArray(v) && v.en !== undefined && v.fr === undefined) out[k] = { ...v, fr: v.en };
+    }
+    return out;
+};
+
+export const news = rawNews.map(withFrench);

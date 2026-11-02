@@ -7,8 +7,7 @@ const LOGO = '/img/galeria/logos/logo.webp';
 
 const tournaments = [
     { id: 'cafiv', titleKey: 'cafiv.header', summaryKey: 'tornejos.sum_cafiv', path: '/torneig-biblioteca-cafiv', poster: false },
-    { id: 'alcarras2', titleKey: 'alcarras2.header', summaryKey: 'tornejos.sum_alcarras2', path: '/torneig-alcarras-2', poster: false },
-    { id: 'tancats', titleKey: 'gmmi_agost.header', summaryKey: 'tornejos.sum_tancats', path: '/tancats-setmana-santa-2027', poster: false }
+    { id: 'alcarras2', titleKey: 'alcarras2.header', summaryKey: 'tornejos.sum_alcarras2', path: '/torneig-alcarras-2', poster: false }
 ];
 
 export default function TornejosList() {

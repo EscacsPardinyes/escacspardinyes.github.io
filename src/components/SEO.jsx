@@ -110,7 +110,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
             { property: 'og:url', content: currentUrl },
             { property: 'og:type', content: type },
             { property: 'og:site_name', content: baseTitle },
-            { property: 'og:locale', content: language === 'ca' ? 'ca_ES' : language === 'es' ? 'es_ES' : 'en_US' }
+            { property: 'og:locale', content: { ca: 'ca_ES', es: 'es_ES', en: 'en_US', fr: 'fr_FR' }[language] }
         ];
 
         // Add theme-color for mobile browsers
@@ -286,7 +286,7 @@ export default function SEO({ title, description, image, schema: schemaProp, typ
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": language === 'ca' ? 'Inici' : language === 'es' ? 'Inicio' : 'Home',
+                        "name": ({ ca: 'Inici', es: 'Inicio', en: 'Home', fr: 'Accueil' })[language],
                         "item": pageUrl('/', language)
                     },
                     ...breadcrumbs.map((crumb, index) => ({

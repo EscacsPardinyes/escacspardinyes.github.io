@@ -123,7 +123,7 @@ export default function SearchModal() {
                         ref={inputRef}
                         type="text" 
                         className="search-input" 
-                        placeholder={language === 'ca' ? 'Cerca notícies, pàgines...' : language === 'es' ? 'Buscar noticias, páginas...' : 'Search news, pages...'}
+                        placeholder={({ ca: 'Cerca notícies, pàgines...', es: 'Buscar noticias, páginas...', en: 'Search news, pages...', fr: 'Rechercher actualités, pages...' })[language]}
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyDown={handleModalKeyDown}
@@ -153,7 +153,7 @@ export default function SearchModal() {
                                         <div className="result-content">
                                             <span className="result-title">{result.title}</span>
                                             <span className="result-type">
-                                                {result.type === 'page' ? (language === 'ca' ? 'Pàgina' : 'Página') : (language === 'ca' ? 'Notícia' : 'Noticia')}
+                                                {result.type === 'page' ? ({ ca: 'Pàgina', es: 'Página', en: 'Page', fr: 'Page' })[language] : ({ ca: 'Notícia', es: 'Noticia', en: 'News', fr: 'Actualité' })[language]}
                                             </span>
                                         </div>
                                         <i className="fa fa-chevron-right result-arrow"></i>
@@ -163,7 +163,7 @@ export default function SearchModal() {
                         ) : (
                             <div className="search-no-results">
                                 <i className="fa fa-ghost mb-3" style={{ fontSize: '2rem', color: '#ccc' }}></i>
-                                <p>{language === 'ca' ? 'Cap resultat trobat.' : language === 'es' ? 'No se encontraron resultados.' : 'No results found.'}</p>
+                                <p>{({ ca: 'Cap resultat trobat.', es: 'No se encontraron resultados.', en: 'No results found.', fr: 'Aucun résultat.' })[language]}</p>
                             </div>
                         )}
                     </div>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ca"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#070b18}
+body{position:relative;font-family:'Century Gothic','Futura','Segoe UI',Arial,sans-serif;color:#f5ecd2}
+:root{--gold:linear-gradient(100deg,#8a6420 0%,#e9c46a 22%,#fff3c4 40%,#e9c46a 58%,#9c7220 100%)}
+.gold{background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 600px 520px at 540px 600px,#2b3566 0%,#121a3a 45%,#070b18 100%)}
+.beam{position:absolute;left:0;right:0;top:0;height:900px;background:conic-gradient(from 180deg at 540px 0px,transparent 0 160deg,#e9c46a22 170deg,transparent 180deg 180deg,transparent 180deg,#e9c46a22 190deg,transparent 200deg 360deg);}
+img.club{position:absolute;top:44px;left:44px;width:104px;height:104px;object-fit:contain;background:#fff;border:3px solid #d8b25a}
+.top{position:absolute;top:50px;left:0;right:0;text-align:center}
+.kicker{font-size:21px;letter-spacing:.4em;text-transform:uppercase;color:#e9c46a}
+h1{position:absolute;top:140px;left:0;right:0;text-align:center;font-family:Georgia,serif;font-weight:700;font-size:136px;line-height:1;letter-spacing:.02em}
+.sub{position:absolute;top:290px;left:0;right:0;text-align:center;font-size:30px;letter-spacing:.34em;text-transform:uppercase}
+.medals{position:absolute;top:352px;left:0;right:0;display:flex;justify-content:center;gap:34px}
+.medal{width:104px;height:104px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px #070b18,0 0 0 6px #e9c46a}
+.medal span{font-family:Georgia,serif;font-weight:700;font-size:44px;color:#14213d}
+.stage{position:absolute;left:0;right:0;top:480px;height:480px;perspective:800px}
+.board{position:absolute;left:90px;width:900px;top:200px;height:400px;transform:rotateX(64deg);transform-origin:50% 0;background:conic-gradient(#e9c46a 25%,#10172f 0 50%,#e9c46a 0 75%,#10172f 0) 0 0/130px 130px;-webkit-mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);opacity:.9}
+.king{position:absolute;left:340px;top:-10px;width:400px;height:400px;filter:drop-shadow(0 18px 24px #000a)}
+.when{position:absolute;top:915px;left:0;right:0;text-align:center}
+.when .big{font-family:Georgia,serif;font-weight:700;font-size:84px;line-height:1}
+.when .sm{font-size:24px;letter-spacing:.3em;text-transform:uppercase;margin-top:8px;color:#e9c46a}
+.rule{position:absolute;left:150px;right:150px;top:1060px;height:2px;background:var(--gold)}
+.row{position:absolute;top:1086px;left:80px;right:80px;display:flex;text-align:center}
+.row div{flex:1;border-left:1px solid #d8b25a66;padding:0 6px}
+.row div:first-child{border-left:0}
+.row b{display:block;font-size:30px;color:#e9c46a}
+.row span{font-size:17px;letter-spacing:.13em;text-transform:uppercase;color:#d9cfae}
+.note{position:absolute;top:1170px;left:0;right:0;text-align:center;font-size:21px;letter-spacing:.08em;color:#f5ecd2}
+.note b{color:#e9c46a}
+.strip{position:absolute;left:80px;right:80px;bottom:34px;height:74px;display:flex;align-items:center;gap:14px;border-top:1px solid #d8b25a99;padding-top:6px}
+.strip img{height:52px;width:auto;object-fit:contain;background:#f5ecd2;border:2px solid #d8b25a;border-radius:8px;padding:4px 7px}
+.strip .lab{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#d8b25a;line-height:1.35;margin-right:4px;white-space:nowrap}
+.strip .web{margin-left:auto;font-size:20px;letter-spacing:.18em;text-transform:uppercase;color:#e9c46a;font-weight:700}
+.frame{position:absolute;inset:24px;border:2px solid #d8b25a;pointer-events:none}
+.frame:after{content:"";position:absolute;inset:8px;border:1px solid #d8b25a88}
+</style></head><body>
+<div class="bg"></div><div class="beam"></div>
+<div class="frame"></div>
+<img class="club" src="logo.webp" alt="">
+<div class="top"><div class="kicker">35è aniversari · Club Escacs Pardinyes</div></div>
+<h1 class="gold">TANCATS</h1>
+<div class="sub">II edició · Setmana Santa</div>
+<div class="medals"><div class="medal"><span>GM</span></div><div class="medal"><span>MI</span></div><div class="medal"><span>MC</span></div></div>
+<div class="stage">
+ <div class="board"></div>
+ <svg class="king" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".45" stop-color="#e9c46a"/><stop offset=".8" stop-color="#9c7220"/><stop offset="1" stop-color="#e9c46a"/></linearGradient></defs>
+  <g fill="none" fill-rule="evenodd" stroke="#1a1206" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+   <path stroke-linejoin="miter" stroke="#e9c46a" stroke-width="1.4" d="M22.5 11.63V6M20 8h5"/>
+   <path fill="url(#g)" stroke-linecap="butt" stroke-linejoin="miter" d="M22.5 25s4.5-7.5 3-10.5c0 0-1-2.5-3-2.5s-3 2.5-3 2.5c-1.5 3 3 10.5 3 10.5"/>
+   <path fill="url(#g)" d="M11.5 37c5.5 3.5 15.5 3.5 21 0v-7s9-4.5 6-10.5c-4-6.5-13.5-3.5-16 4V27v-3.5c-3.5-7.5-13-10.5-16-4-3 6 5 10 5 10z"/>
+   <path d="M11.5 30c5.5-3 15.5-3 21 0m-21 3.5c5.5-3 15.5-3 21 0m-21 3.5c5.5-3 15.5-3 21 0"/>
+  </g>
+ </svg>
+</div>
+<div class="when"><div class="big gold">22 – 26 març 2027</div><div class="sm">Lleida · normes de GM, MI i MC</div></div>
+<div class="rule"></div>
+<div class="row">
+ <div><b>9 rondes</b><span>Sistema lliga</span></div>
+ <div><b>90 + 30</b><span>Ritme</span></div>
+ <div><b>Elo FIDE</b><span>i Elo català</span></div>
+ <div><b>Premis</b><span>3 primers per grup</span></div>
+</div>
+<div class="note">Inscripció <b>per invitació</b> o selecció per Elo</div>
+<div class="strip"><span class="lab">Amb la<br>col·laboració de</span><img src="logopaeria-color.webp"><img src="diputaciolleida.webp"><span class="web">escacspardinyes.com</span></div>
+<script>
+window.render=()=>{};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(im=>im.complete?1:new Promise(x=>im.onload=x)))).then(()=>{window.READY=true});
+</script></body></html>
