@@ -1,9 +1,9 @@
 // Language in the URL: Catalan keeps the original paths (/school), Spanish and English get a
 // prefix (/es/school, /en/school). Shared by the app and scripts/postbuild.js (no browser APIs
 // at module level).
-export const LANGUAGES = ['ca', 'es', 'en'];
+export const LANGUAGES = ['ca', 'es', 'en', 'fr'];
 export const DEFAULT_LANGUAGE = 'ca';
-const PREFIXED = ['es', 'en'];
+const PREFIXED = ['es', 'en', 'fr'];
 
 export function getLangFromPath(pathname) {
     const firstSegment = pathname.split('/')[1];

@@ -5,10 +5,14 @@ import { useLanguage } from '../context/LanguageContext';
 import { localizePath } from '../utils/i18nRouting';
 import ThemeToggle from './ThemeToggle';
 
+// La bandera francesa és a /docs (no es pot escriure a /img)
+const flagSrc = (code) => (code === 'fr' ? '/docs/fr.svg' : `/img/flags/${code}.svg`);
+
 const LANGUAGE_OPTIONS = [
     { code: 'ca', label: 'Català' },
     { code: 'es', label: 'Español' },
-    { code: 'en', label: 'English' }
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'Français' }
 ];
 
 export default function Header() {
@@ -107,7 +111,7 @@ export default function Header() {
                         <div className={`nav-item dropdown ${isLangOpen ? 'show' : ''}`}>
                             <a href="#" className="nav-link dropdown-toggle d-flex align-items-center" onClick={toggleLang} aria-label="Select Language">
                                 <img
-                                    src={`/img/flags/${language}.svg`}
+                                    src={flagSrc(language)}
                                     alt={language}
                                     style={{ width: '25px', height: 'auto', marginRight: '5px' }}
                                 />
@@ -129,7 +133,7 @@ export default function Header() {
                                         className="dropdown-item lang-btn d-flex align-items-center"
                                         onClick={(e) => changeLanguage(code, e)}
                                     >
-                                        <img src={`/img/flags/${code}.svg`} alt={label} style={{ width: '20px', marginRight: '10px' }} /> {label}
+                                        <img src={flagSrc(code)} alt={label} style={{ width: '20px', marginRight: '10px' }} /> {label}
                                     </a>
                                 ))}
                             </div>

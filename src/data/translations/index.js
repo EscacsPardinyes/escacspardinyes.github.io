@@ -5,6 +5,7 @@ import ca from './ca.js';
 const loaders = {
     es: () => import('./es.js'),
     en: () => import('./en.js'),
+    fr: () => import('./fr.js'),
 };
 
 const loaded = { ca };

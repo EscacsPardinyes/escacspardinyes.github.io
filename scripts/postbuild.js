@@ -4,9 +4,12 @@ import { fileURLToPath } from 'url';
 import { news } from '../src/data/news.js';
 import { masterclassConfig } from '../src/data/masterclassConfig.js';
 import { eventsConfig } from '../src/data/eventsConfig.js';
+import { circuitConfig } from '../src/data/circuitConfig.js';
+import { localizedField } from '../src/data/circuitTranslations.js';
 import ca from '../src/data/translations/ca.js';
 import es from '../src/data/translations/es.js';
 import en from '../src/data/translations/en.js';
+import fr from '../src/data/translations/fr.js';
 import { LANGUAGES, localizePath, withTrailingSlash } from '../src/utils/i18nRouting.js';
 import { stripEmoji } from '../src/utils/plainText.js';
 import { prerenderRoutes } from './prerender.js';
@@ -18,8 +21,8 @@ const PUBLIC_DIR = path.resolve(__dirname, '../public');
 const BASE_URL = 'https://escacspardinyes.com';
 const SITE_NAME = 'Club Escacs Pardinyes';
 const DEFAULT_IMAGE = '/img/galeria/logos/logo.webp';
-const DICTIONARIES = { ca, es, en };
-const OG_LOCALES = { ca: 'ca_ES', es: 'es_ES', en: 'en_US' };
+const DICTIONARIES = { ca, es, en, fr };
+const OG_LOCALES = { ca: 'ca_ES', es: 'es_ES', en: 'en_US', fr: 'fr_FR' };
 
 // A translation key, resolved for each language when the files are generated
 const k = (key) => ({ key });
@@ -95,11 +98,21 @@ const staticPages = [
     { path: '/simultanies-arami2026',         changefreq: 'yearly',  priority: '0.5', title: k('nav.arami_short'),          desc: k('arami.p1'), image: '/img/galeria/WFMAramiLobo2026/cartell-simultanies-arami.webp' },
     // Secondary pages (served with 200, not listed in the sitemap)
     { path: '/feature',  sitemap: false, title: k('seo.feature_title'),    desc: k('seo.feature_description') },
+    { path: '/patrocini', sitemap: false, noindex: true, title: k('patrocini.header'), desc: k('patrocini.description') },
     { path: '/privacy',  sitemap: false, title: k('privacy.header'),       desc: k('seo.privacy_description') },
     { path: '/cookies',  sitemap: false, title: k('cookies.header'),       desc: k('seo.cookies_description') },
     { path: '/enquesta', sitemap: false, title: k('enquesta.title'),       desc: k('enquesta.subtitle') },
     { path: '/baixa',    sitemap: false, title: k('unsubscribe.title'),    desc: k('unsubscribe.subtitle') },
 ];
+
+const circuitPages = Object.entries(circuitConfig).map(([slug, c]) => ({
+    path: `/${slug}`,
+    changefreq: 'monthly',
+    priority: '0.7',
+    title: localizedField(c, slug, 'title'),
+    desc: localizedField(c, slug, 'description'),
+    image: c.poster,
+}));
 
 const masterclassPages = Object.entries(masterclassConfig).map(([slug, mc]) => ({
     path: `/masterclass/${slug}`,
@@ -130,7 +143,7 @@ const newsPages = news.map(n => ({
     lastmod: toDate(n.date),
 }));
 
-const allPages = [...staticPages, ...masterclassPages, ...eventPages, ...newsPages];
+const allPages = [...staticPages, ...circuitPages, ...masterclassPages, ...eventPages, ...newsPages];
 
 // ── 1. GENERATE SITEMAP ───────────────────────────────────────────────────────
 // One <url> per page and language, each listing its translations (hreflang)
@@ -224,6 +237,7 @@ function generateStaticMetaFiles() {
                 `    <meta name="twitter:title" content="${title}">`,
                 `    <meta name="twitter:description" content="${desc}">`,
                 `    <meta name="twitter:image" content="${img}">`,
+                ...(page.noindex ? ['    <meta name="robots" content="noindex, nofollow">'] : []),
             ].join('\n');
 
             const newHtml = baseHtml

@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import { LanguageProvider } from './context/LanguageContext';
+import { circuitConfig } from './data/circuitConfig';
 
 
 // Lazy load pages
@@ -18,6 +19,8 @@ const Feature = lazy(() => import('./pages/Feature'));
 const Federat = lazy(() => import('./pages/Federat'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
+const Patrocini = lazy(() => import('./pages/Patrocini'));
+const CircuitPage = lazy(() => import('./pages/CircuitPage'));
 const Cookies = lazy(() => import('./pages/Cookies'));
 const EloCalculator = lazy(() => import('./pages/EloCalculator'));
 const TorneigAlcarras = lazy(() => import('./pages/TorneigAlcarras'));
@@ -86,6 +89,8 @@ function pageRoutes() {
             <Route path="federat" element={<Federat />} />
             <Route path="contact" element={<Contact />} />
             <Route path="privacy" element={<Privacy />} />
+            <Route path="patrocini" element={<Patrocini />} />
+            {Object.keys(circuitConfig).map(id => <Route key={id} path={id} element={<CircuitPage id={id} />} />)}
             <Route path="cookies" element={<Cookies />} />
             <Route path="elo-calculator" element={<EloCalculator />} />
             <Route path="sant-jordi2025" element={<EventPage id="sant-jordi" />} />
@@ -124,6 +129,7 @@ function App() {
             <Route path="/" element={<Layout />}>{pageRoutes()}</Route>
             <Route path="/es" element={<Layout />}>{pageRoutes()}</Route>
             <Route path="/en" element={<Layout />}>{pageRoutes()}</Route>
+            <Route path="/fr" element={<Layout />}>{pageRoutes()}</Route>
           </Routes>
         </Suspense>
       </LanguageProvider>

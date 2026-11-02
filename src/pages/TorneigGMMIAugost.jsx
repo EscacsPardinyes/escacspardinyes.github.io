@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
+import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 
 // Placeholders for Setmana Santa 2027 assets (Replace with real paths once available)
-const posterImg = 'https://placehold.co/600x800/2A769C/ffffff?text=SETMANA+SANTA+2027';
+const posterImg = '/cartells/tancats.webp';
 
 export default function TorneigGMMIAugost() {
     const { t, tHtml } = useLanguage();
@@ -97,6 +98,7 @@ export default function TorneigGMMIAugost() {
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x800/2A769C/ffffff?text=COMING+SOON' }}
                             loading="lazy"
                         />
+                        <small className="d-block text-muted mt-2" style={{ fontSize: '.75rem' }}>Peces d'escacs: cburnett (Lichess), GPLv2+</small>
                     </div>
 
                     <div className="col-lg-6">
@@ -123,6 +125,11 @@ export default function TorneigGMMIAugost() {
                             <ul className="list-unstyled ml-4 mb-4">
                                 <li dangerouslySetInnerHTML={tHtml('gmmi_agost.trophies')}></li>
                             </ul>
+
+                            <div className="mb-4">
+                                <Link to="/tancats-setmana-santa-2026" className="btn btn-outline-primary btn-sm mr-2 mb-2"><i className="fa fa-calendar-alt mr-1"></i>Veure l'edició de l'any anterior</Link>
+                                <Link to="/tancat-open-ciutat-de-lleida" className="btn btn-outline-primary btn-sm mb-2"><i className="fa fa-chess-knight mr-1"></i>Tancat «Ciutat de Lleida» (juliol 2027)</Link>
+                            </div>
 
                             {/* Formulari d'Inscripció / Reserva de Plaça */}
                             <div className="bg-light p-4 rounded shadow-sm border-left border-primary mt-5" style={{ borderWidth: '4px !important' }}>
@@ -196,9 +203,6 @@ export default function TorneigGMMIAugost() {
                 <h3 className="text-center font-weight-bold mb-4">{t('gmmi.collab_title')}</h3>
                 <p className="text-center mb-5 lead">{t('gmmi.collab_text')}</p>
                 <div className="row justify-content-center align-items-center text-center">
-                    <div className="col-6 col-md-4 col-lg-3 mb-4">
-                        <img src="/img/galeria/logos/orvepard.webp" alt="ORVEPARD" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
-                    </div>
                     <div className="col-6 col-md-4 col-lg-3 mb-4">
                         <img src="/img/galeria/logos/logopaeria-color.webp" alt="La Paeria - Ajuntament de Lleida" className="img-fluid" style={{ maxHeight: '120px' }} loading="lazy" />
                     </div>

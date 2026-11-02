@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ca"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#0d0a06}
+body{position:relative;font-family:'Century Gothic','Futura','Segoe UI',Arial,sans-serif;color:#f5ecd2}
+:root{--gold:linear-gradient(100deg,#8a6420 0%,#e9c46a 22%,#fff3c4 40%,#e9c46a 58%,#9c7220 100%)}
+.gold{background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+svg.bg{position:absolute;inset:0}
+.top{position:absolute;top:58px;left:0;right:0;text-align:center}
+.top img{width:136px;height:136px;object-fit:contain;border:3px solid #d8b25a}
+.kicker{margin-top:10px;font-size:22px;letter-spacing:.4em;color:#e9c46a;text-transform:uppercase}
+.t{position:absolute;left:0;right:0;text-align:center}
+.t .a{font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#f5ecd2}
+.t .b{font-family:Georgia,serif;font-weight:700;font-size:96px;line-height:1.1;letter-spacing:.01em}
+.date{top:798px}
+.date .big{font-family:Georgia,serif;font-size:82px;font-weight:700;line-height:1}
+.date .sm{font-size:26px;letter-spacing:.38em;text-transform:uppercase;margin-top:6px}
+.prize{top:906px}
+.prize .lab{font-size:22px;letter-spacing:.4em;text-transform:uppercase;color:#e9c46a}
+.prize .num{font-family:Georgia,serif;font-size:116px;font-weight:700;line-height:1.05}
+.prize .sub{font-size:28px;letter-spacing:.06em}.prize .sub2{font-size:22px;letter-spacing:.22em;text-transform:uppercase;color:#d9cfae;margin-top:6px}
+.info{position:absolute;top:1148px;left:110px;right:110px;display:flex;text-align:center}
+.info div{flex:1;border-left:1px solid #d8b25a66;padding:0 8px}
+.info div:first-child{border-left:0}
+.info b{display:block;font-size:32px;color:#e9c46a;font-weight:700}
+.info span{font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:#d9cfae}
+.foot{position:absolute;bottom:46px;left:0;right:0;text-align:center;font-size:22px;letter-spacing:.3em;text-transform:uppercase;color:#e9c46a}
+.strip{position:absolute;left:96px;right:96px;top:1222px;height:76px;border-top:1px solid #d8b25a99;display:flex;align-items:center;gap:14px;padding-top:6px}.strip img{height:54px;width:auto;object-fit:contain;background:#f5ecd2;border:2px solid #d8b25a;border-radius:8px;padding:5px 8px}.strip img:first-of-type{padding:0;border-radius:8px}.strip .lab{font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#d8b25a;white-space:nowrap;line-height:1.35;margin-right:6px}.strip .web{margin-left:auto;font-size:21px;letter-spacing:.2em;text-transform:uppercase;color:#e9c46a;font-weight:700}
+</style></head><body>
+<svg class="bg" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="g" cx="540" cy="570" r="800" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3f2d11"/><stop offset=".55" stop-color="#17100a"/><stop offset="1" stop-color="#0a0705"/></radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b8"/><stop offset=".4" stop-color="#e9c46a"/><stop offset=".75" stop-color="#a97b25"/><stop offset="1" stop-color="#e9c46a"/></linearGradient>
+  <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#8a6420"/><stop offset=".5" stop-color="#fff3c4"/><stop offset="1" stop-color="#8a6420"/></linearGradient>
+ </defs>
+ <rect width="1080" height="1350" fill="url(#g)"/>
+ <g id="rays" transform="translate(540 570)"></g>
+ <!-- frames -->
+ <rect x="34" y="34" width="1012" height="1282" fill="none" stroke="#d8b25a" stroke-width="3"/>
+ <rect x="46" y="46" width="988" height="1258" fill="none" stroke="#d8b25a" stroke-width="1"/>
+ <!-- corner fans -->
+ <g id="fans" stroke="#d8b25a" stroke-width="1.5" fill="none"></g>
+ <image href="logo35.png" x="398" y="268" width="284" height="326" preserveAspectRatio="xMidYMid meet"/>
+ <!-- rules with diamond -->
+ <g stroke="url(#gl)" stroke-width="2"><path d="M150 775H500M580 775H930"/><path d="M150 893H500M580 893H930"/></g>
+ <g fill="#e9c46a"><path d="M540 764l11 11-11 11-11-11z"/><path d="M540 882l11 11-11 11-11-11z"/></g>
+ <!-- checker strip -->
+ <g id="chk"></g>
+</svg>
+<div class="top"><img src="logo.webp" alt=""><div class="kicker">35è aniversari · Club Escacs Pardinyes</div></div>
+<div class="t" style="top:598px"><div class="a">I Open Internacional</div><div class="b gold">Ciutat de Lleida</div></div>
+<div class="t date"><div class="big gold">3 – 11 juliol 2027</div></div>
+<div class="t prize"><div class="lab">Borsa de premis</div><div class="num gold">6.500 €</div><div class="sub"><b style="color:#e9c46a">1r</b> 800 € &nbsp;·&nbsp; <b style="color:#e9c46a">2n</b> 650 € &nbsp;·&nbsp; <b style="color:#e9c46a">3r</b> 500 €</div><div class="sub2">41 premis en metàl·lic</div></div>
+<div class="info">
+ <div><b>9 rondes</b><span>Sistema suís</span></div>
+ <div><b>90 + 30</b><span>Ritme</span></div>
+ <div><b>17:00</b><span>Cada ronda</span></div>
+ <div><b>40 €</b><span>Inscripció</span></div>
+</div>
+<div class="strip"><span class="lab">Amb la<br>col·laboració de</span><img src="federacio.jpeg"><img class="w" src="logopaeria-color.webp"><img class="w" src="diputaciolleida.webp"><span class="web">escacspardinyes.com</span></div>
+<script>
+const NS='http://www.w3.org/2000/svg',mk=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+const rays=document.getElementById('rays'),N=40;
+for(let i=0;i<N;i+=2){const a=(i-N/4)*360/N*Math.PI/180,w=360/N*Math.PI/180,r=1200;
+ mk('path',{d:`M0 0L${r*Math.cos(a)} ${r*Math.sin(a)}L${r*Math.cos(a+w)} ${r*Math.sin(a+w)}Z`,fill:'#e9c46a',opacity:.07},rays);}
+const f=document.getElementById('fans');
+[[60,60,1,1],[1020,60,-1,1]].forEach(([x,y,sx,sy])=>{for(let i=1;i<=5;i++){mk('path',{d:`M${x} ${y+sy*i*18}A${i*18} ${i*18} 0 0 ${sx*sy>0?0:1} ${x+sx*i*18} ${y}`},f);}});
+const c=document.getElementById('chk');
+for(let i=0;i<24;i++)for(let j=0;j<2;j++){if((i+j)%2===0)mk('rect',{x:60+i*40.5,y:1296-0,width:40.5,height:0},c);}
+window.render=()=>{};
+document.fonts.ready.then(()=>{const im=document.querySelector('img');(im.complete?Promise.resolve():new Promise(r=>im.onload=r)).then(()=>{window.READY=true})});
+</script></body></html>
