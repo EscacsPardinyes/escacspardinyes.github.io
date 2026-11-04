@@ -2,11 +2,11 @@
 <html lang="ca"><head><meta charset="utf-8">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1350px;overflow:hidden;background:#070b18}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#0a0a0a}
 body{position:relative;font-family:'Century Gothic','Futura','Segoe UI',Arial,sans-serif;color:#f5ecd2}
 :root{--gold:linear-gradient(100deg,#8a6420 0%,#e9c46a 22%,#fff3c4 40%,#e9c46a 58%,#9c7220 100%)}
 .gold{background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent}
-.bg{position:absolute;inset:0;background:radial-gradient(ellipse 600px 520px at 540px 600px,#2b3566 0%,#121a3a 45%,#070b18 100%)}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 600px 520px at 540px 600px,#3a3220 0%,#17140c 45%,#0a0a0a 100%)}
 .beam{position:absolute;left:0;right:0;top:0;height:900px;background:conic-gradient(from 180deg at 540px 0px,transparent 0 160deg,#e9c46a22 170deg,transparent 180deg 180deg,transparent 180deg,#e9c46a22 190deg,transparent 200deg 360deg);}
 img.club{position:absolute;top:44px;left:44px;width:104px;height:104px;object-fit:contain;background:#fff;border:3px solid #d8b25a}
 .top{position:absolute;top:50px;left:0;right:0;text-align:center}
@@ -14,10 +14,10 @@ img.club{position:absolute;top:44px;left:44px;width:104px;height:104px;object-fi
 h1{position:absolute;top:140px;left:0;right:0;text-align:center;font-family:Georgia,serif;font-weight:700;font-size:136px;line-height:1;letter-spacing:.02em}
 .sub{position:absolute;top:290px;left:0;right:0;text-align:center;font-size:30px;letter-spacing:.34em;text-transform:uppercase}
 .medals{position:absolute;top:352px;left:0;right:0;display:flex;justify-content:center;gap:34px}
-.medal{width:104px;height:104px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px #070b18,0 0 0 6px #e9c46a}
-.medal span{font-family:Georgia,serif;font-weight:700;font-size:44px;color:#14213d}
+.medal{width:104px;height:104px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px #0a0a0a,0 0 0 6px #e9c46a}
+.medal span{font-family:Georgia,serif;font-weight:700;font-size:44px;color:#0a0a0a}
 .stage{position:absolute;left:0;right:0;top:480px;height:480px;perspective:800px}
-.board{position:absolute;left:90px;width:900px;top:200px;height:400px;transform:rotateX(64deg);transform-origin:50% 0;background:conic-gradient(#e9c46a 25%,#10172f 0 50%,#e9c46a 0 75%,#10172f 0) 0 0/130px 130px;-webkit-mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);opacity:.9}
+.board{position:absolute;left:90px;width:900px;top:200px;height:400px;transform:rotateX(64deg);transform-origin:50% 0;background:conic-gradient(#e9c46a 25%,#0f0f0f 0 50%,#e9c46a 0 75%,#0f0f0f 0) 0 0/130px 130px;-webkit-mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);mask-image:linear-gradient(#000 0%,#0007 50%,transparent 88%);opacity:.9}
 .king{position:absolute;left:340px;top:-10px;width:400px;height:400px;filter:drop-shadow(0 18px 24px #000a)}
 .when{position:absolute;top:915px;left:0;right:0;text-align:center}
 .when .big{font-family:Georgia,serif;font-weight:700;font-size:84px;line-height:1}
