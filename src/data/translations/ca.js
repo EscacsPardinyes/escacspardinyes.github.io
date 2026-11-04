@@ -453,7 +453,6 @@ export default {
     "patrocini.header": "Dossier de patrocini",
     "patrocini.description": "Dossier de patrocini del 35è aniversari del Club Escacs Pardinyes: com pots col·laborar-hi i què oferim a les empreses patrocinadores.",
     "patrocini.intro": "Descarrega o consulta el dossier de patrocini del 35è aniversari del Club Escacs Pardinyes.",
-    "patrocini.lang_note": "El dossier és en català.",
     "privacy.title": "Política de Privacitat",
     "privacy.intro": "Aquesta política de privacitat descriu com recollim, utilitzem i protegim les dades personals dels usuaris del Club Escacs Pardinyes. Ens comprometem a garantir la seguretat de les teves dades i a complir amb la normativa de protecció de dades.",
     "privacy.identity_title": "Identitat del Responsable",
