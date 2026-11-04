@@ -68,6 +68,7 @@ const options = [
         price: 'Projecte a mida',
         items: [
             ['Descripció', 'Presència absoluta. El circuit portarà el teu nom («Circuit Marca X»).'],
+            ['Accés', 'Els 5 tornejos del circuit (Nadal, Tancats, Premi Actiu, Open i Festa Major de Pardinyes), amb el teu nom a tots els cartells, a la web i a les retransmissions.'],
             ['Visibilitat', 'Logo mida XL al centre del photocall principal i 4 roll-ups corporatius exclusius a la sala de joc.'],
             ['Activació', 'Dret a realitzar la «Jugada d\'Honor» (inauguració del torneig) amb fotografia per a la premsa a les 5 competicions.'],
             ['Digital', 'Logo fix a totes les retransmissions en directe i presència a l\'equipació del primer equip.'],
@@ -78,6 +79,7 @@ const options = [
         price: 'Des de 1.500 €',
         items: [
             ['Descripció', 'L\'esdeveniment massiu. Patrocini exclusiu del torneig estrella de 9 dies.'],
+            ['Accés', 'L\'Open Internacional «Ciutat de Lleida» (juliol) complet: l\'Open i els Tancats de GM i MI que se celebren dins del mateix festival. Cartell, web, sala de joc i entrega de premis de tots dos.'],
             ['Visibilitat', 'Logo mida L al photocall i 2 roll-ups corporatius a la sala de joc.'],
             ['Activació', 'Possibilitat de col·locar un petit estand o repartir material/marxandatge promocional directe als més de 150 jugadors participants.'],
             ['Protocol', 'Lliurament del Trofeu de Campió per part d\'un directiu de la teva empresa amb foto oficial.'],
@@ -88,6 +90,7 @@ const options = [
         price: 'Des de 500 €',
         items: [
             ['Descripció', 'L\'esdeveniment de proximitat. Presència a la gran festa del barri.'],
+            ['Accés', 'Només el Premi Actiu FM Lleida (maig): cartell, web, sala de joc i entrega de premis d\'aquest torneig.'],
             ['Visibilitat', 'Logo mida M al photocall i 1 roll-up a la sala.'],
             ['Activació', 'Mencions constants per megafonia durant tot el dia com a patrocinador principal de la jornada.'],
             ['Protocol', 'Protagonisme visual durant el lliurament de premis al carrer durant la Festa Major.'],
@@ -98,6 +101,7 @@ const options = [
         price: 'Des de 750 €',
         items: [
             ['Descripció', 'L\'aparador internacional. Focalitzat en el retorn digital i l\'elit mundial.'],
+            ['Accés', 'Només els II Tancats de Setmana Santa (març): cartell, web, retransmissió en directe i notes de premsa d\'aquest torneig.'],
             ['Visibilitat digital', 'El teu logotip integrat permanentment de forma gràfica a la pantalla de les retransmissions en directe / Twitch (impactant els milers d\'espectadors concurrents).'],
             ['Relacions públiques', 'Menció destacada als titulars i als cossos de les notes de premsa enviades als mitjans de comunicació globals.'],
         ],
@@ -107,6 +111,7 @@ const options = [
         price: 'Des de 300 €',
         items: [
             ['Descripció', 'Suport a l\'esport base. Aportació per finançar els premis aficionats.'],
+            ['Accés', 'Logo al photocall general de col·laboradors i a la llista de col·laboradors de la web. Sense naming ni cartell propi de cap torneig.'],
             ['Visibilitat', 'Logo mida S al photocall general de col·laboradors.'],
             ['Xarxes socials', 'Agraïment públic en publicacions dedicades a les xarxes socials del club i menció durant l\'entrega de guardons finals.'],
         ],
@@ -116,7 +121,17 @@ const options = [
         price: 'Des de 150 €',
         items: [
             ['Descripció', 'La manera més senzilla d\'afegir-se al circuit. Ideal per a comerços i professionals de proximitat.'],
+            ['Accés', 'Només xarxes socials i la llista d\'amics del club de la web. No apareix als cartells ni a la sala de cap torneig.'],
             ['Xarxes socials', 'Publicació pròpia a les xarxes socials del club donant les gràcies al teu negoci.'],
+        ],
+    },
+    {
+        title: 'Opció 7: Proposa\'ns la teva',
+        price: 'A convenir',
+        items: [
+            ['Descripció', 'Tens una idea que no encaixa a cap dels paquets? Digue\'ns què busques i ho dissenyem plegats.'],
+            ['Accés', 'El que acordem: un o diversos tornejos, un premi o una categoria concreta, una activitat (simultànies, classe magistral, escola d\'escacs), material en espècie, etc.'],
+            ['Com funciona', 'Ens expliques què vols i quin pressupost tens; et responem amb una proposta concreta i què inclou abans de comprometre\'t a res.'],
         ],
     },
 ];
@@ -227,8 +242,6 @@ function PatrociniContent() {
 
                 <h3 className="h4 mt-5 text-center">Escriu-nos i et respondrem aviat</h3>
                 <PatrociniForm />
-
-                <p className="small text-muted mt-3">{t('patrocini.lang_note')}</p>
             </div>
         </>
     );

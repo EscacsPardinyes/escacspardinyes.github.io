@@ -447,7 +447,6 @@ export default {
     "patrocini.header": "Sponsorship dossier",
     "patrocini.description": "Sponsorship dossier for the 35th anniversary of Club Escacs Pardinyes: how you can support us and what we offer our sponsors.",
     "patrocini.intro": "Download or read the sponsorship dossier for the 35th anniversary of Club Escacs Pardinyes.",
-    "patrocini.lang_note": "The dossier is in Catalan.",
     "privacy.title": "Privacy Policy",
     "privacy.intro": "This privacy policy describes how we collect, use, and protect the personal data of Club Escacs Pardinyes users. We are committed to ensuring the security of your data and complying with data protection regulations.",
     "privacy.identity_title": "Identity of the Responsible Party",
