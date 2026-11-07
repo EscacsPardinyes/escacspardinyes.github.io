@@ -14,7 +14,7 @@ export default function TorneigAlcarras2() {
         "@type": "Event",
         "name": t('alcarras2.title'),
         "description": t('alcarras2.intro_text')?.replace(/<[^>]*>/g, ''),
-        "startDate": "2026-12-08T10:00:00+01:00",
+        "startDate": "2026-12-08T09:30:00+01:00",
         "endDate": "2026-12-08T20:00:00+01:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
