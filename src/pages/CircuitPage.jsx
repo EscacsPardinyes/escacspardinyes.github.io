@@ -21,7 +21,7 @@ export default function CircuitPage({ id }) {
     const translated = config !== base;
     const u = translated ? ui : circuitUi.ca;
 
-    const { poster, posterPieces, title, month, tagline, description, paragraphs, facts, dates, place, previous, prizes = [], prizeTotal, prizeNote, prizeGroups, time, formType, related, federatedOnly, organizer, collaborators = [], birthFrom, birthTo } = config;
+    const { poster, posterPieces, title, month, tagline, description, paragraphs, facts, dates, place, previous, prizes = [], prizeTotal, prizeNote, prizeGroups, time, formType, related, federatedOnly, roundTimes, organizer, collaborators = [], birthFrom, birthTo } = config;
     const breadcrumbs = [{ label: t('tornejos.breadcrumb'), path: '/tornejos' }, { label: title }];
     const rules = facts.filter(([label]) => RULE_LABELS.includes(label));
 
@@ -64,7 +64,7 @@ export default function CircuitPage({ id }) {
                         <h4 className="mt-4 mb-2"><i className="fa fa-map-marker-alt text-primary mr-2"></i>{u.info}</h4>
                         <ul className="list-unstyled ml-4">
                             <li><i className="fa fa-calendar-alt text-primary mr-2"></i><strong>{u.date}:</strong> {dates || u.toConfirm(month)}</li>
-                            {time && <li><i className="fa fa-clock text-primary mr-2"></i><strong>{federatedOnly ? u.roundStart : u.startTime}:</strong> {time}</li>}
+                            {time && <li><i className="fa fa-clock text-primary mr-2"></i><strong>{roundTimes ? u.roundStart : u.startTime}:</strong> {time}</li>}
                             <li><i className="fa fa-map-pin text-primary mr-2"></i><strong>{u.place}:</strong> {place || u.placeTbc}</li>
                         </ul>
 

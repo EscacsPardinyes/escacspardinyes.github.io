@@ -2,47 +2,50 @@
 <html lang="ca"><head><meta charset="utf-8">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1350px;overflow:hidden;background:#14213d}
-body{position:relative;font-family:'Century Gothic','Futura','Segoe UI',Arial,sans-serif;color:#f3e9cf}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#0a0a0a}
+body{position:relative;font-family:'Century Gothic','Futura','Segoe UI',Arial,sans-serif;color:#f5ecd2}
 svg.art{position:absolute;left:0;top:0}
-img.club{position:absolute;top:44px;left:44px;width:112px;height:112px;object-fit:contain;background:#fff;border:4px solid #14213d}
+img.club{position:absolute;top:44px;left:44px;width:112px;height:112px;object-fit:contain;background:#fff;border:4px solid #0a0a0a}
 .info{position:absolute;left:0;right:0;top:664px;bottom:0;padding:26px 64px 0}
-.kicker{font-size:22px;letter-spacing:.36em;text-transform:uppercase;color:#ffc107;font-weight:700}
+.kicker{font-size:22px;letter-spacing:.36em;text-transform:uppercase;color:#e9c46a;font-weight:700}
 h1{font-family:Georgia,'Times New Roman',serif;line-height:1;margin-top:10px}
-h1 .a{display:block;font-size:78px;color:#f3e9cf}
-h1 .b{display:block;font-size:100px;color:#ffc107}
+h1 .a{display:block;font-size:78px;color:#f5ecd2}
+h1 .b{display:inline-block;font-size:100px;background:linear-gradient(100deg,#8a6420 0%,#e9c46a 22%,#fff3c4 40%,#e9c46a 58%,#9c7220 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:6px}
+.frame{position:absolute;inset:24px;border:2px solid #d8b25a;pointer-events:none}
 .when{margin-top:12px;font-size:27px;letter-spacing:.04em}
-.when b{color:#ffc107}
-.prize{margin-top:26px;border-top:3px solid #e63946;padding-top:12px;display:flex;align-items:center;gap:26px}
-.prize .num{font-family:Georgia,serif;font-size:92px;font-weight:700;color:#ffc107;line-height:1;white-space:nowrap}
+.when b{color:#e9c46a}
+.prize{margin-top:26px;border-top:3px solid #b8892c;padding-top:12px;display:flex;align-items:center;gap:26px}
+.prize .num{font-family:Georgia,serif;font-size:92px;font-weight:700;color:#e9c46a;line-height:1;white-space:nowrap}
 .prize .rest{font-size:23px;line-height:1.35}
-.prize .rest b{color:#ffc107}
+.prize .rest b{color:#e9c46a}
 .prize .rest small{display:block;font-size:20px;letter-spacing:.2em;text-transform:uppercase;color:#cfc6aa;margin-top:4px}
-.row{margin-top:22px;display:flex;border-top:1px solid #f3e9cf44;padding-top:16px}
-.row div{flex:1;border-left:1px solid #f3e9cf44;padding-left:20px}
+.row{margin-top:22px;display:flex;border-top:1px solid #f5ecd244;padding-top:16px}
+.row div{flex:1;border-left:1px solid #f5ecd244;padding-left:20px}
 .row div:first-child{border-left:0;padding-left:0}
-.row b{display:block;font-size:34px;color:#ffc107}
+.row b{display:block;font-size:34px;color:#e9c46a}
 .row span{font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:#d9cfae}
-.strip{position:absolute;left:64px;right:64px;bottom:34px;height:74px;display:flex;align-items:center;gap:14px;border-top:1px solid #f3e9cf55;padding-top:6px}
-.strip img{height:54px;width:auto;object-fit:contain;background:#f3e9cf;border-radius:8px;padding:5px 8px}
+.strip{position:absolute;left:64px;right:64px;bottom:34px;height:74px;display:flex;align-items:center;gap:14px;border-top:1px solid #f5ecd255;padding-top:6px}
+.strip img{height:54px;width:auto;object-fit:contain;background:#f5ecd2;border-radius:8px;padding:5px 8px}
 .strip img:first-of-type{padding:0}
 .strip .lab{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#cfc6aa;line-height:1.35;margin-right:6px;white-space:nowrap}
-.strip .web{margin-left:auto;font-size:21px;letter-spacing:.2em;text-transform:uppercase;color:#ffc107;font-weight:700}
+.strip .web{margin-left:auto;font-size:21px;letter-spacing:.2em;text-transform:uppercase;color:#e9c46a;font-weight:700}
 .where{margin-top:4px;font-size:25px;letter-spacing:.12em;text-transform:uppercase;color:#d9cfae}
 .fee{position:absolute;left:64px;right:64px;bottom:116px;font-size:16px;letter-spacing:.03em;color:#cfc6aa}
 </style></head><body>
 <svg class="art" width="1080" height="660" viewBox="0 0 1080 660" xmlns="http://www.w3.org/2000/svg">
- <rect width="1080" height="660" fill="#f3e9cf"/>
- <image href="seu.png" x="0" y="0" width="1080" height="640"/>
- <rect y="640" width="1080" height="20" fill="#14213d"/>
+ <rect width="1080" height="660" fill="#f5ecd2"/>
+ <defs><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="table" tableValues="0.04 0.5 0.95 1"/><feFuncG type="table" tableValues="0.04 0.36 0.81 0.97"/><feFuncB type="table" tableValues="0.04 0.1 0.42 0.8"/></feComponentTransfer></filter></defs>
+ <image filter="url(#duo)" href="seu.png" x="0" y="0" width="1080" height="640"/>
+ <rect y="640" width="1080" height="20" fill="#0a0a0a"/>
  <g id="clock" transform="translate(880 205) scale(.62) translate(-640 -290)"></g>
  <g id="chk"></g>
 </svg>
+<div class="frame"></div>
 <img class="club" src="logo.webp" alt="">
 <div class="info">
  <div class="kicker">35è aniversari · Club Escacs Pardinyes</div>
  <h1><span class="a">Premi Actiu</span><span class="b">FM Lleida</span></h1>
- <div class="when"><b>Dissabte 8 de maig de 2027</b> · 9:30</div>
+ <div class="when"><b>Diumenge 9 de maig de 2027</b> · 9:30</div>
  <div class="prize">
   <div class="num">2.000 €</div>
   <div class="rest"><b>Campió</b> 600 € · <b>Sots campió</b> 375 € · <b>3r</b> 250 €<small>18 premis en metàl·lic + trofeus</small></div>
@@ -59,22 +62,22 @@ h1 .b{display:block;font-size:100px;color:#ffc107}
 <script>
 const NS='http://www.w3.org/2000/svg',mk=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
 const c=document.getElementById('clock'),cx=640,cy=290,R=185;
-mk('circle',{cx:cx+10,cy:cy+12,r:R+22,fill:'#14213d',opacity:.35},c);
-mk('circle',{cx,cy,r:R+22,fill:'#14213d'},c);
-mk('circle',{cx,cy,r:R,fill:'#f3e9cf'},c);
-mk('rect',{x:cx-26,y:cy-R-62,width:52,height:42,rx:8,fill:'#14213d'},c);
-for(let i=0;i<60;i++){const a=i*6*Math.PI/180,l=i%5?12:30,w=i%5?3:7;mk('line',{x1:cx+(R-14)*Math.sin(a),y1:cy-(R-14)*Math.cos(a),x2:cx+(R-14-l)*Math.sin(a),y2:cy-(R-14-l)*Math.cos(a),stroke:'#14213d','stroke-width':w,'stroke-linecap':'round'},c);}
+mk('circle',{cx:cx+10,cy:cy+12,r:R+22,fill:'#0a0a0a',opacity:.35},c);
+mk('circle',{cx,cy,r:R+22,fill:'#0a0a0a'},c);
+mk('circle',{cx,cy,r:R,fill:'#f5ecd2'},c);
+mk('rect',{x:cx-26,y:cy-R-62,width:52,height:42,rx:8,fill:'#0a0a0a'},c);
+for(let i=0;i<60;i++){const a=i*6*Math.PI/180,l=i%5?12:30,w=i%5?3:7;mk('line',{x1:cx+(R-14)*Math.sin(a),y1:cy-(R-14)*Math.cos(a),x2:cx+(R-14-l)*Math.sin(a),y2:cy-(R-14-l)*Math.cos(a),stroke:'#0a0a0a','stroke-width':w,'stroke-linecap':'round'},c);}
 // danger arc: last 5 minutes in red
 const arc=(r,a0,a1,col,w)=>{const p=a=>[cx+r*Math.sin(a*Math.PI/180),cy-r*Math.cos(a*Math.PI/180)];const [x0,y0]=p(a0),[x1,y1]=p(a1);mk('path',{d:`M${x0} ${y0}A${r} ${r} 0 0 1 ${x1} ${y1}`,fill:'none',stroke:col,'stroke-width':w,'stroke-linecap':'butt'},c)};
-arc(R-56,0,90,'#ffc107',12);arc(R-56,90,120,'#e63946',12);
+arc(R-56,0,90,'#e9c46a',12);arc(R-56,90,120,'#b8892c',12);
 // hands
-mk('line',{x1:cx,y1:cy,x2:cx+95*Math.sin(Math.PI*1.67),y2:cy-95*Math.cos(Math.PI*1.67),stroke:'#14213d','stroke-width':14,'stroke-linecap':'round'},c);
-mk('line',{x1:cx,y1:cy,x2:cx+135*Math.sin(Math.PI*.33),y2:cy-135*Math.cos(Math.PI*.33),stroke:'#e63946','stroke-width':8,'stroke-linecap':'round'},c);
-mk('circle',{cx,cy,r:16,fill:'#14213d'},c);
-const t=mk('text',{x:cx,y:cy+100,'text-anchor':'middle','font-family':'Georgia,serif','font-size':54,'font-weight':700,fill:'#14213d'},c);t.textContent='15+5';
+mk('line',{x1:cx,y1:cy,x2:cx+95*Math.sin(Math.PI*1.67),y2:cy-95*Math.cos(Math.PI*1.67),stroke:'#0a0a0a','stroke-width':14,'stroke-linecap':'round'},c);
+mk('line',{x1:cx,y1:cy,x2:cx+135*Math.sin(Math.PI*.33),y2:cy-135*Math.cos(Math.PI*.33),stroke:'#b8892c','stroke-width':8,'stroke-linecap':'round'},c);
+mk('circle',{cx,cy,r:16,fill:'#0a0a0a'},c);
+const t=mk('text',{x:cx,y:cy+100,'text-anchor':'middle','font-family':'Georgia,serif','font-size':54,'font-weight':700,fill:'#0a0a0a'},c);t.textContent='15+5';
 // checker strip
 const k=document.getElementById('chk');
-for(let r=0;r<2;r++)for(let i=0;i<27;i++)mk('rect',{x:i*40,y:580+r*40,width:40,height:40,fill:(i+r)%2?'#f3e9cf':'#14213d'},k);
+for(let r=0;r<2;r++)for(let i=0;i<27;i++)mk('rect',{x:i*40,y:580+r*40,width:40,height:40,fill:(i+r)%2?'#e9c46a':'#0a0a0a'},k);
 window.render=()=>{};
 document.fonts.ready.then(()=>Promise.all([...document.images].map(im=>im.complete?1:new Promise(x=>im.onload=x)))).then(()=>{window.READY=true});
 </script></body></html>

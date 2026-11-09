@@ -84,9 +84,10 @@ export const circuitConfig = {
                 rows: [['Millor veterà', 'Trofeu'], ['Millor jugadora', 'Trofeu'], ['Millor sub-16', 'Trofeu'], ['Millor sub-14', 'Trofeu'], ['Millor sub-12', 'Trofeu'], ['Millor sub-10', 'Trofeu'], ['Millor sub-8', 'Trofeu']],
             },
         ],
-        dates: 'Dissabte 8 de maig de 2027',
+        dates: 'Diumenge 9 de maig de 2027',
         time: '9:30',
         place: '',
+        federatedOnly: true,
         previous: null,
     },
     'open-internacional-ciutat-de-lleida': {
@@ -156,6 +157,7 @@ export const circuitConfig = {
             },
         ],
         federatedOnly: true,
+        roundTimes: true,
         related: { text: 'Ets GM, MI o FM i vols jugar el Tancat?', label: 'Inscripció al Tancat', path: '/tancat-open-ciutat-de-lleida' },
         dates: 'Del 3 a l\'11 de juliol de 2027',
         place: '',
@@ -229,6 +231,7 @@ export const circuitConfig = {
         ],
         dates: '1 d\'agost de 2027',
         place: 'Club d\'Escacs Pardinyes (C/ Sant Pere Claver, 1), Lleida',
+        federatedOnly: true,
         previous: { label: 'Veure el torneig i l\'historial', path: '/torneig-festa-major' },
     },
 };

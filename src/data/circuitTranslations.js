@@ -26,7 +26,7 @@ export const circuitTranslations = {
                 ["Inscripció convidats", "Gratuita para los invitados por la organización"],
                 ["Inscripció reduïda", "15 € para jugadores sub-16, personas con discapacidad y jugadores del club"],
             ],
-            dates: "Sábado 8 de mayo de 2027",
+            dates: "Domingo 9 de mayo de 2027",
             prizeNote: NOTE_FALLBACK.es,
         },
         en: {
@@ -47,7 +47,7 @@ export const circuitTranslations = {
                 ["Inscripció convidats", "Free for players invited by the organisers"],
                 ["Inscripció reduïda", "€15 for under-16 players, players with a disability and club players"],
             ],
-            dates: "Saturday 8 May 2027",
+            dates: "Sunday 9 May 2027",
             prizeNote: NOTE_FALLBACK.en,
         },
     },
@@ -157,7 +157,7 @@ const FR = {
             ["Inscripció convidats", "Gratuite pour les invités de l'organisation"],
             ["Inscripció reduïda", "15 € pour les joueurs de moins de 16 ans, les personnes en situation de handicap et les joueurs du club"],
         ],
-        dates: "Samedi 8 mai 2027",
+        dates: "Dimanche 9 mai 2027",
         prizeNote: NOTE_FR,
     },
     "open-internacional-ciutat-de-lleida": {
