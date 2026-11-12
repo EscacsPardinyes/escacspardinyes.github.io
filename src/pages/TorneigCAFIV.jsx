@@ -6,7 +6,8 @@ import CafivForm from '../components/CafivForm';
 
 const organizers = [
     { src: '/img/galeria/logos/logo.webp', key: 'cafiv.organizer_pardinyes', alt: 'Club Escacs Pardinyes', col: 'col-sm-5' },
-    { src: '/img/galeria/TorneigCAFIV/logo-catedra-udl.webp', key: 'cafiv.organizer_udl', alt: "Universitat de Lleida - Càtedra Escacs, Educació i Desenvolupament Cognitiu", col: 'col-sm-7' }
+    { src: '/img/galeria/TorneigCAFIV/logo-catedra-udl.webp', key: 'cafiv.organizer_udl', alt: "Universitat de Lleida - Càtedra Escacs, Educació i Desenvolupament Cognitiu", col: 'col-sm-7' },
+    { key: 'cafiv.organizer_cafiv', col: 'col-12' }
 ];
 
 const collaborators = [
@@ -26,7 +27,7 @@ export default function TorneigCAFIV() {
         "@type": "Event",
         "name": t('cafiv.title'),
         "description": t('cafiv.intro_text')?.replace(/<[^>]*>/g, ''),
-        "startDate": "2026-11-25",
+        "startDate": "2026-11-25T11:00:00+01:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
@@ -47,6 +48,10 @@ export default function TorneigCAFIV() {
             {
                 "@type": "Organization",
                 "name": "Càtedra d'Escacs, Educació i Desenvolupament Cognitiu - Universitat de Lleida"
+            },
+            {
+                "@type": "Organization",
+                "name": "Biblioteca del CAFIV"
             }
         ]
     };
@@ -81,7 +86,6 @@ export default function TorneigCAFIV() {
                             <li dangerouslySetInnerHTML={tHtml('cafiv.format')}></li>
                             <li dangerouslySetInnerHTML={tHtml('cafiv.rhythm')}></li>
                             <li dangerouslySetInnerHTML={tHtml('cafiv.tiebreak')}></li>
-                            <li dangerouslySetInnerHTML={tHtml('cafiv.priority')}></li>
                         </ul>
 
                         <h4 className="mt-4 mb-2"><i className="fa fa-trophy text-warning mr-2"></i>{t('cafiv.prizes_title')}</h4>
@@ -94,16 +98,18 @@ export default function TorneigCAFIV() {
                         <h4 className="mt-4 mb-3"><i className="fa fa-handshake text-success mr-2"></i>{t('cafiv.organizers_title')}</h4>
                         <div className="row">
                             {organizers.map((item) => (
-                                <div className={item.col + ' mb-3'} key={item.src}>
+                                <div className={item.col + ' mb-3'} key={item.key}>
                                     <div className="h-100 bg-white rounded shadow-sm p-3 text-center d-flex flex-column justify-content-between">
-                                        <div className="d-flex align-items-center justify-content-center mb-2" style={{ height: '90px' }}>
-                                            <img
-                                                src={item.src}
-                                                alt={item.alt}
-                                                style={{ maxHeight: '90px', maxWidth: '100%', width: 'auto' }}
-                                                onError={(e) => { e.target.style.display = 'none'; }}
-                                            />
-                                        </div>
+                                        {item.src && (
+                                            <div className="d-flex align-items-center justify-content-center mb-2" style={{ height: '90px' }}>
+                                                <img
+                                                    src={item.src}
+                                                    alt={item.alt}
+                                                    style={{ maxHeight: '90px', maxWidth: '100%', width: 'auto' }}
+                                                    onError={(e) => { e.target.style.display = 'none'; }}
+                                                />
+                                            </div>
+                                        )}
                                         <div dangerouslySetInnerHTML={tHtml(item.key)}></div>
                                     </div>
                                 </div>

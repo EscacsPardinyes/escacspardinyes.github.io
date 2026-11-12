@@ -76,7 +76,7 @@ export default function CafivForm() {
                     />
                 </div>
 
-                {[['udl_student', 'udl'], ['federated', 'federated']].map(([name, key]) => (
+                {[['federated', 'federated']].map(([name, key]) => (
                     <div className="form-group mb-4" key={name}>
                         <label className="font-weight-bold mb-3">{t(`cafiv.form.${key}`)} *</label>
                         <div className="d-flex">
