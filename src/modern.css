@@ -833,6 +833,55 @@ hr.container { box-sizing: border-box; padding: 0; }
     #blog-carousel, .carousel-inner, .carousel-item { height: 88vh; min-height: 560px; }
 }
 
+/* ---------- Home: free trial class form on the first screen ---------- */
+.trial-wrap { position: relative; z-index: 5; margin-top: -185px; }
+.trial-wrap + .hero-stats-wrap { margin-top: 32px; }
+@media (min-width: 768px) {
+    /* Lift the hero text so the form overlapping the bottom of the hero never covers it */
+    .carousel-caption { padding-bottom: 210px; }
+    #blog-carousel .hero-dots { bottom: 205px; }
+}
+.trial-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--brand);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 20px 24px;
+    scroll-margin-top: 96px;
+}
+.trial-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-bottom: 12px; }
+.trial-title { font-size: 1.3rem; font-weight: 800; margin: 0; color: var(--ink); }
+.trial-sub { margin: 0; color: var(--ink-mute); font-size: 0.95rem; }
+.trial-form { display: grid; grid-template-columns: 1.2fr 1.2fr 1.1fr auto; gap: 8px 12px; align-items: end; }
+.trial-field label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.trial-field .form-control { height: 48px; }
+.trial-submit { height: 48px; padding: 0 28px; font-weight: 700; white-space: nowrap; }
+.trial-privacy { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--ink-mute); }
+.trial-privacy input { width: 18px; height: 18px; flex: none; margin: 0; }
+.trial-privacy label { margin: 0; }
+.trial-error { grid-column: 1 / -1; margin: 0; color: #b02a37; font-weight: 600; font-size: 0.9rem; }
+.trial-success { margin: 0; font-weight: 700; color: var(--ink); }
+.trial-success i { color: #198754; }
+@media (max-width: 991.98px) {
+    .trial-form { grid-template-columns: 1fr 1fr; }
+    .trial-submit { grid-column: 1 / -1; }
+}
+@media (max-width: 767.98px) {
+    #blog-carousel, .carousel-inner, .carousel-item { height: 52vh; min-height: 400px; }
+    .carousel-caption { padding: 76px 6% 64px; }
+    .carousel-caption .display-2 { font-size: 2.1rem; }
+    /* The form sits right under the hero, so its buttons would only repeat it */
+    .carousel-item:first-child .hero-actions { display: none; }
+    #blog-carousel .hero-dots { bottom: 44px; }
+    .trial-wrap { margin-top: -28px; }
+    .trial-card { padding: 16px; }
+    .trial-title { font-size: 1.15rem; }
+    .trial-sub { font-size: 0.88rem; }
+    .trial-form { grid-template-columns: 1fr; gap: 8px; }
+    .trial-field .form-control, .trial-submit { height: 46px; }
+}
+
 /* ---------- Section headings, panels and lists (/school, /federat) ---------- */
 .container h3.text-primary.text-uppercase,
 .panel-card h3.text-primary {
@@ -979,3 +1028,58 @@ hr.container { box-sizing: border-box; padding: 0; }
 }
 .nav-pills .nav-link.active::before { background: var(--pill-text); }
 [data-theme="dark"] .nav-pills .nav-link:hover:not(.active) { background: color-mix(in srgb, var(--pill-color) 22%, var(--surface-alt)); }
+
+/* ---------- Circuit 2027: public page, home slide, sign-ups closed notice ---------- */
+.circuit-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.circuit-item { display: flex; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--brand); border-radius: var(--radius-lg); padding: 16px; box-shadow: var(--shadow-sm, 0 2px 10px rgba(0, 0, 0, .06)); }
+.circuit-poster { flex: none; width: 110px; }
+.circuit-poster img { display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, .18); }
+.circuit-body { display: flex; flex-direction: column; min-width: 0; }
+.circuit-body .patro-badge { align-self: flex-start; }
+.circuit-title { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; line-height: 1.25; }
+.circuit-title a { color: var(--ink); }
+.circuit-tagline { font-size: 0.92rem; color: var(--ink-mute); margin-bottom: 8px; }
+.circuit-facts { font-size: 0.88rem; margin-bottom: 12px; }
+.circuit-facts li { margin-bottom: 2px; }
+.circuit-facts i { color: var(--brand-text, var(--brand-deep)); width: 14px; }
+[data-theme="dark"] .circuit-facts i { color: var(--brand); }
+@media (max-width: 400px) { .circuit-list { grid-template-columns: 1fr; } .circuit-poster { width: 88px; } }
+
+.signup-soon { background: var(--brand-soft); border: 1px solid var(--brand); border-radius: var(--radius-lg); padding: 18px 20px; color: var(--ink); }
+.signup-soon-title { font-weight: 800; font-size: 1.1rem; margin-bottom: 4px; }
+
+.circuit-banner { display: block; text-align: center; font-weight: 700; padding: 14px 18px; border-radius: var(--radius-lg); background: var(--brand-soft); border: 1px solid var(--brand); color: var(--ink) !important; text-decoration: none !important; }
+.circuit-banner:hover { background: var(--brand); color: #111 !important; }
+
+.circuit-posters { gap: 10px; margin-top: 20px; justify-content: center; }
+.circuit-posters img { width: 74px; height: auto; border-radius: 6px; border: 2px solid var(--brand); box-shadow: 0 8px 18px rgba(0, 0, 0, .5); }
+@media (min-width: 768px) { .circuit-list-2 { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin-left: auto; margin-right: auto; } }
+.circuit-slide-bg {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background:
+        radial-gradient(ellipse 60% 55% at 50% 30%, #3a3220 0%, #17140c 55%, #0a0a0a 100%);
+}
+.carousel-circuit .carousel-caption { background: none; }
+.carousel-circuit .carousel-caption::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border: 1px solid rgba(216, 178, 90, 0.55);
+    pointer-events: none;
+}
+.carousel-circuit h2 {
+    background: linear-gradient(100deg, #b8862c 0%, #e9c46a 25%, #fff3c4 45%, #e9c46a 62%, #b8862c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+.carousel-circuit .circuit-posters img { width: 104px; border-color: #d8b25a; filter: none; }
+@media (max-width: 767.98px) {
+    .circuit-slide-bg { height: 100%; aspect-ratio: auto; }
+    .carousel-circuit .carousel-caption::before { inset: 10px; }
+}
+.trial-head .trial-more { margin-left: auto; white-space: nowrap; }
+@media (max-width: 767.98px) {
+    .trial-head .trial-more { margin-left: 0; margin-top: 4px; }
+}

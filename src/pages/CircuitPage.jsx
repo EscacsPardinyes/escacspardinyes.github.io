@@ -3,7 +3,8 @@ import SEO from '../components/SEO';
 import CircuitSignupForm from '../components/CircuitSignupForm';
 import { Link, Navigate } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
-import { circuitConfig } from '../data/circuitConfig';
+import { circuitConfig, CIRCUIT_SIGNUP_OPEN } from '../data/circuitConfig';
+import SignupSoon from '../components/SignupSoon';
 import { circuitUi } from '../data/circuitStrings';
 import { localizeConfig } from '../data/circuitTranslations';
 
@@ -47,7 +48,7 @@ export default function CircuitPage({ id }) {
             <div className="container pb-5">
                 <h2 className="text-center font-weight-bold mb-5">{title}</h2>
                 <div className="row">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="col-lg-6 order-2 order-lg-1">
                         <h3 className="mb-3">{tagline}</h3>
                         {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
 
@@ -125,13 +126,24 @@ export default function CircuitPage({ id }) {
                         {previous && <p className="mt-4"><Link to={previous.path}>{previous.label}</Link></p>}
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0" id="inscripcio">
                         <h3 className="font-weight-bold mb-3">
-                            <i className="fa fa-clipboard-list text-primary mr-2"></i>
+                            <i className="fa fa-clipboard-list text-primary mr-2" aria-hidden="true"></i>
                             {u.signup}
                         </h3>
-                        <p className="mb-4">{u.signupText}</p>
-                        <CircuitSignupForm tournament={title} birthFrom={birthFrom} birthTo={birthTo} federatedOnly={federatedOnly} formType={formType} lang={translated ? language : 'ca'} />
+                        <ul className="list-unstyled d-lg-none mb-3">
+                            <li><strong>{u.date}:</strong> {dates || u.toConfirm(month)}</li>
+                            {time && <li><strong>{roundTimes ? u.roundStart : u.startTime}:</strong> {time}</li>}
+                            <li><strong>{u.place}:</strong> {place || u.placeTbc}</li>
+                        </ul>
+                        {CIRCUIT_SIGNUP_OPEN ? (
+                            <>
+                                <p className="mb-4">{u.signupText}</p>
+                                <CircuitSignupForm tournament={title} birthFrom={birthFrom} birthTo={birthTo} federatedOnly={federatedOnly} formType={formType} lang={translated ? language : 'ca'} />
+                            </>
+                        ) : (
+                            <SignupSoon />
+                        )}
                     </div>
                 </div>
             </div>

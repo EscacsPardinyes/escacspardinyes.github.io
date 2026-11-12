@@ -5,8 +5,10 @@ import { latestNews } from 'virtual:latest-news';
 import NewsCard from '../components/NewsCard';
 import SEO from '../components/SEO';
 import ScheduleTable from '../components/ScheduleTable';
+import TrialClassForm from '../components/TrialClassForm';
 
-const SLIDE_COUNT = 3;
+const SLIDE_COUNT = 4;
+const CIRCUIT_POSTERS = ['nadal', 'tancats', 'actiu', 'open', 'tancat-juliol', 'pardinyes'];
 
 export default function Home() {
     const { t } = useLanguage();
@@ -85,12 +87,25 @@ export default function Home() {
                                 <h1 className="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold">{t('carousel.slide1.title')}</h1>
                                 <p className="hero-sub mt-3 mb-0">{t('carousel.slide1.sub')}</p>
                                 <div className="hero-actions mt-4 mt-md-5">
-                                    <Link to="/contact" className="btn btn-lg btn-primary px-md-5">{t('carousel.slide1.btn')}</Link>
+                                    <a href="#prova-gratuita" className="btn btn-lg btn-primary px-md-5">{t('carousel.slide1.btn')}</a>
                                     <Link to="/school" className="btn btn-lg btn-outline-light px-md-5">{t('carousel.slide1.btn2')}</Link>
                                 </div>
                             </div>
                         </div>
-                        <div className={`carousel-item ${slide === 1 ? 'active' : ''}`}>
+                        <div className={`carousel-item carousel-circuit ${slide === 1 ? 'active' : ''}`}>
+                            {/* Black and gold background, the same look as the circuit images for social media */}
+                            <div className="circuit-slide-bg" aria-hidden="true"></div>
+                            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.circuit.kicker')}</p>
+                                <h2 className="display-2 m-0 mt-2 mt-md-3 text-white font-weight-bold">{t('carousel.circuit.title')}</h2>
+                                <p className="hero-sub mt-2 mb-0">{t('carousel.circuit.sub')}</p>
+                                <div className="circuit-posters d-none d-md-flex" aria-hidden="true">
+                                    {CIRCUIT_POSTERS.map(name => <img key={name} src={`/cartells/${name}-sm.webp`} alt="" width="560" height="700" loading="lazy" decoding="async" />)}
+                                </div>
+                                <Link to="/circuit-2027" className="btn btn-lg btn-primary mt-3 mt-md-4 px-md-5">{t('carousel.circuit.btn')}</Link>
+                            </div>
+                        </div>
+                        <div className={`carousel-item ${slide === 2 ? 'active' : ''}`}>
                             <img className="w-100" src="/img/galeria/Carousel/carousel-3.webp" alt="Competició d'escacs organitzada pel club" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
@@ -98,7 +113,7 @@ export default function Home() {
                                 <a href="https://www.chess.com/club/club-escacs-pardinyes" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">{t('carousel.slide3.btn')}</a>
                             </div>
                         </div>
-                        <div className={`carousel-item ${slide === 2 ? 'active' : ''}`}>
+                        <div className={`carousel-item ${slide === 3 ? 'active' : ''}`}>
                             <img className="w-100" src="/img/galeria/Minicopa2026/Fotogrup.webp" alt="Equip del Club d'Escacs Pardinyes a la Mini Copa 2026" loading="lazy" width="1920" height="1080" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <p className="text-primary m-0 font-weight-bold text-uppercase" style={{ letterSpacing: '3px', fontSize: '1rem' }}>{t('carousel.club')}</p>
@@ -128,6 +143,11 @@ export default function Home() {
                 </div>
             </div>
             {/* Carousel End */}
+
+            {/* Free trial class form: on the first screen, over the bottom of the hero */}
+            <div className="container trial-wrap">
+                <TrialClassForm />
+            </div>
 
             {/* Key facts */}
             <div className="container hero-stats-wrap">

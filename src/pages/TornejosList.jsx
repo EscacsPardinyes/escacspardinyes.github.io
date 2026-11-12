@@ -25,6 +25,10 @@ export default function TornejosList() {
                     <h2 className="font-weight-bold">{t('tornejos.title')}</h2>
                     <p className="lead">{t('tornejos.subtitle')}</p>
                 </div>
+                <Link to="/circuit-2027" className="circuit-banner mb-5">
+                    <i className="fa fa-trophy mr-2" aria-hidden="true"></i>{t('tornejos.circuit_banner')}
+                    <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+                </Link>
                 <div className="row">
                     {tournaments.map((item) => (
                         <div key={item.id} className="col-lg-4 mb-4">

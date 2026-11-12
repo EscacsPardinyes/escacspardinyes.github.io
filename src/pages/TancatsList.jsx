@@ -3,12 +3,20 @@ import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
+import SignupSoon from '../components/SignupSoon';
+import CircuitCard from '../components/CircuitCard';
+import { useCircuitTournament } from '../components/useCircuitTournament';
+import { CIRCUIT_SIGNUP_OPEN } from '../data/circuitConfig';
+
+// Els dos tancats de la temporada: Setmana Santa (març) i «Ciutat de Lleida» (juliol)
+const UPCOMING = ['tancats', 'tancat-open-ciutat-de-lleida'];
 
 const posterImg = '/img/galeria/Setmana Santa 2026/CERRADOS DE GM Y MI SEMANA SANTA 2026 DEL CLUB ESCACS DE PARDINYES.webp';
 
 export default function TancatsList() {
     const { t } = useLanguage();
-    
+    const getTournament = useCircuitTournament();
+
     const [formData, setFormData] = useState({
         title: '', name: '', fideId: '', flag: '', elo: '', phone: ''
     });
@@ -57,8 +65,17 @@ export default function TancatsList() {
                     <h2 className="font-weight-bold">{t('tancats.list_title')}</h2>
                     <p className="lead">{t('tancats.list_subtitle')}</p>
                 </div>
+
+                <h3 className="font-weight-bold text-center mb-4">{t('tancats.upcoming_title')}</h3>
+                <ol className="circuit-list circuit-list-2 mb-5">
+                    {UPCOMING.map((id) => <CircuitCard key={id} tournament={getTournament(id)} />)}
+                </ol>
+
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
+                        {!CIRCUIT_SIGNUP_OPEN ? (
+                            <SignupSoon />
+                        ) : (
                         <div className="bg-light p-5 rounded shadow">
                             <h3 className="text-center font-weight-bold mb-2">{t('gmmi.interest_form_title')}</h3>
                             <p className="text-center text-muted mb-4">{t('gmmi.interest_form_subtitle')}</p>
@@ -130,6 +147,7 @@ export default function TancatsList() {
                                 </form>
                             )}
                         </div>
+                        )}
                     </div>
                 </div>
             </div>
