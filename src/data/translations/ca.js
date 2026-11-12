@@ -388,7 +388,7 @@ export default {
     "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong>, la <strong class='text-dark'>Càtedra d'Escacs, Educació i Desenvolupament Cognitiu</strong> de la Universitat de Lleida i la <strong class='text-dark'>Biblioteca del CAFIV</strong> organitzen un torneig d'escacs per celebrar els <strong class='text-dark'>30 anys de la Biblioteca del CAFIV</strong>, amb la col·laboració de la Diputació de Lleida i l'Ajuntament de Lleida. Una jornada de partides ràpides, premis i sorteig per a tots els participants. Hi haurà esmorzar per als participants.",
     "cafiv.info_title": "Data, Hora i Lloc",
     "cafiv.date": "<strong class='text-dark'>Data:</strong> 25 de novembre",
-    "cafiv.time": "<strong class='text-dark'>Hora d'inici:</strong> 11:00 h",
+    "cafiv.time": "<strong class='text-dark'>Hora d'inici:</strong> 10:00 h",
     "cafiv.location": "<strong class='text-dark'>Lloc:</strong> Biblioteca del CAFIV",
     "cafiv.rules_title": "Format de Joc",
     "cafiv.format": "<strong class='text-dark'>Sistema:</strong> eliminatòries (eliminació directa).",
@@ -908,5 +908,8 @@ export default {
     "carousel.circuit.sub": "6 tornejos d'escacs a Lleida, de gener a agost",
     "carousel.circuit.btn": "Veure el circuit",
     "tornejos.circuit_banner": "Circuit 2027 del 35è aniversari: 6 tornejos de gener a agost",
-    "trial.more": "Més informació de les classes"
+    "trial.more": "Més informació de les classes",
+    "trial.whatsapp_text": "No vols esperar la trucada? Escriu-nos i ho concretem ara mateix.",
+    "trial.whatsapp_btn": "Escriu-nos pel WhatsApp",
+    "trial.whatsapp_msg": "Hola! Acabo d'omplir el formulari de la web per fer la primera classe de prova gratuïta."
 };

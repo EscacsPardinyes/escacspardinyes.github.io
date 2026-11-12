@@ -35,9 +35,18 @@ export default function TrialClassForm() {
             </div>
 
             {status === 'success' ? (
-                <p className="trial-success" role="status">
-                    <i className="fas fa-check-circle mr-2" aria-hidden="true"></i>{t('trial.success')}
-                </p>
+                <div className="trial-success" role="status">
+                    <p className="mb-2"><i className="fas fa-check-circle mr-2" aria-hidden="true"></i>{t('trial.success')}</p>
+                    <p className="trial-success-wa mb-2">{t('trial.whatsapp_text')}</p>
+                    <a
+                        href={`https://wa.me/34641915266?text=${encodeURIComponent(t('trial.whatsapp_msg'))}`}
+                        className="btn btn-success trial-whatsapp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="fab fa-whatsapp mr-2" aria-hidden="true"></i>{t('trial.whatsapp_btn')}
+                    </a>
+                </div>
             ) : (
                 <form className="trial-form" onSubmit={handleSubmit}>
                     <input type="text" name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" aria-hidden="true" />

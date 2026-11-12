@@ -27,7 +27,7 @@ export default function TorneigCAFIV() {
         "@type": "Event",
         "name": t('cafiv.title'),
         "description": t('cafiv.intro_text')?.replace(/<[^>]*>/g, ''),
-        "startDate": "2026-11-25T11:00:00+01:00",
+        "startDate": "2026-11-25T10:00:00+01:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {

@@ -394,7 +394,7 @@ export default {
     "cafiv.intro_text": "El <strong class='text-dark'>Club Escacs Pardinyes</strong>, la <strong class='text-dark'>Cátedra de Ajedrez, Educación y Desarrollo Cognitivo</strong> de la Universitat de Lleida y la <strong class='text-dark'>Biblioteca del CAFIV</strong> organizan un torneo de ajedrez para celebrar los <strong class='text-dark'>30 años de la Biblioteca del CAFIV</strong>, con la colaboración de la Diputació de Lleida y el Ayuntamiento de Lleida. Una jornada de partidas rápidas, premios y sorteo para todos los participantes. Habrá desayuno para los participantes.",
     "cafiv.info_title": "Fecha, Hora y Lugar",
     "cafiv.date": "<strong class='text-dark'>Fecha:</strong> 25 de noviembre",
-    "cafiv.time": "<strong class='text-dark'>Hora de inicio:</strong> 11:00 h",
+    "cafiv.time": "<strong class='text-dark'>Hora de inicio:</strong> 10:00 h",
     "cafiv.location": "<strong class='text-dark'>Lugar:</strong> Biblioteca del CAFIV",
     "cafiv.rules_title": "Formato de Juego",
     "cafiv.format": "<strong class='text-dark'>Sistema:</strong> eliminatorias (eliminación directa).",
@@ -914,5 +914,8 @@ export default {
     "carousel.circuit.sub": "6 torneos de ajedrez en Lleida, de enero a agosto",
     "carousel.circuit.btn": "Ver el circuito",
     "tornejos.circuit_banner": "Circuito 2027 del 35.º aniversario: 6 torneos de enero a agosto",
-    "trial.more": "Más información de las clases"
+    "trial.more": "Más información de las clases",
+    "trial.whatsapp_text": "¿No quieres esperar la llamada? Escríbenos y lo concretamos ahora mismo.",
+    "trial.whatsapp_btn": "Escríbenos por WhatsApp",
+    "trial.whatsapp_msg": "¡Hola! Acabo de rellenar el formulario de la web para hacer la primera clase de prueba gratuita."
 };
