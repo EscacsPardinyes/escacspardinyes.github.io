@@ -3,6 +3,8 @@ import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 import { Link } from '../components/LocalizedLink';
 import { useLanguage } from '../context/LanguageContext';
+import SignupSoon from '../components/SignupSoon';
+import { CIRCUIT_SIGNUP_OPEN } from '../data/circuitConfig';
 
 // Placeholders for Setmana Santa 2027 assets (Replace with real paths once available)
 const posterImg = '/cartells/tancats.webp';
@@ -133,9 +135,11 @@ export default function TorneigGMMIAugost() {
                             {/* Formulari d'Inscripció / Reserva de Plaça */}
                             <div className="bg-light p-4 rounded shadow-sm border-left border-primary mt-5" style={{ borderWidth: '4px !important' }}>
                                 <h4 className="font-weight-bold mb-2 text-primary">{t('gmmi.interest_form_title')}</h4>
-                                <p className="text-muted mb-4">{t('gmmi.interest_form_subtitle')}</p>
+                                {CIRCUIT_SIGNUP_OPEN && <p className="text-muted mb-4">{t('gmmi.interest_form_subtitle')}</p>}
 
-                                {status === 'success' ? (
+                                {!CIRCUIT_SIGNUP_OPEN ? (
+                                    <SignupSoon />
+                                ) : status === 'success' ? (
                                     <div className="alert alert-success text-center py-3">
                                         <h5><i className="fa fa-check-circle mr-2"></i>{t('contact.form.success')}</h5>
                                         <button onClick={() => setStatus(null)} className="btn btn-outline-success btn-sm mt-2">Enviar un altre</button>

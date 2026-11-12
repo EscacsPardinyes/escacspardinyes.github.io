@@ -30,6 +30,8 @@ export default function NewsletterModal() {
         if (dismissed || !cookieChoiceMade) return;
 
         const timer = setTimeout(() => {
+            // Don't interrupt someone who is filling in a form (e.g. the trial class form on the Home page)
+            if (document.activeElement?.closest('form')) return;
             setShowModal(true);
         }, 5000); // Show 5 seconds after the cookie choice / page load
 

@@ -42,7 +42,7 @@ export default function School() {
 
                 <div className="row">
                     {/* LEFT COLUMN: Info & Schedule */}
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 order-2 order-lg-1">
                         
                         {/* Success Badge */}
                         <div className="success-badge mb-5 p-3 rounded" style={{ background: 'rgba(255, 193, 7, 0.15)', border: '1px solid #ffc107' }}>
@@ -111,7 +111,7 @@ export default function School() {
                     </div>
 
                     {/* RIGHT COLUMN: Sticky Form */}
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0" id="inscripcio">
                         <div className="sticky-top" style={{ top: '120px', zIndex: 10 }}>
                             <div className="shadow-lg overflow-hidden bg-white" style={{ borderRadius: '24px', border: '1px solid rgba(0,0,0,0.08)' }}>
                                 <div className="bg-primary text-white text-center p-4">

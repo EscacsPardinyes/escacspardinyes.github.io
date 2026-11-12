@@ -45,8 +45,40 @@ export default function TorneigAlcarras2() {
             />
             <PageHeader title={t('alcarras2.header')} breadcrumbs={breadcrumbs} />
 
+            {/* Formulari d'Inscripció */}
+            <div className="container pb-5" id="inscripcio">
+                <h3 className="text-center font-weight-bold mb-3">
+                    <i className="fa fa-clipboard-list text-primary mr-2" aria-hidden="true"></i>
+                    {t('alcarras2.form_title')}
+                </h3>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <ul className="list-unstyled text-center mb-4">
+                            <li dangerouslySetInnerHTML={tHtml('alcarras2.date')}></li>
+                            <li dangerouslySetInnerHTML={tHtml('alcarras2.time')}></li>
+                            <li dangerouslySetInnerHTML={tHtml('alcarras2.location')}></li>
+                        </ul>
+                        <div className="rounded shadow p-3" style={{ backgroundColor: '#fff' }}>
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSeyTUtW_iUQ8A3roGHIFEixHJ5GwaN_lDxfd51GdVR4fuNcDg/viewform?embedded=true"
+                                width="100%"
+                                height="1383"
+                                frameBorder="0"
+                                marginHeight="0"
+                                marginWidth="0"
+                                title={t('alcarras2.form_title')}
+                                style={{ border: 'none', maxWidth: '100%' }}
+                            >
+                                S&apos;està carregant…
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Contingut Principal del Torneig */}
             <div className="container pb-5">
+                <hr className="mb-5" />
                 <h2 className="text-center font-weight-bold mb-5">{t('alcarras2.title')}</h2>
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2">
@@ -81,33 +113,6 @@ export default function TorneigAlcarras2() {
 
                             <h4 className="mt-4 mb-2"><i className="fa fa-heart text-danger mr-2"></i>{t('alcarras2.charity_title')}</h4>
                             <p className="ml-4" dangerouslySetInnerHTML={tHtml('alcarras2.charity_text')}></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Formulari d'Inscripció */}
-            <div className="container pb-5">
-                <hr className="mb-5" />
-                <h3 className="text-center font-weight-bold mb-4">
-                    <i className="fa fa-clipboard-list text-primary mr-2"></i>
-                    {t('alcarras2.form_title')}
-                </h3>
-                <div className="row justify-content-center">
-                    <div className="col-lg-8">
-                        <div className="rounded shadow p-3" style={{ backgroundColor: '#fff' }}>
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSeyTUtW_iUQ8A3roGHIFEixHJ5GwaN_lDxfd51GdVR4fuNcDg/viewform?embedded=true"
-                                width="100%"
-                                height="1383"
-                                frameBorder="0"
-                                marginHeight="0"
-                                marginWidth="0"
-                                title={t('alcarras2.form_title')}
-                                style={{ border: 'none', maxWidth: '100%' }}
-                            >
-                                S&apos;està carregant…
-                            </iframe>
                         </div>
                     </div>
                 </div>

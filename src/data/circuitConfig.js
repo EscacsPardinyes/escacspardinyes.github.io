@@ -1,6 +1,10 @@
 // Circuit del 35è aniversari (temporada 2026-27). Només hi ha dades del dossier de patrocini:
 // les dates i la ubicació exactes s'han d'afegir a `dates` / `place` quan es confirmin.
 // (El II Tancats de Setmana Santa té la seva pròpia pàgina: /tancats-setmana-santa-2027.)
+// De moment les inscripcions del circuit estan tancades: les pàgines mostren "Inscripcions properament".
+// Posa-ho a true per tornar a mostrar els formularis.
+export const CIRCUIT_SIGNUP_OPEN = false;
+
 export const circuitConfig = {
     'torneig-nadal-2027': {
         poster: '/cartells/nadal.webp',

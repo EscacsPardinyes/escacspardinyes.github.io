@@ -21,6 +21,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Patrocini = lazy(() => import('./pages/Patrocini'));
 const CircuitPage = lazy(() => import('./pages/CircuitPage'));
+const CircuitInfo = lazy(() => import('./pages/CircuitInfo'));
 const Cookies = lazy(() => import('./pages/Cookies'));
 const EloCalculator = lazy(() => import('./pages/EloCalculator'));
 const TorneigAlcarras = lazy(() => import('./pages/TorneigAlcarras'));
@@ -102,6 +103,7 @@ function pageRoutes() {
             <Route path="torneig-festa-major" element={<TorneigFestaMajor />} />
             <Route path="torneig-bordeta" element={<TorneigBordeta />} />
             <Route path="tornejos" element={<TornejosList />} />
+            <Route path="circuit-2027" element={<CircuitInfo />} />
             <Route path="torneig-biblioteca-cafiv" element={<TorneigCAFIV />} />
             <Route path="torneig-festa-major/historial" element={<HistorialFestaMajor />} />
             <Route path="enquesta" element={<Enquesta />} />

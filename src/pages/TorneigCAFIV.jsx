@@ -64,7 +64,7 @@ export default function TorneigCAFIV() {
             <div className="container pb-5">
                 <h2 className="text-center font-weight-bold mb-5">{t('cafiv.title')}</h2>
                 <div className="row">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="col-lg-6 order-2 order-lg-1">
                         <h3 className="mb-3">{t('cafiv.details_title')}</h3>
 
                         <p dangerouslySetInnerHTML={tHtml('cafiv.intro_text')}></p>
@@ -130,11 +130,16 @@ export default function TorneigCAFIV() {
                         </div>
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0" id="inscripcio">
                         <h3 className="font-weight-bold mb-3">
-                            <i className="fa fa-clipboard-list text-primary mr-2"></i>
+                            <i className="fa fa-clipboard-list text-primary mr-2" aria-hidden="true"></i>
                             {t('cafiv.signup_title')}
                         </h3>
+                        <ul className="list-unstyled d-lg-none mb-3">
+                            <li dangerouslySetInnerHTML={tHtml('cafiv.date')}></li>
+                            <li dangerouslySetInnerHTML={tHtml('cafiv.time')}></li>
+                            <li dangerouslySetInnerHTML={tHtml('cafiv.location')}></li>
+                        </ul>
                         <p className="mb-4">{t('cafiv.signup_text')}</p>
                         <CafivForm />
                         <p className="mt-3 mb-0 small text-center">
