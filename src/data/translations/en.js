@@ -358,7 +358,7 @@ export default {
     "cafiv.intro_text": "<strong class='text-dark'>Club Escacs Pardinyes</strong>, the <strong class='text-dark'>Chair in Chess, Education and Cognitive Development</strong> of the University of Lleida and the <strong class='text-dark'>CAFIV Library</strong> are organising a chess tournament to celebrate the <strong class='text-dark'>30th anniversary of the CAFIV Library</strong>, in collaboration with the Lleida Provincial Council (Diputació) and Lleida City Council. A day of rapid games, prizes and a raffle for all participants. Breakfast will be provided for participants.",
     "cafiv.info_title": "Date, Time and Place",
     "cafiv.date": "<strong class='text-dark'>Date:</strong> 25 November",
-    "cafiv.time": "<strong class='text-dark'>Start time:</strong> 11:00",
+    "cafiv.time": "<strong class='text-dark'>Start time:</strong> 10:00",
     "cafiv.location": "<strong class='text-dark'>Venue:</strong> CAFIV Library",
     "cafiv.rules_title": "Format",
     "cafiv.format": "<strong class='text-dark'>System:</strong> knockout (single elimination).",
@@ -892,5 +892,8 @@ export default {
     "carousel.circuit.sub": "6 chess tournaments in Lleida, January to August",
     "carousel.circuit.btn": "See the circuit",
     "tornejos.circuit_banner": "2027 Circuit for our 35th anniversary: 6 tournaments from January to August",
-    "trial.more": "More about the classes"
+    "trial.more": "More about the classes",
+    "trial.whatsapp_text": "Don't want to wait for the call? Message us and we'll set it up right now.",
+    "trial.whatsapp_btn": "Message us on WhatsApp",
+    "trial.whatsapp_msg": "Hi! I've just filled in the form on the website for the free first trial class."
 };

@@ -1083,3 +1083,6 @@ hr.container { box-sizing: border-box; padding: 0; }
 @media (max-width: 767.98px) {
     .trial-head .trial-more { margin-left: 0; margin-top: 4px; }
 }
+.trial-success-wa { font-weight: 400; color: var(--ink-mute); }
+.trial-whatsapp { background: #1e8e4f; border-color: #1e8e4f; font-weight: 700; }
+.trial-whatsapp:hover { background: #17733f; border-color: #17733f; }

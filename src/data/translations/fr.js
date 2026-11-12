@@ -239,5 +239,8 @@ export default { ...en, ...fr,
     "trial.sending": "Envoi...",
     "trial.success": "Reçu ! Nous t'appellerons bientôt pour fixer le jour.",
     "trial.error": "L'envoi a échoué. Écris-nous sur WhatsApp au 641 91 52 66 ou à escacspardinyes@gmail.com.",
-    "trial.more": "En savoir plus sur les cours"
+    "trial.more": "En savoir plus sur les cours",
+    "trial.whatsapp_text": "Tu ne veux pas attendre l'appel ? Écris-nous et on fixe tout de suite.",
+    "trial.whatsapp_btn": "Écris-nous sur WhatsApp",
+    "trial.whatsapp_msg": "Bonjour ! Je viens de remplir le formulaire du site pour le premier cours d'essai gratuit."
 };
