@@ -401,6 +401,7 @@ export default {
     "cafiv.organizers_title": "Organitzadors",
     "cafiv.organizer_pardinyes": "<strong class='text-dark'>Club Escacs Pardinyes</strong>",
     "cafiv.organizer_cafiv": "<strong class='text-dark'>Biblioteca del CAFIV</strong>",
+    "cafiv.poster_alt": "Cartell del torneig d'escacs Mou Fitxa per als 30 anys de la Biblioteca del CAFIV",
     "cafiv.organizer_udl": "<strong class='text-dark'>Càtedra d'Escacs, Educació i Desenvolupament Cognitiu</strong>",
     "cafiv.collaborators_title": "Amb la col·laboració de",
     "cafiv.collaborator_diputacio": "<strong class='text-dark'>Diputació de Lleida</strong>",
