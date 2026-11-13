@@ -7,7 +7,7 @@ import CafivForm from '../components/CafivForm';
 const organizers = [
     { src: '/img/galeria/logos/logo.webp', key: 'cafiv.organizer_pardinyes', alt: 'Club Escacs Pardinyes', col: 'col-sm-5' },
     { src: '/img/galeria/TorneigCAFIV/logo-catedra-udl.webp', key: 'cafiv.organizer_udl', alt: "Universitat de Lleida - Càtedra Escacs, Educació i Desenvolupament Cognitiu", col: 'col-sm-7' },
-    { key: 'cafiv.organizer_cafiv', col: 'col-12' }
+    { src: '/img/galeria/TorneigCAFIV/logo-biblioteca-cafiv.webp', key: 'cafiv.organizer_cafiv', alt: 'Universitat de Lleida - Biblioteca del CAFIV', col: 'col-12' }
 ];
 
 const collaborators = [
@@ -151,6 +151,17 @@ export default function TorneigCAFIV() {
                         <p className="mt-3 mb-0 small text-center">
                             <Link to="/contact">{t('cafiv.signup_btn')}</Link>
                         </p>
+                        <div className="text-center mt-5">
+                            <img
+                                src="/img/galeria/TorneigCAFIV/cartell-cafiv.webp"
+                                alt={t('cafiv.poster_alt')}
+                                className="img-fluid rounded shadow"
+                                style={{ maxWidth: '480px', width: '100%' }}
+                                width="1000"
+                                height="1414"
+                                loading="lazy"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

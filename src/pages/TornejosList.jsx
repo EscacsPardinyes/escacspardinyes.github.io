@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 const LOGO = '/img/galeria/logos/logo.webp';
 
 const tournaments = [
-    { id: 'cafiv', titleKey: 'cafiv.header', summaryKey: 'tornejos.sum_cafiv', path: '/torneig-biblioteca-cafiv', poster: false },
+    { id: 'cafiv', titleKey: 'cafiv.header', summaryKey: 'tornejos.sum_cafiv', path: '/torneig-biblioteca-cafiv', img: '/img/galeria/TorneigCAFIV/cartell-cafiv.webp' },
     { id: 'alcarras2', titleKey: 'alcarras2.header', summaryKey: 'tornejos.sum_alcarras2', path: '/torneig-alcarras-2', poster: false }
 ];
 
@@ -46,7 +46,7 @@ export default function TornejosList() {
                                         src={item.img}
                                         className="card-img-top"
                                         alt={t(item.titleKey)}
-                                        style={{ height: '250px', objectFit: 'cover' }}
+                                        style={{ height: '250px', objectFit: 'cover', objectPosition: 'top' }}
                                         loading="lazy"
                                     />
                                 )}

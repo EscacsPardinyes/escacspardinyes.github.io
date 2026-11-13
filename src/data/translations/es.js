@@ -407,6 +407,7 @@ export default {
     "cafiv.organizers_title": "Organizadores",
     "cafiv.organizer_pardinyes": "<strong class='text-dark'>Club Escacs Pardinyes</strong>",
     "cafiv.organizer_cafiv": "<strong class='text-dark'>Biblioteca del CAFIV</strong>",
+    "cafiv.poster_alt": "Cartel del torneo de ajedrez Mou Fitxa por los 30 años de la Biblioteca del CAFIV",
     "cafiv.organizer_udl": "<strong class='text-dark'>Cátedra de Ajedrez, Educación y Desarrollo Cognitivo</strong>",
     "cafiv.collaborators_title": "Con la colaboración de",
     "cafiv.collaborator_diputacio": "<strong class='text-dark'>Diputació de Lleida</strong>",

@@ -371,6 +371,7 @@ export default {
     "cafiv.organizers_title": "Organisers",
     "cafiv.organizer_pardinyes": "<strong class='text-dark'>Club Escacs Pardinyes</strong>",
     "cafiv.organizer_cafiv": "<strong class='text-dark'>CAFIV Library</strong>",
+    "cafiv.poster_alt": "Poster for the Mou Fitxa chess tournament for the 30th anniversary of the CAFIV Library",
     "cafiv.organizer_udl": "<strong class='text-dark'>Chair in Chess, Education and Cognitive Development</strong>",
     "cafiv.collaborators_title": "In collaboration with",
     "cafiv.collaborator_diputacio": "<strong class='text-dark'>Lleida Provincial Council (Diputació)</strong>",
