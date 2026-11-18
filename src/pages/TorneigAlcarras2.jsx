@@ -81,7 +81,19 @@ export default function TorneigAlcarras2() {
                 <hr className="mb-5" />
                 <h2 className="text-center font-weight-bold mb-5">{t('alcarras2.title')}</h2>
                 <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
+                    <div className="col-lg-5 mb-4 mb-lg-0 text-center">
+                        <a href="/img/galeria/TorneigAlcarras2026/cartell-alcarras-2026.webp" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="/img/galeria/TorneigAlcarras2026/cartell-alcarras-2026.webp"
+                                alt={t('alcarras2.poster_alt')}
+                                className="img-fluid rounded shadow"
+                                width="1000"
+                                height="1415"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <div className="col-lg-7">
                         <div className="text-left">
                             <h3 className="mb-3">{t('alcarras2.details_title')}</h3>
 
@@ -109,6 +121,8 @@ export default function TorneigAlcarras2() {
                                 <li dangerouslySetInnerHTML={tHtml('alcarras2.trophy_non_federated')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('alcarras2.trophy_local')}></li>
                                 <li dangerouslySetInnerHTML={tHtml('alcarras2.trophy_age')}></li>
+                                <li dangerouslySetInnerHTML={tHtml('alcarras2.trophy_female')}></li>
+                                <li dangerouslySetInnerHTML={tHtml('alcarras2.trophy_inclusive')}></li>
                             </ul>
 
                             <h4 className="mt-4 mb-2"><i className="fa fa-heart text-danger mr-2"></i>{t('alcarras2.charity_title')}</h4>
